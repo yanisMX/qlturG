@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { duration } from '../styles/tokens';
 
 interface TimerProps {
   endsAt: string;
@@ -32,22 +33,32 @@ export default function Timer({ endsAt, onExpire }: TimerProps) {
   }, [endsAt, onExpire]);
 
   const pct = (remaining / 10) * 100;
-  const color =
-    remaining > 5 ? 'bg-emerald-500' : remaining > 2 ? 'bg-amber-400' : 'bg-rose-500';
+
+  const barColor =
+    remaining > 5
+      ? 'bg-emerald-500'
+      : remaining > 2
+        ? 'bg-amber-400'
+        : 'bg-rose-500';
+
+  const textColor =
+    remaining <= 2 ? 'text-rose-500' : remaining <= 5 ? 'text-amber-500' : 'text-slate-700';
+
+  const isPulsing = remaining <= 3;
 
   return (
-    <div className="flex items-center gap-3">
-      <div className="flex-1 h-3 bg-slate-200 rounded-full overflow-hidden">
+    <div className={`flex items-center gap-3 ${isPulsing ? 'animate-pulse' : ''}`}>
+      {/* Progress bar — scaleX from left to avoid animating width */}
+      <div className="relative flex-1 h-1.5 bg-slate-200/70 rounded-full overflow-hidden">
         <motion.div
-          className={`h-full rounded-full transition-colors duration-300 ${color}`}
-          style={{ width: `${pct}%` }}
-          transition={{ duration: 0.1 }}
+          className={`absolute inset-0 rounded-full origin-left ${barColor}`}
+          style={{ scaleX: pct / 100 }}
+          transition={{ duration: duration.fast }}
         />
       </div>
+
       <span
-        className={`text-2xl font-bold tabular-nums w-8 text-right transition-colors duration-300 ${
-          remaining <= 3 ? 'text-rose-500' : 'text-slate-700'
-        }`}
+        className={`text-2xl font-bold tabular-nums w-8 text-right transition-colors duration-base ${textColor}`}
       >
         {remaining}
       </span>
