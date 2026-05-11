@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { z } from 'zod';
 import { useGameStore } from '../store/gameStore';
 import { getSocket } from '../socket/socket';
+import PageTransition from '../components/PageTransition';
 
 const schema = z.object({
   code: z.string().length(6, 'Le code doit faire 6 caractères'),
@@ -71,60 +72,65 @@ export default function JoinPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-b from-slate-50 to-slate-100">
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md"
-      >
-        <Link to="/" className="text-navy-600 text-sm font-medium mb-6 inline-block hover:underline">
-          Retour
-        </Link>
+    <PageTransition>
+      <div className="min-h-screen flex flex-col items-center justify-center p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="w-full max-w-md"
+        >
+          <Link
+            to="/"
+            className="text-navy-600 text-sm font-medium mb-6 inline-block hover:underline"
+          >
+            ← Retour
+          </Link>
 
-        <div className="card">
-          <h1 className="text-2xl font-bold text-navy-800 mb-6">Rejoindre une partie</h1>
+          <div className="card">
+            <h1 className="text-2xl font-bold text-navy-800 mb-6">Rejoindre une partie</h1>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
-            <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1.5">
-                Code de la partie
-              </label>
-              <input
-                className="input-field uppercase tracking-widest text-xl font-bold"
-                placeholder="A3F9KM"
-                value={form.code}
-                onChange={(e) =>
-                  setForm({ ...form, code: e.target.value.toUpperCase().slice(0, 6) })
-                }
-                maxLength={6}
-              />
-            </div>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                  Code de la partie
+                </label>
+                <input
+                  className="input-field uppercase tracking-widest text-xl font-bold"
+                  placeholder="A3F9KM"
+                  value={form.code}
+                  onChange={(e) =>
+                    setForm({ ...form, code: e.target.value.toUpperCase().slice(0, 6) })
+                  }
+                  maxLength={6}
+                />
+              </div>
 
-            <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-1.5">
-                Votre pseudo
-              </label>
-              <input
-                className="input-field"
-                placeholder="Ex: Napoléon Bonaparte"
-                value={form.nickname}
-                onChange={(e) => setForm({ ...form, nickname: e.target.value })}
-                maxLength={20}
-              />
-            </div>
+              <div>
+                <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                  Votre pseudo
+                </label>
+                <input
+                  className="input-field"
+                  placeholder="Ex: Napoléon Bonaparte"
+                  value={form.nickname}
+                  onChange={(e) => setForm({ ...form, nickname: e.target.value })}
+                  maxLength={20}
+                />
+              </div>
 
-            {error && (
-              <p className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-lg px-3 py-2">
-                {error}
-              </p>
-            )}
+              {error && (
+                <p className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-lg px-3 py-2">
+                  {error}
+                </p>
+              )}
 
-            <button type="submit" disabled={loading} className="btn-primary w-full">
-              {loading ? 'Connexion...' : 'Rejoindre'}
-            </button>
-          </form>
-        </div>
-      </motion.div>
-    </div>
+              <button type="submit" disabled={loading} className="btn-primary w-full">
+                {loading ? 'Connexion...' : 'Rejoindre'}
+              </button>
+            </form>
+          </div>
+        </motion.div>
+      </div>
+    </PageTransition>
   );
 }
