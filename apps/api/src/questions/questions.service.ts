@@ -1,0 +1,43 @@
+import { Injectable } from '@nestjs/common';
+import { PrismaService } from '../prisma/prisma.service';
+import { CreateQuestionDto, UpdateQuestionDto } from './questions.dto';
+import { Difficulty, Period } from '@prisma/client';
+
+@Injectable()
+export class QuestionsService {
+  constructor(private readonly prisma: PrismaService) {}
+
+  findAll(filters: { difficulty?: Difficulty; period?: Period }) {
+    return this.prisma.question.findMany({
+      where: {
+        ...(filters.difficulty && { difficulty: filters.difficulty }),
+        ...(filters.period && { period: filters.period }),
+      },
+      orderBy: { createdAt: 'asc' },
+    });
+  }
+
+  findOne(id: string) {
+    return this.prisma.question.findUnique({ where: { id } });
+  }
+
+  create(dto: CreateQuestionDto) {
+    return this.prisma.question.create({ data: dto });
+  }
+
+  update(id: string, dto: UpdateQuestionDto) {
+    return this.prisma.question.update({ where: { id }, data: dto });
+  }
+
+  remove(id: string) {
+    return this.prisma.question.delete({ where: { id } });
+  }
+
+  async getRandomByDifficulty(difficulty: Difficulty, count: number) {
+    const all = await this.prisma.question.findMany({
+      where: { difficulty },
+    });
+    const shuffled = all.sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, count);
+  }
+}
