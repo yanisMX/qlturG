@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { z } from 'zod';
 import { useGameStore } from '../store/gameStore';
@@ -12,10 +12,14 @@ const schema = z.object({
 
 export default function JoinPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const setGameState = useGameStore((s) => s.setGameState);
   const addPlayer = useGameStore((s) => s.addPlayer);
 
-  const [form, setForm] = useState({ code: '', nickname: '' });
+  const [form, setForm] = useState({
+    code: (searchParams.get('code') ?? '').toUpperCase().slice(0, 6),
+    nickname: '',
+  });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 

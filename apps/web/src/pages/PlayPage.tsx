@@ -69,81 +69,97 @@ export default function PlayPage() {
     );
   }
 
+  const scoreboardPanel = (compact: boolean) => (
+    <div className="card">
+      <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-3">Classement</h3>
+      <Scoreboard
+        players={players}
+        myPlayerId={myPlayerId}
+        compact={compact}
+        revealScores={reveal?.scores}
+      />
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 p-4 md:p-8">
-      <div className="max-w-2xl mx-auto space-y-4">
-        <div className="flex items-center justify-between">
-          <span className="text-sm font-semibold text-slate-500">
-            Question {currentQuestion.index + 1}/{currentQuestion.total}
-          </span>
-          {isHost && reveal && (
-            <button
-              className="text-xs font-semibold text-navy-600 border border-navy-200 rounded-lg px-3 py-1 hover:bg-navy-50 transition-colors"
-              onClick={() => {
-                const socket = getSocket();
-                socket.emit('game:next');
-              }}
-            >
-              Suivant
-            </button>
-          )}
-        </div>
-
-        <div className="card">
-          {!reveal && (
-            <div className="mb-5">
-              <Timer endsAt={currentQuestion.endsAt} onExpire={handleTimerExpire} />
+      <div className="max-w-5xl mx-auto">
+        <div className="md:flex md:gap-6 md:items-start">
+          {/* Main game area */}
+          <div className="flex-1 min-w-0 space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-semibold text-slate-500">
+                Question {currentQuestion.index + 1}/{currentQuestion.total}
+              </span>
+              {isHost && reveal && (
+                <button
+                  className="text-xs font-semibold text-navy-600 border border-navy-200 rounded-lg px-3 py-1 hover:bg-navy-50 transition-colors"
+                  onClick={() => {
+                    const socket = getSocket();
+                    socket.emit('game:next');
+                  }}
+                >
+                  Suivant
+                </button>
+              )}
             </div>
-          )}
 
-          <AnimatePresence mode="wait">
-            {reveal ? (
-              <motion.div
-                key="reveal"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                <RevealCard
-                  reveal={reveal}
-                  choices={currentQuestion.choices}
-                  myAnswer={myAnswer}
-                  myPlayerId={myPlayerId}
-                />
-              </motion.div>
-            ) : (
-              <motion.div
-                key="question"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                <QuestionCard
-                  text={currentQuestion.text}
-                  choices={currentQuestion.choices}
-                  selectedIndex={myAnswer}
-                  disabled={myAnswer !== null}
-                  onSelect={handleAnswer}
-                />
-                {myAnswer !== null && (
-                  <motion.p
-                    initial={{ opacity: 0, y: 4 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="mt-4 text-center text-sm text-slate-500"
+            <div className="card">
+              {!reveal && (
+                <div className="mb-5">
+                  <Timer endsAt={currentQuestion.endsAt} onExpire={handleTimerExpire} />
+                </div>
+              )}
+
+              <AnimatePresence mode="wait">
+                {reveal ? (
+                  <motion.div
+                    key="reveal"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
                   >
-                    Réponse enregistrée — en attente des autres joueurs…
-                  </motion.p>
+                    <RevealCard
+                      reveal={reveal}
+                      choices={currentQuestion.choices}
+                      myAnswer={myAnswer}
+                      myPlayerId={myPlayerId}
+                    />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="question"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <QuestionCard
+                      text={currentQuestion.text}
+                      choices={currentQuestion.choices}
+                      selectedIndex={myAnswer}
+                      disabled={myAnswer !== null}
+                      onSelect={handleAnswer}
+                    />
+                    {myAnswer !== null && (
+                      <motion.p
+                        initial={{ opacity: 0, y: 4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="mt-4 text-center text-sm text-slate-500"
+                      >
+                        Réponse enregistrée — en attente des autres joueurs…
+                      </motion.p>
+                    )}
+                  </motion.div>
                 )}
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+              </AnimatePresence>
+            </div>
 
-        <div className="card">
-          <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-3">
-            Classement
-          </h3>
-          <Scoreboard players={players} myPlayerId={myPlayerId} />
+            {/* Mobile scoreboard */}
+            <div className="md:hidden">{scoreboardPanel(true)}</div>
+          </div>
+
+          {/* Desktop side scoreboard */}
+          <div className="hidden md:block w-72 shrink-0 sticky top-8">{scoreboardPanel(false)}</div>
         </div>
       </div>
     </div>
