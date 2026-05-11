@@ -41,10 +41,11 @@ pnpm build
 
 - [`docs/architecture.md`](docs/architecture.md) — Structure des modules, flux WebSocket, modèle de données
 - [`docs/conventions.md`](docs/conventions.md) — Conventions de code, nommage, règles de commit/PR
-- [`docs/user-stories.md`](docs/user-stories.md) — Toutes les user stories du projet
+- [`docs/user-stories/`](docs/user-stories/) — Une US par fichier (`US-<slug>.md`)
 
 ## Points d'attention
 
+- **Port PostgreSQL** : le Docker postgres écoute sur le port hôte **5433** (pas 5432) pour éviter le conflit avec PostgreSQL Homebrew. En dev Homebrew, `DATABASE_URL` utilise le port 5432 ; si tu utilises `pnpm db:up`, utilise le port 5433.
 - **Build backend** : utiliser `tsc -p tsconfig.build.json`, PAS `nest build` (bug incremental).
 - **Création de partie** : `POST /games` ne crée pas de joueur. L'hôte rejoint via WebSocket `game:join` et devient host si `hostId='pending'`.
 - **Scoring** : calculé côté serveur uniquement. La bonne réponse n'est jamais envoyée avant `game:reveal`.

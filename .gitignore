@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+apps/api/dist/
+apps/web/dist/
+
+# Env files
+.env
+apps/api/.env
+apps/web/.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Prisma
+apps/api/prisma/migrations/
+
+# Vite cache
+apps/web/node_modules/.vite/
+
+# pnpm
+.pnpm-store/
+
+# Logs
+*.log
+npm-debug.log*
