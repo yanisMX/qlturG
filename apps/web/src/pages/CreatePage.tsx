@@ -9,7 +9,7 @@ import PageTransition from '../components/PageTransition';
 import type { GameMode } from '../store/gameStore';
 
 const schema = z.object({
-  hostNickname: z.string().min(2, 'Minimum 2 caractères').max(20),
+  hostNickname: z.string().min(2, 'Minimum 2 joueurs').max(20),
   difficulty: z.enum(['FACILE', 'MOYEN', 'DIFFICILE', 'VARIE']),
   totalQuestions: z.number().min(10).max(30),
   speedBonus: z.boolean(),
@@ -45,12 +45,15 @@ export default function CreatePage() {
     doublePointsBonus: false,
   });
   const [error, setError] = useState('');
+  const [submitAttempt, setSubmitAttempt] = useState(0);
   const [loading, setLoading] = useState(false);
 
   const isSolo = form.gameMode === 'SURVIVAL_SOLO';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const attempt = submitAttempt + 1;
+    setSubmitAttempt(attempt);
     setError('');
 
     const parsed = schema.safeParse(form);
@@ -97,7 +100,14 @@ export default function CreatePage() {
           isHost: state.isHost,
           players: state.players,
         });
-        navigate(`/lobby/${game.code}`);
+
+        if (game.gameMode === 'SURVIVAL_SOLO') {
+          // Solo — skip lobby, start immediately
+          socket.emit('game:start');
+          navigate(`/play/${game.code}`);
+        } else {
+          navigate(`/lobby/${game.code}`);
+        }
       });
 
       socket.once('game:error', (err: { message: string }) => {
@@ -192,35 +202,19 @@ export default function CreatePage() {
                 )}
               </div>
 
-              {/* Pseudo (caché en survival solo — déjà solo) */}
-              {!isSolo && (
-                <div>
-                  <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
-                    Votre pseudo
-                  </label>
-                  <input
-                    className="input-field"
-                    placeholder="Ex: Marie Curie"
-                    value={form.hostNickname}
-                    onChange={(e) => setForm({ ...form, hostNickname: e.target.value })}
-                    maxLength={20}
-                  />
-                </div>
-              )}
-              {isSolo && (
-                <div>
-                  <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
-                    Votre pseudo
-                  </label>
-                  <input
-                    className="input-field"
-                    placeholder="Ex: Marie Curie"
-                    value={form.hostNickname}
-                    onChange={(e) => setForm({ ...form, hostNickname: e.target.value })}
-                    maxLength={20}
-                  />
-                </div>
-              )}
+              {/* Pseudo */}
+              <div>
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
+                  Votre pseudo
+                </label>
+                <input
+                  className="input-field"
+                  placeholder="Ex: Marie Curie"
+                  value={form.hostNickname}
+                  onChange={(e) => setForm({ ...form, hostNickname: e.target.value })}
+                  maxLength={20}
+                />
+              </div>
 
               {/* Difficulté */}
               <div>
@@ -307,9 +301,15 @@ export default function CreatePage() {
               />
 
               {error && (
-                <p className="text-sm rounded-lg px-3 py-2" style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}>
+                <motion.p
+                  key={submitAttempt}
+                  initial={{ opacity: 0, y: -4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-sm rounded-lg px-3 py-2"
+                  style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}
+                >
                   {error}
-                </p>
+                </motion.p>
               )}
 
               <button type="submit" disabled={loading} className="btn-primary w-full">

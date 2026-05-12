@@ -2,13 +2,14 @@ import { useEffect, useState, useRef } from 'react';
 
 interface TimerProps {
   endsAt: string;
+  totalSeconds?: number;
   onExpire?: () => void;
 }
 
 const RADIUS = 26;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
-export default function Timer({ endsAt, onExpire }: TimerProps) {
+export default function Timer({ endsAt, totalSeconds = 10, onExpire }: TimerProps) {
   const [remaining, setRemaining] = useState(10);
   const calledRef = useRef(false);
 
@@ -33,7 +34,7 @@ export default function Timer({ endsAt, onExpire }: TimerProps) {
     return () => clearInterval(id);
   }, [endsAt, onExpire]);
 
-  const pct = remaining / 10;
+  const pct = remaining / totalSeconds;
   const strokeDashoffset = CIRCUMFERENCE - pct * CIRCUMFERENCE;
   const isAlert = remaining <= 3;
   const strokeColor = isAlert ? '#FF6B5B' : '#F5C76B';

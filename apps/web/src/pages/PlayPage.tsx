@@ -23,6 +23,7 @@ export default function PlayPage() {
     isHost,
     gameMode,
     myLives,
+    questionDuration,
     setQuestion,
     setMyAnswer,
     setReveal,
@@ -34,6 +35,7 @@ export default function PlayPage() {
   const [isEliminated, setIsEliminated] = useState(false);
 
   const isSurvival = gameMode === 'SURVIVAL_SOLO' || gameMode === 'SURVIVAL_MULTI';
+  const isSolo = gameMode === 'SURVIVAL_SOLO';
 
   const handleAnswer = useCallback(
     (idx: number) => {
@@ -204,9 +206,13 @@ export default function PlayPage() {
 
               {/* Question card */}
               <div className="card">
-                {!reveal && (
+                {!reveal && !(isSolo && myAnswer !== null) && (
                   <div className="mb-5">
-                    <Timer endsAt={currentQuestion.endsAt} onExpire={handleTimerExpire} />
+                    <Timer
+                      endsAt={currentQuestion.endsAt}
+                      totalSeconds={questionDuration}
+                      onExpire={handleTimerExpire}
+                    />
                   </div>
                 )}
 
@@ -239,7 +245,7 @@ export default function PlayPage() {
                         disabled={myAnswer !== null || isEliminated}
                         onSelect={handleAnswer}
                       />
-                      {myAnswer !== null && (
+                      {myAnswer !== null && !isSolo && (
                         <motion.p
                           initial={{ opacity: 0, y: 4 }}
                           animate={{ opacity: 1, y: 0 }}
