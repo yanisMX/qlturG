@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import UserAvatar from '../components/UserAvatar';
+import { FloatingNapoleon, FloatingMarianne } from '../components/HistoryCharacters';
 import { useAuthStore } from '../store/authStore';
 import { duration } from '../styles/tokens';
 
@@ -11,7 +12,23 @@ export default function HomePage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex flex-col items-center justify-center p-6">
+      <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ position: 'relative' }}>
+
+        {/* Napoléon — côté gauche (desktop uniquement) */}
+        <div
+          className="hidden lg:block pointer-events-none select-none"
+          style={{ position: 'fixed', bottom: '10%', left: '3%', zIndex: 0, opacity: 0.62 }}
+        >
+          <FloatingNapoleon />
+        </div>
+
+        {/* Marianne — côté droit (desktop uniquement) */}
+        <div
+          className="hidden lg:block pointer-events-none select-none"
+          style={{ position: 'fixed', bottom: '14%', right: '3%', zIndex: 0, opacity: 0.62 }}
+        >
+          <FloatingMarianne />
+        </div>
         {/* User chip — top right */}
         {!isLoading && (
           <div className="fixed top-4 right-4 z-10">

@@ -4,17 +4,20 @@ interface TimerProps {
   endsAt: string;
   totalSeconds?: number;
   onExpire?: () => void;
+  onAlert?: (isAlert: boolean) => void;
 }
 
 const RADIUS = 26;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
-export default function Timer({ endsAt, totalSeconds = 10, onExpire }: TimerProps) {
+export default function Timer({ endsAt, totalSeconds = 10, onExpire, onAlert }: TimerProps) {
   const [remaining, setRemaining] = useState(10);
   const calledRef = useRef(false);
+  const alertRef = useRef(false);
 
   useEffect(() => {
     calledRef.current = false;
+    alertRef.current = false;
 
     const tick = () => {
       const now = Date.now();
@@ -22,6 +25,12 @@ export default function Timer({ endsAt, totalSeconds = 10, onExpire }: TimerProp
       const diff = Math.max(0, end - now);
       const secs = Math.ceil(diff / 1000);
       setRemaining(secs);
+
+      const nowAlert = secs <= 5;
+      if (nowAlert !== alertRef.current) {
+        alertRef.current = nowAlert;
+        onAlert?.(nowAlert);
+      }
 
       if (diff <= 0 && !calledRef.current) {
         calledRef.current = true;
@@ -32,7 +41,7 @@ export default function Timer({ endsAt, totalSeconds = 10, onExpire }: TimerProp
     tick();
     const id = setInterval(tick, 100);
     return () => clearInterval(id);
-  }, [endsAt, onExpire]);
+  }, [endsAt, onExpire, onAlert]);
 
   const pct = remaining / totalSeconds;
   const strokeDashoffset = CIRCUMFERENCE - pct * CIRCUMFERENCE;

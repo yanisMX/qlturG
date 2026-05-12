@@ -32,25 +32,38 @@ export default function RevealCard({ reveal, choices, myAnswer, myPlayerId }: Re
           return (
             <motion.div
               key={i}
-              animate={isWrongSelected && !shouldReduce ? { x: [0, -4, 4, -3, 3, 0] } : { x: 0 }}
-              whileInView={isAnswer && !shouldReduce ? { scale: [1, 1.02, 1] } : undefined}
-              transition={isWrongSelected ? { duration: 0.35 } : isAnswer ? { duration: 0.6, delay: 0.15 } : {}}
-              className={['flex items-center gap-3 px-5 py-4 min-h-[52px] rounded-xl border-2 font-medium transition-all',
+              initial={{ opacity: 0, scale: shouldReduce ? 1 : 0.95 }}
+              animate={
+                isWrongSelected && !shouldReduce
+                  ? { opacity: 0.85, scale: 1, x: [0, -5, 5, -4, 4, 0] }
+                  : { opacity: isNeutral ? 0.4 : 1, scale: isAnswer && !shouldReduce ? [1, 1.03, 1] : 1, x: 0 }
+              }
+              transition={
+                isWrongSelected
+                  ? { duration: 0.35 }
+                  : isAnswer
+                  ? { duration: 0.5, delay: 0.1 }
+                  : { duration: duration.base, delay: i * 0.05 }
+              }
+              className={['flex items-center gap-3 px-5 py-4 min-h-[52px] rounded-xl border-2 font-medium',
                 isAnswer ? 'choice-btn-correct' : '',
-                isWrongSelected ? 'choice-btn-wrong animate-shake' : '',
+                isWrongSelected ? 'choice-btn-wrong' : '',
               ].filter(Boolean).join(' ')}
-              style={isNeutral ? { borderColor: 'rgba(242,238,227,0.07)', backgroundColor: 'rgba(255,255,255,0.02)', color: '#7A7F9B', opacity: 0.5 } : {}}
+              style={{
+                ...(isNeutral ? { borderColor: 'rgba(242,238,227,0.07)', backgroundColor: 'rgba(255,255,255,0.02)', color: '#7A7F9B' } : {}),
+                ...(isAnswer && !shouldReduce ? { boxShadow: '0 0 0 3px rgba(74,222,128,0.18), 0 0 20px rgba(74,222,128,0.08)' } : {}),
+              }}
             >
               <span
                 className="flex-shrink-0 w-7 h-7 rounded-lg text-sm font-bold flex items-center justify-center"
-                style={{ backgroundColor: 'rgba(242,238,227,0.10)', color: '#B4B7CC' }}
+                style={isAnswer
+                  ? { backgroundColor: 'rgba(74,222,128,0.20)', color: '#4ADE80' }
+                  : { backgroundColor: 'rgba(242,238,227,0.10)', color: '#B4B7CC' }
+                }
               >
-                {CHOICE_LABELS[i]}
+                {isAnswer ? '✓' : CHOICE_LABELS[i]}
               </span>
               <span className="flex-1">{choice}</span>
-              {isAnswer && (
-                <span className="ml-auto font-bold text-sm shrink-0" style={{ color: '#4ADE80' }}>✓</span>
-              )}
             </motion.div>
           );
         })}

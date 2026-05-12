@@ -53,13 +53,16 @@ export default function QuestionCard({
   const shouldReduce = useReducedMotion();
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: shouldReduce ? 1 : 0.97 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: duration.slow }}
-      className="space-y-5"
-    >
-      <h2 className="text-xl font-semibold leading-snug" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>{text}</h2>
+    <div className="space-y-5">
+      <motion.h2
+        initial={{ opacity: 0, y: shouldReduce ? 0 : -6 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: duration.base }}
+        className="text-xl font-semibold leading-snug"
+        style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}
+      >
+        {text}
+      </motion.h2>
 
       {/* 2×2 grid on desktop, single column on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -74,7 +77,10 @@ export default function QuestionCard({
           return (
             <motion.button
               key={i}
-              whileTap={!disabled && !shouldReduce ? { scale: 0.98 } : undefined}
+              initial={shouldReduce ? { opacity: 1 } : { opacity: 0, y: 10 }}
+              animate={{ opacity: isDimmed ? 0.45 : 1, y: 0 }}
+              transition={{ duration: duration.base, delay: i * 0.07 }}
+              whileTap={!disabled && !shouldReduce ? { scale: 0.96 } : undefined}
               onClick={() => !disabled && onSelect(i)}
               disabled={disabled}
               className="w-full text-left px-4 py-3.5 min-h-[52px] rounded-xl border-2 font-medium transition-all disabled:cursor-not-allowed"
@@ -82,7 +88,6 @@ export default function QuestionCard({
                 borderColor,
                 backgroundColor: bgColor,
                 color: '#F2EEE3',
-                opacity: isDimmed ? 0.45 : 1,
                 transitionDuration: '80ms',
               }}
               onMouseEnter={(e) => {
@@ -98,8 +103,8 @@ export default function QuestionCard({
             >
               <span className="inline-flex items-center gap-3">
                 <span
-                  className="flex-shrink-0 w-7 h-7 rounded-lg text-sm font-bold flex items-center justify-center"
-                  style={isSelected ? { backgroundColor: c.labelSelected.bg, color: c.labelSelected.color } : { backgroundColor: c.labelIdle.bg, color: c.labelIdle.color }}
+                  className="flex-shrink-0 w-7 h-7 rounded-lg text-sm font-bold flex items-center justify-center transition-all"
+                  style={isSelected ? { backgroundColor: c.labelSelected.bg, color: c.labelSelected.color, transform: 'scale(1.1)' } : { backgroundColor: c.labelIdle.bg, color: c.labelIdle.color }}
                 >
                   {CHOICE_LABELS[i]}
                 </span>
@@ -109,6 +114,6 @@ export default function QuestionCard({
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 }
