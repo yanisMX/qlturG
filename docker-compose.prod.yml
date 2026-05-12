@@ -16,7 +16,7 @@ services:
       retries: 5
 
   api:
-    image: ghcr.io/${GITHUB_REPO}/histoire-france-api:${VERSION:-latest}
+    image: ghcr.io/yanismx/qlturG/histoire-france-api:${VERSION:-latest}
     container_name: hf_api
     restart: unless-stopped
     environment:
@@ -31,7 +31,7 @@ services:
         condition: service_healthy
 
   web:
-    image: ghcr.io/${GITHUB_REPO}/histoire-france-web:${VERSION:-latest}
+    image: ghcr.io/yanismx/qlturG/histoire-france-web:${VERSION:-latest}
     container_name: hf_web
     restart: unless-stopped
     ports:

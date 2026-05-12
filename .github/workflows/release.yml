@@ -7,7 +7,6 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  REPO: ${{ github.repository }}
 
 jobs:
   build-and-push:
@@ -27,9 +26,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract version tag
+      - name: Extract version tag and repo (lowercase)
         id: meta
-        run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+        run: |
+          echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+          echo "REPO=$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
 
       - name: Build & push API image
         uses: docker/build-push-action@v5
@@ -37,8 +38,8 @@ jobs:
           context: ./apps/api
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-api:${{ steps.meta.outputs.VERSION }}
-            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-api:latest
+            ${{ env.REGISTRY }}/${{ steps.meta.outputs.REPO }}/histoire-france-api:${{ steps.meta.outputs.VERSION }}
+            ${{ env.REGISTRY }}/${{ steps.meta.outputs.REPO }}/histoire-france-api:latest
 
       - name: Build & push Web image
         uses: docker/build-push-action@v5
@@ -49,8 +50,8 @@ jobs:
             VITE_API_URL=${{ secrets.VITE_API_URL }}
             VITE_WS_URL=${{ secrets.VITE_WS_URL }}
           tags: |
-            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-web:${{ steps.meta.outputs.VERSION }}
-            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-web:latest
+            ${{ env.REGISTRY }}/${{ steps.meta.outputs.REPO }}/histoire-france-web:${{ steps.meta.outputs.VERSION }}
+            ${{ env.REGISTRY }}/${{ steps.meta.outputs.REPO }}/histoire-france-web:latest
 
   deploy:
     name: Deploy on server
