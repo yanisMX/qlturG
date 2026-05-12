@@ -1,6 +1,6 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
-RUN npm install -g pnpm
+RUN npm install -g pnpm@10.33.0
 
 # Workspace manifests (depuis la racine du monorepo)
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
@@ -15,7 +15,7 @@ RUN pnpm --filter api build
 
 FROM node:20-alpine AS runner
 WORKDIR /app
-RUN npm install -g pnpm
+RUN npm install -g pnpm@10.33.0
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY apps/api/package.json ./apps/api/
