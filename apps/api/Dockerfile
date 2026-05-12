@@ -1,19 +1,29 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 RUN npm install -g pnpm
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile
-COPY . .
-RUN pnpm prisma:generate
-RUN pnpm build
+
+# Workspace manifests (depuis la racine du monorepo)
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY apps/api/package.json ./apps/api/
+
+RUN pnpm install --frozen-lockfile --filter api...
+
+COPY apps/api/ ./apps/api/
+
+RUN pnpm --filter api prisma:generate
+RUN pnpm --filter api build
 
 FROM node:20-alpine AS runner
 WORKDIR /app
 RUN npm install -g pnpm
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --prod --frozen-lockfile
-COPY --from=builder /app/dist ./dist
+
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY apps/api/package.json ./apps/api/
+RUN pnpm install --prod --frozen-lockfile --filter api...
+
+COPY --from=builder /app/apps/api/dist ./apps/api/dist
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
-COPY prisma ./prisma
+COPY apps/api/prisma ./apps/api/prisma
+
 EXPOSE 3001
-CMD ["node", "dist/main"]
+CMD ["node", "apps/api/dist/main"]
