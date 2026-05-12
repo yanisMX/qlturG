@@ -1,0 +1,162 @@
+[
+  {
+    "text": "En quelle année Louis VIII monte sur le trône ?",
+    "choices": ["1148", "1205", "1241", "1223"],
+    "answerIndex": 3,
+    "explanation": "Louis VIII est le fils de Philippe Auguste et d'Isabelle de Hainaut. Il s'illustre principalement au cours du règne de son père, en remportant notamment la victoire de La Roche-aux-Moines contre Jean sans Terre.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année la Terre Sainte est reprise par les Sarrasins, poussant Louis IX à lancer une croisade ?",
+    "choices": ["1173", "1248", "1213", "1323"],
+    "answerIndex": 1,
+    "explanation": "En 1248, la Terre Sainte est reprise par les infidèles : le sultan d'Égypte a repris Jérusalem qui avait été restituée aux occidentaux. Louis IX entreprend une expédition au cœur de l'Égypte.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année le roi Charles VI meurt ?",
+    "choices": ["1425", "1440", "1422", "1404"],
+    "answerIndex": 2,
+    "explanation": "En 1422, le roi Charles VI meurt. C'est une chance que le redoutable Henri V soit mort quelques mois auparavant. Son fils Henri VI est trop jeune pour régner.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année le connétable Richemont est victorieux à la bataille de Formigny ?",
+    "choices": ["1450", "1525", "1550", "1375"],
+    "answerIndex": 0,
+    "explanation": "Ayant regagné sa légitimité grâce à Jeanne d'Arc, Charles VII reprend l'offensive contre les Anglais. Le connétable Richemont remporte la victoire décisive de Formigny en 1450.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année la Guyenne est presque reconquise par les Français ?",
+    "choices": ["1425", "1432", "1475", "1450"],
+    "answerIndex": 3,
+    "explanation": "Avec la prise de Bordeaux en 1450, la Guyenne est presque reconquise par les Français, mais les exigences de Charles VII font regretter la tutelle anglaise.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année Philippe VI meurt ?",
+    "choices": ["1350", "1357", "1362", "1343"],
+    "answerIndex": 0,
+    "explanation": "Après la prise de Crécy, Édouard met le siège devant Calais. Philippe VI meurt en 1350, son fils Jean le Bon lui succède.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année Du Guesclin entre au service du roi Charles V ?",
+    "choices": ["1282", "1332", "1382", "1357"],
+    "answerIndex": 3,
+    "explanation": "En 1357, Du Guesclin est au service du roi Charles V. Il obtient sa première victoire à Cocherel en 1364.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année Charles VI prend en main les affaires du royaume ?",
+    "choices": ["1388", "1381", "1395", "1463"],
+    "answerIndex": 0,
+    "explanation": "Après la mort de Charles V, son fils Charles VI n'a que douze ans. Ce sont ses oncles qui gouvernent le royaume. En 1388, Charles VI prend enfin en main les affaires du royaume.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année Richard II est renversé par Henri de Lancastre ?",
+    "choices": ["1399", "1417", "1424", "1381"],
+    "answerIndex": 0,
+    "explanation": "Le roi d'Angleterre Richard II épouse la fille de Charles VI. En 1399, Richard II est renversé par Henri de Lancastre, c'est la fin des tentatives de paix franco-anglaises.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année Henri IV abjure le protestantisme et se convertit au catholicisme ?",
+    "choices": ["1568", "1611", "1593", "1618"],
+    "answerIndex": 2,
+    "explanation": "En 1593, Henri IV abjure le protestantisme et se convertit au catholicisme. Selon la tradition : « Paris vaut bien une messe ». En 1594, il entre triomphalement à Paris.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année Napoléon devient protecteur de la Confédération du Rhin ?",
+    "choices": ["1881", "1756", "1806", "1731"],
+    "answerIndex": 2,
+    "explanation": "En 1806, Napoléon devient protecteur de la Confédération du Rhin, regroupant les États allemands sous son influence, après avoir placé son frère Joseph comme roi de Naples.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année la première Constitution française est ratifiée ?",
+    "choices": ["1791", "1841", "1816", "1766"],
+    "answerIndex": 0,
+    "explanation": "La première Constitution française est ratifiée en 1791, instaurant une monarchie constitutionnelle qui limite les pouvoirs du roi.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année le régime de Pétain est de facto allié avec l'Allemagne lors de la guerre de Syrie contre les Alliés ?",
+    "choices": ["1939", "1940", "1941", "1943"],
+    "answerIndex": 2,
+    "explanation": "En 1941, le régime de Pétain est de facto allié avec les forces militaires allemandes lors de la guerre de Syrie contre les Alliés, révélant l'étendue de la collaboration.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE"
+  },
+  {
+    "text": "En quelle année Charles de Gaulle est détaché à l'état-major de Philippe Pétain ?",
+    "choices": ["1919", "1922", "1928", "1925"],
+    "answerIndex": 3,
+    "explanation": "En 1925, Charles de Gaulle est détaché à l'état-major de Philippe Pétain, commandant de l'armée française. Cette collaboration précoce contraste avec leur opposition en 1940.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE"
+  },
+  {
+    "text": "En quelle année un nouveau statut est accordé aux Algériens ?",
+    "choices": ["1944", "1947", "1951", "1956"],
+    "answerIndex": 1,
+    "explanation": "En 1947, un nouveau statut est accordé aux Algériens, mais il reste insuffisant aux yeux des nationalistes. Les inégalités profondes entre Européens et musulmans alimenteront la guerre d'Algérie.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "DIFFICILE"
+  },
+  {
+    "text": "En quelle année François Mitterrand est élu président de la République ?",
+    "choices": ["2016", "1974", "1981", "1988"],
+    "answerIndex": 2,
+    "explanation": "En 1981, François Mitterrand est élu président, battant Valéry Giscard d'Estaing et ramenant la gauche au pouvoir pour la première fois depuis la Quatrième République.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE"
+  },
+  {
+    "text": "En quelle année Jacques Chirac est élu président de la République ?",
+    "choices": ["1988", "1970", "1995", "2002"],
+    "answerIndex": 2,
+    "explanation": "Ayant succédé à François Mitterrand en 1995, Jacques Chirac est contraint de cohabiter avec Lionel Jospin comme Premier ministre. En 2002, il est réélu face à Jean-Marie Le Pen.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE"
+  },
+  {
+    "text": "En quelle année François Mitterrand est réélu président de la République face à Jacques Chirac ?",
+    "choices": ["1981", "1984", "1988", "1992"],
+    "answerIndex": 2,
+    "explanation": "En 1988, François Mitterrand est réélu face à Jacques Chirac. Son second mandat est marqué par l'engagement dans la guerre du Golfe et l'adoption du traité de Maastricht.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN"
+  },
+  {
+    "text": "En quelle année François Mitterrand est nommé ministre de l'Intérieur dans le gouvernement Mendès France ?",
+    "choices": ["1951", "1954", "1957", "1960"],
+    "answerIndex": 1,
+    "explanation": "En 1954, François Mitterrand est nommé ministre de l'Intérieur dans le gouvernement Mendès France, qui met fin à la guerre d'Indochine par les accords de Genève.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "DIFFICILE"
+  },
+  {
+    "text": "En quelle année la CEE est intégrée dans l'Union européenne par le traité de Maastricht ?",
+    "choices": ["1989", "1992", "1995", "1999"],
+    "answerIndex": 1,
+    "explanation": "Avec le traité de Maastricht signé en 1992, la CEE est intégrée dans l'Union européenne. Elle est renommée Communauté européenne le 1er novembre 1993.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE"
+  }
+]
