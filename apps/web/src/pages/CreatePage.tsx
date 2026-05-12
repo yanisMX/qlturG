@@ -9,7 +9,7 @@ import PageTransition from '../components/PageTransition';
 import type { GameMode } from '../store/gameStore';
 
 const schema = z.object({
-  hostNickname: z.string().min(2, 'Minimum 2 joueurs').max(20),
+  hostNickname: z.string().min(1, 'Veuillez renseigner votre pseudo').min(2, 'Pseudo de 2 caractères minimum').max(20),
   difficulty: z.enum(['FACILE', 'MOYEN', 'DIFFICILE', 'VARIE']),
   totalQuestions: z.number().min(10).max(30),
   speedBonus: z.boolean(),
