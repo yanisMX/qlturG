@@ -132,28 +132,27 @@ export default function LoginPage() {
           transition={{ duration: duration.slow }}
           className="w-full max-w-md"
         >
-          <Link to="/" className="text-navy-600 text-sm font-medium mb-6 inline-block hover:underline">
+          <Link to="/" className="text-sm font-medium mb-6 inline-block transition-colors duration-base" style={{ color: '#7A7F9B' }}>
             ← Retour
           </Link>
 
           <div className="card">
             <div className="text-center mb-6">
-              <h1 className="text-2xl font-bold text-navy-800">Bienvenue</h1>
-              <p className="text-slate-500 text-sm mt-1">Connectez-vous pour accéder à votre profil</p>
+              <h1 className="text-2xl font-bold" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>Bienvenue au QG</h1>
+              <p className="text-sm mt-1" style={{ color: '#7A7F9B' }}>Connectez-vous pour accéder à votre profil</p>
             </div>
 
             {/* Tabs */}
-            <div className="flex gap-1 bg-slate-100/80 p-1 rounded-xl mb-6">
+            <div className="flex gap-1 p-1 rounded-xl mb-6" style={{ backgroundColor: 'rgba(242,238,227,0.06)' }}>
               {(['login', 'register'] as Tab[]).map((t) => (
                 <button
                   key={t}
                   onClick={() => { setTab(t); setError(''); }}
-                  className={[
-                    'flex-1 py-2 text-sm font-semibold rounded-lg transition-all duration-base',
-                    tab === t
-                      ? 'bg-white shadow-card text-navy-700'
-                      : 'text-slate-500 hover:text-slate-700',
-                  ].join(' ')}
+                  className="flex-1 py-2 text-sm font-semibold rounded-lg transition-all duration-base"
+                  style={tab === t
+                    ? { backgroundColor: '#1A2148', color: '#F2EEE3', boxShadow: '0 1px 3px rgba(0,0,0,0.3)' }
+                    : { color: '#7A7F9B' }
+                  }
                 >
                   {t === 'login' ? 'Connexion' : 'Créer un compte'}
                 </button>
@@ -170,17 +169,16 @@ export default function LoginPage() {
                     onClick={() => isConfigured && handleOAuth(p.id)}
                     disabled={!isConfigured}
                     title={!isConfigured ? `${p.label} OAuth non configuré` : undefined}
-                    className={[
-                      'w-full flex items-center gap-3 px-4 py-3 rounded-xl border-2 font-medium transition-all duration-base',
-                      isConfigured
-                        ? 'border-slate-200 bg-white/80 hover:border-slate-300 hover:shadow-card-hover hover:-translate-y-0.5 cursor-pointer'
-                        : 'border-slate-100 bg-slate-50/50 text-slate-400 cursor-not-allowed opacity-60',
-                    ].join(' ')}
+                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-all duration-base"
+                    style={isConfigured
+                      ? { border: '1px solid rgba(242,238,227,0.14)', backgroundColor: 'rgba(242,238,227,0.04)', color: '#F2EEE3', cursor: 'pointer' }
+                      : { border: '1px solid rgba(242,238,227,0.06)', backgroundColor: 'rgba(242,238,227,0.02)', color: '#7A7F9B', cursor: 'not-allowed', opacity: 0.5 }
+                    }
                   >
                     {p.icon}
                     <span>Continuer avec {p.label}</span>
                     {!isConfigured && (
-                      <span className="ml-auto text-xs text-slate-400">Non configuré</span>
+                      <span className="ml-auto text-xs font-mono" style={{ color: '#7A7F9B' }}>Non configuré</span>
                     )}
                   </button>
                 );
@@ -190,14 +188,14 @@ export default function LoginPage() {
             {tab === 'register' && (
               <>
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="flex-1 h-px bg-slate-200" />
-                  <span className="text-xs text-slate-400 font-medium">ou créer un compte local</span>
-                  <div className="flex-1 h-px bg-slate-200" />
+                  <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(242,238,227,0.10)' }} />
+                  <span className="text-xs font-medium font-mono" style={{ color: '#7A7F9B' }}>ou créer un compte local</span>
+                  <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(242,238,227,0.10)' }} />
                 </div>
 
                 <form onSubmit={handleRegister} className="space-y-4">
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Pseudo</label>
+                    <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>Pseudo</label>
                     <input
                       className="input-field"
                       placeholder="VotreNom_42"
@@ -205,11 +203,11 @@ export default function LoginPage() {
                       onChange={(e) => setForm({ ...form, pseudo: e.target.value })}
                       maxLength={20}
                     />
-                    <p className="text-xs text-slate-400 mt-1">3–20 caractères, lettres / chiffres / - / _</p>
+                    <p className="text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>3–20 caractères, lettres / chiffres / - / _</p>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email</label>
+                    <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>Email</label>
                     <input
                       type="email"
                       className="input-field"
@@ -220,20 +218,20 @@ export default function LoginPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">Avatar</label>
+                    <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>Avatar</label>
                     <div className="flex gap-2 flex-wrap">
                       {PRESET_COLORS.map((color, i) => (
                         <button
                           key={i}
                           type="button"
                           onClick={() => setForm({ ...form, avatarPreset: i })}
-                          className={[
-                            'w-9 h-9 rounded-full transition-all duration-fast',
-                            form.avatarPreset === i
-                              ? 'ring-2 ring-offset-2 ring-navy-500 scale-110'
-                              : 'hover:scale-105',
-                          ].join(' ')}
-                          style={{ backgroundColor: color }}
+                          className="w-9 h-9 rounded-full transition-all duration-fast"
+                          style={{
+                            backgroundColor: color,
+                            outline: form.avatarPreset === i ? `2px solid #F5C76B` : 'none',
+                            outlineOffset: '2px',
+                            transform: form.avatarPreset === i ? 'scale(1.10)' : 'scale(1)',
+                          }}
                           aria-label={`Couleur ${i + 1}`}
                         />
                       ))}
@@ -241,13 +239,13 @@ export default function LoginPage() {
                   </div>
 
                   {error && (
-                    <p className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-lg px-3 py-2">
+                    <p className="text-sm rounded-lg px-3 py-2" style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}>
                       {error}
                     </p>
                   )}
 
                   <button type="submit" disabled={loading} className="btn-primary w-full">
-                    {loading ? 'Création…' : 'Créer mon compte'}
+                    {loading ? 'Création en cours…' : 'Créer mon compte'}
                   </button>
                 </form>
               </>

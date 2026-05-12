@@ -97,17 +97,18 @@ export default function CreatePage() {
         >
           <Link
             to="/"
-            className="text-navy-600 text-sm font-medium mb-6 inline-block hover:underline"
+            className="text-sm font-medium mb-6 inline-block transition-colors duration-base"
+            style={{ color: '#7A7F9B' }}
           >
             ← Retour
           </Link>
 
           <div className="card">
-            <h1 className="text-2xl font-bold text-navy-800 mb-6">Créer une partie</h1>
+            <h1 className="text-2xl font-bold mb-6" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>Créer une partie</h1>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
                   Votre pseudo
                 </label>
                 <input
@@ -120,7 +121,7 @@ export default function CreatePage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-2">
+                <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>
                   Difficulté
                 </label>
                 <div className="grid grid-cols-3 gap-2">
@@ -131,12 +132,11 @@ export default function CreatePage() {
                         key={d}
                         type="button"
                         onClick={() => setForm({ ...form, difficulty: d })}
-                        className={[
-                          'py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base',
-                          isSelected
-                            ? 'border-navy-600 bg-navy-50 text-navy-700 shadow-card'
-                            : 'border-slate-200 bg-white/60 text-slate-500 hover:border-slate-300',
-                        ].join(' ')}
+                        className="py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base"
+                        style={isSelected
+                          ? { borderColor: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.12)', color: '#F5C76B' }
+                          : { borderColor: 'rgba(242,238,227,0.10)', backgroundColor: 'transparent', color: '#7A7F9B' }
+                        }
                       >
                         {difficultyConfig[d].label}
                       </button>
@@ -146,9 +146,9 @@ export default function CreatePage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
                   Nombre de questions :{' '}
-                  <span className="text-navy-700 font-bold">{form.totalQuestions}</span>
+                  <span style={{ color: '#F5C76B', fontWeight: 700 }}>{form.totalQuestions}</span>
                 </label>
                 <input
                   type="range"
@@ -156,46 +156,42 @@ export default function CreatePage() {
                   max={20}
                   value={form.totalQuestions}
                   onChange={(e) => setForm({ ...form, totalQuestions: Number(e.target.value) })}
-                  className="w-full accent-navy-700"
+                  className="w-full accent-accent"
                 />
-                <div className="flex justify-between text-xs text-slate-400 mt-1">
+                <div className="flex justify-between text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
                   <span>5</span>
                   <span>20</span>
                 </div>
               </div>
 
-              <div className="flex items-center justify-between py-3 px-4 rounded-xl border border-slate-200 bg-white/50">
+              <div className="flex items-center justify-between py-3 px-4 rounded-xl" style={{ border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
                 <div>
-                  <p className="text-sm font-semibold text-slate-700">Bonus de rapidité</p>
-                  <p className="text-xs text-slate-500">Plus vite = plus de points</p>
+                  <p className="text-sm font-semibold" style={{ color: '#F2EEE3' }}>Bonus de rapidité</p>
+                  <p className="text-xs" style={{ color: '#7A7F9B' }}>Plus vite = plus de points</p>
                 </div>
                 <button
                   type="button"
                   onClick={() => setForm({ ...form, speedBonus: !form.speedBonus })}
-                  className={[
-                    'relative w-11 h-6 rounded-full transition-colors duration-base',
-                    form.speedBonus ? 'bg-navy-700' : 'bg-slate-300',
-                  ].join(' ')}
+                  className="relative w-11 h-6 rounded-full transition-colors duration-base"
+                  style={{ backgroundColor: form.speedBonus ? '#F5C76B' : 'rgba(242,238,227,0.12)' }}
                   aria-checked={form.speedBonus}
                   role="switch"
                 >
                   <span
-                    className={[
-                      'absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform duration-base',
-                      form.speedBonus ? 'translate-x-5' : '',
-                    ].join(' ')}
+                    className="absolute top-0.5 left-0.5 w-5 h-5 rounded-full shadow transition-transform duration-base"
+                    style={{ backgroundColor: form.speedBonus ? '#0B1026' : '#7A7F9B', transform: form.speedBonus ? 'translateX(20px)' : 'translateX(0)' }}
                   />
                 </button>
               </div>
 
               {error && (
-                <p className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-lg px-3 py-2">
+                <p className="text-sm rounded-lg px-3 py-2" style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}>
                   {error}
                 </p>
               )}
 
               <button type="submit" disabled={loading} className="btn-primary w-full">
-                {loading ? 'Création...' : 'Créer la partie'}
+                {loading ? 'Napoléon range son chapeau…' : 'Créer la partie'}
               </button>
             </form>
           </div>

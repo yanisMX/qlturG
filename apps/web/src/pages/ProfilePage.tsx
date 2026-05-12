@@ -121,7 +121,7 @@ export default function ProfilePage() {
           transition={{ duration: duration.slow }}
           className="w-full max-w-md space-y-4"
         >
-          <Link to="/" className="text-navy-600 text-sm font-medium mb-2 inline-block hover:underline">
+          <Link to="/" className="text-sm font-medium mb-2 inline-block transition-colors duration-base" style={{ color: '#7A7F9B' }}>
             ← Retour
           </Link>
 
@@ -132,7 +132,8 @@ export default function ProfilePage() {
               <button
                 onClick={() => fileInputRef.current?.click()}
                 disabled={uploadLoading}
-                className="absolute -bottom-1 -right-1 w-7 h-7 bg-navy-600 hover:bg-navy-700 text-white rounded-full flex items-center justify-center shadow-card-hover transition-colors text-xs"
+                className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full flex items-center justify-center text-xs transition-colors"
+                style={{ backgroundColor: '#F5C76B', color: '#0B1026' }}
                 title="Changer l'avatar"
               >
                 {uploadLoading ? '…' : '✎'}
@@ -146,10 +147,10 @@ export default function ProfilePage() {
               />
             </div>
             <div className="flex-1 min-w-0">
-              <h1 className="text-xl font-bold text-navy-800 truncate">{user.pseudo}</h1>
-              <p className="text-sm text-slate-500 truncate">{user.email}</p>
+              <h1 className="text-xl font-bold truncate" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>{user.pseudo}</h1>
+              <p className="text-sm truncate" style={{ color: '#7A7F9B' }}>{user.email}</p>
               {user.oauthProvider && (
-                <span className="text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full capitalize">
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full capitalize font-mono" style={{ backgroundColor: 'rgba(245,199,107,0.12)', color: '#F5C76B', border: '1px solid rgba(245,199,107,0.3)' }}>
                   {user.oauthProvider}
                 </span>
               )}
@@ -158,13 +159,13 @@ export default function ProfilePage() {
 
           {/* Edit form */}
           <div className="card">
-            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-5">
+            <h2 className="text-xs font-bold uppercase tracking-wider mb-5 font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.14em' }}>
               Modifier le profil
             </h2>
 
             <form onSubmit={handleSaveProfile} className="space-y-4">
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-1.5">Pseudo</label>
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>Pseudo</label>
                 <input
                   className="input-field"
                   value={form.pseudo}
@@ -174,7 +175,7 @@ export default function ProfilePage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-1.5">Email</label>
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>Email</label>
                 <input
                   type="email"
                   className="input-field"
@@ -185,7 +186,7 @@ export default function ProfilePage() {
 
               {/* Avatar preset picker */}
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-2">
+                <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>
                   Couleur d'avatar
                 </label>
                 <div className="flex gap-2 flex-wrap">
@@ -194,18 +195,18 @@ export default function ProfilePage() {
                       key={i}
                       type="button"
                       onClick={() => setSelectedPreset(i)}
-                      className={[
-                        'w-9 h-9 rounded-full transition-all duration-fast',
-                        selectedPreset === i
-                          ? 'ring-2 ring-offset-2 ring-navy-500 scale-110'
-                          : 'hover:scale-105',
-                      ].join(' ')}
-                      style={{ backgroundColor: color }}
+                      className="w-9 h-9 rounded-full transition-all duration-fast"
+                      style={{
+                        backgroundColor: color,
+                        outline: selectedPreset === i ? '2px solid #F5C76B' : 'none',
+                        outlineOffset: '2px',
+                        transform: selectedPreset === i ? 'scale(1.10)' : 'scale(1)',
+                      }}
                       aria-label={`Couleur ${i + 1}`}
                     />
                   ))}
                 </div>
-                <p className="text-xs text-slate-400 mt-1.5">
+                <p className="text-xs mt-1.5 font-mono" style={{ color: '#7A7F9B' }}>
                   Ou uploadez une image via le bouton ✎ ci-dessus (jpg, png, webp — max 2 Mo)
                 </p>
               </div>
@@ -216,7 +217,8 @@ export default function ProfilePage() {
                     initial={{ opacity: 0, y: -4 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-lg px-3 py-2"
+                    className="text-sm rounded-lg px-3 py-2"
+                    style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}
                   >
                     {error}
                   </motion.p>
@@ -226,7 +228,8 @@ export default function ProfilePage() {
                     initial={{ opacity: 0, y: -4 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg px-3 py-2"
+                    className="text-sm rounded-lg px-3 py-2"
+                    style={{ color: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.10)', border: '1px solid rgba(245,199,107,0.25)' }}
                   >
                     {success}
                   </motion.p>
@@ -239,14 +242,15 @@ export default function ProfilePage() {
             </form>
           </div>
 
-          {/* Danger zone */}
-          <div className="card border-rose-100">
-            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-3">
+          {/* Session */}
+          <div className="card" style={{ borderColor: 'rgba(255,107,91,0.2)' }}>
+            <h2 className="text-xs font-bold uppercase tracking-wider mb-3 font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.14em' }}>
               Session
             </h2>
             <button
               onClick={() => { logout(); navigate('/'); }}
-              className="btn-danger w-full"
+              className="w-full py-3 rounded-xl font-semibold text-sm transition-all duration-base"
+              style={{ color: '#FF6B5B', border: '1px solid rgba(255,107,91,0.3)', backgroundColor: 'rgba(255,107,91,0.06)' }}
             >
               Se déconnecter
             </button>

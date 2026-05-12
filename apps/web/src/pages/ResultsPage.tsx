@@ -5,10 +5,43 @@ import Podium from '../components/Podium';
 import PageTransition from '../components/PageTransition';
 import { duration } from '../styles/tokens';
 
+const CONFETTI_PARTICLES = [
+  { tx: '-60px', ty: '70px', color: '#F5C76B', delay: '0s' },
+  { tx: '65px', ty: '80px', color: '#FF6B5B', delay: '0.1s' },
+  { tx: '-30px', ty: '100px', color: '#F5C76B', delay: '0.18s' },
+  { tx: '85px', ty: '55px', color: '#FF6B5B', delay: '0.12s' },
+  { tx: '-8px', ty: '120px', color: '#F5C76B', delay: '0.24s' },
+  { tx: '-80px', ty: '90px', color: '#FF6B5B', delay: '0.06s' },
+  { tx: '48px', ty: '110px', color: '#F5C76B', delay: '0.28s' },
+  { tx: '-50px', ty: '60px', color: '#FF6B5B', delay: '0.34s' },
+] as const;
+
+function ConfettiBurst() {
+  return (
+    <div className="relative w-0 h-0 pointer-events-none" aria-hidden>
+      {CONFETTI_PARTICLES.map((p, i) => (
+        <span
+          key={i}
+          className="absolute w-1.5 h-1.5 rounded-sm"
+          style={{
+            left: '50%',
+            top: '50%',
+            backgroundColor: p.color,
+            // @ts-ignore CSS custom properties
+            '--tx': p.tx,
+            '--ty': p.ty,
+            animation: `confettiFall 1.4s cubic-bezier(.2,.7,.2,1) ${p.delay} forwards`,
+          } as React.CSSProperties}
+        />
+      ))}
+    </div>
+  );
+}
+
 export default function ResultsPage() {
   const { ranking, myPlayerId, reset } = useGameStore();
-
   const myEntry = ranking.find((r) => r.playerId === myPlayerId);
+  const isWinner = myEntry?.rank === 1;
 
   return (
     <PageTransition>
@@ -23,24 +56,19 @@ export default function ResultsPage() {
           >
             <h1
               className="text-4xl font-extrabold mb-2"
-              style={{
-                background: 'linear-gradient(135deg, #4338ca 0%, #7c3aed 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
+              style={{ fontFamily: 'Space Grotesk, system-ui, sans-serif', color: '#F2EEE3', letterSpacing: '-0.02em' }}
             >
-              Résultats finaux
+              Résultats <span style={{ color: '#F5C76B' }}>finaux</span>
             </h1>
             {myEntry && (
-              <p className="text-slate-500">
-                Vous avez terminé{' '}
-                <span className="font-bold text-navy-700">
+              <p style={{ color: '#B4B7CC' }}>
+                Tu as terminé{' '}
+                <span style={{ fontWeight: 700, color: '#F5C76B' }}>
                   {myEntry.rank === 1 ? '1er' : myEntry.rank === 2 ? '2e' : `${myEntry.rank}e`}
                 </span>{' '}
                 avec{' '}
-                <span className="font-bold text-navy-700">
-                  {myEntry.score.toLocaleString()} points
+                <span style={{ fontWeight: 700, color: '#F5C76B' }}>
+                  {myEntry.score.toLocaleString()} pts
                 </span>
               </p>
             )}
@@ -52,11 +80,17 @@ export default function ResultsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: duration.slow, delay: 0.1 }}
-              className="card pb-8"
+              className="card pb-8 relative overflow-visible"
             >
-              <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-6 text-center">
+              {/* Confetti on winner */}
+              {isWinner && (
+                <div className="absolute top-8 left-1/2 -translate-x-1/2">
+                  <ConfettiBurst />
+                </div>
+              )}
+              <p className="text-xs font-bold uppercase tracking-wider mb-6 text-center font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.16em' }}>
                 Podium
-              </h2>
+              </p>
               <Podium ranking={ranking} />
             </motion.div>
           )}
@@ -69,9 +103,9 @@ export default function ResultsPage() {
               transition={{ duration: duration.slow, delay: 0.25 }}
               className="card"
             >
-              <h2 className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-4">
+              <p className="text-xs font-bold uppercase tracking-wider mb-4 font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.16em' }}>
                 Classement complet
-              </h2>
+              </p>
               <div className="space-y-2">
                 {ranking.slice(3).map((entry) => (
                   <motion.div
@@ -79,18 +113,17 @@ export default function ResultsPage() {
                     initial={{ opacity: 0, x: -8 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: (entry.rank - 3) * 0.06 + 0.3, duration: duration.base }}
-                    className={[
-                      'flex items-center gap-3 px-4 py-3 rounded-xl border',
-                      entry.playerId === myPlayerId
-                        ? 'bg-navy-50 border-l-2 border-l-navy-500 border-navy-200 font-semibold'
-                        : 'bg-white/60 border-slate-100',
-                    ].join(' ')}
+                    className="flex items-center gap-3 px-4 py-3 rounded-xl border"
+                    style={entry.playerId === myPlayerId
+                      ? { backgroundColor: 'rgba(245,199,107,0.08)', borderColor: 'rgba(245,199,107,0.3)', borderLeftWidth: 2, borderLeftColor: '#F5C76B', fontWeight: 600 }
+                      : { backgroundColor: 'rgba(255,255,255,0.03)', borderColor: 'rgba(242,238,227,0.07)' }
+                    }
                   >
-                    <span className="text-sm font-bold text-slate-400 w-5 text-center">
+                    <span className="text-sm font-bold w-5 text-center font-mono" style={{ color: '#7A7F9B' }}>
                       {entry.rank}
                     </span>
-                    <span className="flex-1 truncate text-slate-800">{entry.nickname}</span>
-                    <span className="text-sm font-bold text-navy-700 tabular-nums">
+                    <span className="flex-1 truncate" style={{ color: '#F2EEE3' }}>{entry.nickname}</span>
+                    <span className="text-sm font-bold tabular-nums font-mono" style={{ color: '#F5C76B' }}>
                       {entry.score.toLocaleString()} pts
                     </span>
                   </motion.div>
@@ -113,6 +146,11 @@ export default function ResultsPage() {
               Accueil
             </Link>
           </motion.div>
+
+          {/* Footer quote */}
+          <p className="text-center text-xs font-mono pb-4" style={{ color: '#7A7F9B', opacity: 0.6 }}>
+            « L'Histoire est un éternel recommencement. »
+          </p>
         </div>
       </div>
     </PageTransition>

@@ -33,29 +33,26 @@ export default function Scoreboard({
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: duration.base }}
-              className={[
-                'flex items-center gap-3 px-4 py-3 rounded-xl border transition-colors',
-                // bg-navy-50 kept intentionally — navy is now remapped to indigo (test compat)
+              className="flex items-center gap-3 px-4 py-3 rounded-xl border transition-colors"
+              style={
                 isMe
-                  ? 'bg-navy-50 border-l-2 border-l-navy-500 border-navy-200 font-semibold'
-                  : 'bg-white/60 border-slate-100',
-              ].join(' ')}
+                  ? { backgroundColor: 'rgba(245,199,107,0.08)', borderColor: 'rgba(245,199,107,0.35)', borderLeftWidth: 2, borderLeftColor: '#F5C76B', fontWeight: 600 }
+                  : { backgroundColor: 'rgba(255,255,255,0.03)', borderColor: 'rgba(242,238,227,0.08)' }
+              }
             >
               {/* Rank / crown */}
-              <span className="text-sm font-bold text-slate-400 w-5 text-center shrink-0">
+              <span className="text-sm font-bold w-5 text-center shrink-0 font-mono" style={{ color: '#7A7F9B' }}>
                 {isFirst ? (
-                  <span className="text-amber-400" aria-label="1er">
-                    ★
-                  </span>
+                  <span style={{ color: '#F5C76B' }} aria-label="1er">★</span>
                 ) : (
                   idx + 1
                 )}
               </span>
 
-              <span className="flex-1 truncate text-slate-800">{player.nickname}</span>
+              <span className="flex-1 truncate" style={{ color: '#F2EEE3' }}>{player.nickname}</span>
 
               {!compact && (
-                <span className="text-sm font-bold text-navy-700 tabular-nums">
+                <span className="text-sm font-bold tabular-nums font-mono" style={{ color: '#F5C76B' }}>
                   {player.score.toLocaleString()}
                 </span>
               )}
@@ -66,7 +63,8 @@ export default function Scoreboard({
                   initial={{ opacity: 0, scale: 0.7, y: 4 }}
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full shrink-0"
+                  className="text-xs font-bold px-1.5 py-0.5 rounded-full shrink-0 font-mono"
+                  style={{ color: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.15)', border: '1px solid rgba(245,199,107,0.3)' }}
                 >
                   +{delta.toLocaleString()}
                 </motion.span>

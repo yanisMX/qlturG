@@ -19,7 +19,7 @@ export default function AuthCallbackPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <p className="text-slate-400 animate-pulse">Connexion en cours…</p>
+      <p className="animate-pulse font-mono" style={{ color: '#7A7F9B' }}>Connexion au QG en cours…</p>
     </div>
   );
 }

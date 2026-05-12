@@ -65,14 +65,14 @@ export default function PlayPage() {
   if (!currentQuestion) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-slate-400 animate-pulse">Chargement de la question…</p>
+        <p className="animate-pulse font-mono" style={{ color: '#7A7F9B' }}>On dépoussière les archives…</p>
       </div>
     );
   }
 
   const scoreboardPanel = (compact: boolean) => (
     <div className="card">
-      <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-3">
+      <h3 className="text-xs font-bold uppercase tracking-wider mb-3 font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.14em' }}>
         Classement
       </h3>
       <Scoreboard
@@ -93,13 +93,14 @@ export default function PlayPage() {
             <div className="flex-1 min-w-0 space-y-4">
               {/* Header row */}
               <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold text-slate-500 bg-white/70 px-3 py-1 rounded-full border border-slate-200/80">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full font-mono" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
                   Question {currentQuestion.index + 1} / {currentQuestion.total}
                 </span>
                 {isHost && reveal && (
                   <motion.button
                     whileTap={{ scale: 0.97 }}
-                    className="text-xs font-semibold text-navy-600 border border-navy-200 rounded-lg px-3 py-1.5 bg-white/70 hover:bg-navy-50 transition-colors"
+                    className="text-xs font-semibold rounded-lg px-3 py-1.5 transition-colors"
+                    style={{ color: '#F5C76B', border: '1px solid rgba(245,199,107,0.3)', backgroundColor: 'rgba(245,199,107,0.08)' }}
                     onClick={() => {
                       const socket = getSocket();
                       socket.emit('game:next');
@@ -151,7 +152,8 @@ export default function PlayPage() {
                         <motion.p
                           initial={{ opacity: 0, y: 4 }}
                           animate={{ opacity: 1, y: 0 }}
-                          className="mt-4 text-center text-sm text-slate-500"
+                          className="mt-4 text-center text-sm font-mono"
+                          style={{ color: '#7A7F9B' }}
                         >
                           Réponse enregistrée — en attente des autres joueurs…
                         </motion.p>

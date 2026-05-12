@@ -4,26 +4,35 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        sans: ['Geist', 'system-ui', 'sans-serif'],
+        mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        // navy remapped to indigo — all existing navy-* classes now render as indigo
+        // Qltur G — Indigo Nuit palette
+        bg: { DEFAULT: '#0B1026', 2: '#131A3A' },
+        surface: '#1A2148',
+        ink: { DEFAULT: '#F2EEE3', dim: '#B4B7CC', mute: '#7A7F9B' },
+        accent: '#F5C76B',
+        coral: '#FF6B5B',
+        // navy remapped to brand gold for backward compat
         navy: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
+          50: '#1A2148',
+          100: '#131A3A',
+          200: 'rgba(242,238,227,0.10)',
+          500: '#F5C76B',
+          600: '#e6b54f',
+          700: '#F5C76B',
+          800: '#d9a43a',
+          900: '#c8893a',
         },
         rouge: {
-          500: '#f43f5e',
-          600: '#e11d48',
+          500: '#FF6B5B',
+          600: '#e85a4a',
         },
         or: {
-          400: '#fbbf24',
-          500: '#f59e0b',
+          400: '#F5C76B',
+          500: '#e6b54f',
         },
       },
       transitionDuration: {
@@ -39,6 +48,11 @@ export default {
         'slide-in': 'slideIn 0.3s ease-out',
         'fade-in': 'fadeIn 0.2s ease-out',
         progress: 'progress linear',
+        'timer-pulse': 'timerPulse 1s ease-in-out infinite',
+        'avatar-pop': 'avatarPop 280ms cubic-bezier(.2,.7,.2,1) forwards',
+        'mascot-float': 'mascotFloat 5s ease-in-out infinite',
+        'ticker-scroll': 'tickerScroll 28s linear infinite',
+        'confetti-fall': 'confettiFall 1.4s cubic-bezier(.2,.7,.2,1) forwards',
       },
       keyframes: {
         shake: {
@@ -69,13 +83,37 @@ export default {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        timerPulse: {
+          '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(255,107,91,0.45)' },
+          '50%': { transform: 'scale(1.07)', boxShadow: '0 0 0 10px rgba(255,107,91,0)' },
+        },
+        avatarPop: {
+          '0%': { transform: 'scale(0.5)', opacity: '0' },
+          '70%': { transform: 'scale(1.12)', opacity: '1' },
+          '85%': { transform: 'scale(0.96)' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        mascotFloat: {
+          '0%, 100%': { transform: 'translateY(0) rotate(-2deg)' },
+          '50%': { transform: 'translateY(-4px) rotate(2deg)' },
+        },
+        tickerScroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        confettiFall: {
+          '0%': { transform: 'translate(-50%,-50%) translate(0,-30px) rotate(0deg)', opacity: '0' },
+          '15%': { opacity: '1' },
+          '100%': { transform: 'translate(-50%,-50%) translate(var(--tx),var(--ty)) rotate(540deg)', opacity: '0' },
+        },
       },
       boxShadow: {
-        card: '0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07)',
-        'card-hover':
-          '0 4px 12px -2px rgb(0 0 0 / 0.12), 0 2px 6px -2px rgb(0 0 0 / 0.08)',
-        'glow-success': '0 0 0 3px rgba(16, 185, 129, 0.25)',
-        'glow-error': '0 0 0 3px rgba(244, 63, 94, 0.2)',
+        card: '0 2px 8px 0 rgb(0 0 0 / 0.35)',
+        'card-hover': '0 4px 20px -2px rgb(0 0 0 / 0.5)',
+        'glow-accent': '0 0 0 3px rgba(245,199,107,0.3)',
+        'glow-coral': '0 0 0 3px rgba(255,107,91,0.3)',
+        'glow-success': '0 0 0 3px rgba(245,199,107,0.25)',
+        'glow-error': '0 0 0 3px rgba(255,107,91,0.25)',
       },
     },
   },

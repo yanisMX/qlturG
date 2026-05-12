@@ -7,17 +7,23 @@ export const duration = {
   slow: 0.4,    // reveals, page entrances
 } as const;
 
+// Qltur G — Indigo Nuit palette
 export const colors = {
-  primary: '#4338ca',       // indigo-700 / navy-700
-  primaryLight: '#eef2ff',  // indigo-50 / navy-50
-  accent: '#8b5cf6',        // violet-500
-  cyan: '#22d3ee',          // cyan-400
-  success: '#10b981',       // emerald-500
-  error: '#f43f5e',         // rose-500
-  gold: '#fbbf24',          // amber-400 / or-400
+  bg: '#0B1026',
+  bg2: '#131A3A',
+  surface: '#1A2148',
+  ink: '#F2EEE3',
+  inkDim: '#B4B7CC',
+  inkMute: '#7A7F9B',
+  accent: '#F5C76B',   // gold — CTA, "G", podium
+  coral: '#FF6B5B',    // negative feedback, errors
+  line: 'rgba(242, 238, 227, 0.10)',
+  lineHi: 'rgba(242, 238, 227, 0.22)',
 } as const;
 
 export const shadow = {
-  card: '0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07)',
-  cardHover: '0 4px 12px -2px rgb(0 0 0 / 0.12), 0 2px 6px -2px rgb(0 0 0 / 0.08)',
+  card: '0 2px 8px 0 rgb(0 0 0 / 0.35)',
+  cardHover: '0 4px 20px -2px rgb(0 0 0 / 0.5)',
+  glowAccent: '0 0 0 3px rgba(245, 199, 107, 0.25)',
+  glowCoral: '0 0 0 3px rgba(255, 107, 91, 0.25)',
 } as const;

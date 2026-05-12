@@ -81,21 +81,22 @@ export default function JoinPage() {
         >
           <Link
             to="/"
-            className="text-navy-600 text-sm font-medium mb-6 inline-block hover:underline"
+            className="text-sm font-medium mb-6 inline-block transition-colors duration-base"
+            style={{ color: '#7A7F9B' }}
           >
             ← Retour
           </Link>
 
           <div className="card">
-            <h1 className="text-2xl font-bold text-navy-800 mb-6">Rejoindre une partie</h1>
+            <h1 className="text-2xl font-bold mb-6" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>Rejoindre une partie</h1>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-1.5">
-                  Code de la partie
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
+                  Code du QG
                 </label>
                 <input
-                  className="input-field uppercase tracking-widest text-xl font-bold"
+                  className="input-field uppercase tracking-widest text-xl font-bold font-mono"
                   placeholder="A3F9KM"
                   value={form.code}
                   onChange={(e) =>
@@ -106,7 +107,7 @@ export default function JoinPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-1.5">
+                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
                   Votre pseudo
                 </label>
                 <input
@@ -119,13 +120,13 @@ export default function JoinPage() {
               </div>
 
               {error && (
-                <p className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-lg px-3 py-2">
+                <p className="text-sm rounded-lg px-3 py-2" style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}>
                   {error}
                 </p>
               )}
 
               <button type="submit" disabled={loading} className="btn-primary w-full">
-                {loading ? 'Connexion...' : 'Rejoindre'}
+                {loading ? 'Connexion au QG…' : 'Rejoindre'}
               </button>
             </form>
           </div>

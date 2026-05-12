@@ -19,7 +19,14 @@ import { LinkedInStrategy } from './strategies/linkedin.strategy';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, JwtStrategy, GoogleStrategy, MicrosoftStrategy, LinkedInStrategy],
+  providers: [
+    AuthService,
+    JwtStrategy,
+    // OAuth strategies only registered when their credentials are configured
+    ...(process.env.GOOGLE_CLIENT_ID ? [GoogleStrategy] : []),
+    ...(process.env.MICROSOFT_CLIENT_ID ? [MicrosoftStrategy] : []),
+    ...(process.env.LINKEDIN_CLIENT_ID ? [LinkedInStrategy] : []),
+  ],
   exports: [AuthService, JwtModule],
 })
 export class AuthModule {}

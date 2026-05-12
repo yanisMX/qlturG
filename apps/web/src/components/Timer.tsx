@@ -1,11 +1,12 @@
 import { useEffect, useState, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { duration } from '../styles/tokens';
 
 interface TimerProps {
   endsAt: string;
   onExpire?: () => void;
 }
+
+const RADIUS = 26;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
 export default function Timer({ endsAt, onExpire }: TimerProps) {
   const [remaining, setRemaining] = useState(10);
@@ -32,36 +33,43 @@ export default function Timer({ endsAt, onExpire }: TimerProps) {
     return () => clearInterval(id);
   }, [endsAt, onExpire]);
 
-  const pct = (remaining / 10) * 100;
-
-  const barColor =
-    remaining > 5
-      ? 'bg-emerald-500'
-      : remaining > 2
-        ? 'bg-amber-400'
-        : 'bg-rose-500';
-
-  const textColor =
-    remaining <= 2 ? 'text-rose-500' : remaining <= 5 ? 'text-amber-500' : 'text-slate-700';
-
-  const isPulsing = remaining <= 3;
+  const pct = remaining / 10;
+  const strokeDashoffset = CIRCUMFERENCE - pct * CIRCUMFERENCE;
+  const isAlert = remaining <= 3;
+  const strokeColor = isAlert ? '#FF6B5B' : '#F5C76B';
 
   return (
-    <div className={`flex items-center gap-3 ${isPulsing ? 'animate-pulse' : ''}`}>
-      {/* Progress bar — scaleX from left to avoid animating width */}
-      <div className="relative flex-1 h-1.5 bg-slate-200/70 rounded-full overflow-hidden">
-        <motion.div
-          className={`absolute inset-0 rounded-full origin-left ${barColor}`}
-          style={{ scaleX: pct / 100 }}
-          transition={{ duration: duration.fast }}
-        />
-      </div>
-
-      <span
-        className={`text-2xl font-bold tabular-nums w-8 text-right transition-colors duration-base ${textColor}`}
+    <div className="flex items-center justify-center">
+      <div
+        className="relative w-16 h-16 flex items-center justify-center"
+        style={isAlert ? { animation: 'timerPulse 1s ease-in-out infinite' } : undefined}
       >
-        {remaining}
-      </span>
+        <svg
+          className="absolute inset-0 -rotate-90"
+          width="64" height="64" viewBox="0 0 64 64"
+          aria-hidden="true"
+        >
+          {/* Track */}
+          <circle cx="32" cy="32" r={RADIUS} fill="none" stroke="rgba(242,238,227,0.10)" strokeWidth="3" />
+          {/* Progress */}
+          <circle
+            cx="32" cy="32" r={RADIUS}
+            fill="none"
+            stroke={strokeColor}
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeDasharray={CIRCUMFERENCE}
+            strokeDashoffset={strokeDashoffset}
+            style={{ transition: 'stroke-dashoffset 0.12s linear, stroke 0.3s' }}
+          />
+        </svg>
+        <span
+          className="relative z-10 font-mono font-bold text-xl tabular-nums"
+          style={{ color: isAlert ? '#FF6B5B' : '#F2EEE3', transition: 'color 0.3s', fontFamily: '"Geist Mono", monospace' }}
+        >
+          {remaining}
+        </span>
+      </div>
     </div>
   );
 }
