@@ -224,6 +224,14 @@ export class GameGateway implements OnGatewayDisconnect {
         const { lives, eliminated } = await this.gameService.decrementLife(session.playerId);
         client.emit('game:life-lost', { lives, eliminated });
       }
+
+      // Solo: reveal quickly after answering (no other players to wait for)
+      if (game.gameMode === 'SURVIVAL_SOLO') {
+        const existing = this.roundTimers.get(session.gameId);
+        if (existing) clearTimeout(existing);
+        const quick = setTimeout(() => this.triggerReveal(session.gameId), 900);
+        this.roundTimers.set(session.gameId, quick);
+      }
     } catch {
       // Answer already recorded or round ended
     }

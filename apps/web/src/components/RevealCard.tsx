@@ -49,7 +49,7 @@ export default function RevealCard({ reveal, choices, myAnswer, myPlayerId }: Re
               </span>
               <span className="flex-1">{choice}</span>
               {isAnswer && (
-                <span className="ml-auto font-bold text-sm shrink-0" style={{ color: '#F5C76B' }}>✓</span>
+                <span className="ml-auto font-bold text-sm shrink-0" style={{ color: '#4ADE80' }}>✓</span>
               )}
             </motion.div>
           );
@@ -76,12 +76,12 @@ export default function RevealCard({ reveal, choices, myAnswer, myPlayerId }: Re
           transition={{ delay: 0.35, duration: duration.base }}
           className="rounded-xl p-4 text-center"
           style={isCorrect
-            ? { backgroundColor: 'rgba(245,199,107,0.10)', border: '1px solid rgba(245,199,107,0.3)', boxShadow: '0 0 0 3px rgba(245,199,107,0.08)' }
+            ? { backgroundColor: 'rgba(74,222,128,0.08)', border: '1px solid rgba(74,222,128,0.3)', boxShadow: '0 0 0 3px rgba(74,222,128,0.06)' }
             : { backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid rgba(242,238,227,0.08)' }
           }
         >
           {isCorrect ? (
-            <p className="font-bold text-lg" style={{ color: '#F5C76B', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
+            <p className="font-bold text-lg" style={{ color: '#4ADE80', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
               +{myScore.deltaThisRound.toLocaleString()} points
             </p>
           ) : (
