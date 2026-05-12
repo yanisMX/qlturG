@@ -22,7 +22,7 @@ COPY apps/api/package.json ./apps/api/
 RUN pnpm install --prod --no-frozen-lockfile --filter api...
 
 COPY --from=builder /app/apps/api/dist ./apps/api/dist
-COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
+COPY --from=builder /app/apps/api/node_modules/.prisma ./apps/api/node_modules/.prisma
 COPY apps/api/prisma ./apps/api/prisma
 
 EXPOSE 3001
