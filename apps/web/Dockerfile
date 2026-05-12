@@ -6,7 +6,7 @@ RUN npm install -g pnpm@10.33.0
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY apps/web/package.json ./apps/web/
 
-RUN pnpm install --frozen-lockfile --filter web...
+RUN pnpm install --no-frozen-lockfile --filter web...
 
 COPY apps/web/ ./apps/web/
 

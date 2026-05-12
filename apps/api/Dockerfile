@@ -6,7 +6,7 @@ RUN npm install -g pnpm@10.33.0
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY apps/api/package.json ./apps/api/
 
-RUN pnpm install --frozen-lockfile --filter api...
+RUN pnpm install --no-frozen-lockfile --filter api...
 
 COPY apps/api/ ./apps/api/
 
@@ -19,7 +19,7 @@ RUN npm install -g pnpm@10.33.0
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY apps/api/package.json ./apps/api/
-RUN pnpm install --prod --frozen-lockfile --filter api...
+RUN pnpm install --prod --no-frozen-lockfile --filter api...
 
 COPY --from=builder /app/apps/api/dist ./apps/api/dist
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
