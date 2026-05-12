@@ -1,27 +1,38 @@
 import { create } from 'zustand';
 
 export type GameStatus = 'LOBBY' | 'IN_PROGRESS' | 'FINISHED';
-export type Difficulty = 'FACILE' | 'MOYEN' | 'DIFFICILE';
+export type Difficulty = 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE';
+export type GameMode = 'STANDARD' | 'SURVIVAL_SOLO' | 'SURVIVAL_MULTI';
 
 export interface PlayerInfo {
   id: string;
   nickname: string;
   score: number;
+  lives?: number;
+  eliminated?: boolean;
 }
 
 export interface Question {
   index: number;
-  total: number;
+  total: number | null;
   text: string;
   choices: string[];
   startsAt: string;
   endsAt: string;
+  isDoublePoints?: boolean;
 }
 
 export interface RevealData {
   answerIndex: number;
   explanation: string;
-  scores: Array<{ playerId: string; nickname: string; score: number; deltaThisRound: number }>;
+  scores: Array<{
+    playerId: string;
+    nickname: string;
+    score: number;
+    deltaThisRound: number;
+    lives?: number;
+    eliminated?: boolean;
+  }>;
 }
 
 export interface RankingEntry {
@@ -29,6 +40,8 @@ export interface RankingEntry {
   playerId: string;
   nickname: string;
   score: number;
+  lives?: number;
+  eliminated?: boolean;
 }
 
 interface GameState {
@@ -36,8 +49,11 @@ interface GameState {
   code: string | null;
   status: GameStatus;
   difficulty: Difficulty | null;
+  gameMode: GameMode;
   speedBonus: boolean;
+  doublePointsBonus: boolean;
   totalQuestions: number;
+  questionDuration: number;
   hostId: string | null;
   players: PlayerInfo[];
   myPlayerId: string | null;
@@ -46,6 +62,7 @@ interface GameState {
   currentQuestion: Question | null;
   myAnswer: number | null;
   reveal: RevealData | null;
+  myLives: number;
 
   ranking: RankingEntry[];
   error: string | null;
@@ -59,6 +76,7 @@ interface GameState {
   setReveal: (r: RevealData) => void;
   setRanking: (r: RankingEntry[]) => void;
   setError: (msg: string | null) => void;
+  setMyLives: (lives: number) => void;
   reset: () => void;
 }
 
@@ -67,8 +85,11 @@ const defaultState = {
   code: null,
   status: 'LOBBY' as GameStatus,
   difficulty: null,
+  gameMode: 'STANDARD' as GameMode,
   speedBonus: true,
+  doublePointsBonus: false,
   totalQuestions: 10,
+  questionDuration: 10,
   hostId: null,
   players: [],
   myPlayerId: null,
@@ -76,6 +97,7 @@ const defaultState = {
   currentQuestion: null,
   myAnswer: null,
   reveal: null,
+  myLives: 3,
   ranking: [],
   error: null,
 };
@@ -105,13 +127,17 @@ export const useGameStore = create<GameState>((set) => ({
       reveal: r,
       players: s.players.map((p) => {
         const updated = r.scores.find((sc) => sc.playerId === p.id);
-        return updated ? { ...p, score: updated.score } : p;
+        return updated
+          ? { ...p, score: updated.score, lives: updated.lives, eliminated: updated.eliminated }
+          : p;
       }),
     })),
 
   setRanking: (ranking) => set({ ranking, status: 'FINISHED' }),
 
   setError: (error) => set({ error }),
+
+  setMyLives: (myLives) => set({ myLives }),
 
   reset: () => set(defaultState),
 }));

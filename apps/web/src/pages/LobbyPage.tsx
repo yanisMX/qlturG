@@ -12,12 +12,14 @@ const DATES = ['476', '800', '987', '1066', '1337', '1453', '1515', '1598', '166
 export default function LobbyPage() {
   const { code } = useParams<{ code: string }>();
   const navigate = useNavigate();
-  const { players, isHost, myPlayerId, status, addPlayer, removePlayer, setGameState } =
+  const { players, isHost, myPlayerId, status, gameMode, addPlayer, removePlayer, setGameState, reset } =
     useGameStore();
 
   const [copied, setCopied] = useState(false);
   const linkInputRef = useRef<HTMLInputElement>(null);
   const inviteLink = `${window.location.origin}/join?code=${code}`;
+
+  const isSurvival = gameMode === 'SURVIVAL_SOLO' || gameMode === 'SURVIVAL_MULTI';
 
   const handleCopy = async () => {
     try {
@@ -32,27 +34,36 @@ export default function LobbyPage() {
   useEffect(() => {
     const socket = getSocket();
 
-    const onPlayerJoined = (p: { playerId: string; nickname: string; score: number }) => {
-      addPlayer({ id: p.playerId, nickname: p.nickname, score: p.score ?? 0 });
+    const onPlayerJoined = (p: { playerId: string; nickname: string; score: number; lives?: number }) => {
+      addPlayer({ id: p.playerId, nickname: p.nickname, score: p.score ?? 0, lives: p.lives });
     };
     const onPlayerLeft = (p: { playerId: string }) => {
       removePlayer(p.playerId);
     };
+    const onLoading = () => navigate(`/play/${code}`);
     const onQuestion = () => navigate(`/play/${code}`);
     const onError = (err: { message: string }) => setGameState({ error: err.message });
+    const onKicked = () => {
+      reset();
+      navigate('/');
+    };
 
     socket.on('game:player-joined', onPlayerJoined);
     socket.on('game:player-left', onPlayerLeft);
+    socket.on('game:loading', onLoading);
     socket.on('game:question', onQuestion);
     socket.on('game:error', onError);
+    socket.on('game:kicked', onKicked);
 
     return () => {
       socket.off('game:player-joined', onPlayerJoined);
       socket.off('game:player-left', onPlayerLeft);
+      socket.off('game:loading', onLoading);
       socket.off('game:question', onQuestion);
       socket.off('game:error', onError);
+      socket.off('game:kicked', onKicked);
     };
-  }, [code, navigate, addPlayer, removePlayer, setGameState]);
+  }, [code, navigate, addPlayer, removePlayer, setGameState, reset]);
 
   useEffect(() => {
     if (status === 'IN_PROGRESS') navigate(`/play/${code}`);
@@ -64,7 +75,11 @@ export default function LobbyPage() {
     socket.emit('game:start');
   };
 
-  // Duplicate for seamless scroll
+  const handleKick = (playerId: string) => {
+    const socket = getSocket();
+    socket.emit('game:kick', { playerId });
+  };
+
   const tickerDates = [...DATES, ...DATES];
 
   return (
@@ -135,10 +150,25 @@ export default function LobbyPage() {
                   En attendant d'autres têtes pensantes…
                 </p>
               ) : (
-                <Scoreboard players={players} myPlayerId={myPlayerId} compact />
+                <Scoreboard
+                  players={players}
+                  myPlayerId={myPlayerId}
+                  compact
+                  showLives={isSurvival}
+                  onKick={isHost ? handleKick : undefined}
+                />
               )}
             </AnimatePresence>
           </div>
+
+          {/* Game mode badge */}
+          {isSurvival && (
+            <div className="text-center">
+              <span className="text-xs font-mono px-3 py-1.5 rounded-full" style={{ color: '#FF6B5B', border: '1px solid rgba(255,107,91,0.3)', backgroundColor: 'rgba(255,107,91,0.08)' }}>
+                {gameMode === 'SURVIVAL_SOLO' ? '💀 Survival Solo — 3 vies' : '💀 Survival Multi — dernier en vie'}
+              </span>
+            </div>
+          )}
 
           {/* Actions */}
           {isHost ? (

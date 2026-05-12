@@ -6,13 +6,30 @@ import { api } from '../lib/api';
 import { useGameStore } from '../store/gameStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
+import type { GameMode } from '../store/gameStore';
 
 const schema = z.object({
-  hostNickname: z.string().min(2, 'Minimum 2 caractères').max(20),
-  difficulty: z.enum(['FACILE', 'MOYEN', 'DIFFICILE']),
-  totalQuestions: z.number().min(5).max(20),
+  hostNickname: z.string().min(1, 'Veuillez renseigner votre pseudo').min(2, 'Pseudo de 2 caractères minimum').max(20),
+  difficulty: z.enum(['FACILE', 'MOYEN', 'DIFFICILE', 'VARIE']),
+  totalQuestions: z.number().min(10).max(30),
   speedBonus: z.boolean(),
+  gameMode: z.enum(['STANDARD', 'SURVIVAL_SOLO', 'SURVIVAL_MULTI']),
+  questionDuration: z.number().min(5).max(30),
+  doublePointsBonus: z.boolean(),
 });
+
+const GAME_MODES: { id: GameMode; label: string; desc: string; icon: string }[] = [
+  { id: 'STANDARD', label: 'Standard', desc: 'Classique multijoueur', icon: '⚔️' },
+  { id: 'SURVIVAL_MULTI', label: 'Survival Multi', desc: '3 vies — dernier en vie', icon: '💀' },
+  { id: 'SURVIVAL_SOLO', label: 'Survival Solo', desc: 'Solo — va le plus loin possible', icon: '🧠' },
+];
+
+const DIFFICULTY_CONFIG = {
+  FACILE: { label: 'Facile' },
+  MOYEN: { label: 'Moyen' },
+  DIFFICILE: { label: 'Difficile' },
+  VARIE: { label: 'Varié' },
+} as const;
 
 export default function CreatePage() {
   const navigate = useNavigate();
@@ -20,15 +37,24 @@ export default function CreatePage() {
 
   const [form, setForm] = useState({
     hostNickname: '',
-    difficulty: 'MOYEN' as 'FACILE' | 'MOYEN' | 'DIFFICILE',
+    difficulty: 'MOYEN' as 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE',
     totalQuestions: 10,
     speedBonus: true,
+    gameMode: 'STANDARD' as GameMode,
+    questionDuration: 10,
+    doublePointsBonus: false,
   });
   const [error, setError] = useState('');
+  const [submitAttempt, setSubmitAttempt] = useState(0);
   const [loading, setLoading] = useState(false);
+
+  const isSolo = form.gameMode === 'SURVIVAL_SOLO';
+  const isSurvival = form.gameMode === 'SURVIVAL_SOLO' || form.gameMode === 'SURVIVAL_MULTI';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const attempt = submitAttempt + 1;
+    setSubmitAttempt(attempt);
     setError('');
 
     const parsed = schema.safeParse(form);
@@ -43,19 +69,26 @@ export default function CreatePage() {
         difficulty: parsed.data.difficulty,
         totalQuestions: parsed.data.totalQuestions,
         speedBonus: parsed.data.speedBonus,
+        gameMode: parsed.data.gameMode,
+        questionDuration: parsed.data.questionDuration,
+        doublePointsBonus: parsed.data.doublePointsBonus,
       });
 
       setGameState({
         gameId: game.id,
         code: game.code,
         status: 'LOBBY',
-        difficulty: game.difficulty as 'FACILE' | 'MOYEN' | 'DIFFICILE',
+        difficulty: game.difficulty,
+        gameMode: game.gameMode,
         speedBonus: game.speedBonus,
+        doublePointsBonus: game.doublePointsBonus,
         totalQuestions: game.totalQuestions,
+        questionDuration: game.questionDuration,
         hostId: null,
         players: [],
         myPlayerId: null,
         isHost: true,
+        myLives: 3,
       });
 
       const socket = getSocket();
@@ -68,7 +101,14 @@ export default function CreatePage() {
           isHost: state.isHost,
           players: state.players,
         });
-        navigate(`/lobby/${game.code}`);
+
+        if (game.gameMode === 'SURVIVAL_SOLO') {
+          // Solo — skip lobby, start immediately
+          socket.emit('game:start');
+          navigate(`/play/${game.code}`);
+        } else {
+          navigate(`/lobby/${game.code}`);
+        }
       });
 
       socket.once('game:error', (err: { message: string }) => {
@@ -81,11 +121,27 @@ export default function CreatePage() {
     }
   };
 
-  const difficultyConfig = {
-    FACILE: { label: 'Facile', color: 'emerald' },
-    MOYEN: { label: 'Moyen', color: 'amber' },
-    DIFFICILE: { label: 'Difficile', color: 'rose' },
-  } as const;
+  const Toggle = ({ value, onChange, label, sub }: { value: boolean; onChange: () => void; label: string; sub?: string }) => (
+    <div className="flex items-center justify-between py-3 px-4 rounded-xl" style={{ border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+      <div>
+        <p className="text-sm font-semibold" style={{ color: '#F2EEE3' }}>{label}</p>
+        {sub && <p className="text-xs" style={{ color: '#7A7F9B' }}>{sub}</p>}
+      </div>
+      <button
+        type="button"
+        onClick={onChange}
+        className="relative w-11 h-6 rounded-full transition-colors duration-base"
+        style={{ backgroundColor: value ? '#F5C76B' : 'rgba(242,238,227,0.12)' }}
+        aria-checked={value}
+        role="switch"
+      >
+        <span
+          className="absolute top-0.5 left-0.5 w-5 h-5 rounded-full shadow transition-transform duration-base"
+          style={{ backgroundColor: value ? '#0B1026' : '#7A7F9B', transform: value ? 'translateX(20px)' : 'translateX(0)' }}
+        />
+      </button>
+    </div>
+  );
 
   return (
     <PageTransition>
@@ -104,9 +160,50 @@ export default function CreatePage() {
           </Link>
 
           <div className="card">
-            <h1 className="text-2xl font-bold mb-6" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>Créer une partie</h1>
+            <h1 className="text-2xl font-bold mb-6" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
+              Créer une partie
+            </h1>
 
             <form onSubmit={handleSubmit} className="space-y-5">
+
+              {/* Mode de jeu */}
+              <div>
+                <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>
+                  Mode de jeu
+                </label>
+                <div className="space-y-2">
+                  {GAME_MODES.map((mode) => {
+                    const isSelected = form.gameMode === mode.id;
+                    return (
+                      <button
+                        key={mode.id}
+                        type="button"
+                        onClick={() => setForm({ ...form, gameMode: mode.id })}
+                        className="w-full text-left px-4 py-3 rounded-xl border-2 transition-all duration-base"
+                        style={isSelected
+                          ? { borderColor: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.10)', color: '#F2EEE3' }
+                          : { borderColor: 'rgba(242,238,227,0.10)', backgroundColor: 'transparent', color: '#7A7F9B' }
+                        }
+                      >
+                        <span className="flex items-center gap-3">
+                          <span>{mode.icon}</span>
+                          <span>
+                            <span className="font-semibold text-sm block">{mode.label}</span>
+                            <span className="text-xs font-mono" style={{ color: isSelected ? '#B4B7CC' : '#7A7F9B' }}>{mode.desc}</span>
+                          </span>
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+                {isSolo && (
+                  <p className="text-xs mt-2 font-mono" style={{ color: '#7A7F9B' }}>
+                    ⚠ Partie solo — personne ne peut rejoindre
+                  </p>
+                )}
+              </div>
+
+              {/* Pseudo */}
               <div>
                 <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
                   Votre pseudo
@@ -120,12 +217,13 @@ export default function CreatePage() {
                 />
               </div>
 
+              {/* Difficulté */}
               <div>
                 <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>
                   Difficulté
                 </label>
-                <div className="grid grid-cols-3 gap-2">
-                  {(['FACILE', 'MOYEN', 'DIFFICILE'] as const).map((d) => {
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  {(['FACILE', 'MOYEN', 'DIFFICILE', 'VARIE'] as const).map((d) => {
                     const isSelected = form.difficulty === d;
                     return (
                       <button
@@ -138,56 +236,85 @@ export default function CreatePage() {
                           : { borderColor: 'rgba(242,238,227,0.10)', backgroundColor: 'transparent', color: '#7A7F9B' }
                         }
                       >
-                        {difficultyConfig[d].label}
+                        {DIFFICULTY_CONFIG[d].label}
                       </button>
                     );
                   })}
                 </div>
               </div>
 
+              {/* Temps de réponse */}
               <div>
                 <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
-                  Nombre de questions :{' '}
-                  <span style={{ color: '#F5C76B', fontWeight: 700 }}>{form.totalQuestions}</span>
+                  Temps de réponse :{' '}
+                  <span style={{ color: '#F5C76B', fontWeight: 700 }}>{form.questionDuration}s</span>
                 </label>
                 <input
                   type="range"
                   min={5}
-                  max={20}
-                  value={form.totalQuestions}
-                  onChange={(e) => setForm({ ...form, totalQuestions: Number(e.target.value) })}
+                  max={30}
+                  step={5}
+                  value={form.questionDuration}
+                  onChange={(e) => setForm({ ...form, questionDuration: Number(e.target.value) })}
                   className="w-full accent-accent"
                 />
                 <div className="flex justify-between text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
-                  <span>5</span>
-                  <span>20</span>
+                  <span>5s</span><span>30s</span>
                 </div>
               </div>
 
-              <div className="flex items-center justify-between py-3 px-4 rounded-xl" style={{ border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+              {/* Nombre de questions — masqué en survival (illimité) */}
+              {!isSurvival && (
                 <div>
-                  <p className="text-sm font-semibold" style={{ color: '#F2EEE3' }}>Bonus de rapidité</p>
-                  <p className="text-xs" style={{ color: '#7A7F9B' }}>Plus vite = plus de points</p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setForm({ ...form, speedBonus: !form.speedBonus })}
-                  className="relative w-11 h-6 rounded-full transition-colors duration-base"
-                  style={{ backgroundColor: form.speedBonus ? '#F5C76B' : 'rgba(242,238,227,0.12)' }}
-                  aria-checked={form.speedBonus}
-                  role="switch"
-                >
-                  <span
-                    className="absolute top-0.5 left-0.5 w-5 h-5 rounded-full shadow transition-transform duration-base"
-                    style={{ backgroundColor: form.speedBonus ? '#0B1026' : '#7A7F9B', transform: form.speedBonus ? 'translateX(20px)' : 'translateX(0)' }}
+                  <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
+                    Nombre de questions :{' '}
+                    <span style={{ color: '#F5C76B', fontWeight: 700 }}>{form.totalQuestions}</span>
+                  </label>
+                  <input
+                    type="range"
+                    min={10}
+                    max={30}
+                    step={5}
+                    value={form.totalQuestions}
+                    onChange={(e) => setForm({ ...form, totalQuestions: Number(e.target.value) })}
+                    className="w-full accent-accent"
                   />
-                </button>
-              </div>
+                  <div className="flex justify-between text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
+                    <span>10</span><span>30</span>
+                  </div>
+                </div>
+              )}
+
+              {/* Options multi (hors survival solo) */}
+              {!isSolo && (
+                <Toggle
+                  value={form.speedBonus}
+                  onChange={() => setForm({ ...form, speedBonus: !form.speedBonus })}
+                  label="Bonus de rapidité"
+                  sub="Plus vite = plus de points"
+                />
+              )}
+
+              {/* Questions bonus — standard seulement (survie n'a pas de total fixe) */}
+              {!isSurvival && (
+                <Toggle
+                  value={form.doublePointsBonus}
+                  onChange={() => setForm({ ...form, doublePointsBonus: !form.doublePointsBonus })}
+                  label="Questions bonus × 2"
+                  sub="Les 20% dernières questions valent double"
+                />
+              )}
 
               {error && (
-                <p className="text-sm rounded-lg px-3 py-2" style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}>
+                <motion.p
+                  key={submitAttempt}
+                  initial={{ opacity: 0, y: -4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-sm rounded-lg px-3 py-2"
+                  style={{ color: '#FF6B5B', backgroundColor: 'rgba(255,107,91,0.10)', border: '1px solid rgba(255,107,91,0.25)' }}
+                >
                   {error}
-                </p>
+                </motion.p>
               )}
 
               <button type="submit" disabled={loading} className="btn-primary w-full">

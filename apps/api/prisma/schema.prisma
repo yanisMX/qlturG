@@ -36,8 +36,11 @@ model Game {
   hostId               String
   status               GameStatus @default(LOBBY)
   difficulty           Difficulty
+  gameMode             GameMode   @default(STANDARD)
   speedBonus           Boolean    @default(true)
+  doublePointsBonus    Boolean    @default(false)
   totalQuestions       Int        @default(10)
+  questionDuration     Int        @default(10)
   currentQuestionIndex Int        @default(0)
   players              Player[]
   rounds               Round[]
@@ -45,13 +48,15 @@ model Game {
 }
 
 model Player {
-  id       String   @id @default(cuid())
-  nickname String
-  score    Int      @default(0)
-  socketId String?
-  gameId   String
-  game     Game     @relation(fields: [gameId], references: [id], onDelete: Cascade)
-  answers  Answer[]
+  id         String   @id @default(cuid())
+  nickname   String
+  score      Int      @default(0)
+  socketId   String?
+  lives      Int      @default(3)
+  eliminated Boolean  @default(false)
+  gameId     String
+  game       Game     @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  answers    Answer[]
 }
 
 model Round {
@@ -92,6 +97,13 @@ enum Difficulty {
   FACILE
   MOYEN
   DIFFICILE
+  VARIE
+}
+
+enum GameMode {
+  STANDARD
+  SURVIVAL_SOLO
+  SURVIVAL_MULTI
 }
 
 enum GameStatus {

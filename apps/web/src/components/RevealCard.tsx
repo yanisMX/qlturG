@@ -51,13 +51,13 @@ export default function RevealCard({ reveal, choices, myAnswer, myPlayerId }: Re
               ].filter(Boolean).join(' ')}
               style={{
                 ...(isNeutral ? { borderColor: 'rgba(242,238,227,0.07)', backgroundColor: 'rgba(255,255,255,0.02)', color: '#7A7F9B' } : {}),
-                ...(isAnswer && !shouldReduce ? { boxShadow: '0 0 0 3px rgba(245,199,107,0.2), 0 0 20px rgba(245,199,107,0.1)' } : {}),
+                ...(isAnswer && !shouldReduce ? { boxShadow: '0 0 0 3px rgba(74,222,128,0.18), 0 0 20px rgba(74,222,128,0.08)' } : {}),
               }}
             >
               <span
                 className="flex-shrink-0 w-7 h-7 rounded-lg text-sm font-bold flex items-center justify-center"
                 style={isAnswer
-                  ? { backgroundColor: 'rgba(245,199,107,0.25)', color: '#F5C76B' }
+                  ? { backgroundColor: 'rgba(74,222,128,0.20)', color: '#4ADE80' }
                   : { backgroundColor: 'rgba(242,238,227,0.10)', color: '#B4B7CC' }
                 }
               >
@@ -89,12 +89,12 @@ export default function RevealCard({ reveal, choices, myAnswer, myPlayerId }: Re
           transition={{ delay: 0.35, duration: duration.base }}
           className="rounded-xl p-4 text-center"
           style={isCorrect
-            ? { backgroundColor: 'rgba(245,199,107,0.10)', border: '1px solid rgba(245,199,107,0.3)', boxShadow: '0 0 0 3px rgba(245,199,107,0.08)' }
+            ? { backgroundColor: 'rgba(74,222,128,0.08)', border: '1px solid rgba(74,222,128,0.3)', boxShadow: '0 0 0 3px rgba(74,222,128,0.06)' }
             : { backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid rgba(242,238,227,0.08)' }
           }
         >
           {isCorrect ? (
-            <p className="font-bold text-lg" style={{ color: '#F5C76B', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
+            <p className="font-bold text-lg" style={{ color: '#4ADE80', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>
               +{myScore.deltaThisRound.toLocaleString()} points
             </p>
           ) : (

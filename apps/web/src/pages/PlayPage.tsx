@@ -21,11 +21,21 @@ export default function PlayPage() {
     players,
     myPlayerId,
     isHost,
+    gameMode,
+    myLives,
+    questionDuration,
     setQuestion,
     setMyAnswer,
     setReveal,
     setRanking,
+    setMyLives,
   } = useGameStore();
+
+  const [loadingProgress, setLoadingProgress] = useState<number | null>(null);
+  const [isEliminated, setIsEliminated] = useState(false);
+
+  const isSurvival = gameMode === 'SURVIVAL_SOLO' || gameMode === 'SURVIVAL_MULTI';
+  const isSolo = gameMode === 'SURVIVAL_SOLO';
 
   const handleAnswer = useCallback(
     (idx: number) => {
@@ -54,28 +64,60 @@ export default function PlayPage() {
   useEffect(() => {
     const socket = getSocket();
 
-    const onQuestion = (q: Question) => setQuestion(q);
+    const onLoading = (data: { duration: number }) => {
+      setLoadingProgress(0);
+      const start = Date.now();
+      const tick = () => {
+        const elapsed = Date.now() - start;
+        const pct = Math.min(elapsed / data.duration, 1);
+        setLoadingProgress(pct);
+        if (pct < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const onQuestion = (q: Question) => {
+      setLoadingProgress(null);
+      setQuestion(q);
+    };
     const onReveal = (r: RevealData) => setReveal(r);
     const onFinished = (data: { ranking: RankingEntry[] }) => {
       setRanking(data.ranking);
       navigate(`/results/${code}`);
     };
+    const onLifeLost = (data: { lives: number; eliminated: boolean }) => {
+      setMyLives(data.lives);
+      if (data.eliminated) setIsEliminated(true);
+    };
 
+    socket.on('game:loading', onLoading);
     socket.on('game:question', onQuestion);
     socket.on('game:reveal', onReveal);
     socket.on('game:finished', onFinished);
+    socket.on('game:life-lost', onLifeLost);
 
     return () => {
+      socket.off('game:loading', onLoading);
       socket.off('game:question', onQuestion);
       socket.off('game:reveal', onReveal);
       socket.off('game:finished', onFinished);
+      socket.off('game:life-lost', onLifeLost);
     };
-  }, [code, navigate, setQuestion, setReveal, setRanking]);
+  }, [code, navigate, setQuestion, setReveal, setRanking, setMyLives]);
 
+  // Loading bar before first question
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="animate-pulse font-mono" style={{ color: '#7A7F9B' }}>On dépoussière les archives…</p>
+      <div className="min-h-screen flex flex-col items-center justify-center gap-6 p-6">
+        <p className="font-mono text-sm" style={{ color: '#7A7F9B' }}>On dépoussière les archives…</p>
+        {loadingProgress !== null && (
+          <div className="w-64 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(242,238,227,0.08)' }}>
+            <motion.div
+              className="h-full rounded-full"
+              style={{ backgroundColor: '#F5C76B', width: `${loadingProgress * 100}%` }}
+            />
+          </div>
+        )}
       </div>
     );
   }
@@ -90,6 +132,7 @@ export default function PlayPage() {
         myPlayerId={myPlayerId}
         compact={compact}
         revealScores={reveal?.scores}
+        showLives={isSurvival}
       />
     </div>
   );
@@ -104,22 +147,75 @@ export default function PlayPage() {
               {/* Header row */}
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold px-3 py-1 rounded-full font-mono" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
-                  Question {currentQuestion.index + 1} / {currentQuestion.total}
+                  {isSurvival
+                    ? `Question ${currentQuestion.index + 1}`
+                    : `Question ${currentQuestion.index + 1} / ${currentQuestion.total}`
+                  }
                 </span>
-                {isHost && reveal && (
-                  <motion.button
-                    whileTap={{ scale: 0.97 }}
-                    className="text-xs font-semibold rounded-lg px-3 py-1.5 transition-colors"
-                    style={{ color: '#F5C76B', border: '1px solid rgba(245,199,107,0.3)', backgroundColor: 'rgba(245,199,107,0.08)' }}
-                    onClick={() => {
-                      const socket = getSocket();
-                      socket.emit('game:next');
-                    }}
-                  >
-                    Suivant →
-                  </motion.button>
-                )}
+
+                <div className="flex items-center gap-3">
+                  {/* Lives — survival mode */}
+                  {isSurvival && (
+                    <div className="flex gap-1">
+                      {Array.from({ length: 3 }).map((_, i) => (
+                        <motion.span
+                          key={i}
+                          animate={i === myLives ? { scale: [1.3, 1] } : {}}
+                          transition={{ type: 'spring', stiffness: 400, damping: 18 }}
+                          className="text-sm"
+                          style={{ opacity: i < myLives ? 1 : 0.2 }}
+                        >
+                          ❤️
+                        </motion.span>
+                      ))}
+                    </div>
+                  )}
+
+                  {isHost && reveal && (
+                    <motion.button
+                      whileTap={{ scale: 0.97 }}
+                      className="text-xs font-semibold rounded-lg px-3 py-1.5 transition-colors"
+                      style={{ color: '#F5C76B', border: '1px solid rgba(245,199,107,0.3)', backgroundColor: 'rgba(245,199,107,0.08)' }}
+                      onClick={() => {
+                        const socket = getSocket();
+                        socket.emit('game:next');
+                      }}
+                    >
+                      Suivant →
+                    </motion.button>
+                  )}
+                </div>
               </div>
+
+              {/* Double points banner */}
+              <AnimatePresence>
+                {currentQuestion.isDoublePoints && !reveal && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8, scale: 0.97 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ type: 'spring', stiffness: 320, damping: 24 }}
+                    className="flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-sm font-bold font-mono"
+                    style={{ backgroundColor: 'rgba(245,199,107,0.12)', border: '1px solid rgba(245,199,107,0.35)', color: '#F5C76B' }}
+                  >
+                    ✦ Points × 2 — Question bonus !
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Eliminated overlay */}
+              <AnimatePresence>
+                {isEliminated && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-bold font-mono"
+                    style={{ backgroundColor: 'rgba(255,107,91,0.12)', border: '1px solid rgba(255,107,91,0.35)', color: '#FF6B5B' }}
+                  >
+                    💀 Tu as été éliminé — la partie continue…
+                  </motion.div>
+                )}
+              </AnimatePresence>
 
               {/* Question card */}
               <motion.div
@@ -129,10 +225,11 @@ export default function PlayPage() {
                   animation: 'cardAlert 1s ease-in-out infinite',
                 } : {}}
               >
-                {!reveal && (
+                {!reveal && !(isSolo && myAnswer !== null) && (
                   <div className="mb-5">
                     <Timer
                       endsAt={currentQuestion.endsAt}
+                      totalSeconds={questionDuration}
                       onExpire={handleTimerExpire}
                       onAlert={handleTimerAlert}
                     />
@@ -167,10 +264,10 @@ export default function PlayPage() {
                         text={currentQuestion.text}
                         choices={currentQuestion.choices}
                         selectedIndex={myAnswer}
-                        disabled={myAnswer !== null}
+                        disabled={myAnswer !== null || isEliminated}
                         onSelect={handleAnswer}
                       />
-                      {myAnswer !== null && (
+                      {myAnswer !== null && !isSolo && (
                         <motion.p
                           initial={{ opacity: 0, y: 4 }}
                           animate={{ opacity: 1, y: 0 }}

@@ -121,7 +121,7 @@
     border-radius: 0.75rem;
     border: 2px solid rgba(242, 238, 227, 0.10);
     font-weight: 500;
-    transition: border-color 150ms, background-color 150ms;
+    transition: border-color 80ms, background-color 80ms;
     color: #F2EEE3;
     background-color: #1A2148;
     cursor: pointer;
@@ -133,8 +133,8 @@
   .choice-btn:disabled { cursor: not-allowed; }
 
   .choice-btn-correct {
-    border-color: #F5C76B !important;
-    background-color: rgba(245, 199, 107, 0.12) !important;
+    border-color: #4ADE80 !important;
+    background-color: rgba(74, 222, 128, 0.10) !important;
     color: #F2EEE3 !important;
   }
 

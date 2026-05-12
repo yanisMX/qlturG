@@ -88,7 +88,7 @@ export default function QuestionCard({
                 borderColor,
                 backgroundColor: bgColor,
                 color: '#F2EEE3',
-                transitionDuration: '150ms',
+                transitionDuration: '80ms',
               }}
               onMouseEnter={(e) => {
                 if (disabled || isSelected) return;
