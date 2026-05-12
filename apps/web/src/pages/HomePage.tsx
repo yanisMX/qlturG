@@ -1,12 +1,40 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
+import UserAvatar from '../components/UserAvatar';
+import { useAuthStore } from '../store/authStore';
 import { duration } from '../styles/tokens';
 
 export default function HomePage() {
+  const { user, isLoading } = useAuthStore();
+
   return (
     <PageTransition>
       <div className="min-h-screen flex flex-col items-center justify-center p-6">
+        {/* User chip — top right */}
+        {!isLoading && (
+          <div className="fixed top-4 right-4">
+            {user ? (
+              <Link
+                to="/profile"
+                className="flex items-center gap-2.5 bg-white/80 backdrop-blur-sm border border-slate-200/80 rounded-full pl-1 pr-4 py-1 shadow-card hover:shadow-card-hover transition-all duration-base"
+              >
+                <UserAvatar user={user} size={30} />
+                <span className="text-sm font-semibold text-slate-700 max-w-[120px] truncate">
+                  {user.pseudo}
+                </span>
+              </Link>
+            ) : (
+              <Link
+                to="/login"
+                className="text-sm font-semibold bg-white/80 backdrop-blur-sm border border-slate-200/80 text-navy-700 rounded-full px-4 py-2 shadow-card hover:shadow-card-hover transition-all duration-base"
+              >
+                Connexion
+              </Link>
+            )}
+          </div>
+        )}
+
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: -16 }}
@@ -14,7 +42,6 @@ export default function HomePage() {
           transition={{ duration: duration.slow }}
           className="text-center mb-10"
         >
-          {/* Flag decoration */}
           <div className="flex items-center justify-center gap-1.5 mb-6">
             <div className="w-2.5 h-9 bg-indigo-600 rounded-sm" />
             <div className="w-2.5 h-9 bg-white border border-slate-200 rounded-sm shadow-sm" />
@@ -45,16 +72,10 @@ export default function HomePage() {
           transition={{ duration: duration.slow, delay: 0.15 }}
           className="flex flex-col gap-3 w-full max-w-xs"
         >
-          <Link
-            to="/create"
-            className="btn-primary text-center text-lg py-4 rounded-2xl"
-          >
+          <Link to="/create" className="btn-primary text-center text-lg py-4 rounded-2xl">
             Créer une partie
           </Link>
-          <Link
-            to="/join"
-            className="btn-secondary text-center text-lg py-4 rounded-2xl"
-          >
+          <Link to="/join" className="btn-secondary text-center text-lg py-4 rounded-2xl">
             Rejoindre une partie
           </Link>
         </motion.div>
@@ -66,7 +87,7 @@ export default function HomePage() {
           transition={{ delay: 0.4, duration: duration.base }}
           className="flex flex-wrap justify-center gap-2 mt-10"
         >
-          {['Jusqu\'à 12 joueurs', 'Questions QCM', 'Classement en direct', 'Bonus de rapidité'].map(
+          {["Jusqu'à 12 joueurs", 'Questions QCM', 'Classement en direct', 'Bonus de rapidité'].map(
             (pill) => (
               <span
                 key={pill}
