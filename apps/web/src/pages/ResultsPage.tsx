@@ -5,33 +5,35 @@ import Podium from '../components/Podium';
 import PageTransition from '../components/PageTransition';
 import { duration } from '../styles/tokens';
 
-const CONFETTI_PARTICLES = [
-  { tx: '-60px', ty: '70px', color: '#F5C76B', delay: '0s' },
-  { tx: '65px', ty: '80px', color: '#FF6B5B', delay: '0.1s' },
-  { tx: '-30px', ty: '100px', color: '#F5C76B', delay: '0.18s' },
-  { tx: '85px', ty: '55px', color: '#FF6B5B', delay: '0.12s' },
-  { tx: '-8px', ty: '120px', color: '#F5C76B', delay: '0.24s' },
-  { tx: '-80px', ty: '90px', color: '#FF6B5B', delay: '0.06s' },
-  { tx: '48px', ty: '110px', color: '#F5C76B', delay: '0.28s' },
-  { tx: '-50px', ty: '60px', color: '#FF6B5B', delay: '0.34s' },
-] as const;
+const RAIN_COLORS = ['#F5C76B', '#FF6B5B', '#F2EEE3', '#a5b4fc', '#F5C76B', '#FF6B5B'];
 
-function ConfettiBurst() {
+// Deterministic confetti particles (no Math.random in render)
+const RAIN_PARTICLES = Array.from({ length: 48 }, (_, i) => ({
+  left: `${((i * 13 + 7) % 97) + 1}%`,
+  delay: `${((i * 0.19) % 3).toFixed(2)}s`,
+  duration: `${(2.4 + (i * 0.11) % 2).toFixed(2)}s`,
+  color: RAIN_COLORS[i % RAIN_COLORS.length],
+  size: 4 + (i % 5),
+  borderRadius: i % 3 === 0 ? '50%' : '2px',
+}));
+
+function ConfettiRain() {
   return (
-    <div className="relative w-0 h-0 pointer-events-none" aria-hidden>
-      {CONFETTI_PARTICLES.map((p, i) => (
+    <div className="fixed inset-0 pointer-events-none overflow-hidden" aria-hidden style={{ zIndex: 0 }}>
+      {RAIN_PARTICLES.map((p, i) => (
         <span
           key={i}
-          className="absolute w-1.5 h-1.5 rounded-sm"
+          className="absolute"
           style={{
-            left: '50%',
-            top: '50%',
+            left: p.left,
+            top: '-12px',
+            width: p.size,
+            height: p.size,
             backgroundColor: p.color,
-            // @ts-ignore CSS custom properties
-            '--tx': p.tx,
-            '--ty': p.ty,
-            animation: `confettiFall 1.4s cubic-bezier(.2,.7,.2,1) ${p.delay} forwards`,
-          } as React.CSSProperties}
+            borderRadius: p.borderRadius,
+            animation: `confettiRain ${p.duration} ${p.delay} ease-in infinite`,
+            opacity: 0.85,
+          }}
         />
       ))}
     </div>
@@ -45,7 +47,8 @@ export default function ResultsPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen p-6 flex flex-col items-center">
+      <div className="min-h-screen p-6 flex flex-col items-center" style={{ position: 'relative' }}>
+        {isWinner && <ConfettiRain />}
         <div className="w-full max-w-lg space-y-6 mt-8">
           {/* Header */}
           <motion.div
@@ -81,13 +84,8 @@ export default function ResultsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: duration.slow, delay: 0.1 }}
               className="card pb-8 relative overflow-visible"
+              style={{ position: 'relative', zIndex: 1 }}
             >
-              {/* Confetti on winner */}
-              {isWinner && (
-                <div className="absolute top-8 left-1/2 -translate-x-1/2">
-                  <ConfettiBurst />
-                </div>
-              )}
               <p className="text-xs font-bold uppercase tracking-wider mb-6 text-center font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.16em' }}>
                 Podium
               </p>

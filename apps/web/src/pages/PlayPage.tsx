@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../store/gameStore';
@@ -37,9 +37,19 @@ export default function PlayPage() {
     [myAnswer, reveal, setMyAnswer],
   );
 
+  const [isCardAlert, setIsCardAlert] = useState(false);
+
   const handleTimerExpire = useCallback(() => {
     // Server handles timeout; nothing to do client-side
   }, []);
+
+  const handleTimerAlert = useCallback((alert: boolean) => {
+    setIsCardAlert(alert);
+  }, []);
+
+  useEffect(() => {
+    setIsCardAlert(false);
+  }, [currentQuestion?.index]);
 
   useEffect(() => {
     const socket = getSocket();
@@ -112,10 +122,20 @@ export default function PlayPage() {
               </div>
 
               {/* Question card */}
-              <div className="card">
+              <motion.div
+                className="card transition-all duration-300"
+                style={isCardAlert && !reveal ? {
+                  borderColor: 'rgba(255,107,91,0.45)',
+                  animation: 'cardAlert 1s ease-in-out infinite',
+                } : {}}
+              >
                 {!reveal && (
                   <div className="mb-5">
-                    <Timer endsAt={currentQuestion.endsAt} onExpire={handleTimerExpire} />
+                    <Timer
+                      endsAt={currentQuestion.endsAt}
+                      onExpire={handleTimerExpire}
+                      onAlert={handleTimerAlert}
+                    />
                   </div>
                 )}
 
@@ -123,9 +143,10 @@ export default function PlayPage() {
                   {reveal ? (
                     <motion.div
                       key="reveal"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -8 }}
+                      transition={{ duration: 0.2 }}
                     >
                       <RevealCard
                         reveal={reveal}
@@ -136,10 +157,11 @@ export default function PlayPage() {
                     </motion.div>
                   ) : (
                     <motion.div
-                      key="question"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
+                      key={`question-${currentQuestion.index}`}
+                      initial={{ opacity: 0, x: 24 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -24 }}
+                      transition={{ duration: 0.22, ease: 'easeOut' }}
                     >
                       <QuestionCard
                         text={currentQuestion.text}
@@ -161,7 +183,7 @@ export default function PlayPage() {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </motion.div>
 
               {/* Mobile scoreboard */}
               <div className="md:hidden">{scoreboardPanel(true)}</div>

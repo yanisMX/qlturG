@@ -144,7 +144,11 @@ export default function LobbyPage() {
           {isHost ? (
             <div className="space-y-3">
               <motion.button
-                whileTap={{ scale: 0.98 }}
+                whileTap={{ scale: 0.97 }}
+                animate={players.length >= 2 ? {
+                  boxShadow: ['0 0 0 0 rgba(245,199,107,0)', '0 0 0 8px rgba(245,199,107,0.18)', '0 0 0 0 rgba(245,199,107,0)'],
+                } : {}}
+                transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
                 onClick={handleStart}
                 disabled={players.length < 1}
                 className="btn-primary w-full text-base py-4"
@@ -152,7 +156,7 @@ export default function LobbyPage() {
                 Lancer la partie
               </motion.button>
               <p className="text-center text-xs font-mono" style={{ color: '#7A7F9B' }}>
-                On peut lancer dès 2, pas de pression.
+                {players.length >= 2 ? `${players.length} joueurs prêts — c'est parti ?` : 'On peut lancer dès 2, pas de pression.'}
               </p>
             </div>
           ) : (
