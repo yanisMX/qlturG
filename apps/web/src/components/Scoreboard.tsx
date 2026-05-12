@@ -7,6 +7,8 @@ interface ScoreboardProps {
   myPlayerId: string | null;
   compact?: boolean;
   revealScores?: Array<{ playerId: string; deltaThisRound: number }>;
+  showLives?: boolean;
+  onKick?: (playerId: string) => void;
 }
 
 export default function Scoreboard({
@@ -14,6 +16,8 @@ export default function Scoreboard({
   myPlayerId,
   compact = false,
   revealScores,
+  showLives = false,
+  onKick,
 }: ScoreboardProps) {
   const sorted = [...players].sort((a, b) => b.score - a.score);
 
@@ -24,13 +28,14 @@ export default function Scoreboard({
           const isMe = player.id === myPlayerId;
           const isFirst = idx === 0;
           const delta = revealScores?.find((s) => s.playerId === player.id)?.deltaThisRound;
+          const isEliminated = player.eliminated === true;
 
           return (
             <motion.div
               key={player.id}
               layout
               initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
+              animate={{ opacity: isEliminated ? 0.4 : 1, x: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: duration.base }}
               className="flex items-center gap-3 px-4 py-3 rounded-xl border transition-colors"
@@ -42,14 +47,33 @@ export default function Scoreboard({
             >
               {/* Rank / crown */}
               <span className="text-sm font-bold w-5 text-center shrink-0 font-mono" style={{ color: '#7A7F9B' }}>
-                {isFirst ? (
+                {isEliminated ? (
+                  <span style={{ color: '#FF6B5B' }}>✕</span>
+                ) : isFirst ? (
                   <span style={{ color: '#F5C76B' }} aria-label="1er">★</span>
                 ) : (
                   idx + 1
                 )}
               </span>
 
-              <span className="flex-1 truncate" style={{ color: '#F2EEE3' }}>{player.nickname}</span>
+              <span className="flex-1 truncate" style={{ color: isEliminated ? '#7A7F9B' : '#F2EEE3' }}>
+                {player.nickname}
+              </span>
+
+              {/* Lives — survival mode */}
+              {showLives && typeof player.lives === 'number' && (
+                <span className="flex gap-0.5 shrink-0">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <span
+                      key={i}
+                      className="text-xs"
+                      style={{ opacity: i < player.lives! ? 1 : 0.2 }}
+                    >
+                      ❤️
+                    </span>
+                  ))}
+                </span>
+              )}
 
               {!compact && (
                 <span className="text-sm font-bold tabular-nums font-mono" style={{ color: '#F5C76B' }}>
@@ -68,6 +92,20 @@ export default function Scoreboard({
                 >
                   +{delta.toLocaleString()}
                 </motion.span>
+              )}
+
+              {/* Kick button — host only, not for self */}
+              {onKick && !isMe && (
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
+                  onClick={() => onKick(player.id)}
+                  className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs transition-colors"
+                  style={{ color: '#FF6B5B', border: '1px solid rgba(255,107,91,0.25)', backgroundColor: 'rgba(255,107,91,0.06)' }}
+                  title="Exclure"
+                  aria-label={`Exclure ${player.nickname}`}
+                >
+                  ✕
+                </motion.button>
               )}
             </motion.div>
           );

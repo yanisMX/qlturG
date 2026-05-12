@@ -35,9 +35,9 @@ export class QuestionsService {
 
   async getRandomByDifficulty(difficulty: Difficulty, count: number) {
     const all = await this.prisma.question.findMany({
-      where: { difficulty },
+      // VARIE = no difficulty filter (all questions)
+      where: difficulty === ('VARIE' as Difficulty) ? {} : { difficulty },
     });
-    const shuffled = all.sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, count);
+    return all.sort(() => Math.random() - 0.5).slice(0, count);
   }
 }

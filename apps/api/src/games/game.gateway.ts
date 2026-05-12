@@ -9,7 +9,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { GameService } from './game.service';
 import { QuestionsService } from '../questions/questions.service';
-import { Question, Round } from '@prisma/client';
+import { Game, Question, Round } from '@prisma/client';
 
 interface SessionData {
   playerId: string;
@@ -23,7 +23,11 @@ interface ActiveRoundData {
   startedAt: Date;
   allRounds: Round[];
   allQuestions: Question[];
+  isDoublePoints: boolean;
 }
+
+const REVEAL_DURATION_MS = 4_000;
+const LOADING_DURATION_MS = 2_000;
 
 @WebSocketGateway({ namespace: '/game', cors: { origin: '*' } })
 export class GameGateway implements OnGatewayDisconnect {
@@ -69,14 +73,12 @@ export class GameGateway implements OnGatewayDisconnect {
 
       await this.gameService.updatePlayerSocket(player.id, client.id);
 
-      // First player to join becomes host
       let isHost = game.hostId === player.id;
       if (game.hostId === 'pending') {
         await this.gameService.setHost(game.id, player.id);
         isHost = true;
       }
       this.sessions.set(client.id, { playerId: player.id, gameId: game.id, isHost });
-
       await client.join(`game:${game.id}`);
 
       const hostId = isHost ? player.id : game.hostId;
@@ -85,10 +87,19 @@ export class GameGateway implements OnGatewayDisconnect {
         code: game.code,
         status: game.status,
         difficulty: game.difficulty,
+        gameMode: game.gameMode,
         speedBonus: game.speedBonus,
+        doublePointsBonus: game.doublePointsBonus,
         totalQuestions: game.totalQuestions,
+        questionDuration: game.questionDuration,
         hostId,
-        players: game.players.map((p) => ({ id: p.id, nickname: p.nickname, score: p.score })),
+        players: game.players.map((p) => ({
+          id: p.id,
+          nickname: p.nickname,
+          score: p.score,
+          lives: p.lives,
+          eliminated: p.eliminated,
+        })),
         yourPlayerId: player.id,
         isHost,
       });
@@ -97,9 +108,13 @@ export class GameGateway implements OnGatewayDisconnect {
         playerId: player.id,
         nickname: player.nickname,
         score: 0,
+        lives: player.lives,
+        eliminated: false,
       });
     } catch (err: unknown) {
-      client.emit('game:error', { message: err instanceof Error ? err.message : 'Failed to join game' });
+      client.emit('game:error', {
+        message: err instanceof Error ? err.message : 'Failed to join game',
+      });
     }
   }
 
@@ -107,6 +122,44 @@ export class GameGateway implements OnGatewayDisconnect {
   async handleLeave(@ConnectedSocket() client: Socket) {
     await this.handleDisconnect(client);
     client.emit('game:state', { left: true });
+  }
+
+  @SubscribeMessage('game:kick')
+  async handleKick(
+    @ConnectedSocket() client: Socket,
+    @MessageBody() data: { playerId: string },
+  ) {
+    const session = this.sessions.get(client.id);
+    if (!session?.isHost) {
+      client.emit('game:error', { message: 'Seul le QG peut exclure des joueurs' });
+      return;
+    }
+    if (data.playerId === session.playerId) {
+      client.emit('game:error', { message: 'Impossible de s\'exclure soi-même' });
+      return;
+    }
+
+    try {
+      const kickedPlayer = await this.gameService.kickPlayer(session.gameId, data.playerId);
+
+      // Notify and remove the kicked socket from the room
+      const kickedSocketId = kickedPlayer.socketId;
+      if (kickedSocketId) {
+        this.server.to(kickedSocketId).emit('game:kicked', {
+          message: 'Tu as été exclu de la partie par le QG.',
+        });
+        this.server.in(kickedSocketId).socketsLeave(`game:${session.gameId}`);
+        this.sessions.delete(kickedSocketId);
+      }
+
+      this.server.to(`game:${session.gameId}`).emit('game:player-left', {
+        playerId: data.playerId,
+      });
+    } catch (err: unknown) {
+      client.emit('game:error', {
+        message: err instanceof Error ? err.message : 'Impossible d\'exclure ce joueur',
+      });
+    }
   }
 
   @SubscribeMessage('game:start')
@@ -119,9 +172,21 @@ export class GameGateway implements OnGatewayDisconnect {
 
     try {
       const { rounds, questions } = await this.gameService.startGame(session.gameId);
-      await this.sendQuestion(session.gameId, rounds, questions, 0);
+      const game = await this.gameService.getGameWithPlayers(session.gameId);
+      if (!game) return;
+
+      // Loading bar before first question
+      this.server.to(`game:${session.gameId}`).emit('game:loading', {
+        duration: LOADING_DURATION_MS,
+      });
+
+      setTimeout(() => {
+        this.sendQuestion(game, rounds, questions, 0).catch(console.error);
+      }, LOADING_DURATION_MS);
     } catch (err: unknown) {
-      client.emit('game:error', { message: err instanceof Error ? err.message : 'Failed to start game' });
+      client.emit('game:error', {
+        message: err instanceof Error ? err.message : 'Failed to start game',
+      });
     }
   }
 
@@ -140,7 +205,7 @@ export class GameGateway implements OnGatewayDisconnect {
       const game = await this.gameService.getGameWithPlayers(session.gameId);
       if (!game) return;
 
-      await this.gameService.recordAnswer({
+      const answer = await this.gameService.recordAnswer({
         playerId: session.playerId,
         roundId: activeRound.round.id,
         choiceIndex: data.choiceIndex,
@@ -148,7 +213,17 @@ export class GameGateway implements OnGatewayDisconnect {
         roundStartedAt: activeRound.startedAt,
         correctAnswerIndex: activeRound.question.answerIndex,
         speedBonus: game.speedBonus,
+        questionDuration: game.questionDuration,
+        isDoublePoints: activeRound.isDoublePoints,
       });
+
+      // Survival: decrement lives on wrong answer
+      const isSurvival =
+        game.gameMode === 'SURVIVAL_SOLO' || game.gameMode === 'SURVIVAL_MULTI';
+      if (isSurvival && !answer.isCorrect) {
+        const { lives, eliminated } = await this.gameService.decrementLife(session.playerId);
+        client.emit('game:life-lost', { lives, eliminated });
+      }
     } catch {
       // Answer already recorded or round ended
     }
@@ -162,13 +237,21 @@ export class GameGateway implements OnGatewayDisconnect {
   }
 
   private async sendQuestion(
-    gameId: string,
+    game: Awaited<ReturnType<GameService['getGameWithPlayers']>> & object,
     allRounds: Round[],
     allQuestions: Question[],
     index: number,
   ) {
     const round = allRounds[index];
     const question = allQuestions[index];
+    const durationMs = (game as { questionDuration: number }).questionDuration * 1000;
+    const gameId = (game as { id: string }).id;
+    const totalQuestions = (game as { totalQuestions: number }).totalQuestions;
+    const doublePointsBonus = (game as { doublePointsBonus: boolean }).doublePointsBonus;
+
+    // Last 20% questions are worth double when doublePointsBonus is enabled
+    const doubleThreshold = Math.floor(totalQuestions * 0.8);
+    const isDoublePoints = doublePointsBonus && index >= doubleThreshold;
 
     const startedAt = new Date();
     await this.gameService['prisma'].round.update({
@@ -176,7 +259,7 @@ export class GameGateway implements OnGatewayDisconnect {
       data: { startedAt },
     });
 
-    const endsAt = new Date(startedAt.getTime() + 10_000);
+    const endsAt = new Date(startedAt.getTime() + durationMs);
 
     this.activeRounds.set(gameId, {
       round,
@@ -184,6 +267,7 @@ export class GameGateway implements OnGatewayDisconnect {
       startedAt,
       allRounds,
       allQuestions,
+      isDoublePoints,
     });
 
     this.server.to(`game:${gameId}`).emit('game:question', {
@@ -193,9 +277,10 @@ export class GameGateway implements OnGatewayDisconnect {
       choices: question.choices,
       startsAt: startedAt.toISOString(),
       endsAt: endsAt.toISOString(),
+      isDoublePoints,
     });
 
-    const timer = setTimeout(() => this.triggerReveal(gameId), 10_000);
+    const timer = setTimeout(() => this.triggerReveal(gameId), durationMs);
     this.roundTimers.set(gameId, timer);
   }
 
@@ -210,13 +295,71 @@ export class GameGateway implements OnGatewayDisconnect {
     if (!activeRound) return;
     this.activeRounds.delete(gameId);
 
+    // Survival: decrement lives for players who didn't answer
+    const game = await this.gameService.getGameWithPlayers(gameId);
+    if (!game) return;
+
+    const isSurvival = game.gameMode === 'SURVIVAL_SOLO' || game.gameMode === 'SURVIVAL_MULTI';
+    if (isSurvival) {
+      const answeredPlayerIds = new Set(
+        activeRound.round
+          ? (await this.gameService['prisma'].answer.findMany({
+              where: { roundId: activeRound.round.id },
+              select: { playerId: true },
+            })).map((a) => a.playerId)
+          : [],
+      );
+
+      const activePlayers = await this.gameService.getActivePlayers(gameId);
+      for (const player of activePlayers) {
+        if (!answeredPlayerIds.has(player.id)) {
+          const { lives, eliminated } = await this.gameService.decrementLife(player.id);
+          // Notify the player if their socket is connected
+          if (player.socketId) {
+            this.server.to(player.socketId).emit('game:life-lost', { lives, eliminated });
+          }
+        }
+      }
+    }
+
     const reveal = await this.gameService.getRoundReveal(activeRound.round.id, gameId);
     this.server.to(`game:${gameId}`).emit('game:reveal', reveal);
 
-    setTimeout(() => this.handleAfterReveal(gameId, activeRound), 4_000);
+    setTimeout(() => this.handleAfterReveal(gameId, activeRound), REVEAL_DURATION_MS);
   }
 
   private async handleAfterReveal(gameId: string, previousRound: ActiveRoundData) {
+    const game = await this.gameService.getGameWithPlayers(gameId);
+    if (!game) return;
+
+    // Survival multi: check if game should end (≤1 player with lives)
+    if (game.gameMode === 'SURVIVAL_MULTI') {
+      const activePlayers = await this.gameService.getActivePlayers(gameId);
+      if (activePlayers.length <= 1) {
+        await this.gameService['prisma'].game.update({
+          where: { id: gameId },
+          data: { status: 'FINISHED' },
+        });
+        const ranking = await this.gameService.getFinalRanking(gameId);
+        this.server.to(`game:${gameId}`).emit('game:finished', { ranking });
+        return;
+      }
+    }
+
+    // Survival solo: check if the player is eliminated
+    if (game.gameMode === 'SURVIVAL_SOLO') {
+      const activePlayers = await this.gameService.getActivePlayers(gameId);
+      if (activePlayers.length === 0) {
+        await this.gameService['prisma'].game.update({
+          where: { id: gameId },
+          data: { status: 'FINISHED' },
+        });
+        const ranking = await this.gameService.getFinalRanking(gameId);
+        this.server.to(`game:${gameId}`).emit('game:finished', { ranking });
+        return;
+      }
+    }
+
     const result = await this.gameService.advanceQuestion(gameId);
 
     if (result.finished) {
@@ -226,8 +369,11 @@ export class GameGateway implements OnGatewayDisconnect {
     }
 
     const nextIndex = result.nextIndex!;
+    const updatedGame = await this.gameService.getGameWithPlayers(gameId);
+    if (!updatedGame) return;
+
     await this.sendQuestion(
-      gameId,
+      updatedGame,
       previousRound.allRounds,
       previousRound.allQuestions,
       nextIndex,

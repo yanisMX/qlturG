@@ -1,3 +1,5 @@
+import type { Difficulty, GameMode, GameStatus } from '../store/gameStore';
+
 const BASE = import.meta.env.VITE_API_URL;
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
@@ -16,17 +18,23 @@ export interface CreateGamePayload {
   difficulty: string;
   totalQuestions: number;
   speedBonus: boolean;
+  gameMode: string;
+  questionDuration: number;
+  doublePointsBonus: boolean;
 }
 
 export interface GameData {
   id: string;
   code: string;
   hostId: string;
-  status: string;
-  difficulty: string;
+  status: GameStatus;
+  difficulty: Difficulty;
   speedBonus: boolean;
+  doublePointsBonus: boolean;
+  gameMode: GameMode;
   totalQuestions: number;
-  players: Array<{ id: string; nickname: string; score: number }>;
+  questionDuration: number;
+  players: Array<{ id: string; nickname: string; score: number; lives?: number; eliminated?: boolean }>;
 }
 
 export const api = {
