@@ -1,4 +1,4 @@
-FROM node:20-alpine AS builder
+FROM node:20-alpine
 WORKDIR /app
 RUN npm install -g pnpm@10.33.0
 
@@ -12,19 +12,6 @@ COPY apps/api/ ./apps/api/
 
 RUN pnpm --filter api prisma:generate
 RUN pnpm --filter api build
-
-FROM node:20-alpine AS runner
-WORKDIR /app
-RUN npm install -g pnpm@10.33.0
-
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
-COPY apps/api/package.json ./apps/api/
-RUN pnpm install --prod --no-frozen-lockfile --filter api...
-
-COPY --from=builder /app/apps/api/dist ./apps/api/dist
-COPY apps/api/prisma ./apps/api/prisma
-
-RUN pnpm --filter api prisma:generate
 
 EXPOSE 3001
 CMD ["node", "apps/api/dist/main"]
