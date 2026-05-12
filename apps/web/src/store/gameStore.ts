@@ -14,7 +14,7 @@ export interface PlayerInfo {
 
 export interface Question {
   index: number;
-  total: number;
+  total: number | null;
   text: string;
   choices: string[];
   startsAt: string;

@@ -256,10 +256,12 @@ export class GameGateway implements OnGatewayDisconnect {
     const gameId = (game as { id: string }).id;
     const totalQuestions = (game as { totalQuestions: number }).totalQuestions;
     const doublePointsBonus = (game as { doublePointsBonus: boolean }).doublePointsBonus;
+    const gameMode = (game as { gameMode: string }).gameMode;
+    const isSurvival = gameMode === 'SURVIVAL_SOLO' || gameMode === 'SURVIVAL_MULTI';
 
-    // Last 20% questions are worth double when doublePointsBonus is enabled
+    // Last 20% questions worth double (standard only — survival has no fixed total)
     const doubleThreshold = Math.floor(totalQuestions * 0.8);
-    const isDoublePoints = doublePointsBonus && index >= doubleThreshold;
+    const isDoublePoints = !isSurvival && doublePointsBonus && index >= doubleThreshold;
 
     const startedAt = new Date();
     await this.gameService['prisma'].round.update({
@@ -280,7 +282,7 @@ export class GameGateway implements OnGatewayDisconnect {
 
     this.server.to(`game:${gameId}`).emit('game:question', {
       index,
-      total: allRounds.length,
+      total: isSurvival ? null : allRounds.length,
       text: question.text,
       choices: question.choices,
       startsAt: startedAt.toISOString(),
@@ -377,13 +379,31 @@ export class GameGateway implements OnGatewayDisconnect {
     }
 
     const nextIndex = result.nextIndex!;
+    let allRounds = previousRound.allRounds;
+    let allQuestions = previousRound.allQuestions;
+
+    // Survival: extend the question pool when exhausted
+    const isSurvival = game.gameMode === 'SURVIVAL_SOLO' || game.gameMode === 'SURVIVAL_MULTI';
+    if (isSurvival && nextIndex >= allRounds.length) {
+      const usedIds = allRounds.map((r) => r.questionId);
+      const { rounds: newRounds, questions: newQs } =
+        await this.gameService.extendSurvivalRounds(
+          gameId,
+          usedIds,
+          (game as { difficulty: string }).difficulty as Parameters<typeof this.gameService.extendSurvivalRounds>[2],
+          allRounds.length,
+        );
+      allRounds = [...allRounds, ...newRounds];
+      allQuestions = [...allQuestions, ...newQs];
+    }
+
     const updatedGame = await this.gameService.getGameWithPlayers(gameId);
     if (!updatedGame) return;
 
     await this.sendQuestion(
       updatedGame,
-      previousRound.allRounds,
-      previousRound.allQuestions,
+      allRounds,
+      allQuestions,
       nextIndex,
     );
   }

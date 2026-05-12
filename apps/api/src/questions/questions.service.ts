@@ -35,9 +35,18 @@ export class QuestionsService {
 
   async getRandomByDifficulty(difficulty: Difficulty, count: number) {
     const all = await this.prisma.question.findMany({
-      // VARIE = no difficulty filter (all questions)
       where: difficulty === ('VARIE' as Difficulty) ? {} : { difficulty },
     });
     return all.sort(() => Math.random() - 0.5).slice(0, count);
+  }
+
+  async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = []) {
+    const all = await this.prisma.question.findMany({
+      where: {
+        ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
+        ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
+      },
+    });
+    return all.sort(() => Math.random() - 0.5);
   }
 }

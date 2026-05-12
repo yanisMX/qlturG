@@ -135,13 +135,23 @@ export class GameService {
       throw new BadRequestException('Game is not in LOBBY state');
     }
 
-    const questions = await this.questionsService.getRandomByDifficulty(
-      game.difficulty,
-      game.totalQuestions,
-    );
+    const isSurvival =
+      game.gameMode === GameMode.SURVIVAL_SOLO || game.gameMode === GameMode.SURVIVAL_MULTI;
 
-    if (questions.length < game.totalQuestions) {
-      throw new BadRequestException('Not enough questions available for this difficulty');
+    let questions;
+    if (isSurvival) {
+      questions = await this.questionsService.getAllByDifficulty(game.difficulty);
+      if (questions.length === 0) {
+        throw new BadRequestException('No questions available for this difficulty');
+      }
+    } else {
+      questions = await this.questionsService.getRandomByDifficulty(
+        game.difficulty,
+        game.totalQuestions,
+      );
+      if (questions.length < game.totalQuestions) {
+        throw new BadRequestException('Not enough questions available for this difficulty');
+      }
     }
 
     const rounds = await Promise.all(
@@ -156,6 +166,25 @@ export class GameService {
     });
 
     return { rounds, questions };
+  }
+
+  async extendSurvivalRounds(
+    gameId: string,
+    usedQuestionIds: string[],
+    difficulty: Difficulty,
+    startOrderIndex: number,
+  ) {
+    let newQuestions = await this.questionsService.getAllByDifficulty(difficulty, usedQuestionIds);
+    if (newQuestions.length === 0) {
+      // All questions exhausted — loop the full pool reshuffled
+      newQuestions = await this.questionsService.getAllByDifficulty(difficulty);
+    }
+    const rounds = await Promise.all(
+      newQuestions.map((q, i) =>
+        this.prisma.round.create({ data: { gameId, questionId: q.id, orderIndex: startOrderIndex + i } }),
+      ),
+    );
+    return { rounds, questions: newQuestions };
   }
 
   async recordAnswer(params: {
@@ -252,8 +281,11 @@ export class GameService {
     if (!game) throw new NotFoundException();
 
     const nextIndex = game.currentQuestionIndex + 1;
+    const isSurvival =
+      game.gameMode === GameMode.SURVIVAL_SOLO || game.gameMode === GameMode.SURVIVAL_MULTI;
 
-    if (nextIndex >= game.totalQuestions) {
+    // Standard: finish when totalQuestions reached
+    if (!isSurvival && nextIndex >= game.totalQuestions) {
       await this.prisma.game.update({
         where: { id: gameId },
         data: { status: GameStatus.FINISHED },

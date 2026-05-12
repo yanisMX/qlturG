@@ -137,7 +137,10 @@ export default function PlayPage() {
               {/* Header row */}
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold px-3 py-1 rounded-full font-mono" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
-                  Question {currentQuestion.index + 1} / {currentQuestion.total}
+                  {isSurvival
+                    ? `Question ${currentQuestion.index + 1}`
+                    : `Question ${currentQuestion.index + 1} / ${currentQuestion.total}`
+                  }
                 </span>
 
                 <div className="flex items-center gap-3">

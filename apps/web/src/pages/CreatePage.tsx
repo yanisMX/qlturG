@@ -49,6 +49,7 @@ export default function CreatePage() {
   const [loading, setLoading] = useState(false);
 
   const isSolo = form.gameMode === 'SURVIVAL_SOLO';
+  const isSurvival = form.gameMode === 'SURVIVAL_SOLO' || form.gameMode === 'SURVIVAL_MULTI';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -262,25 +263,27 @@ export default function CreatePage() {
                 </div>
               </div>
 
-              {/* Nombre de questions */}
-              <div>
-                <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
-                  Nombre de questions :{' '}
-                  <span style={{ color: '#F5C76B', fontWeight: 700 }}>{form.totalQuestions}</span>
-                </label>
-                <input
-                  type="range"
-                  min={10}
-                  max={30}
-                  step={5}
-                  value={form.totalQuestions}
-                  onChange={(e) => setForm({ ...form, totalQuestions: Number(e.target.value) })}
-                  className="w-full accent-accent"
-                />
-                <div className="flex justify-between text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
-                  <span>10</span><span>30</span>
+              {/* Nombre de questions — masqué en survival (illimité) */}
+              {!isSurvival && (
+                <div>
+                  <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
+                    Nombre de questions :{' '}
+                    <span style={{ color: '#F5C76B', fontWeight: 700 }}>{form.totalQuestions}</span>
+                  </label>
+                  <input
+                    type="range"
+                    min={10}
+                    max={30}
+                    step={5}
+                    value={form.totalQuestions}
+                    onChange={(e) => setForm({ ...form, totalQuestions: Number(e.target.value) })}
+                    className="w-full accent-accent"
+                  />
+                  <div className="flex justify-between text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
+                    <span>10</span><span>30</span>
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* Options multi (hors survival solo) */}
               {!isSolo && (
@@ -292,13 +295,15 @@ export default function CreatePage() {
                 />
               )}
 
-              {/* Questions bonus */}
-              <Toggle
-                value={form.doublePointsBonus}
-                onChange={() => setForm({ ...form, doublePointsBonus: !form.doublePointsBonus })}
-                label="Questions bonus × 2"
-                sub={`Les 20% dernières questions valent double`}
-              />
+              {/* Questions bonus — standard seulement (survie n'a pas de total fixe) */}
+              {!isSurvival && (
+                <Toggle
+                  value={form.doublePointsBonus}
+                  onChange={() => setForm({ ...form, doublePointsBonus: !form.doublePointsBonus })}
+                  label="Questions bonus × 2"
+                  sub="Les 20% dernières questions valent double"
+                />
+              )}
 
               {error && (
                 <motion.p
