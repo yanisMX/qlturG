@@ -1,0 +1,97 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+env:
+  REGISTRY: ghcr.io
+  REPO: ${{ github.repository }}
+
+jobs:
+  build-and-push:
+    name: Build & push Docker images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract version tag
+        id: meta
+        run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+
+      - name: Build & push API image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./apps/api
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-api:${{ steps.meta.outputs.VERSION }}
+            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-api:latest
+
+      - name: Build & push Web image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./apps/web
+          push: true
+          build-args: |
+            VITE_API_URL=${{ secrets.VITE_API_URL }}
+            VITE_WS_URL=${{ secrets.VITE_WS_URL }}
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-web:${{ steps.meta.outputs.VERSION }}
+            ${{ env.REGISTRY }}/${{ env.REPO }}/histoire-france-web:latest
+
+  deploy:
+    name: Deploy on server
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy compose file to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          source: docker-compose.prod.yml
+          target: ~/histoire-france/
+
+      - name: Deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: |
+            cd ~/histoire-france
+            export VERSION=${{ github.ref_name }}
+            export GITHUB_REPO=${{ github.repository }}
+
+            # Connexion au registry GitHub
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+            # Pull des nouvelles images
+            docker compose -f docker-compose.prod.yml pull
+
+            # Redémarrage sans downtime
+            docker compose -f docker-compose.prod.yml up -d --remove-orphans
+
+            # Migration Prisma
+            docker compose -f docker-compose.prod.yml exec -T api \
+              node -e "const {execSync}=require('child_process');execSync('npx prisma migrate deploy',{stdio:'inherit'})"
+
+            # Nettoyage des vieilles images
+            docker image prune -f
