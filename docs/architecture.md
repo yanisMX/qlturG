@@ -58,25 +58,32 @@ qlturG/
 ## Modèle de données (Prisma)
 
 ```
-Question       — banque de questions (period, difficulty, choices[4], answerIndex, explanation)
-Game           — une partie (code 6 chars, status LOBBY/IN_PROGRESS/FINISHED, settings)
-Player         — un joueur dans une partie (nickname, score, socketId)
-Round          — une question dans une partie (questionId, orderIndex, startedAt)
-Answer         — réponse d'un joueur à un round (choiceIndex, isCorrect, pointsEarned, responseTimeMs)
+Question  — banque de questions (period, difficulty, topic, choices[4], answerIndex, explanation)
+Game      — une partie (code 6 chars, status, difficulty, topic?, gameMode, speedBonus, doublePointsBonus, …)
+Player    — un joueur dans une partie (nickname, score, socketId, lives, eliminated)
+Round     — une question dans une partie (questionId, orderIndex, startedAt)
+Answer    — réponse d'un joueur à un round (choiceIndex, isCorrect, pointsEarned, responseTimeMs)
 ```
+
+Enums : `Difficulty` (FACILE|MOYEN|DIFFICILE|VARIE), `Topic` (HISTOIRE|GEOGRAPHIE|GEOPOLITIQUE|CINEMA|PHILOSOPHIE|LITTERATURE), `GameMode` (STANDARD|SURVIVAL_SOLO|SURVIVAL_MULTI), `GameStatus` (LOBBY|IN_PROGRESS|FINISHED).
 
 ## Flux d'une partie
 
 ```
-1. POST /games          → crée la partie (hostId='pending', pas de joueur)
-2. WS game:join         → crée le joueur, si hostId='pending' → ce joueur devient host
-3. WS game:join (x N)  → autres joueurs rejoignent (max 12)
-4. WS game:start        → hôte uniquement, sélectionne N questions aléatoires, crée les Rounds
-5. WS game:question     → envoyé à tous (SANS answerIndex), timer 10s côté serveur
-6. WS game:answer       → reçu côté serveur, calcul du score avec horodatage serveur
-7. [après 10s ou tous ont répondu] → WS game:reveal envoyé (answerIndex + explication + scores)
-8. [après 4s] → question suivante (retour en 5) ou game:finished si dernière question
+1. POST /games          → crée la partie (hostId='pending', topic optionnel)
+2. WS game:join         → crée le joueur ; si hostId='pending' → ce joueur devient host
+3. WS game:join (x N)  → autres joueurs rejoignent (max 12 ; max 1 en SURVIVAL_SOLO)
+4. WS game:start        → hôte, sélectionne les questions filtrées par topic/difficulty, crée les Rounds
+5. WS game:question     → envoyé à tous (SANS answerIndex), timer côté serveur
+6. WS game:answer       → calcul du score avec horodatage serveur
+7. [après timer ou tous ont répondu] → WS game:reveal (answerIndex + explication + scores)
+8. [après 4s] → question suivante (retour en 5) ou game:finished
 ```
+
+Modes de jeu :
+- `STANDARD` : N questions fixes, fin à l'épuisement des rounds.
+- `SURVIVAL_MULTI` : 3 vies par joueur, perd 1 vie si mauvaise réponse, éliminé à 0.
+- `SURVIVAL_SOLO` : solo (max 1 joueur), questions illimitées, lance automatiquement sans lobby.
 
 ## Événements WebSocket (namespace /game)
 
