@@ -1,0 +1,1528 @@
+[
+  {
+    "text": "En quelle année Jules César achève-t-il la conquête de la Gaule ?",
+    "choices": [
+      "58 av. J.-C.",
+      "51 av. J.-C.",
+      "44 av. J.-C.",
+      "27 av. J.-C."
+    ],
+    "answerIndex": 1,
+    "explanation": "La guerre des Gaules s'étend de 58 à 51 av. J.-C. La prise d'Alésia en 52 av. J.-C. brise la résistance gauloise, mais la pacification complète n'est achevée qu'en 51 av. J.-C. avec la reddition des derniers peuples.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel chef gaulois mena la révolte contre César à Alésia en 52 av. J.-C. ?",
+    "choices": [
+      "Ambiorix",
+      "Vercingétorix",
+      "Viriathus",
+      "Dumnorix"
+    ],
+    "answerIndex": 1,
+    "explanation": "Vercingétorix, chef des Arvernes, fédéra de nombreuses tribus gauloises contre Rome. Vaincu à Alésia, il se rendit à César et fut exécuté à Rome six ans plus tard.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Comment s'appelait le principal oppidum des Parisii, peuple gaulois habitant l'île de la Cité ?",
+    "choices": [
+      "Lutèce",
+      "Lugdunum",
+      "Nemausus",
+      "Gesoriacum"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lutèce (Lutetia Parisiorum) était le chef-lieu des Parisii. La ville romaine s'étendit sur la rive gauche de la Seine et est l'ancêtre directe de Paris.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille en 102 av. J.-C. vit Marius écraser les Teutons menaçant la Gaule transalpine ?",
+    "choices": [
+      "Bataille de Zama",
+      "Bataille d'Aquae Sextiae",
+      "Bataille de Verceil",
+      "Bataille de Gergovie"
+    ],
+    "answerIndex": 1,
+    "explanation": "À Aquae Sextiae (Aix-en-Provence), le consul Marius anéantit l'armée des Teutons, sauvant la Gaule d'une invasion germanique. L'année suivante, il vainquit aussi les Cimbres à Verceil.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la ville de Lugdunum (Lyon) fut-elle fondée comme capitale des Gaules romaines ?",
+    "choices": [
+      "43 av. J.-C.",
+      "27 av. J.-C.",
+      "10 av. J.-C.",
+      "14 ap. J.-C."
+    ],
+    "answerIndex": 0,
+    "explanation": "Lugdunum est fondée en 43 av. J.-C. par le lieutenant de César, Lucius Munatius Plancus. Elle deviendra rapidement la capitale administrative des Trois Gaules et un carrefour commercial majeur.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle était la principale divinité du panthéon gaulois, assimilée au Mercure romain par César ?",
+    "choices": [
+      "Toutatis",
+      "Ésus",
+      "Taranis",
+      "Lug"
+    ],
+    "answerIndex": 3,
+    "explanation": "Lug (ou Lugus) était une divinité majeure célébrée dans de nombreuses villes gauloises — Lugdunum (Lyon), Luguvalium, etc. César l'assimila au Mercure car il présidait au commerce et aux arts.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel monument romain subsiste à Nîmes et est l'un des temples romains les mieux conservés au monde ?",
+    "choices": [
+      "Le Pont du Gard",
+      "Les Arènes de Nîmes",
+      "La Maison Carrée",
+      "Le Théâtre d'Orange"
+    ],
+    "answerIndex": 2,
+    "explanation": "La Maison Carrée, temple romain érigé vers 4-7 ap. J.-C., est l'un des temples romains les mieux préservés au monde. Elle a inspiré Thomas Jefferson pour le capitole de Virginie.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi mérovingien remporta la bataille de Vouillé en 507, repoussant les Wisigoths au-delà des Pyrénées ?",
+    "choices": [
+      "Dagobert Ier",
+      "Clovis Ier",
+      "Chilpéric Ier",
+      "Thierry Ier"
+    ],
+    "answerIndex": 1,
+    "explanation": "À Vouillé (près de Poitiers), Clovis Ier vainquit et tua le roi wisigoth Alaric II, s'emparant de presque toute la Gaule méridionale. Cette victoire étendit considérablement le royaume franc jusqu'à l'Aquitaine.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année Clovis fut-il baptisé à Reims ?",
+    "choices": [
+      "486",
+      "496",
+      "508",
+      "511"
+    ],
+    "answerIndex": 1,
+    "explanation": "Clovis est baptisé vers 496 par l'évêque Remi, scellant l'alliance entre la dynastie mérovingienne et l'Église catholique — un événement souvent considéré comme le premier acte chrétien du royaume des Francs.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 843 partagea l'empire carolingien entre les fils de Louis le Pieux ?",
+    "choices": [
+      "Traité de Verdun",
+      "Traité de Mersen",
+      "Traité de Ribemont",
+      "Traité d'Aix-la-Chapelle"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le traité de Verdun (843) divisa l'empire en trois : la Francie occidentale pour Charles le Chauve (ancêtre de la France), la Lotharingie pour Lothaire Ier, et la Francie orientale pour Louis le Germanique.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi carolingien fut couronné Empereur d'Occident le 25 décembre 800 ?",
+    "choices": [
+      "Pépin le Bref",
+      "Louis le Pieux",
+      "Charlemagne",
+      "Charles le Chauve"
+    ],
+    "answerIndex": 2,
+    "explanation": "Charlemagne reçut la couronne impériale des mains du pape Léon III à Rome le jour de Noël 800. Cet acte relançait symboliquement l'Empire romain d'Occident et consacrait la puissance franque.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année Jeanne d'Arc fut-elle brûlée vive à Rouen ?",
+    "choices": [
+      "1415",
+      "1420",
+      "1431",
+      "1453"
+    ],
+    "answerIndex": 2,
+    "explanation": "Capturée par les Bourguignons puis vendue aux Anglais, Jeanne d'Arc fut condamnée pour hérésie et brûlée le 30 mai 1431 sur la place du Vieux-Marché à Rouen. Elle fut réhabilitée en 1456.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année le pape Urbain II lança-t-il la Première croisade au concile de Clermont ?",
+    "choices": [
+      "1054",
+      "1095",
+      "1099",
+      "1147"
+    ],
+    "answerIndex": 1,
+    "explanation": "En novembre 1095, au concile de Clermont, Urbain II prêcha la croisade pour libérer Jérusalem des Turcs Seldjoukides. L'expédition aboutit à la prise de Jérusalem en 1099.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi de France remporta la bataille de Bouvines en 1214 face à une coalition anglo-germano-flamande ?",
+    "choices": [
+      "Philippe Ier Auguste",
+      "Louis VIII",
+      "Philippe II Auguste",
+      "Louis IX"
+    ],
+    "answerIndex": 2,
+    "explanation": "Philippe II Auguste écrasa à Bouvines une coalition anglo-germano-flamande. Cette victoire renforça considérablement le pouvoir royal capétien et consolida le territoire du royaume de France.",
+    "period": "MOYEN_AGE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle grande épidémie ravagea l'Europe et la France à partir de 1347, tuant environ un tiers de la population ?",
+    "choices": [
+      "La variole",
+      "La lèpre",
+      "La Peste Noire",
+      "Le typhus"
+    ],
+    "answerIndex": 2,
+    "explanation": "La Peste Noire (peste bubonique) arriva en France par Marseille en 1347. Entre 1347 et 1351, elle tua de 30 à 50 % de la population européenne, provoquant une crise démographique et sociale sans précédent.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel monument parisien, commencé en 1163, est l'exemple le plus célèbre de l'architecture gothique française ?",
+    "choices": [
+      "La Sainte-Chapelle",
+      "Notre-Dame de Paris",
+      "La basilique de Saint-Denis",
+      "Notre-Dame de Chartres"
+    ],
+    "answerIndex": 1,
+    "explanation": "Notre-Dame de Paris, dont la construction débuta en 1163, est le symbole mondial du gothique français. Sa façade ouest, ses arcs-boutants et ses rosaces en ont fait un modèle pour toute l'architecture médiévale.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi de France est le grand mécène de la Renaissance : il fit venir Léonard de Vinci et lança Chambord ?",
+    "choices": [
+      "Louis XI",
+      "Charles VIII",
+      "François Ier",
+      "Henri II"
+    ],
+    "answerIndex": 2,
+    "explanation": "François Ier (1515-1547) fit venir Léonard de Vinci à Amboise, lança la construction de Fontainebleau et du château de Chambord, et fonda le Collège de France, installant la Renaissance en France.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel édit de 1598 accorda aux protestants la liberté de culte et mit fin aux guerres de Religion ?",
+    "choices": [
+      "Édit de Nantes",
+      "Édit de Villers-Cotterêts",
+      "Édit de Fontainebleau",
+      "Édit de Worms"
+    ],
+    "answerIndex": 0,
+    "explanation": "L'édit de Nantes, signé par Henri IV le 13 avril 1598, accordait aux huguenots la liberté de conscience, le droit au culte en certains lieux et des places de sûreté. Il fut révoqué par Louis XIV en 1685.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année Louis XIV installa-t-il définitivement sa cour au château de Versailles ?",
+    "choices": [
+      "1661",
+      "1668",
+      "1682",
+      "1700"
+    ],
+    "answerIndex": 2,
+    "explanation": "Louis XIV transféra officiellement sa cour et le gouvernement à Versailles en mai 1682. Ce déménagement symbolisait la centralisation absolue du pouvoir royal et éloignait la noblesse de Paris.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel philosophe des Lumières dirigea l'Encyclopédie avec d'Alembert, publiée entre 1751 et 1772 ?",
+    "choices": [
+      "Voltaire",
+      "Rousseau",
+      "Diderot",
+      "Montesquieu"
+    ],
+    "answerIndex": 2,
+    "explanation": "Denis Diderot dirigea l'Encyclopédie pendant plus de vingt ans, un monument de 28 volumes rassemblant tout le savoir humain selon la raison. Elle devint le manifeste intellectuel des Lumières.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel massacre de la nuit du 23 au 24 août 1572 vit l'assassinat de milliers de protestants à Paris ?",
+    "choices": [
+      "La Saint-Barthélemy",
+      "La nuit des longs couteaux",
+      "Le massacre de Wassy",
+      "La journée des Barricades"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le massacre de la Saint-Barthélemy, ordonné par Charles IX sous l'influence de Catherine de Médicis, fit entre 3 000 et 30 000 victimes protestantes. Il marqua un tournant brutal dans les guerres de Religion.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel cardinal, ministre de Louis XIII, centralisa le pouvoir royal et affaiblit les grandes familles nobles ?",
+    "choices": [
+      "Mazarin",
+      "Richelieu",
+      "Colbert",
+      "Fleury"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le cardinal de Richelieu (1624-1642) brisa la puissance politique des huguenots et des grands seigneurs, renforça l'administration royale et engagea la France dans la guerre de Trente Ans contre les Habsbourg.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1783 reconnut l'indépendance des États-Unis après le soutien de la France aux insurgents ?",
+    "choices": [
+      "Traité de Fontainebleau",
+      "Traité de Paris (1783)",
+      "Traité de Versailles (1783)",
+      "Traité d'Utrecht"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le traité de Paris du 3 septembre 1783 consacra l'indépendance américaine. La France y regagna quelques territoires perdus en 1763, mais l'effort de guerre creusa un déficit qui contribua à la crise pré-révolutionnaire.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle date est associée à la prise de la Bastille, symbole du début de la Révolution française ?",
+    "choices": [
+      "14 juillet 1789",
+      "4 août 1789",
+      "26 août 1789",
+      "21 juin 1791"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le 14 juillet 1789, la foule parisienne s'empara de la forteresse de la Bastille, symbole de l'arbitraire royal. Cet événement devint la fête nationale française en 1880.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel document du 26 août 1789 proclame que \"les hommes naissent et demeurent libres et égaux en droits\" ?",
+    "choices": [
+      "La Constitution de 1791",
+      "Le serment du Jeu de Paume",
+      "La Déclaration des droits de l'homme et du citoyen",
+      "Le Contrat social"
+    ],
+    "answerIndex": 2,
+    "explanation": "La Déclaration des droits de l'homme et du citoyen de 1789, inspirée des Lumières et de la Déclaration d'indépendance américaine, reste un texte fondateur de la démocratie moderne, intégré au bloc de constitutionnalité français.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année Napoléon Bonaparte fut-il sacré Empereur des Français ?",
+    "choices": [
+      "1799",
+      "1802",
+      "1804",
+      "1807"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le 2 décembre 1804, Napoléon Ier fut sacré Empereur à Notre-Dame de Paris en présence du pape Pie VII. Il se couronna lui-même, affirmant que son pouvoir ne venait pas de l'Église mais de lui-même et du peuple.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 1805 vit Napoléon écraser les armées autrichienne et russe en moins d'une journée ?",
+    "choices": [
+      "Waterloo",
+      "Iéna",
+      "Austerlitz",
+      "Wagram"
+    ],
+    "answerIndex": 2,
+    "explanation": "La bataille d'Austerlitz (2 décembre 1805) est considérée comme le chef-d'oeuvre tactique de Napoléon. En moins de 9 heures, il anéantit une armée austro-russe supérieure en nombre, forçant l'Autriche à signer la paix de Presbourg.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel code juridique napoléonien, toujours en vigueur dans ses grandes lignes, fut promulgué en 1804 ?",
+    "choices": [
+      "Le Code Pénal",
+      "Le Code Civil",
+      "Le Code de Commerce",
+      "Le Code d'Instruction Criminelle"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le Code civil (ou Code Napoléon) de 1804 unifia le droit français en consacrant l'égalité civile, la liberté contractuelle et la propriété privée. Il influença les législations de nombreux pays, de la Louisiane au Québec.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année eut lieu la bataille de Waterloo, mettant fin définitivement au Premier Empire ?",
+    "choices": [
+      "1812",
+      "1813",
+      "1814",
+      "1815"
+    ],
+    "answerIndex": 3,
+    "explanation": "Le 18 juin 1815, Napoléon fut vaincu à Waterloo (Belgique) par Wellington et Blücher. Cette défaite entraîna sa seconde abdication et son exil définitif à Sainte-Hélène, où il mourut en 1821.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel général vendéen surnommé 'le Saint de l'Anjou' prit spontanément la tête de l'insurrection en 1793 ?",
+    "choices": [
+      "Georges Cadoudal",
+      "La Rochejaquelein",
+      "Charette",
+      "Cathelineau"
+    ],
+    "answerIndex": 3,
+    "explanation": "Jacques Cathelineau, simple colporteur, prit la tête de l'insurrection vendéenne en mars 1793. Élu généralissime, il fut mortellement blessé lors de l'attaque de Nantes, devenant le premier martyr vendéen.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Combien de régimes politiques différents la France a-t-elle connus entre 1814 et 1875 ?",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "answerIndex": 2,
+    "explanation": "Entre 1814 et 1875, la France connut successivement : la Restauration (Louis XVIII, Charles X), la Monarchie de Juillet, la IIe République, le Second Empire et la IIIe République, soit sept régimes distincts en soixante ans.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel événement de juin 1848, réprimé par le général Cavaignac, fit des milliers de morts parmi les ouvriers parisiens ?",
+    "choices": [
+      "La révolution de Février",
+      "Les journées de Juin",
+      "La Commune de Paris",
+      "Le coup d'État du 2 décembre"
+    ],
+    "answerIndex": 1,
+    "explanation": "Les journées de Juin 1848 éclatèrent quand le gouvernement ferma les Ateliers nationaux. La répression du général Cavaignac fit 3 000 à 5 000 morts, traumatisant profondément la classe ouvrière française.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel écrivain publia 'J'accuse...!' dans L'Aurore en janvier 1898, défendant le capitaine Dreyfus ?",
+    "choices": [
+      "Guy de Maupassant",
+      "Anatole France",
+      "Émile Zola",
+      "Victor Hugo"
+    ],
+    "answerIndex": 2,
+    "explanation": "La lettre ouverte de Zola au président Félix Faure, publiée le 13 janvier 1898, dénonça l'antisémitisme et les irrégularités du procès Dreyfus. Elle déclencha l'Affaire Dreyfus et divisa profondément la société française.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la Commune de Paris fut-elle écrasée lors de la 'Semaine sanglante' ?",
+    "choices": [
+      "1848",
+      "1870",
+      "1871",
+      "1875"
+    ],
+    "answerIndex": 2,
+    "explanation": "La Semaine sanglante (21-28 mai 1871) vit les troupes de Versailles reprendre Paris aux communards. La répression fit entre 10 000 et 30 000 morts et entraîna la déportation de milliers de militants.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel ingénieur français construisit la tour qui porte son nom pour l'Exposition universelle de 1889 ?",
+    "choices": [
+      "Ferdinand de Lesseps",
+      "Gustave Eiffel",
+      "Eugène Viollet-le-Duc",
+      "Frédéric Bartholdi"
+    ],
+    "answerIndex": 1,
+    "explanation": "Gustave Eiffel construisit sa tour en fer puddlé en 2 ans, 2 mois et 5 jours pour l'Exposition universelle de 1889 célébrant le centenaire de la Révolution. Initialement mal reçue, elle est aujourd'hui le monument le plus visité au monde.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle loi de 1905 instaura la séparation des Églises et de l'État en France ?",
+    "choices": [
+      "Loi Ferry sur l'instruction publique",
+      "Loi Waldeck-Rousseau sur les associations",
+      "Loi de séparation des Églises et de l'État",
+      "Loi Combes sur les congrégations"
+    ],
+    "answerIndex": 2,
+    "explanation": "La loi du 9 décembre 1905 mit fin au Concordat de 1801 et établit la laïcité comme principe d'État. Elle garantit la liberté de conscience tout en supprimant le financement public des cultes — un pilier de la République française.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1871 força la France à céder l'Alsace et une partie de la Lorraine à l'Allemagne ?",
+    "choices": [
+      "Traité de Francfort",
+      "Traité de Versailles",
+      "Traité de Paris",
+      "Traité de Berlin"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le traité de Francfort (10 mai 1871), conclu après la défaite de 1870-71, imposa à la France une lourde indemnité de guerre et la perte de l'Alsace-Moselle. La revanche contre l'Allemagne devint une obsession nationale jusqu'en 1914.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle loi de Jules Ferry (1882) rendit l'instruction primaire obligatoire et laïque en France ?",
+    "choices": [
+      "Loi Falloux",
+      "Loi Guizot",
+      "Loi Ferry sur l'enseignement primaire",
+      "Loi Duruy"
+    ],
+    "answerIndex": 2,
+    "explanation": "La loi Ferry du 28 mars 1882 rendit l'enseignement primaire obligatoire pour les enfants de 6 à 13 ans et supprima l'instruction religieuse des programmes publics. Elle est un pilier fondateur de la République laïque française.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel peintre français du XIXe siècle est l'auteur du tableau 'La Liberté guidant le peuple' (1830) ?",
+    "choices": [
+      "Ingres",
+      "Géricault",
+      "Eugène Delacroix",
+      "Jacques-Louis David"
+    ],
+    "answerIndex": 2,
+    "explanation": "Eugène Delacroix peignit 'La Liberté guidant le peuple' en 1830 pour commémorer les Trois Glorieuses. Allégorie de la révolution, ce tableau est devenu un symbole universel de liberté et figure sur l'ancienne pièce de 100 francs.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 1916 est surnommée 'l'enfer de Verdun' et symbolise l'hécatombe de la Grande Guerre ?",
+    "choices": [
+      "La Marne",
+      "La Somme",
+      "Verdun",
+      "Les Éparges"
+    ],
+    "answerIndex": 2,
+    "explanation": "La bataille de Verdun (février-décembre 1916) fut l'une des plus longues et meurtrières de la Première Guerre mondiale, faisant plus de 700 000 victimes des deux côtés. Le cri 'Ils ne passeront pas' en est devenu le symbole.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle date vit la signature de l'armistice mettant fin à la Première Guerre mondiale ?",
+    "choices": [
+      "11 novembre 1918",
+      "8 mai 1918",
+      "14 juillet 1919",
+      "28 juin 1919"
+    ],
+    "answerIndex": 0,
+    "explanation": "L'armistice fut signé dans le wagon-salon du maréchal Foch dans la forêt de Compiègne le 11 novembre 1918 à 5h du matin, prenant effet à 11h. En France, le 11 novembre est un jour férié commémoratif.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel général lança depuis Londres le célèbre 'Appel du 18 juin' 1940 ?",
+    "choices": [
+      "Henri Giraud",
+      "Philippe Pétain",
+      "Charles de Gaulle",
+      "Jean de Lattre de Tassigny"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le général de Gaulle, depuis les studios de la BBC à Londres, lança le 18 juin 1940 son appel à la résistance contre l'Allemagne nazie. Peu entendu sur le moment, il devint le mythe fondateur de la France libre.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel raid du 19 août 1942 sur les côtes normandes se solda par un désastre pour les forces alliées, majoritairement canadiennes ?",
+    "choices": [
+      "Débarquement de Provence",
+      "Opération Overlord",
+      "Opération Jubilee (Dieppe)",
+      "Opération Torch"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'opération Jubilee à Dieppe (19 août 1942) fut une catastrophe : sur 6 000 soldats alliés engagés, plus de 3 600 furent tués, blessés ou capturés. Cette leçon sanglante permit cependant de préparer le succès du Débarquement de 1944.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année le maréchal Pétain signa-t-il l'armistice avec l'Allemagne et installa-t-il le régime de Vichy ?",
+    "choices": [
+      "1939",
+      "1940",
+      "1941",
+      "1942"
+    ],
+    "answerIndex": 1,
+    "explanation": "L'armistice franco-allemand fut signé le 22 juin 1940 à Rethondes. Le 10 juillet, l'Assemblée nationale vota les pleins pouvoirs à Pétain, instaurant l'État français (régime de Vichy) qui collabora activement avec l'occupant nazi.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année Jean Moulin fut-il arrêté par la Gestapo à Caluire, trahissant le Conseil national de la Résistance ?",
+    "choices": [
+      "1941",
+      "1942",
+      "1943",
+      "1944"
+    ],
+    "answerIndex": 2,
+    "explanation": "Jean Moulin, délégué général de De Gaulle en France occupée et fondateur du CNR, fut arrêté à Caluire le 21 juin 1943. Il mourut des suites des tortures infligées par Klaus Barbie sans avoir trahi ses camarades.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité signé le 28 juin 1919 officialisa la fin de la Première Guerre mondiale ?",
+    "choices": [
+      "Traité de Trianon",
+      "Traité de Saint-Germain",
+      "Traité de Versailles",
+      "Traité de Sèvres"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le traité de Versailles, signé dans la galerie des Glaces, imposa à l'Allemagne la responsabilité de la guerre (article 231), d'énormes réparations et des pertes territoriales. Ces conditions contribuèrent à la montée du nazisme.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Comment s'appelle le plan allemand de 1914 prévoyant d'envahir la France via la Belgique pour éviter une guerre sur deux fronts ?",
+    "choices": [
+      "Plan Bismarck",
+      "Plan Schlieffen",
+      "Plan Wagner",
+      "Plan Moltke"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le plan Schlieffen, élaboré par le général von Schlieffen et modifié par von Moltke, prévoyait une offensive éclair à travers la Belgique neutre pour contourner les défenses françaises avant de se retourner contre la Russie. Son échec lors de la bataille de la Marne entraîna la guerre de tranchées.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle victoire française de septembre 1914 stoppa l'avancée allemande à 40 km de Paris, sauvant la capitale ?",
+    "choices": [
+      "Bataille de la Somme",
+      "Bataille de la Marne",
+      "Bataille de l'Yser",
+      "Bataille de Verdun"
+    ],
+    "answerIndex": 1,
+    "explanation": "La première bataille de la Marne (5-12 septembre 1914), commandée par Joffre, stoppa l'offensive allemande. Les 'taxis de la Marne', qui transportèrent 6 000 soldats en renfort, en sont devenus le symbole populaire. Cette victoire aboutit à la stabilisation du front et à la guerre de tranchées.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 1916 sur la Somme vit l'utilisation des chars d'assaut pour la première fois dans l'histoire ?",
+    "choices": [
+      "Bataille de Verdun",
+      "Bataille de la Somme",
+      "Bataille d'Arras",
+      "Bataille de Passchendaele"
+    ],
+    "answerIndex": 1,
+    "explanation": "La bataille de la Somme (juillet-novembre 1916) fut l'une des plus meurtrières de l'histoire avec plus d'un million de victimes. C'est lors de cette bataille que les Britanniques utilisèrent pour la première fois les chars d'assaut (tanks), le 15 septembre 1916.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel général français organisa la défense de Verdun en 1916 et mit en place la 'Voie sacrée' pour ravitailler les troupes ?",
+    "choices": [
+      "Ferdinand Foch",
+      "Joseph Joffre",
+      "Philippe Pétain",
+      "Robert Nivelle"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le général Pétain prit le commandement à Verdun le 26 février 1916 et organisa la rotation des divisions et le ravitaillement via la route nationale 35, surnommée 'Voie sacrée'. Sa formule 'Ils ne passeront pas' devint le symbole de la résistance française.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel accord de 1938, signé par Daladier, Chamberlain, Hitler et Mussolini, céda les Sudètes à l'Allemagne nazie ?",
+    "choices": [
+      "Pacte Molotov-Ribbentrop",
+      "Accords de Munich",
+      "Traité de Locarno",
+      "Pacte de Varsovie"
+    ],
+    "answerIndex": 1,
+    "explanation": "Les accords de Munich (29-30 septembre 1938) livrèrent la région des Sudètes à Hitler sans consulter la Tchécoslovaquie. Daladier et Chamberlain croyaient garantir la paix par cette concession ; six mois plus tard, Hitler occupait toute la Tchécoslovaquie. Ces accords sont devenus le symbole de l'apaisement face aux dictateurs.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle ligne de fortifications construite dans les années 1930 était censée protéger la frontière franco-allemande mais fut contournée ?",
+    "choices": [
+      "Ligne Hindenburg",
+      "Ligne Maginot",
+      "Ligne Siegfried",
+      "Ligne Weygand"
+    ],
+    "answerIndex": 1,
+    "explanation": "La ligne Maginot, construite de 1929 à 1936 sous l'impulsion du ministre André Maginot, s'étendait sur 450 km. Les Allemands la contournèrent brillamment en passant par les Ardennes en mai 1940, réputées infranchissables par les chars. Paris tomba en six semaines.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle opération alliée permit l'évacuation de 338 000 soldats depuis les plages de Dunkerque en mai-juin 1940 ?",
+    "choices": [
+      "Opération Dynamo",
+      "Opération Sea Lion",
+      "Opération Torch",
+      "Opération Compass"
+    ],
+    "answerIndex": 0,
+    "explanation": "L'opération Dynamo (26 mai – 4 juin 1940) évacua 338 226 soldats alliés grâce à une flotte improvisée de navires civils et militaires. Churchill transforma ce désastre militaire en symbole de résistance en déclarant que 'les guerres ne se gagnent pas avec des évacuations'.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle date Paris fut-il libéré de l'occupation allemande lors de la Seconde Guerre mondiale ?",
+    "choices": [
+      "6 juin 1944",
+      "15 août 1944",
+      "25 août 1944",
+      "8 mai 1945"
+    ],
+    "answerIndex": 2,
+    "explanation": "Paris fut libéré le 25 août 1944. Le général Leclerc et sa 2e Division blindée entrèrent dans la capitale après cinq jours d'insurrection. De Gaulle descendit les Champs-Élysées le lendemain sous les acclamations de la foule.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel débarquement allié du 6 juin 1944 ouvrit le second front en Europe de l'Ouest ?",
+    "choices": [
+      "Débarquement de Sicile",
+      "Débarquement en Provence",
+      "Débarquement de Normandie",
+      "Débarquement de Salerne"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'opération Overlord, le 6 juin 1944 (D-Day), débarqua 156 000 soldats alliés sur cinq plages normandes (Utah, Omaha, Gold, Juno, Sword). C'est la plus grande opération amphibie de l'histoire. Elle ouvrit la voie à la libération de la France.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Lors de quelle rafle de juillet 1942 la police française arrêta-t-elle 13 000 Juifs à Paris, dont 4 000 enfants ?",
+    "choices": [
+      "Rafle du Vél d'Hiv",
+      "Rafle de la rue Sainte-Catherine",
+      "Rafle de Drancy",
+      "Nuit de Cristal"
+    ],
+    "answerIndex": 0,
+    "explanation": "Les 16 et 17 juillet 1942, la police française arrêta 13 152 Juifs à Paris et les parqua au Vélodrome d'Hiver avant leur déportation vers Auschwitz. En 1995, le président Chirac reconnut officiellement la responsabilité de l'État français dans cette rafle.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel massacre de juin 1944, perpétré par la division SS 'Das Reich', fit 642 victimes dans un village limousin ?",
+    "choices": [
+      "Massacre de Tulle",
+      "Massacre d'Oradour-sur-Glane",
+      "Massacre du Vercors",
+      "Massacre de Maillé"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le 10 juin 1944, la division SS 'Das Reich' massacra les 642 habitants d'Oradour-sur-Glane : les hommes furent fusillés, les femmes et enfants brûlés dans l'église. Le village fut laissé en ruines et classé monument historique comme mémorial.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel débarquement allié du 15 août 1944 libéra le sud de la France, souvent oublié face au débarquement de Normandie ?",
+    "choices": [
+      "Opération Overlord",
+      "Opération Dragoon",
+      "Opération Torch",
+      "Opération Jubilee"
+    ],
+    "answerIndex": 1,
+    "explanation": "L'opération Dragoon (15 août 1944) débarqua 150 000 soldats alliés sur les côtes de Provence entre Toulon et Cannes. Menée par la 1ère Armée française du général de Lattre de Tassigny, elle permit la libération de Marseille et de Lyon et la remontée vers l'Alsace.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel milieu paramilitaire de Vichy, fondé en 1943, collabora activement avec la Gestapo dans la traque des résistants et des Juifs ?",
+    "choices": [
+      "Légion française des combattants",
+      "Milice française",
+      "Croix de Feu",
+      "Parti Populaire Français"
+    ],
+    "answerIndex": 1,
+    "explanation": "La Milice française, fondée en janvier 1943 par Joseph Darnand sous les ordres de Pétain, traqua résistants, Juifs et réfractaires au STO. Ses méthodes parfois plus brutales que la Gestapo lui valurent une réputation d'acharnement. Ses membres furent jugés à la Libération.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle mesure du régime de Vichy, instaurée en 1943, contraignit des centaines de milliers de Français à travailler en Allemagne ?",
+    "choices": [
+      "Service Militaire Obligatoire",
+      "Service du Travail Obligatoire (STO)",
+      "Plan de Travail National",
+      "Chantiers de la Jeunesse"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le Service du Travail Obligatoire (STO), instauré en février 1943, envoya près de 650 000 Français travailler de force dans les usines allemandes. Cette mesure impopulaire alimenta le recrutement des maquis de résistance, de nombreux réfractaires préférant rejoindre le maquis plutôt que de partir.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel mouvement de résistance intérieure, fondé par Henri Frenay en zone sud, fut l'un des plus importants de la France occupée ?",
+    "choices": [
+      "Libération-Nord",
+      "Franc-Tireur",
+      "Combat",
+      "Défense de la France"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le mouvement 'Combat', fondé en 1941 par Henri Frenay, fut l'un des principaux mouvements de résistance en zone sud. Il publiait le journal clandestin éponyme, organisait des réseaux de renseignement et des groupes armés, avant de rejoindre le CNR de Jean Moulin en 1943.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle conférence de février 1945 réunit Churchill, Roosevelt et Staline pour décider du sort de l'Europe d'après-guerre ?",
+    "choices": [
+      "Conférence de Téhéran",
+      "Conférence de Yalta",
+      "Conférence de Potsdam",
+      "Conférence de Casablanca"
+    ],
+    "answerIndex": 1,
+    "explanation": "La conférence de Yalta (4-11 février 1945) réunit les trois Grands en Crimée. Ils y décidèrent des zones d'occupation allemandes, de la création de l'ONU et du sort de l'Europe de l'Est. La France, absente, fut néanmoins admise dans le club des grandes puissances vainqueurs.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle date l'Allemagne nazie capitula-t-elle inconditionnellement, mettant fin à la Seconde Guerre mondiale en Europe ?",
+    "choices": [
+      "25 avril 1945",
+      "30 avril 1945",
+      "8 mai 1945",
+      "2 septembre 1945"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le 8 mai 1945, l'Allemagne signa à Reims puis à Berlin sa capitulation inconditionnelle. Ce 'V-E Day' (Victory in Europe Day) est célébré comme jour férié en France. La guerre contre le Japon se poursuivit jusqu'au 2 septembre 1945.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel président du Conseil français déclara la guerre à l'Allemagne nazie le 3 septembre 1939 ?",
+    "choices": [
+      "Léon Blum",
+      "Pierre Laval",
+      "Édouard Daladier",
+      "Paul Reynaud"
+    ],
+    "answerIndex": 2,
+    "explanation": "Édouard Daladier était président du Conseil lorsque la France déclara la guerre à l'Allemagne, suite à l'invasion de la Pologne. Il avait signé les accords de Munich en 1938, espérant éviter le conflit en cédant les Sudètes. Il fut remplacé par Paul Reynaud en mars 1940.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Lors de quelle offensive finale de 1918, commandée par Foch, les armées alliées brisèrent définitivement la résistance allemande ?",
+    "choices": [
+      "Bataille du Chemin des Dames",
+      "Offensive des Cent-Jours",
+      "Offensive Nivelle",
+      "Bataille de l'Aisne"
+    ],
+    "answerIndex": 1,
+    "explanation": "L'Offensive des Cent-Jours (8 août – 11 novembre 1918), déclenchée à Amiens par le maréchal Foch, brisa le moral et les lignes allemandes. Cette série d'offensives successives conduisit directement à l'armistice du 11 novembre. Foch fut qualifié de 'généralissime des armées alliées'.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel maquis du Vercors, fort de 4 000 résistants, fut écrasé par les Allemands en juillet 1944 après avoir proclamé la République ?",
+    "choices": [
+      "Maquis de l'Ain",
+      "Maquis des Glières",
+      "Maquis du Vercors",
+      "Maquis de Corrèze"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le maquis du Vercors proclama la République sur son plateau le 3 juillet 1944, espérant un soutien allié. Les Allemands le réduisirent à néant du 21 au 25 juillet avec des parachutistes SS, faisant 840 victimes parmi les résistants. Cette tragédie révéla l'abandon des maquis par les Alliés.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel réseau de résistance française, fondé en 1940, fournissait des renseignements aux Britanniques sur les mouvements allemands ?",
+    "choices": [
+      "Alliance",
+      "Confrérie Notre-Dame",
+      "Centurie",
+      "Réseau Prosper"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le réseau Confrérie Notre-Dame, fondé par le colonel Rémy (Gilbert Renault) en 1940, fut l'un des premiers et plus importants réseaux de renseignement français travaillant pour le BCRA de Londres. Ses agents transmettaient des informations cruciales sur les défenses côtières allemandes.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France entra-t-elle officiellement en guerre contre l'Allemagne lors du premier conflit mondial ?",
+    "choices": [
+      "1913",
+      "1914",
+      "1915",
+      "1916"
+    ],
+    "answerIndex": 1,
+    "explanation": "La France mobilisa ses troupes le 1er août 1914 et l'Allemagne lui déclara la guerre le 3 août. L'assassinat de l'archiduc François-Ferdinand à Sarajevo le 28 juin 1914 avait déclenché la crise diplomatique. La France rejoignit ainsi ses alliés russes et britanniques dans la Triple Entente.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel organisme clandestin créé en mai 1943 coordonnait l'ensemble de la résistance intérieure française sous la présidence de Jean Moulin ?",
+    "choices": [
+      "BCRA",
+      "FFI",
+      "CNR (Conseil National de la Résistance)",
+      "SFIO"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le Conseil National de la Résistance (CNR), fondé par Jean Moulin le 27 mai 1943, réunit pour la première fois tous les mouvements de résistance intérieure, partis politiques et syndicats. Son programme de 1944 inspira les grandes réformes de la Libération (Sécurité sociale, nationalisations).",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité a mis fin à la guerre d'Algérie ?",
+    "choices": [
+      "Traité de Rome",
+      "Accords d'Évian",
+      "Traité de Paris",
+      "Accords de Genève"
+    ],
+    "answerIndex": 1,
+    "explanation": "Les accords d'Évian sont signés le 18 mars 1962 entre le gouvernement français et le GPRA, mettant fin à près de huit ans de guerre et ouvrant la voie à l'indépendance de l'Algérie proclamée le 5 juillet 1962.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année le général de Gaulle fonda-t-il la Ve République avec sa nouvelle Constitution ?",
+    "choices": [
+      "1944",
+      "1951",
+      "1958",
+      "1962"
+    ],
+    "answerIndex": 2,
+    "explanation": "La Constitution de la Ve République fut adoptée par référendum le 28 septembre 1958. Elle renforça considérablement l'exécutif au détriment du Parlement, mettant fin à l'instabilité gouvernementale chronique de la IVe République.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel mouvement de Mai 1968 commença par une révolte étudiante avant de devenir une grève générale de 10 millions de travailleurs ?",
+    "choices": [
+      "La nuit des Barricades",
+      "Mai 68",
+      "La révolution de velours",
+      "Le Front populaire"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mai 68 débuta à Nanterre et la Sorbonne avant de paralyser la France entière. Les accords de Grenelle du 27 mai accordèrent des augmentations de salaires et de nouveaux droits syndicaux, mais de Gaulle se maintint au pouvoir.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France accorda-t-elle l'indépendance à ses territoires d'Afrique subsaharienne lors de 'l'année de l'Afrique' ?",
+    "choices": [
+      "1956",
+      "1958",
+      "1960",
+      "1962"
+    ],
+    "answerIndex": 2,
+    "explanation": "En 1960, dite 'l'année de l'Afrique', dix-sept nations africaines accédèrent à l'indépendance, dont quatorze anciennes colonies ou territoires français. Ce processus avait été préparé par la loi-cadre Defferre de 1956.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel président français signa avec l'Allemagne le traité de l'Élysée en 1963, marquant la réconciliation franco-allemande ?",
+    "choices": [
+      "Georges Pompidou",
+      "Charles de Gaulle",
+      "Vincent Auriol",
+      "René Coty"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le traité de l'Élysée, signé le 22 janvier 1963 par de Gaulle et le chancelier Adenauer, institua une coopération étroite entre la France et l'Allemagne en matière de politique étrangère, de défense et d'éducation.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel chef du FLN algérien, emprisonné en 1956 après l'interception de son avion par la France, devint le premier président de l'Algérie indépendante ?",
+    "choices": [
+      "Ferhat Abbas",
+      "Mohamed Boudiaf",
+      "Ahmed Ben Bella",
+      "Houari Boumédiène"
+    ],
+    "answerIndex": 2,
+    "explanation": "Ahmed Ben Bella, l'une des figures historiques du FLN, fut capturé lors du détournement de son avion en octobre 1956 par l'armée française. Libéré en 1962 après les accords d'Évian, il devint le premier président algérien.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 1954 marqua la défaite française en Indochine et mit fin à la guerre ?",
+    "choices": [
+      "Hanoï",
+      "Saïgon",
+      "Diên Biên Phu",
+      "Cao Bang"
+    ],
+    "answerIndex": 2,
+    "explanation": "La chute du camp retranché de Diên Biên Phu le 7 mai 1954 face au Viêt-minh du général Giap mit fin à la présence militaire française en Indochine. Les accords de Genève (juillet 1954) partagèrent le Viêtnam au 17e parallèle.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel seul territoire français vota 'Non' lors du référendum de 1958 sur la Ve République, choisissant immédiatement l'indépendance ?",
+    "choices": [
+      "Madagascar",
+      "Sénégal",
+      "Guinée",
+      "Côte d'Ivoire"
+    ],
+    "answerIndex": 2,
+    "explanation": "Lors du référendum du 28 septembre 1958, seule la Guinée de Sékou Touré vota 'Non' à la Communauté française, obtenant ainsi son indépendance immédiate. De Gaulle lui retira toute aide française du jour au lendemain. Les autres territoires africains attendirent 1960 pour accéder à l'indépendance.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France quitta-t-elle le commandement militaire intégré de l'OTAN, affirmant son indépendance stratégique ?",
+    "choices": [
+      "1958",
+      "1963",
+      "1966",
+      "1969"
+    ],
+    "answerIndex": 2,
+    "explanation": "En 1966, de Gaulle retira la France du commandement militaire intégré de l'OTAN et exigea le départ des bases américaines du sol français. La France maintint son adhésion politique à l'alliance mais refusa toute subordination militaire. Elle ne réintégra le commandement qu'en 2009 sous Sarkozy.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France fit-elle exploser sa première bombe atomique, devenant la 4e puissance nucléaire mondiale ?",
+    "choices": [
+      "1958",
+      "1960",
+      "1964",
+      "1968"
+    ],
+    "answerIndex": 1,
+    "explanation": "La France fit exploser sa première bombe atomique le 13 février 1960 dans le Sahara algérien (Reggane). De Gaulle lança aussitôt la politique de 'force de frappe' nucléaire indépendante, pilier de la souveraineté française face aux deux superpuissances.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel plan américain d'aide économique à l'Europe occidentale, adopté en 1948, permit la reconstruction de la France après-guerre ?",
+    "choices": [
+      "Plan Dawes",
+      "Plan Marshall",
+      "Plan Monnet",
+      "Plan Schuman"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le Plan Marshall (European Recovery Program), proposé par le secrétaire d'État américain George Marshall en 1947 et appliqué de 1948 à 1951, fournit 13 milliards de dollars à l'Europe occidentale. La France en fut l'une des principales bénéficiaires avec 2,7 milliards, accélérant sa modernisation industrielle.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année le Maroc et la Tunisie obtinrent-ils simultanément leur indépendance de la France ?",
+    "choices": [
+      "1954",
+      "1956",
+      "1958",
+      "1960"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le Maroc et la Tunisie accédèrent tous deux à l'indépendance en mars 1956. Le sultan Mohammed V, exilé par la France en 1953, rentra triomphalement au Maroc. Ces indépendances négociées contrastèrent avec la guerre d'Algérie qui se poursuivit jusqu'en 1962.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle crise de 1956 vit la France et le Royaume-Uni intervenir militairement en Égypte après la nationalisation du canal de Suez ?",
+    "choices": [
+      "Crise de Berlin",
+      "Crise de Cuba",
+      "Crise de Suez",
+      "Crise du Liban"
+    ],
+    "answerIndex": 2,
+    "explanation": "Après la nationalisation du canal de Suez par Nasser en juillet 1956, la France, le Royaume-Uni et Israël lancèrent une intervention militaire en octobre. Sous la pression des États-Unis et de l'URSS, ils durent se retirer en novembre, marquant la fin des ambitions coloniales franco-britanniques.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel putsch militaire d'avril 1961 à Alger, mené par quatre généraux, tenta de renverser de Gaulle pour empêcher l'indépendance algérienne ?",
+    "choices": [
+      "Putsch du 13 mai",
+      "Putsch des généraux (Challe, Salan, Jouhaud, Zeller)",
+      "Coup d'état de l'OAS",
+      "Révolte des pieds-noirs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le putsch des généraux (22-25 avril 1961), mené par Challe, Salan, Jouhaud et Zeller, échoua en quatre jours. De Gaulle dénonça la rébellion à la télévision en uniforme et les soldats du contingent refusèrent de suivre les généraux putschistes. Les quatre généraux furent jugés et condamnés.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel mouvement de libération nationale algérien déclencha l'insurrection du 1er novembre 1954 contre la présence française ?",
+    "choices": [
+      "MNA",
+      "MTLD",
+      "FLN (Front de Libération Nationale)",
+      "PPA"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le FLN (Front de Libération Nationale) déclencha la guerre d'Algérie le 1er novembre 1954 (la 'Toussaint rouge') avec une série d'attentats coordonnés. Né d'une scission au sein du mouvement national algérien, il devint l'interlocuteur unique de la France lors des négociations d'Évian en 1962.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année fut créée la Communauté économique européenne (CEE), dont la France fut l'un des membres fondateurs ?",
+    "choices": [
+      "1951",
+      "1954",
+      "1957",
+      "1962"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le traité de Rome, signé le 25 mars 1957 par la France, l'Allemagne, l'Italie, la Belgique, les Pays-Bas et le Luxembourg, institua la Communauté économique européenne (CEE). Il entra en vigueur le 1er janvier 1958 et posa les bases du marché commun européen.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle organisation terroriste, fondée en 1961, mena des attentats en France et en Algérie pour s'opposer à l'indépendance algérienne ?",
+    "choices": [
+      "FLN",
+      "MNA",
+      "OAS (Organisation Armée Secrète)",
+      "Milice coloniale"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'Organisation Armée Secrète (OAS), fondée en 1961 par des partisans de l'Algérie française après l'échec du putsch des généraux, multiplia les attentats des deux côtés de la Méditerranée. Elle tenta plusieurs fois d'assassiner de Gaulle, dont l'attentat du Petit-Clamart en août 1962.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel référendum de 1969 sur la régionalisation et la réforme du Sénat entraîna la démission du général de Gaulle après sa défaite ?",
+    "choices": [
+      "Référendum de 1958",
+      "Référendum de 1961",
+      "Référendum de 1962",
+      "Référendum de 1969"
+    ],
+    "answerIndex": 3,
+    "explanation": "De Gaulle avait fait du référendum du 27 avril 1969 une question de confiance personnelle. Mis en minorité avec 52,4% de 'Non', il démissionna le lendemain, quittant le pouvoir comme il y était entré — par la voie démocratique. Georges Pompidou lui succéda à l'Élysée.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel accord de 1963, signé entre de Gaulle et Adenauer, scella la réconciliation historique franco-allemande ?",
+    "choices": [
+      "Traité de Rome",
+      "Traité de l'Élysée",
+      "Accord de l'Atlantique",
+      "Pacte de l'Ouest"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le traité de l'Élysée du 22 janvier 1963 institua une coopération étroite entre la France et l'Allemagne en matière de politique étrangère, de défense, d'éducation et de jeunesse. Ce rapprochement entre deux nations ennemies héréditaires est devenu le moteur de la construction européenne.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel président français reconnut en 1995 la responsabilité de l'État français dans la rafle du Vél d'Hiv de 1942 ?",
+    "choices": [
+      "François Mitterrand",
+      "Valéry Giscard d'Estaing",
+      "Jacques Chirac",
+      "Nicolas Sarkozy"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le 16 juillet 1995, Jacques Chirac prononça un discours historique reconnaissant que 'la France, ce jour-là, accomplissait l'irréparable' en livrant ses citoyens juifs aux bourreaux nazis. C'était la première fois qu'un président de la République reconnaissait la complicité de l'État dans la Shoah.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France passa-t-elle à la semaine de 35 heures de travail ?",
+    "choices": [
+      "1993",
+      "1997",
+      "2000",
+      "2002"
+    ],
+    "answerIndex": 2,
+    "explanation": "La loi Aubry II du 19 janvier 2000 généralisa la durée légale du travail à 35 heures hebdomadaires pour les entreprises de plus de 20 salariés. Cette réforme reste l'une des plus débattues de la Ve République.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel événement terroriste frappa Paris et Saint-Denis le 13 novembre 2015, faisant 130 victimes ?",
+    "choices": [
+      "Attentats de Charlie Hebdo",
+      "Attentat du Bataclan seul",
+      "Attentats du 13-Novembre",
+      "Attentat du marché de Noël"
+    ],
+    "answerIndex": 2,
+    "explanation": "Les attentats du 13 novembre 2015 frappèrent simultanément plusieurs sites parisiens (Stade de France, terrasses de cafés, Bataclan). Revendiqués par Daech, ils constituèrent la pire attaque terroriste de l'histoire de France en temps de paix.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel référendum de 2005 vit les Français rejeter à 54,68 % le traité établissant une Constitution pour l'Europe ?",
+    "choices": [
+      "Référendum de 1992 (Maastricht)",
+      "Référendum de 2005 (TCE)",
+      "Référendum de 2000 (quinquennat)",
+      "Référendum de 1969"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le 29 mai 2005, les Français rejetèrent le Traité constitutionnel européen. Ce résultat bloqua la réforme institutionnelle européenne, qui fut partiellement relancée par le traité de Lisbonne en 2007.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année l'euro devint-il la monnaie officielle des transactions en France, remplaçant le franc ?",
+    "choices": [
+      "1999",
+      "2000",
+      "2001",
+      "2002"
+    ],
+    "answerIndex": 3,
+    "explanation": "Si l'euro fut introduit en monnaie scripturale dès le 1er janvier 1999, les pièces et billets en euros ne remplacèrent le franc en France qu'au 1er janvier 2002. Le franc fut définitivement retiré le 17 février 2002.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Qui fut la première femme nommée Premier ministre de la France, en 1991 ?",
+    "choices": [
+      "Simone Veil",
+      "Ségolène Royal",
+      "Édith Cresson",
+      "Martine Aubry"
+    ],
+    "answerIndex": 2,
+    "explanation": "Édith Cresson fut nommée Premier ministre par François Mitterrand le 15 mai 1991. Elle occupa cette fonction jusqu'en avril 1992. Élisabeth Borne lui succéda en 2022, devenant la deuxième femme à ce poste.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel mouvement social né en novembre 2018 mobilisa des centaines de milliers de Français autour du refus de la hausse de la taxe sur le carburant ?",
+    "choices": [
+      "Nuit Debout",
+      "Les Gilets Jaunes",
+      "Le mouvement des Indignés",
+      "La Manif pour Tous"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le mouvement des Gilets Jaunes débuta le 17 novembre 2018 contre la hausse des taxes sur les carburants. Il révéla de profondes fractures sociales et territoriales et conduisit le gouvernement Macron à lancer le Grand Débat national.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel accord international sur le climat, négocié lors de la COP21 à Paris en décembre 2015, vise à limiter le réchauffement à 1,5 °C ?",
+    "choices": [
+      "Protocole de Kyoto",
+      "Accord de Copenhague",
+      "Accord de Paris",
+      "Charte de la Terre"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'Accord de Paris, adopté le 12 décembre 2015 lors de la COP21, fut signé par 196 parties. C'est le premier accord universel sur le climat : chaque pays s'engage à réduire ses émissions pour maintenir le réchauffement sous 2 °C, voire 1,5 °C.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année François Mitterrand fut-il élu président de la République, mettant fin à 23 ans de pouvoir de la droite ?",
+    "choices": [
+      "1978",
+      "1981",
+      "1984",
+      "1988"
+    ],
+    "answerIndex": 1,
+    "explanation": "François Mitterrand fut élu président le 10 mai 1981, battant Valéry Giscard d'Estaing au second tour avec 51,76% des voix. Cette 'alternance' historique s'accompagna d'une vague de joie place de la Bastille et d'une large victoire socialiste aux législatives qui suivirent.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France abolit-elle la peine de mort, sous l'impulsion du garde des Sceaux Robert Badinter ?",
+    "choices": [
+      "1975",
+      "1978",
+      "1981",
+      "1985"
+    ],
+    "answerIndex": 2,
+    "explanation": "La loi du 9 octobre 1981, portée par Robert Badinter, abolit la peine de mort en France. La guillotine, dernier instrument d'exécution, avait été utilisée pour la dernière fois en 1977. La France devint l'un des premiers grands pays européens à supprimer cette peine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel président français décéda en cours de mandat en avril 1974, entraînant une élection présidentielle anticipée ?",
+    "choices": [
+      "Charles de Gaulle",
+      "Georges Pompidou",
+      "Valéry Giscard d'Estaing",
+      "François Mitterrand"
+    ],
+    "answerIndex": 1,
+    "explanation": "Georges Pompidou mourut d'une maladie de Waldenström (leucémie) le 2 avril 1974, à 62 ans, alors qu'il était encore en exercice. Il était le deuxième président de la Ve République. Valéry Giscard d'Estaing lui succéda après avoir battu François Mitterrand au second tour.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année Emmanuel Macron fut-il élu président de la République française, à seulement 39 ans ?",
+    "choices": [
+      "2012",
+      "2015",
+      "2017",
+      "2022"
+    ],
+    "answerIndex": 2,
+    "explanation": "Emmanuel Macron fut élu président le 7 mai 2017, battant Marine Le Pen au second tour avec 66,1% des voix. Fondateur du mouvement En Marche ! en 2016, il devint le plus jeune président de l'histoire de la Ve République. Il fut réélu en 2022 face à Marine Le Pen.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle grande grève de novembre-décembre 1995 paralysa les transports français pendant trois semaines contre le plan Juppé de réforme des retraites ?",
+    "choices": [
+      "Grève des mineurs de 1963",
+      "Grève de 1995 contre le plan Juppé",
+      "Grève générale de 2010",
+      "Mouvement de 2019 contre la réforme des retraites"
+    ],
+    "answerIndex": 1,
+    "explanation": "La grève de novembre-décembre 1995 contre le plan Juppé de réforme de la Sécurité sociale et des régimes spéciaux de retraite paralysa pendant 3 semaines les transports (SNCF, RATP) et mobilisa des millions de manifestants. Le gouvernement recula sur les régimes spéciaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France adopta-t-elle le PACS (Pacte Civil de Solidarité), reconnaissant juridiquement les couples non mariés ?",
+    "choices": [
+      "1995",
+      "1997",
+      "1999",
+      "2002"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le PACS fut adopté le 15 novembre 1999 après un débat parlementaire houleux. Il créait un statut civil pour les couples non mariés, homosexuels ou hétérosexuels. Initialement très controversé, le PACS est aujourd'hui plus courant que le mariage en France.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel attentat du 7 janvier 2015 visa la rédaction du journal satirique Charlie Hebdo, faisant 12 morts dans le 11e arrondissement de Paris ?",
+    "choices": [
+      "Attentat de l'Hypercacher",
+      "Attentat de Charlie Hebdo",
+      "Attentat du Bataclan",
+      "Attentat de Nice"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le 7 janvier 2015, les frères Chérif et Saïd Kouachi pénétrèrent dans la rédaction de Charlie Hebdo et assassinèrent 12 personnes dont les dessinateurs Cabu, Charb, Wolinski et Tignous. L'attentat déclencha une vague d'émotion internationale et la marche du 11 janvier réunit 4 millions de personnes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France légalisa-t-elle le mariage pour les couples de même sexe, sous le gouvernement Hollande ?",
+    "choices": [
+      "2011",
+      "2012",
+      "2013",
+      "2015"
+    ],
+    "answerIndex": 2,
+    "explanation": "La loi ouvrant le mariage aux couples de même sexe fut promulguée le 18 mai 2013 après de longs débats parlementaires et de nombreuses manifestations. La France devint le 14e pays au monde à légaliser le mariage homosexuel. La loi inclut également l'adoption par les couples mariés.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel ancien président français fut condamné en 2021 à trois ans de prison, dont un ferme, pour corruption et trafic d'influence ?",
+    "choices": [
+      "François Hollande",
+      "Nicolas Sarkozy",
+      "Jacques Chirac",
+      "Valéry Giscard d'Estaing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nicolas Sarkozy fut condamné le 1er mars 2021 à trois ans de prison, dont un an ferme, pour avoir tenté d'obtenir des informations judiciaires confidentielles d'un magistrat en échange d'une recommandation pour un poste à Monaco. Il devint le premier ancien président français condamné à de la prison ferme.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France accueillit-elle la Coupe du monde de football et remporta-t-elle le titre pour la première fois ?",
+    "choices": [
+      "1994",
+      "1996",
+      "1998",
+      "2000"
+    ],
+    "answerIndex": 2,
+    "explanation": "La France remporta la Coupe du monde le 12 juillet 1998 au Stade de France, battant le Brésil 3-0 en finale grâce à un doublé de Zidane. La victoire de cette équipe 'black-blanc-beur' fut célébrée par plus d'un million de personnes sur les Champs-Élysées et symbolisa un moment d'unité nationale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel incendie ravagea la cathédrale Notre-Dame de Paris le 15 avril 2019, détruisant notamment sa flèche ?",
+    "choices": [
+      "Incendie du Palais-Royal",
+      "Incendie de Notre-Dame de Paris",
+      "Incendie de Nantes",
+      "Incendie de la Sainte-Chapelle"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le 15 avril 2019, un incendie dévastateur détruisit la flèche et la toiture de Notre-Dame de Paris. Regardé en direct par des millions de personnes dans le monde, il suscita une vague de dons de plus d'un milliard d'euros pour la reconstruction. La cathédrale rouvrit ses portes en décembre 2024.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle réforme controversée du gouvernement Borne, adoptée en 2023 sans vote via l'article 49.3, releva l'âge légal de la retraite à 64 ans ?",
+    "choices": [
+      "Réforme Balladur de 1993",
+      "Réforme Fillon de 2010",
+      "Réforme des retraites de 2023",
+      "Plan Juppé de 1995"
+    ],
+    "answerIndex": 2,
+    "explanation": "La réforme des retraites de 2023, portée par la Première ministre Élisabeth Borne, releva l'âge légal de départ à 64 ans (contre 62 ans). Face à l'opposition massive (plus d'un million de manifestants), le gouvernement utilisa l'article 49.3 pour forcer son adoption sans vote, déclenchant une vive crise politique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel mouvement féministe prit de l'ampleur en France à partir d'octobre 2017 sous le nom de #BalanceTonPorc, dénonçant le harcèlement sexuel ?",
+    "choices": [
+      "#MoiAussi",
+      "#BalanceTonPorc",
+      "#NousToutes",
+      "#JeSuis"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le hashtag #BalanceTonPorc, lancé en France par la journaliste Sandra Muller le 13 octobre 2017, en réponse au mouvement américain #MeToo né après l'affaire Weinstein, permit à des milliers de femmes de témoigner publiquement de harcèlement sexuel. Il marqua un tournant dans la prise de conscience sociale en France.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  }
+]
