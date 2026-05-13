@@ -50,7 +50,7 @@ interface GameState {
   code: string | null;
   status: GameStatus;
   difficulty: Difficulty | null;
-  topic: Topic | null;
+  topics: Topic[];
   gameMode: GameMode;
   speedBonus: boolean;
   doublePointsBonus: boolean;
@@ -87,7 +87,7 @@ const defaultState = {
   code: null,
   status: 'LOBBY' as GameStatus,
   difficulty: null,
-  topic: null as Topic | null,
+  topics: [] as Topic[],
   gameMode: 'STANDARD' as GameMode,
   speedBonus: true,
   doublePointsBonus: false,

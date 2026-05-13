@@ -21,7 +21,7 @@ export interface CreateGamePayload {
   gameMode: string;
   questionDuration: number;
   doublePointsBonus: boolean;
-  topic?: string | null;
+  topics?: string[];
 }
 
 export interface GameData {
@@ -35,7 +35,7 @@ export interface GameData {
   gameMode: GameMode;
   totalQuestions: number;
   questionDuration: number;
-  topic?: string | null;
+  topics?: string[];
   players: Array<{ id: string; nickname: string; score: number; lives?: number; eliminated?: boolean }>;
 }
 

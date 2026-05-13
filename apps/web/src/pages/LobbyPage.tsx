@@ -29,7 +29,7 @@ const DATES = ['476', '800', '987', '1066', '1337', '1453', '1515', '1598', '166
 export default function LobbyPage() {
   const { code } = useParams<{ code: string }>();
   const navigate = useNavigate();
-  const { players, isHost, myPlayerId, status, gameMode, topic, difficulty, totalQuestions, addPlayer, removePlayer, setGameState, reset } =
+  const { players, isHost, myPlayerId, status, gameMode, topics, difficulty, totalQuestions, addPlayer, removePlayer, setGameState, reset } =
     useGameStore();
 
   const [copied, setCopied] = useState(false);
@@ -191,7 +191,7 @@ export default function LobbyPage() {
           <div className="text-center">
             <span className="text-xs font-mono px-3 py-1.5 rounded-full" style={{ color: '#B4B7CC', border: '1px solid rgba(180,183,204,0.2)', backgroundColor: 'rgba(180,183,204,0.06)' }}>
               {[
-                topic ? TOPIC_LABELS[topic] : 'Mixte',
+                topics.length > 0 ? topics.map((t) => TOPIC_LABELS[t]).join(', ') : 'Mixte',
                 difficulty ? DIFFICULTY_LABELS[difficulty] : null,
                 !isSurvival ? `${totalQuestions} questions` : null,
               ].filter(Boolean).join(' · ')}
