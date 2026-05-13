@@ -126,6 +126,8 @@ En mode Survival : questions illimitées (getAllByDifficulty, pas de totalQuesti
 | `CINEMA` | Cinéma |
 | `PHILOSOPHIE` | Philosophie |
 | `LITTERATURE` | Littérature |
+| `ANIMAUX` | Animaux |
+| `INFORMATIQUE` | Informatique |
 
 ## Scoring (côté serveur uniquement)
 

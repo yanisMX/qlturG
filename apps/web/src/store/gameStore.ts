@@ -3,7 +3,7 @@ import { create } from 'zustand';
 export type GameStatus = 'LOBBY' | 'IN_PROGRESS' | 'FINISHED';
 export type Difficulty = 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE';
 export type GameMode = 'STANDARD' | 'SURVIVAL_SOLO' | 'SURVIVAL_MULTI';
-export type Topic = 'HISTOIRE' | 'GEOGRAPHIE' | 'GEOPOLITIQUE' | 'CINEMA' | 'PHILOSOPHIE' | 'LITTERATURE';
+export type Topic = 'HISTOIRE' | 'GEOGRAPHIE' | 'GEOPOLITIQUE' | 'CINEMA' | 'PHILOSOPHIE' | 'LITTERATURE' | 'ANIMAUX' | 'INFORMATIQUE';
 
 export interface PlayerInfo {
   id: string;

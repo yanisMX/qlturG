@@ -9,7 +9,7 @@ import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
 import type { GameMode, Topic } from '../store/gameStore';
 
-const TOPIC_VALUES = ['HISTOIRE', 'GEOGRAPHIE', 'GEOPOLITIQUE', 'CINEMA', 'PHILOSOPHIE', 'LITTERATURE'] as const;
+const TOPIC_VALUES = ['HISTOIRE', 'GEOGRAPHIE', 'GEOPOLITIQUE', 'CINEMA', 'PHILOSOPHIE', 'LITTERATURE', 'ANIMAUX', 'INFORMATIQUE'] as const;
 
 const schema = z.object({
   hostNickname: z.string().min(1, 'Veuillez renseigner votre pseudo').min(2, 'Pseudo de 2 caractères minimum').max(20),
@@ -42,6 +42,8 @@ const TOPIC_OPTIONS: { id: Topic; label: string }[] = [
   { id: 'CINEMA', label: 'Cinéma' },
   { id: 'PHILOSOPHIE', label: 'Philosophie' },
   { id: 'LITTERATURE', label: 'Littérature' },
+  { id: 'ANIMAUX', label: 'Animaux' },
+  { id: 'INFORMATIQUE', label: 'Informatique' },
 ];
 
 export default function CreatePage() {

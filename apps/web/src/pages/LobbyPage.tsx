@@ -15,6 +15,8 @@ const TOPIC_LABELS: Record<Topic, string> = {
   CINEMA: 'Cinéma',
   PHILOSOPHIE: 'Philosophie',
   LITTERATURE: 'Littérature',
+  ANIMAUX: 'Animaux',
+  INFORMATIQUE: 'Informatique',
 };
 
 const DIFFICULTY_LABELS: Record<string, string> = {

@@ -1,0 +1,803 @@
+[
+  {
+    "text": "Que signifie l'acronyme HTML ?",
+    "choices": ["HyperText Markup Language", "High Text Modern Link", "HyperTool Multi Language", "Hyper Transfer Markup Logic"],
+    "answerIndex": 0,
+    "explanation": "HTML est le langage de balisage standard utilisé pour structurer les pages web depuis sa création par Tim Berners-Lee.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Qui sont les cofondateurs de Microsoft en 1975 ?",
+    "choices": ["Steve Jobs et Steve Wozniak", "Bill Gates et Paul Allen", "Larry Page et Sergey Brin", "Mark Zuckerberg et Eduardo Saverin"],
+    "answerIndex": 1,
+    "explanation": "Gates et Allen, deux amis d'enfance de Seattle, fondent l'entreprise à Albuquerque pour commercialiser un BASIC pour l'Altair 8800.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Qui a inventé le World Wide Web à la fin des années 1980 ?",
+    "choices": ["Vinton Cerf", "Tim Berners-Lee", "Linus Torvalds", "Bill Gates"],
+    "answerIndex": 1,
+    "explanation": "Berners-Lee a conçu le Web au CERN à partir de 1989 pour partager les informations entre chercheurs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Combien de bits contient un octet ?",
+    "choices": ["4", "8", "16", "32"],
+    "answerIndex": 1,
+    "explanation": "Un octet (byte en anglais) regroupe 8 bits, et permet de coder 256 valeurs distinctes de 0 à 255.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que désigne l'acronyme CPU dans un ordinateur ?",
+    "choices": ["Central Processing Unit", "Computer Personal Unit", "Control Power Unit", "Central Program Utility"],
+    "answerIndex": 0,
+    "explanation": "Le CPU, ou processeur, exécute les instructions des programmes ; sa vitesse est mesurée en hertz.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme RAM ?",
+    "choices": ["Random Access Memory", "Read Active Memory", "Rapid Access Module", "Read All Memory"],
+    "answerIndex": 0,
+    "explanation": "La RAM est la mémoire vive : son contenu est volatile et disparaît à l'extinction de la machine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel finlandais a créé le noyau Linux en 1991 ?",
+    "choices": ["Richard Stallman", "Linus Torvalds", "Ken Thompson", "Dennis Ritchie"],
+    "answerIndex": 1,
+    "explanation": "Torvalds publie la première version de son noyau le 25 août 1991 sur le forum comp.os.minix, à 21 ans.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Qui sont les cofondateurs d'Apple en 1976 ?",
+    "choices": ["Bill Gates et Paul Allen", "Steve Jobs et Steve Wozniak", "Larry Page et Sergey Brin", "Jeff Bezos et Steve Wozniak"],
+    "answerIndex": 1,
+    "explanation": "Aux côtés de Jobs et Wozniak, Ronald Wayne fut un troisième cofondateur, mais il revendit ses parts pour 800 dollars douze jours plus tard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage de programmation a été créé par Guido van Rossum en 1991 ?",
+    "choices": ["Java", "Python", "Ruby", "Perl"],
+    "answerIndex": 1,
+    "explanation": "Le nom Python ne fait pas référence au reptile mais à la troupe comique britannique des Monty Python.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle entreprise a développé le système d'exploitation Windows ?",
+    "choices": ["Apple", "Microsoft", "IBM", "Google"],
+    "answerIndex": 1,
+    "explanation": "Windows 1.0, sorti en 1985, est une surcouche graphique pour MS-DOS avant de devenir un système autonome.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel moteur de recherche a été fondé par Larry Page et Sergey Brin en 1998 ?",
+    "choices": ["Yahoo", "Bing", "Google", "AltaVista"],
+    "answerIndex": 2,
+    "explanation": "Le nom Google vient d'une déformation de « googol », terme désignant le nombre 10 puissance 100.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "En quelle année le premier iPhone a-t-il été commercialisé ?",
+    "choices": ["2005", "2007", "2009", "2011"],
+    "answerIndex": 1,
+    "explanation": "Présenté par Steve Jobs en janvier 2007 lors de la Macworld, le premier iPhone sort le 29 juin 2007 aux États-Unis.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle base utilise le système binaire ?",
+    "choices": ["Base 2", "Base 8", "Base 10", "Base 16"],
+    "answerIndex": 0,
+    "explanation": "Le binaire n'utilise que deux chiffres, 0 et 1, ce qui le rend adapté aux deux états électriques d'un transistor.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme URL ?",
+    "choices": ["Universal Reading Link", "Uniform Resource Locator", "Uniform Routing Layer", "United Resource List"],
+    "answerIndex": 1,
+    "explanation": "Une URL identifie de manière unique l'adresse d'une ressource sur le Web, par exemple https://exemple.com/page.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système d'exploitation mobile équipe les iPhones ?",
+    "choices": ["Android", "iOS", "Windows Phone", "BlackBerry OS"],
+    "answerIndex": 1,
+    "explanation": "Lancé en 2007 sous le nom d'iPhone OS, le système a été rebaptisé iOS en 2010 lors de la sortie de l'iPad.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle entreprise a fondé Mark Zuckerberg à Harvard en 2004 ?",
+    "choices": ["Twitter", "LinkedIn", "Facebook", "Instagram"],
+    "answerIndex": 2,
+    "explanation": "Facebook, à l'origine réservé aux étudiants d'Harvard, s'ouvre progressivement avant de devenir le réseau social mondial Meta.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Qui a fondé Amazon en 1994 ?",
+    "choices": ["Jeff Bezos", "Elon Musk", "Larry Ellison", "Marc Andreessen"],
+    "answerIndex": 0,
+    "explanation": "Bezos lance Amazon depuis son garage à Seattle pour vendre des livres en ligne avant d'étendre son offre à tous les produits.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel laboratoire a lancé ChatGPT au public en novembre 2022 ?",
+    "choices": ["Google DeepMind", "OpenAI", "Meta AI", "Anthropic"],
+    "answerIndex": 1,
+    "explanation": "OpenAI a atteint 100 millions d'utilisateurs en deux mois, faisant de ChatGPT l'application grand public à la croissance la plus rapide à l'époque.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme USB ?",
+    "choices": ["Universal Serial Bus", "Unified System Box", "Ultra Speed Buffer", "Unique Storage Block"],
+    "answerIndex": 0,
+    "explanation": "Introduit en 1996, l'USB a uniformisé les connexions périphériques en supplantant les ports série et parallèle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme CSS dans le développement web ?",
+    "choices": ["Computer Style Source", "Cascading Style Sheets", "Coded Style Syntax", "Common Server Style"],
+    "answerIndex": 1,
+    "explanation": "CSS, conçu par Håkon Wium Lie en 1994, sépare la présentation visuelle d'une page web de son contenu HTML.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel type de mémoire est conservé même hors tension ?",
+    "choices": ["RAM", "Cache L1", "ROM", "Registre"],
+    "answerIndex": 2,
+    "explanation": "La ROM (Read Only Memory) est non volatile et contient en général le firmware du démarrage de l'ordinateur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle technologie permet de connecter des appareils sur courte distance sans fil, par exemple un casque audio ?",
+    "choices": ["Wi-Fi", "Bluetooth", "NFC", "Ethernet"],
+    "answerIndex": 1,
+    "explanation": "Le nom Bluetooth fait référence au roi danois du Xe siècle Harald « à la dent bleue », qui unifia plusieurs tribus scandinaves.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle est l'unité de stockage immédiatement supérieure au mégaoctet ?",
+    "choices": ["Kilooctet", "Gigaoctet", "Téraoctet", "Pétaoctet"],
+    "answerIndex": 1,
+    "explanation": "Un gigaoctet vaut 1 000 mégaoctets dans le système décimal et 1 024 méga-octets dans le système binaire (gibioctet).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage est principalement exécuté dans le navigateur pour rendre les pages web interactives ?",
+    "choices": ["Python", "Java", "JavaScript", "C#"],
+    "answerIndex": 2,
+    "explanation": "JavaScript, malgré son nom, n'a aucun lien avec Java : il a été conçu en dix jours par Brendan Eich pour Netscape en 1995.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel matériel stocke les données de manière permanente dans un ordinateur ?",
+    "choices": ["RAM", "Disque dur ou SSD", "Processeur", "Carte graphique"],
+    "answerIndex": 1,
+    "explanation": "Les disques durs (HDD) utilisent des plateaux magnétiques, tandis que les SSD reposent sur de la mémoire flash, plus rapide.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système d'exploitation est développé par Apple pour ses ordinateurs Mac ?",
+    "choices": ["macOS", "Windows", "Ubuntu", "Solaris"],
+    "answerIndex": 0,
+    "explanation": "macOS est l'héritier de NeXTSTEP, le système conçu par l'entreprise NeXT fondée par Steve Jobs après son éviction d'Apple.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "À quoi sert un pare-feu (firewall) ?",
+    "choices": ["Refroidir le processeur", "Filtrer les communications réseau", "Compresser des fichiers", "Sauvegarder le disque"],
+    "answerIndex": 1,
+    "explanation": "Un pare-feu applique un ensemble de règles pour autoriser ou bloquer les paquets entrants et sortants entre un réseau et l'extérieur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel symbole précède le nom d'utilisateur dans une adresse email ?",
+    "choices": ["#", "@", "&", "%"],
+    "answerIndex": 1,
+    "explanation": "Le choix de l'arobase « @ » remonte à Ray Tomlinson en 1971, qui cherchait un caractère absent des noms d'utilisateur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel composant affiche les images à l'écran d'un ordinateur ?",
+    "choices": ["CPU", "GPU", "Alimentation", "Chipset"],
+    "answerIndex": 1,
+    "explanation": "Le GPU (Graphics Processing Unit), spécialisé dans les calculs parallèles, sert aussi à l'apprentissage profond et au minage de cryptomonnaies.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système d'exploitation libre, basé sur le noyau Linux, équipe la majorité des serveurs et des smartphones Android ?",
+    "choices": ["GNU/Linux", "macOS", "FreeBSD", "Solaris"],
+    "answerIndex": 0,
+    "explanation": "Le projet GNU lancé par Richard Stallman en 1983 fournit les outils utilisateur ; combiné au noyau Linux, il forme GNU/Linux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "En quelle année le premier microprocesseur Intel 4004 a-t-il été commercialisé ?",
+    "choices": ["1965", "1971", "1978", "1985"],
+    "answerIndex": 1,
+    "explanation": "Conçu par Federico Faggin, Marcian Hoff et Stanley Mazor, l'Intel 4004 regroupait 2 300 transistors sur une seule puce.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel mathématicien britannique a proposé en 1950 un test pour évaluer l'intelligence d'une machine ?",
+    "choices": ["John von Neumann", "Alonzo Church", "Alan Turing", "Claude Shannon"],
+    "answerIndex": 2,
+    "explanation": "Le test, présenté dans l'article « Computing Machinery and Intelligence », évalue si un humain peut distinguer une machine d'une personne en conversation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle femme est considérée comme la première programmeuse de l'histoire ?",
+    "choices": ["Grace Hopper", "Ada Lovelace", "Margaret Hamilton", "Hedy Lamarr"],
+    "answerIndex": 1,
+    "explanation": "Ada Lovelace a publié en 1843 un algorithme destiné à la machine analytique de Charles Babbage, jamais construite de son vivant.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Qui a créé le système de gestion de versions Git en 2005 ?",
+    "choices": ["Linus Torvalds", "Brian Kernighan", "Richard Stallman", "Guido van Rossum"],
+    "answerIndex": 0,
+    "explanation": "Torvalds a écrit Git en quelques semaines pour remplacer BitKeeper, qui était utilisé pour développer le noyau Linux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel duo a publié le premier algorithme de chiffrement à clé publique en 1976 ?",
+    "choices": ["Rivest et Shamir", "Diffie et Hellman", "Cerf et Kahn", "Lamport et Pease"],
+    "answerIndex": 1,
+    "explanation": "L'article « New Directions in Cryptography » pose les fondements du protocole d'échange de clés Diffie-Hellman.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole sécurise les communications entre un navigateur et un serveur web ?",
+    "choices": ["HTTP", "FTP", "HTTPS", "SMTP"],
+    "answerIndex": 2,
+    "explanation": "HTTPS chiffre les échanges via TLS, successeur de SSL ; il s'est généralisé dans les années 2010 avec Let's Encrypt.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage a été créé par Bjarne Stroustrup en 1985 comme extension orientée objet de C ?",
+    "choices": ["C++", "C#", "Objective-C", "Java"],
+    "answerIndex": 0,
+    "explanation": "Stroustrup, alors aux Bell Labs, voulait combiner la performance du C avec les concepts de classes inspirés de Simula.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel duo est considéré comme père de TCP/IP, fondement d'Internet ?",
+    "choices": ["Tim Berners-Lee et Robert Cailliau", "Vinton Cerf et Bob Kahn", "Ken Thompson et Dennis Ritchie", "Paul Mockapetris et Jon Postel"],
+    "answerIndex": 1,
+    "explanation": "Cerf et Kahn ont publié les spécifications de TCP/IP en 1974 dans l'article « A Protocol for Packet Network Intercommunication ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage de requête est le standard pour interroger les bases de données relationnelles ?",
+    "choices": ["SQL", "XML", "JSON", "YAML"],
+    "answerIndex": 0,
+    "explanation": "SQL est né dans les années 1970 chez IBM (System R), où Edgar Codd venait de formaliser le modèle relationnel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage scientifique d'IBM, créé en 1957, est considéré comme le premier langage de haut niveau ?",
+    "choices": ["COBOL", "LISP", "FORTRAN", "ALGOL"],
+    "answerIndex": 2,
+    "explanation": "FORTRAN (FORmula TRANslation), conçu par John Backus, a rendu pour la première fois accessible le calcul scientifique sans programmer en assembleur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système d'exploitation mobile, racheté par Google en 2005, équipe la majorité des smartphones ?",
+    "choices": ["Symbian", "Android", "BlackBerry OS", "MeeGo"],
+    "answerIndex": 1,
+    "explanation": "Andy Rubin lance Android Inc. en 2003 ; Google rachète la société pour environ 50 millions de dollars deux ans plus tard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage fonctionnel a été créé par John McCarthy en 1958, second plus ancien langage de haut niveau encore utilisé ?",
+    "choices": ["LISP", "Prolog", "Haskell", "ML"],
+    "answerIndex": 0,
+    "explanation": "LISP a introduit de nombreuses idées en avance sur son temps comme la récursion, les fonctions de première classe et le ramasse-miettes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Qui a écrit le premier email envoyé entre deux machines distinctes en 1971 ?",
+    "choices": ["Vinton Cerf", "Ray Tomlinson", "Larry Roberts", "Bob Metcalfe"],
+    "answerIndex": 1,
+    "explanation": "Tomlinson, ingénieur chez BBN, a introduit l'usage du caractère @ pour séparer le destinataire et le nom de la machine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel modèle décrit l'organisation interne d'un ordinateur en cinq unités logiques ?",
+    "choices": ["Modèle OSI", "Architecture de von Neumann", "Modèle MapReduce", "Architecture Harvard"],
+    "answerIndex": 1,
+    "explanation": "Décrite par von Neumann en 1945, cette architecture stocke programme et données dans la même mémoire, par opposition à l'architecture Harvard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle entreprise a popularisé la conteneurisation logicielle avec son outil sorti en 2013 ?",
+    "choices": ["Docker", "Kubernetes", "Red Hat", "VMware"],
+    "answerIndex": 0,
+    "explanation": "Docker repose sur les cgroups et namespaces du noyau Linux, qui isolent processus et ressources sans virtualisation matérielle complète.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage a été développé par Brendan Eich pour Netscape en 1995 ?",
+    "choices": ["JavaScript", "PHP", "Ruby", "Perl"],
+    "answerIndex": 0,
+    "explanation": "Eich a écrit le prototype en seulement dix jours, le langage s'appelait initialement Mocha puis LiveScript avant son nom définitif.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage de script web côté serveur a été créé par Rasmus Lerdorf en 1994 ?",
+    "choices": ["PHP", "Ruby", "Perl", "ASP"],
+    "answerIndex": 0,
+    "explanation": "PHP signifiait initialement « Personal Home Page » et permettait à Lerdorf de suivre les consultations de son CV en ligne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel duo a créé Unix aux Bell Labs en 1969 ?",
+    "choices": ["Ken Thompson et Dennis Ritchie", "Brian Kernighan et Bjarne Stroustrup", "John McCarthy et Marvin Minsky", "Vinton Cerf et Bob Kahn"],
+    "answerIndex": 0,
+    "explanation": "Thompson et Ritchie ont profondément influencé l'informatique avec Unix, et Ritchie a créé le langage C pour réécrire Unix en 1972.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel premier navigateur graphique grand public, sorti en 1993, a démocratisé le Web ?",
+    "choices": ["Internet Explorer", "Netscape", "Mosaic", "Firefox"],
+    "answerIndex": 2,
+    "explanation": "Développé par Marc Andreessen et Eric Bina au NCSA, Mosaic affichait images et texte sur la même page, ce qui était une nouveauté.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "En quelle année le tout premier site web a-t-il été mis en ligne ?",
+    "choices": ["1989", "1991", "1993", "1995"],
+    "answerIndex": 1,
+    "explanation": "Tim Berners-Lee publie le premier site, info.cern.ch, le 6 août 1991 pour expliquer ce qu'est le World Wide Web.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage compilé statiquement typé Google a-t-il dévoilé en 2009 ?",
+    "choices": ["Rust", "Go", "Swift", "Kotlin"],
+    "answerIndex": 1,
+    "explanation": "Go (ou Golang) a été conçu par Robert Griesemer, Rob Pike et Ken Thompson pour faciliter le développement d'applications distribuées.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle entreprise a racheté GitHub pour 7,5 milliards de dollars en 2018 ?",
+    "choices": ["Google", "Microsoft", "IBM", "Amazon"],
+    "answerIndex": 1,
+    "explanation": "Microsoft, longtemps hostile à l'open source, est devenue ces dernières années l'un des plus grands contributeurs à GitHub.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage statiquement typé d'Apple, dévoilé en 2014, succède à Objective-C ?",
+    "choices": ["Swift", "Kotlin", "Rust", "Dart"],
+    "answerIndex": 0,
+    "explanation": "Conçu par Chris Lattner, Swift a été ouvert en open source en 2015 et fonctionne sur les plateformes Apple ainsi que sur Linux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage compilé orienté sécurité mémoire, soutenu par Mozilla, est sorti en version 1.0 en 2015 ?",
+    "choices": ["Go", "Rust", "Zig", "Nim"],
+    "answerIndex": 1,
+    "explanation": "Rust garantit la sécurité mémoire sans ramasse-miettes grâce à son système d'ownership et d'emprunts vérifié à la compilation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel câble Ethernet remplace progressivement les anciennes connexions parallèles dans les réseaux locaux ?",
+    "choices": ["Coaxial", "Paire torsadée (RJ45)", "Fibre plastique", "Bus série"],
+    "answerIndex": 1,
+    "explanation": "La paire torsadée connectée en RJ45 supporte couramment des débits du 100 Mbit/s au 10 Gbit/s selon la catégorie du câble.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel terme désigne un logiciel malveillant qui chiffre les fichiers pour exiger une rançon ?",
+    "choices": ["Cheval de Troie", "Rançongiciel", "Spyware", "Ver"],
+    "answerIndex": 1,
+    "explanation": "L'attaque WannaCry en mai 2017 a touché plus de 200 000 ordinateurs dans 150 pays, paralysant notamment des hôpitaux britanniques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage de balisage léger, créé par John Gruber en 2004, est très utilisé pour les README ?",
+    "choices": ["XML", "Markdown", "BBCode", "AsciiDoc"],
+    "answerIndex": 1,
+    "explanation": "Markdown traduit une syntaxe lisible (étoiles, dièses, tirets) en HTML, ce qui le rend populaire sur GitHub, Reddit et Discord.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle entreprise britannique a créé le micro-ordinateur Raspberry Pi en 2012 pour démocratiser l'apprentissage de l'informatique ?",
+    "choices": ["Acorn", "Arm", "Raspberry Pi Foundation", "Sinclair"],
+    "answerIndex": 2,
+    "explanation": "La fondation est issue de l'université de Cambridge ; le premier Pi se vendait moins de 35 dollars et reposait sur une puce ARM Broadcom.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel framework JavaScript a été créé par Facebook en 2013 ?",
+    "choices": ["Angular", "Vue.js", "React", "Svelte"],
+    "answerIndex": 2,
+    "explanation": "React introduit le DOM virtuel et le rendu déclaratif des composants, et a profondément influencé le développement web moderne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel problème ouvert majeur en informatique théorique demande si toute solution vérifiable en temps polynomial peut aussi être trouvée en temps polynomial ?",
+    "choices": ["Le théorème de Cook", "Le problème P = NP", "L'hypothèse de Riemann", "Le problème de l'arrêt"],
+    "answerIndex": 1,
+    "explanation": "Question ouverte depuis 1971, le problème P = NP figure parmi les sept problèmes du prix du millénaire dotés d'un million de dollars chacun.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel théorème, dû à Stephen Cook en 1971, prouve qu'un problème particulier est NP-complet ?",
+    "choices": ["SAT", "Voyageur de commerce", "Coloration de graphe", "Couverture de sommets"],
+    "answerIndex": 0,
+    "explanation": "Cook démontre que le problème de satisfaisabilité booléenne (SAT) est NP-complet, ouvrant la théorie de la NP-complétude.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel algorithme classique calcule les plus courts chemins depuis une source unique dans un graphe à arcs positifs ?",
+    "choices": ["Algorithme de Dijkstra", "Algorithme de Bellman-Ford", "Algorithme de Floyd-Warshall", "Algorithme de Kruskal"],
+    "answerIndex": 0,
+    "explanation": "Publié par Edsger Dijkstra en 1959, l'algorithme a été conçu en vingt minutes dans un café d'Amsterdam pour faire la démonstration d'un calculateur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel algorithme cryptographique à clé publique, publié en 1977, repose sur la difficulté de factoriser les grands entiers ?",
+    "choices": ["AES", "RSA", "ECC", "DES"],
+    "answerIndex": 1,
+    "explanation": "RSA, du nom de Rivest, Shamir et Adleman, est l'un des piliers du chiffrement asymétrique encore utilisés aujourd'hui.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel standard de chiffrement symétrique succède au DES en 2001 et est basé sur l'algorithme Rijndael ?",
+    "choices": ["AES", "3DES", "Blowfish", "RC4"],
+    "answerIndex": 0,
+    "explanation": "Rijndael, conçu par les Belges Vincent Rijmen et Joan Daemen, a été retenu par le NIST à l'issue d'un concours international.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle structure de données fonctionne en LIFO (« dernier entré, premier sorti ») ?",
+    "choices": ["File (queue)", "Pile (stack)", "Arbre", "Tas (heap)"],
+    "answerIndex": 1,
+    "explanation": "La pile sert notamment à la gestion des appels de fonctions et à l'évaluation des expressions par algorithme shunting-yard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel théorème démontré par Alan Turing en 1936 établit qu'aucun algorithme général ne peut décider si un programme s'arrête ?",
+    "choices": ["Théorème de Rice", "Problème de l'arrêt", "Théorème de Gödel", "Théorème de Cook"],
+    "answerIndex": 1,
+    "explanation": "Turing prouve l'indécidabilité du problème dans le même article où il introduit le concept de machine de Turing universelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle est la complexité moyenne de l'algorithme de tri rapide (Quicksort) ?",
+    "choices": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+    "answerIndex": 1,
+    "explanation": "Le Quicksort, inventé par Tony Hoare en 1959, atteint O(n²) dans le pire cas mais reste l'un des tris les plus rapides en pratique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel modèle de calcul, introduit par Alonzo Church dans les années 1930, est équivalent à la machine de Turing ?",
+    "choices": ["Le lambda-calcul", "L'automate à pile", "Les fonctions récursives primitives", "Les réseaux de Petri"],
+    "answerIndex": 0,
+    "explanation": "Cette équivalence, dite thèse de Church-Turing, fonde la notion moderne de calculabilité effective.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel premier langage de programmation orienté objet a été créé en 1967 par Dahl et Nygaard ?",
+    "choices": ["Smalltalk", "Simula 67", "Eiffel", "Objective-C"],
+    "answerIndex": 1,
+    "explanation": "Simula 67 introduit les concepts de classe, sous-classe et héritage, qui inspireront Smalltalk puis C++ et Java.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel théorème de réseau démontre qu'aucune méthode de hachage parfaite ne peut éviter les collisions au-delà d'un certain nombre d'éléments ?",
+    "choices": ["Principe des tiroirs (Pigeonhole)", "Théorème CAP", "Théorème de Shannon", "Inégalité de Markov"],
+    "answerIndex": 0,
+    "explanation": "Le principe des tiroirs établit que si n + 1 objets sont placés dans n tiroirs, au moins un tiroir contient au moins deux objets.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que stipule la loi de Moore, énoncée par Gordon Moore en 1965 ?",
+    "choices": ["Le coût de la mémoire baisse de moitié tous les ans", "Le nombre de transistors par puce double environ tous les deux ans", "Les disques durs doublent de capacité chaque année", "La fréquence d'horloge double tous les dix-huit mois"],
+    "answerIndex": 1,
+    "explanation": "Initialement formulée comme un doublement annuel, la prédiction a été corrigée en 1975 à un doublement environ tous les deux ans.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel premier ordinateur électronique programmable est mis en service à l'université de Pennsylvanie en 1945 ?",
+    "choices": ["ENIAC", "EDVAC", "UNIVAC", "Mark I"],
+    "answerIndex": 0,
+    "explanation": "Programmé par six femmes, dont Jean Jennings et Frances Bilas, l'ENIAC pesait près de 30 tonnes et contenait environ 17 000 tubes à vide.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel théorème distribué dit qu'un système ne peut garantir que deux des trois propriétés : cohérence, disponibilité, tolérance au partitionnement ?",
+    "choices": ["Théorème CAP", "Théorème FLP", "Théorème de PAXOS", "Théorème ACID"],
+    "answerIndex": 0,
+    "explanation": "Énoncé par Eric Brewer en 2000, le théorème CAP guide la conception des bases NoSQL et des systèmes distribués modernes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle informaticienne américaine a développé en 1952 le premier compilateur, A-0, et a inspiré la création du COBOL ?",
+    "choices": ["Grace Hopper", "Frances Allen", "Margaret Hamilton", "Karen Spärck Jones"],
+    "answerIndex": 0,
+    "explanation": "Hopper, contre-amirale de l'US Navy, est aussi à l'origine de l'expression « debugger » après avoir extrait un véritable papillon de nuit d'un calculateur Harvard Mark II.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel ver informatique, découvert en 2010, ciblait spécifiquement les centrifugeuses iraniennes d'enrichissement d'uranium ?",
+    "choices": ["Conficker", "Stuxnet", "Mydoom", "ILOVEYOU"],
+    "answerIndex": 1,
+    "explanation": "Stuxnet, attribué à une opération conjointe entre les États-Unis et Israël, exploitait quatre failles 0-day et visait les automates Siemens.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel modèle théorique en sept couches décrit l'architecture des réseaux informatiques ?",
+    "choices": ["Modèle TCP/IP", "Modèle OSI", "Modèle DoD", "Modèle SNA"],
+    "answerIndex": 1,
+    "explanation": "Le modèle OSI, normalisé par l'ISO en 1984, va de la couche physique (1) à la couche application (7) et reste un cadre pédagogique de référence.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle fonction de hachage cryptographique de 256 bits est largement utilisée notamment par le Bitcoin ?",
+    "choices": ["MD5", "SHA-1", "SHA-256", "BLAKE2"],
+    "answerIndex": 2,
+    "explanation": "SHA-256 fait partie de la famille SHA-2 publiée par la NSA en 2001 ; Bitcoin l'utilise pour la preuve de travail et l'adressage.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel concept introduit en 1986 par David Patterson regroupe plusieurs disques pour améliorer performance ou fiabilité ?",
+    "choices": ["RAID", "LVM", "JBOD", "NAS"],
+    "answerIndex": 0,
+    "explanation": "RAID (Redundant Array of Independent Disks) a été décrit dans l'article fondateur « A Case for Redundant Arrays of Inexpensive Disks ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel article fondateur de Claude Shannon en 1948 jette les bases de la théorie de l'information ?",
+    "choices": ["A Mathematical Theory of Communication", "Communication Theory of Secrecy Systems", "Programming a Computer for Playing Chess", "A Symbolic Analysis of Relay Switching"],
+    "answerIndex": 0,
+    "explanation": "Shannon y introduit la notion de bit et démontre comment quantifier l'information avec son entropie, désormais notée H.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système de fichiers, conçu pour Linux et finalisé en 2008, est journalisé et supporte les sous-volumes et snapshots ?",
+    "choices": ["ext4", "Btrfs", "XFS", "ZFS"],
+    "answerIndex": 1,
+    "explanation": "Btrfs (B-Tree File System) inclut nativement les sommes de contrôle, la compression et les snapshots ; ZFS, plus ancien, vient à l'origine de Sun.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel article fondateur de 2017, publié par Google, introduit l'architecture « Transformer » désormais centrale en IA ?",
+    "choices": ["Deep Residual Learning", "Attention Is All You Need", "ImageNet Classification with Deep CNNs", "Generative Adversarial Nets"],
+    "answerIndex": 1,
+    "explanation": "Le mécanisme d'attention multi-têtes décrit dans l'article a remplacé les RNN pour la plupart des tâches de NLP, donnant naissance à GPT et BERT.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle architecture de processeur, conçue à Berkeley dans les années 1980, repose sur un jeu d'instructions réduit ?",
+    "choices": ["x86", "RISC", "VLIW", "EPIC"],
+    "answerIndex": 1,
+    "explanation": "Les RISC (Reduced Instruction Set Computer), dont sont issus ARM et RISC-V, exécutent des instructions simples mais à grande vitesse.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel scientifique allemand a conçu le Z3, premier calculateur programmable Turing-complet, achevé en 1941 ?",
+    "choices": ["Konrad Zuse", "John Atanasoff", "Howard Aiken", "Tommy Flowers"],
+    "answerIndex": 0,
+    "explanation": "Le Z3 utilisait des relais électromécaniques et le binaire à virgule flottante, mais il fut détruit par un bombardement allié en 1944.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel langage purement fonctionnel paresseux a été nommé d'après un logicien américain et standardisé en 1990 ?",
+    "choices": ["OCaml", "Haskell", "Erlang", "F#"],
+    "answerIndex": 1,
+    "explanation": "Haskell porte le nom du logicien Haskell Curry ; il est devenu une référence académique pour l'enseignement de la programmation fonctionnelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel premier réseau à commutation de paquets, ancêtre d'Internet, est mis en service en 1969 ?",
+    "choices": ["NSFNET", "ARPANET", "CYCLADES", "MILNET"],
+    "answerIndex": 1,
+    "explanation": "ARPANET, financé par l'agence de recherche du Pentagone, connectait initialement quatre universités américaines dont UCLA et Stanford.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système de noms, dont la mise au point est attribuée à Paul Mockapetris en 1983, traduit les noms de domaine en adresses IP ?",
+    "choices": ["DHCP", "DNS", "NIS", "WINS"],
+    "answerIndex": 1,
+    "explanation": "DNS remplace le fichier HOSTS.TXT centralisé devenu impossible à maintenir avec la croissance d'Internet.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle norme cryptographique post-quantique pour le chiffrement à clé publique a été standardisée par le NIST en 2024 ?",
+    "choices": ["ML-KEM (Kyber)", "FrodoKEM", "BIKE", "Classic McEliece"],
+    "answerIndex": 0,
+    "explanation": "ML-KEM, basé sur Kyber, est devenu le FIPS 203 ; il vise à résister aux attaques d'un ordinateur quantique exécutant l'algorithme de Shor.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel registre de processeur indique l'adresse de la prochaine instruction à exécuter ?",
+    "choices": ["Accumulateur", "Pointeur de pile", "Compteur de programme (PC / IP)", "Registre d'état"],
+    "answerIndex": 2,
+    "explanation": "Sur x86 ce registre s'appelle EIP/RIP, sur ARM PC ; il est incrémenté à chaque instruction et modifié par les sauts et appels.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle attaque, révélée en 2018, exploite l'exécution spéculative des processeurs modernes pour fuiter des données ?",
+    "choices": ["Heartbleed", "Spectre", "Shellshock", "POODLE"],
+    "answerIndex": 1,
+    "explanation": "Spectre et la faille jumelle Meltdown ont conduit à des correctifs logiciels et microcode sur la quasi-totalité des CPU récents.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  }
+]
