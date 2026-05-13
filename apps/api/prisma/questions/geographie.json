@@ -1,0 +1,272 @@
+[
+  {
+    "text": "Quel est le plus long fleuve de France ?",
+    "choices": ["La Seine", "La Loire", "Le Rhône", "La Garonne"],
+    "answerIndex": 1,
+    "explanation": "La Loire mesure environ 1006 km et prend sa source au mont Gerbier-de-Jonc en Ardèche avant de se jeter dans l'océan Atlantique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Italie ?",
+    "choices": ["Milan", "Rome", "Florence", "Naples"],
+    "answerIndex": 1,
+    "explanation": "Rome est la capitale de l'Italie depuis 1871, après l'unification du pays. Elle est surnommée la « Ville éternelle ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel massif montagneux sépare la France de l'Espagne ?",
+    "choices": ["Les Alpes", "Le Jura", "Les Pyrénées", "Les Vosges"],
+    "answerIndex": 2,
+    "explanation": "Les Pyrénées s'étendent sur environ 430 km de l'océan Atlantique à la mer Méditerranée. Le pic d'Aneto, en Espagne, en est le sommet à 3404 m.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le point culminant de l'Europe occidentale ?",
+    "choices": ["Le mont Blanc", "Le mont Cervin", "Le Mont-Perdu", "L'Everest"],
+    "answerIndex": 0,
+    "explanation": "Le mont Blanc culmine à 4806 mètres dans les Alpes, à la frontière franco-italienne. Il a été gravi pour la première fois en 1786 par Balmat et Paccard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer borde la France au sud ?",
+    "choices": ["La mer du Nord", "La mer Baltique", "La mer Méditerranée", "La mer Adriatique"],
+    "answerIndex": 2,
+    "explanation": "La Méditerranée borde la France sur environ 1700 km de côtes (avec la Corse). Elle est reliée à l'Atlantique par le détroit de Gibraltar.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Combien de régions métropolitaines compte la France depuis 2016 ?",
+    "choices": ["13", "18", "22", "27"],
+    "answerIndex": 0,
+    "explanation": "La réforme territoriale entrée en vigueur le 1er janvier 2016 a fait passer le nombre de régions métropolitaines de 22 à 13 par fusion.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la plus grande île française en Méditerranée ?",
+    "choices": ["La Sardaigne", "La Corse", "Les Baléares", "La Sicile"],
+    "answerIndex": 1,
+    "explanation": "La Corse a une superficie de 8680 km² et est rattachée à la France depuis 1768, à la suite du traité de Versailles signé avec la République de Gênes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel océan borde la France à l'ouest ?",
+    "choices": ["L'océan Pacifique", "L'océan Atlantique", "L'océan Indien", "L'océan Arctique"],
+    "answerIndex": 1,
+    "explanation": "L'Atlantique borde la façade ouest de la France, de la Bretagne au Pays basque. La Manche, qui sépare la France du Royaume-Uni, en est une mer bordière.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle ville française est surnommée « la ville rose » ?",
+    "choices": ["Bordeaux", "Marseille", "Toulouse", "Montpellier"],
+    "answerIndex": 2,
+    "explanation": "Toulouse doit ce surnom à la brique foraine de couleur ocre rose utilisée dans son architecture traditionnelle, en raison de l'absence de pierre de taille dans la région.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Australie ?",
+    "choices": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "answerIndex": 2,
+    "explanation": "Canberra a été choisie comme capitale en 1908 comme compromis entre Sydney et Melbourne, qui se disputaient ce statut. La ville a été construite ex nihilo.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel département français est le plus peuplé ?",
+    "choices": ["Les Bouches-du-Rhône", "Le Rhône", "Le Nord", "Paris"],
+    "answerIndex": 2,
+    "explanation": "Le Nord compte environ 2,6 millions d'habitants, devant Paris (2,1 M) et les Bouches-du-Rhône (2,1 M). Sa préfecture est Lille.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel climat caractérise principalement le pourtour méditerranéen français ?",
+    "choices": ["Océanique", "Continental", "Méditerranéen", "Montagnard"],
+    "answerIndex": 2,
+    "explanation": "Le climat méditerranéen se caractérise par des étés chauds et secs et des hivers doux et humides, avec des précipitations concentrées en automne et au printemps.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle région française est la première productrice de vin ?",
+    "choices": ["La Bourgogne", "L'Occitanie", "Le Bordelais", "La Champagne"],
+    "answerIndex": 1,
+    "explanation": "L'Occitanie produit environ un tiers du vin français, principalement dans le Languedoc-Roussillon. La région compte le plus vaste vignoble du monde en superficie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le plus grand lac naturel de France métropolitaine ?",
+    "choices": ["Le lac d'Annecy", "Le lac du Bourget", "Le lac Léman (partie française)", "Le lac de Grand-Lieu"],
+    "answerIndex": 2,
+    "explanation": "Le Léman, partagé avec la Suisse, est le plus vaste lac d'Europe occidentale (582 km²). Sa partie française représente environ 40 % de sa superficie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle ville française abrite le siège du Parlement européen ?",
+    "choices": ["Paris", "Lyon", "Strasbourg", "Bruxelles"],
+    "answerIndex": 2,
+    "explanation": "Strasbourg accueille le siège officiel du Parlement européen, qui y tient 12 sessions plénières par an. Bruxelles, en Belgique, abrite les sessions complémentaires.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel détroit sépare la France du Royaume-Uni ?",
+    "choices": ["Le détroit de Gibraltar", "Le pas de Calais", "Le détroit de Messine", "Le détroit du Bosphore"],
+    "answerIndex": 1,
+    "explanation": "Le pas de Calais ne mesure que 34 km dans sa partie la plus étroite, entre Calais et Douvres. Il est traversé depuis 1994 par le tunnel sous la Manche.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le plus grand département français en superficie ?",
+    "choices": ["Les Landes", "La Gironde", "Le Var", "La Guyane"],
+    "answerIndex": 3,
+    "explanation": "La Guyane couvre environ 83 500 km², soit 15 % du territoire français. C'est le plus vaste département, devant la Gironde (10 000 km²) en métropole.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve traverse Londres ?",
+    "choices": ["La Tamise", "La Severn", "Le Rhin", "La Meuse"],
+    "answerIndex": 0,
+    "explanation": "La Tamise (Thames) traverse Londres sur environ 65 km dans la capitale. Elle se jette dans la mer du Nord par un large estuaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle chaîne de montagnes sépare l'Europe de l'Asie ?",
+    "choices": ["Les Carpates", "L'Oural", "Le Caucase", "Les Balkans"],
+    "answerIndex": 1,
+    "explanation": "La chaîne de l'Oural s'étend sur environ 2500 km du nord au sud de la Russie. Sa ligne de crête sert de frontière conventionnelle entre l'Europe et l'Asie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays a la plus grande superficie au monde ?",
+    "choices": ["Le Canada", "Les États-Unis", "La Chine", "La Russie"],
+    "answerIndex": 3,
+    "explanation": "La Russie couvre environ 17,1 millions de km², soit près du double de la deuxième plus grande nation, le Canada (10 M km²). Elle s'étend sur 11 fuseaux horaires.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la deuxième aire urbaine la plus peuplée de France ?",
+    "choices": ["Marseille-Aix", "Lyon", "Lille", "Toulouse"],
+    "answerIndex": 1,
+    "explanation": "L'aire d'attraction de Lyon compte environ 2,3 millions d'habitants, devant Marseille-Aix (1,9 M). Paris reste largement première avec 13 M d'habitants.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays africain est francophone et possède le fleuve Sénégal comme frontière nord ?",
+    "choices": ["Le Mali", "Le Sénégal", "La Mauritanie", "La Guinée"],
+    "answerIndex": 1,
+    "explanation": "Le fleuve Sénégal forme la frontière entre le Sénégal et la Mauritanie au nord. Long de 1750 km, il prend sa source en Guinée et se jette dans l'Atlantique à Saint-Louis.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel détroit relie la Méditerranée à la mer Rouge ?",
+    "choices": ["Le détroit de Gibraltar", "Le canal de Suez", "Le détroit d'Ormuz", "Le canal de Panama"],
+    "answerIndex": 1,
+    "explanation": "Le canal de Suez, ouvert en 1869 et conçu par Ferdinand de Lesseps, mesure 193 km. Il évite le contournement de l'Afrique pour le commerce Europe-Asie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est l'ancienne capitale impériale du Vietnam, située au centre du pays ?",
+    "choices": ["Hanoï", "Hô Chi Minh-Ville", "Hué", "Da Nang"],
+    "answerIndex": 2,
+    "explanation": "Hué fut la capitale de la dynastie Nguyên de 1802 à 1945. Sa cité impériale, inscrite à l'UNESCO, fut gravement endommagée pendant la guerre du Vietnam en 1968.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel territoire français est situé dans l'océan Indien ?",
+    "choices": ["La Polynésie française", "La Nouvelle-Calédonie", "La Réunion", "Saint-Pierre-et-Miquelon"],
+    "answerIndex": 2,
+    "explanation": "La Réunion, département d'outre-mer depuis 1946, se trouve à l'est de Madagascar. Elle abrite le piton de la Fournaise, l'un des volcans les plus actifs au monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la plus haute montagne d'Afrique ?",
+    "choices": ["Le mont Kenya", "Le Kilimandjaro", "Le mont Cameroun", "Le Toubkal"],
+    "answerIndex": 1,
+    "explanation": "Le Kilimandjaro, situé en Tanzanie, culmine à 5895 m. C'est un stratovolcan endormi dont les glaciers sommitaux reculent fortement sous l'effet du réchauffement.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel département français a vu sa population baisser le plus fortement depuis 1900 ?",
+    "choices": ["La Lozère", "La Creuse", "Les Hautes-Alpes", "Le Cantal"],
+    "answerIndex": 1,
+    "explanation": "La Creuse est passée d'environ 280 000 habitants en 1900 à moins de 120 000 aujourd'hui, victime d'un exode rural massif. C'est la plus forte chute en valeur relative.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve marque traditionnellement la frontière entre l'Allemagne et la France ?",
+    "choices": ["La Moselle", "Le Rhin", "Le Danube", "L'Elbe"],
+    "answerIndex": 1,
+    "explanation": "Le Rhin sert de frontière sur environ 190 km entre les deux pays, de Bâle à Lauterbourg. Il a souvent été considéré comme la « frontière naturelle » de la France.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle ville a été fondée par les Phocéens vers 600 av. J.-C. et est la plus ancienne de France ?",
+    "choices": ["Nice", "Marseille", "Narbonne", "Lyon"],
+    "answerIndex": 1,
+    "explanation": "Marseille, fondée sous le nom de Massalia par des marins grecs venus de Phocée, est la plus ancienne ville de France. Lyon (Lugdunum) a été fondée par les Romains en 43 av. J.-C.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays compte le plus grand nombre de fuseaux horaires ?",
+    "choices": ["La Russie", "Les États-Unis", "La France", "La Chine"],
+    "answerIndex": 2,
+    "explanation": "Grâce à ses territoires d'outre-mer répartis sur tous les océans, la France couvre 12 fuseaux horaires, devant la Russie (11). La Chine n'en utilise officiellement qu'un seul.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  }
+]

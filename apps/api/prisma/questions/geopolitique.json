@@ -1,0 +1,1298 @@
+[
+  {
+    "text": "Combien de membres permanents siègent au Conseil de sécurité de l'ONU ?",
+    "choices": ["3", "5", "7", "10"],
+    "answerIndex": 1,
+    "explanation": "Les cinq membres permanents (États-Unis, Russie, Chine, France, Royaume-Uni) disposent d'un droit de veto. Dix autres membres non permanents sont élus pour deux ans.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Où se trouve le siège de l'OTAN ?",
+    "choices": ["Washington", "Bruxelles", "Strasbourg", "Genève"],
+    "answerIndex": 1,
+    "explanation": "Le siège politique de l'OTAN est à Bruxelles depuis 1967, après son transfert depuis Paris à la suite du retrait français du commandement intégré décidé par De Gaulle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation regroupe 27 États membres en Europe ?",
+    "choices": ["Le Conseil de l'Europe", "L'Union européenne", "L'OSCE", "L'AELE"],
+    "answerIndex": 1,
+    "explanation": "L'Union européenne compte 27 États depuis le Brexit officialisé le 31 janvier 2020. Le Conseil de l'Europe, distinct, regroupe 46 États.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la monnaie commune de la zone euro ?",
+    "choices": ["Le franc", "L'euro", "Le mark européen", "L'écu"],
+    "answerIndex": 1,
+    "explanation": "L'euro a été introduit comme monnaie scripturale en 1999 et fiduciaire en 2002. Il est aujourd'hui utilisé par 20 des 27 États membres de l'Union européenne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel mur, symbole de la guerre froide, est tombé en 1989 ?",
+    "choices": ["Le mur de Berlin", "Le mur d'Hadrien", "Le mur de Belfast", "Le rideau de fer"],
+    "answerIndex": 0,
+    "explanation": "Le mur de Berlin, érigé en 1961, séparait la RFA de la RDA. Sa chute le 9 novembre 1989 a précédé la réunification allemande officialisée le 3 octobre 1990.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a quitté l'Union européenne en 2020 ?",
+    "choices": ["L'Irlande", "Le Royaume-Uni", "La Norvège", "La Suisse"],
+    "answerIndex": 1,
+    "explanation": "Le Brexit, voté par référendum en juin 2016, est entré en vigueur le 31 janvier 2020. La Norvège et la Suisse, elles, n'ont jamais été membres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville accueille la Cour internationale de justice ?",
+    "choices": ["Genève", "New York", "La Haye", "Vienne"],
+    "answerIndex": 2,
+    "explanation": "La Cour internationale de justice siège au Palais de la Paix à La Haye depuis 1946. Elle règle les différends entre États, à distinguer de la CPI qui juge les individus.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays partage une frontière de plus de 8000 km avec la Russie ?",
+    "choices": ["La Chine", "Le Kazakhstan", "La Mongolie", "Les États-Unis"],
+    "answerIndex": 1,
+    "explanation": "La frontière russo-kazakhe mesure environ 7600 km, ce qui en fait la plus longue frontière terrestre continue au monde entre deux pays.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Que signifie le sigle « ONU » ?",
+    "choices": ["Organisation des Nations unies", "Office des Nations universelles", "Organisation neutre universelle", "Ordre des nations unifiées"],
+    "answerIndex": 0,
+    "explanation": "L'ONU a été fondée le 24 octobre 1945 par la signature de sa Charte à San Francisco. Elle a succédé à la Société des Nations (SDN), créée en 1919 après la Première Guerre mondiale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la capitale politique de l'Union européenne ?",
+    "choices": ["Strasbourg", "Bruxelles", "Luxembourg", "Aucune officiellement"],
+    "answerIndex": 3,
+    "explanation": "L'UE n'a pas de capitale officielle. Bruxelles concentre la Commission et le Conseil, Strasbourg le Parlement, Luxembourg la Cour de justice et la Cour des comptes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité, signé en 1957, a créé la Communauté économique européenne ?",
+    "choices": ["Le traité de Maastricht", "Le traité de Rome", "Le traité de Lisbonne", "Le traité de Paris"],
+    "answerIndex": 1,
+    "explanation": "Le traité de Rome a été signé le 25 mars 1957 par six pays fondateurs : France, Allemagne, Italie et Benelux. Il est l'acte fondateur de l'intégration économique européenne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle doctrine américaine de 1947 visait à contenir l'expansion soviétique ?",
+    "choices": ["La doctrine Monroe", "La doctrine Truman", "La doctrine Brejnev", "La doctrine Bush"],
+    "answerIndex": 1,
+    "explanation": "Énoncée le 12 mars 1947, la doctrine Truman engage les États-Unis à soutenir les peuples résistant à la subversion communiste. Elle marque l'entrée formelle dans la guerre froide.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président français a retiré la France du commandement intégré de l'OTAN en 1966 ?",
+    "choices": ["Vincent Auriol", "Charles de Gaulle", "Georges Pompidou", "François Mitterrand"],
+    "answerIndex": 1,
+    "explanation": "De Gaulle voulait affirmer l'indépendance stratégique française et sa dissuasion nucléaire propre. La France a réintégré le commandement intégré en 2009 sous Nicolas Sarkozy.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quels accords de 1995 ont mis fin à la guerre de Bosnie ?",
+    "choices": ["Les accords de Dayton", "Les accords d'Oslo", "Les accords de Camp David", "Les accords de Minsk"],
+    "answerIndex": 0,
+    "explanation": "Négociés sur la base militaire de Dayton (Ohio) et signés à Paris en décembre 1995, ces accords ont divisé la Bosnie en deux entités sous une présidence tournante.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation regroupe les principaux pays exportateurs de pétrole ?",
+    "choices": ["L'OMC", "L'OPEP", "Le FMI", "La CNUCED"],
+    "answerIndex": 1,
+    "explanation": "L'OPEP, fondée en 1960 à Bagdad, regroupe 12 pays dont l'Arabie saoudite, l'Iran et le Venezuela. Elle coordonne la production pour influencer les prix mondiaux du pétrole.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a annexé la Crimée en 2014 ?",
+    "choices": ["L'Ukraine", "La Russie", "La Turquie", "La Biélorussie"],
+    "answerIndex": 1,
+    "explanation": "L'annexion de la Crimée par la Russie après un référendum contesté a entraîné les premières sanctions occidentales et l'exclusion de la Russie du G8, devenu G7.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la zone d'opération de la force française Barkhane (2014-2022) ?",
+    "choices": ["Les Balkans", "Le Sahel", "L'Afghanistan", "Le Levant"],
+    "answerIndex": 1,
+    "explanation": "Lancée en août 2014, Barkhane luttait contre les groupes djihadistes dans cinq pays du Sahel (Mali, Mauritanie, Niger, Tchad, Burkina Faso). Elle a été officiellement terminée en novembre 2022.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Que désigne le concept de « soft power » développé par Joseph Nye ?",
+    "choices": ["La puissance militaire", "La puissance économique", "La puissance d'influence culturelle", "La puissance nucléaire"],
+    "answerIndex": 2,
+    "explanation": "Théorisé par Joseph Nye à la fin des années 1980, le soft power désigne la capacité d'un État à influencer par sa culture, ses valeurs et sa diplomatie, sans recours à la force.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité de 1992 a institué l'Union européenne ?",
+    "choices": ["Le traité de Rome", "Le traité de Maastricht", "Le traité de Nice", "Le traité d'Amsterdam"],
+    "answerIndex": 1,
+    "explanation": "Signé le 7 février 1992, le traité de Maastricht a transformé la CEE en Union européenne, introduit la citoyenneté européenne et préparé la monnaie unique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel est l'organe exécutif de l'Union européenne ?",
+    "choices": ["Le Parlement européen", "Le Conseil européen", "La Commission européenne", "La Cour de justice"],
+    "answerIndex": 2,
+    "explanation": "La Commission, composée de 27 commissaires (un par État membre), propose les lois et veille à leur application. Elle est présidée depuis 2019 par Ursula von der Leyen.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle institution financière internationale a été créée à Bretton Woods en 1944 ?",
+    "choices": ["L'OMC", "Le FMI", "L'OCDE", "La BCE"],
+    "answerIndex": 1,
+    "explanation": "Le FMI et la Banque mondiale ont été créés lors de la conférence de Bretton Woods en juillet 1944. Le FMI a pour mission d'assurer la stabilité monétaire internationale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la principale organisation diplomatique régionale d'Asie du Sud-Est ?",
+    "choices": ["L'APEC", "L'ASEAN", "Le SAARC", "L'OCS"],
+    "answerIndex": 1,
+    "explanation": "L'ASEAN, fondée en 1967 à Bangkok, regroupe 10 États dont l'Indonésie, le Vietnam et les Philippines. Elle promeut la coopération économique et la stabilité régionale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle puissance détient la plus grande zone économique exclusive (ZEE) au monde ?",
+    "choices": ["Les États-Unis", "La France", "L'Australie", "La Russie"],
+    "answerIndex": 1,
+    "explanation": "Grâce à ses territoires d'outre-mer répartis sur tous les océans, la ZEE française couvre environ 10,2 millions de km², légèrement devant celle des États-Unis.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité de 1648 est considéré comme l'acte de naissance du système des États souverains ?",
+    "choices": ["Le traité de Westphalie", "Le traité de Versailles", "Le traité d'Utrecht", "Le traité des Pyrénées"],
+    "answerIndex": 0,
+    "explanation": "Les traités de Westphalie ont mis fin à la guerre de Trente Ans et posé les principes de souveraineté territoriale et de non-ingérence qui structurent encore le droit international.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Qui est le théoricien français du concept de « choc des civilisations » repris mondialement ?",
+    "choices": ["Raymond Aron", "Samuel Huntington", "Bertrand Badie", "Hubert Védrine"],
+    "answerIndex": 1,
+    "explanation": "Le concept a été formulé par l'Américain Samuel Huntington en 1993. Le politologue français Bertrand Badie est l'un de ses principaux critiques avec sa théorie des « relations interpolaires ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle conférence de 1955 a marqué la naissance du mouvement des non-alignés ?",
+    "choices": ["La conférence de Yalta", "La conférence de Bandung", "La conférence de Helsinki", "La conférence de Belgrade"],
+    "answerIndex": 1,
+    "explanation": "La conférence de Bandung (Indonésie) a réuni 29 pays d'Asie et d'Afrique en avril 1955. Elle a affirmé la volonté d'indépendance des pays décolonisés face aux deux blocs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel concept géopolitique désigne la zone autour des frontières d'un État censée garantir sa sécurité ?",
+    "choices": ["Le glacis", "Le hinterland", "L'enclave", "L'isthme"],
+    "answerIndex": 0,
+    "explanation": "Le glacis désigne une zone tampon protégeant un État de menaces extérieures. La doctrine russe d'« étranger proche » envers les anciennes républiques soviétiques s'apparente à cette logique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité de 1963 a scellé la réconciliation franco-allemande ?",
+    "choices": ["Le traité de l'Élysée", "Le traité d'Aix-la-Chapelle", "Le traité de Schengen", "Le traité de Bruxelles"],
+    "answerIndex": 0,
+    "explanation": "Signé le 22 janvier 1963 par De Gaulle et Adenauer, le traité de l'Élysée a institutionnalisé la coopération franco-allemande. Il a été complété par le traité d'Aix-la-Chapelle en 2019.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel détroit stratégique voit transiter environ 20 % du pétrole mondial ?",
+    "choices": ["Le détroit de Gibraltar", "Le détroit de Malacca", "Le détroit d'Ormuz", "Le détroit du Bosphore"],
+    "answerIndex": 2,
+    "explanation": "Le détroit d'Ormuz, entre l'Iran et Oman, est le principal point de passage du pétrole du Golfe persique. Sa fermeture est régulièrement brandie comme menace par l'Iran.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel concept géopolitique théorisé par Mackinder désigne le cœur de l'Eurasie ?",
+    "choices": ["Le Rimland", "Le Heartland", "Le Lebensraum", "L'Outre-mer"],
+    "answerIndex": 1,
+    "explanation": "Halford Mackinder a théorisé le Heartland en 1904 : « Qui contrôle le cœur du monde commande à l'île mondiale ». Cette théorie a influencé la stratégie britannique puis américaine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la capitale des États-Unis ?",
+    "choices": ["New York", "Los Angeles", "Washington D.C.", "Chicago"],
+    "answerIndex": 2,
+    "explanation": "Washington D.C., fondée en 1790, n'appartient à aucun État. Le « D.C. » signifie District of Columbia, statut créé pour éviter qu'un État dominât les autres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays est devenu membre permanent du Conseil de sécurité à la place de Taïwan en 1971 ?",
+    "choices": ["Le Japon", "La Corée du Sud", "La République populaire de Chine", "L'Inde"],
+    "answerIndex": 2,
+    "explanation": "La résolution 2758 de l'ONU a transféré le siège chinois de Taipei à Pékin en octobre 1971. Cette décision a entériné la reconnaissance internationale de la Chine communiste.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Qui a prononcé le discours de Fulton en 1946 dénonçant le « rideau de fer » ?",
+    "choices": ["Roosevelt", "Churchill", "Truman", "De Gaulle"],
+    "answerIndex": 1,
+    "explanation": "Winston Churchill a prononcé ce discours le 5 mars 1946 dans le Missouri. Il y dénonçait la division de l'Europe par un « rideau de fer » descendu de Stettin à Trieste.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Que signifie le sigle BRICS à sa fondation ?",
+    "choices": ["Brésil, Russie, Inde, Chine, Afrique du Sud", "Belgique, Russie, Italie, Chine, Suède", "Bahreïn, Roumanie, Iran, Chili, Serbie", "Bolivie, Rwanda, Israël, Cuba, Slovénie"],
+    "answerIndex": 0,
+    "explanation": "Acronyme inventé par l'économiste Jim O'Neill en 2001, les BRICS désignent ces cinq économies émergentes. Le groupe s'est élargi en 2024 à plusieurs autres pays.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel sommet international réunit chaque année les sept plus grandes économies occidentales ?",
+    "choices": ["Le G20", "Le G7", "L'OCDE", "Le forum de Davos"],
+    "answerIndex": 1,
+    "explanation": "Le G7 (États-Unis, Royaume-Uni, France, Allemagne, Italie, Japon, Canada) est né en 1975 à l'initiative de Valéry Giscard d'Estaing. Il s'élargit ponctuellement à l'UE.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président français a initié le sommet du G7 en 1975 ?",
+    "choices": ["Georges Pompidou", "Valéry Giscard d'Estaing", "François Mitterrand", "Jacques Chirac"],
+    "answerIndex": 1,
+    "explanation": "Giscard a réuni le premier sommet à Rambouillet en novembre 1975, avec six pays initialement (le Canada a rejoint en 1976). L'objectif était de coordonner la sortie du choc pétrolier.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président américain a lancé l'invasion de l'Irak en 2003 ?",
+    "choices": ["Bill Clinton", "George W. Bush", "Barack Obama", "George H. W. Bush"],
+    "answerIndex": 1,
+    "explanation": "George W. Bush a déclenché l'invasion en mars 2003 sous prétexte d'armes de destruction massive jamais retrouvées. La France de Jacques Chirac s'y était fermement opposée à l'ONU.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel ministre des Affaires étrangères français a prononcé en 2003 le discours d'opposition à la guerre d'Irak à l'ONU ?",
+    "choices": ["Hubert Védrine", "Dominique de Villepin", "Bernard Kouchner", "Laurent Fabius"],
+    "answerIndex": 1,
+    "explanation": "Le discours du 14 février 2003 de Dominique de Villepin au Conseil de sécurité a été ovationné, fait rarissime dans cette enceinte. Il y défendait l'option diplomatique contre la guerre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel est le nom du programme de coopération entre l'UE et la rive sud de la Méditerranée lancé en 1995 ?",
+    "choices": ["Le processus de Bologne", "Le processus de Barcelone", "Le processus d'Helsinki", "Le processus de Lisbonne"],
+    "answerIndex": 1,
+    "explanation": "Lancé en 1995, le processus de Barcelone visait à créer une zone de paix, de stabilité et de libre-échange entre l'UE et les pays méditerranéens du sud. Il a été relancé en 2008 par l'Union pour la Méditerranée.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays africain a accédé à l'indépendance le plus récemment ?",
+    "choices": ["L'Érythrée", "Le Soudan du Sud", "La Namibie", "Djibouti"],
+    "answerIndex": 1,
+    "explanation": "Le Soudan du Sud est devenu indépendant le 9 juillet 2011 après un référendum d'autodétermination. C'est le plus jeune État reconnu par l'ONU.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a été divisé en deux États en 1945 le long du 38e parallèle ?",
+    "choices": ["Le Vietnam", "La Corée", "L'Allemagne", "L'Inde"],
+    "answerIndex": 1,
+    "explanation": "Le 38e parallèle a séparé la zone d'occupation soviétique au nord et américaine au sud. La guerre de Corée (1950-1953) a entériné cette division qui demeure encore aujourd'hui.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité interdit les essais nucléaires dans l'atmosphère depuis 1963 ?",
+    "choices": ["Le TNP", "Le TICE", "Le PTBT (traité de Moscou)", "Le traité START"],
+    "answerIndex": 2,
+    "explanation": "Le Partial Test Ban Treaty signé en 1963 à Moscou interdit les essais nucléaires dans l'atmosphère, sous l'eau et dans l'espace. La France et la Chine ne l'ont pas signé initialement.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme TNP ?",
+    "choices": ["Traité de non-prolifération", "Traité nucléaire de Paris", "Texte des Nations pour la paix", "Traité national de protection"],
+    "answerIndex": 0,
+    "explanation": "Le Traité de non-prolifération nucléaire a été ouvert à la signature en 1968 et est entré en vigueur en 1970. Il reconnaît cinq puissances nucléaires : USA, URSS, RU, France, Chine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville suisse abrite le siège européen de l'ONU ?",
+    "choices": ["Berne", "Zurich", "Genève", "Bâle"],
+    "answerIndex": 2,
+    "explanation": "Le Palais des Nations à Genève accueille le siège européen de l'ONU depuis 1946. Il était auparavant celui de la Société des Nations, créée en 1920.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays accueille le siège mondial de l'ONU ?",
+    "choices": ["La Suisse", "Les États-Unis", "La Belgique", "Les Pays-Bas"],
+    "answerIndex": 1,
+    "explanation": "Le siège mondial est à New York depuis 1952, sur un terrain offert par John D. Rockefeller Jr. L'enceinte bénéficie d'un statut d'extraterritorialité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation supervise le commerce international depuis 1995 ?",
+    "choices": ["Le GATT", "L'OMC", "La CNUCED", "L'OCDE"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation mondiale du commerce a remplacé le GATT le 1er janvier 1995. Elle compte 164 membres et son siège est à Genève.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel territoire la Chine revendique-t-elle et considère-t-elle comme une province rebelle ?",
+    "choices": ["Hong Kong", "Macao", "Taïwan", "Le Tibet"],
+    "answerIndex": 2,
+    "explanation": "Pékin considère Taïwan comme une province à réunifier, par la force si nécessaire. Seuls une douzaine d'États reconnaissent officiellement la République de Chine (Taïwan).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quels accords de 1993 ont posé les bases d'une autonomie palestinienne ?",
+    "choices": ["Les accords d'Oslo", "Les accords de Camp David", "Les accords de Madrid", "Les accords de Wye River"],
+    "answerIndex": 0,
+    "explanation": "Signés à Washington par Rabin et Arafat sous l'égide de Bill Clinton, les accords d'Oslo prévoyaient une reconnaissance mutuelle et une autonomie progressive. Le processus s'est essoufflé après l'assassinat de Rabin en 1995.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel mur a été construit en Cisjordanie à partir de 2002 ?",
+    "choices": ["Le mur de Berlin", "Le mur de séparation israélien", "Le mur frontalier de Trump", "Le mur de Ceuta"],
+    "answerIndex": 1,
+    "explanation": "Israël a entamé sa construction en 2002 pour des raisons sécuritaires. Long de plus de 700 km, il a été jugé contraire au droit international par la CIJ en 2004.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président américain a lancé le « pivot vers l'Asie » dans les années 2010 ?",
+    "choices": ["George W. Bush", "Barack Obama", "Donald Trump", "Bill Clinton"],
+    "answerIndex": 1,
+    "explanation": "Obama a annoncé en 2011 un rééquilibrage stratégique vers l'Asie-Pacifique pour contenir la montée chinoise. Cette doctrine a été poursuivie sous des formes différentes par ses successeurs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Comment s'appelle l'initiative chinoise lancée en 2013 pour développer des infrastructures à travers l'Eurasie ?",
+    "choices": ["Les nouvelles routes de la soie (BRI)", "Le plan Marshall asiatique", "L'initiative Asie 2030", "Le projet Han"],
+    "answerIndex": 0,
+    "explanation": "La Belt and Road Initiative, annoncée par Xi Jinping, implique plus de 140 pays. Elle combine routes maritimes et terrestres, et reflète l'ambition géopolitique chinoise.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a été créé en 1948 au Proche-Orient ?",
+    "choices": ["La Jordanie", "Israël", "Le Liban", "La Syrie"],
+    "answerIndex": 1,
+    "explanation": "L'État d'Israël a été proclamé le 14 mai 1948 par David Ben Gourion. Sa création a immédiatement déclenché la première guerre israélo-arabe.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville est la capitale officielle d'Israël selon ses autorités ?",
+    "choices": ["Tel-Aviv", "Jérusalem", "Haïfa", "Eilat"],
+    "answerIndex": 1,
+    "explanation": "Israël considère Jérusalem comme sa capitale « éternelle et indivisible » depuis 1980, mais la plupart des États maintiennent leur ambassade à Tel-Aviv en raison du statut contesté de la ville.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Qui était le secrétaire général de l'ONU lors de la guerre d'Irak en 2003 ?",
+    "choices": ["Kofi Annan", "Boutros Boutros-Ghali", "Ban Ki-moon", "Javier Pérez de Cuéllar"],
+    "answerIndex": 0,
+    "explanation": "Kofi Annan, Ghanéen, a dirigé l'ONU de 1997 à 2006. Il avait qualifié l'invasion américaine d'« illégale » au regard de la Charte. Il a reçu le prix Nobel de la paix en 2001.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Qui est l'actuel secrétaire général de l'ONU ?",
+    "choices": ["Ban Ki-moon", "António Guterres", "Kofi Annan", "Boutros Boutros-Ghali"],
+    "answerIndex": 1,
+    "explanation": "Le Portugais António Guterres, ancien Premier ministre de son pays, dirige l'ONU depuis le 1er janvier 2017. Il a entamé un second mandat en 2022.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays européen est neutre depuis le congrès de Vienne en 1815 ?",
+    "choices": ["L'Autriche", "La Suède", "La Suisse", "L'Irlande"],
+    "answerIndex": 2,
+    "explanation": "La neutralité perpétuelle de la Suisse a été reconnue au congrès de Vienne le 20 novembre 1815. Le pays a néanmoins adhéré à l'ONU en 2002.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quels pays ont rejoint l'OTAN après l'invasion russe de l'Ukraine ?",
+    "choices": ["La Suisse et l'Autriche", "La Finlande et la Suède", "L'Irlande et Malte", "La Serbie et la Bosnie"],
+    "answerIndex": 1,
+    "explanation": "La Finlande a rejoint l'OTAN en avril 2023 et la Suède en mars 2024, mettant fin à des décennies de neutralité historique pour ces deux pays nordiques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel article du traité de l'Atlantique Nord prévoit la défense collective ?",
+    "choices": ["L'article 1", "L'article 5", "L'article 10", "L'article 42"],
+    "answerIndex": 1,
+    "explanation": "L'article 5 stipule qu'une attaque contre un membre est considérée comme une attaque contre tous. Il n'a été invoqué qu'une seule fois, après les attentats du 11 septembre 2001.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle agence onusienne s'occupe des réfugiés ?",
+    "choices": ["L'OMS", "L'UNICEF", "Le HCR", "L'UNESCO"],
+    "answerIndex": 2,
+    "explanation": "Le Haut-Commissariat des Nations unies pour les réfugiés a été créé en 1950. Il a reçu deux fois le prix Nobel de la paix, en 1954 et 1981.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la principale doctrine de politique étrangère gaullienne ?",
+    "choices": ["L'atlantisme", "L'indépendance nationale", "L'européanisme fédéraliste", "Le neutralisme"],
+    "answerIndex": 1,
+    "explanation": "L'indépendance nationale est au cœur de la « grandeur » gaullienne : dissuasion nucléaire autonome, sortie du commandement OTAN, reconnaissance de la Chine en 1964, ouverture à l'Est.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "En quelle année la France a-t-elle reconnu la République populaire de Chine ?",
+    "choices": ["1949", "1958", "1964", "1971"],
+    "answerIndex": 2,
+    "explanation": "La France de De Gaulle a reconnu Pékin le 27 janvier 1964, près de huit ans avant les États-Unis. Ce geste affirmait l'indépendance diplomatique française à l'égard de Washington.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel sommet international réunit chaque année plus d'une vingtaine de grandes économies depuis 1999 ?",
+    "choices": ["Le G7", "Le G20", "L'APEC", "Le BRICS"],
+    "answerIndex": 1,
+    "explanation": "Le G20 a été créé en 1999 après les crises asiatiques. Sa première réunion au niveau des chefs d'État s'est tenue à Washington en novembre 2008 lors de la crise financière.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays maintient une frontière hautement militarisée appelée « DMZ » avec son voisin ?",
+    "choices": ["L'Inde et le Pakistan", "Les Corées", "Israël et le Liban", "Chypre"],
+    "answerIndex": 1,
+    "explanation": "La Zone démilitarisée coréenne, large de 4 km, sépare les deux Corées depuis l'armistice de Panmunjom de 1953. C'est paradoxalement l'une des frontières les plus militarisées au monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ancienne colonie britannique a rétrocédé à la Chine en 1997 ?",
+    "choices": ["Macao", "Hong Kong", "Singapour", "Taïwan"],
+    "answerIndex": 1,
+    "explanation": "Hong Kong est revenue à la souveraineté chinoise le 1er juillet 1997, sous le principe « un pays, deux systèmes ». L'autonomie de la ville s'est fortement réduite après les manifestations de 2019.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel ancien protectorat portugais a rétrocédé à la Chine en 1999 ?",
+    "choices": ["Hong Kong", "Macao", "Goa", "Timor"],
+    "answerIndex": 1,
+    "explanation": "Macao a été rendue à la Chine le 20 décembre 1999, après 442 ans de présence portugaise. Comme Hong Kong, elle dispose en théorie d'une administration spéciale jusqu'en 2049.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président russe a succédé à Boris Eltsine fin 1999 ?",
+    "choices": ["Dimitri Medvedev", "Vladimir Poutine", "Mikhaïl Gorbatchev", "Sergueï Lavrov"],
+    "answerIndex": 1,
+    "explanation": "Vladimir Poutine, ancien du KGB, a été nommé Premier ministre en août 1999 puis président par intérim le 31 décembre 1999. Il a été élu en mars 2000.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a envahi l'Ukraine à grande échelle le 24 février 2022 ?",
+    "choices": ["La Biélorussie", "La Russie", "La Pologne", "La Roumanie"],
+    "answerIndex": 1,
+    "explanation": "L'invasion russe lancée par Vladimir Poutine a déclenché la plus grande guerre en Europe depuis 1945. Elle a provoqué un afflux de réfugiés et des sanctions occidentales massives.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation internationale lutte contre les armes chimiques depuis 1997 ?",
+    "choices": ["L'AIEA", "L'OIAC", "Le SIPRI", "L'OPANAL"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation pour l'interdiction des armes chimiques siège à La Haye. Elle a reçu le prix Nobel de la paix en 2013 pour son travail de destruction des stocks mondiaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle agence onusienne supervise les questions nucléaires civiles et militaires ?",
+    "choices": ["L'OIAC", "L'AIEA", "Le CTBTO", "Le HCR"],
+    "answerIndex": 1,
+    "explanation": "L'Agence internationale de l'énergie atomique, basée à Vienne, a été créée en 1957. Elle inspecte les programmes nucléaires comme celui de l'Iran et a reçu le Nobel de la paix en 2005.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel ancien dirigeant soviétique a lancé la perestroïka et la glasnost ?",
+    "choices": ["Andropov", "Brejnev", "Gorbatchev", "Tchernenko"],
+    "answerIndex": 2,
+    "explanation": "Mikhaïl Gorbatchev, secrétaire général du PCUS de 1985 à 1991, a engagé ces réformes de restructuration et de transparence. Il a reçu le prix Nobel de la paix en 1990.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Comment s'appelle l'espace de libre circulation au sein de l'UE ?",
+    "choices": ["L'espace Schengen", "L'espace Maastricht", "L'espace Lisbonne", "L'espace Rome"],
+    "answerIndex": 0,
+    "explanation": "L'espace Schengen, du nom du village luxembourgeois où l'accord a été signé en 1985, supprime les contrôles aux frontières intérieures. Il compte 29 États en 2024, dont quatre non-UE.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation a été créée par le traité de Varsovie en 1955 ?",
+    "choices": ["Le Pacte de Varsovie", "Le Comecon", "L'OTSC", "Le Kominform"],
+    "answerIndex": 0,
+    "explanation": "Le Pacte de Varsovie était l'alliance militaire des pays communistes, en réponse à l'OTAN et à l'entrée de la RFA dans celle-ci. Il a été dissous en juillet 1991.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a déclaré son indépendance unilatéralement du Kosovo en 2008 ?",
+    "choices": ["Le Monténégro", "Le Kosovo", "La Slovénie", "La Macédoine"],
+    "answerIndex": 1,
+    "explanation": "Le Kosovo a proclamé son indépendance de la Serbie le 17 février 2008. Reconnu par la France et les États-Unis, il ne l'est ni par la Serbie ni par la Russie, la Chine ou l'Espagne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel sommet de 1945 a réuni Roosevelt, Churchill et Staline en Crimée ?",
+    "choices": ["Yalta", "Potsdam", "Téhéran", "Casablanca"],
+    "answerIndex": 0,
+    "explanation": "La conférence de Yalta s'est tenue du 4 au 11 février 1945. Elle a préparé la division de l'Europe en zones d'influence et la création de l'ONU.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle aide économique américaine a financé la reconstruction de l'Europe après 1947 ?",
+    "choices": ["Le plan Schuman", "Le plan Marshall", "Le plan Monnet", "Le plan Truman"],
+    "answerIndex": 1,
+    "explanation": "Le plan Marshall a injecté environ 13 milliards de dollars dans 16 pays européens. L'URSS et ses satellites l'ont refusé, ce qui a précipité la division du continent.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président français a négocié la fin de la guerre d'Algérie ?",
+    "choices": ["René Coty", "Charles de Gaulle", "Georges Pompidou", "Guy Mollet"],
+    "answerIndex": 1,
+    "explanation": "De Gaulle a fait aboutir les accords d'Évian le 18 mars 1962, qui ont conduit à l'indépendance de l'Algérie. Cette décision a provoqué la dissidence de l'OAS.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la doctrine officielle de défense de la France ?",
+    "choices": ["L'attaque préventive", "La dissuasion nucléaire", "La défense en profondeur", "La neutralité armée"],
+    "answerIndex": 1,
+    "explanation": "La dissuasion nucléaire, voulue par De Gaulle dès les années 1960, repose sur la doctrine du « faible au fort » : infliger des dégâts inacceptables à tout agresseur, indépendamment de sa puissance.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quand la France a-t-elle réalisé son premier essai nucléaire ?",
+    "choices": ["1945", "1960", "1968", "1974"],
+    "answerIndex": 1,
+    "explanation": "L'essai « Gerboise bleue » a eu lieu le 13 février 1960 dans le Sahara algérien. La France est devenue la quatrième puissance nucléaire après les USA, l'URSS et le Royaume-Uni.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation regroupe les pays francophones ?",
+    "choices": ["L'OCDE", "L'OIF", "L'UNESCO", "Le Commonwealth"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation internationale de la Francophonie, créée en 1970, rassemble 88 États et gouvernements. Le terme « francophonie » avait été inventé par Onésime Reclus en 1880.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la plus grande puissance économique mondiale en PIB nominal en 2025 ?",
+    "choices": ["La Chine", "Les États-Unis", "Le Japon", "L'Allemagne"],
+    "answerIndex": 1,
+    "explanation": "Les États-Unis restent la première économie mondiale en PIB nominal, devant la Chine. En parité de pouvoir d'achat (PPA), la Chine a en revanche dépassé les États-Unis en 2017.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a déclaré la fin de l'apartheid en 1991 ?",
+    "choices": ["Le Zimbabwe", "L'Afrique du Sud", "La Namibie", "Le Kenya"],
+    "answerIndex": 1,
+    "explanation": "Frederik de Klerk a abrogé les principales lois d'apartheid en 1991. Nelson Mandela, libéré en 1990, a été élu premier président noir du pays en avril 1994.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle force internationale est intervenue en Côte d'Ivoire en 2002 ?",
+    "choices": ["L'opération Licorne", "L'opération Daguet", "L'opération Serval", "L'opération Manta"],
+    "answerIndex": 0,
+    "explanation": "L'opération Licorne, lancée par la France en septembre 2002, visait à interposer entre forces gouvernementales et rebelles. Elle s'est officiellement achevée en janvier 2015.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a accueilli les négociations sur le nucléaire iranien aboutissant à l'accord de 2015 ?",
+    "choices": ["La Suisse", "L'Autriche", "L'Allemagne", "L'Iran"],
+    "answerIndex": 1,
+    "explanation": "L'accord JCPOA a été signé à Vienne le 14 juillet 2015 entre l'Iran et les 5+1 (membres permanents du CSNU + Allemagne). Donald Trump en a retiré les États-Unis en 2018.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle révolution a renversé le shah d'Iran en 1979 ?",
+    "choices": ["La révolution constitutionnelle", "La révolution islamique", "La révolution verte", "La révolution blanche"],
+    "answerIndex": 1,
+    "explanation": "La révolution conduite par l'ayatollah Khomeyni a renversé le shah Mohammad Reza Pahlavi en février 1979. La République islamique a été proclamée le 1er avril.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays disposait du plus grand stock d'armes nucléaires en 2025 ?",
+    "choices": ["Les États-Unis", "La Russie", "La Chine", "La France"],
+    "answerIndex": 1,
+    "explanation": "Selon le SIPRI, la Russie détient environ 5580 ogives, devant les États-Unis (~5044). Ces deux pays concentrent à eux seuls près de 90 % de l'arsenal mondial.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation continentale a remplacé l'OUA en 2002 ?",
+    "choices": ["La CEDEAO", "L'Union africaine", "Le Marché commun africain", "L'Organisation des États du Sud"],
+    "answerIndex": 1,
+    "explanation": "L'Union africaine, instituée à Durban en 2002, succède à l'Organisation de l'unité africaine créée en 1963 à Addis-Abeba. Elle compte 55 États membres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel philosophe français du XXe siècle a théorisé la notion d'« empire » avec Antonio Negri ?",
+    "choices": ["Régis Debray", "Michael Hardt", "Étienne Balibar", "Alain Badiou"],
+    "answerIndex": 1,
+    "explanation": "Michael Hardt n'est pas français mais américain ; il a co-écrit Empire (2000) avec l'Italien Antonio Negri. Le concept y désigne une souveraineté globale en réseau, post-impériale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle guerre a opposé l'Iran et l'Irak de 1980 à 1988 ?",
+    "choices": ["La guerre du Golfe", "La guerre Iran-Irak", "La guerre du Chatt-el-Arab", "La guerre du Kurdistan"],
+    "answerIndex": 1,
+    "explanation": "Cette guerre déclenchée par Saddam Hussein a fait environ un million de morts. Elle a vu l'usage massif d'armes chimiques irakiennes, notamment contre les Kurdes à Halabja en 1988.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a annexé le Tibet en 1950 ?",
+    "choices": ["L'Inde", "Le Népal", "La Chine", "Le Bhoutan"],
+    "answerIndex": 2,
+    "explanation": "L'Armée populaire de libération chinoise est entrée au Tibet en octobre 1950. Le dalaï-lama s'est exilé en Inde en 1959 où il a fondé un gouvernement en exil à Dharamsala.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a accueilli les Jeux olympiques d'hiver de 2022, au cœur de tensions diplomatiques ?",
+    "choices": ["La Russie", "La Chine", "La Corée du Sud", "Le Japon"],
+    "answerIndex": 1,
+    "explanation": "Les JO de Pékin 2022 ont connu un boycott diplomatique de plusieurs démocraties occidentales (États-Unis, Royaume-Uni, Canada, Australie) en raison de la situation au Xinjiang.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle minorité musulmane est persécutée dans la région du Xinjiang en Chine ?",
+    "choices": ["Les Hui", "Les Ouïghours", "Les Tadjiks", "Les Hazaras"],
+    "answerIndex": 1,
+    "explanation": "Les Ouïghours, peuple turcophone et majoritairement musulman, font l'objet d'une politique répressive selon de nombreux rapports : internements massifs, surveillance, restrictions culturelles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la principale organisation militaire de l'espace post-soviétique pilotée par Moscou ?",
+    "choices": ["La CEI", "L'OTSC", "L'OCS", "L'UEEA"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation du traité de sécurité collective, créée en 2002, regroupe la Russie et plusieurs anciennes républiques soviétiques. Elle est l'équivalent de l'OTAN pour la sphère russe.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation eurasiatique a été lancée par Xi Jinping et Vladimir Poutine en 2001 ?",
+    "choices": ["Le BRICS", "L'OCS", "L'OTSC", "L'UEEA"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation de coopération de Shanghai inclut la Chine, la Russie, l'Inde, le Pakistan, l'Iran et plusieurs États d'Asie centrale. Elle constitue un bloc d'influence non occidental.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel ancien Premier ministre israélien a été assassiné en 1995 par un extrémiste juif ?",
+    "choices": ["Shimon Peres", "Yitzhak Rabin", "Ehud Barak", "Benjamin Netanyahou"],
+    "answerIndex": 1,
+    "explanation": "Yitzhak Rabin a été assassiné le 4 novembre 1995 à Tel-Aviv par Yigal Amir, opposé aux accords d'Oslo. Cet attentat a porté un coup majeur au processus de paix israélo-palestinien.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle alliance militaire est l'équivalent ouest-européen et atlantique fondé en 1949 ?",
+    "choices": ["Le Comecon", "L'OTAN", "Le Pacte de Varsovie", "L'UEO"],
+    "answerIndex": 1,
+    "explanation": "L'OTAN a été créée par le traité de Washington le 4 avril 1949. Elle comptait 12 États fondateurs, dont la France ; elle réunit aujourd'hui 32 membres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel diplomate français a été l'un des principaux artisans du traité de Maastricht ?",
+    "choices": ["Jacques Delors", "Hubert Védrine", "Roland Dumas", "Pierre Bérégovoy"],
+    "answerIndex": 0,
+    "explanation": "Jacques Delors, président de la Commission européenne de 1985 à 1995, a porté à la fois l'Acte unique (1986) et le traité de Maastricht. Il est considéré comme l'un des « pères » de l'euro.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays détient l'arme nucléaire sans l'avoir officiellement reconnu ?",
+    "choices": ["L'Iran", "Israël", "La Corée du Nord", "L'Afrique du Sud"],
+    "answerIndex": 1,
+    "explanation": "Israël pratique l'opacité nucléaire (« amimout ») depuis les années 1960. Le SIPRI estime son arsenal à environ 90 ogives. Le pays n'a jamais signé le TNP.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle conférence internationale a tenté en 1938 d'éviter la guerre en Europe ?",
+    "choices": ["La conférence de Versailles", "La conférence de Munich", "La conférence de Locarno", "La conférence de Yalta"],
+    "answerIndex": 1,
+    "explanation": "Le 30 septembre 1938, Daladier et Chamberlain ont accepté l'annexion des Sudètes tchèques par Hitler. Cette politique d'« apaisement » est devenue le symbole d'une diplomatie de la capitulation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Comment s'appelle l'accord climatique adopté en 2015 lors de la COP21 ?",
+    "choices": ["Le protocole de Kyoto", "L'accord de Paris", "Le pacte de Marrakech", "L'accord de Copenhague"],
+    "answerIndex": 1,
+    "explanation": "L'accord de Paris a été adopté le 12 décembre 2015 par 196 États sous la présidence française de Laurent Fabius. Il vise à limiter le réchauffement à 2 °C, idéalement 1,5 °C.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays est le plus gros émetteur mondial de CO2 ?",
+    "choices": ["Les États-Unis", "La Chine", "L'Inde", "La Russie"],
+    "answerIndex": 1,
+    "explanation": "La Chine émet près de 30 % du CO2 mondial, devant les États-Unis (~14 %). En émissions cumulées historiques, les États-Unis restent toutefois en tête.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle agence européenne gère les frontières extérieures de l'UE ?",
+    "choices": ["Europol", "Frontex", "Eurojust", "EASO"],
+    "answerIndex": 1,
+    "explanation": "Frontex, créée en 2004 et basée à Varsovie, coordonne la gestion des frontières extérieures de l'espace Schengen. Son mandat a été considérablement renforcé après la crise migratoire de 2015.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la plus grande démocratie du monde en nombre d'électeurs ?",
+    "choices": ["Les États-Unis", "L'Inde", "L'Indonésie", "Le Brésil"],
+    "answerIndex": 1,
+    "explanation": "L'Inde compte plus de 960 millions d'électeurs inscrits. Ses élections législatives de 2024 ont été les plus grandes opérations électorales jamais organisées dans le monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel territoire reste l'objet d'un litige entre l'Inde et le Pakistan depuis 1947 ?",
+    "choices": ["Le Bengale", "Le Cachemire", "Le Pendjab", "Le Sind"],
+    "answerIndex": 1,
+    "explanation": "Le Cachemire a fait l'objet de trois guerres indo-pakistanaises (1947, 1965, 1999). En 2019, l'Inde a révoqué le statut spécial du Jammu-et-Cachemire, ravivant les tensions.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle théorie en relations internationales privilégie l'État comme acteur central et la rivalité pour la puissance ?",
+    "choices": ["Le constructivisme", "Le libéralisme", "Le réalisme", "Le marxisme"],
+    "answerIndex": 2,
+    "explanation": "Le réalisme, théorisé par Hans Morgenthau et plus tard Kenneth Waltz, considère le système international comme anarchique. La puissance, et particulièrement la puissance militaire, y est centrale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Qui est l'auteur du concept de « fin de l'histoire » formulé en 1989 ?",
+    "choices": ["Samuel Huntington", "Francis Fukuyama", "Joseph Nye", "Zbigniew Brzezinski"],
+    "answerIndex": 1,
+    "explanation": "Francis Fukuyama a publié La Fin de l'Histoire en 1989, prédisant le triomphe universel de la démocratie libérale après l'effondrement du communisme. Il a depuis nuancé sa thèse.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ancienne république yougoslave a accédé à l'UE en 2013 ?",
+    "choices": ["La Serbie", "La Croatie", "La Macédoine", "Le Monténégro"],
+    "answerIndex": 1,
+    "explanation": "La Croatie est entrée dans l'Union européenne le 1er juillet 2013. Elle est le 28e État membre et la seconde ex-yougoslave après la Slovénie (2004).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a été appelé « royaume ermite » en raison de son isolement diplomatique ?",
+    "choices": ["Le Bhoutan", "La Corée du Nord", "Le Turkménistan", "L'Érythrée"],
+    "answerIndex": 1,
+    "explanation": "La Corée du Nord (RPDC) est l'un des États les plus fermés au monde. Elle est dirigée par la dynastie Kim depuis 1948, avec un programme nucléaire qui inquiète la communauté internationale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président américain a rencontré Kim Jong-un trois fois ?",
+    "choices": ["Barack Obama", "Donald Trump", "Joe Biden", "George W. Bush"],
+    "answerIndex": 1,
+    "explanation": "Donald Trump a rencontré Kim Jong-un à Singapour (2018), à Hanoï (2019) et à Panmunjom (2019). Ces sommets historiques n'ont pas abouti à une dénucléarisation effective.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle agence onusienne s'occupe de la santé mondiale ?",
+    "choices": ["L'UNICEF", "L'OMS", "L'OIT", "Le PNUD"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation mondiale de la santé, fondée en 1948, a son siège à Genève. Elle a joué un rôle central pendant la pandémie de Covid-19 déclarée le 11 mars 2020.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation panaméricaine regroupe les États du continent américain ?",
+    "choices": ["Le Mercosur", "L'OEA", "L'ALENA", "L'ALBA"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation des États américains, créée en 1948 à Bogota, compte 35 membres. Cuba en a été exclue en 1962 puis réintégrée en 2009, mais n'y participe pas activement.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel accord de libre-échange remplace l'ALENA depuis 2020 ?",
+    "choices": ["L'AECG", "L'USMCA (ACEUM)", "Le RCEP", "Le TPP"],
+    "answerIndex": 1,
+    "explanation": "L'Accord États-Unis-Mexique-Canada (USMCA) est entré en vigueur le 1er juillet 2020. Renégocié sous Donald Trump, il remplace l'ALENA en vigueur depuis 1994.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel diplomate français du XIXe siècle a négocié au congrès de Vienne en 1815 ?",
+    "choices": ["Talleyrand", "Metternich", "Castlereagh", "Nesselrode"],
+    "answerIndex": 0,
+    "explanation": "Charles-Maurice de Talleyrand-Périgord a réussi à éviter le démembrement de la France malgré sa défaite. Il a habilement joué sur les divisions entre vainqueurs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle base militaire américaine cubaine est au cœur d'un contentieux historique ?",
+    "choices": ["Cienfuegos", "Guantánamo", "Santiago", "Mariel"],
+    "answerIndex": 1,
+    "explanation": "Les États-Unis occupent Guantánamo depuis 1903 sous bail. Une prison militaire y a été ouverte en 2002 pour les suspects de terrorisme, faisant l'objet de nombreuses controverses.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel groupe armé a pris le pouvoir en Afghanistan en août 2021 ?",
+    "choices": ["Al-Qaïda", "Les Talibans", "Daech", "L'Alliance du Nord"],
+    "answerIndex": 1,
+    "explanation": "Les Talibans ont repris Kaboul le 15 août 2021, après le retrait américain. Ils étaient déjà au pouvoir de 1996 à 2001, avant d'être chassés après les attentats du 11 septembre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a hébergé la commission Vérité et Réconciliation présidée par Desmond Tutu ?",
+    "choices": ["Le Rwanda", "L'Afrique du Sud", "Le Mozambique", "L'Angola"],
+    "answerIndex": 1,
+    "explanation": "Créée en 1995 après l'apartheid, la commission présidée par l'archevêque Desmond Tutu a entendu plus de 21 000 victimes. Elle a inspiré de nombreuses initiatives de justice transitionnelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a connu un génocide en 1994 ayant fait environ 800 000 morts ?",
+    "choices": ["Le Burundi", "Le Rwanda", "Le Congo", "Le Soudan"],
+    "answerIndex": 1,
+    "explanation": "Le génocide rwandais a duré environ cent jours entre avril et juillet 1994. Les Tutsis et Hutus modérés ont été massacrés par les extrémistes hutus. Le TPIR a jugé les principaux responsables.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la principale puissance militaire d'Amérique du Sud ?",
+    "choices": ["L'Argentine", "Le Brésil", "Le Chili", "La Colombie"],
+    "answerIndex": 1,
+    "explanation": "Le Brésil dispose du budget militaire le plus important du sous-continent et de la plus grande armée. Membre des BRICS, il aspire à un statut de puissance mondiale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation européenne, distincte de l'UE, défend les droits de l'homme et compte 46 États ?",
+    "choices": ["L'OSCE", "Le Conseil de l'Europe", "L'AELE", "L'UEO"],
+    "answerIndex": 1,
+    "explanation": "Le Conseil de l'Europe, créé en 1949 et basé à Strasbourg, supervise la Cour européenne des droits de l'homme. La Russie en a été exclue en mars 2022 après l'invasion de l'Ukraine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président des États-Unis a signé l'accord de Camp David en 1978 ?",
+    "choices": ["Richard Nixon", "Gerald Ford", "Jimmy Carter", "Ronald Reagan"],
+    "answerIndex": 2,
+    "explanation": "Jimmy Carter a négocié les accords entre Anouar el-Sadate (Égypte) et Menahem Begin (Israël), signés en septembre 1978. Sadate sera assassiné en 1981 pour ce traité historique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ligne sépare officiellement le monde communiste du monde libre selon le discours de Churchill ?",
+    "choices": ["La ligne Curzon", "Le rideau de fer", "Le mur de l'Atlantique", "La ligne Maginot"],
+    "answerIndex": 1,
+    "explanation": "L'expression « rideau de fer » a été rendue célèbre par Churchill à Fulton en mars 1946. Elle décrivait la division de l'Europe par l'expansion soviétique de la Baltique à l'Adriatique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel territoire est l'objet d'un contentieux entre l'Argentine et le Royaume-Uni depuis 1982 ?",
+    "choices": ["La Géorgie du Sud", "Les Malouines", "Gibraltar", "La Patagonie"],
+    "answerIndex": 1,
+    "explanation": "La guerre des Malouines (Falklands) d'avril-juin 1982 a opposé les deux pays. Le Royaume-Uni en a conservé le contrôle après la défaite argentine, qui a précipité la chute de la junte militaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation diplomatique réunit l'Inde, le Japon, l'Australie et les États-Unis ?",
+    "choices": ["L'AUKUS", "Le QUAD", "L'ANZUS", "Le Cinq Yeux"],
+    "answerIndex": 1,
+    "explanation": "Le Dialogue quadrilatéral pour la sécurité (QUAD) a été relancé en 2017 dans le contexte de la rivalité avec la Chine. Il vise à promouvoir un Indo-Pacifique « libre et ouvert ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel partenariat stratégique de 2021 entre l'Australie, le Royaume-Uni et les États-Unis a fâché la France ?",
+    "choices": ["Le QUAD", "L'AUKUS", "Les Cinq Yeux", "L'ANZUS"],
+    "answerIndex": 1,
+    "explanation": "L'annonce de l'AUKUS en septembre 2021 a provoqué une crise diplomatique avec la France, qui a perdu son contrat de sous-marins avec Canberra (62 milliards d'euros). Paris a rappelé ses ambassadeurs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel océan est considéré comme stratégique pour la rivalité sino-américaine ?",
+    "choices": ["L'Atlantique", "Le Pacifique / Indo-Pacifique", "L'océan Indien", "L'océan Arctique"],
+    "answerIndex": 1,
+    "explanation": "L'Indo-Pacifique est devenu le théâtre central de la compétition entre Washington et Pékin. La France, présente avec ses territoires d'outre-mer, y déploie une stratégie spécifique depuis 2018.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel diplomate a obtenu le prix Nobel de la paix pour les accords sur la fin de la guerre du Vietnam en 1973 ?",
+    "choices": ["George Marshall", "Henry Kissinger", "Zbigniew Brzezinski", "Madeleine Albright"],
+    "answerIndex": 1,
+    "explanation": "Henry Kissinger a partagé le Nobel avec le Nord-Vietnamien Lê Duc Tho, qui l'a refusé. Le prix reste controversé : la guerre s'est poursuivie et Saigon est tombée en 1975.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel concept désigne la concurrence pour les ressources et le contrôle d'une région ?",
+    "choices": ["Le hard power", "Le soft power", "La géostratégie", "La géoéconomie"],
+    "answerIndex": 3,
+    "explanation": "La géoéconomie, popularisée par Edward Luttwak, désigne l'usage d'outils économiques (sanctions, normes, monnaie) à des fins de puissance. Elle complète la géostratégie classique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle stratégie chinoise consiste à contrôler des ports clés via des investissements massifs ?",
+    "choices": ["La stratégie du collier de perles", "La stratégie du dragon", "La stratégie du panda", "La stratégie de la grande muraille"],
+    "answerIndex": 0,
+    "explanation": "Le « collier de perles » désigne le réseau de ports et installations chinoises dans l'océan Indien (Gwadar, Hambantota, Djibouti, etc.). Le concept a été forgé par des analystes américains en 2005.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la seule base militaire permanente française en Afrique en 2025 ?",
+    "choices": ["Le Mali", "Djibouti", "Le Niger", "Le Tchad"],
+    "answerIndex": 1,
+    "explanation": "Après le retrait de la France du Mali, du Niger, du Burkina Faso, du Sénégal et du Tchad, Djibouti reste sa principale base permanente en Afrique. La France y dispose des Forces françaises stationnées (FFDj).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel concept américain désigne l'effort des États-Unis à empêcher l'expansion soviétique ?",
+    "choices": ["Le roll-back", "Le containment", "Le linkage", "Le détente"],
+    "answerIndex": 1,
+    "explanation": "Le containment a été théorisé par George Kennan dans son « Long Telegram » de 1946 et son article « X » de 1947. Il a structuré la politique américaine pendant toute la guerre froide.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle crise de 1962 a porté le monde au bord de la guerre nucléaire ?",
+    "choices": ["La crise de Berlin", "La crise des missiles de Cuba", "La crise de Suez", "La crise hongroise"],
+    "answerIndex": 1,
+    "explanation": "La crise d'octobre 1962, déclenchée par l'installation de missiles soviétiques à Cuba, a duré 13 jours. Elle s'est soldée par un compromis : retrait des missiles cubains contre celui des Jupiter de Turquie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation regroupe la coopération sécuritaire entre 57 États en Europe et au-delà ?",
+    "choices": ["L'OTAN", "L'OSCE", "Le Conseil de l'Europe", "L'OECD"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation pour la sécurité et la coopération en Europe est née de l'Acte final d'Helsinki en 1975. Elle traite de sécurité, droits humains et économie, mais ses décisions sont consensuelles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président turc dirige le pays depuis 2003 ?",
+    "choices": ["Erdogan", "Davutoglu", "Yildirim", "Gül"],
+    "answerIndex": 0,
+    "explanation": "Recep Tayyip Erdogan a été Premier ministre de 2003 à 2014, puis président depuis. La présidence est devenue exécutive après le référendum constitutionnel de 2017.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays musulman compte la plus large population au monde ?",
+    "choices": ["Le Pakistan", "L'Indonésie", "L'Égypte", "Le Bangladesh"],
+    "answerIndex": 1,
+    "explanation": "L'Indonésie compte plus de 230 millions de musulmans, soit environ 87 % de sa population. C'est aussi la troisième démocratie du monde par sa population.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle puissance asiatique a accédé à l'arme nucléaire en 1974 ?",
+    "choices": ["La Chine", "L'Inde", "Le Pakistan", "Israël"],
+    "answerIndex": 1,
+    "explanation": "L'Inde a réalisé son premier essai, baptisé « Bouddha souriant », le 18 mai 1974. Le Pakistan a suivi en 1998, après une série d'essais indiens la même année.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la définition principale du concept westphalien d'État ?",
+    "choices": ["Démocratie représentative", "Souveraineté territoriale", "Marché libre", "Solidarité internationale"],
+    "answerIndex": 1,
+    "explanation": "Le modèle westphalien (1648) repose sur la souveraineté absolue de chaque État sur son territoire et la non-ingérence dans les affaires intérieures. C'est le socle du droit international classique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle est la principale organisation économique d'Amérique du Sud ?",
+    "choices": ["Le Pacte andin", "Le Mercosur", "L'ALBA", "L'UNASUR"],
+    "answerIndex": 1,
+    "explanation": "Le Mercosur, créé en 1991, regroupe l'Argentine, le Brésil, l'Uruguay et le Paraguay (membres fondateurs). Un accord commercial UE-Mercosur a été finalisé fin 2024 après 25 ans de négociations.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel diplomate français a été deux fois ministre des Affaires étrangères sous Mitterrand puis Chirac ?",
+    "choices": ["Roland Dumas", "Hubert Védrine", "Alain Juppé", "Dominique de Villepin"],
+    "answerIndex": 2,
+    "explanation": "Alain Juppé a été ministre des Affaires étrangères de 1993 à 1995 sous la cohabitation avec Mitterrand, puis Premier ministre sous Chirac de 1995 à 1997, et à nouveau ministre des Affaires étrangères en 2011.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays accueille traditionnellement le Forum économique mondial chaque année en janvier ?",
+    "choices": ["La Suisse", "La Belgique", "L'Allemagne", "L'Autriche"],
+    "answerIndex": 0,
+    "explanation": "Le Forum de Davos se tient chaque année dans cette station des Grisons depuis 1971. Fondé par Klaus Schwab, il rassemble dirigeants politiques, chefs d'entreprise et experts.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel sommet a divisé l'Europe en zones d'influence en juillet-août 1945 ?",
+    "choices": ["Yalta", "Potsdam", "Téhéran", "Casablanca"],
+    "answerIndex": 1,
+    "explanation": "La conférence de Potsdam a réuni Truman, Staline et Attlee (puis Churchill avant la défaite électorale britannique). Elle a fixé le sort de l'Allemagne et de l'Europe centrale après la guerre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a accueilli les négociations sur le programme nord-coréen dites « pourparlers à six » ?",
+    "choices": ["Le Japon", "La Chine", "La Corée du Sud", "La Russie"],
+    "answerIndex": 1,
+    "explanation": "Les pourparlers à six, qui réunissaient les deux Corées, les États-Unis, la Chine, le Japon et la Russie, se sont tenus à Pékin de 2003 à 2009. Ils ont échoué à dénucléariser la Corée du Nord.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président français a inauguré la « politique arabe » de la France ?",
+    "choices": ["René Coty", "Charles de Gaulle", "Georges Pompidou", "Valéry Giscard d'Estaing"],
+    "answerIndex": 1,
+    "explanation": "De Gaulle a inauguré cette politique après la guerre des Six Jours en 1967, en imposant un embargo sur les armes à destination d'Israël et en se rapprochant des pays arabes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel président français a été qualifié de « hyperprésident » diplomatique pour son omniprésence sur la scène internationale ?",
+    "choices": ["Jacques Chirac", "Nicolas Sarkozy", "François Hollande", "Emmanuel Macron"],
+    "answerIndex": 1,
+    "explanation": "Nicolas Sarkozy, surnommé l'« omniprésident », a marqué son mandat par un activisme diplomatique : présidence française de l'UE en 2008, gestion de la crise géorgienne, Union pour la Méditerranée.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation islamique réunit 57 États musulmans ?",
+    "choices": ["La Ligue arabe", "L'OCI", "Le CCG", "L'OPEP"],
+    "answerIndex": 1,
+    "explanation": "L'Organisation de la coopération islamique, créée en 1969 après l'incendie de la mosquée Al-Aqsa, a son siège à Djeddah. C'est la plus grande organisation intergouvernementale après l'ONU.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville chypriote est divisée par une zone tampon de l'ONU depuis 1974 ?",
+    "choices": ["Limassol", "Nicosie", "Larnaca", "Paphos"],
+    "answerIndex": 1,
+    "explanation": "Nicosie est la dernière capitale divisée d'Europe. L'invasion turque de 1974 a séparé l'île entre la République de Chypre (sud) et la République turque de Chypre du Nord, reconnue par la seule Turquie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  }
+]

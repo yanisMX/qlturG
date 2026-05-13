@@ -1,0 +1,848 @@
+[
+  {
+    "text": "Qui est l'auteur des Misérables (1862) ?",
+    "choices": ["Honoré de Balzac", "Victor Hugo", "Émile Zola", "Alexandre Dumas"],
+    "answerIndex": 1,
+    "explanation": "Victor Hugo a travaillé près de vingt ans sur ce roman, en partie écrit pendant son exil à Guernesey.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Madame Bovary ?",
+    "choices": ["Gustave Flaubert", "Guy de Maupassant", "Stendhal", "Honoré de Balzac"],
+    "answerIndex": 0,
+    "explanation": "Publié en 1857, le roman a valu à Flaubert un procès pour « outrage aux bonnes mœurs » dont il est sorti acquitté.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du Petit Prince (1943) ?",
+    "choices": ["Romain Gary", "Antoine de Saint-Exupéry", "Jean Giono", "Jules Renard"],
+    "answerIndex": 1,
+    "explanation": "Aviateur de profession, Saint-Exupéry a écrit et illustré ce conte pendant son exil à New York durant la Seconde Guerre mondiale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Le Rouge et le Noir (1830) ?",
+    "choices": ["Balzac", "Stendhal", "Flaubert", "Mérimée"],
+    "answerIndex": 1,
+    "explanation": "Henri Beyle, dit Stendhal, s'inspire de l'affaire Antoine Berthet pour bâtir le destin de Julien Sorel sous la Restauration.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de Germinal (1885) ?",
+    "choices": ["Émile Zola", "Alphonse Daudet", "Edmond de Goncourt", "Joris-Karl Huysmans"],
+    "answerIndex": 0,
+    "explanation": "Treizième roman du cycle des Rougon-Macquart, Germinal dépeint la grève d'une mine du Nord et le travail des « gueules noires ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit L'Étranger (1942) ?",
+    "choices": ["Jean-Paul Sartre", "Albert Camus", "André Malraux", "Louis Aragon"],
+    "answerIndex": 1,
+    "explanation": "Roman emblématique de la philosophie de l'absurde, L'Étranger est publié chez Gallimard pendant l'Occupation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur des Trois Mousquetaires (1844) ?",
+    "choices": ["Eugène Sue", "Alexandre Dumas père", "Théophile Gautier", "Paul Féval"],
+    "answerIndex": 1,
+    "explanation": "Dumas a souvent travaillé avec le « nègre » Auguste Maquet, qui contribua à la trame de plusieurs de ses romans-feuilletons.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Le Père Goriot (1835) ?",
+    "choices": ["Stendhal", "Honoré de Balzac", "Eugène Sue", "Alfred de Musset"],
+    "answerIndex": 1,
+    "explanation": "Ce roman pivot de La Comédie humaine introduit Rastignac à Paris et le célèbre « À nous deux maintenant ! ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de Bel-Ami (1885) ?",
+    "choices": ["Guy de Maupassant", "Émile Zola", "Alphonse Daudet", "Octave Mirbeau"],
+    "answerIndex": 0,
+    "explanation": "Maupassant y peint l'ascension cynique du séducteur Georges Duroy dans la presse parisienne sous la IIIe République.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit la comédie Tartuffe (1664) ?",
+    "choices": ["Pierre Corneille", "Jean Racine", "Molière", "Marivaux"],
+    "answerIndex": 2,
+    "explanation": "Interdite à la cour à la demande du parti dévot, la pièce n'a pu être représentée librement qu'en 1669, dans une version remaniée.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Le Cid (1637) ?",
+    "choices": ["Jean Racine", "Pierre Corneille", "Molière", "Tristan L'Hermite"],
+    "answerIndex": 1,
+    "explanation": "Le succès triomphal de la pièce a déclenché la « querelle du Cid » et conduit à la rédaction des règles du théâtre classique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de la tragédie Phèdre (1677) ?",
+    "choices": ["Pierre Corneille", "Jean Racine", "Voltaire", "Crébillon"],
+    "answerIndex": 1,
+    "explanation": "Racine puise sa tragédie chez Euripide et Sénèque, et y porte à son comble la peinture des passions selon les règles classiques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète français du XVIIe siècle est l'auteur des Fables ?",
+    "choices": ["Boileau", "La Fontaine", "Malherbe", "Saint-Amant"],
+    "answerIndex": 1,
+    "explanation": "Jean de La Fontaine publie ses Fables en plusieurs recueils entre 1668 et 1694, puisant chez Ésope, Phèdre et Pilpay.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Notre-Dame de Paris (1831) ?",
+    "choices": ["Alphonse de Lamartine", "Victor Hugo", "Alfred de Vigny", "Théophile Gautier"],
+    "answerIndex": 1,
+    "explanation": "Le succès du roman a contribué à la prise de conscience du patrimoine médiéval et à la restauration de la cathédrale par Viollet-le-Duc.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur des Fleurs du Mal (1857) ?",
+    "choices": ["Charles Baudelaire", "Paul Verlaine", "Stéphane Mallarmé", "Arthur Rimbaud"],
+    "answerIndex": 0,
+    "explanation": "Comme Madame Bovary la même année, le recueil a fait l'objet d'un procès pour outrage aux bonnes mœurs et de six pièces condamnées.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit À la recherche du temps perdu ?",
+    "choices": ["Paul Valéry", "Marcel Proust", "André Gide", "François Mauriac"],
+    "answerIndex": 1,
+    "explanation": "Publiée entre 1913 et 1927, cette suite en sept volumes est l'un des plus vastes romans de la littérature française.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du roman 1984 ?",
+    "choices": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H. G. Wells"],
+    "answerIndex": 1,
+    "explanation": "Publié en 1949, le roman impose les notions de Big Brother, novlangue et doublepensée dans le vocabulaire politique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Don Quichotte (1605-1615) ?",
+    "choices": ["Lope de Vega", "Miguel de Cervantès", "Calderón de la Barca", "Quevedo"],
+    "answerIndex": 1,
+    "explanation": "Souvent considéré comme le premier roman moderne, Don Quichotte parodie les romans de chevalerie en deux parties.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Roméo et Juliette ?",
+    "choices": ["Christopher Marlowe", "William Shakespeare", "Ben Jonson", "John Webster"],
+    "answerIndex": 1,
+    "explanation": "La pièce, écrite vers 1595, s'inspire d'une nouvelle italienne de Matteo Bandello popularisée en Angleterre par Arthur Brooke.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de Crime et Châtiment (1866) ?",
+    "choices": ["Léon Tolstoï", "Fiodor Dostoïevski", "Anton Tchekhov", "Nicolas Gogol"],
+    "answerIndex": 1,
+    "explanation": "Dostoïevski y suit Raskolnikov, étudiant pauvre qui tue une usurière pour mettre à l'épreuve sa théorie de l'homme supérieur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Voyage au centre de la Terre (1864) ?",
+    "choices": ["Jules Verne", "H. G. Wells", "Pierre Loti", "Edgar Allan Poe"],
+    "answerIndex": 0,
+    "explanation": "Jules Verne y entraîne le professeur Lidenbrock et son neveu Axel sous le volcan Snæfellsjökull en Islande.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel est le prix littéraire français le plus prestigieux ?",
+    "choices": ["Prix Renaudot", "Prix Goncourt", "Prix Femina", "Grand Prix de l'Académie française"],
+    "answerIndex": 1,
+    "explanation": "Créé en 1903 par testament d'Edmond de Goncourt, ce prix d'une valeur symbolique de 10 € garantit un large succès commercial.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Combien y a-t-il de membres à l'Académie française ?",
+    "choices": ["30", "40", "50", "60"],
+    "answerIndex": 1,
+    "explanation": "Fondée par Richelieu en 1635, l'Académie compte quarante « immortels » élus à vie, chargés notamment de surveiller la langue française.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit La Cantatrice chauve (1950) ?",
+    "choices": ["Eugène Ionesco", "Samuel Beckett", "Jean Genet", "Arthur Adamov"],
+    "answerIndex": 0,
+    "explanation": "Ionesco qualifie sa pièce d'« anti-pièce » ; elle est jouée sans interruption depuis 1957 au Théâtre de la Huchette à Paris.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur d'En attendant Godot (1952) ?",
+    "choices": ["Eugène Ionesco", "Samuel Beckett", "Bertolt Brecht", "Harold Pinter"],
+    "answerIndex": 1,
+    "explanation": "Beckett, d'origine irlandaise, a écrit sa pièce directement en français ; il reçoit le prix Nobel de littérature en 1969.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Le Comte de Monte-Cristo (1844-1846) ?",
+    "choices": ["Victor Hugo", "Alexandre Dumas père", "Eugène Sue", "Ponson du Terrail"],
+    "answerIndex": 1,
+    "explanation": "Le roman s'inspire de l'histoire vraie du cordonnier Pierre Picaud, victime d'une dénonciation calomnieuse sous l'Empire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de la nouvelle Carmen (1845), source de l'opéra de Bizet ?",
+    "choices": ["Prosper Mérimée", "Théophile Gautier", "Alphonse Daudet", "George Sand"],
+    "answerIndex": 0,
+    "explanation": "Mérimée, archéologue et inspecteur des monuments historiques, situe son récit dans une Espagne brigande qu'il connaissait bien.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Les Liaisons dangereuses (1782) ?",
+    "choices": ["Choderlos de Laclos", "Beaumarchais", "Restif de la Bretonne", "Sade"],
+    "answerIndex": 0,
+    "explanation": "Officier d'artillerie, Pierre Choderlos de Laclos n'a publié qu'un seul roman, devenu un sommet du roman épistolaire libertin.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de la pièce Cyrano de Bergerac (1897) ?",
+    "choices": ["Edmond Rostand", "Alfred Jarry", "Georges Feydeau", "Sacha Guitry"],
+    "answerIndex": 0,
+    "explanation": "Inspirée du libertin Savinien de Cyrano (1619-1655), la pièce a triomphé dès sa création et propulsé Rostand à l'Académie française à 33 ans.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit la nouvelle fantastique Le Horla (1887) ?",
+    "choices": ["Guy de Maupassant", "Théophile Gautier", "Villiers de L'Isle-Adam", "Jean Lorrain"],
+    "answerIndex": 0,
+    "explanation": "Récit du dédoublement et de la folie, Le Horla est souvent lu comme l'écho de la propre santé déclinante de Maupassant.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "À quel mouvement littéraire associe-t-on Victor Hugo ?",
+    "choices": ["Classicisme", "Romantisme", "Réalisme", "Naturalisme"],
+    "answerIndex": 1,
+    "explanation": "La préface de Cromwell (1827) puis la bataille d'Hernani (1830) ont fait de Hugo le chef de file du romantisme français.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "À quel mouvement littéraire associe-t-on Émile Zola ?",
+    "choices": ["Romantisme", "Réalisme", "Naturalisme", "Symbolisme"],
+    "answerIndex": 2,
+    "explanation": "Zola théorise le naturalisme dans Le Roman expérimental (1880), inspiré par la méthode du physiologiste Claude Bernard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est considéré comme le fondateur du surréalisme en 1924 ?",
+    "choices": ["Guillaume Apollinaire", "André Breton", "Tristan Tzara", "Louis Aragon"],
+    "answerIndex": 1,
+    "explanation": "Le Manifeste du surréalisme (1924) de Breton définit le mouvement comme « automatisme psychique pur ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "En quelle année Madame Bovary et Les Fleurs du Mal font-ils l'objet de procès ?",
+    "choices": ["1849", "1857", "1865", "1871"],
+    "answerIndex": 1,
+    "explanation": "Les deux œuvres sont poursuivies la même année 1857 pour outrage aux bonnes mœurs ; seul Baudelaire est condamné.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "À quel ensemble romanesque appartient Le Père Goriot ?",
+    "choices": ["Les Rougon-Macquart", "La Comédie humaine", "Les Hommes de bonne volonté", "À la recherche du temps perdu"],
+    "answerIndex": 1,
+    "explanation": "Balzac conçoit La Comédie humaine comme une vaste fresque de la société française, avec retour des mêmes personnages.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du Dernier Jour d'un condamné (1829) ?",
+    "choices": ["Alfred de Vigny", "Victor Hugo", "Alphonse de Lamartine", "Chateaubriand"],
+    "answerIndex": 1,
+    "explanation": "Hugo y livre un réquisitoire contre la peine de mort, qu'il combattra toute sa vie, notamment dans son célèbre discours de 1848.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit L'Éducation sentimentale (1869) ?",
+    "choices": ["Honoré de Balzac", "Gustave Flaubert", "Émile Zola", "Maxime Du Camp"],
+    "answerIndex": 1,
+    "explanation": "Flaubert y suit Frédéric Moreau de 1840 à 1867, sur fond de révolution de 1848 et de bourgeoisie parisienne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur d'Une saison en enfer (1873) ?",
+    "choices": ["Paul Verlaine", "Arthur Rimbaud", "Charles Cros", "Stéphane Mallarmé"],
+    "answerIndex": 1,
+    "explanation": "Seul ouvrage publié du vivant de Rimbaud, il marque la rupture après l'épisode tumultueux de sa liaison avec Verlaine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a publié le recueil Alcools en 1913 ?",
+    "choices": ["Paul Valéry", "Guillaume Apollinaire", "Blaise Cendrars", "Max Jacob"],
+    "answerIndex": 1,
+    "explanation": "Apollinaire y supprime à la dernière minute toute ponctuation et y inclut le poème emblématique « Le Pont Mirabeau ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du Cahier d'un retour au pays natal (1939) ?",
+    "choices": ["Léopold Sédar Senghor", "Aimé Césaire", "Léon-Gontran Damas", "Édouard Glissant"],
+    "answerIndex": 1,
+    "explanation": "Ce long poème, écrit à Paris à la fin des années 1930, est l'acte de naissance littéraire de la négritude.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel courant littéraire des années 1950-1960 réunit Robbe-Grillet, Sarraute et Butor ?",
+    "choices": ["L'OuLiPo", "Le Nouveau Roman", "L'Hexagone", "Tel Quel"],
+    "answerIndex": 1,
+    "explanation": "Édité aux Éditions de Minuit, le Nouveau Roman remet en cause la notion de personnage et l'intrigue traditionnelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a obtenu le prix Goncourt en 1919 pour À l'ombre des jeunes filles en fleurs ?",
+    "choices": ["Romain Rolland", "Marcel Proust", "Roland Dorgelès", "François Mauriac"],
+    "answerIndex": 1,
+    "explanation": "L'attribution du prix à Proust plutôt qu'à Dorgelès pour Les Croix de bois a suscité une violente polémique littéraire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain franco-américain a reçu le prix Goncourt 2006 pour Les Bienveillantes ?",
+    "choices": ["Jonathan Littell", "Mathias Énard", "Pierre Assouline", "Patrick Modiano"],
+    "answerIndex": 0,
+    "explanation": "Le roman, écrit en français, donne la parole à un ancien officier SS dans une fresque de plus de 900 pages.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur des Mémoires d'Hadrien (1951) ?",
+    "choices": ["Marguerite Yourcenar", "Marguerite Duras", "Nathalie Sarraute", "Colette"],
+    "answerIndex": 0,
+    "explanation": "Yourcenar travailla pendant des décennies à ce monologue intérieur prêté à l'empereur romain Hadrien.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quelle écrivaine est la première femme élue à l'Académie française en 1980 ?",
+    "choices": ["Marguerite Duras", "Marguerite Yourcenar", "Hélène Carrère d'Encausse", "Jacqueline de Romilly"],
+    "answerIndex": 1,
+    "explanation": "Marguerite Yourcenar prend possession de son fauteuil le 22 janvier 1981, brisant trois siècles d'académie exclusivement masculine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Voyage au bout de la nuit (1932) ?",
+    "choices": ["André Malraux", "Louis-Ferdinand Céline", "Pierre Drieu la Rochelle", "Henry de Montherlant"],
+    "answerIndex": 1,
+    "explanation": "Le roman obtient le prix Renaudot mais manque de peu le Goncourt, attribué cette année-là à Guy Mazeline pour Les Loups.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a obtenu le prix Goncourt 1933 pour La Condition humaine ?",
+    "choices": ["François Mauriac", "André Malraux", "Jean Giono", "Henri de Montherlant"],
+    "answerIndex": 1,
+    "explanation": "Malraux situe son roman pendant l'insurrection communiste de Shanghai en 1927, mêlant action politique et méditation tragique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur des Faux-Monnayeurs (1925) ?",
+    "choices": ["André Gide", "Roger Martin du Gard", "Jules Romains", "Georges Duhamel"],
+    "answerIndex": 0,
+    "explanation": "Gide accompagne son roman du Journal des Faux-Monnayeurs, réflexion sur la fabrique même du livre, mise en abyme avant l'heure.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit les Mémoires d'outre-tombe ?",
+    "choices": ["Madame de Staël", "François-René de Chateaubriand", "Benjamin Constant", "Alfred de Vigny"],
+    "answerIndex": 1,
+    "explanation": "Chateaubriand a travaillé près de trente ans à cette autobiographie monumentale, publiée à titre posthume en 1849-1850.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète français a dirigé la Pléiade au XVIe siècle ?",
+    "choices": ["Joachim du Bellay", "Pierre de Ronsard", "Clément Marot", "Maurice Scève"],
+    "answerIndex": 1,
+    "explanation": "Ronsard fédère un groupe de sept poètes humanistes ; Du Bellay en rédige le manifeste, la Défense et illustration de la langue française (1549).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur des Essais (1580-1595) ?",
+    "choices": ["Montaigne", "Étienne de La Boétie", "Rabelais", "Pierre Charron"],
+    "answerIndex": 0,
+    "explanation": "Montaigne invente, avec ce mot, un genre littéraire entièrement nouveau : l'examen libre de soi-même et du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Gargantua (1534) ?",
+    "choices": ["Marguerite de Navarre", "François Rabelais", "Clément Marot", "Bonaventure des Périers"],
+    "answerIndex": 1,
+    "explanation": "Médecin de formation, Rabelais joint dans son cycle l'érudition humaniste et la verve carnavalesque populaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du Mariage de Figaro (1784) ?",
+    "choices": ["Marivaux", "Beaumarchais", "Sedaine", "Diderot"],
+    "answerIndex": 1,
+    "explanation": "Longtemps interdite par Louis XVI, la pièce de Beaumarchais a été perçue comme l'un des signes avant-coureurs de la Révolution.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier russe est l'auteur de Guerre et Paix (1865-1869) ?",
+    "choices": ["Léon Tolstoï", "Fiodor Dostoïevski", "Ivan Tourgueniev", "Mikhaïl Boulgakov"],
+    "answerIndex": 0,
+    "explanation": "Tolstoï y entrelace la grande histoire (campagne de Russie de 1812) et l'histoire intime de plusieurs familles aristocratiques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a publié La Chartreuse de Parme en 1839 ?",
+    "choices": ["Honoré de Balzac", "Stendhal", "Eugène Sue", "Alphonse de Lamartine"],
+    "answerIndex": 1,
+    "explanation": "Dicté en cinquante-trois jours, le roman est salué par Balzac dans un article retentissant de la Revue parisienne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a publié L'Assommoir en 1877 ?",
+    "choices": ["Alphonse Daudet", "Émile Zola", "Joris-Karl Huysmans", "Edmond de Goncourt"],
+    "answerIndex": 1,
+    "explanation": "Septième volume des Rougon-Macquart, le roman décrit la déchéance par l'alcool de la blanchisseuse Gervaise Macquart à Paris.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète et homme politique sénégalais est l'un des fondateurs de la négritude ?",
+    "choices": ["Léopold Sédar Senghor", "Birago Diop", "Ousmane Sembène", "Cheikh Anta Diop"],
+    "answerIndex": 0,
+    "explanation": "Élu à l'Académie française en 1983, Senghor est le premier Africain à siéger sous la Coupole.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quelle écrivaine française a écrit L'Amant (1984), prix Goncourt cette année-là ?",
+    "choices": ["Nathalie Sarraute", "Marguerite Duras", "Annie Ernaux", "Christiane Rochefort"],
+    "answerIndex": 1,
+    "explanation": "Largement autobiographique, le roman évoque la liaison d'une adolescente française avec un riche Chinois en Indochine coloniale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier autrichien a écrit Le Procès, publié à titre posthume en 1925 ?",
+    "choices": ["Robert Musil", "Franz Kafka", "Stefan Zweig", "Hermann Broch"],
+    "answerIndex": 1,
+    "explanation": "Kafka, qui demandait à Max Brod de détruire ses manuscrits, doit la postérité de son œuvre au refus de son ami exécuteur testamentaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "En quelle année a été décerné le tout premier prix Goncourt ?",
+    "choices": ["1896", "1903", "1911", "1919"],
+    "answerIndex": 1,
+    "explanation": "Le premier Goncourt récompense John-Antoine Nau pour Force ennemie le 21 décembre 1903.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "À qui le tout premier prix Goncourt a-t-il été attribué en 1903 ?",
+    "choices": ["John-Antoine Nau", "Léon Frapié", "Claude Farrère", "Émile Moselly"],
+    "answerIndex": 0,
+    "explanation": "Nau est récompensé pour Force ennemie, court roman fantastique aujourd'hui largement oublié du grand public.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur d'Aurélien (1944) ?",
+    "choices": ["Louis Aragon", "André Breton", "Paul Éluard", "Robert Desnos"],
+    "answerIndex": 0,
+    "explanation": "Quatrième volume du cycle Le Monde réel, le roman peint l'amour impossible d'Aurélien Leurtillois et Bérénice Morel dans les années 1920.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a remporté le prix Nobel de littérature en 1937 pour le cycle des Thibault ?",
+    "choices": ["André Gide", "Roger Martin du Gard", "Romain Rolland", "Anatole France"],
+    "answerIndex": 1,
+    "explanation": "Le cycle, publié entre 1922 et 1940, suit deux frères du début du XXe siècle à la Première Guerre mondiale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "En quelle année Albert Camus a-t-il reçu le prix Nobel de littérature ?",
+    "choices": ["1947", "1952", "1957", "1964"],
+    "answerIndex": 2,
+    "explanation": "Camus, alors âgé de 44 ans, est le second plus jeune lauréat de l'histoire du Nobel de littérature après Kipling.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain français a refusé le prix Nobel de littérature en 1964 ?",
+    "choices": ["François Mauriac", "Jean-Paul Sartre", "André Malraux", "Albert Camus"],
+    "answerIndex": 1,
+    "explanation": "Sartre invoque son refus de toute distinction officielle et le souci de ne pas être « transformé en institution ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a reçu le prix Nobel de littérature en 2014 ?",
+    "choices": ["J. M. G. Le Clézio", "Patrick Modiano", "Pascal Quignard", "Pierre Michon"],
+    "answerIndex": 1,
+    "explanation": "Modiano est distingué pour son art de la mémoire, qui « évoque les destinées humaines les plus insaisissables ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "En quelle année Annie Ernaux a-t-elle reçu le prix Nobel de littérature ?",
+    "choices": ["2018", "2020", "2022", "2023"],
+    "answerIndex": 2,
+    "explanation": "Ernaux est saluée pour « le courage et l'acuité clinique » avec laquelle elle explore mémoire personnelle et déterminismes sociaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de Manon Lescaut (1731) ?",
+    "choices": ["Marivaux", "Abbé Prévost", "Crébillon fils", "Lesage"],
+    "answerIndex": 1,
+    "explanation": "Septième tome des Mémoires d'un homme de qualité, le roman a connu un succès si éclatant qu'il a été publié séparément.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a publié La Princesse de Clèves en 1678 ?",
+    "choices": ["Madame de Sévigné", "Madame de Lafayette", "Madame de Maintenon", "Madeleine de Scudéry"],
+    "answerIndex": 1,
+    "explanation": "Souvent considéré comme le premier grand roman psychologique français, le livre est publié anonymement à sa parution.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur d'Adolphe (1816) ?",
+    "choices": ["Benjamin Constant", "Senancour", "Chateaubriand", "Nodier"],
+    "answerIndex": 0,
+    "explanation": "Court roman d'analyse, Adolphe puise dans la liaison orageuse de Constant avec Germaine de Staël.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit le récit Sylvie (1853), inclus dans Les Filles du feu ?",
+    "choices": ["Théophile Gautier", "Gérard de Nerval", "Pétrus Borel", "Aloysius Bertrand"],
+    "answerIndex": 1,
+    "explanation": "Sylvie, situé dans le Valois natal de Nerval, mêle souvenirs d'enfance et rêverie sur un amour idéalisé.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman historique Flaubert a-t-il publié en 1862, situé à Carthage ?",
+    "choices": ["Salammbô", "La Tentation de saint Antoine", "Hérodias", "Bouvard et Pécuchet"],
+    "answerIndex": 0,
+    "explanation": "Flaubert s'est rendu en Tunisie pour préparer ce roman foisonnant sur la guerre des Mercenaires au IIIe siècle av. J.-C.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman inachevé de Flaubert paraît à titre posthume en 1881 ?",
+    "choices": ["Salammbô", "Trois Contes", "Bouvard et Pécuchet", "Madame Bovary"],
+    "answerIndex": 2,
+    "explanation": "Satire encyclopédique de la bêtise, le livre suit deux copistes parisiens qui s'essaient à toutes les sciences.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel récit de Nerval, publié en 1855, est sous-titré « le rêve et la vie » ?",
+    "choices": ["Aurélia", "Pandora", "Promenades et souvenirs", "Voyage en Orient"],
+    "answerIndex": 0,
+    "explanation": "Récit d'une descente dans la folie, Aurélia paraît quelques mois avant le suicide de l'auteur rue de la Vieille-Lanterne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a obtenu le prix Goncourt 1948 pour Les Grandes Familles ?",
+    "choices": ["Maurice Druon", "Bernard Clavel", "Henri Troyat", "Jean Hougron"],
+    "answerIndex": 0,
+    "explanation": "Druon entre à l'Académie française en 1966 et y siège ensuite comme secrétaire perpétuel de 1985 à 1999.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quelle écrivaine a été la première femme lauréate du prix Goncourt, en 1944 ?",
+    "choices": ["Colette", "Elsa Triolet", "Marguerite Yourcenar", "Simone de Beauvoir"],
+    "answerIndex": 1,
+    "explanation": "Elsa Triolet est récompensée pour Le premier accroc coûte deux cents francs, recueil de nouvelles inspirées de la Résistance.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel ouvrage autobiographique Simone de Beauvoir publie-t-elle en 1958 ?",
+    "choices": ["La Force de l'âge", "Mémoires d'une jeune fille rangée", "Tout compte fait", "Une mort très douce"],
+    "answerIndex": 1,
+    "explanation": "Premier volume de ses mémoires, l'ouvrage couvre son enfance bourgeoise jusqu'à sa rencontre avec Sartre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a cofondé l'OuLiPo en 1960 avec François Le Lionnais ?",
+    "choices": ["Georges Perec", "Italo Calvino", "Raymond Queneau", "Jacques Roubaud"],
+    "answerIndex": 2,
+    "explanation": "L'Ouvroir de littérature potentielle vise à explorer les contraintes formelles comme moteurs de création.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman de Georges Perec, publié en 1969, est entièrement écrit sans la lettre « e » ?",
+    "choices": ["W ou le souvenir d'enfance", "La Vie mode d'emploi", "La Disparition", "Les Choses"],
+    "answerIndex": 2,
+    "explanation": "Cet exercice de lipogramme, le plus ambitieux jamais écrit en français, raconte une enquête sur la disparition d'Anton Voyl.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman de Georges Perec a obtenu le prix Médicis en 1978 ?",
+    "choices": ["Les Choses", "Un homme qui dort", "La Vie mode d'emploi", "W ou le souvenir d'enfance"],
+    "answerIndex": 2,
+    "explanation": "Construit comme un puzzle, le roman décrit pièce par pièce un immeuble parisien et ses habitants un jour de juin 1975.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel recueil de Raymond Queneau, paru en 1947, propose 99 variations sur une même anecdote ?",
+    "choices": ["Zazie dans le métro", "Exercices de style", "Les Fleurs bleues", "Cent mille milliards de poèmes"],
+    "answerIndex": 1,
+    "explanation": "Le recueil détaille en 99 styles différents une banale querelle dans un autobus parisien et ses suites.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel ouvrage Aimé Césaire publie-t-il en 1950 ?",
+    "choices": ["Discours sur le colonialisme", "Cahier d'un retour au pays natal", "Soleil cou coupé", "Une tempête"],
+    "answerIndex": 0,
+    "explanation": "Le pamphlet anticolonialiste de Césaire, paru chez Réclame puis chez Présence africaine, dénonce le racisme comme produit de la colonisation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman inachevé d'Albert Camus a été publié à titre posthume en 1994 ?",
+    "choices": ["La Chute", "Le Premier Homme", "La Mort heureuse", "L'Exil et le Royaume"],
+    "answerIndex": 1,
+    "explanation": "Le manuscrit a été retrouvé dans la sacoche de Camus lors de l'accident de voiture qui lui coûta la vie le 4 janvier 1960.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quelle romancière a remporté le prix Goncourt 2009 pour Trois femmes puissantes ?",
+    "choices": ["Marie NDiaye", "Lydie Salvayre", "Léonora Miano", "Nina Bouraoui"],
+    "answerIndex": 0,
+    "explanation": "Marie NDiaye est la première femme noire à remporter le Goncourt ; elle l'avait déjà obtenu pour Rosie Carpe (Femina 2001).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman a valu à André Malraux le prix Goncourt 1933 ?",
+    "choices": ["Les Conquérants", "La Voie royale", "La Condition humaine", "L'Espoir"],
+    "answerIndex": 2,
+    "explanation": "Le roman, qui suit l'insurrection communiste à Shanghai en 1927, vaut à Malraux une notoriété immédiate.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel recueil de poèmes André Breton et Philippe Soupault publient-ils en 1920, considéré comme le premier texte surréaliste ?",
+    "choices": ["Les Champs magnétiques", "Clair de terre", "Nadja", "Mont de piété"],
+    "answerIndex": 0,
+    "explanation": "Issu d'expériences d'écriture automatique, le recueil inaugure la méthode qui sera théorisée dans le Manifeste de 1924.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a obtenu le Nobel de littérature en 2008 ?",
+    "choices": ["Patrick Modiano", "J. M. G. Le Clézio", "Pascal Quignard", "Sylvie Germain"],
+    "answerIndex": 1,
+    "explanation": "Le Clézio est récompensé en tant qu'« écrivain de la rupture, de l'aventure poétique et de l'extase sensuelle ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel cycle romanesque Émile Zola a-t-il publié entre 1871 et 1893 ?",
+    "choices": ["Les Misérables", "La Comédie humaine", "Les Rougon-Macquart", "Les Hommes de bonne volonté"],
+    "answerIndex": 2,
+    "explanation": "Vingt romans suivent une famille sous le Second Empire et illustrent les thèses naturalistes sur l'hérédité et le milieu.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de Vipère au poing (1948) ?",
+    "choices": ["Marcel Aymé", "Hervé Bazin", "Roger Vailland", "Marcel Pagnol"],
+    "answerIndex": 1,
+    "explanation": "Hervé Bazin y livre un règlement de comptes autobiographique avec sa mère, « Folcoche », dans une famille bourgeoise angevine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a publié La Jalousie en 1957, manifeste du Nouveau Roman ?",
+    "choices": ["Michel Butor", "Nathalie Sarraute", "Alain Robbe-Grillet", "Claude Simon"],
+    "answerIndex": 2,
+    "explanation": "Le roman ne contient ni « je » ni nom propre pour le narrateur, dont seule la jalousie tisse l'unité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a obtenu le prix Nobel de littérature en 1985, lauréat du Nouveau Roman ?",
+    "choices": ["Alain Robbe-Grillet", "Claude Simon", "Michel Butor", "Nathalie Sarraute"],
+    "answerIndex": 1,
+    "explanation": "Claude Simon, auteur de La Route des Flandres, est salué pour sa fusion entre l'imagination poétique et la conscience du temps.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du roman Atala (1801) ?",
+    "choices": ["Bernardin de Saint-Pierre", "Madame de Staël", "François-René de Chateaubriand", "Sénac de Meilhan"],
+    "answerIndex": 2,
+    "explanation": "Détaché du Génie du christianisme, le récit met en scène l'amour tragique d'une Indienne convertie et d'un Natchez en Louisiane.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel auteur français a publié Le Roi des Aulnes, prix Goncourt 1970 ?",
+    "choices": ["Michel Tournier", "Romain Gary", "Patrick Grainville", "Jean Carrière"],
+    "answerIndex": 0,
+    "explanation": "Le roman, attribué à l'unanimité, suit Abel Tiffauges, prisonnier français devenu rabatteur d'enfants dans une école nazie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier français a obtenu deux fois le prix Goncourt sous des noms différents ?",
+    "choices": ["Marcel Aymé", "Romain Gary", "Henri Troyat", "Marcel Pagnol"],
+    "answerIndex": 1,
+    "explanation": "Romain Gary a reçu le Goncourt en 1956 pour Les Racines du ciel puis, sous le pseudonyme d'Émile Ajar, en 1975 pour La Vie devant soi.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  }
+]
