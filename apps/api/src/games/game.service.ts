@@ -64,7 +64,7 @@ export class GameService {
     gameMode: GameMode;
     questionDuration: number;
     doublePointsBonus: boolean;
-    topic?: Topic;
+    topics?: Topic[];
   }) {
     if (params.totalQuestions < 10 || params.totalQuestions > 30) {
       throw new BadRequestException('totalQuestions must be between 10 and 30');
@@ -80,7 +80,7 @@ export class GameService {
         code,
         hostId: 'pending',
         difficulty: params.difficulty,
-        topic: params.topic ?? null,
+        topics: params.topics ?? [],
         totalQuestions: params.totalQuestions,
         speedBonus: params.speedBonus,
         gameMode: params.gameMode,
@@ -140,11 +140,11 @@ export class GameService {
     const isSurvival =
       game.gameMode === GameMode.SURVIVAL_SOLO || game.gameMode === GameMode.SURVIVAL_MULTI;
 
-    const topic = game.topic ?? undefined;
+    const { topics } = game;
 
     let questions;
     if (isSurvival) {
-      questions = await this.questionsService.getAllByDifficulty(game.difficulty, [], topic);
+      questions = await this.questionsService.getAllByDifficulty(game.difficulty, [], topics);
       if (questions.length === 0) {
         throw new BadRequestException('No questions available for this difficulty');
       }
@@ -152,7 +152,7 @@ export class GameService {
       questions = await this.questionsService.getRandomByDifficulty(
         game.difficulty,
         game.totalQuestions,
-        topic,
+        topics,
       );
       if (questions.length < game.totalQuestions) {
         throw new BadRequestException('Not enough questions available for this difficulty');
@@ -179,10 +179,13 @@ export class GameService {
     difficulty: Difficulty,
     startOrderIndex: number,
   ) {
-    let newQuestions = await this.questionsService.getAllByDifficulty(difficulty, usedQuestionIds);
+    const game = await this.prisma.game.findUnique({ where: { id: gameId }, select: { topics: true } });
+    const topics = game?.topics ?? [];
+
+    let newQuestions = await this.questionsService.getAllByDifficulty(difficulty, usedQuestionIds, topics);
     if (newQuestions.length === 0) {
       // All questions exhausted — loop the full pool reshuffled
-      newQuestions = await this.questionsService.getAllByDifficulty(difficulty);
+      newQuestions = await this.questionsService.getAllByDifficulty(difficulty, [], topics);
     }
     const rounds = await Promise.all(
       newQuestions.map((q, i) =>

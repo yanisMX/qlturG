@@ -33,22 +33,22 @@ export class QuestionsService {
     return this.prisma.question.delete({ where: { id } });
   }
 
-  async getRandomByDifficulty(difficulty: Difficulty, count: number, topic?: Topic) {
+  async getRandomByDifficulty(difficulty: Difficulty, count: number, topics: Topic[] = []) {
     const all = await this.prisma.question.findMany({
       where: {
         ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
-        ...(topic && { topic }),
+        ...(topics.length > 0 && { topic: { in: topics } }),
       },
     });
     return all.sort(() => Math.random() - 0.5).slice(0, count);
   }
 
-  async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = [], topic?: Topic) {
+  async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = [], topics: Topic[] = []) {
     const all = await this.prisma.question.findMany({
       where: {
         ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
         ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
-        ...(topic && { topic }),
+        ...(topics.length > 0 && { topic: { in: topics } }),
       },
     });
     return all.sort(() => Math.random() - 0.5);

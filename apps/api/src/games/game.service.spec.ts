@@ -55,13 +55,13 @@ describe('GameService.calculateScore', () => {
 });
 
 describe('GameService.startGame topic filtering', () => {
-  const makeGame = (topic: string | null) => ({
+  const makeGame = (topics: string[]) => ({
     id: 'g1',
     status: GameStatus.LOBBY,
     gameMode: GameMode.STANDARD,
     difficulty: 'MOYEN',
     totalQuestions: 10,
-    topic,
+    topics,
   });
 
   const makeQuestions = (n: number) =>
@@ -86,23 +86,23 @@ describe('GameService.startGame topic filtering', () => {
     return { prisma, questionsService };
   };
 
-  it('passes topic to getRandomByDifficulty when topic is defined', async () => {
+  it('passes topics array to getRandomByDifficulty when topics are selected', async () => {
     const questions = makeQuestions(10);
-    const { prisma, questionsService } = makeDeps(makeGame('CINEMA'), questions);
+    const { prisma, questionsService } = makeDeps(makeGame(['CINEMA', 'PHILOSOPHIE']), questions);
     const service = new GameService(prisma as any, questionsService as any);
 
     await service.startGame('g1');
 
-    expect(questionsService.getRandomByDifficulty).toHaveBeenCalledWith('MOYEN', 10, 'CINEMA');
+    expect(questionsService.getRandomByDifficulty).toHaveBeenCalledWith('MOYEN', 10, ['CINEMA', 'PHILOSOPHIE']);
   });
 
-  it('passes undefined topic to getRandomByDifficulty when topic is null', async () => {
+  it('passes empty topics array to getRandomByDifficulty when no topic selected (mixte)', async () => {
     const questions = makeQuestions(10);
-    const { prisma, questionsService } = makeDeps(makeGame(null), questions);
+    const { prisma, questionsService } = makeDeps(makeGame([]), questions);
     const service = new GameService(prisma as any, questionsService as any);
 
     await service.startGame('g1');
 
-    expect(questionsService.getRandomByDifficulty).toHaveBeenCalledWith('MOYEN', 10, undefined);
+    expect(questionsService.getRandomByDifficulty).toHaveBeenCalledWith('MOYEN', 10, []);
   });
 });

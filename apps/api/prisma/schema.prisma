@@ -38,7 +38,7 @@ model Game {
   hostId               String
   status               GameStatus @default(LOBBY)
   difficulty           Difficulty
-  topic                Topic?
+  topics               Topic[]              @default([])
   gameMode             GameMode   @default(STANDARD)
   speedBonus           Boolean    @default(true)
   doublePointsBonus    Boolean    @default(false)
