@@ -82,9 +82,12 @@ jobs:
           # Redémarrage sans downtime
           VERSION=$VERSION docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --remove-orphans
 
-          # Migration Prisma
+          # Attendre que l'API soit prête
+          sleep 10
+
+          # Migration Prisma (binaire déjà installé, pas de téléchargement npx)
           docker compose -f docker-compose.prod.yml --env-file .env.prod exec -T api \
-            npx prisma migrate deploy
+            node_modules/.bin/prisma migrate deploy --schema apps/api/prisma/schema.prisma
 
           # Nettoyage des vieilles images
           docker image prune -f
