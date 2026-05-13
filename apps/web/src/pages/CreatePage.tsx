@@ -6,11 +6,12 @@ import { api } from '../lib/api';
 import { useGameStore } from '../store/gameStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
-import type { GameMode } from '../store/gameStore';
+import type { GameMode, Topic } from '../store/gameStore';
 
 const schema = z.object({
   hostNickname: z.string().min(1, 'Veuillez renseigner votre pseudo').min(2, 'Pseudo de 2 caractères minimum').max(20),
   difficulty: z.enum(['FACILE', 'MOYEN', 'DIFFICILE', 'VARIE']),
+  topic: z.enum(['HISTOIRE', 'GEOGRAPHIE', 'GEOPOLITIQUE', 'CINEMA', 'PHILOSOPHIE', 'LITTERATURE']).nullable(),
   totalQuestions: z.number().min(10).max(30),
   speedBonus: z.boolean(),
   gameMode: z.enum(['STANDARD', 'SURVIVAL_SOLO', 'SURVIVAL_MULTI']),
@@ -31,6 +32,16 @@ const DIFFICULTY_CONFIG = {
   VARIE: { label: 'Varié' },
 } as const;
 
+const TOPIC_CONFIG: { id: Topic | null; label: string }[] = [
+  { id: null, label: 'Mixte (tous)' },
+  { id: 'HISTOIRE', label: 'Histoire' },
+  { id: 'GEOGRAPHIE', label: 'Géographie' },
+  { id: 'GEOPOLITIQUE', label: 'Géopolitique' },
+  { id: 'CINEMA', label: 'Cinéma' },
+  { id: 'PHILOSOPHIE', label: 'Philosophie' },
+  { id: 'LITTERATURE', label: 'Littérature' },
+];
+
 export default function CreatePage() {
   const navigate = useNavigate();
   const setGameState = useGameStore((s) => s.setGameState);
@@ -38,6 +49,7 @@ export default function CreatePage() {
   const [form, setForm] = useState({
     hostNickname: '',
     difficulty: 'MOYEN' as 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE',
+    topic: null as Topic | null,
     totalQuestions: 10,
     speedBonus: true,
     gameMode: 'STANDARD' as GameMode,
@@ -67,6 +79,7 @@ export default function CreatePage() {
     try {
       const game = await api.createGame({
         difficulty: parsed.data.difficulty,
+        topic: parsed.data.topic,
         totalQuestions: parsed.data.totalQuestions,
         speedBonus: parsed.data.speedBonus,
         gameMode: parsed.data.gameMode,
@@ -79,6 +92,7 @@ export default function CreatePage() {
         code: game.code,
         status: 'LOBBY',
         difficulty: game.difficulty,
+        topic: (game.topic as Topic | null) ?? null,
         gameMode: game.gameMode,
         speedBonus: game.speedBonus,
         doublePointsBonus: game.doublePointsBonus,
@@ -237,6 +251,32 @@ export default function CreatePage() {
                         }
                       >
                         {DIFFICULTY_CONFIG[d].label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Thème */}
+              <div>
+                <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>
+                  Thème
+                </label>
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  {TOPIC_CONFIG.map(({ id, label }) => {
+                    const isSelected = form.topic === id;
+                    return (
+                      <button
+                        key={id ?? 'mixte'}
+                        type="button"
+                        onClick={() => setForm({ ...form, topic: id })}
+                        className="py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base"
+                        style={isSelected
+                          ? { borderColor: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.12)', color: '#F5C76B' }
+                          : { borderColor: 'rgba(242,238,227,0.10)', backgroundColor: 'transparent', color: '#7A7F9B' }
+                        }
+                      >
+                        {label}
                       </button>
                     );
                   })}
