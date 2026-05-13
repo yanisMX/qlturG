@@ -1,7 +1,7 @@
 import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { QuestionsService } from '../questions/questions.service';
-import { Difficulty, GameMode, GameStatus } from '@prisma/client';
+import { Difficulty, GameMode, GameStatus, Topic } from '@prisma/client';
 import { ScoreResult } from './game.types';
 
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -64,6 +64,7 @@ export class GameService {
     gameMode: GameMode;
     questionDuration: number;
     doublePointsBonus: boolean;
+    topic?: Topic;
   }) {
     if (params.totalQuestions < 10 || params.totalQuestions > 30) {
       throw new BadRequestException('totalQuestions must be between 10 and 30');
@@ -79,6 +80,7 @@ export class GameService {
         code,
         hostId: 'pending',
         difficulty: params.difficulty,
+        topic: params.topic ?? null,
         totalQuestions: params.totalQuestions,
         speedBonus: params.speedBonus,
         gameMode: params.gameMode,
@@ -138,9 +140,11 @@ export class GameService {
     const isSurvival =
       game.gameMode === GameMode.SURVIVAL_SOLO || game.gameMode === GameMode.SURVIVAL_MULTI;
 
+    const topic = game.topic ?? undefined;
+
     let questions;
     if (isSurvival) {
-      questions = await this.questionsService.getAllByDifficulty(game.difficulty);
+      questions = await this.questionsService.getAllByDifficulty(game.difficulty, [], topic);
       if (questions.length === 0) {
         throw new BadRequestException('No questions available for this difficulty');
       }
@@ -148,6 +152,7 @@ export class GameService {
       questions = await this.questionsService.getRandomByDifficulty(
         game.difficulty,
         game.totalQuestions,
+        topic,
       );
       if (questions.length < game.totalQuestions) {
         throw new BadRequestException('Not enough questions available for this difficulty');
