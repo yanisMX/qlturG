@@ -59,6 +59,9 @@ jobs:
     name: Deploy on server
     runs-on: self-hosted
     needs: build-and-push
+    permissions:
+      contents: read
+      packages: read
 
     steps:
       - uses: actions/checkout@v4
