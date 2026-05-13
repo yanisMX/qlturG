@@ -1,4 +1,5 @@
 FROM node:20-alpine
+RUN apk add --no-cache openssl
 WORKDIR /app
 RUN npm install -g pnpm@10.33.0
 
