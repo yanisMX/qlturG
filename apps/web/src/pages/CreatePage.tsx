@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { z } from 'zod';
 import { api } from '../lib/api';
 import { useGameStore } from '../store/gameStore';
+import { useAuthStore } from '../store/authStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
 import type { GameMode, Topic } from '../store/gameStore';
@@ -46,9 +47,10 @@ const TOPIC_OPTIONS: { id: Topic; label: string }[] = [
 export default function CreatePage() {
   const navigate = useNavigate();
   const setGameState = useGameStore((s) => s.setGameState);
+  const { token, user } = useAuthStore();
 
   const [form, setForm] = useState({
-    hostNickname: '',
+    hostNickname: user?.pseudo ?? '',
     difficulty: 'MOYEN' as 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE',
     topics: [] as Topic[],
     totalQuestions: 10,
@@ -132,7 +134,7 @@ export default function CreatePage() {
         myLives: 3,
       });
 
-      const socket = getSocket();
+      const socket = getSocket(token ?? undefined);
       socket.connect();
       socket.emit('game:join', { code: game.code, nickname: parsed.data.hostNickname });
 
@@ -254,7 +256,15 @@ export default function CreatePage() {
                   value={form.hostNickname}
                   onChange={(e) => setForm({ ...form, hostNickname: e.target.value })}
                   maxLength={20}
+                  disabled={!!user}
+                  style={user ? { opacity: 0.6, cursor: 'not-allowed' } : undefined}
                 />
+                {user && (
+                  <p className="text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
+                    Pseudo de votre compte — modifiable dans votre{' '}
+                    <a href="/profile" style={{ color: '#F5C76B' }}>profil</a>
+                  </p>
+                )}
               </div>
 
               {/* Difficulté */}

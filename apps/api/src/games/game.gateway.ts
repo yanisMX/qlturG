@@ -7,14 +7,17 @@ import {
   OnGatewayDisconnect,
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
+import { JwtService } from '@nestjs/jwt';
 import { GameService } from './game.service';
 import { QuestionsService } from '../questions/questions.service';
+import { LeaderboardService } from '../leaderboard/leaderboard.service';
 import { Game, Question, Round } from '@prisma/client';
 
 interface SessionData {
   playerId: string;
   gameId: string;
   isHost: boolean;
+  userId?: string;
 }
 
 interface ActiveRoundData {
@@ -37,18 +40,30 @@ export class GameGateway implements OnGatewayDisconnect {
   private sessions = new Map<string, SessionData>();
   private roundTimers = new Map<string, ReturnType<typeof setTimeout>>();
   private activeRounds = new Map<string, ActiveRoundData>();
+  private answerStreaks = new Map<string, number>(); // playerId → consecutive correct answers
 
   constructor(
     private readonly gameService: GameService,
     private readonly questionsService: QuestionsService,
+    private readonly jwtService: JwtService,
+    private readonly leaderboardService: LeaderboardService,
   ) {}
 
   async handleDisconnect(client: Socket) {
     const session = this.sessions.get(client.id);
     if (!session) return;
 
+    // Apply abandon malus for authenticated players who disconnect mid-game
+    if (session.userId) {
+      const game = await this.gameService.getGameWithPlayers(session.gameId);
+      if (game?.status === 'IN_PROGRESS') {
+        this.leaderboardService.creditGamePoints(session.userId, 0, true).catch(() => null);
+      }
+    }
+
     await this.gameService.updatePlayerSocket(session.playerId, null);
     this.sessions.delete(client.id);
+    this.answerStreaks.delete(session.playerId);
 
     this.server.to(`game:${session.gameId}`).emit('game:player-left', {
       playerId: session.playerId,
@@ -61,9 +76,22 @@ export class GameGateway implements OnGatewayDisconnect {
     @MessageBody() data: { code: string; nickname: string },
   ) {
     try {
+      // Optionally identify the player via JWT from socket handshake
+      let userId: string | undefined;
+      const token = client.handshake.auth?.token as string | undefined;
+      if (token) {
+        try {
+          const payload = this.jwtService.verify<{ sub: string }>(token);
+          userId = payload.sub;
+        } catch {
+          // Invalid token — play as guest
+        }
+      }
+
       const { game, player } = await this.gameService.joinGame({
         code: data.code,
         nickname: data.nickname,
+        userId,
       });
 
       if (!game) {
@@ -78,7 +106,7 @@ export class GameGateway implements OnGatewayDisconnect {
         await this.gameService.setHost(game.id, player.id);
         isHost = true;
       }
-      this.sessions.set(client.id, { playerId: player.id, gameId: game.id, isHost });
+      this.sessions.set(client.id, { playerId: player.id, gameId: game.id, isHost, userId });
       await client.join(`game:${game.id}`);
 
       const hostId = isHost ? player.id : game.hostId;
@@ -190,6 +218,109 @@ export class GameGateway implements OnGatewayDisconnect {
     }
   }
 
+  @SubscribeMessage('game:rematch')
+  async handleRematch(@ConnectedSocket() client: Socket) {
+    const session = this.sessions.get(client.id);
+    if (!session?.isHost) {
+      client.emit('game:error', { message: 'Seul le QG peut lancer une revanche' });
+      return;
+    }
+
+    const oldGame = await this.gameService.getGameWithPlayers(session.gameId);
+    if (!oldGame || oldGame.status !== 'FINISHED') {
+      client.emit('game:error', { message: 'La partie doit être terminée pour rejouer' });
+      return;
+    }
+
+    try {
+      const newGame = await this.gameService.createGame({
+        difficulty: oldGame.difficulty,
+        totalQuestions: oldGame.totalQuestions,
+        speedBonus: oldGame.speedBonus,
+        gameMode: oldGame.gameMode,
+        questionDuration: oldGame.questionDuration,
+        doublePointsBonus: oldGame.doublePointsBonus,
+        topics: oldGame.topics,
+      });
+
+      const oldRoomName = `game:${session.gameId}`;
+      const newRoomName = `game:${newGame.id}`;
+      const socketsInRoom = await this.server.in(oldRoomName).fetchSockets();
+
+      let hostNewPlayerId: string | null = null;
+      const socketPlayerMap = new Map<string, { newPlayerId: string; isHost: boolean; userId?: string }>();
+
+      for (const sock of socketsInRoom) {
+        const sockSession = this.sessions.get(sock.id);
+        if (!sockSession) continue;
+
+        const oldPlayer = oldGame.players.find((p) => p.id === sockSession.playerId);
+        if (!oldPlayer) continue;
+
+        const newPlayer = await this.gameService.createPlayerForRematch({
+          nickname: oldPlayer.nickname,
+          gameId: newGame.id,
+          userId: sockSession.userId,
+        });
+
+        if (sockSession.isHost) hostNewPlayerId = newPlayer.id;
+        socketPlayerMap.set(sock.id, {
+          newPlayerId: newPlayer.id,
+          isHost: sockSession.isHost,
+          userId: sockSession.userId,
+        });
+      }
+
+      if (hostNewPlayerId) {
+        await this.gameService.setHost(newGame.id, hostNewPlayerId);
+      }
+
+      const newGameFull = await this.gameService.getGameWithPlayers(newGame.id);
+      if (!newGameFull) return;
+
+      for (const sock of socketsInRoom) {
+        const playerData = socketPlayerMap.get(sock.id);
+        if (!playerData) continue;
+
+        this.sessions.set(sock.id, {
+          playerId: playerData.newPlayerId,
+          gameId: newGame.id,
+          isHost: playerData.isHost,
+          userId: playerData.userId,
+        });
+
+        sock.leave(oldRoomName);
+        sock.join(newRoomName);
+
+        sock.emit('game:state', {
+          gameId: newGameFull.id,
+          code: newGameFull.code,
+          status: newGameFull.status,
+          difficulty: newGameFull.difficulty,
+          gameMode: newGameFull.gameMode,
+          speedBonus: newGameFull.speedBonus,
+          doublePointsBonus: newGameFull.doublePointsBonus,
+          totalQuestions: newGameFull.totalQuestions,
+          questionDuration: newGameFull.questionDuration,
+          hostId: hostNewPlayerId,
+          players: newGameFull.players.map((p) => ({
+            id: p.id,
+            nickname: p.nickname,
+            score: p.score,
+            lives: p.lives,
+            eliminated: p.eliminated,
+          })),
+          yourPlayerId: playerData.newPlayerId,
+          isHost: playerData.isHost,
+        });
+      }
+    } catch (err: unknown) {
+      client.emit('game:error', {
+        message: err instanceof Error ? err.message : 'Impossible de créer la revanche',
+      });
+    }
+  }
+
   @SubscribeMessage('game:answer')
   async handleAnswer(
     @ConnectedSocket() client: Socket,
@@ -217,6 +348,19 @@ export class GameGateway implements OnGatewayDisconnect {
         isDoublePoints: activeRound.isDoublePoints,
       });
 
+      // Track answer streak for leaderboard bonus
+      if (session.userId) {
+        if (answer.isCorrect) {
+          const streak = (this.answerStreaks.get(session.playerId) ?? 0) + 1;
+          this.answerStreaks.set(session.playerId, streak);
+          if (streak > 0 && streak % this.leaderboardService.answerStreakThreshold === 0) {
+            this.leaderboardService.applyAnswerStreakBonus(session.userId).catch(() => null);
+          }
+        } else {
+          this.answerStreaks.set(session.playerId, 0);
+        }
+      }
+
       // Survival: decrement lives on wrong answer
       const isSurvival =
         game.gameMode === 'SURVIVAL_SOLO' || game.gameMode === 'SURVIVAL_MULTI';
@@ -242,6 +386,28 @@ export class GameGateway implements OnGatewayDisconnect {
     const session = this.sessions.get(client.id);
     if (!session?.isHost) return;
     await this.triggerReveal(session.gameId);
+  }
+
+  private async creditWeeklyScores(gameId: string): Promise<void> {
+    try {
+      const players = await this.gameService.getPlayersWithUser(gameId);
+      await Promise.all(
+        players
+          .filter((p) => p.userId)
+          .map((p) => {
+            this.answerStreaks.delete(p.id);
+            return this.leaderboardService.creditGamePoints(p.userId!, p.score, false);
+          }),
+      );
+    } catch {
+      // Leaderboard crediting is non-blocking — do not crash the game
+    }
+  }
+
+  private async finishGame(gameId: string): Promise<void> {
+    const ranking = await this.gameService.getFinalRanking(gameId);
+    this.server.to(`game:${gameId}`).emit('game:finished', { ranking });
+    this.creditWeeklyScores(gameId).catch(() => null);
   }
 
   private async sendQuestion(
@@ -350,8 +516,7 @@ export class GameGateway implements OnGatewayDisconnect {
           where: { id: gameId },
           data: { status: 'FINISHED' },
         });
-        const ranking = await this.gameService.getFinalRanking(gameId);
-        this.server.to(`game:${gameId}`).emit('game:finished', { ranking });
+        await this.finishGame(gameId);
         return;
       }
     }
@@ -364,8 +529,7 @@ export class GameGateway implements OnGatewayDisconnect {
           where: { id: gameId },
           data: { status: 'FINISHED' },
         });
-        const ranking = await this.gameService.getFinalRanking(gameId);
-        this.server.to(`game:${gameId}`).emit('game:finished', { ranking });
+        await this.finishGame(gameId);
         return;
       }
     }
@@ -373,8 +537,7 @@ export class GameGateway implements OnGatewayDisconnect {
     const result = await this.gameService.advanceQuestion(gameId);
 
     if (result.finished) {
-      const ranking = await this.gameService.getFinalRanking(gameId);
-      this.server.to(`game:${gameId}`).emit('game:finished', { ranking });
+      await this.finishGame(gameId);
       return;
     }
 

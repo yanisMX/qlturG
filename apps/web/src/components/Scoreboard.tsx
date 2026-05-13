@@ -38,6 +38,7 @@ export default function Scoreboard({
               animate={{ opacity: isEliminated ? 0.4 : 1, x: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: duration.base }}
+              data-me={isMe ? 'true' : undefined}
               className="flex items-center gap-3 px-4 py-3 rounded-xl border transition-colors"
               style={
                 isMe

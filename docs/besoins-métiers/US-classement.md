@@ -18,6 +18,8 @@
 
 ## ⚙️ Règles métier
 
+- Créé une branche feat/classement
+
 ### 1. Scoring
 
 Le score est calculé à partir de plusieurs sources qui s'additionnent dans un **score hebdomadaire** :
@@ -172,3 +174,4 @@ Calcul effectué au **moment du reset hebdomadaire** sur la base du classement f
 - Endpoint(s) API : récupération classement paginé, position d'un joueur, badges d'un joueur
 - UI : écran Classement (avec pagination + sticky position) + section Profil (tier + historique)
 - Job hebdomadaire : calcul des tiers + reset + génération des badges + notifications
+

@@ -151,6 +151,7 @@ La bonne réponse (`answerIndex`) n'est JAMAIS transmise avant `game:reveal`.
 | `game:answer` | `{ choiceIndex }` |
 | `game:next` | — (hôte, après révélation) |
 | `game:kick` | `{ playerId }` (hôte uniquement) |
+| `game:rematch` | — (hôte uniquement, après `game:finished`) |
 
 ### Serveur → Client
 
@@ -203,6 +204,35 @@ CORS_ORIGIN=http://localhost:5173
 VITE_API_URL=http://localhost:3001
 VITE_WS_URL=http://localhost:3001
 ```
+
+# Instructions projet
+
+## 📚 Documentation — Règle impérative
+
+Après **chaque modification de code**, tu dois mettre à jour la documentation
+concernée dans le même commit/PR. C'est non-négociable.
+
+### Ce qui doit être mis à jour systématiquement :
+
+- **README.md** → si ajout/suppression de fonctionnalité, changement d'install ou de commandes
+- **docs/** → si modification d'une API, d'un endpoint, d'un modèle de données
+- **CHANGELOG.md** → pour toute modification fonctionnelle (format Keep a Changelog)
+- **Commentaires de code** (JSDoc/docstrings) → sur toute fonction publique modifiée
+- **US / specs** (dossier `docs/us/`) → si une règle métier évolue
+
+### Workflow obligatoire à chaque tâche :
+
+1. Code la fonctionnalité
+2. **Identifie** les fichiers de doc impactés
+3. **Mets-les à jour** dans la foulée
+4. **Liste** dans ta réponse finale les fichiers de doc modifiés
+
+### Si tu n'es pas sûr qu'une doc doit être mise à jour :
+- Pose la question avant de finir la tâche
+- Par défaut, **mets à jour** plutôt que de laisser obsolète
+
+⚠️ Une PR sans mise à jour de doc associée à des changements fonctionnels
+doit être signalée comme incomplète.
 
 ## Docs
 

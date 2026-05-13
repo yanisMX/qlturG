@@ -17,6 +17,7 @@ import { diskStorage } from 'multer';
 import { extname } from 'path';
 import { Request, Response } from 'express';
 import { AuthService } from './auth.service';
+import { LeaderboardService } from '../leaderboard/leaderboard.service';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload } from './decorators/current-user.decorator';
 import { RegisterDto } from './dto/register.dto';
@@ -27,7 +28,10 @@ const FRONTEND_URL = process.env.CORS_ORIGIN?.split(',')[0] ?? 'http://localhost
 
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+  constructor(
+    private readonly authService: AuthService,
+    private readonly leaderboardService: LeaderboardService,
+  ) {}
 
   // ─── Dev-only endpoint (no OAuth required) ────────────────────────────────
 
@@ -43,6 +47,8 @@ export class AuthController {
   @UseGuards(JwtAuthGuard)
   async getMe(@CurrentUser() payload: JwtPayload) {
     const user = await this.authService.getMe(payload.sub);
+    // Fire-and-forget — do not block the response
+    this.leaderboardService.recordDailyLogin(payload.sub).catch(() => null);
     return this.sanitize(user);
   }
 

@@ -39,6 +39,37 @@ export interface GameData {
   players: Array<{ id: string; nickname: string; score: number; lives?: number; eliminated?: boolean }>;
 }
 
+export type Tier = 'BRONZE' | 'SILVER' | 'GOLD' | 'PLATINUM';
+
+export interface LeaderboardEntry {
+  rank: number;
+  userId: string;
+  pseudo: string;
+  avatarUrl: string | null;
+  points: number;
+  quizzesPlayed: number;
+  tier: Tier;
+}
+
+export interface LeaderboardPage {
+  entries: LeaderboardEntry[];
+  total: number;
+  page: number;
+  limit: number;
+}
+
+export interface MyPosition extends LeaderboardEntry {
+  connectionStreak: number;
+}
+
+export interface WeeklyBadge {
+  id: string;
+  weekStart: string;
+  tier: Tier;
+  points: number;
+  rank: number | null;
+}
+
 export const api = {
   createGame: (payload: CreateGamePayload) =>
     request<GameData>('/games', {
@@ -47,4 +78,20 @@ export const api = {
     }),
 
   getGame: (code: string) => request<GameData>(`/games/${code}`),
+
+  getLeaderboard: (page = 1, limit = 20) =>
+    request<LeaderboardPage>(`/leaderboard?page=${page}&limit=${limit}`),
+
+  getMyPosition: (token: string) =>
+    request<MyPosition>('/leaderboard/me', {
+      headers: { Authorization: `Bearer ${token}` },
+    }),
+
+  getMyBadges: (token: string) =>
+    request<WeeklyBadge[]>('/leaderboard/badges', {
+      headers: { Authorization: `Bearer ${token}` },
+    }),
+
+  getNextReset: () =>
+    request<{ nextReset: string }>('/leaderboard/next-reset'),
 };

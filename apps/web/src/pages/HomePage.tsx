@@ -1,14 +1,34 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import UserAvatar from '../components/UserAvatar';
 import { FloatingNapoleon, FloatingMarianne } from '../components/HistoryCharacters';
 import { useAuthStore } from '../store/authStore';
+import { api, LeaderboardEntry, MyPosition, Tier } from '../lib/api';
 import { duration } from '../styles/tokens';
 
+const TIER_ICON: Record<Tier, string> = { PLATINUM: '💎', GOLD: '🥇', SILVER: '🥈', BRONZE: '🥉' };
+const TIER_COLOR: Record<Tier, string> = {
+  PLATINUM: '#A8D8EA',
+  GOLD: '#F5C76B',
+  SILVER: '#B4B7CC',
+  BRONZE: '#CD7F32',
+};
 
 export default function HomePage() {
-  const { user, isLoading } = useAuthStore();
+  const { user, token, isLoading } = useAuthStore();
+  const [top5, setTop5] = useState<LeaderboardEntry[]>([]);
+  const [myPos, setMyPos] = useState<MyPosition | null>(null);
+
+  useEffect(() => {
+    api.getLeaderboard(1, 5).then((d) => setTop5(d.entries)).catch(() => null);
+  }, []);
+
+  useEffect(() => {
+    if (!token) return;
+    api.getMyPosition(token).then(setMyPos).catch(() => null);
+  }, [token]);
 
   return (
     <PageTransition>
@@ -29,6 +49,7 @@ export default function HomePage() {
         >
           <FloatingMarianne />
         </div>
+
         {/* User chip — top right */}
         {!isLoading && (
           <div className="fixed top-4 right-4 z-10">
@@ -62,7 +83,6 @@ export default function HomePage() {
           transition={{ duration: duration.slow }}
           className="text-center mb-10"
         >
-          {/* QG logo — animated float */}
           <div className="flex justify-center mb-6" style={{ animation: 'mascotFloat 5s ease-in-out infinite' }}>
             <svg viewBox="0 0 320 320" width="160" height="160" aria-label="Qltur G — icône principale">
               <rect x="10" y="10" width="300" height="300" rx="60" fill="rgba(245,199,107,0.10)" stroke="rgba(245,199,107,0.35)" strokeWidth="1.5"/>
@@ -76,7 +96,6 @@ export default function HomePage() {
             </svg>
           </div>
 
-          {/* Wordmark */}
           <h1
             className="text-5xl sm:text-6xl font-extrabold tracking-tight mb-2"
             style={{ fontFamily: 'Space Grotesk, system-ui, sans-serif', letterSpacing: '-0.03em', color: '#F2EEE3' }}
@@ -108,19 +127,128 @@ export default function HomePage() {
           </Link>
         </motion.div>
 
+        {/* Leaderboard widget */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration.slow, delay: 0.28 }}
+          className="w-full max-w-xs mt-6"
+        >
+          <div
+            className="rounded-2xl overflow-hidden"
+            style={{ backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid rgba(242,238,227,0.08)' }}
+          >
+            {/* Header */}
+            <div
+              className="flex items-center justify-between px-4 py-3"
+              style={{ borderBottom: '1px solid rgba(242,238,227,0.06)' }}
+            >
+              <span className="text-xs font-bold uppercase tracking-wider font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.14em' }}>
+                Classement · Cette semaine
+              </span>
+              <Link to="/leaderboard" className="text-xs font-semibold font-mono transition-colors" style={{ color: '#F5C76B' }}>
+                Tout voir →
+              </Link>
+            </div>
+
+            {/* Top 5 */}
+            <div className="px-3 py-2 space-y-1">
+              {top5.length === 0 ? (
+                <p className="text-xs text-center py-4 font-mono" style={{ color: '#7A7F9B' }}>
+                  Aucun joueur classé — jouez pour apparaître !
+                </p>
+              ) : (
+                top5.map((entry) => {
+                  const isMe = entry.userId === user?.id;
+                  const rankColors = ['#F5C76B', '#B4B7CC', '#CD7F32'];
+                  return (
+                    <div
+                      key={entry.userId}
+                      className="flex items-center gap-2.5 px-2 py-2 rounded-xl transition-colors"
+                      style={isMe
+                        ? { backgroundColor: 'rgba(245,199,107,0.08)', border: '1px solid rgba(245,199,107,0.2)' }
+                        : { border: '1px solid transparent' }
+                      }
+                    >
+                      <span
+                        className="w-5 text-center text-xs font-bold font-mono shrink-0"
+                        style={{ color: entry.rank <= 3 ? rankColors[entry.rank - 1] : '#7A7F9B' }}
+                      >
+                        {entry.rank <= 3 ? ['★', '✦', '◆'][entry.rank - 1] : `#${entry.rank}`}
+                      </span>
+                      <UserAvatar user={{ pseudo: entry.pseudo, avatarUrl: entry.avatarUrl }} size={24} />
+                      <span className="flex-1 truncate text-sm font-semibold" style={{ color: isMe ? '#F5C76B' : '#F2EEE3' }}>
+                        {entry.pseudo}
+                      </span>
+                      <span
+                        className="text-xs font-bold font-mono shrink-0"
+                        style={{ color: TIER_COLOR[entry.tier] }}
+                      >
+                        {TIER_ICON[entry.tier]}
+                      </span>
+                      <span className="text-xs font-bold font-mono tabular-nums shrink-0" style={{ color: '#F5C76B' }}>
+                        {entry.points.toLocaleString('fr-FR')}
+                      </span>
+                    </div>
+                  );
+                })
+              )}
+            </div>
+
+            {/* My position — if logged in and not in top 5 */}
+            {myPos && !top5.some((e) => e.userId === user?.id) && (
+              <div
+                className="px-3 pb-2"
+              >
+                <div
+                  className="flex items-center gap-2.5 px-2 py-2 rounded-xl"
+                  style={{ backgroundColor: 'rgba(245,199,107,0.08)', border: '1px solid rgba(245,199,107,0.2)', borderTop: '1px solid rgba(242,238,227,0.08)', marginTop: 4 }}
+                >
+                  <span className="w-5 text-center text-xs font-bold font-mono shrink-0" style={{ color: '#7A7F9B' }}>
+                    #{myPos.rank}
+                  </span>
+                  <UserAvatar user={{ pseudo: myPos.pseudo, avatarUrl: myPos.avatarUrl }} size={24} />
+                  <span className="flex-1 truncate text-sm font-semibold" style={{ color: '#F5C76B' }}>
+                    {myPos.pseudo}
+                    <span className="ml-1 text-xs font-mono" style={{ color: '#7A7F9B' }}>(vous)</span>
+                  </span>
+                  <span className="text-xs font-bold font-mono shrink-0" style={{ color: TIER_COLOR[myPos.tier] }}>
+                    {TIER_ICON[myPos.tier]}
+                  </span>
+                  <span className="text-xs font-bold font-mono tabular-nums shrink-0" style={{ color: '#F5C76B' }}>
+                    {myPos.points.toLocaleString('fr-FR')}
+                  </span>
+                </div>
+              </div>
+            )}
+
+            {/* Login prompt */}
+            {!user && !isLoading && (
+              <div
+                className="px-4 py-2.5 text-center"
+                style={{ borderTop: '1px solid rgba(242,238,227,0.06)' }}
+              >
+                <Link to="/login" className="text-xs font-semibold font-mono transition-colors" style={{ color: '#7A7F9B' }}>
+                  <span style={{ color: '#F5C76B' }}>Connectez-vous</span> pour apparaître dans le classement
+                </Link>
+              </div>
+            )}
+          </div>
+        </motion.div>
+
         {/* Feature chips */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: duration.base }}
-          className="flex flex-wrap justify-center gap-2 mt-10"
+          className="flex flex-wrap justify-center gap-2 mt-8"
         >
           {[
-            { dot: true, label: 'Jusqu\'à 12 joueurs' },
-            { dot: true, label: 'QCM · 10 secondes' },
-            { dot: true, label: 'Classement en direct' },
-            { dot: true, label: 'Bonus de rapidité' },
-          ].map(({ label }) => (
+            'Jusqu\'à 12 joueurs',
+            'QCM · 10 secondes',
+            'Classement en direct',
+            'Bonus de rapidité',
+          ].map((label) => (
             <span
               key={label}
               className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full font-mono"

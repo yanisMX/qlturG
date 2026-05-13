@@ -97,7 +97,7 @@ export class GameService {
     });
   }
 
-  async joinGame(params: { code: string; nickname: string }) {
+  async joinGame(params: { code: string; nickname: string; userId?: string }) {
     const game = await this.prisma.game.findUnique({
       where: { code: params.code.toUpperCase() },
       include: { players: true },
@@ -115,10 +115,31 @@ export class GameService {
     }
 
     const player = await this.prisma.player.create({
-      data: { nickname: params.nickname, gameId: game.id },
+      data: {
+        nickname: params.nickname,
+        gameId: game.id,
+        ...(params.userId ? { userId: params.userId } : {}),
+      },
     });
 
     return { game: await this.getGameWithPlayers(game.id), player };
+  }
+
+  async getPlayersWithUser(gameId: string) {
+    return this.prisma.player.findMany({
+      where: { gameId },
+      select: { id: true, score: true, userId: true, socketId: true },
+    });
+  }
+
+  async createPlayerForRematch(params: { nickname: string; gameId: string; userId?: string }) {
+    return this.prisma.player.create({
+      data: {
+        nickname: params.nickname,
+        gameId: params.gameId,
+        ...(params.userId ? { userId: params.userId } : {}),
+      },
+    });
   }
 
   async kickPlayer(gameId: string, playerId: string) {

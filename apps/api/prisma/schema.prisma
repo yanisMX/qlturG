@@ -9,15 +9,18 @@ datasource db {
 }
 
 model User {
-  id            String   @id @default(cuid())
-  pseudo        String   @unique
-  email         String   @unique
+  id            String        @id @default(cuid())
+  pseudo        String        @unique
+  email         String        @unique
   avatarUrl     String?
-  emailVerified Boolean  @default(false)
+  emailVerified Boolean       @default(false)
   oauthProvider String?
   oauthId       String?
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  players       Player[]
+  weeklyScores  WeeklyScore[]
+  weeklyBadges  WeeklyBadge[]
 }
 
 model Question {
@@ -59,6 +62,8 @@ model Player {
   eliminated Boolean  @default(false)
   gameId     String
   game       Game     @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
   answers    Answer[]
 }
 
@@ -113,6 +118,42 @@ enum GameStatus {
   LOBBY
   IN_PROGRESS
   FINISHED
+}
+
+enum Tier {
+  BRONZE
+  SILVER
+  GOLD
+  PLATINUM
+}
+
+model WeeklyScore {
+  id               String    @id @default(cuid())
+  userId           String
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  weekStart        DateTime
+  points           Int       @default(0)
+  quizzesPlayed    Int       @default(0)
+  answerStreak     Int       @default(0)
+  connectionStreak Int       @default(0)
+  lastConnectedAt  DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  @@unique([userId, weekStart])
+}
+
+model WeeklyBadge {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  weekStart DateTime
+  tier      Tier
+  points    Int
+  rank      Int?
+  createdAt DateTime @default(now())
+
+  @@unique([userId, weekStart])
 }
 
 enum Topic {

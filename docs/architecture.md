@@ -96,12 +96,14 @@ Modes de jeu :
 | `game:start` | — | Hôte uniquement |
 | `game:answer` | `{ choiceIndex }` | Pendant une question active |
 | `game:next` | — | Hôte, pendant la phase de révélation |
+| `game:kick` | `{ playerId }` | Hôte uniquement, pendant le lobby |
+| `game:rematch` | — | Hôte uniquement, après `game:finished` |
 
 ### Serveur → Client
 
 | Événement | Payload | Moment |
 |-----------|---------|--------|
-| `game:state` | `{ gameId, code, status, players[], yourPlayerId, isHost, … }` | À la connexion |
+| `game:state` | `{ gameId, code, status, players[], yourPlayerId, isHost, … }` | À la connexion ou après un rematch |
 | `game:player-joined` | `{ playerId, nickname, score }` | Quand un joueur arrive |
 | `game:player-left` | `{ playerId }` | Quand un joueur se déconnecte |
 | `game:question` | `{ index, total, text, choices[], startsAt, endsAt }` | Début de chaque question |

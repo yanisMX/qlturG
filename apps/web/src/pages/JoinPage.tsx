@@ -3,6 +3,7 @@ import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { z } from 'zod';
 import { useGameStore } from '../store/gameStore';
+import { useAuthStore } from '../store/authStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
 
@@ -16,10 +17,11 @@ export default function JoinPage() {
   const [searchParams] = useSearchParams();
   const setGameState = useGameStore((s) => s.setGameState);
   const addPlayer = useGameStore((s) => s.addPlayer);
+  const { token, user } = useAuthStore();
 
   const [form, setForm] = useState({
     code: (searchParams.get('code') ?? '').toUpperCase().slice(0, 6),
-    nickname: '',
+    nickname: user?.pseudo ?? '',
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -39,7 +41,7 @@ export default function JoinPage() {
 
     setLoading(true);
 
-    const socket = getSocket();
+    const socket = getSocket(token ?? undefined);
     socket.connect();
 
     socket.emit('game:join', { code: parsed.data.code, nickname: parsed.data.nickname });
@@ -116,7 +118,15 @@ export default function JoinPage() {
                   value={form.nickname}
                   onChange={(e) => setForm({ ...form, nickname: e.target.value })}
                   maxLength={20}
+                  disabled={!!user}
+                  style={user ? { opacity: 0.6, cursor: 'not-allowed' } : undefined}
                 />
+                {user && (
+                  <p className="text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
+                    Pseudo de votre compte — modifiable dans votre{' '}
+                    <a href="/profile" style={{ color: '#F5C76B' }}>profil</a>
+                  </p>
+                )}
               </div>
 
               {error && (
