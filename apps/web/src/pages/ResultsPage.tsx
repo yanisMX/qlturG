@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useGameStore } from '../store/gameStore';
+import { getSocket } from '../socket/socket';
 import Podium from '../components/Podium';
 import PageTransition from '../components/PageTransition';
 import { duration } from '../styles/tokens';
@@ -41,9 +43,46 @@ function ConfettiRain() {
 }
 
 export default function ResultsPage() {
-  const { ranking, myPlayerId, reset } = useGameStore();
+  const navigate = useNavigate();
+  const { ranking, myPlayerId, isHost, reset, setGameState } = useGameStore();
   const myEntry = ranking.find((r) => r.playerId === myPlayerId);
   const isWinner = myEntry?.rank === 1;
+  const [rematching, setRematching] = useState(false);
+
+  useEffect(() => {
+    const socket = getSocket();
+    const onState = (state: {
+      gameId: string; code: string; status: string; difficulty: string;
+      gameMode: string; speedBonus: boolean; doublePointsBonus: boolean;
+      totalQuestions: number; questionDuration: number; hostId: string;
+      players: unknown[]; yourPlayerId: string; isHost: boolean;
+    }) => {
+      reset();
+      setGameState({
+        gameId: state.gameId,
+        code: state.code,
+        status: state.status as 'LOBBY',
+        difficulty: state.difficulty as 'FACILE',
+        gameMode: state.gameMode as 'STANDARD',
+        speedBonus: state.speedBonus,
+        doublePointsBonus: state.doublePointsBonus,
+        totalQuestions: state.totalQuestions,
+        questionDuration: state.questionDuration,
+        hostId: state.hostId,
+        players: state.players as never,
+        myPlayerId: state.yourPlayerId,
+        isHost: state.isHost,
+      });
+      navigate(`/lobby/${state.code}`);
+    };
+    socket.once('game:state', onState);
+    return () => { socket.off('game:state', onState); };
+  }, [navigate, reset, setGameState]);
+
+  const handleRematch = () => {
+    setRematching(true);
+    getSocket().emit('game:rematch');
+  };
 
   return (
     <PageTransition>
@@ -137,9 +176,19 @@ export default function ResultsPage() {
             transition={{ delay: 0.5, duration: duration.base }}
             className="flex flex-col gap-3"
           >
-            <Link to="/create" onClick={reset} className="btn-primary text-center">
-              Nouvelle partie
-            </Link>
+            {isHost ? (
+              <button
+                onClick={handleRematch}
+                disabled={rematching}
+                className="btn-primary text-center"
+              >
+                {rematching ? 'Création en cours…' : 'Nouvelle partie'}
+              </button>
+            ) : (
+              <Link to="/create" onClick={reset} className="btn-primary text-center">
+                Nouvelle partie
+              </Link>
+            )}
             <Link to="/" onClick={reset} className="btn-secondary text-center">
               Accueil
             </Link>

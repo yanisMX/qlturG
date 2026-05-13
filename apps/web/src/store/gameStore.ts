@@ -3,6 +3,7 @@ import { create } from 'zustand';
 export type GameStatus = 'LOBBY' | 'IN_PROGRESS' | 'FINISHED';
 export type Difficulty = 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE';
 export type GameMode = 'STANDARD' | 'SURVIVAL_SOLO' | 'SURVIVAL_MULTI';
+export type Topic = 'HISTOIRE' | 'GEOGRAPHIE' | 'GEOPOLITIQUE' | 'CINEMA' | 'PHILOSOPHIE' | 'LITTERATURE';
 
 export interface PlayerInfo {
   id: string;
@@ -49,6 +50,7 @@ interface GameState {
   code: string | null;
   status: GameStatus;
   difficulty: Difficulty | null;
+  topics: Topic[];
   gameMode: GameMode;
   speedBonus: boolean;
   doublePointsBonus: boolean;
@@ -85,6 +87,7 @@ const defaultState = {
   code: null,
   status: 'LOBBY' as GameStatus,
   difficulty: null,
+  topics: [] as Topic[],
   gameMode: 'STANDARD' as GameMode,
   speedBonus: true,
   doublePointsBonus: false,

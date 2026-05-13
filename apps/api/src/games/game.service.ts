@@ -1,7 +1,7 @@
 import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { QuestionsService } from '../questions/questions.service';
-import { Difficulty, GameMode, GameStatus } from '@prisma/client';
+import { Difficulty, GameMode, GameStatus, Topic } from '@prisma/client';
 import { ScoreResult } from './game.types';
 
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -64,6 +64,7 @@ export class GameService {
     gameMode: GameMode;
     questionDuration: number;
     doublePointsBonus: boolean;
+    topics?: Topic[];
   }) {
     if (params.totalQuestions < 10 || params.totalQuestions > 30) {
       throw new BadRequestException('totalQuestions must be between 10 and 30');
@@ -79,6 +80,7 @@ export class GameService {
         code,
         hostId: 'pending',
         difficulty: params.difficulty,
+        topics: params.topics ?? [],
         totalQuestions: params.totalQuestions,
         speedBonus: params.speedBonus,
         gameMode: params.gameMode,
@@ -95,7 +97,7 @@ export class GameService {
     });
   }
 
-  async joinGame(params: { code: string; nickname: string }) {
+  async joinGame(params: { code: string; nickname: string; userId?: string }) {
     const game = await this.prisma.game.findUnique({
       where: { code: params.code.toUpperCase() },
       include: { players: true },
@@ -113,10 +115,31 @@ export class GameService {
     }
 
     const player = await this.prisma.player.create({
-      data: { nickname: params.nickname, gameId: game.id },
+      data: {
+        nickname: params.nickname,
+        gameId: game.id,
+        ...(params.userId ? { userId: params.userId } : {}),
+      },
     });
 
     return { game: await this.getGameWithPlayers(game.id), player };
+  }
+
+  async getPlayersWithUser(gameId: string) {
+    return this.prisma.player.findMany({
+      where: { gameId },
+      select: { id: true, score: true, userId: true, socketId: true },
+    });
+  }
+
+  async createPlayerForRematch(params: { nickname: string; gameId: string; userId?: string }) {
+    return this.prisma.player.create({
+      data: {
+        nickname: params.nickname,
+        gameId: params.gameId,
+        ...(params.userId ? { userId: params.userId } : {}),
+      },
+    });
   }
 
   async kickPlayer(gameId: string, playerId: string) {
@@ -138,9 +161,11 @@ export class GameService {
     const isSurvival =
       game.gameMode === GameMode.SURVIVAL_SOLO || game.gameMode === GameMode.SURVIVAL_MULTI;
 
+    const { topics } = game;
+
     let questions;
     if (isSurvival) {
-      questions = await this.questionsService.getAllByDifficulty(game.difficulty);
+      questions = await this.questionsService.getAllByDifficulty(game.difficulty, [], topics);
       if (questions.length === 0) {
         throw new BadRequestException('No questions available for this difficulty');
       }
@@ -148,6 +173,7 @@ export class GameService {
       questions = await this.questionsService.getRandomByDifficulty(
         game.difficulty,
         game.totalQuestions,
+        topics,
       );
       if (questions.length < game.totalQuestions) {
         throw new BadRequestException('Not enough questions available for this difficulty');
@@ -174,10 +200,13 @@ export class GameService {
     difficulty: Difficulty,
     startOrderIndex: number,
   ) {
-    let newQuestions = await this.questionsService.getAllByDifficulty(difficulty, usedQuestionIds);
+    const game = await this.prisma.game.findUnique({ where: { id: gameId }, select: { topics: true } });
+    const topics = game?.topics ?? [];
+
+    let newQuestions = await this.questionsService.getAllByDifficulty(difficulty, usedQuestionIds, topics);
     if (newQuestions.length === 0) {
       // All questions exhausted — loop the full pool reshuffled
-      newQuestions = await this.questionsService.getAllByDifficulty(difficulty);
+      newQuestions = await this.questionsService.getAllByDifficulty(difficulty, [], topics);
     }
     const rounds = await Promise.all(
       newQuestions.map((q, i) =>

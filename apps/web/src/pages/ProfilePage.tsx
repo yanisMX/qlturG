@@ -3,9 +3,14 @@ import { useNavigate, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { z } from 'zod';
 import { useAuthStore } from '../store/authStore';
+import { api, MyPosition, WeeklyBadge, Tier } from '../lib/api';
 import UserAvatar, { PRESET_COLORS } from '../components/UserAvatar';
 import PageTransition from '../components/PageTransition';
 import { duration } from '../styles/tokens';
+
+const TIER_ICON: Record<Tier, string> = { PLATINUM: '💎', GOLD: '🥇', SILVER: '🥈', BRONZE: '🥉' };
+const TIER_LABEL: Record<Tier, string> = { PLATINUM: 'Platine', GOLD: 'Or', SILVER: 'Argent', BRONZE: 'Bronze' };
+const TIER_COLOR: Record<Tier, string> = { PLATINUM: '#A8D8EA', GOLD: '#F5C76B', SILVER: '#B4B7CC', BRONZE: '#CD7F32' };
 
 const BASE = import.meta.env.VITE_API_URL as string;
 
@@ -31,6 +36,8 @@ export default function ProfilePage() {
   const [loading, setLoading] = useState(false);
   const [uploadLoading, setUploadLoading] = useState(false);
   const [selectedPreset, setSelectedPreset] = useState<number | null>(null);
+  const [myPos, setMyPos] = useState<MyPosition | null>(null);
+  const [badges, setBadges] = useState<WeeklyBadge[]>([]);
 
   useEffect(() => {
     if (!user) {
@@ -42,6 +49,12 @@ export default function ProfilePage() {
       setSelectedPreset(parseInt(user.avatarUrl.split(':')[1], 10));
     }
   }, [user, navigate]);
+
+  useEffect(() => {
+    if (!token) return;
+    api.getMyPosition(token).then(setMyPos).catch(() => null);
+    api.getMyBadges(token).then(setBadges).catch(() => null);
+  }, [token]);
 
   const authHeaders = () => ({
     'Content-Type': 'application/json',
@@ -241,6 +254,71 @@ export default function ProfilePage() {
               </button>
             </form>
           </div>
+
+          {/* Weekly stats */}
+          {myPos && (
+            <div className="card">
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-xs font-bold uppercase tracking-wider font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.14em' }}>
+                  Cette semaine
+                </h2>
+                <Link to="/leaderboard" className="text-xs font-semibold font-mono transition-colors" style={{ color: '#F5C76B' }}>
+                  Classement →
+                </Link>
+              </div>
+              <div className="flex items-center gap-4">
+                <span
+                  className="text-lg font-bold px-3 py-1.5 rounded-full font-mono"
+                  style={{ color: TIER_COLOR[myPos.tier], backgroundColor: `${TIER_COLOR[myPos.tier]}15`, border: `1px solid ${TIER_COLOR[myPos.tier]}35` }}
+                >
+                  {TIER_ICON[myPos.tier]} {TIER_LABEL[myPos.tier]}
+                </span>
+                <div>
+                  <p className="font-bold font-mono tabular-nums" style={{ color: '#F2EEE3' }}>
+                    {myPos.points.toLocaleString('fr-FR')} pts
+                  </p>
+                  <p className="text-xs font-mono" style={{ color: '#7A7F9B' }}>
+                    #{myPos.rank} · {myPos.quizzesPlayed} quiz · 🔥 {myPos.connectionStreak} j
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Badge history */}
+          {badges.length > 0 && (
+            <div className="card">
+              <h2 className="text-xs font-bold uppercase tracking-wider mb-3 font-mono" style={{ color: '#7A7F9B', letterSpacing: '0.14em' }}>
+                Badges obtenus
+              </h2>
+              <div className="space-y-2">
+                {badges.map((b) => {
+                  const weekLabel = new Date(b.weekStart).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+                  return (
+                    <div key={b.id} className="flex items-center justify-between px-3 py-2 rounded-xl" style={{ backgroundColor: 'rgba(242,238,227,0.04)', border: '1px solid rgba(242,238,227,0.08)' }}>
+                      <div className="flex items-center gap-2">
+                        <span className="text-base">{TIER_ICON[b.tier]}</span>
+                        <div>
+                          <p className="text-sm font-semibold" style={{ color: TIER_COLOR[b.tier] }}>
+                            {TIER_LABEL[b.tier]}
+                          </p>
+                          <p className="text-xs font-mono" style={{ color: '#7A7F9B' }}>Semaine du {weekLabel}</p>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-sm font-bold font-mono tabular-nums" style={{ color: '#F5C76B' }}>
+                          {b.points.toLocaleString('fr-FR')} pts
+                        </p>
+                        {b.rank && (
+                          <p className="text-xs font-mono" style={{ color: '#7A7F9B' }}>#{b.rank}</p>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {/* Session */}
           <div className="card" style={{ borderColor: 'rgba(255,107,91,0.2)' }}>

@@ -12,6 +12,7 @@ import PlayPage from './pages/PlayPage';
 import ResultsPage from './pages/ResultsPage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
+import LeaderboardPage from './pages/LeaderboardPage';
 import AuthCallbackPage from './pages/AuthCallbackPage';
 
 export default function App() {
@@ -35,6 +36,9 @@ export default function App() {
           <Route path="/lobby/:code" element={<LobbyPage />} />
           <Route path="/play/:code" element={<PlayPage />} />
           <Route path="/results/:code" element={<ResultsPage />} />
+
+          {/* Leaderboard */}
+          <Route path="/leaderboard" element={<LeaderboardPage />} />
 
           {/* Auth routes */}
           <Route path="/login" element={<LoginPage />} />

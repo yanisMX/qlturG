@@ -1,7 +1,7 @@
 import { Controller, Post, Get, Body, Param } from '@nestjs/common';
 import { GameService } from './game.service';
-import { IsString, IsEnum, IsInt, IsBoolean, Min, Max } from 'class-validator';
-import { Difficulty, GameMode } from '@prisma/client';
+import { IsString, IsEnum, IsInt, IsBoolean, IsOptional, IsArray, Min, Max } from 'class-validator';
+import { Difficulty, GameMode, Topic } from '@prisma/client';
 
 class CreateGameDto {
   @IsEnum(Difficulty)
@@ -25,6 +25,11 @@ class CreateGameDto {
 
   @IsBoolean()
   doublePointsBonus!: boolean;
+
+  @IsOptional()
+  @IsArray()
+  @IsEnum(Topic, { each: true })
+  topics?: Topic[];
 }
 
 class JoinGameDto {

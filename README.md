@@ -1,6 +1,10 @@
 # Histoire de France — Quiz Multijoueur
 
-Quiz multijoueur en temps réel sur l'histoire de France, style Kahoot. Un joueur crée une partie et partage un code à 6 caractères ; les autres rejoignent, et l'hôte lance la partie. Questions QCM, chronomètre 10 secondes, bonus de rapidité optionnel, classement animé en direct.
+Quiz multijoueur en temps réel, style Kahoot. Un joueur crée une partie, partage un code à 6 caractères, les autres rejoignent. Questions QCM avec chronomètre, bonus de rapidité, classement animé en direct.
+
+**Thèmes disponibles** : Histoire · Géographie · Géopolitique · Cinéma · Philosophie · Littérature (ou Mixte)
+
+**Modes de jeu** : Standard · Survival Multi (3 vies) · Survival Solo (questions illimitées)
 
 ## Stack technique
 
@@ -69,12 +73,13 @@ pnpm test           # Lance tous les tests (Jest + Vitest)
 │   │   │   ├── prisma/         PrismaModule global
 │   │   │   ├── questions/      CRUD questions (REST, header x-admin-key)
 │   │   │   └── games/
-│   │   │       ├── game.service.ts     Logique métier (scores, états)
+│   │   │       ├── game.service.ts     Logique métier (scores, modes, topic filter)
 │   │   │       ├── game.gateway.ts     WebSocket namespace /game
 │   │   │       └── games.controller.ts REST create/join/get
 │   │   └── prisma/
 │   │       ├── schema.prisma
-│   │       └── seed.ts         60+ questions historiques
+│   │       ├── seed.ts
+│   │       └── questions/      JSON par topic (histoire, cinema, geographie, …)
 │   └── web/                    Frontend React + Vite
 │       └── src/
 │           ├── pages/          HomePage CreatePage JoinPage LobbyPage PlayPage ResultsPage

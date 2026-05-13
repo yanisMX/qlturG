@@ -7,7 +7,9 @@
 - Podium visuel pour les places 1, 2, 3
 - Classement complet en dessous si plus de 3 joueurs
 - Mon résultat personnel mis en valeur (rang + score)
-- Boutons pour relancer une partie ou retourner à l'accueil
+- L'hôte peut lancer une "Nouvelle partie" : les joueurs encore connectés sont automatiquement redirigés vers le lobby de la nouvelle partie avec les mêmes paramètres (rematch)
+- Les joueurs non-hôtes voient un bouton "Nouvelle partie" qui les amène à créer leur propre partie
+- Bouton "Accueil" pour retourner à la page principale
 
 ## Statut
 

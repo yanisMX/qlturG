@@ -1,4 +1,5 @@
 import { GameService } from './game.service';
+import { GameStatus, GameMode } from '@prisma/client';
 
 describe('GameService.calculateScore', () => {
   let service: GameService;
@@ -50,5 +51,58 @@ describe('GameService.calculateScore', () => {
   it('clamps to 500 minimum for very late correct answer with speed bonus', () => {
     const result = service.calculateScore(true, true, 10500);
     expect(result.points).toBe(500);
+  });
+});
+
+describe('GameService.startGame topic filtering', () => {
+  const makeGame = (topics: string[]) => ({
+    id: 'g1',
+    status: GameStatus.LOBBY,
+    gameMode: GameMode.STANDARD,
+    difficulty: 'MOYEN',
+    totalQuestions: 10,
+    topics,
+  });
+
+  const makeQuestions = (n: number) =>
+    Array.from({ length: n }, (_, i) => ({ id: `q${i}` }));
+
+  const makeDeps = (game: object, questions: object[]) => {
+    const prisma = {
+      game: {
+        findUnique: jest.fn().mockResolvedValue(game),
+        update: jest.fn().mockResolvedValue(game),
+      },
+      round: {
+        create: jest.fn().mockImplementation(({ data }: { data: object }) =>
+          Promise.resolve({ id: 'r', ...data }),
+        ),
+      },
+    };
+    const questionsService = {
+      getRandomByDifficulty: jest.fn().mockResolvedValue(questions),
+      getAllByDifficulty: jest.fn().mockResolvedValue(questions),
+    };
+    return { prisma, questionsService };
+  };
+
+  it('passes topics array to getRandomByDifficulty when topics are selected', async () => {
+    const questions = makeQuestions(10);
+    const { prisma, questionsService } = makeDeps(makeGame(['CINEMA', 'PHILOSOPHIE']), questions);
+    const service = new GameService(prisma as any, questionsService as any);
+
+    await service.startGame('g1');
+
+    expect(questionsService.getRandomByDifficulty).toHaveBeenCalledWith('MOYEN', 10, ['CINEMA', 'PHILOSOPHIE']);
+  });
+
+  it('passes empty topics array to getRandomByDifficulty when no topic selected (mixte)', async () => {
+    const questions = makeQuestions(10);
+    const { prisma, questionsService } = makeDeps(makeGame([]), questions);
+    const service = new GameService(prisma as any, questionsService as any);
+
+    await service.startGame('g1');
+
+    expect(questionsService.getRandomByDifficulty).toHaveBeenCalledWith('MOYEN', 10, []);
   });
 });

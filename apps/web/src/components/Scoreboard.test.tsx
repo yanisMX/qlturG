@@ -29,7 +29,7 @@ describe('Scoreboard', () => {
 
   it('met en surbrillance le joueur courant', () => {
     const { container } = render(<Scoreboard players={players} myPlayerId="p2" />);
-    const highlighted = container.querySelector('.bg-navy-50');
+    const highlighted = container.querySelector('[data-me="true"]');
     expect(highlighted).toBeInTheDocument();
     expect(highlighted?.textContent).toContain('Bob');
   });

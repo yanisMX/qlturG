@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateQuestionDto, UpdateQuestionDto } from './questions.dto';
-import { Difficulty, Period } from '@prisma/client';
+import { Difficulty, Period, Topic } from '@prisma/client';
 
 @Injectable()
 export class QuestionsService {
@@ -33,18 +33,22 @@ export class QuestionsService {
     return this.prisma.question.delete({ where: { id } });
   }
 
-  async getRandomByDifficulty(difficulty: Difficulty, count: number) {
+  async getRandomByDifficulty(difficulty: Difficulty, count: number, topics: Topic[] = []) {
     const all = await this.prisma.question.findMany({
-      where: difficulty === ('VARIE' as Difficulty) ? {} : { difficulty },
+      where: {
+        ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
+        ...(topics.length > 0 && { topic: { in: topics } }),
+      },
     });
     return all.sort(() => Math.random() - 0.5).slice(0, count);
   }
 
-  async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = []) {
+  async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = [], topics: Topic[] = []) {
     const all = await this.prisma.question.findMany({
       where: {
         ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
         ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
+        ...(topics.length > 0 && { topic: { in: topics } }),
       },
     });
     return all.sort(() => Math.random() - 0.5);

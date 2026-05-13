@@ -2,17 +2,34 @@ import { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../store/gameStore';
+import type { Topic } from '../store/gameStore';
 import { getSocket } from '../socket/socket';
 import Scoreboard from '../components/Scoreboard';
 import PageTransition from '../components/PageTransition';
 import { duration } from '../styles/tokens';
+
+const TOPIC_LABELS: Record<Topic, string> = {
+  HISTOIRE: 'Histoire',
+  GEOGRAPHIE: 'Géographie',
+  GEOPOLITIQUE: 'Géopolitique',
+  CINEMA: 'Cinéma',
+  PHILOSOPHIE: 'Philosophie',
+  LITTERATURE: 'Littérature',
+};
+
+const DIFFICULTY_LABELS: Record<string, string> = {
+  FACILE: 'Facile',
+  MOYEN: 'Moyen',
+  DIFFICILE: 'Difficile',
+  VARIE: 'Varié',
+};
 
 const DATES = ['476', '800', '987', '1066', '1337', '1453', '1515', '1598', '1661', '1789', '1804', '1870', '1914', '1940', '1944', '1968'];
 
 export default function LobbyPage() {
   const { code } = useParams<{ code: string }>();
   const navigate = useNavigate();
-  const { players, isHost, myPlayerId, status, gameMode, addPlayer, removePlayer, setGameState, reset } =
+  const { players, isHost, myPlayerId, status, gameMode, topics, difficulty, totalQuestions, addPlayer, removePlayer, setGameState, reset } =
     useGameStore();
 
   const [copied, setCopied] = useState(false);
@@ -169,6 +186,17 @@ export default function LobbyPage() {
               </span>
             </div>
           )}
+
+          {/* Game info badge */}
+          <div className="text-center">
+            <span className="text-xs font-mono px-3 py-1.5 rounded-full" style={{ color: '#B4B7CC', border: '1px solid rgba(180,183,204,0.2)', backgroundColor: 'rgba(180,183,204,0.06)' }}>
+              {[
+                topics.length > 0 ? topics.map((t) => TOPIC_LABELS[t]).join(', ') : 'Mixte',
+                difficulty ? DIFFICULTY_LABELS[difficulty] : null,
+                !isSurvival ? `${totalQuestions} questions` : null,
+              ].filter(Boolean).join(' · ')}
+            </span>
+          </div>
 
           {/* Actions */}
           {isHost ? (

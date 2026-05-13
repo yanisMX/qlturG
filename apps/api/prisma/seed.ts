@@ -1,514 +1,118 @@
-import { PrismaClient, Period, Difficulty } from '@prisma/client';
+import { PrismaClient, Period, Difficulty, Topic } from '@prisma/client';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const prisma = new PrismaClient();
 
-const questions = [
-  // === ANTIQUITE_GAULE ===
-  {
-    text: "En quelle année Jules César achève-t-il la conquête de la Gaule ?",
-    choices: ["58 av. J.-C.", "51 av. J.-C.", "44 av. J.-C.", "27 av. J.-C."],
-    answerIndex: 1,
-    explanation: "La guerre des Gaules s'étend de 58 à 51 av. J.-C. La prise d'Alésia en 52 av. J.-C. brise la résistance gauloise, mais la pacification complète n'est achevée qu'en 51 av. J.-C. avec la reddition des derniers peuples.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel chef gaulois mena la révolte contre César à Alésia en 52 av. J.-C. ?",
-    choices: ["Ambiorix", "Vercingétorix", "Viriathus", "Dumnorix"],
-    answerIndex: 1,
-    explanation: "Vercingétorix, chef des Arvernes, fédéra de nombreuses tribus gauloises contre Rome. Vaincu à Alésia, il se rendit à César et fut exécuté à Rome six ans plus tard.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Comment s'appelait le principal oppidum des Parisii, peuple gaulois habitant l'île de la Cité ?",
-    choices: ["Lutèce", "Lugdunum", "Nemausus", "Gesoriacum"],
-    answerIndex: 0,
-    explanation: "Lutèce (Lutetia Parisiorum) était le chef-lieu des Parisii. La ville romaine s'étendit sur la rive gauche de la Seine et est l'ancêtre directe de Paris.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quelle bataille en 102 av. J.-C. vit Marius écraser les Teutons menaçant la Gaule transalpine ?",
-    choices: ["Bataille de Zama", "Bataille d'Aquae Sextiae", "Bataille de Verceil", "Bataille de Gergovie"],
-    answerIndex: 1,
-    explanation: "À Aquae Sextiae (Aix-en-Provence), le consul Marius anéantit l'armée des Teutons, sauvant la Gaule d'une invasion germanique. L'année suivante, il vainquit aussi les Cimbres à Verceil.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.DIFFICILE,
-  },
-  {
-    text: "Quelle était la principale divinité du panthéon gaulois, assimilée au Mercure romain par César ?",
-    choices: ["Toutatis", "Ésus", "Taranis", "Lug"],
-    answerIndex: 3,
-    explanation: "Lug (ou Lugus) était une divinité majeure célébrée dans de nombreuses villes gauloises — Lugdunum (Lyon), Luguvalium, etc. César l'assimila au Mercure car il présidait au commerce et aux arts.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.DIFFICILE,
-  },
-  {
-    text: "En quelle année la ville de Lugdunum (Lyon) fut-elle fondée comme capitale des Gaules romaines ?",
-    choices: ["43 av. J.-C.", "27 av. J.-C.", "10 av. J.-C.", "14 ap. J.-C."],
-    answerIndex: 0,
-    explanation: "Lugdunum est fondée en 43 av. J.-C. par le lieutenant de César, Lucius Munatius Plancus. Elle deviendra rapidement la capitale administrative des Trois Gaules et un carrefour commercial majeur.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel monument romain subsiste à Nîmes et est l'un des temples romains les mieux conservés au monde ?",
-    choices: ["Le Pont du Gard", "Les Arènes de Nîmes", "La Maison Carrée", "Le Théâtre d'Orange"],
-    answerIndex: 2,
-    explanation: "La Maison Carrée, temple romain érigé vers 4-7 ap. J.-C., est l'un des temples romains les mieux préservés au monde. Elle a inspiré Thomas Jefferson pour le capitole de Virginie.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.MOYEN,
-  },
+const VALID_PERIODS = new Set(Object.values(Period));
+const VALID_DIFFICULTIES = new Set(Object.values(Difficulty));
+const VALID_TOPICS = new Set(Object.values(Topic));
 
-  // === MOYEN_AGE ===
-  {
-    text: "En quelle année Clovis fut-il baptisé à Reims ?",
-    choices: ["486", "496", "508", "511"],
-    answerIndex: 1,
-    explanation: "Clovis est baptisé vers 496 par l'évêque Remi, scellant l'alliance entre la dynastie mérovingienne et l'Église catholique — un événement souvent considéré comme le premier acte chrétien du royaume des Francs.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel roi carolingien fut couronné Empereur d'Occident le 25 décembre 800 ?",
-    choices: ["Pépin le Bref", "Louis le Pieux", "Charlemagne", "Charles le Chauve"],
-    answerIndex: 2,
-    explanation: "Charlemagne reçut la couronne impériale des mains du pape Léon III à Rome le jour de Noël 800. Cet acte relançait symboliquement l'Empire romain d'Occident et consacrait la puissance franque.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel traité de 843 partagea l'empire carolingien entre les fils de Louis le Pieux ?",
-    choices: ["Traité de Verdun", "Traité de Mersen", "Traité de Ribemont", "Traité d'Aix-la-Chapelle"],
-    answerIndex: 0,
-    explanation: "Le traité de Verdun (843) divisa l'empire en trois : la Francie occidentale pour Charles le Chauve (ancêtre de la France), la Lotharingie pour Lothaire Ier, et la Francie orientale pour Louis le Germanique.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "En quelle année le pape Urbain II lança-t-il la Première croisade au concile de Clermont ?",
-    choices: ["1054", "1095", "1099", "1147"],
-    answerIndex: 1,
-    explanation: "En novembre 1095, au concile de Clermont, Urbain II prêcha la croisade pour libérer Jérusalem des Turcs Seldjoukides. L'expédition aboutit à la prise de Jérusalem en 1099.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "En quelle année Jeanne d'Arc fut-elle brûlée vive à Rouen ?",
-    choices: ["1415", "1420", "1431", "1453"],
-    answerIndex: 2,
-    explanation: "Capturée par les Bourguignons puis vendue aux Anglais, Jeanne d'Arc fut condamnée pour hérésie et brûlée le 30 mai 1431 sur la place du Vieux-Marché à Rouen. Elle fut réhabilitée en 1456.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel roi de France remporta la bataille de Bouvines en 1214 face à une coalition anglo-germano-flamande ?",
-    choices: ["Philippe Ier Auguste", "Louis VIII", "Philippe II Auguste", "Louis IX"],
-    answerIndex: 2,
-    explanation: "Philippe II Auguste écrasa à Bouvines une coalition anglo-germano-flamande. Cette victoire renforça considérablement le pouvoir royal capétien et consolida le territoire du royaume de France.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quelle grande épidémie ravagea l'Europe et la France à partir de 1347, tuant environ un tiers de la population ?",
-    choices: ["La variole", "La lèpre", "La Peste Noire", "Le typhus"],
-    answerIndex: 2,
-    explanation: "La Peste Noire (peste bubonique) arriva en France par Marseille en 1347. Entre 1347 et 1351, elle tua de 30 à 50 % de la population européenne, provoquant une crise démographique et sociale sans précédent.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel monument parisien, commencé en 1163, est l'exemple le plus célèbre de l'architecture gothique française ?",
-    choices: ["La Sainte-Chapelle", "Notre-Dame de Paris", "La basilique de Saint-Denis", "Notre-Dame de Chartres"],
-    answerIndex: 1,
-    explanation: "Notre-Dame de Paris, dont la construction débuta en 1163, est le symbole mondial du gothique français. Sa façade ouest, ses arcs-boutants et ses rosaces en ont fait un modèle pour toute l'architecture médiévale.",
-    period: Period.MOYEN_AGE,
-    difficulty: Difficulty.FACILE,
-  },
+interface RawQuestion {
+  text: string;
+  choices: string[];
+  answerIndex: number;
+  explanation: string;
+  period: string;
+  difficulty: string;
+  topic: string;
+}
 
-  // === RENAISSANCE_ANCIEN_REGIME ===
-  {
-    text: "Quel roi de France est le grand mécène de la Renaissance : il fit venir Léonard de Vinci et lança Chambord ?",
-    choices: ["Louis XI", "Charles VIII", "François Ier", "Henri II"],
-    answerIndex: 2,
-    explanation: "François Ier (1515-1547) fit venir Léonard de Vinci à Amboise, lança la construction de Fontainebleau et du château de Chambord, et fonda le Collège de France, installant la Renaissance en France.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel édit de 1598 accorda aux protestants la liberté de culte et mit fin aux guerres de Religion ?",
-    choices: ["Édit de Nantes", "Édit de Villers-Cotterêts", "Édit de Fontainebleau", "Édit de Worms"],
-    answerIndex: 0,
-    explanation: "L'édit de Nantes, signé par Henri IV le 13 avril 1598, accordait aux huguenots la liberté de conscience, le droit au culte en certains lieux et des places de sûreté. Il fut révoqué par Louis XIV en 1685.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année Louis XIV installa-t-il définitivement sa cour au château de Versailles ?",
-    choices: ["1661", "1668", "1682", "1700"],
-    answerIndex: 2,
-    explanation: "Louis XIV transféra officiellement sa cour et le gouvernement à Versailles en mai 1682. Ce déménagement symbolisait la centralisation absolue du pouvoir royal et éloignait la noblesse de Paris.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel philosophe des Lumières dirigea l'Encyclopédie avec d'Alembert, publiée entre 1751 et 1772 ?",
-    choices: ["Voltaire", "Rousseau", "Diderot", "Montesquieu"],
-    answerIndex: 2,
-    explanation: "Denis Diderot dirigea l'Encyclopédie pendant plus de vingt ans, un monument de 28 volumes rassemblant tout le savoir humain selon la raison. Elle devint le manifeste intellectuel des Lumières.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel massacre de la nuit du 23 au 24 août 1572 vit l'assassinat de milliers de protestants à Paris ?",
-    choices: ["La Saint-Barthélemy", "La nuit des longs couteaux", "Le massacre de Wassy", "La journée des Barricades"],
-    answerIndex: 0,
-    explanation: "Le massacre de la Saint-Barthélemy, ordonné par Charles IX sous l'influence de Catherine de Médicis, fit entre 3 000 et 30 000 victimes protestantes. Il marqua un tournant brutal dans les guerres de Religion.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel cardinal, ministre de Louis XIII, centralisa le pouvoir royal et affaiblit les grandes familles nobles ?",
-    choices: ["Mazarin", "Richelieu", "Colbert", "Fleury"],
-    answerIndex: 1,
-    explanation: "Le cardinal de Richelieu (1624-1642) brisa la puissance politique des huguenots et des grands seigneurs, renforça l'administration royale et engagea la France dans la guerre de Trente Ans contre les Habsbourg.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel traité de 1783 reconnut l'indépendance des États-Unis après le soutien de la France aux insurgents ?",
-    choices: ["Traité de Fontainebleau", "Traité de Paris (1783)", "Traité de Versailles (1783)", "Traité d'Utrecht"],
-    answerIndex: 1,
-    explanation: "Le traité de Paris du 3 septembre 1783 consacra l'indépendance américaine. La France y regagna quelques territoires perdus en 1763, mais l'effort de guerre creusa un déficit qui contribua à la crise pré-révolutionnaire.",
-    period: Period.RENAISSANCE_ANCIEN_REGIME,
-    difficulty: Difficulty.DIFFICILE,
-  },
+function validate(q: RawQuestion, source: string): boolean {
+  if (!q.text || typeof q.text !== 'string') {
+    console.error(`[${source}] Invalid or missing 'text'`);
+    return false;
+  }
+  if (!Array.isArray(q.choices) || q.choices.length !== 4) {
+    console.error(`[${source}] "${q.text}" — 'choices' must be an array of exactly 4 strings`);
+    return false;
+  }
+  if (typeof q.answerIndex !== 'number' || q.answerIndex < 0 || q.answerIndex > 3) {
+    console.error(`[${source}] "${q.text}" — 'answerIndex' must be 0-3`);
+    return false;
+  }
+  if (!VALID_PERIODS.has(q.period as Period)) {
+    console.error(`[${source}] "${q.text}" — invalid period: ${q.period}`);
+    return false;
+  }
+  if (!VALID_DIFFICULTIES.has(q.difficulty as Difficulty)) {
+    console.error(`[${source}] "${q.text}" — invalid difficulty: ${q.difficulty}`);
+    return false;
+  }
+  if (!VALID_TOPICS.has(q.topic as Topic)) {
+    console.error(`[${source}] "${q.text}" — invalid topic: ${q.topic}`);
+    return false;
+  }
+  return true;
+}
 
-  // === REVOLUTION_EMPIRE ===
-  {
-    text: "Quelle date est associée à la prise de la Bastille, symbole du début de la Révolution française ?",
-    choices: ["14 juillet 1789", "4 août 1789", "26 août 1789", "21 juin 1791"],
-    answerIndex: 0,
-    explanation: "Le 14 juillet 1789, la foule parisienne s'empara de la forteresse de la Bastille, symbole de l'arbitraire royal. Cet événement devint la fête nationale française en 1880.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel document du 26 août 1789 proclame que \"les hommes naissent et demeurent libres et égaux en droits\" ?",
-    choices: ["La Constitution de 1791", "Le serment du Jeu de Paume", "La Déclaration des droits de l'homme et du citoyen", "Le Contrat social"],
-    answerIndex: 2,
-    explanation: "La Déclaration des droits de l'homme et du citoyen de 1789, inspirée des Lumières et de la Déclaration d'indépendance américaine, reste un texte fondateur de la démocratie moderne, intégré au bloc de constitutionnalité français.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année Napoléon Bonaparte fut-il sacré Empereur des Français ?",
-    choices: ["1799", "1802", "1804", "1807"],
-    answerIndex: 2,
-    explanation: "Le 2 décembre 1804, Napoléon Ier fut sacré Empereur à Notre-Dame de Paris en présence du pape Pie VII. Il se couronna lui-même, affirmant que son pouvoir ne venait pas de l'Église mais de lui-même et du peuple.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quelle bataille de 1805 vit Napoléon écraser les armées autrichienne et russe en moins d'une journée ?",
-    choices: ["Waterloo", "Iéna", "Austerlitz", "Wagram"],
-    answerIndex: 2,
-    explanation: "La bataille d'Austerlitz (2 décembre 1805) est considérée comme le chef-d'oeuvre tactique de Napoléon. En moins de 9 heures, il anéantit une armée austro-russe supérieure en nombre, forçant l'Autriche à signer la paix de Presbourg.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel code juridique napoléonien, toujours en vigueur dans ses grandes lignes, fut promulgué en 1804 ?",
-    choices: ["Le Code Pénal", "Le Code Civil", "Le Code de Commerce", "Le Code d'Instruction Criminelle"],
-    answerIndex: 1,
-    explanation: "Le Code civil (ou Code Napoléon) de 1804 unifia le droit français en consacrant l'égalité civile, la liberté contractuelle et la propriété privée. Il influença les législations de nombreux pays, de la Louisiane au Québec.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année eut lieu la bataille de Waterloo, mettant fin définitivement au Premier Empire ?",
-    choices: ["1812", "1813", "1814", "1815"],
-    answerIndex: 3,
-    explanation: "Le 18 juin 1815, Napoléon fut vaincu à Waterloo (Belgique) par Wellington et Blücher. Cette défaite entraîna sa seconde abdication et son exil définitif à Sainte-Hélène, où il mourut en 1821.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel général vendéen surnommé 'le Saint de l'Anjou' prit spontanément la tête de l'insurrection en 1793 ?",
-    choices: ["Georges Cadoudal", "La Rochejaquelein", "Charette", "Cathelineau"],
-    answerIndex: 3,
-    explanation: "Jacques Cathelineau, simple colporteur, prit la tête de l'insurrection vendéenne en mars 1793. Élu généralissime, il fut mortellement blessé lors de l'attaque de Nantes, devenant le premier martyr vendéen.",
-    period: Period.REVOLUTION_EMPIRE,
-    difficulty: Difficulty.DIFFICILE,
-  },
+function loadQuestionsFromDir(dir: string): RawQuestion[] {
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
+  const all: RawQuestion[] = [];
 
-  // === XIXE_SIECLE ===
-  {
-    text: "Combien de régimes politiques différents la France a-t-elle connus entre 1814 et 1875 ?",
-    choices: ["3", "5", "7", "9"],
-    answerIndex: 2,
-    explanation: "Entre 1814 et 1875, la France connut successivement : la Restauration (Louis XVIII, Charles X), la Monarchie de Juillet, la IIe République, le Second Empire et la IIIe République, soit sept régimes distincts en soixante ans.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.DIFFICILE,
-  },
-  {
-    text: "Quel événement de juin 1848, réprimé par le général Cavaignac, fit des milliers de morts parmi les ouvriers parisiens ?",
-    choices: ["La révolution de Février", "Les journées de Juin", "La Commune de Paris", "Le coup d'État du 2 décembre"],
-    answerIndex: 1,
-    explanation: "Les journées de Juin 1848 éclatèrent quand le gouvernement ferma les Ateliers nationaux. La répression du général Cavaignac fit 3 000 à 5 000 morts, traumatisant profondément la classe ouvrière française.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel écrivain publia 'J'accuse...!' dans L'Aurore en janvier 1898, défendant le capitaine Dreyfus ?",
-    choices: ["Guy de Maupassant", "Anatole France", "Émile Zola", "Victor Hugo"],
-    answerIndex: 2,
-    explanation: "La lettre ouverte de Zola au président Félix Faure, publiée le 13 janvier 1898, dénonça l'antisémitisme et les irrégularités du procès Dreyfus. Elle déclencha l'Affaire Dreyfus et divisa profondément la société française.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année la Commune de Paris fut-elle écrasée lors de la 'Semaine sanglante' ?",
-    choices: ["1848", "1870", "1871", "1875"],
-    answerIndex: 2,
-    explanation: "La Semaine sanglante (21-28 mai 1871) vit les troupes de Versailles reprendre Paris aux communards. La répression fit entre 10 000 et 30 000 morts et entraîna la déportation de milliers de militants.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quelle loi de 1905 instaura la séparation des Églises et de l'État en France ?",
-    choices: ["Loi Ferry sur l'instruction publique", "Loi Waldeck-Rousseau sur les associations", "Loi de séparation des Églises et de l'État", "Loi Combes sur les congrégations"],
-    answerIndex: 2,
-    explanation: "La loi du 9 décembre 1905 mit fin au Concordat de 1801 et établit la laïcité comme principe d'État. Elle garantit la liberté de conscience tout en supprimant le financement public des cultes — un pilier de la République française.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel ingénieur français construisit la tour qui porte son nom pour l'Exposition universelle de 1889 ?",
-    choices: ["Ferdinand de Lesseps", "Gustave Eiffel", "Eugène Viollet-le-Duc", "Frédéric Bartholdi"],
-    answerIndex: 1,
-    explanation: "Gustave Eiffel construisit sa tour en fer puddlé en 2 ans, 2 mois et 5 jours pour l'Exposition universelle de 1889 célébrant le centenaire de la Révolution. Initialement mal reçue, elle est aujourd'hui le monument le plus visité au monde.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel traité de 1871 força la France à céder l'Alsace et une partie de la Lorraine à l'Allemagne ?",
-    choices: ["Traité de Francfort", "Traité de Versailles", "Traité de Paris", "Traité de Berlin"],
-    answerIndex: 0,
-    explanation: "Le traité de Francfort (10 mai 1871), conclu après la défaite de 1870-71, imposa à la France une lourde indemnité de guerre et la perte de l'Alsace-Moselle. La revanche contre l'Allemagne devint une obsession nationale jusqu'en 1914.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.MOYEN,
-  },
+  for (const file of files) {
+    const filePath = path.join(dir, file);
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as RawQuestion[];
 
-  // === GUERRES_MONDIALES ===
-  {
-    text: "Quelle bataille de 1916 est surnommée 'l'enfer de Verdun' et symbolise l'hécatombe de la Grande Guerre ?",
-    choices: ["La Marne", "La Somme", "Verdun", "Les Éparges"],
-    answerIndex: 2,
-    explanation: "La bataille de Verdun (février-décembre 1916) fut l'une des plus longues et meurtrières de la Première Guerre mondiale, faisant plus de 700 000 victimes des deux côtés. Le cri 'Ils ne passeront pas' en est devenu le symbole.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quelle date vit la signature de l'armistice mettant fin à la Première Guerre mondiale ?",
-    choices: ["11 novembre 1918", "8 mai 1918", "14 juillet 1919", "28 juin 1919"],
-    answerIndex: 0,
-    explanation: "L'armistice fut signé dans le wagon-salon du maréchal Foch dans la forêt de Compiègne le 11 novembre 1918 à 5h du matin, prenant effet à 11h. En France, le 11 novembre est un jour férié commémoratif.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel général lança depuis Londres le célèbre 'Appel du 18 juin' 1940 ?",
-    choices: ["Henri Giraud", "Philippe Pétain", "Charles de Gaulle", "Jean de Lattre de Tassigny"],
-    answerIndex: 2,
-    explanation: "Le général de Gaulle, depuis les studios de la BBC à Londres, lança le 18 juin 1940 son appel à la résistance contre l'Allemagne nazie. Peu entendu sur le moment, il devint le mythe fondateur de la France libre.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année le maréchal Pétain signa-t-il l'armistice avec l'Allemagne et installa-t-il le régime de Vichy ?",
-    choices: ["1939", "1940", "1941", "1942"],
-    answerIndex: 1,
-    explanation: "L'armistice franco-allemand fut signé le 22 juin 1940 à Rethondes. Le 10 juillet, l'Assemblée nationale vota les pleins pouvoirs à Pétain, instaurant l'État français (régime de Vichy) qui collabora activement avec l'occupant nazi.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel raid du 19 août 1942 sur les côtes normandes se solda par un désastre pour les forces alliées, majoritairement canadiennes ?",
-    choices: ["Débarquement de Provence", "Opération Overlord", "Opération Jubilee (Dieppe)", "Opération Torch"],
-    answerIndex: 2,
-    explanation: "L'opération Jubilee à Dieppe (19 août 1942) fut une catastrophe : sur 6 000 soldats alliés engagés, plus de 3 600 furent tués, blessés ou capturés. Cette leçon sanglante permit cependant de préparer le succès du Débarquement de 1944.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.DIFFICILE,
-  },
-  {
-    text: "En quelle année Jean Moulin fut-il arrêté par la Gestapo à Caluire, trahissant le Conseil national de la Résistance ?",
-    choices: ["1941", "1942", "1943", "1944"],
-    answerIndex: 2,
-    explanation: "Jean Moulin, délégué général de De Gaulle en France occupée et fondateur du CNR, fut arrêté à Caluire le 21 juin 1943. Il mourut des suites des tortures infligées par Klaus Barbie sans avoir trahi ses camarades.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel traité signé le 28 juin 1919 officialisa la fin de la Première Guerre mondiale ?",
-    choices: ["Traité de Trianon", "Traité de Saint-Germain", "Traité de Versailles", "Traité de Sèvres"],
-    answerIndex: 2,
-    explanation: "Le traité de Versailles, signé dans la galerie des Glaces, imposa à l'Allemagne la responsabilité de la guerre (article 231), d'énormes réparations et des pertes territoriales. Ces conditions contribuèrent à la montée du nazisme.",
-    period: Period.GUERRES_MONDIALES,
-    difficulty: Difficulty.FACILE,
-  },
+    if (!Array.isArray(raw)) {
+      console.error(`[${file}] Root must be a JSON array — skipping file`);
+      continue;
+    }
 
-  // === GUERRE_FROIDE_DECOLONISATION ===
-  {
-    text: "Quel traité a mis fin à la guerre d'Algérie ?",
-    choices: ["Traité de Rome", "Accords d'Évian", "Traité de Paris", "Accords de Genève"],
-    answerIndex: 1,
-    explanation: "Les accords d'Évian sont signés le 18 mars 1962 entre le gouvernement français et le GPRA, mettant fin à près de huit ans de guerre et ouvrant la voie à l'indépendance de l'Algérie proclamée le 5 juillet 1962.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année le général de Gaulle fonda-t-il la Ve République avec sa nouvelle Constitution ?",
-    choices: ["1944", "1951", "1958", "1962"],
-    answerIndex: 2,
-    explanation: "La Constitution de la Ve République fut adoptée par référendum le 28 septembre 1958. Elle renforça considérablement l'exécutif au détriment du Parlement, mettant fin à l'instabilité gouvernementale chronique de la IVe République.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel mouvement de Mai 1968 commença par une révolte étudiante avant de devenir une grève générale de 10 millions de travailleurs ?",
-    choices: ["La nuit des Barricades", "Mai 68", "La révolution de velours", "Le Front populaire"],
-    answerIndex: 1,
-    explanation: "Mai 68 débuta à Nanterre et la Sorbonne avant de paralyser la France entière. Les accords de Grenelle du 27 mai accordèrent des augmentations de salaires et de nouveaux droits syndicaux, mais de Gaulle se maintint au pouvoir.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "En quelle année la France accorda-t-elle l'indépendance à ses territoires d'Afrique subsaharienne lors de 'l'année de l'Afrique' ?",
-    choices: ["1956", "1958", "1960", "1962"],
-    answerIndex: 2,
-    explanation: "En 1960, dite 'l'année de l'Afrique', dix-sept nations africaines accédèrent à l'indépendance, dont quatorze anciennes colonies ou territoires français. Ce processus avait été préparé par la loi-cadre Defferre de 1956.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel président français signa avec l'Allemagne le traité de l'Élysée en 1963, marquant la réconciliation franco-allemande ?",
-    choices: ["Georges Pompidou", "Charles de Gaulle", "Vincent Auriol", "René Coty"],
-    answerIndex: 1,
-    explanation: "Le traité de l'Élysée, signé le 22 janvier 1963 par de Gaulle et le chancelier Adenauer, institua une coopération étroite entre la France et l'Allemagne en matière de politique étrangère, de défense et d'éducation.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quelle bataille de 1954 marqua la défaite française en Indochine et mit fin à la guerre ?",
-    choices: ["Hanoï", "Saïgon", "Diên Biên Phu", "Cao Bang"],
-    answerIndex: 2,
-    explanation: "La chute du camp retranché de Diên Biên Phu le 7 mai 1954 face au Viêt-minh du général Giap mit fin à la présence militaire française en Indochine. Les accords de Genève (juillet 1954) partagèrent le Viêtnam au 17e parallèle.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel chef du FLN algérien, emprisonné en 1956 après l'interception de son avion par la France, devint le premier président de l'Algérie indépendante ?",
-    choices: ["Ferhat Abbas", "Mohamed Boudiaf", "Ahmed Ben Bella", "Houari Boumédiène"],
-    answerIndex: 2,
-    explanation: "Ahmed Ben Bella, l'une des figures historiques du FLN, fut capturé lors du détournement de son avion en octobre 1956 par l'armée française. Libéré en 1962 après les accords d'Évian, il devint le premier président algérien.",
-    period: Period.GUERRE_FROIDE_DECOLONISATION,
-    difficulty: Difficulty.DIFFICILE,
-  },
-
-  // === EPOQUE_CONTEMPORAINE ===
-  {
-    text: "En quelle année la France passa-t-elle à la semaine de 35 heures de travail ?",
-    choices: ["1993", "1997", "2000", "2002"],
-    answerIndex: 2,
-    explanation: "La loi Aubry II du 19 janvier 2000 généralisa la durée légale du travail à 35 heures hebdomadaires pour les entreprises de plus de 20 salariés. Cette réforme reste l'une des plus débattues de la Ve République.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel événement terroriste frappa Paris et Saint-Denis le 13 novembre 2015, faisant 130 victimes ?",
-    choices: ["Attentats de Charlie Hebdo", "Attentat du Bataclan seul", "Attentats du 13-Novembre", "Attentat du marché de Noël"],
-    answerIndex: 2,
-    explanation: "Les attentats du 13 novembre 2015 frappèrent simultanément plusieurs sites parisiens (Stade de France, terrasses de cafés, Bataclan). Revendiqués par Daech, ils constituèrent la pire attaque terroriste de l'histoire de France en temps de paix.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel référendum de 2005 vit les Français rejeter à 54,68 % le traité établissant une Constitution pour l'Europe ?",
-    choices: ["Référendum de 1992 (Maastricht)", "Référendum de 2005 (TCE)", "Référendum de 2000 (quinquennat)", "Référendum de 1969"],
-    answerIndex: 1,
-    explanation: "Le 29 mai 2005, les Français rejetèrent le Traité constitutionnel européen. Ce résultat bloqua la réforme institutionnelle européenne, qui fut partiellement relancée par le traité de Lisbonne en 2007.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "En quelle année l'euro devint-il la monnaie officielle des transactions en France, remplaçant le franc ?",
-    choices: ["1999", "2000", "2001", "2002"],
-    answerIndex: 3,
-    explanation: "Si l'euro fut introduit en monnaie scripturale dès le 1er janvier 1999, les pièces et billets en euros ne remplacèrent le franc en France qu'au 1er janvier 2002. Le franc fut définitivement retiré le 17 février 2002.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Qui fut la première femme nommée Premier ministre de la France, en 1991 ?",
-    choices: ["Simone Veil", "Ségolène Royal", "Édith Cresson", "Martine Aubry"],
-    answerIndex: 2,
-    explanation: "Édith Cresson fut nommée Premier ministre par François Mitterrand le 15 mai 1991. Elle occupa cette fonction jusqu'en avril 1992. Élisabeth Borne lui succéda en 2022, devenant la deuxième femme à ce poste.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.MOYEN,
-  },
-  {
-    text: "Quel mouvement social né en novembre 2018 mobilisa des centaines de milliers de Français autour du refus de la hausse de la taxe sur le carburant ?",
-    choices: ["Nuit Debout", "Les Gilets Jaunes", "Le mouvement des Indignés", "La Manif pour Tous"],
-    answerIndex: 1,
-    explanation: "Le mouvement des Gilets Jaunes débuta le 17 novembre 2018 contre la hausse des taxes sur les carburants. Il révéla de profondes fractures sociales et territoriales et conduisit le gouvernement Macron à lancer le Grand Débat national.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel accord international sur le climat, négocié lors de la COP21 à Paris en décembre 2015, vise à limiter le réchauffement à 1,5 °C ?",
-    choices: ["Protocole de Kyoto", "Accord de Copenhague", "Accord de Paris", "Charte de la Terre"],
-    answerIndex: 2,
-    explanation: "L'Accord de Paris, adopté le 12 décembre 2015 lors de la COP21, fut signé par 196 parties. C'est le premier accord universel sur le climat : chaque pays s'engage à réduire ses émissions pour maintenir le réchauffement sous 2 °C, voire 1,5 °C.",
-    period: Period.EPOQUE_CONTEMPORAINE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quel roi mérovingien remporta la bataille de Vouillé en 507, repoussant les Wisigoths au-delà des Pyrénées ?",
-    choices: ["Dagobert Ier", "Clovis Ier", "Chilpéric Ier", "Thierry Ier"],
-    answerIndex: 1,
-    explanation: "À Vouillé (près de Poitiers), Clovis Ier vainquit et tua le roi wisigoth Alaric II, s'emparant de presque toute la Gaule méridionale. Cette victoire étendit considérablement le royaume franc jusqu'à l'Aquitaine.",
-    period: Period.ANTIQUITE_GAULE,
-    difficulty: Difficulty.DIFFICILE,
-  },
-  {
-    text: "Quel peintre français du XIXe siècle est l'auteur du tableau 'La Liberté guidant le peuple' (1830) ?",
-    choices: ["Ingres", "Géricault", "Eugène Delacroix", "Jacques-Louis David"],
-    answerIndex: 2,
-    explanation: "Eugène Delacroix peignit 'La Liberté guidant le peuple' en 1830 pour commémorer les Trois Glorieuses. Allégorie de la révolution, ce tableau est devenu un symbole universel de liberté et figure sur l'ancienne pièce de 100 francs.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.FACILE,
-  },
-  {
-    text: "Quelle loi de Jules Ferry (1882) rendit l'instruction primaire obligatoire et laïque en France ?",
-    choices: ["Loi Falloux", "Loi Guizot", "Loi Ferry sur l'enseignement primaire", "Loi Duruy"],
-    answerIndex: 2,
-    explanation: "La loi Ferry du 28 mars 1882 rendit l'enseignement primaire obligatoire pour les enfants de 6 à 13 ans et supprima l'instruction religieuse des programmes publics. Elle est un pilier fondateur de la République laïque française.",
-    period: Period.XIXE_SIECLE,
-    difficulty: Difficulty.MOYEN,
-  },
-];
-
-async function main() {
-  console.log("Seeding database with questions...");
-  await prisma.question.deleteMany();
-
-  for (const q of questions) {
-    await prisma.question.create({ data: q });
+    let valid = 0;
+    for (const q of raw) {
+      if (validate(q, file)) {
+        all.push(q);
+        valid++;
+      }
+    }
+    console.log(`  ${file}: ${valid}/${raw.length} valid`);
   }
 
-  console.log(`Inserted ${questions.length} questions`);
+  return all;
+}
+
+async function main() {
+  const questionsDir = path.join(__dirname, 'questions');
+  console.log('Loading questions from', questionsDir);
+  const questions = loadQuestionsFromDir(questionsDir);
+  console.log(`Total valid questions: ${questions.length}`);
+
+  let upserted = 0;
+  for (const q of questions) {
+    await prisma.question.upsert({
+      where: { text: q.text },
+      update: {
+        choices: q.choices,
+        answerIndex: q.answerIndex,
+        explanation: q.explanation,
+        period: q.period as Period,
+        difficulty: q.difficulty as Difficulty,
+        topic: q.topic as Topic,
+      },
+      create: {
+        text: q.text,
+        choices: q.choices,
+        answerIndex: q.answerIndex,
+        explanation: q.explanation,
+        period: q.period as Period,
+        difficulty: q.difficulty as Difficulty,
+        topic: q.topic as Topic,
+      },
+    });
+    upserted++;
+  }
+
+  // Stats by topic
+  const byTopic: Record<string, number> = {};
+  for (const q of questions) {
+    byTopic[q.topic] = (byTopic[q.topic] ?? 0) + 1;
+  }
+  console.log('\nQuestions by topic:');
+  for (const [topic, count] of Object.entries(byTopic).sort()) {
+    console.log(`  ${topic}: ${count}`);
+  }
+  console.log(`\nDone — ${upserted} questions upserted`);
 }
 
 main()

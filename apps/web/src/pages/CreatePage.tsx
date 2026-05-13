@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { z } from 'zod';
 import { api } from '../lib/api';
 import { useGameStore } from '../store/gameStore';
+import { useAuthStore } from '../store/authStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
-import type { GameMode } from '../store/gameStore';
+import type { GameMode, Topic } from '../store/gameStore';
+
+const TOPIC_VALUES = ['HISTOIRE', 'GEOGRAPHIE', 'GEOPOLITIQUE', 'CINEMA', 'PHILOSOPHIE', 'LITTERATURE'] as const;
 
 const schema = z.object({
   hostNickname: z.string().min(1, 'Veuillez renseigner votre pseudo').min(2, 'Pseudo de 2 caractères minimum').max(20),
   difficulty: z.enum(['FACILE', 'MOYEN', 'DIFFICILE', 'VARIE']),
+  topics: z.array(z.enum(TOPIC_VALUES)),
   totalQuestions: z.number().min(10).max(30),
   speedBonus: z.boolean(),
   gameMode: z.enum(['STANDARD', 'SURVIVAL_SOLO', 'SURVIVAL_MULTI']),
@@ -31,13 +35,24 @@ const DIFFICULTY_CONFIG = {
   VARIE: { label: 'Varié' },
 } as const;
 
+const TOPIC_OPTIONS: { id: Topic; label: string }[] = [
+  { id: 'HISTOIRE', label: 'Histoire' },
+  { id: 'GEOGRAPHIE', label: 'Géographie' },
+  { id: 'GEOPOLITIQUE', label: 'Géopolitique' },
+  { id: 'CINEMA', label: 'Cinéma' },
+  { id: 'PHILOSOPHIE', label: 'Philosophie' },
+  { id: 'LITTERATURE', label: 'Littérature' },
+];
+
 export default function CreatePage() {
   const navigate = useNavigate();
   const setGameState = useGameStore((s) => s.setGameState);
+  const { token, user } = useAuthStore();
 
   const [form, setForm] = useState({
-    hostNickname: '',
+    hostNickname: user?.pseudo ?? '',
     difficulty: 'MOYEN' as 'FACILE' | 'MOYEN' | 'DIFFICILE' | 'VARIE',
+    topics: [] as Topic[],
     totalQuestions: 10,
     speedBonus: true,
     gameMode: 'STANDARD' as GameMode,
@@ -47,9 +62,35 @@ export default function CreatePage() {
   const [error, setError] = useState('');
   const [submitAttempt, setSubmitAttempt] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [topicsOpen, setTopicsOpen] = useState(false);
+  const topicsRef = useRef<HTMLDivElement>(null);
 
   const isSolo = form.gameMode === 'SURVIVAL_SOLO';
   const isSurvival = form.gameMode === 'SURVIVAL_SOLO' || form.gameMode === 'SURVIVAL_MULTI';
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (topicsRef.current && !topicsRef.current.contains(e.target as Node)) {
+        setTopicsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const toggleTopic = (id: Topic) => {
+    setForm((f) => ({
+      ...f,
+      topics: f.topics.includes(id) ? f.topics.filter((t) => t !== id) : [...f.topics, id],
+    }));
+  };
+
+  const topicLabel =
+    form.topics.length === 0
+      ? 'Mixte (tous)'
+      : TOPIC_OPTIONS.filter((o) => form.topics.includes(o.id))
+          .map((o) => o.label)
+          .join(', ');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -67,6 +108,7 @@ export default function CreatePage() {
     try {
       const game = await api.createGame({
         difficulty: parsed.data.difficulty,
+        topics: parsed.data.topics,
         totalQuestions: parsed.data.totalQuestions,
         speedBonus: parsed.data.speedBonus,
         gameMode: parsed.data.gameMode,
@@ -79,6 +121,7 @@ export default function CreatePage() {
         code: game.code,
         status: 'LOBBY',
         difficulty: game.difficulty,
+        topics: (game.topics as Topic[] | undefined) ?? [],
         gameMode: game.gameMode,
         speedBonus: game.speedBonus,
         doublePointsBonus: game.doublePointsBonus,
@@ -91,7 +134,7 @@ export default function CreatePage() {
         myLives: 3,
       });
 
-      const socket = getSocket();
+      const socket = getSocket(token ?? undefined);
       socket.connect();
       socket.emit('game:join', { code: game.code, nickname: parsed.data.hostNickname });
 
@@ -103,7 +146,6 @@ export default function CreatePage() {
         });
 
         if (game.gameMode === 'SURVIVAL_SOLO') {
-          // Solo — skip lobby, start immediately
           socket.emit('game:start');
           navigate(`/play/${game.code}`);
         } else {
@@ -214,7 +256,15 @@ export default function CreatePage() {
                   value={form.hostNickname}
                   onChange={(e) => setForm({ ...form, hostNickname: e.target.value })}
                   maxLength={20}
+                  disabled={!!user}
+                  style={user ? { opacity: 0.6, cursor: 'not-allowed' } : undefined}
                 />
+                {user && (
+                  <p className="text-xs mt-1 font-mono" style={{ color: '#7A7F9B' }}>
+                    Pseudo de votre compte — modifiable dans votre{' '}
+                    <a href="/profile" style={{ color: '#F5C76B' }}>profil</a>
+                  </p>
+                )}
               </div>
 
               {/* Difficulté */}
@@ -241,6 +291,80 @@ export default function CreatePage() {
                     );
                   })}
                 </div>
+              </div>
+
+              {/* Thème — liste déroulante multi-select */}
+              <div ref={topicsRef} className="relative">
+                <label className="block text-sm font-semibold mb-2" style={{ color: '#B4B7CC' }}>
+                  Thème
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setTopicsOpen((o) => !o)}
+                  className="w-full flex items-center justify-between px-4 py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base"
+                  style={form.topics.length > 0
+                    ? { borderColor: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.08)', color: '#F2EEE3' }
+                    : { borderColor: 'rgba(242,238,227,0.10)', backgroundColor: 'transparent', color: '#7A7F9B' }
+                  }
+                >
+                  <span className="truncate">{topicLabel}</span>
+                  <span className="ml-2 shrink-0 text-xs" style={{ color: '#7A7F9B' }}>
+                    {topicsOpen ? '▲' : '▼'}
+                  </span>
+                </button>
+
+                {topicsOpen && (
+                  <div
+                    className="absolute z-20 w-full mt-1 rounded-xl overflow-hidden"
+                    style={{
+                      border: '1px solid rgba(242,238,227,0.12)',
+                      backgroundColor: '#0F1629',
+                      boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+                    }}
+                  >
+                    {TOPIC_OPTIONS.map(({ id, label }) => {
+                      const checked = form.topics.includes(id);
+                      return (
+                        <button
+                          key={id}
+                          type="button"
+                          onClick={() => toggleTopic(id)}
+                          className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left transition-colors duration-base"
+                          style={{
+                            color: checked ? '#F2EEE3' : '#7A7F9B',
+                            backgroundColor: checked ? 'rgba(245,199,107,0.07)' : 'transparent',
+                          }}
+                        >
+                          <span
+                            className="w-4 h-4 rounded shrink-0 flex items-center justify-center"
+                            style={{
+                              border: checked ? '2px solid #F5C76B' : '2px solid rgba(242,238,227,0.2)',
+                              backgroundColor: checked ? '#F5C76B' : 'transparent',
+                            }}
+                          >
+                            {checked && (
+                              <span style={{ color: '#0B1026', fontSize: '9px', fontWeight: 800, lineHeight: 1 }}>✓</span>
+                            )}
+                          </span>
+                          {label}
+                        </button>
+                      );
+                    })}
+                    {form.topics.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setForm((f) => ({ ...f, topics: [] }))}
+                        className="w-full px-4 py-2 text-xs text-left transition-colors duration-base"
+                        style={{
+                          color: '#7A7F9B',
+                          borderTop: '1px solid rgba(242,238,227,0.08)',
+                        }}
+                      >
+                        Tout décocher
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Temps de réponse */}
