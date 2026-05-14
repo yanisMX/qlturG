@@ -531,6 +531,7 @@ export class GameGateway implements OnGatewayDisconnect {
       startsAt: startedAt.toISOString(),
       endsAt: endsAt.toISOString(),
       isDoublePoints,
+      topic: question.topic,
     });
 
     const timer = setTimeout(() => this.triggerReveal(gameId), durationMs);
