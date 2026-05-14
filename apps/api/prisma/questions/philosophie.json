@@ -826,5 +826,59 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe danois du XIXe siècle est souvent considéré comme un précurseur de l'existentialisme ?",
+    "choices": ["Søren Kierkegaard", "Friedrich Engels", "Georg Simmel", "Wilhelm Dilthey"],
+    "answerIndex": 0,
+    "explanation": "Kierkegaard insiste sur le choix individuel, l'angoisse, la subjectivité et le rapport singulier à la foi. Son œuvre inspirera fortement l'existentialisme du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quelle philosophe a écrit Condition de l'homme moderne (1958) ?",
+    "choices": ["Hannah Arendt", "Simone Weil", "Judith Butler", "Ayn Rand"],
+    "answerIndex": 0,
+    "explanation": "Dans cet ouvrage, Hannah Arendt distingue notamment le travail, l'œuvre et l'action au sein de la vita activa. Le livre est devenu un classique de la philosophie politique du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe allemand a écrit Le Principe responsabilité (1979) ?",
+    "choices": ["Hans Jonas", "Karl Jaspers", "Ernst Bloch", "Helmut Plessner"],
+    "answerIndex": 0,
+    "explanation": "Hans Jonas y défend une éthique tournée vers l'avenir et les générations futures, à l'ère de la puissance technologique. Son impératif de responsabilité a fortement marqué la pensée écologique contemporaine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel courant philosophique américain est associé à Charles S. Peirce et William James ?",
+    "choices": ["Le positivisme", "Le pragmatisme", "Le stoïcisme", "Le criticisme"],
+    "answerIndex": 1,
+    "explanation": "Le pragmatisme évalue les idées à leurs effets pratiques et à leurs conséquences vérifiables dans l'expérience. Il a profondément influencé la philosophie américaine, notamment avec John Dewey.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe américain a imaginé l'expérience de pensée de la « chambre chinoise » ?",
+    "choices": ["Hilary Putnam", "Daniel Dennett", "John Searle", "Saul Kripke"],
+    "answerIndex": 2,
+    "explanation": "John Searle propose en 1980 cette expérience de pensée pour critiquer l'idée qu'une machine manipulant des symboles comprendrait réellement ce qu'elle traite. Elle demeure une référence dans les débats sur l'intelligence artificielle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe français est l'auteur de La Mémoire, l'histoire, l'oubli (2000) ?",
+    "choices": ["Paul Ricœur", "Michel Henry", "Jean-Luc Marion", "Vladimir Jankélévitch"],
+    "answerIndex": 0,
+    "explanation": "Paul Ricœur y examine les rapports complexes entre souvenir, récit historique, oubli et pardon. L'ouvrage prolonge sa réflexion sur l'identité narrative, l'interprétation et la responsabilité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
   }
 ]

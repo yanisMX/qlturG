@@ -844,5 +844,59 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de La Divine Comédie ?",
+    "choices": ["Pétrarque", "Boccace", "Dante Alighieri", "L'Arioste"],
+    "answerIndex": 2,
+    "explanation": "Écrite au début du XIVe siècle, La Divine Comédie raconte le voyage de Dante à travers l'Enfer, le Purgatoire puis le Paradis. L'œuvre est un sommet de la littérature médiévale européenne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète chilien a écrit Vingt poèmes d'amour et une chanson désespérée ?",
+    "choices": ["Vicente Huidobro", "Pablo Neruda", "Octavio Paz", "César Vallejo"],
+    "answerIndex": 1,
+    "explanation": "Publié en 1924, ce recueil a révélé très tôt Pablo Neruda au grand public hispanophone. L'auteur recevra plus tard le prix Nobel de littérature en 1971.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel auteur argentin a écrit Fictions (1944) ?",
+    "choices": ["Julio Cortázar", "Jorge Luis Borges", "Ernesto Sabato", "Adolfo Bioy Casares"],
+    "answerIndex": 1,
+    "explanation": "Jorge Luis Borges y rassemble des nouvelles labyrinthiques, érudites et spéculatives qui ont profondément marqué la littérature mondiale du XXe siècle. Le livre contient notamment « La Bibliothèque de Babel » et « Le Jardin aux sentiers qui bifurquent ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman de Gabriel García Márquez, publié en 1967, est emblématique du réalisme magique ?",
+    "choices": ["Chronique d'une mort annoncée", "L'Amour aux temps du choléra", "Cent ans de solitude", "Le Général dans son labyrinthe"],
+    "answerIndex": 2,
+    "explanation": "Cent ans de solitude retrace l'histoire de la famille Buendía dans le village imaginaire de Macondo. Le roman a joué un rôle majeur dans le rayonnement mondial du « boom » latino-américain.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du roman Le Guépard ?",
+    "choices": ["Italo Calvino", "Giuseppe Tomasi di Lampedusa", "Alberto Moravia", "Umberto Eco"],
+    "answerIndex": 1,
+    "explanation": "Publié à titre posthume en 1958, Le Guépard décrit le déclin de l'aristocratie sicilienne au moment de l'unification italienne. Son adaptation par Luchino Visconti en 1963 a encore renforcé sa célébrité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain portugais, prix Nobel de littérature 1998, a écrit L'Aveuglement ?",
+    "choices": ["Fernando Pessoa", "Antonio Lobo Antunes", "José Saramago", "José Cardoso Pires"],
+    "answerIndex": 2,
+    "explanation": "José Saramago est l'un des grands noms de la littérature portugaise contemporaine. Dans L'Aveuglement, il imagine une épidémie de cécité blanche pour sonder la fragilité morale des sociétés humaines.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
   }
 ]

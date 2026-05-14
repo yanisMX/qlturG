@@ -1524,5 +1524,89 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "FACILE",
     "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi capétien est surnommé « Saint Louis » ?",
+    "choices": [
+      "Louis VII",
+      "Louis VIII",
+      "Louis IX",
+      "Louis XI"
+    ],
+    "answerIndex": 2,
+    "explanation": "Louis IX, canonisé en 1297, règne de 1226 à 1270. Il reste dans la mémoire française comme l'image du roi justicier et pieux, rendant la justice sous son chêne à Vincennes selon la tradition.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 732 vit Charles Martel repousser une armée omeyyade ?",
+    "choices": [
+      "La bataille de Poitiers",
+      "La bataille de Bouvines",
+      "La bataille de Tolbiac",
+      "La bataille d'Azincourt"
+    ],
+    "answerIndex": 0,
+    "explanation": "La bataille de Poitiers, souvent située entre Tours et Poitiers, voit Charles Martel arrêter une incursion venue d'al-Andalus. Elle a longtemps été présentée comme un moment décisif de l'histoire franque, même si son interprétation a beaucoup évolué chez les historiens.",
+    "period": "MOYEN_AGE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel explorateur français fonda Québec en 1608 ?",
+    "choices": [
+      "Jacques Cartier",
+      "Samuel de Champlain",
+      "René-Robert Cavelier de La Salle",
+      "Pierre Le Moyne d'Iberville"
+    ],
+    "answerIndex": 1,
+    "explanation": "Samuel de Champlain fonde Québec le 3 juillet 1608 et devient l'une des figures majeures de la Nouvelle-France. Il joue un rôle central dans l'exploration du Saint-Laurent et des Grands Lacs.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité signé en 1659 entre la France et l'Espagne mit fin à la guerre franco-espagnole ?",
+    "choices": [
+      "Le traité de Verdun",
+      "Le traité des Pyrénées",
+      "Le traité de Campo-Formio",
+      "Le traité de Tilsit"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le traité des Pyrénées, signé sur l'île des Faisans, consolide la puissance française sous Mazarin et prépare le mariage de Louis XIV avec l'infante Marie-Thérèse d'Autriche. Il fixe aussi durablement une partie de la frontière franco-espagnole.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel ministre de Louis XIV incarna le mercantilisme et réorganisa les finances du royaume ?",
+    "choices": [
+      "Louvois",
+      "Sully",
+      "Turgot",
+      "Colbert"
+    ],
+    "answerIndex": 3,
+    "explanation": "Jean-Baptiste Colbert renforce l'intervention de l'État dans l'économie, encourage les manufactures, la marine et le commerce colonial. Son nom est resté associé au « colbertisme », version française du mercantilisme.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi de France fut exécuté le 21 janvier 1793 pendant la Révolution française ?",
+    "choices": [
+      "Louis XV",
+      "Louis XVI",
+      "Charles X",
+      "Louis-Philippe"
+    ],
+    "answerIndex": 1,
+    "explanation": "Louis XVI est guillotiné sur la place de la Révolution, aujourd'hui place de la Concorde, après avoir été condamné par la Convention nationale. Son exécution marque une rupture majeure avec la monarchie de droit divin.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
   }
 ]
