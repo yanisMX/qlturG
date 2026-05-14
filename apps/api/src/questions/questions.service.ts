@@ -34,23 +34,67 @@ export class QuestionsService {
   }
 
   async getRandomByDifficulty(difficulty: Difficulty, count: number, topics: Topic[] = []) {
-    const all = await this.prisma.question.findMany({
-      where: {
-        ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
-        ...(topics.length > 0 && { topic: { in: topics } }),
-      },
-    });
-    return all.sort(() => Math.random() - 0.5).slice(0, count);
+    if (topics.length <= 1) {
+      const all = await this.prisma.question.findMany({
+        where: {
+          ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
+          ...(topics.length === 1 && { topic: topics[0] }),
+        },
+      });
+      return all.sort(() => Math.random() - 0.5).slice(0, count);
+    }
+
+    // Multiple topics: fetch proportionally from each to guarantee an even mix
+    const perTopic = Math.ceil(count / topics.length);
+    const buckets = await Promise.all(
+      topics.map(async (topic) => {
+        const all = await this.prisma.question.findMany({
+          where: {
+            ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
+            topic,
+          },
+        });
+        return all.sort(() => Math.random() - 0.5).slice(0, perTopic);
+      }),
+    );
+
+    return buckets.flat().sort(() => Math.random() - 0.5).slice(0, count);
   }
 
   async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = [], topics: Topic[] = []) {
-    const all = await this.prisma.question.findMany({
-      where: {
-        ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
-        ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
-        ...(topics.length > 0 && { topic: { in: topics } }),
-      },
-    });
-    return all.sort(() => Math.random() - 0.5);
+    if (topics.length <= 1) {
+      const all = await this.prisma.question.findMany({
+        where: {
+          ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
+          ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
+          ...(topics.length === 1 && { topic: topics[0] }),
+        },
+      });
+      return all.sort(() => Math.random() - 0.5);
+    }
+
+    // Multiple topics: fetch each separately and interleave to guarantee a balanced mix
+    const buckets = await Promise.all(
+      topics.map(async (topic) => {
+        const all = await this.prisma.question.findMany({
+          where: {
+            ...(difficulty !== ('VARIE' as Difficulty) && { difficulty }),
+            ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
+            topic,
+          },
+        });
+        return all.sort(() => Math.random() - 0.5);
+      }),
+    );
+
+    // Round-robin interleave so topics alternate rather than block together
+    const result: typeof buckets[0] = [];
+    const maxLen = Math.max(...buckets.map((b) => b.length));
+    for (let i = 0; i < maxLen; i++) {
+      for (const bucket of buckets) {
+        if (i < bucket.length) result.push(bucket[i]);
+      }
+    }
+    return result;
   }
 }
