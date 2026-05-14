@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import { api } from '../lib/api';
 
+const API_BASE = import.meta.env.VITE_API_URL as string;
+
 interface AvatarPickerProps {
   value: string | null;
   onChange: (url: string | null) => void;
@@ -42,7 +44,11 @@ export default function AvatarPicker({ value, onChange, disabled }: AvatarPicker
         title="Choisir un avatar"
       >
         {value ? (
-          <img src={value} alt="avatar" className="w-full h-full object-cover" />
+          <img
+            src={value.startsWith('/') ? `${API_BASE}${value}` : value}
+            alt="avatar"
+            className="w-full h-full object-cover"
+          />
         ) : (
           <span className="text-3xl select-none">👤</span>
         )}

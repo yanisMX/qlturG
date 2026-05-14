@@ -14,7 +14,8 @@ import {
 import { AuthGuard } from '@nestjs/passport';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
-import { extname } from 'path';
+import { extname, join } from 'path';
+import { mkdirSync } from 'fs';
 import { Request, Response } from 'express';
 import { AuthService } from './auth.service';
 import { LeaderboardService } from '../leaderboard/leaderboard.service';
@@ -64,7 +65,11 @@ export class AuthController {
   @UseInterceptors(
     FileInterceptor('avatar', {
       storage: diskStorage({
-        destination: './public/avatars',
+        destination: (_req, _file, cb) => {
+          const dir = join(process.cwd(), 'public', 'avatars');
+          mkdirSync(dir, { recursive: true });
+          cb(null, dir);
+        },
         filename: (_req, file, cb) => {
           const unique = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
           cb(null, `${unique}${extname(file.originalname)}`);
@@ -77,7 +82,7 @@ export class AuthController {
           cb(new BadRequestException('Format non supporté (jpg, png, webp uniquement)'), false);
         }
       },
-      limits: { fileSize: 2 * 1024 * 1024 },
+      limits: { fileSize: 20 * 1024 * 1024 },
     }),
   )
   async uploadAvatar(
