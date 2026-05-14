@@ -32,7 +32,7 @@ export default function HomePage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex flex-col items-center justify-center p-6" style={{ position: 'relative' }}>
+      <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12 sm:p-6 pb-safe" style={{ position: 'relative' }}>
 
         {/* Napoléon — côté gauche (desktop uniquement) */}
         <div
@@ -66,11 +66,11 @@ export default function HomePage() {
             {user ? (
               <Link
                 to="/profile"
-                className="flex items-center gap-2.5 rounded-full pl-1 pr-4 py-1 transition-all duration-base"
+                className="flex items-center gap-2 rounded-full pl-1 pr-3 sm:pr-4 py-1 transition-all duration-base"
                 style={{ backgroundColor: 'rgba(242,238,227,0.06)', border: '1px solid rgba(242,238,227,0.14)' }}
               >
-                <UserAvatar user={user} size={30} />
-                <span className="text-sm font-semibold max-w-[120px] truncate" style={{ color: '#F2EEE3' }}>
+                <UserAvatar user={user} size={28} />
+                <span className="text-sm font-semibold max-w-[80px] sm:max-w-[120px] truncate" style={{ color: '#F2EEE3' }}>
                   {user.pseudo}
                 </span>
               </Link>
@@ -91,10 +91,10 @@ export default function HomePage() {
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration.slow }}
-          className="text-center mb-10"
+          className="text-center mb-6 sm:mb-10"
         >
-          <div className="flex justify-center mb-6" style={{ animation: 'mascotFloat 5s ease-in-out infinite' }}>
-            <svg viewBox="0 0 320 320" width="160" height="160" aria-label="Qltur G — icône principale">
+          <div className="flex justify-center mb-4 sm:mb-6" style={{ animation: 'mascotFloat 5s ease-in-out infinite' }}>
+            <svg viewBox="0 0 320 320" className="w-28 h-28 sm:w-40 sm:h-40" aria-label="Qltur G — icône principale">
               <rect x="10" y="10" width="300" height="300" rx="60" fill="rgba(245,199,107,0.10)" stroke="rgba(245,199,107,0.35)" strokeWidth="1.5"/>
               <text x="160" y="178" textAnchor="middle" dominantBaseline="central"
                 fontFamily="Space Grotesk, system-ui, sans-serif" fontWeight="700" fontSize="176"
@@ -107,17 +107,17 @@ export default function HomePage() {
           </div>
 
           <h1
-            className="text-5xl sm:text-6xl font-extrabold tracking-tight mb-2"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-2"
             style={{ fontFamily: 'Space Grotesk, system-ui, sans-serif', letterSpacing: '-0.03em', color: '#F2EEE3' }}
           >
             Qltur <span style={{ color: '#F5C76B' }}>G</span>
           </h1>
 
-          <p style={{ color: '#7A7F9B', fontFamily: '"Geist Mono", monospace', fontSize: '11px', letterSpacing: '0.16em', textTransform: 'uppercase' }} className="mb-4">
+          <p style={{ color: '#7A7F9B', fontFamily: '"Geist Mono", monospace', fontSize: '11px', letterSpacing: '0.16em', textTransform: 'uppercase' }} className="mb-3 sm:mb-4">
             Quiz · Histoire · Multi
           </p>
 
-          <p style={{ color: '#B4B7CC' }} className="text-base max-w-sm mx-auto leading-relaxed">
+          <p style={{ color: '#B4B7CC' }} className="text-sm sm:text-base max-w-xs sm:max-w-sm mx-auto leading-relaxed">
             Un quiz multijoueur où chaque partie devient un quartier général d'amis.
           </p>
         </motion.div>

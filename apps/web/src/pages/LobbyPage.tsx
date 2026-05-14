@@ -103,7 +103,7 @@ export default function LobbyPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 pb-16">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 pb-20">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -121,19 +121,19 @@ export default function LobbyPage() {
               </h1>
 
               {/* Invite link */}
-              <div className="flex gap-2">
+              <div className="flex gap-2 min-w-0">
                 <input
                   ref={linkInputRef}
                   readOnly
                   value={inviteLink}
                   onFocus={(e) => e.target.select()}
-                  className="input-field flex-1 text-xs py-2 font-mono"
+                  className="input-field flex-1 min-w-0 text-xs py-2 font-mono"
                   style={{ color: '#7A7F9B' }}
                 />
                 <motion.button
                   whileTap={{ scale: 0.97 }}
                   onClick={handleCopy}
-                  className="btn-secondary shrink-0 text-sm py-2 px-4"
+                  className="btn-secondary shrink-0 text-sm py-2 px-3 sm:px-4"
                   style={copied ? { color: '#F5C76B', borderColor: 'rgba(245,199,107,0.4)', backgroundColor: 'rgba(245,199,107,0.08)' } : {}}
                 >
                   <AnimatePresence mode="wait">
@@ -230,7 +230,7 @@ export default function LobbyPage() {
         </motion.div>
 
         {/* Chronological ticker — bottom */}
-        <div className="fixed bottom-0 left-0 right-0 py-2.5 pointer-events-none" style={{ borderTop: '1px solid rgba(242,238,227,0.06)' }}>
+        <div className="fixed bottom-0 left-0 right-0 pb-safe pointer-events-none px-safe" style={{ borderTop: '1px solid rgba(242,238,227,0.06)', paddingTop: '0.625rem' }}>
           <div className="ticker-wrap">
             <div className="ticker-track">
               {tickerDates.map((date, i) => (

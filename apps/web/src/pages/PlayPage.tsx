@@ -148,34 +148,34 @@ export default function PlayPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen p-4 md:p-8">
+      <div className="min-h-screen p-3 sm:p-4 md:p-8 pb-safe">
         <div className="max-w-5xl mx-auto">
           <div className="md:flex md:gap-6 md:items-start">
             {/* Main game area */}
-            <div className="flex-1 min-w-0 space-y-4">
+            <div className="flex-1 min-w-0 space-y-3 sm:space-y-4">
               {/* Header row */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full font-mono" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+                  <span className="text-xs font-semibold px-2 sm:px-3 py-1 rounded-full font-mono shrink-0" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
                     {isSurvival
-                      ? `Question ${currentQuestion.index + 1}`
-                      : `Question ${currentQuestion.index + 1} / ${currentQuestion.total}`
+                      ? `Q${currentQuestion.index + 1}`
+                      : `${currentQuestion.index + 1}/${currentQuestion.total}`
                     }
                   </span>
                   <motion.button
                     whileTap={{ scale: 0.95 }}
-                    className="text-xs font-semibold rounded-lg px-2.5 py-1 transition-colors font-mono"
+                    className="text-xs font-semibold rounded-lg px-2 py-1 transition-colors font-mono shrink-0"
                     style={{ color: '#FF6B5B', border: '1px solid rgba(255,107,91,0.25)', backgroundColor: 'rgba(255,107,91,0.06)' }}
                     onClick={() => setShowQuitConfirm(true)}
                   >
-                    ✕ Quitter
+                    ✕ <span className="hidden sm:inline">Quitter</span>
                   </motion.button>
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 sm:gap-3 shrink-0">
                   {/* Lives — survival mode */}
                   {isSurvival && (
-                    <div className="flex gap-1">
+                    <div className="flex gap-0.5 sm:gap-1">
                       {Array.from({ length: 3 }).map((_, i) => (
                         <motion.span
                           key={i}
@@ -193,7 +193,7 @@ export default function PlayPage() {
                   {isHost && reveal && (
                     <motion.button
                       whileTap={{ scale: 0.97 }}
-                      className="text-xs font-semibold rounded-lg px-3 py-1.5 transition-colors"
+                      className="text-xs font-semibold rounded-lg px-2 sm:px-3 py-1.5 transition-colors"
                       style={{ color: '#F5C76B', border: '1px solid rgba(245,199,107,0.3)', backgroundColor: 'rgba(245,199,107,0.08)' }}
                       onClick={() => {
                         const socket = getSocket();
@@ -301,12 +301,12 @@ export default function PlayPage() {
                 </AnimatePresence>
               </motion.div>
 
-              {/* Mobile scoreboard */}
-              <div className="md:hidden">{scoreboardPanel(true)}</div>
+              {/* Mobile scoreboard (hidden on sm+ where side panel shows) */}
+              <div className="sm:hidden">{scoreboardPanel(true)}</div>
             </div>
 
             {/* Desktop side scoreboard */}
-            <div className="hidden md:block w-72 shrink-0 sticky top-8">
+            <div className="hidden sm:block w-64 md:w-72 shrink-0 sticky top-8">
               {scoreboardPanel(false)}
             </div>
           </div>

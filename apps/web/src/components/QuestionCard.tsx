@@ -58,14 +58,13 @@ export default function QuestionCard({
         initial={{ opacity: 0, y: shouldReduce ? 0 : -6 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: duration.base }}
-        className="text-xl font-semibold leading-snug"
+        className="text-base sm:text-xl font-semibold leading-snug"
         style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}
       >
         {text}
       </motion.h2>
 
-      {/* 2×2 grid on desktop, single column on mobile */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
         {choices.map((choice, i) => {
           const c = CHOICE_COLORS[i];
           const isSelected = selectedIndex === i;
