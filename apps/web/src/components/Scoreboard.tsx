@@ -14,7 +14,6 @@ interface ScoreboardProps {
 export default function Scoreboard({
   players,
   myPlayerId,
-  compact = false,
   revealScores,
   showLives = false,
   onKick,
