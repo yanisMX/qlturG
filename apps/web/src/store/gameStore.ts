@@ -22,6 +22,7 @@ export interface Question {
   startsAt: string;
   endsAt: string;
   isDoublePoints?: boolean;
+  topic?: string;
 }
 
 export interface RevealData {

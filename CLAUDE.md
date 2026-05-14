@@ -176,7 +176,7 @@ La bonne réponse (`answerIndex`) n'est JAMAIS transmise avant `game:reveal`.
 | `game:player-left` | `{ playerId }` |
 | `game:kicked` | — (envoyé au joueur expulsé) |
 | `game:loading` | — (chargement avant la 1re question) |
-| `game:question` | `{ index, total, text, choices[], startsAt, endsAt, isDoublePoints? }` |
+| `game:question` | `{ index, total, text, choices[], startsAt, endsAt, isDoublePoints?, topic }` |
 | `game:reveal` | `{ answerIndex, explanation, scores[] }` |
 | `game:finished` | `{ ranking[] }` |
 | `game:error` | `{ message }` |

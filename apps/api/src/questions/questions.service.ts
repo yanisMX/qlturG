@@ -44,8 +44,11 @@ export class QuestionsService {
       return all.sort(() => Math.random() - 0.5).slice(0, count);
     }
 
-    // Multiple topics: fetch proportionally from each to guarantee an even mix
-    const perTopic = Math.ceil(count / topics.length);
+    // Multiple topics: guarantee each topic contributes at least floor(count/N) questions,
+    // then fill remaining slots from leftover questions across all topics.
+    const base = Math.floor(count / topics.length);
+    const extra = count % topics.length;
+
     const buckets = await Promise.all(
       topics.map(async (topic) => {
         const all = await this.prisma.question.findMany({
@@ -54,11 +57,15 @@ export class QuestionsService {
             topic,
           },
         });
-        return all.sort(() => Math.random() - 0.5).slice(0, perTopic);
+        return all.sort(() => Math.random() - 0.5);
       }),
     );
 
-    return buckets.flat().sort(() => Math.random() - 0.5).slice(0, count);
+    const guaranteed = buckets.flatMap((b) => b.slice(0, base));
+    const leftovers = buckets.flatMap((b) => b.slice(base));
+    const extras = leftovers.sort(() => Math.random() - 0.5).slice(0, extra);
+
+    return [...guaranteed, ...extras].sort(() => Math.random() - 0.5);
   }
 
   async getAllByDifficulty(difficulty: Difficulty, excludeIds: string[] = [], topics: Topic[] = []) {
