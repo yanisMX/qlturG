@@ -13,9 +13,12 @@
     "scrape": "node scripts/scrape-questions.js",
     "import-questions": "node scripts/import-questions.js",
     "import-questions:dry": "node scripts/import-questions.js --dry-run",
-    "import-questions:replace": "node scripts/import-questions.js --clear"
+    "import-questions:replace": "node scripts/import-questions.js --clear",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
   },
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
     "concurrently": "^8.2.2",
     "playwright": "^1.60.0"
   },

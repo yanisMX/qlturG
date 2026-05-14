@@ -77,6 +77,7 @@ export default function QuestionCard({
           return (
             <motion.button
               key={i}
+              data-testid="choice-btn"
               initial={shouldReduce ? { opacity: 1 } : { opacity: 0, y: 10 }}
               animate={{ opacity: isDimmed ? 0.45 : 1, y: 0 }}
               transition={{ duration: duration.base, delay: i * 0.07 }}
