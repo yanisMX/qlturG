@@ -220,7 +220,7 @@ export default function ProfilePage() {
                   ))}
                 </div>
                 <p className="text-xs mt-1.5 font-mono" style={{ color: '#7A7F9B' }}>
-                  Ou uploadez une image via le bouton ✎ ci-dessus (jpg, png, webp — max 2 Mo)
+                  Ou uploadez une image via le bouton ✎ ci-dessus (jpg, png, webp — max 20 Mo)
                 </p>
               </div>
 

@@ -15,7 +15,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const MAX_BYTES = 10 * 1024 * 1024; // 10 MB — iPhone JPEG exports can reach 8 MB
+const MAX_BYTES = 20 * 1024 * 1024; // 20 MB
 
 @Controller('upload')
 export class UploadController {

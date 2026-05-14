@@ -39,9 +39,9 @@ test.describe('Avatar upload — POST /upload/avatar', () => {
     expect(body.message).toMatch(/image/i);
   });
 
-  test('rejects files over 10 MB with 413', async ({ request }) => {
-    // Build a buffer just over 10 MB (10.1 MB of zeros)
-    const big = Buffer.alloc(10.1 * 1024 * 1024, 0);
+  test('rejects files over 20 MB with 413', async ({ request }) => {
+    // Build a buffer just over 20 MB (20.1 MB of zeros)
+    const big = Buffer.alloc(20.1 * 1024 * 1024, 0);
     const res = await request.post(`${API}/upload/avatar`, {
       multipart: {
         avatar: {
