@@ -84,11 +84,9 @@ export default function Scoreboard({
                 </span>
               )}
 
-              {!compact && (
-                <span className="text-sm font-bold tabular-nums font-mono" style={{ color: '#F5C76B' }}>
-                  {player.score.toLocaleString()}
-                </span>
-              )}
+              <span className="text-sm font-bold tabular-nums font-mono" style={{ color: '#F5C76B' }}>
+                {player.score.toLocaleString()}
+              </span>
 
               {delta !== undefined && delta > 0 && (
                 <motion.span
