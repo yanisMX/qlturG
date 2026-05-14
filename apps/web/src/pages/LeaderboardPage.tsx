@@ -164,7 +164,7 @@ export default function LeaderboardPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen p-4 md:p-8">
+      <div className="min-h-screen p-4 md:p-8 pb-safe">
         <div className="max-w-2xl mx-auto space-y-6">
 
           {/* Header */}

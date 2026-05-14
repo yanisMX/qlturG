@@ -122,9 +122,9 @@ export default function ResultsPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen p-6 flex flex-col items-center" style={{ position: 'relative' }}>
+      <div className="min-h-screen px-4 py-6 sm:p-6 pb-safe flex flex-col items-center" style={{ position: 'relative' }}>
         {isWinner && <ConfettiRain />}
-        <div className="w-full max-w-lg space-y-6 mt-8">
+        <div className="w-full max-w-lg space-y-4 sm:space-y-6 mt-4 sm:mt-8">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: -16 }}

@@ -29,13 +29,13 @@ export default function Podium({ ranking }: PodiumProps) {
   const ordered = [second, first, third];
 
   return (
-    <div className="flex items-end justify-center gap-2">
+    <div className="flex items-end justify-center gap-1 sm:gap-2 w-full">
       {ordered.map((entry, i) => {
         const cfg = BAR_CONFIG[i];
 
         if (!entry) {
           return (
-            <div key={i} className="w-28 flex flex-col items-center" style={{ marginBottom: 0 }}>
+            <div key={i} className="flex-1 min-w-0 max-w-[7rem] flex flex-col items-center" style={{ marginBottom: 0 }}>
               <div
                 className="w-full rounded-t-xl opacity-20"
                 style={{
@@ -52,7 +52,7 @@ export default function Podium({ ranking }: PodiumProps) {
         const avatarBg = avatarColor(entry.nickname);
 
         return (
-          <div key={entry.playerId} className="w-28 flex flex-col items-center gap-1">
+          <div key={entry.playerId} className="flex-1 min-w-0 max-w-[7rem] flex flex-col items-center gap-1">
             {/* Medal */}
             <motion.span
               initial={{ opacity: 0, scale: 0, rotate: -30 }}

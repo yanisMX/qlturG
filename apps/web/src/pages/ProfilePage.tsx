@@ -127,7 +127,7 @@ export default function ProfilePage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex items-center justify-center p-6">
+      <div className="min-h-screen flex items-center justify-center px-4 py-8 sm:p-6 pb-safe">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -220,7 +220,7 @@ export default function ProfilePage() {
                   ))}
                 </div>
                 <p className="text-xs mt-1.5 font-mono" style={{ color: '#7A7F9B' }}>
-                  Ou uploadez une image via le bouton ✎ ci-dessus (jpg, png, webp — max 2 Mo)
+                  Ou uploadez une image via le bouton ✎ ci-dessus (jpg, png, webp — max 20 Mo)
                 </p>
               </div>
 

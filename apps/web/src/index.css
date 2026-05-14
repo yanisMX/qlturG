@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  * {
+  *, *::before, *::after {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    overscroll-behavior-y: contain;
   }
 
   body {
@@ -13,6 +18,7 @@
     font-family: 'Geist', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {
@@ -91,8 +97,11 @@
     background-color: #131A3A;
     border-radius: 14px;
     border: 1px solid rgba(242, 238, 227, 0.10);
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.35);
+  }
+  @media (min-width: 480px) {
+    .card { padding: 1.5rem; }
   }
 
   .input-field {
@@ -149,6 +158,21 @@
     background-color: rgba(245, 199, 107, 0.08) !important;
   }
 
+  /* Safe-area utilities for notched iPhones */
+  .pb-safe {
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+  .pt-safe {
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+  }
+  .px-safe {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  .mb-safe {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+
   /* Ticker for lobby background */
   .ticker-wrap {
     overflow: hidden;
@@ -160,6 +184,16 @@
     display: inline-block;
     animation: tickerScroll 28s linear infinite;
   }
+}
+
+@keyframes tickerScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes mascotFloat {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%       { transform: translateY(-4px) rotate(2deg); }
 }
 
 @keyframes confettiRain {
