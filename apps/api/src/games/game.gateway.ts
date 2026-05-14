@@ -6,12 +6,40 @@ import {
   MessageBody,
   OnGatewayDisconnect,
 } from '@nestjs/websockets';
+import { IsString, MinLength, MaxLength, Matches, IsInt, Min, Max } from 'class-validator';
 import { Server, Socket } from 'socket.io';
 import { JwtService } from '@nestjs/jwt';
 import { GameService } from './game.service';
 import { QuestionsService } from '../questions/questions.service';
 import { LeaderboardService } from '../leaderboard/leaderboard.service';
 import { Game, Question, Round } from '@prisma/client';
+
+class JoinGameWsDto {
+  @IsString()
+  @MinLength(6)
+  @MaxLength(6)
+  code!: string;
+
+  @IsString()
+  @MinLength(2)
+  @MaxLength(20)
+  @Matches(/^[\w\-\s àâäéèêëïîôùûüçÀÂÄÉÈÊËÏÎÔÙÛÜÇ]+$/, {
+    message: 'nickname contains invalid characters',
+  })
+  nickname!: string;
+}
+
+class AnswerWsDto {
+  @IsInt()
+  @Min(0)
+  @Max(9)
+  choiceIndex!: number;
+}
+
+class KickWsDto {
+  @IsString()
+  playerId!: string;
+}
 
 interface SessionData {
   playerId: string;
@@ -32,7 +60,13 @@ interface ActiveRoundData {
 const REVEAL_DURATION_MS = 4_000;
 const LOADING_DURATION_MS = 2_000;
 
-@WebSocketGateway({ namespace: '/game', cors: { origin: '*' } })
+@WebSocketGateway({
+  namespace: '/game',
+  cors: {
+    origin: (process.env.CORS_ORIGIN ?? 'http://localhost:5173').split(',').map((o) => o.trim()),
+    credentials: true,
+  },
+})
 export class GameGateway implements OnGatewayDisconnect {
   @WebSocketServer()
   server!: Server;
@@ -41,6 +75,7 @@ export class GameGateway implements OnGatewayDisconnect {
   private roundTimers = new Map<string, ReturnType<typeof setTimeout>>();
   private activeRounds = new Map<string, ActiveRoundData>();
   private answerStreaks = new Map<string, number>(); // playerId → consecutive correct answers
+  private answeredPlayers = new Map<string, Set<string>>(); // roundId → Set<playerId>
 
   constructor(
     private readonly gameService: GameService,
@@ -73,7 +108,7 @@ export class GameGateway implements OnGatewayDisconnect {
   @SubscribeMessage('game:join')
   async handleJoin(
     @ConnectedSocket() client: Socket,
-    @MessageBody() data: { code: string; nickname: string },
+    @MessageBody() data: JoinGameWsDto,
   ) {
     try {
       // Optionally identify the player via JWT from socket handshake
@@ -155,7 +190,7 @@ export class GameGateway implements OnGatewayDisconnect {
   @SubscribeMessage('game:kick')
   async handleKick(
     @ConnectedSocket() client: Socket,
-    @MessageBody() data: { playerId: string },
+    @MessageBody() data: KickWsDto,
   ) {
     const session = this.sessions.get(client.id);
     if (!session?.isHost) {
@@ -324,13 +359,31 @@ export class GameGateway implements OnGatewayDisconnect {
   @SubscribeMessage('game:answer')
   async handleAnswer(
     @ConnectedSocket() client: Socket,
-    @MessageBody() data: { choiceIndex: number },
+    @MessageBody() data: AnswerWsDto,
   ) {
     const session = this.sessions.get(client.id);
     if (!session) return;
 
     const activeRound = this.activeRounds.get(session.gameId);
     if (!activeRound) return;
+
+    // Hard cap: primary enforcement is triggerReveal clearing activeRounds;
+    // this catches anomalous replays sent well after the round ended
+    if (Date.now() > activeRound.startedAt.getTime() + 30_000) {
+      client.emit('game:error', { message: 'Réponse trop tardive' });
+      return;
+    }
+
+    // Reject out-of-range choiceIndex
+    if (data.choiceIndex < 0 || data.choiceIndex >= activeRound.question.choices.length) {
+      client.emit('game:error', { message: 'Index de réponse invalide' });
+      return;
+    }
+
+    // Prevent duplicate answers (one answer per player per round)
+    const answered = this.answeredPlayers.get(activeRound.round.id);
+    if (answered?.has(session.playerId)) return;
+    answered?.add(session.playerId);
 
     try {
       const game = await this.gameService.getGameWithPlayers(session.gameId);
@@ -445,6 +498,7 @@ export class GameGateway implements OnGatewayDisconnect {
       allQuestions,
       isDoublePoints,
     });
+    this.answeredPlayers.set(round.id, new Set());
 
     this.server.to(`game:${gameId}`).emit('game:question', {
       index,
@@ -470,6 +524,7 @@ export class GameGateway implements OnGatewayDisconnect {
     const activeRound = this.activeRounds.get(gameId);
     if (!activeRound) return;
     this.activeRounds.delete(gameId);
+    this.answeredPlayers.delete(activeRound.round.id);
 
     // Survival: decrement lives for players who didn't answer
     const game = await this.gameService.getGameWithPlayers(gameId);
