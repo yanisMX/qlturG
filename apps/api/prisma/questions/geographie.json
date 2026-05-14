@@ -268,5 +268,473 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale du Canada ?",
+    "choices": ["Toronto", "Montréal", "Ottawa", "Vancouver"],
+    "answerIndex": 2,
+    "explanation": "Ottawa a été choisie en 1857 par la reine Victoria comme compromis entre Toronto et Montréal. La ville se trouve en Ontario, sur la rivière des Outaouais.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve traverse l'Égypte du sud au nord ?",
+    "choices": ["Le Niger", "Le Congo", "Le Nil", "Le Zambèze"],
+    "answerIndex": 2,
+    "explanation": "Le Nil est l'axe vital de l'Égypte depuis l'Antiquité. Long de plus de 6 600 km, il se jette dans la Méditerranée en formant un vaste delta.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le plus grand désert chaud du monde ?",
+    "choices": ["Le désert d'Arabie", "Le Sahara", "Le Kalahari", "Le désert de Gobi"],
+    "answerIndex": 1,
+    "explanation": "Le Sahara s'étend sur environ 9 millions de km² à travers l'Afrique du Nord. Il couvre une superficie comparable à celle des États-Unis.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Argentine ?",
+    "choices": ["Cordoba", "Buenos Aires", "Montevideo", "Rosario"],
+    "answerIndex": 1,
+    "explanation": "Buenos Aires, fondée définitivement en 1580, est la principale métropole du pays et l'un des plus grands ports d'Amérique du Sud. Son nom signifie littéralement « bons airs ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays partage la plus longue frontière terrestre avec les États-Unis ?",
+    "choices": ["Le Mexique", "Le Canada", "La Russie", "Le Groenland"],
+    "answerIndex": 1,
+    "explanation": "La frontière entre les États-Unis et le Canada s'étend sur près de 8 900 km en incluant l'Alaska. C'est la plus longue frontière bilatérale du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel volcan au cône presque parfait domine l'île d'Honshu et symbolise le Japon ?",
+    "choices": ["Le mont Aso", "Le mont Fuji", "Le mont Kirishima", "Le mont Ontake"],
+    "answerIndex": 1,
+    "explanation": "Le mont Fuji culmine à 3 776 mètres et constitue le point culminant du Japon. Ce volcan est un symbole culturel majeur, souvent représenté dans l'art japonais.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel isthme relie l'Amérique du Nord à l'Amérique du Sud ?",
+    "choices": ["L'isthme de Corinthe", "L'isthme de Panama", "L'isthme de Suez", "L'isthme de Kertch"],
+    "answerIndex": 1,
+    "explanation": "L'isthme de Panama relie les deux masses continentales américaines. Il est traversé depuis 1914 par le canal de Panama, voie maritime essentielle entre Atlantique et Pacifique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel archipel portugais est situé dans l'Atlantique Nord, à l'ouest de Lisbonne ?",
+    "choices": ["Les Baléares", "Madère", "Les Açores", "Les Canaries"],
+    "answerIndex": 2,
+    "explanation": "Les Açores forment un archipel volcanique portugais situé au milieu de l'Atlantique Nord. Leur position en a fait un point d'appui stratégique pour les liaisons transatlantiques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel lac partagé par le Pérou et la Bolivie est le plus haut lac navigable du monde ?",
+    "choices": ["Le lac Poopó", "Le lac Titicaca", "Le lac Maracaibo", "Le lac Atitlán"],
+    "answerIndex": 1,
+    "explanation": "Situé à plus de 3 800 mètres d'altitude dans les Andes, le Titicaca est le plus haut lac navigable du monde. Il joue un rôle central dans les cultures andines depuis l'époque précolombienne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer intérieure très salée borde à la fois la Jordanie, Israël et la Cisjordanie ?",
+    "choices": ["La mer Caspienne", "La mer Morte", "La mer d'Aral", "La mer Noire"],
+    "answerIndex": 1,
+    "explanation": "La mer Morte est en réalité un lac endoréique particulièrement salé, situé à plus de 400 mètres sous le niveau de la mer. C'est l'un des points les plus bas de la surface terrestre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale du Brésil ?",
+    "choices": ["Rio de Janeiro", "Sao Paulo", "Brasilia", "Salvador"],
+    "answerIndex": 2,
+    "explanation": "Brasilia est devenue la capitale du Brésil en 1960 afin de favoriser le développement de l'intérieur du pays. La ville a été conçue selon un plan moderniste par l'urbaniste Lucio Costa et l'architecte Oscar Niemeyer.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le plus vaste océan du monde ?",
+    "choices": ["L'océan Atlantique", "L'océan Indien", "L'océan Pacifique", "L'océan Arctique"],
+    "answerIndex": 2,
+    "explanation": "Le Pacifique couvre environ un tiers de la surface de la Terre. Il s'étend de l'Asie et de l'Océanie jusqu'aux Amériques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve traverse Paris ?",
+    "choices": ["La Loire", "La Seine", "Le Rhône", "La Meuse"],
+    "answerIndex": 1,
+    "explanation": "La Seine traverse Paris d'est en ouest et structure l'histoire urbaine de la capitale. Elle mesure environ 777 km entre sa source en Bourgogne et son estuaire au Havre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale du Japon ?",
+    "choices": ["Kyoto", "Osaka", "Tokyo", "Sapporo"],
+    "answerIndex": 2,
+    "explanation": "Tokyo est la capitale du Japon depuis 1868, lorsque l'empereur quitta Kyoto pour l'ancienne ville d'Edo. L'aire métropolitaine de Tokyo est l'une des plus peuplées du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle chaîne de montagnes longe la façade ouest de l'Amérique du Sud ?",
+    "choices": ["Les Rocheuses", "Les Andes", "Les Alpes", "Les Carpates"],
+    "answerIndex": 1,
+    "explanation": "Les Andes s'étendent sur plus de 7000 km du Venezuela au Chili. C'est la plus longue chaîne de montagnes continentale du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Allemagne ?",
+    "choices": ["Munich", "Hambourg", "Berlin", "Francfort"],
+    "answerIndex": 2,
+    "explanation": "Berlin est la capitale allemande depuis la réunification de 1990. Divisée pendant la guerre froide, elle a retrouvé son rôle de centre politique du pays après la chute du mur en 1989.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel continent est le plus peuplé au monde ?",
+    "choices": ["L'Europe", "L'Afrique", "L'Asie", "L'Amérique du Nord"],
+    "answerIndex": 2,
+    "explanation": "L'Asie rassemble environ 60 % de la population mondiale. Elle abrite les deux pays les plus peuplés de la planète, l'Inde et la Chine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale du Maroc ?",
+    "choices": ["Casablanca", "Marrakech", "Rabat", "Fès"],
+    "answerIndex": 2,
+    "explanation": "Rabat est la capitale politique et administrative du Maroc. Casablanca est en revanche la principale métropole économique du pays.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel désert s'étend entre la Mongolie et la Chine ?",
+    "choices": ["Le Sahara", "Le désert du Kalahari", "Le désert de Gobi", "Le désert d'Arabie"],
+    "answerIndex": 2,
+    "explanation": "Le désert de Gobi couvre de vastes régions arides d'Asie orientale. Il est réputé pour ses amplitudes thermiques extrêmes et ses importantes découvertes paléontologiques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle grande île se trouve au large de la côte sud-est de l'Afrique ?",
+    "choices": ["La Sicile", "Madagascar", "La Réunion", "Sri Lanka"],
+    "answerIndex": 1,
+    "explanation": "Madagascar est la quatrième plus grande île du monde. Son isolement ancien explique une biodiversité exceptionnelle, avec de nombreuses espèces endémiques comme les lémuriens.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale du Portugal ?",
+    "choices": ["Porto", "Lisbonne", "Coimbra", "Braga"],
+    "answerIndex": 1,
+    "explanation": "Lisbonne est bâtie sur les rives du Tage, près de son estuaire atlantique. La ville fut l'un des grands centres des explorations maritimes portugaises aux XVe et XVIe siècles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel océan borde la côte est des États-Unis ?",
+    "choices": ["L'océan Pacifique", "L'océan Indien", "L'océan Atlantique", "L'océan Arctique"],
+    "answerIndex": 2,
+    "explanation": "La façade orientale des États-Unis donne sur l'Atlantique, de la Floride au Maine. C'est là que se concentrent plusieurs des plus anciennes grandes villes du pays, comme New York, Boston ou Philadelphie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de la Grèce ?",
+    "choices": ["Thessalonique", "Athènes", "Patras", "Héraklion"],
+    "answerIndex": 1,
+    "explanation": "Athènes est l'une des plus anciennes villes d'Europe encore habitées. Elle fut le centre politique, intellectuel et artistique du monde grec classique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Dans quel hémisphère se situe l'Antarctique ?",
+    "choices": ["L'hémisphère nord", "L'hémisphère sud", "Les deux à la fois", "Aucun des deux"],
+    "answerIndex": 1,
+    "explanation": "L'Antarctique entoure le pôle Sud et se situe entièrement dans l'hémisphère sud. Ce continent est recouvert d'une immense calotte glaciaire qui contient la majeure partie de la glace terrestre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer sépare l'Italie de la côte occidentale des Balkans ?",
+    "choices": ["La mer Égée", "La mer Adriatique", "La mer Noire", "La mer Tyrrhénienne"],
+    "answerIndex": 1,
+    "explanation": "La mer Adriatique s'étend entre la péninsule italienne et les Balkans. Venise, Trieste, Split et Dubrovnik figurent parmi ses villes les plus connues.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le plus long fleuve d'Amérique du Sud ?",
+    "choices": ["L'Orénoque", "Le Paraná", "L'Amazone", "Le São Francisco"],
+    "answerIndex": 2,
+    "explanation": "L'Amazone est généralement considéré comme le plus long fleuve d'Amérique du Sud et le plus puissant du monde par son débit. Son bassin couvre une grande partie du nord du continent.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la plus grande île du monde ?",
+    "choices": ["Madagascar", "Bornéo", "Le Groenland", "La Nouvelle-Guinée"],
+    "answerIndex": 2,
+    "explanation": "Le Groenland couvre plus de 2,1 millions de km². Bien qu'il soit géographiquement rattaché à l'Amérique du Nord, il constitue un territoire autonome du royaume du Danemark.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel détroit sépare l'Alaska de la Sibérie ?",
+    "choices": ["Le détroit de Béring", "Le détroit de Gibraltar", "Le détroit d'Ormuz", "Le détroit de Malacca"],
+    "answerIndex": 0,
+    "explanation": "Le détroit de Béring sépare l'Asie et l'Amérique du Nord. Il doit son nom à l'explorateur Vitus Béring et n'est large que d'environ 85 km à son point le plus étroit.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays entièrement enclavé est entouré par l'Afrique du Sud ?",
+    "choices": ["L'Eswatini", "Le Lesotho", "Le Botswana", "La Namibie"],
+    "answerIndex": 1,
+    "explanation": "Le Lesotho est un État enclavé au cœur de l'Afrique du Sud. Son territoire montagneux est presque entièrement situé à plus de 1000 mètres d'altitude.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel sommet andin est le point culminant de l'Amérique du Sud ?",
+    "choices": ["Le Chimborazo", "L'Huascarán", "L'Aconcagua", "L'Illimani"],
+    "answerIndex": 2,
+    "explanation": "L'Aconcagua, situé en Argentine, culmine à 6961 mètres. C'est le plus haut sommet du monde en dehors de l'Asie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le plus grand lac d'Afrique par superficie ?",
+    "choices": ["Le lac Tchad", "Le lac Tanganyika", "Le lac Malawi", "Le lac Victoria"],
+    "answerIndex": 3,
+    "explanation": "Le lac Victoria est partagé entre l'Ouganda, la Tanzanie et le Kenya. C'est aussi le plus grand lac tropical du monde par sa superficie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve traverse Bagdad ?",
+    "choices": ["L'Euphrate", "Le Tigre", "Le Jourdain", "L'Indus"],
+    "answerIndex": 1,
+    "explanation": "Bagdad est bâtie sur les rives du Tigre, l'un des deux grands fleuves de la Mésopotamie. L'autre grand fleuve de la région est l'Euphrate.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle ville turque est située à cheval sur l'Europe et l'Asie, de part et d'autre du Bosphore ?",
+    "choices": ["Ankara", "Istanbul", "Izmir", "Bursa"],
+    "answerIndex": 1,
+    "explanation": "Istanbul s'étend des deux côtés du Bosphore, détroit reliant la mer Noire à la mer de Marmara. Ancienne Byzance puis Constantinople, elle occupe une position stratégique majeure.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays de l'Union européenne est le plus peuplé ?",
+    "choices": ["La France", "L'Italie", "L'Espagne", "L'Allemagne"],
+    "answerIndex": 3,
+    "explanation": "L'Allemagne compte plus de 80 millions d'habitants, ce qui en fait l'État membre le plus peuplé de l'Union européenne. Elle est aussi la première économie du bloc européen.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel archipel espagnol se situe au large des côtes marocaines dans l'Atlantique ?",
+    "choices": ["Les Baléares", "Les Canaries", "Les Açores", "Madère"],
+    "answerIndex": 1,
+    "explanation": "Les Canaries appartiennent à l'Espagne mais se trouvent au large du nord-ouest de l'Afrique. Leur origine volcanique et leur climat doux en font une destination touristique majeure.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer borde Saint-Pétersbourg ?",
+    "choices": ["La mer Baltique", "La mer Blanche", "La mer Noire", "La mer de Barents"],
+    "answerIndex": 0,
+    "explanation": "Saint-Pétersbourg est bâtie sur le delta de la Neva, au fond du golfe de Finlande, qui appartient à la mer Baltique. Cette ouverture maritime était essentielle dans le projet européen de Pierre le Grand.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle province canadienne est la plus peuplée ?",
+    "choices": ["Le Québec", "L'Ontario", "La Colombie-Britannique", "L'Alberta"],
+    "answerIndex": 1,
+    "explanation": "L'Ontario est la province la plus peuplée du Canada, notamment grâce à l'agglomération de Toronto. Ottawa, la capitale fédérale, se situe également dans cette province.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer intérieure borde l'Iran au nord ?",
+    "choices": ["La mer Rouge", "La mer Caspienne", "La mer Noire", "La mer d'Arabie"],
+    "answerIndex": 1,
+    "explanation": "La mer Caspienne est le plus vaste plan d'eau fermé du monde. Elle borde notamment l'Iran, la Russie, l'Azerbaïdjan, le Kazakhstan et le Turkménistan.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve européen traverse Vienne, Bratislava, Budapest et Belgrade ?",
+    "choices": ["Le Rhin", "Le Danube", "L'Elbe", "Le Pô"],
+    "answerIndex": 1,
+    "explanation": "Le Danube est le grand axe fluvial de l'Europe centrale et orientale. Il traverse ou longe dix pays avant de se jeter dans la mer Noire par un vaste delta.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel détroit sépare la Sicile de la péninsule italienne ?",
+    "choices": ["Le détroit de Messine", "Le détroit d'Ormuz", "Le pas de Calais", "Le détroit de Kertch"],
+    "answerIndex": 0,
+    "explanation": "Le détroit de Messine sépare la Sicile de la Calabre sur quelques kilomètres seulement. Son nom est associé depuis l'Antiquité aux légendes de Scylla et Charybde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle île est partagée entre Haïti et la République dominicaine ?",
+    "choices": ["Cuba", "Porto Rico", "Hispaniola", "La Jamaïque"],
+    "answerIndex": 2,
+    "explanation": "Hispaniola est l'une des grandes îles des Caraïbes. Elle est divisée entre Haïti à l'ouest et la République dominicaine à l'est.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel lac sibérien contient à lui seul environ 20 % des réserves mondiales d'eau douce liquide de surface ?",
+    "choices": ["Le lac Ladoga", "Le lac Onega", "Le lac Baïkal", "Le lac Balkhach"],
+    "answerIndex": 2,
+    "explanation": "Le lac Baïkal, en Sibérie méridionale, est à la fois extrêmement profond et très ancien. Sa profondeur maximale dépasse 1600 mètres, ce qui en fait le lac le plus profond du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel est le point culminant des Pyrénées françaises ?",
+    "choices": ["Le pic du Midi d'Ossau", "Le Vignemale", "Le Canigou", "Le mont Perdu"],
+    "answerIndex": 1,
+    "explanation": "Le Vignemale culmine à 3298 mètres dans les Hautes-Pyrénées, à proximité de la frontière espagnole. C'est le plus haut sommet situé sur le versant français de la chaîne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle rivière rejoint la Garonne pour former l'estuaire de la Gironde ?",
+    "choices": ["La Dordogne", "Le Lot", "L'Allier", "La Charente"],
+    "answerIndex": 0,
+    "explanation": "La Gironde naît de la rencontre entre la Garonne et la Dordogne. C'est le plus vaste estuaire d'Europe occidentale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle capitale européenne est la plus haute en altitude ?",
+    "choices": ["Madrid", "Berne", "Andorre-la-Vieille", "Sofia"],
+    "answerIndex": 2,
+    "explanation": "Andorre-la-Vieille est située à un peu plus de 1000 mètres d'altitude dans les Pyrénées. Elle est la capitale de la principauté d'Andorre, micro-État enclavé entre la France et l'Espagne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer d'Asie centrale a connu un assèchement spectaculaire depuis les années 1960 ?",
+    "choices": ["La mer d'Okhotsk", "La mer d'Aral", "La mer de Java", "La mer d'Azov"],
+    "answerIndex": 1,
+    "explanation": "La mer d'Aral s'est dramatiquement réduite après le détournement des fleuves qui l'alimentaient pour l'irrigation. Cet assèchement est souvent cité comme l'une des plus grandes catastrophes écologiques du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle commune française est souvent présentée comme la plus haute d'Europe habitée à l'année ?",
+    "choices": ["Chamonix-Mont-Blanc", "Saint-Gervais-les-Bains", "Saint-Véran", "Briançon"],
+    "answerIndex": 2,
+    "explanation": "Saint-Véran, dans le Queyras, se situe à plus de 2000 mètres d'altitude. Le village est célèbre pour son habitat montagnard et pour la formule locale selon laquelle « les coqs y picorent les étoiles ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve est le plus long d'Europe ?",
+    "choices": ["Le Danube", "Le Rhin", "Le Dniepr", "La Volga"],
+    "answerIndex": 3,
+    "explanation": "La Volga, entièrement située en Russie, mesure plus de 3500 km. Elle se jette dans la mer Caspienne et joue un rôle majeur dans l'organisation du territoire russe.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel détroit relie la mer Noire à la mer de Marmara ?",
+    "choices": ["Le Bosphore", "Le détroit de Béring", "Le détroit de Gibraltar", "Le détroit de Malacca"],
+    "answerIndex": 0,
+    "explanation": "Le Bosphore sépare les rives européenne et asiatique d'Istanbul. Avec les Dardanelles, il constitue un passage stratégique entre la mer Noire et la Méditerranée.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel volcan italien domine Catane et est le plus haut volcan actif d'Europe ?",
+    "choices": ["Le Stromboli", "Le Vésuve", "L'Etna", "Le mont Pélée"],
+    "answerIndex": 2,
+    "explanation": "L'Etna se trouve en Sicile, au-dessus de la ville de Catane. Très actif, il fait l'objet d'une surveillance constante en raison de ses fréquentes éruptions.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle ville bolivienne exerce le siège du gouvernement, alors que Sucre est la capitale constitutionnelle ?",
+    "choices": ["Cochabamba", "La Paz", "Santa Cruz de la Sierra", "Potosí"],
+    "answerIndex": 1,
+    "explanation": "La Paz accueille le gouvernement et le siège du pouvoir exécutif bolivien, tandis que Sucre reste la capitale officielle selon la Constitution. La Paz est aussi l'une des capitales les plus hautes du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel cap marque l'extrémité méridionale du continent africain ?",
+    "choices": ["Le cap Vert", "Le cap de Bonne-Espérance", "Le cap Guardafui", "Le cap des Aiguilles"],
+    "answerIndex": 3,
+    "explanation": "Le cap des Aiguilles, ou cap Agulhas, est le point le plus au sud de l'Afrique. Le cap de Bonne-Espérance, plus célèbre, se situe un peu plus à l'ouest mais n'est pas l'extrémité australe du continent.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
   }
 ]

@@ -808,5 +808,59 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "CINEMA"
+  },
+  {
+    "text": "Quel aventurier au fouet et au fedora est incarné à l'écran par Harrison Ford ?",
+    "choices": ["Han Solo", "Rick Deckard", "Indiana Jones", "John Book"],
+    "answerIndex": 2,
+    "explanation": "Créé par George Lucas et mis en scène pour la première fois au cinéma en 1981, Indiana Jones est un archéologue-aventurier devenu l'un des héros les plus célèbres du cinéma populaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Charlie Chaplin, sorti en 1936, critique la mécanisation du travail en usine ?",
+    "choices": ["Le Kid", "Le Dictateur", "Les Temps modernes", "La Ruée vers l'or"],
+    "answerIndex": 2,
+    "explanation": "Les Temps modernes montre Charlot broyé par les cadences industrielles et le taylorisme. Le film reste en grande partie muet alors que le cinéma parlant s'est déjà imposé.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur italien a signé Le Voleur de bicyclette (1948) ?",
+    "choices": ["Federico Fellini", "Vittorio De Sica", "Michelangelo Antonioni", "Luchino Visconti"],
+    "answerIndex": 1,
+    "explanation": "Vittorio De Sica est l'une des figures majeures du néoréalisme italien. Le film suit la quête désespérée d'un ouvrier romain à qui l'on a volé sa bicyclette, indispensable à son travail.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Stanley Kubrick, coécrit avec Arthur C. Clarke, est sorti en 1968 ?",
+    "choices": ["Orange mécanique", "2001, l'Odyssée de l'espace", "Barry Lyndon", "Shining"],
+    "answerIndex": 1,
+    "explanation": "2001, l'Odyssée de l'espace a profondément renouvelé la science-fiction par ses effets spéciaux, son ambition philosophique et sa représentation du voyage spatial. HAL 9000 en est l'un des personnages les plus célèbres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur allemand a réalisé Metropolis (1927) ?",
+    "choices": ["Fritz Lang", "F. W. Murnau", "G. W. Pabst", "Josef von Sternberg"],
+    "answerIndex": 0,
+    "explanation": "Fritz Lang signe avec Metropolis l'un des monuments du cinéma muet et de la science-fiction. Son esthétique de ville futuriste a influencé durablement l'imaginaire visuel du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Fritz Lang sorti en 1931 met en scène un tueur d'enfants traqué dans Berlin ?",
+    "choices": ["Nosferatu", "M le Maudit", "Le Testament du docteur Mabuse", "Le Cabinet du docteur Caligari"],
+    "answerIndex": 1,
+    "explanation": "M le Maudit, porté par Peter Lorre, est souvent considéré comme l'un des premiers grands chefs-d'œuvre du cinéma parlant. Il peint une société urbaine gagnée par la peur et la paranoïa.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
   }
 ]

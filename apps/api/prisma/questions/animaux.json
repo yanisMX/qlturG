@@ -781,5 +781,59 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère marin arctique est surnommé la « licorne des mers » ?",
+    "choices": ["Le morse", "Le narval", "Le béluga", "Le dugong"],
+    "answerIndex": 1,
+    "explanation": "Le narval doit ce surnom à sa longue défense torsadée, qui est en réalité une canine hypertrophiée. Il vit dans les eaux froides du Groenland, du Canada et de l'Arctique russe.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel grand singe est le plus grand primate du monde ?",
+    "choices": ["Le gorille", "L'orang-outan", "Le chimpanzé", "Le bonobo"],
+    "answerIndex": 0,
+    "explanation": "Le gorille, qui vit dans les forêts d'Afrique équatoriale, est le plus massif de tous les primates. Un mâle adulte dos argenté peut dépasser 180 kg à l'état sauvage.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Comment appelle-t-on la science qui étudie les oiseaux ?",
+    "choices": ["L'entomologie", "L'ornithologie", "L'ichtyologie", "La primatologie"],
+    "answerIndex": 1,
+    "explanation": "L'ornithologie étudie les oiseaux, leurs comportements, leurs migrations et leur évolution. Le mot vient du grec ornis, qui signifie « oiseau ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel poisson osseux, souvent appelé mola-mola, est le plus lourd du monde ?",
+    "choices": ["Le thon rouge", "L'espadon", "Le poisson-lune", "Le mérou géant"],
+    "answerIndex": 2,
+    "explanation": "Le poisson-lune peut dépasser 2 tonnes, ce qui en fait le plus lourd des poissons osseux. Malgré sa taille, il se nourrit surtout de méduses et d'organismes gélatineux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel amphibien mexicain conserve ses branchies à l'âge adulte et peut régénérer ses membres ?",
+    "choices": ["Le pipa", "L'axolotl", "La salamandre géante", "Le triton marbré"],
+    "answerIndex": 1,
+    "explanation": "L'axolotl est célèbre pour sa néoténie, c'est-à-dire le maintien de caractères juvéniles à l'âge adulte. Il fascine aussi les biologistes par sa capacité à régénérer pattes, queue et même certaines parties du cœur ou du cerveau.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère africain forestier, cousin de la girafe, porte des rayures sur les pattes ?",
+    "choices": ["L'okapi", "Le bongo", "Le tapir", "Le gnou"],
+    "answerIndex": 0,
+    "explanation": "L'okapi vit dans les forêts humides de la République démocratique du Congo. Longtemps inconnu des Européens, il n'a été décrit scientifiquement qu'au début du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
   }
 ]

@@ -799,5 +799,59 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme IPv6 ?",
+    "choices": ["Internet Private version 6", "Internet Protocol version 6", "Integrated Packet version 6", "Internal Port version 6"],
+    "answerIndex": 1,
+    "explanation": "IPv6 est la sixième version du protocole Internet. Il utilise des adresses sur 128 bits, bien plus nombreuses que celles d'IPv4, afin de répondre à l'épuisement des adresses disponibles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel format de texte léger, très utilisé dans les API web, signifie JavaScript Object Notation ?",
+    "choices": ["XML", "CSV", "JSON", "TOML"],
+    "answerIndex": 2,
+    "explanation": "JSON est devenu un standard de fait pour l'échange de données sur le Web. Malgré son nom, il est aujourd'hui utilisé bien au-delà de JavaScript.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole attribue automatiquement une adresse IP aux machines d'un réseau local ?",
+    "choices": ["SMTP", "SSH", "DHCP", "IMAP"],
+    "answerIndex": 2,
+    "explanation": "DHCP, pour Dynamic Host Configuration Protocol, automatise l'attribution des adresses IP ainsi que d'autres paramètres réseau comme la passerelle ou les serveurs DNS.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel encodage de caractères, compatible ASCII, domine aujourd'hui le Web ?",
+    "choices": ["ISO-8859-1", "UTF-8", "UTF-16", "Windows-1252"],
+    "answerIndex": 1,
+    "explanation": "UTF-8 encode les caractères avec une longueur variable de 1 à 4 octets. Sa compatibilité avec ASCII et sa capacité à représenter l'ensemble d'Unicode expliquent sa généralisation sur Internet.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel algorithme de compression sans perte est au cœur des formats ZIP et PNG ?",
+    "choices": ["LZW", "DEFLATE", "Brotli", "RLE"],
+    "answerIndex": 1,
+    "explanation": "DEFLATE combine les idées de LZ77 et du codage de Huffman. Il est utilisé dans de nombreux formats populaires grâce à son bon compromis entre efficacité et simplicité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Comment appelle-t-on le mécanisme qui récupère automatiquement la mémoire des objets devenus inaccessibles ?",
+    "choices": ["Le garbage collector", "Le swap mémoire", "Le cache L2", "Le scheduler"],
+    "answerIndex": 0,
+    "explanation": "Le garbage collector, ou ramasse-miettes, automatise la libération de mémoire dans des langages comme Java, Go ou C#. Il soulage le développeur de certaines tâches, mais peut aussi introduire des pauses ou des compromis de performance.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
   }
 ]

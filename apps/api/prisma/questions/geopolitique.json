@@ -1294,5 +1294,113 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville accueille le siège de l'UNESCO ?",
+    "choices": ["Paris", "Genève", "New York", "Vienne"],
+    "answerIndex": 0,
+    "explanation": "L'UNESCO, créée en 1945 pour promouvoir l'éducation, la science et la culture, a son siège à Paris depuis 1946. Elle est notamment connue pour sa liste du patrimoine mondial.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Dans quel pays se trouve le siège de l'Union africaine ?",
+    "choices": ["Le Kenya", "L'Éthiopie", "Le Nigeria", "L'Afrique du Sud"],
+    "answerIndex": 1,
+    "explanation": "Le siège de l'Union africaine se trouve à Addis-Abeba, en Éthiopie. L'organisation a succédé en 2002 à l'Organisation de l'unité africaine (OUA).",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel mouvement né pendant la guerre froide rassemblait les États refusant l'alignement sur Washington ou Moscou ?",
+    "choices": ["Le Mouvement des non-alignés", "Le Kominform", "Le Pacte de Varsovie", "Le Conseil de l'Europe"],
+    "answerIndex": 0,
+    "explanation": "Le Mouvement des non-alignés s'affirme à Belgrade en 1961 autour de dirigeants comme Nehru, Tito et Nasser. Il cherchait à préserver une autonomie diplomatique face aux deux blocs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays contrôle le canal de Suez ?",
+    "choices": ["Israël", "L'Égypte", "L'Arabie saoudite", "La Grèce"],
+    "answerIndex": 1,
+    "explanation": "Le canal de Suez est situé en Égypte et constitue un passage stratégique entre la Méditerranée et la mer Rouge. Sa nationalisation par Nasser en 1956 a provoqué une crise internationale majeure.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quels accords de 1978 ont préparé la paix entre l'Égypte et Israël ?",
+    "choices": ["Les accords de Camp David", "Les accords d'Oslo", "Les accords de Dayton", "Les accords d'Évian"],
+    "answerIndex": 0,
+    "explanation": "Négociés sous l'égide du président américain Jimmy Carter, les accords de Camp David ont conduit au traité de paix israélo-égyptien signé en 1979. L'Égypte fut alors le premier pays arabe à reconnaître Israël.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel accord de 1998 a largement mis fin au conflit nord-irlandais ?",
+    "choices": ["L'accord du Vendredi saint", "L'accord de Taëf", "L'accord de Schengen", "L'accord de Minsk"],
+    "answerIndex": 0,
+    "explanation": "L'accord du Vendredi saint, signé le 10 avril 1998, a mis en place un partage du pouvoir en Irlande du Nord et confirmé le principe du consentement démocratique sur son statut constitutionnel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité signé en 1987 par Reagan et Gorbatchev a supprimé les missiles nucléaires de portée intermédiaire en Europe ?",
+    "choices": ["Le traité ABM", "Le traité FNI", "Le traité New START", "Le traité d'interdiction complète des essais nucléaires"],
+    "answerIndex": 1,
+    "explanation": "Le traité FNI, pour « forces nucléaires intermédiaires », a éliminé toute une catégorie de missiles terrestres américains et soviétiques. Il a symbolisé l'apaisement de la fin de la guerre froide.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel ensemble régional créé en 1981 regroupe les monarchies arabes du Golfe ?",
+    "choices": ["Le CCG", "La Ligue arabe", "L'OCI", "L'OPEP"],
+    "answerIndex": 0,
+    "explanation": "Le Conseil de coopération du Golfe réunit l'Arabie saoudite, les Émirats arabes unis, le Koweït, le Qatar, Bahreïn et Oman. Il coordonne des politiques économiques et sécuritaires dans la péninsule Arabique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville allemande accueille le siège de la Banque centrale européenne ?",
+    "choices": ["Berlin", "Francfort", "Munich", "Bonn"],
+    "answerIndex": 1,
+    "explanation": "La Banque centrale européenne siège à Francfort-sur-le-Main depuis sa création en 1998. Elle pilote la politique monétaire de la zone euro.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Comment s'appelle la ligne qui sépare de facto l'Inde et le Pakistan au Cachemire ?",
+    "choices": ["La ligne Maginot", "La ligne de contrôle", "La ligne Durand", "La ligne verte"],
+    "answerIndex": 1,
+    "explanation": "La ligne de contrôle, ou LoC, découle du cessez-le-feu de 1949 puis de l'accord de Simla de 1972. Elle n'est pas une frontière internationale reconnue, mais elle matérialise la division du Cachemire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel texte adopté en 1975 a consacré la détente en Europe et l'inviolabilité des frontières d'après-guerre ?",
+    "choices": ["L'Acte final d'Helsinki", "Le traité de Maastricht", "Le pacte Briand-Kellogg", "Le traité de Rome"],
+    "answerIndex": 0,
+    "explanation": "Signé dans le cadre de la CSCE, l'Acte final d'Helsinki reconnaissait les frontières européennes issues de 1945 tout en affirmant des principes relatifs aux droits humains. Il a joué un rôle important dans la fin progressive de la guerre froide.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quels traités signés en 1977 ont organisé la rétrocession progressive du canal de Panama à l'État panaméen ?",
+    "choices": ["Les traités Torrijos-Carter", "Les accords de Camp David", "Les accords de Genève", "Les traités de Tlatelolco"],
+    "answerIndex": 0,
+    "explanation": "Signés par Omar Torrijos et Jimmy Carter, ces traités ont prévu le transfert complet du canal à Panama le 31 décembre 1999. Ils ont mis fin à un long contentieux sur la souveraineté de cette voie maritime stratégique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
   }
 ]
