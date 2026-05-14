@@ -15,16 +15,16 @@ describe('Scoreboard', () => {
     expect(names).toEqual(['Bob', 'Alice', 'Charlie']);
   });
 
-  it('affiche le score quand compact=false', () => {
+  it('affiche le score de tous les joueurs', () => {
     render(<Scoreboard players={players} myPlayerId={null} />);
     expect(screen.getByText('3 500')).toBeInTheDocument();
     expect(screen.getByText('2 000')).toBeInTheDocument();
   });
 
-  it('masque le score en mode compact', () => {
+  it('affiche le score de tous les joueurs en mode compact', () => {
     render(<Scoreboard players={players} myPlayerId={null} compact />);
-    expect(screen.queryByText('3 500')).not.toBeInTheDocument();
-    expect(screen.queryByText('2 000')).not.toBeInTheDocument();
+    expect(screen.getByText('3 500')).toBeInTheDocument();
+    expect(screen.getByText('2 000')).toBeInTheDocument();
   });
 
   it('met en surbrillance le joueur courant', () => {
