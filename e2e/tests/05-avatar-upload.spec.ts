@@ -55,7 +55,7 @@ test.describe('Avatar upload — POST /upload/avatar', () => {
     expect([400, 413]).toContain(res.status());
   });
 
-  test('accepts a valid PNG and returns a URL or Cloudinary-not-configured error', async ({ request }) => {
+  test('accepts a valid PNG and returns a URL', async ({ request }) => {
     const res = await request.post(`${API}/upload/avatar`, {
       multipart: {
         avatar: {
@@ -65,16 +65,10 @@ test.describe('Avatar upload — POST /upload/avatar', () => {
         },
       },
     });
+    expect(res.status()).toBe(200);
     const body = await res.json();
-
-    if (res.status() === 200) {
-      // Cloudinary is configured → should return a URL
-      expect(body.url).toMatch(/^https?:\/\//);
-    } else {
-      // Cloudinary not configured in dev → 400 with a clear message
-      expect(res.status()).toBe(400);
-      expect(body.message).toMatch(/configur/i);
-    }
+    // Either a local path (/avatars/…) or a Cloudinary URL (https://…)
+    expect(body.url).toMatch(/^(\/|https?:\/\/)/);
   });
 
   test('UI — AvatarPicker shows upload error message on failure', async ({ page }) => {

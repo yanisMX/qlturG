@@ -7,6 +7,14 @@ Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
 ## [Unreleased]
 
+### Corrigé
+
+- **Upload d'avatar** : le endpoint `POST /upload/avatar` utilisait Cloudinary (non configuré en dev → 400). Remplacé par un stockage disque local (`public/avatars/`) identique au endpoint `POST /auth/avatar`. Les deux endpoints créent désormais le dossier de destination automatiquement si absent.
+- **Serving des fichiers statiques** : `main.ts` utilisait `__dirname` (qui pointe vers `dist/src/` après compilation) pour localiser le dossier `public/` → avatars introuvables en dev. Corrigé avec `process.cwd()`.
+- **Limite de taille sur `POST /auth/avatar`** : passage de 2 Mo à 20 Mo pour être cohérent avec l'indication affichée dans l'UI.
+- **Prévisualisation dans `AvatarPicker`** : l'image chargée via `<img src={value}>` utilisait un chemin relatif (`/avatars/…`) qui résolvait sur le port du front (5173) au lieu de l'API (3001). Désormais le chemin `/avatars/…` est préfixé par `VITE_API_URL`.
+- **`UserAvatar`** : les avatars OAuth (URLs `https://`) n'étaient pas affichés (tombaient dans le code de fallback "cercle coloré"). Gérés maintenant comme les avatars locaux.
+
 ### Ajouté
 
 - **Rematch** : l'hôte peut lancer une nouvelle partie depuis la page de résultats sans que les joueurs connectés aient à rejoindre manuellement. L'événement WS `game:rematch` crée une partie identique (mêmes paramètres) et redirige automatiquement tous les joueurs présents vers le nouveau lobby.

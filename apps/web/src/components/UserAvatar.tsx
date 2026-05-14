@@ -22,11 +22,12 @@ export default function UserAvatar({ user, size = 36, className = '' }: UserAvat
   const initial = (user.pseudo?.[0] ?? '?').toUpperCase();
   const url = user.avatarUrl;
 
-  if (url && url.startsWith('/')) {
+  if (url && (url.startsWith('/') || url.startsWith('http'))) {
     const apiBase = import.meta.env.VITE_API_URL as string;
+    const src = url.startsWith('/') ? `${apiBase}${url}` : url;
     return (
       <img
-        src={`${apiBase}${url}`}
+        src={src}
         alt={user.pseudo}
         width={size}
         height={size}
