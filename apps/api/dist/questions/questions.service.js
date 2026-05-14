@@ -37,12 +37,24 @@ let QuestionsService = class QuestionsService {
     remove(id) {
         return this.prisma.question.delete({ where: { id } });
     }
-    async getRandomByDifficulty(difficulty, count) {
+    async getRandomByDifficulty(difficulty, count, topics = []) {
         const all = await this.prisma.question.findMany({
-            where: { difficulty },
+            where: {
+                ...(difficulty !== 'VARIE' && { difficulty }),
+                ...(topics.length > 0 && { topic: { in: topics } }),
+            },
         });
-        const shuffled = all.sort(() => Math.random() - 0.5);
-        return shuffled.slice(0, count);
+        return all.sort(() => Math.random() - 0.5).slice(0, count);
+    }
+    async getAllByDifficulty(difficulty, excludeIds = [], topics = []) {
+        const all = await this.prisma.question.findMany({
+            where: {
+                ...(difficulty !== 'VARIE' && { difficulty }),
+                ...(excludeIds.length > 0 && { id: { notIn: excludeIds } }),
+                ...(topics.length > 0 && { topic: { in: topics } }),
+            },
+        });
+        return all.sort(() => Math.random() - 0.5);
     }
 };
 exports.QuestionsService = QuestionsService;

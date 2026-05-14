@@ -13,6 +13,7 @@ export declare class QuestionsController {
         period: import("@prisma/client").$Enums.Period;
         difficulty: import("@prisma/client").$Enums.Difficulty;
         id: string;
+        topic: import("@prisma/client").$Enums.Topic;
         createdAt: Date;
     }[]>;
     findOne(id: string): Promise<{
@@ -23,6 +24,7 @@ export declare class QuestionsController {
         period: import("@prisma/client").$Enums.Period;
         difficulty: import("@prisma/client").$Enums.Difficulty;
         id: string;
+        topic: import("@prisma/client").$Enums.Topic;
         createdAt: Date;
     }>;
     create(key: string, dto: CreateQuestionDto): import("@prisma/client").Prisma.Prisma__QuestionClient<{
@@ -33,6 +35,7 @@ export declare class QuestionsController {
         period: import("@prisma/client").$Enums.Period;
         difficulty: import("@prisma/client").$Enums.Difficulty;
         id: string;
+        topic: import("@prisma/client").$Enums.Topic;
         createdAt: Date;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
     update(key: string, id: string, dto: UpdateQuestionDto): Promise<{
@@ -43,6 +46,7 @@ export declare class QuestionsController {
         period: import("@prisma/client").$Enums.Period;
         difficulty: import("@prisma/client").$Enums.Difficulty;
         id: string;
+        topic: import("@prisma/client").$Enums.Topic;
         createdAt: Date;
     }>;
     remove(key: string, id: string): Promise<{
@@ -53,6 +57,7 @@ export declare class QuestionsController {
         period: import("@prisma/client").$Enums.Period;
         difficulty: import("@prisma/client").$Enums.Difficulty;
         id: string;
+        topic: import("@prisma/client").$Enums.Topic;
         createdAt: Date;
     }>;
 }

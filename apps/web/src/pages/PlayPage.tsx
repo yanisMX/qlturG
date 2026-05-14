@@ -39,12 +39,13 @@ export default function PlayPage() {
 
   const handleAnswer = useCallback(
     (idx: number) => {
-      if (myAnswer !== null || reveal !== null) return;
+      if (reveal !== null) return;
+      if (isSolo && myAnswer !== null) return;
       setMyAnswer(idx);
       const socket = getSocket();
       socket.emit('game:answer', { choiceIndex: idx });
     },
-    [myAnswer, reveal, setMyAnswer],
+    [myAnswer, reveal, isSolo, setMyAnswer],
   );
 
   const [isCardAlert, setIsCardAlert] = useState(false);
@@ -264,7 +265,7 @@ export default function PlayPage() {
                         text={currentQuestion.text}
                         choices={currentQuestion.choices}
                         selectedIndex={myAnswer}
-                        disabled={myAnswer !== null || isEliminated}
+                        disabled={isEliminated || (isSolo && myAnswer !== null)}
                         onSelect={handleAnswer}
                       />
                       {myAnswer !== null && !isSolo && (
@@ -274,7 +275,7 @@ export default function PlayPage() {
                           className="mt-4 text-center text-sm font-mono"
                           style={{ color: '#7A7F9B' }}
                         >
-                          Réponse enregistrée — en attente des autres joueurs…
+                          Réponse sélectionnée — tu peux encore changer d'avis
                         </motion.p>
                       )}
                     </motion.div>

@@ -1,9 +1,13 @@
 import { GameService } from './game.service';
-import { Difficulty } from '@prisma/client';
+import { Difficulty, GameMode, Topic } from '@prisma/client';
 declare class CreateGameDto {
     difficulty: Difficulty;
     totalQuestions: number;
     speedBonus: boolean;
+    gameMode: GameMode;
+    questionDuration: number;
+    doublePointsBonus: boolean;
+    topics?: Topic[];
 }
 declare class JoinGameDto {
     code: string;
@@ -19,8 +23,12 @@ export declare class GamesController {
         code: string;
         hostId: string;
         status: import("@prisma/client").$Enums.GameStatus;
+        topics: import("@prisma/client").$Enums.Topic[];
+        gameMode: import("@prisma/client").$Enums.GameMode;
         speedBonus: boolean;
+        doublePointsBonus: boolean;
         totalQuestions: number;
+        questionDuration: number;
         currentQuestionIndex: number;
     }>;
     join(dto: JoinGameDto): Promise<{
@@ -30,7 +38,10 @@ export declare class GamesController {
                 nickname: string;
                 score: number;
                 socketId: string | null;
+                lives: number;
+                eliminated: boolean;
                 gameId: string;
+                userId: string | null;
             }[];
             rounds: {
                 id: string;
@@ -46,8 +57,12 @@ export declare class GamesController {
             code: string;
             hostId: string;
             status: import("@prisma/client").$Enums.GameStatus;
+            topics: import("@prisma/client").$Enums.Topic[];
+            gameMode: import("@prisma/client").$Enums.GameMode;
             speedBonus: boolean;
+            doublePointsBonus: boolean;
             totalQuestions: number;
+            questionDuration: number;
             currentQuestionIndex: number;
         }) | null;
         player: {
@@ -55,7 +70,10 @@ export declare class GamesController {
             nickname: string;
             score: number;
             socketId: string | null;
+            lives: number;
+            eliminated: boolean;
             gameId: string;
+            userId: string | null;
         };
     }>;
     getByCode(code: string): import("@prisma/client").Prisma.Prisma__GameClient<({
@@ -64,7 +82,10 @@ export declare class GamesController {
             nickname: string;
             score: number;
             socketId: string | null;
+            lives: number;
+            eliminated: boolean;
             gameId: string;
+            userId: string | null;
         }[];
     } & {
         difficulty: import("@prisma/client").$Enums.Difficulty;
@@ -73,8 +94,12 @@ export declare class GamesController {
         code: string;
         hostId: string;
         status: import("@prisma/client").$Enums.GameStatus;
+        topics: import("@prisma/client").$Enums.Topic[];
+        gameMode: import("@prisma/client").$Enums.GameMode;
         speedBonus: boolean;
+        doublePointsBonus: boolean;
         totalQuestions: number;
+        questionDuration: number;
         currentQuestionIndex: number;
     }) | null, null, import("@prisma/client/runtime/library").DefaultArgs>;
 }

@@ -226,7 +226,7 @@ export class GameService {
     speedBonus: boolean;
     questionDuration: number;
     isDoublePoints: boolean;
-  }) {
+  }): Promise<{ answer: { id: string; isCorrect: boolean; pointsEarned: number }; isFirstAnswer: boolean }> {
     const responseTimeMs = params.answeredAt.getTime() - params.roundStartedAt.getTime();
     const isCorrect = params.choiceIndex === params.correctAnswerIndex;
     const { points } = this.calculateScore(
@@ -236,6 +236,31 @@ export class GameService {
       params.questionDuration,
       params.isDoublePoints,
     );
+
+    const existing = await this.prisma.answer.findFirst({
+      where: { playerId: params.playerId, roundId: params.roundId },
+    });
+
+    if (existing) {
+      const scoreDelta = points - existing.pointsEarned;
+      const answer = await this.prisma.answer.update({
+        where: { id: existing.id },
+        data: {
+          choiceIndex: params.choiceIndex,
+          isCorrect,
+          pointsEarned: points,
+          answeredAt: params.answeredAt,
+          responseTimeMs,
+        },
+      });
+      if (scoreDelta !== 0) {
+        await this.prisma.player.update({
+          where: { id: params.playerId },
+          data: { score: { increment: scoreDelta } },
+        });
+      }
+      return { answer, isFirstAnswer: false };
+    }
 
     const answer = await this.prisma.answer.create({
       data: {
@@ -254,7 +279,7 @@ export class GameService {
       data: { score: { increment: points } },
     });
 
-    return answer;
+    return { answer, isFirstAnswer: true };
   }
 
   async decrementLife(playerId: string): Promise<{ lives: number; eliminated: boolean }> {

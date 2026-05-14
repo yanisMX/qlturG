@@ -301,6 +301,7 @@ export default function CreatePage() {
                   Thème
                 </label>
                 <button
+                  data-testid="topic-trigger"
                   type="button"
                   onClick={() => setTopicsOpen((o) => !o)}
                   className="w-full flex items-center justify-between px-4 py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base"
@@ -317,11 +318,13 @@ export default function CreatePage() {
 
                 {topicsOpen && (
                   <div
-                    className="absolute z-20 w-full mt-1 rounded-xl overflow-hidden"
+                    data-testid="topic-list"
+                    className="absolute z-20 w-full mt-1 rounded-xl overflow-y-auto"
                     style={{
                       border: '1px solid rgba(242,238,227,0.12)',
                       backgroundColor: '#0F1629',
                       boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+                      maxHeight: '320px',
                     }}
                   >
                     {TOPIC_OPTIONS.map(({ id, label }) => {
@@ -329,6 +332,7 @@ export default function CreatePage() {
                       return (
                         <button
                           key={id}
+                          data-testid={`topic-option-${label}`}
                           type="button"
                           onClick={() => toggleTopic(id)}
                           className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left transition-colors duration-base"
@@ -354,6 +358,7 @@ export default function CreatePage() {
                     })}
                     {form.topics.length > 0 && (
                       <button
+                        data-testid="topic-clear"
                         type="button"
                         onClick={() => setForm((f) => ({ ...f, topics: [] }))}
                         className="w-full px-4 py-2 text-xs text-left transition-colors duration-base"
