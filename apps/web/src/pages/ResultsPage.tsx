@@ -1,11 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useGameStore } from '../store/gameStore';
+import type { Topic } from '../store/gameStore';
 import { getSocket } from '../socket/socket';
 import Podium from '../components/Podium';
 import PageTransition from '../components/PageTransition';
 import { duration } from '../styles/tokens';
+
+const TOPIC_OPTIONS: { id: Topic; label: string }[] = [
+  { id: 'HISTOIRE', label: 'Histoire' },
+  { id: 'GEOGRAPHIE', label: 'Géographie' },
+  { id: 'GEOPOLITIQUE', label: 'Géopolitique' },
+  { id: 'CINEMA', label: 'Cinéma' },
+  { id: 'PHILOSOPHIE', label: 'Philosophie' },
+  { id: 'LITTERATURE', label: 'Littérature' },
+];
 
 const RAIN_COLORS = ['#F5C76B', '#FF6B5B', '#F2EEE3', '#a5b4fc', '#F5C76B', '#FF6B5B'];
 
@@ -44,18 +54,43 @@ function ConfettiRain() {
 
 export default function ResultsPage() {
   const navigate = useNavigate();
-  const { ranking, myPlayerId, isHost, reset, setGameState } = useGameStore();
+  const { ranking, myPlayerId, isHost, topics, reset, setGameState } = useGameStore();
   const myEntry = ranking.find((r) => r.playerId === myPlayerId);
   const isWinner = myEntry?.rank === 1;
   const [rematching, setRematching] = useState(false);
+  const [rematchTopics, setRematchTopics] = useState<Topic[]>(topics);
+  const [topicsOpen, setTopicsOpen] = useState(false);
+  const topicsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (topicsRef.current && !topicsRef.current.contains(e.target as Node)) {
+        setTopicsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const toggleTopic = (id: Topic) =>
+    setRematchTopics((prev) =>
+      prev.includes(id) ? prev.filter((t) => t !== id) : [...prev, id],
+    );
+
+  const topicLabel =
+    rematchTopics.length === 0
+      ? 'Mixte (tous)'
+      : TOPIC_OPTIONS.filter((o) => rematchTopics.includes(o.id))
+          .map((o) => o.label)
+          .join(', ');
 
   useEffect(() => {
     const socket = getSocket();
     const onState = (state: {
       gameId: string; code: string; status: string; difficulty: string;
-      gameMode: string; speedBonus: boolean; doublePointsBonus: boolean;
-      totalQuestions: number; questionDuration: number; hostId: string;
-      players: unknown[]; yourPlayerId: string; isHost: boolean;
+      topics?: Topic[]; gameMode: string; speedBonus: boolean;
+      doublePointsBonus: boolean; totalQuestions: number; questionDuration: number;
+      hostId: string; players: unknown[]; yourPlayerId: string; isHost: boolean;
     }) => {
       reset();
       setGameState({
@@ -63,6 +98,7 @@ export default function ResultsPage() {
         code: state.code,
         status: state.status as 'LOBBY',
         difficulty: state.difficulty as 'FACILE',
+        topics: state.topics ?? [],
         gameMode: state.gameMode as 'STANDARD',
         speedBonus: state.speedBonus,
         doublePointsBonus: state.doublePointsBonus,
@@ -81,7 +117,7 @@ export default function ResultsPage() {
 
   const handleRematch = () => {
     setRematching(true);
-    getSocket().emit('game:rematch');
+    getSocket().emit('game:rematch', { topics: rematchTopics });
   };
 
   return (
@@ -176,6 +212,76 @@ export default function ResultsPage() {
             transition={{ delay: 0.5, duration: duration.base }}
             className="flex flex-col gap-3"
           >
+            {isHost && (
+              <div ref={topicsRef} className="relative">
+                <label className="block text-xs font-semibold mb-1.5 font-mono uppercase tracking-wider" style={{ color: '#7A7F9B' }}>
+                  Thème de la prochaine partie
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setTopicsOpen((o) => !o)}
+                  className="w-full flex items-center justify-between px-4 py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base"
+                  style={rematchTopics.length > 0
+                    ? { borderColor: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.08)', color: '#F2EEE3' }
+                    : { borderColor: 'rgba(242,238,227,0.10)', backgroundColor: 'transparent', color: '#7A7F9B' }
+                  }
+                >
+                  <span className="truncate">{topicLabel}</span>
+                  <span className="ml-2 shrink-0 text-xs" style={{ color: '#7A7F9B' }}>
+                    {topicsOpen ? '▲' : '▼'}
+                  </span>
+                </button>
+                {topicsOpen && (
+                  <div
+                    className="absolute z-20 w-full mt-1 rounded-xl overflow-hidden"
+                    style={{
+                      border: '1px solid rgba(242,238,227,0.12)',
+                      backgroundColor: '#0F1629',
+                      boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+                    }}
+                  >
+                    {TOPIC_OPTIONS.map(({ id, label }) => {
+                      const checked = rematchTopics.includes(id);
+                      return (
+                        <button
+                          key={id}
+                          type="button"
+                          onClick={() => toggleTopic(id)}
+                          className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left transition-colors duration-base"
+                          style={{
+                            color: checked ? '#F2EEE3' : '#7A7F9B',
+                            backgroundColor: checked ? 'rgba(245,199,107,0.07)' : 'transparent',
+                          }}
+                        >
+                          <span
+                            className="w-4 h-4 rounded shrink-0 flex items-center justify-center"
+                            style={{
+                              border: checked ? '2px solid #F5C76B' : '2px solid rgba(242,238,227,0.2)',
+                              backgroundColor: checked ? '#F5C76B' : 'transparent',
+                            }}
+                          >
+                            {checked && (
+                              <span style={{ color: '#0B1026', fontSize: '9px', fontWeight: 800, lineHeight: 1 }}>✓</span>
+                            )}
+                          </span>
+                          {label}
+                        </button>
+                      );
+                    })}
+                    {rematchTopics.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => setRematchTopics([])}
+                        className="w-full px-4 py-2 text-xs text-left transition-colors duration-base"
+                        style={{ color: '#7A7F9B', borderTop: '1px solid rgba(242,238,227,0.08)' }}
+                      >
+                        Tout décocher
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
             {isHost ? (
               <button
                 onClick={handleRematch}

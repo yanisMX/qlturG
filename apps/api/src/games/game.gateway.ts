@@ -6,13 +6,13 @@ import {
   MessageBody,
   OnGatewayDisconnect,
 } from '@nestjs/websockets';
-import { IsString, MinLength, MaxLength, Matches, IsInt, Min, Max } from 'class-validator';
+import { IsString, MinLength, MaxLength, Matches, IsInt, Min, Max, IsOptional, IsArray, IsEnum } from 'class-validator';
 import { Server, Socket } from 'socket.io';
 import { JwtService } from '@nestjs/jwt';
 import { GameService } from './game.service';
 import { QuestionsService } from '../questions/questions.service';
 import { LeaderboardService } from '../leaderboard/leaderboard.service';
-import { Game, Question, Round } from '@prisma/client';
+import { Game, Question, Round, Topic } from '@prisma/client';
 
 class JoinGameWsDto {
   @IsString()
@@ -39,6 +39,13 @@ class AnswerWsDto {
 class KickWsDto {
   @IsString()
   playerId!: string;
+}
+
+class RematchWsDto {
+  @IsOptional()
+  @IsArray()
+  @IsEnum(Topic, { each: true })
+  topics?: Topic[];
 }
 
 interface SessionData {
@@ -254,7 +261,10 @@ export class GameGateway implements OnGatewayDisconnect {
   }
 
   @SubscribeMessage('game:rematch')
-  async handleRematch(@ConnectedSocket() client: Socket) {
+  async handleRematch(
+    @ConnectedSocket() client: Socket,
+    @MessageBody() data: RematchWsDto,
+  ) {
     const session = this.sessions.get(client.id);
     if (!session?.isHost) {
       client.emit('game:error', { message: 'Seul le QG peut lancer une revanche' });
@@ -267,6 +277,9 @@ export class GameGateway implements OnGatewayDisconnect {
       return;
     }
 
+    // Host can override topics; fall back to the previous game's topics
+    const topics = data?.topics ?? oldGame.topics;
+
     try {
       const newGame = await this.gameService.createGame({
         difficulty: oldGame.difficulty,
@@ -275,7 +288,7 @@ export class GameGateway implements OnGatewayDisconnect {
         gameMode: oldGame.gameMode,
         questionDuration: oldGame.questionDuration,
         doublePointsBonus: oldGame.doublePointsBonus,
-        topics: oldGame.topics,
+        topics,
       });
 
       const oldRoomName = `game:${session.gameId}`;
@@ -332,6 +345,7 @@ export class GameGateway implements OnGatewayDisconnect {
           code: newGameFull.code,
           status: newGameFull.status,
           difficulty: newGameFull.difficulty,
+          topics: newGameFull.topics,
           gameMode: newGameFull.gameMode,
           speedBonus: newGameFull.speedBonus,
           doublePointsBonus: newGameFull.doublePointsBonus,
