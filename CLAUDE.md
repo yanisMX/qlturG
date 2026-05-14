@@ -13,6 +13,17 @@ pnpm test                           # Jest (back) + Vitest (front)
 pnpm build                          # tsc -p tsconfig.build.json + vite build
 ```
 
+## ⚠️ Tests — Règle absolue
+
+Après **chaque dev**, lancer les deux suites **avant de conclure** — sans attendre que le user le demande :
+
+```bash
+cd apps/api && node_modules/.bin/jest --forceExit   # backend
+cd apps/web  && pnpm test --run                     # frontend
+```
+
+Aucune régression tolérée. Si un test casse → corriger, puis relancer. Toujours poster les résultats dans la réponse finale.
+
 ## Stack
 
 | Couche | Technologie |

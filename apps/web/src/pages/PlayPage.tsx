@@ -33,6 +33,14 @@ export default function PlayPage() {
 
   const [loadingProgress, setLoadingProgress] = useState<number | null>(null);
   const [isEliminated, setIsEliminated] = useState(false);
+  const [showQuitConfirm, setShowQuitConfirm] = useState(false);
+
+  const handleQuit = useCallback(() => {
+    const socket = getSocket();
+    socket.emit('game:leave');
+    useGameStore.getState().reset();
+    navigate('/');
+  }, [navigate]);
 
   const isSurvival = gameMode === 'SURVIVAL_SOLO' || gameMode === 'SURVIVAL_MULTI';
   const isSolo = gameMode === 'SURVIVAL_SOLO';
@@ -147,12 +155,22 @@ export default function PlayPage() {
             <div className="flex-1 min-w-0 space-y-4">
               {/* Header row */}
               <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold px-3 py-1 rounded-full font-mono" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
-                  {isSurvival
-                    ? `Question ${currentQuestion.index + 1}`
-                    : `Question ${currentQuestion.index + 1} / ${currentQuestion.total}`
-                  }
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-semibold px-3 py-1 rounded-full font-mono" style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.10)', backgroundColor: 'rgba(242,238,227,0.04)' }}>
+                    {isSurvival
+                      ? `Question ${currentQuestion.index + 1}`
+                      : `Question ${currentQuestion.index + 1} / ${currentQuestion.total}`
+                    }
+                  </span>
+                  <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    className="text-xs font-semibold rounded-lg px-2.5 py-1 transition-colors font-mono"
+                    style={{ color: '#FF6B5B', border: '1px solid rgba(255,107,91,0.25)', backgroundColor: 'rgba(255,107,91,0.06)' }}
+                    onClick={() => setShowQuitConfirm(true)}
+                  >
+                    ✕ Quitter
+                  </motion.button>
+                </div>
 
                 <div className="flex items-center gap-3">
                   {/* Lives — survival mode */}
@@ -294,6 +312,49 @@ export default function PlayPage() {
           </div>
         </div>
       </div>
+      {/* Quit confirmation modal */}
+      <AnimatePresence>
+        {showQuitConfirm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            style={{ backgroundColor: 'rgba(10,11,18,0.75)', backdropFilter: 'blur(4px)' }}
+            onClick={() => setShowQuitConfirm(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.94, opacity: 0, y: 12 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.94, opacity: 0, y: 12 }}
+              transition={{ type: 'spring', stiffness: 340, damping: 26 }}
+              className="card max-w-sm w-full space-y-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-base font-bold font-mono" style={{ color: '#F2EEE3' }}>Quitter la partie ?</h2>
+              <p className="text-sm font-mono" style={{ color: '#7A7F9B' }}>
+                Tu seras retiré de la partie en cours. Cette action est irréversible.
+              </p>
+              <div className="flex gap-3 pt-1">
+                <button
+                  className="flex-1 text-sm font-semibold rounded-lg px-4 py-2 font-mono transition-colors"
+                  style={{ color: '#7A7F9B', border: '1px solid rgba(242,238,227,0.12)', backgroundColor: 'rgba(242,238,227,0.04)' }}
+                  onClick={() => setShowQuitConfirm(false)}
+                >
+                  Annuler
+                </button>
+                <button
+                  className="flex-1 text-sm font-semibold rounded-lg px-4 py-2 font-mono transition-colors"
+                  style={{ color: '#FF6B5B', border: '1px solid rgba(255,107,91,0.35)', backgroundColor: 'rgba(255,107,91,0.10)' }}
+                  onClick={handleQuit}
+                >
+                  Quitter
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </PageTransition>
   );
 }
