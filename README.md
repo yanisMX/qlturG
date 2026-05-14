@@ -132,7 +132,14 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5432/histoire_france
 PORT=3001
 ADMIN_KEY=change-me-in-production
 CORS_ORIGIN=http://localhost:5173
+
+# Avatar upload — optionnel (récupérer les valeurs sur dashboard.cloudinary.com)
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
 ```
+
+> Sans les variables Cloudinary, l'upload d'avatar retourne une erreur 400 ("Upload non configuré sur ce serveur") et les joueurs utilisent un avatar généré par défaut.
 
 **apps/web/.env**
 ```
