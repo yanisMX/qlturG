@@ -1,0 +1,14 @@
+Objectif métier: Fidéliser un joueur qui a déjà fait une partie
+
+Acteur : joueur d'une partie
+
+Objectif utilisateur :
+- Chaque partie jouée est variée dans les questions posées
+
+Action/Epic : Avoir une grande variété de questions
+
+PARCOURS :
+Lorsque l'utilisateur créé une partie, par rapport au niveau qu'il aura choisi au préalable.
+
+Comportement attendu :
+- Je souhaite
