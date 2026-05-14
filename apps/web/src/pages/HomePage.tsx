@@ -50,6 +50,16 @@ export default function HomePage() {
           <FloatingMarianne />
         </div>
 
+        {/* Version badge — top left */}
+        <div className="fixed top-4 left-4 z-10">
+          <span
+            className="text-xs font-mono px-2 py-1 rounded-full"
+            style={{ color: '#7A7F9B', border: '1px solid rgba(180,183,204,0.15)', backgroundColor: 'rgba(180,183,204,0.05)' }}
+          >
+            v{__APP_VERSION__}
+          </span>
+        </div>
+
         {/* User chip — top right */}
         {!isLoading && (
           <div className="fixed top-4 right-4 z-10">

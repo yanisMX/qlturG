@@ -190,6 +190,7 @@ WS game:answer         → score calculé serveur (horodatage)
 - **topic null** = mixte = pas de filtre topic dans les requêtes Prisma.
 - **migrations/** est gitignored — courir `pnpm db:migrate` localement après tout changement de schéma.
 - **Test Scoreboard pré-existant** : `Scoreboard > met en surbrillance le joueur courant` échoue (`.bg-navy-50` absent) — bug pré-existant, ne pas corriger sans demande explicite.
+- **Version applicative** : Ne **jamais** éditer manuellement `version` dans `apps/web/package.json` ni `package.json` (racine). Le workflow `.github/workflows/bump-version.yml` bumpe automatiquement le patch à chaque push sur `master` (commit `chore(version): bump to X.Y.Z [skip ci]`). Pour un bump mineur ou majeur, éditer manuellement puis pousser sur master — le workflow ne touchera que le patch ensuite.
 
 ## Variables d'environnement
 

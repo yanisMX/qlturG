@@ -1,0 +1,41 @@
+name: Bump patch version on master
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  bump:
+    # Skip if this push is already a version bump (avoid infinite loop)
+    if: "!contains(github.event.head_commit.message, 'chore(version):')"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Bump patch version
+        run: |
+          cd apps/web
+          npm version patch --no-git-tag-version
+          VERSION=$(node -p "require('./package.json').version")
+          cd ../..
+          # Keep root package.json in sync
+          node -e "
+            const fs = require('fs');
+            const p = JSON.parse(fs.readFileSync('package.json', 'utf-8'));
+            p.version = '$VERSION';
+            fs.writeFileSync('package.json', JSON.stringify(p, null, 2) + '\n');
+          "
+          git add apps/web/package.json package.json
+          git commit -m "chore(version): bump to $VERSION [skip ci]"
+          git push
