@@ -10,6 +10,7 @@ pnpm db:migrate                     # prisma migrate dev
 pnpm db:seed                        # charge les JSON de apps/api/prisma/questions/
 pnpm dev                            # API :3001 + front :5173
 pnpm test                           # Jest (back) + Vitest (front)
+pnpm test:e2e                       # Playwright E2E (10 tests, ~2 min) — nécessite pnpm dev actif
 pnpm build                          # tsc -p tsconfig.build.json + vite build
 ```
 
