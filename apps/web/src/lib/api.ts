@@ -71,6 +71,18 @@ export interface WeeklyBadge {
 }
 
 export const api = {
+  uploadAvatar: async (file: File): Promise<string> => {
+    const form = new FormData();
+    form.append('avatar', file);
+    const res = await fetch(`${BASE}/upload/avatar`, { method: 'POST', body: form });
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({ message: res.statusText }));
+      throw new Error(body?.message ?? 'Upload failed');
+    }
+    const data = await res.json() as { url: string };
+    return data.url;
+  },
+
   createGame: (payload: CreateGamePayload) =>
     request<GameData>('/games', {
       method: 'POST',

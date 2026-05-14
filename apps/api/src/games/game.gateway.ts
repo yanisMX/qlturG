@@ -73,7 +73,7 @@ export class GameGateway implements OnGatewayDisconnect {
   @SubscribeMessage('game:join')
   async handleJoin(
     @ConnectedSocket() client: Socket,
-    @MessageBody() data: { code: string; nickname: string },
+    @MessageBody() data: { code: string; nickname: string; avatarUrl?: string },
   ) {
     try {
       // Optionally identify the player via JWT from socket handshake
@@ -91,6 +91,7 @@ export class GameGateway implements OnGatewayDisconnect {
       const { game, player } = await this.gameService.joinGame({
         code: data.code,
         nickname: data.nickname,
+        avatarUrl: data.avatarUrl,
         userId,
       });
 
@@ -124,6 +125,7 @@ export class GameGateway implements OnGatewayDisconnect {
         players: game.players.map((p) => ({
           id: p.id,
           nickname: p.nickname,
+          avatarUrl: p.avatarUrl,
           score: p.score,
           lives: p.lives,
           eliminated: p.eliminated,
@@ -135,6 +137,7 @@ export class GameGateway implements OnGatewayDisconnect {
       this.server.to(`game:${game.id}`).emit('game:player-joined', {
         playerId: player.id,
         nickname: player.nickname,
+        avatarUrl: player.avatarUrl,
         score: 0,
         lives: player.lives,
         eliminated: false,
@@ -259,6 +262,7 @@ export class GameGateway implements OnGatewayDisconnect {
 
         const newPlayer = await this.gameService.createPlayerForRematch({
           nickname: oldPlayer.nickname,
+          avatarUrl: oldPlayer.avatarUrl ?? undefined,
           gameId: newGame.id,
           userId: sockSession.userId,
         });
@@ -306,6 +310,7 @@ export class GameGateway implements OnGatewayDisconnect {
           players: newGameFull.players.map((p) => ({
             id: p.id,
             nickname: p.nickname,
+            avatarUrl: p.avatarUrl,
             score: p.score,
             lives: p.lives,
             eliminated: p.eliminated,

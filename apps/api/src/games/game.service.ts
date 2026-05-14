@@ -97,7 +97,7 @@ export class GameService {
     });
   }
 
-  async joinGame(params: { code: string; nickname: string; userId?: string }) {
+  async joinGame(params: { code: string; nickname: string; userId?: string; avatarUrl?: string }) {
     const game = await this.prisma.game.findUnique({
       where: { code: params.code.toUpperCase() },
       include: { players: true },
@@ -117,6 +117,7 @@ export class GameService {
     const player = await this.prisma.player.create({
       data: {
         nickname: params.nickname,
+        avatarUrl: params.avatarUrl ?? null,
         gameId: game.id,
         ...(params.userId ? { userId: params.userId } : {}),
       },
@@ -132,10 +133,11 @@ export class GameService {
     });
   }
 
-  async createPlayerForRematch(params: { nickname: string; gameId: string; userId?: string }) {
+  async createPlayerForRematch(params: { nickname: string; gameId: string; userId?: string; avatarUrl?: string }) {
     return this.prisma.player.create({
       data: {
         nickname: params.nickname,
+        avatarUrl: params.avatarUrl ?? null,
         gameId: params.gameId,
         ...(params.userId ? { userId: params.userId } : {}),
       },
@@ -322,6 +324,7 @@ export class GameService {
       scores: players.map((p) => ({
         playerId: p.id,
         nickname: p.nickname,
+        avatarUrl: p.avatarUrl,
         score: p.score,
         deltaThisRound: scoreMap.get(p.id) ?? 0,
         lives: p.lives,

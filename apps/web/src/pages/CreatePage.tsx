@@ -7,6 +7,7 @@ import { useGameStore } from '../store/gameStore';
 import { useAuthStore } from '../store/authStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
+import AvatarPicker from '../components/AvatarPicker';
 import type { GameMode, Topic } from '../store/gameStore';
 
 const TOPIC_VALUES = ['HISTOIRE', 'GEOGRAPHIE', 'GEOPOLITIQUE', 'CINEMA', 'PHILOSOPHIE', 'LITTERATURE', 'ANIMAUX', 'INFORMATIQUE'] as const;
@@ -61,6 +62,7 @@ export default function CreatePage() {
     questionDuration: 10,
     doublePointsBonus: false,
   });
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
   const [error, setError] = useState('');
   const [submitAttempt, setSubmitAttempt] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -138,7 +140,7 @@ export default function CreatePage() {
 
       const socket = getSocket(token ?? undefined);
       socket.connect();
-      socket.emit('game:join', { code: game.code, nickname: parsed.data.hostNickname });
+      socket.emit('game:join', { code: game.code, nickname: parsed.data.hostNickname, avatarUrl: avatarUrl ?? undefined });
 
       socket.once('game:state', (state) => {
         setGameState({
@@ -245,6 +247,11 @@ export default function CreatePage() {
                     ⚠ Partie solo — personne ne peut rejoindre
                   </p>
                 )}
+              </div>
+
+              {/* Avatar */}
+              <div className="flex justify-center">
+                <AvatarPicker value={avatarUrl} onChange={setAvatarUrl} disabled={loading} />
               </div>
 
               {/* Pseudo */}
