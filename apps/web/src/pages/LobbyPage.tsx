@@ -53,8 +53,8 @@ export default function LobbyPage() {
   useEffect(() => {
     const socket = getSocket();
 
-    const onPlayerJoined = (p: { playerId: string; nickname: string; score: number; lives?: number }) => {
-      addPlayer({ id: p.playerId, nickname: p.nickname, score: p.score ?? 0, lives: p.lives });
+    const onPlayerJoined = (p: { playerId: string; nickname: string; avatarUrl?: string; score: number; lives?: number }) => {
+      addPlayer({ id: p.playerId, nickname: p.nickname, avatarUrl: p.avatarUrl, score: p.score ?? 0, lives: p.lives });
     };
     const onPlayerLeft = (p: { playerId: string }) => {
       removePlayer(p.playerId);

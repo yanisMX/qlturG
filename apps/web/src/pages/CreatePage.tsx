@@ -7,6 +7,7 @@ import { useGameStore } from '../store/gameStore';
 import { useAuthStore } from '../store/authStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
+import AvatarPicker from '../components/AvatarPicker';
 import type { GameMode, Topic } from '../store/gameStore';
 
 const TOPIC_VALUES = ['HISTOIRE', 'GEOGRAPHIE', 'GEOPOLITIQUE', 'CINEMA', 'PHILOSOPHIE', 'LITTERATURE', 'ANIMAUX', 'INFORMATIQUE'] as const;
@@ -61,6 +62,7 @@ export default function CreatePage() {
     questionDuration: 10,
     doublePointsBonus: false,
   });
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
   const [error, setError] = useState('');
   const [submitAttempt, setSubmitAttempt] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -138,7 +140,7 @@ export default function CreatePage() {
 
       const socket = getSocket(token ?? undefined);
       socket.connect();
-      socket.emit('game:join', { code: game.code, nickname: parsed.data.hostNickname });
+      socket.emit('game:join', { code: game.code, nickname: parsed.data.hostNickname, avatarUrl: avatarUrl ?? undefined });
 
       socket.once('game:state', (state) => {
         setGameState({
@@ -247,6 +249,11 @@ export default function CreatePage() {
                 )}
               </div>
 
+              {/* Avatar */}
+              <div className="flex justify-center">
+                <AvatarPicker value={avatarUrl} onChange={setAvatarUrl} disabled={loading} />
+              </div>
+
               {/* Pseudo */}
               <div>
                 <label className="block text-sm font-semibold mb-1.5" style={{ color: '#B4B7CC' }}>
@@ -301,6 +308,7 @@ export default function CreatePage() {
                   Thème
                 </label>
                 <button
+                  data-testid="topic-trigger"
                   type="button"
                   onClick={() => setTopicsOpen((o) => !o)}
                   className="w-full flex items-center justify-between px-4 py-2.5 rounded-xl border-2 text-sm font-semibold transition-all duration-base"
@@ -317,11 +325,13 @@ export default function CreatePage() {
 
                 {topicsOpen && (
                   <div
-                    className="absolute z-20 w-full mt-1 rounded-xl overflow-hidden"
+                    data-testid="topic-list"
+                    className="absolute z-20 w-full mt-1 rounded-xl overflow-y-auto"
                     style={{
                       border: '1px solid rgba(242,238,227,0.12)',
                       backgroundColor: '#0F1629',
                       boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+                      maxHeight: '320px',
                     }}
                   >
                     {TOPIC_OPTIONS.map(({ id, label }) => {
@@ -329,6 +339,7 @@ export default function CreatePage() {
                       return (
                         <button
                           key={id}
+                          data-testid={`topic-option-${label}`}
                           type="button"
                           onClick={() => toggleTopic(id)}
                           className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left transition-colors duration-base"
@@ -354,6 +365,7 @@ export default function CreatePage() {
                     })}
                     {form.topics.length > 0 && (
                       <button
+                        data-testid="topic-clear"
                         type="button"
                         onClick={() => setForm((f) => ({ ...f, topics: [] }))}
                         className="w-full px-4 py-2 text-xs text-left transition-colors duration-base"

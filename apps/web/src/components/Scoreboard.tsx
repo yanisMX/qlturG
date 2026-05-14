@@ -57,6 +57,14 @@ export default function Scoreboard({
                 )}
               </span>
 
+              {/* Avatar */}
+              <span className="w-7 h-7 rounded-full shrink-0 overflow-hidden flex items-center justify-center text-sm"
+                style={{ backgroundColor: 'rgba(245,199,107,0.1)', border: '1px solid rgba(245,199,107,0.2)' }}>
+                {player.avatarUrl
+                  ? <img src={player.avatarUrl} alt="" className="w-full h-full object-cover" />
+                  : '👤'}
+              </span>
+
               <span className="flex-1 truncate" style={{ color: isEliminated ? '#7A7F9B' : '#F2EEE3' }}>
                 {player.nickname}
               </span>

@@ -6,6 +6,7 @@ import { useGameStore } from '../store/gameStore';
 import { useAuthStore } from '../store/authStore';
 import { getSocket } from '../socket/socket';
 import PageTransition from '../components/PageTransition';
+import AvatarPicker from '../components/AvatarPicker';
 
 const schema = z.object({
   code: z.string().length(6, 'Le code doit faire 6 caractères'),
@@ -23,6 +24,7 @@ export default function JoinPage() {
     code: (searchParams.get('code') ?? '').toUpperCase().slice(0, 6),
     nickname: user?.pseudo ?? '',
   });
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -44,7 +46,7 @@ export default function JoinPage() {
     const socket = getSocket(token ?? undefined);
     socket.connect();
 
-    socket.emit('game:join', { code: parsed.data.code, nickname: parsed.data.nickname });
+    socket.emit('game:join', { code: parsed.data.code, nickname: parsed.data.nickname, avatarUrl: avatarUrl ?? undefined });
 
     socket.once('game:state', (state) => {
       setGameState({
@@ -63,7 +65,7 @@ export default function JoinPage() {
     });
 
     socket.on('game:player-joined', (p) => {
-      addPlayer({ id: p.playerId, nickname: p.nickname, score: p.score ?? 0 });
+      addPlayer({ id: p.playerId, nickname: p.nickname, avatarUrl: p.avatarUrl, score: p.score ?? 0 });
     });
 
     socket.once('game:error', (err: { message: string }) => {
@@ -91,6 +93,10 @@ export default function JoinPage() {
 
           <div className="card">
             <h1 className="text-2xl font-bold mb-6" style={{ color: '#F2EEE3', fontFamily: 'Space Grotesk, system-ui, sans-serif' }}>Rejoindre une partie</h1>
+
+            <div className="flex justify-center mb-5">
+              <AvatarPicker value={avatarUrl} onChange={setAvatarUrl} disabled={loading} />
+            </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>

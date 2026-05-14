@@ -15,14 +15,12 @@ const prisma_service_1 = require("../prisma/prisma.service");
 const questions_service_1 = require("../questions/questions.service");
 const client_1 = require("@prisma/client");
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-const QUESTION_DURATION_MS = 10_000;
-const REVEAL_DURATION_MS = 4_000;
 let GameService = class GameService {
     constructor(prisma, questionsService) {
         this.prisma = prisma;
         this.questionsService = questionsService;
     }
-    calculateScore(isCorrect, speedBonus, responseTimeMs) {
+    calculateScore(isCorrect, speedBonus, responseTimeMs, questionDuration = 10, isDoublePoints = false) {
         if (!isCorrect) {
             return { points: 0, isCorrect: false, responseTimeMs };
         }
@@ -31,10 +29,13 @@ let GameService = class GameService {
             points = 1000;
         }
         else {
-            const remainingMs = Math.max(0, QUESTION_DURATION_MS - responseTimeMs);
+            const durationMs = questionDuration * 1000;
+            const remainingMs = Math.max(0, durationMs - responseTimeMs);
             const remainingSec = remainingMs / 1000;
-            points = Math.floor(500 + 500 * (remainingSec / 10));
+            points = Math.floor(500 + 500 * (remainingSec / questionDuration));
         }
+        if (isDoublePoints)
+            points *= 2;
         return { points, isCorrect: true, responseTimeMs };
     }
     generateCode() {
@@ -54,20 +55,26 @@ let GameService = class GameService {
         return code;
     }
     async createGame(params) {
-        if (params.totalQuestions < 5 || params.totalQuestions > 20) {
-            throw new common_1.BadRequestException('totalQuestions must be between 5 and 20');
+        if (params.totalQuestions < 10 || params.totalQuestions > 30) {
+            throw new common_1.BadRequestException('totalQuestions must be between 10 and 30');
+        }
+        if (params.questionDuration < 5 || params.questionDuration > 30) {
+            throw new common_1.BadRequestException('questionDuration must be between 5 and 30');
         }
         const code = await this.generateUniqueCode();
-        const game = await this.prisma.game.create({
+        return this.prisma.game.create({
             data: {
                 code,
                 hostId: 'pending',
                 difficulty: params.difficulty,
+                topics: params.topics ?? [],
                 totalQuestions: params.totalQuestions,
                 speedBonus: params.speedBonus,
+                gameMode: params.gameMode,
+                questionDuration: params.questionDuration,
+                doublePointsBonus: params.doublePointsBonus,
             },
         });
-        return game;
     }
     async setHost(gameId, playerId) {
         return this.prisma.game.update({
@@ -85,6 +92,9 @@ let GameService = class GameService {
         if (game.status !== client_1.GameStatus.LOBBY) {
             throw new common_1.BadRequestException('Game already started');
         }
+        if (game.gameMode === client_1.GameMode.SURVIVAL_SOLO && game.players.length >= 1) {
+            throw new common_1.BadRequestException('Survival solo — partie solo uniquement');
+        }
         if (game.players.length >= 12) {
             throw new common_1.BadRequestException('Game is full (max 12 players)');
         }
@@ -92,40 +102,78 @@ let GameService = class GameService {
             data: {
                 nickname: params.nickname,
                 gameId: game.id,
+                ...(params.userId ? { userId: params.userId } : {}),
             },
         });
         return { game: await this.getGameWithPlayers(game.id), player };
     }
-    async startGame(gameId) {
-        const game = await this.prisma.game.findUnique({
-            where: { id: gameId },
+    async getPlayersWithUser(gameId) {
+        return this.prisma.player.findMany({
+            where: { gameId },
+            select: { id: true, score: true, userId: true, socketId: true },
         });
+    }
+    async createPlayerForRematch(params) {
+        return this.prisma.player.create({
+            data: {
+                nickname: params.nickname,
+                gameId: params.gameId,
+                ...(params.userId ? { userId: params.userId } : {}),
+            },
+        });
+    }
+    async kickPlayer(gameId, playerId) {
+        const player = await this.prisma.player.findFirst({
+            where: { id: playerId, gameId },
+        });
+        if (!player)
+            throw new common_1.NotFoundException('Player not found');
+        await this.prisma.player.delete({ where: { id: playerId } });
+        return player;
+    }
+    async startGame(gameId) {
+        const game = await this.prisma.game.findUnique({ where: { id: gameId } });
         if (!game)
             throw new common_1.NotFoundException();
         if (game.status !== client_1.GameStatus.LOBBY) {
             throw new common_1.BadRequestException('Game is not in LOBBY state');
         }
-        const questions = await this.questionsService.getRandomByDifficulty(game.difficulty, game.totalQuestions);
-        if (questions.length < game.totalQuestions) {
-            throw new common_1.BadRequestException('Not enough questions available for this difficulty');
+        const isSurvival = game.gameMode === client_1.GameMode.SURVIVAL_SOLO || game.gameMode === client_1.GameMode.SURVIVAL_MULTI;
+        const { topics } = game;
+        let questions;
+        if (isSurvival) {
+            questions = await this.questionsService.getAllByDifficulty(game.difficulty, [], topics);
+            if (questions.length === 0) {
+                throw new common_1.BadRequestException('No questions available for this difficulty');
+            }
         }
-        const rounds = await Promise.all(questions.map((q, i) => this.prisma.round.create({
-            data: {
-                gameId,
-                questionId: q.id,
-                orderIndex: i,
-            },
-        })));
+        else {
+            questions = await this.questionsService.getRandomByDifficulty(game.difficulty, game.totalQuestions, topics);
+            if (questions.length < game.totalQuestions) {
+                throw new common_1.BadRequestException('Not enough questions available for this difficulty');
+            }
+        }
+        const rounds = await Promise.all(questions.map((q, i) => this.prisma.round.create({ data: { gameId, questionId: q.id, orderIndex: i } })));
         await this.prisma.game.update({
             where: { id: gameId },
             data: { status: client_1.GameStatus.IN_PROGRESS, currentQuestionIndex: 0 },
         });
         return { rounds, questions };
     }
+    async extendSurvivalRounds(gameId, usedQuestionIds, difficulty, startOrderIndex) {
+        const game = await this.prisma.game.findUnique({ where: { id: gameId }, select: { topics: true } });
+        const topics = game?.topics ?? [];
+        let newQuestions = await this.questionsService.getAllByDifficulty(difficulty, usedQuestionIds, topics);
+        if (newQuestions.length === 0) {
+            newQuestions = await this.questionsService.getAllByDifficulty(difficulty, [], topics);
+        }
+        const rounds = await Promise.all(newQuestions.map((q, i) => this.prisma.round.create({ data: { gameId, questionId: q.id, orderIndex: startOrderIndex + i } })));
+        return { rounds, questions: newQuestions };
+    }
     async recordAnswer(params) {
         const responseTimeMs = params.answeredAt.getTime() - params.roundStartedAt.getTime();
         const isCorrect = params.choiceIndex === params.correctAnswerIndex;
-        const { points } = this.calculateScore(isCorrect, params.speedBonus, responseTimeMs);
+        const { points } = this.calculateScore(isCorrect, params.speedBonus, responseTimeMs, params.questionDuration, params.isDoublePoints);
         const answer = await this.prisma.answer.create({
             data: {
                 playerId: params.playerId,
@@ -143,6 +191,23 @@ let GameService = class GameService {
         });
         return answer;
     }
+    async decrementLife(playerId) {
+        const player = await this.prisma.player.findUnique({ where: { id: playerId } });
+        if (!player)
+            throw new common_1.NotFoundException();
+        const newLives = Math.max(0, player.lives - 1);
+        const eliminated = newLives === 0;
+        await this.prisma.player.update({
+            where: { id: playerId },
+            data: { lives: newLives, eliminated },
+        });
+        return { lives: newLives, eliminated };
+    }
+    async getActivePlayers(gameId) {
+        return this.prisma.player.findMany({
+            where: { gameId, eliminated: false },
+        });
+    }
     async getRoundReveal(roundId, gameId) {
         const round = await this.prisma.round.findUnique({
             where: { id: roundId },
@@ -150,9 +215,7 @@ let GameService = class GameService {
         });
         if (!round)
             throw new common_1.NotFoundException();
-        const question = await this.prisma.question.findUnique({
-            where: { id: round.questionId },
-        });
+        const question = await this.prisma.question.findUnique({ where: { id: round.questionId } });
         if (!question)
             throw new common_1.NotFoundException();
         const players = await this.prisma.player.findMany({ where: { gameId } });
@@ -165,6 +228,8 @@ let GameService = class GameService {
                 nickname: p.nickname,
                 score: p.score,
                 deltaThisRound: scoreMap.get(p.id) ?? 0,
+                lives: p.lives,
+                eliminated: p.eliminated,
             })),
         };
     }
@@ -173,7 +238,8 @@ let GameService = class GameService {
         if (!game)
             throw new common_1.NotFoundException();
         const nextIndex = game.currentQuestionIndex + 1;
-        if (nextIndex >= game.totalQuestions) {
+        const isSurvival = game.gameMode === client_1.GameMode.SURVIVAL_SOLO || game.gameMode === client_1.GameMode.SURVIVAL_MULTI;
+        if (!isSurvival && nextIndex >= game.totalQuestions) {
             await this.prisma.game.update({
                 where: { id: gameId },
                 data: { status: client_1.GameStatus.FINISHED },
@@ -189,13 +255,15 @@ let GameService = class GameService {
     async getFinalRanking(gameId) {
         const players = await this.prisma.player.findMany({
             where: { gameId },
-            orderBy: { score: 'desc' },
+            orderBy: [{ eliminated: 'asc' }, { score: 'desc' }],
         });
         return players.map((p, i) => ({
             rank: i + 1,
             playerId: p.id,
             nickname: p.nickname,
             score: p.score,
+            lives: p.lives,
+            eliminated: p.eliminated,
         }));
     }
     getGameWithPlayers(gameId) {

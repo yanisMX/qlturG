@@ -8,6 +8,7 @@ export type Topic = 'HISTOIRE' | 'GEOGRAPHIE' | 'GEOPOLITIQUE' | 'CINEMA' | 'PHI
 export interface PlayerInfo {
   id: string;
   nickname: string;
+  avatarUrl?: string | null;
   score: number;
   lives?: number;
   eliminated?: boolean;

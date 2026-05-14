@@ -73,7 +73,7 @@ export class GameGateway implements OnGatewayDisconnect {
   @SubscribeMessage('game:join')
   async handleJoin(
     @ConnectedSocket() client: Socket,
-    @MessageBody() data: { code: string; nickname: string },
+    @MessageBody() data: { code: string; nickname: string; avatarUrl?: string },
   ) {
     try {
       // Optionally identify the player via JWT from socket handshake
@@ -91,6 +91,7 @@ export class GameGateway implements OnGatewayDisconnect {
       const { game, player } = await this.gameService.joinGame({
         code: data.code,
         nickname: data.nickname,
+        avatarUrl: data.avatarUrl,
         userId,
       });
 
@@ -124,6 +125,7 @@ export class GameGateway implements OnGatewayDisconnect {
         players: game.players.map((p) => ({
           id: p.id,
           nickname: p.nickname,
+          avatarUrl: p.avatarUrl,
           score: p.score,
           lives: p.lives,
           eliminated: p.eliminated,
@@ -135,6 +137,7 @@ export class GameGateway implements OnGatewayDisconnect {
       this.server.to(`game:${game.id}`).emit('game:player-joined', {
         playerId: player.id,
         nickname: player.nickname,
+        avatarUrl: player.avatarUrl,
         score: 0,
         lives: player.lives,
         eliminated: false,
@@ -259,6 +262,7 @@ export class GameGateway implements OnGatewayDisconnect {
 
         const newPlayer = await this.gameService.createPlayerForRematch({
           nickname: oldPlayer.nickname,
+          avatarUrl: oldPlayer.avatarUrl ?? undefined,
           gameId: newGame.id,
           userId: sockSession.userId,
         });
@@ -306,6 +310,7 @@ export class GameGateway implements OnGatewayDisconnect {
           players: newGameFull.players.map((p) => ({
             id: p.id,
             nickname: p.nickname,
+            avatarUrl: p.avatarUrl,
             score: p.score,
             lives: p.lives,
             eliminated: p.eliminated,
@@ -336,7 +341,7 @@ export class GameGateway implements OnGatewayDisconnect {
       const game = await this.gameService.getGameWithPlayers(session.gameId);
       if (!game) return;
 
-      const answer = await this.gameService.recordAnswer({
+      const { answer, isFirstAnswer } = await this.gameService.recordAnswer({
         playerId: session.playerId,
         roundId: activeRound.round.id,
         choiceIndex: data.choiceIndex,
@@ -348,8 +353,8 @@ export class GameGateway implements OnGatewayDisconnect {
         isDoublePoints: activeRound.isDoublePoints,
       });
 
-      // Track answer streak for leaderboard bonus
-      if (session.userId) {
+      // Track answer streak for leaderboard bonus — only on first answer per round
+      if (session.userId && isFirstAnswer) {
         if (answer.isCorrect) {
           const streak = (this.answerStreaks.get(session.playerId) ?? 0) + 1;
           this.answerStreaks.set(session.playerId, streak);
@@ -361,23 +366,23 @@ export class GameGateway implements OnGatewayDisconnect {
         }
       }
 
-      // Survival: decrement lives on wrong answer
+      // Survival: decrement lives only on first wrong answer (answer changes don't cost lives)
       const isSurvival =
         game.gameMode === 'SURVIVAL_SOLO' || game.gameMode === 'SURVIVAL_MULTI';
-      if (isSurvival && !answer.isCorrect) {
+      if (isSurvival && !answer.isCorrect && isFirstAnswer) {
         const { lives, eliminated } = await this.gameService.decrementLife(session.playerId);
         client.emit('game:life-lost', { lives, eliminated });
       }
 
-      // Solo: reveal quickly after answering (no other players to wait for)
-      if (game.gameMode === 'SURVIVAL_SOLO') {
+      // Solo: reveal quickly after first answer (no other players to wait for)
+      if (game.gameMode === 'SURVIVAL_SOLO' && isFirstAnswer) {
         const existing = this.roundTimers.get(session.gameId);
         if (existing) clearTimeout(existing);
         const quick = setTimeout(() => this.triggerReveal(session.gameId), 900);
         this.roundTimers.set(session.gameId, quick);
       }
     } catch {
-      // Answer already recorded or round ended
+      // Round ended or answer rejected
     }
   }
 

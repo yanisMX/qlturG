@@ -12,12 +12,14 @@ const games_controller_1 = require("./games.controller");
 const game_service_1 = require("./game.service");
 const game_gateway_1 = require("./game.gateway");
 const questions_module_1 = require("../questions/questions.module");
+const auth_module_1 = require("../auth/auth.module");
+const leaderboard_module_1 = require("../leaderboard/leaderboard.module");
 let GamesModule = class GamesModule {
 };
 exports.GamesModule = GamesModule;
 exports.GamesModule = GamesModule = __decorate([
     (0, common_1.Module)({
-        imports: [questions_module_1.QuestionsModule],
+        imports: [questions_module_1.QuestionsModule, auth_module_1.AuthModule, leaderboard_module_1.LeaderboardModule],
         controllers: [games_controller_1.GamesController],
         providers: [game_service_1.GameService, game_gateway_1.GameGateway],
     })

@@ -97,7 +97,7 @@ export class GameService {
     });
   }
 
-  async joinGame(params: { code: string; nickname: string; userId?: string }) {
+  async joinGame(params: { code: string; nickname: string; userId?: string; avatarUrl?: string }) {
     const game = await this.prisma.game.findUnique({
       where: { code: params.code.toUpperCase() },
       include: { players: true },
@@ -117,6 +117,7 @@ export class GameService {
     const player = await this.prisma.player.create({
       data: {
         nickname: params.nickname,
+        avatarUrl: params.avatarUrl ?? null,
         gameId: game.id,
         ...(params.userId ? { userId: params.userId } : {}),
       },
@@ -132,10 +133,11 @@ export class GameService {
     });
   }
 
-  async createPlayerForRematch(params: { nickname: string; gameId: string; userId?: string }) {
+  async createPlayerForRematch(params: { nickname: string; gameId: string; userId?: string; avatarUrl?: string }) {
     return this.prisma.player.create({
       data: {
         nickname: params.nickname,
+        avatarUrl: params.avatarUrl ?? null,
         gameId: params.gameId,
         ...(params.userId ? { userId: params.userId } : {}),
       },
@@ -226,7 +228,7 @@ export class GameService {
     speedBonus: boolean;
     questionDuration: number;
     isDoublePoints: boolean;
-  }) {
+  }): Promise<{ answer: { id: string; isCorrect: boolean; pointsEarned: number }; isFirstAnswer: boolean }> {
     const responseTimeMs = params.answeredAt.getTime() - params.roundStartedAt.getTime();
     const isCorrect = params.choiceIndex === params.correctAnswerIndex;
     const { points } = this.calculateScore(
@@ -236,6 +238,31 @@ export class GameService {
       params.questionDuration,
       params.isDoublePoints,
     );
+
+    const existing = await this.prisma.answer.findFirst({
+      where: { playerId: params.playerId, roundId: params.roundId },
+    });
+
+    if (existing) {
+      const scoreDelta = points - existing.pointsEarned;
+      const answer = await this.prisma.answer.update({
+        where: { id: existing.id },
+        data: {
+          choiceIndex: params.choiceIndex,
+          isCorrect,
+          pointsEarned: points,
+          answeredAt: params.answeredAt,
+          responseTimeMs,
+        },
+      });
+      if (scoreDelta !== 0) {
+        await this.prisma.player.update({
+          where: { id: params.playerId },
+          data: { score: { increment: scoreDelta } },
+        });
+      }
+      return { answer, isFirstAnswer: false };
+    }
 
     const answer = await this.prisma.answer.create({
       data: {
@@ -254,7 +281,7 @@ export class GameService {
       data: { score: { increment: points } },
     });
 
-    return answer;
+    return { answer, isFirstAnswer: true };
   }
 
   async decrementLife(playerId: string): Promise<{ lives: number; eliminated: boolean }> {
@@ -297,6 +324,7 @@ export class GameService {
       scores: players.map((p) => ({
         playerId: p.id,
         nickname: p.nickname,
+        avatarUrl: p.avatarUrl,
         score: p.score,
         deltaThisRound: scoreMap.get(p.id) ?? 0,
         lives: p.lives,

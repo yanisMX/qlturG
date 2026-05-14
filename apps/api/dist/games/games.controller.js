@@ -25,14 +25,34 @@ __decorate([
 ], CreateGameDto.prototype, "difficulty", void 0);
 __decorate([
     (0, class_validator_1.IsInt)(),
-    (0, class_validator_1.Min)(5),
-    (0, class_validator_1.Max)(20),
+    (0, class_validator_1.Min)(10),
+    (0, class_validator_1.Max)(30),
     __metadata("design:type", Number)
 ], CreateGameDto.prototype, "totalQuestions", void 0);
 __decorate([
     (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
 ], CreateGameDto.prototype, "speedBonus", void 0);
+__decorate([
+    (0, class_validator_1.IsEnum)(client_1.GameMode),
+    __metadata("design:type", String)
+], CreateGameDto.prototype, "gameMode", void 0);
+__decorate([
+    (0, class_validator_1.IsInt)(),
+    (0, class_validator_1.Min)(5),
+    (0, class_validator_1.Max)(30),
+    __metadata("design:type", Number)
+], CreateGameDto.prototype, "questionDuration", void 0);
+__decorate([
+    (0, class_validator_1.IsBoolean)(),
+    __metadata("design:type", Boolean)
+], CreateGameDto.prototype, "doublePointsBonus", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsEnum)(client_1.Topic, { each: true }),
+    __metadata("design:type", Array)
+], CreateGameDto.prototype, "topics", void 0);
 class JoinGameDto {
 }
 __decorate([
