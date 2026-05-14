@@ -225,9 +225,10 @@ concernée dans le même commit/PR. C'est non-négociable.
 ### Workflow obligatoire à chaque tâche :
 
 1. Code la fonctionnalité
-2. **Identifie** les fichiers de doc impactés
-3. **Mets-les à jour** dans la foulée
-4. **Liste** dans ta réponse finale les fichiers de doc modifiés
+2. **Rejoue tous les tests** (`cd apps/api && node_modules/.bin/jest` + `cd apps/web && pnpm test`) — aucune régression tolérée
+3. **Identifie** les fichiers de doc impactés
+4. **Mets-les à jour** dans la foulée
+5. **Liste** dans ta réponse finale les fichiers de doc modifiés
 
 ### Si tu n'es pas sûr qu'une doc doit être mise à jour :
 - Pose la question avant de finir la tâche
