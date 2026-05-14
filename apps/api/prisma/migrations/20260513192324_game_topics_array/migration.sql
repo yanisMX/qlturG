@@ -1,0 +1,9 @@
+/*
+  Warnings:
+
+  - You are about to drop the column `topic` on the `Game` table. All the data in the column will be lost.
+
+*/
+-- AlterTable
+ALTER TABLE "Game" DROP COLUMN "topic",
+ADD COLUMN     "topics" "Topic"[] DEFAULT ARRAY[]::"Topic"[];
