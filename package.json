@@ -1,6 +1,6 @@
 {
   "name": "histoire-france-quiz",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "private": true,
   "scripts": {
     "dev": "concurrently \"pnpm --filter api dev\" \"pnpm --filter web dev\"",
