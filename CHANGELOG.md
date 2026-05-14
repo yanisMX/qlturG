@@ -16,7 +16,10 @@ Format : [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 - **Badges hebdomadaires** : archive des performances de fin de semaine visibles sur la page profil.
 - **Pré-remplissage du pseudo** : sur les pages Rejoindre et Créer une partie, le champ pseudo est pré-rempli et verrouillé pour les utilisateurs connectés.
 - **Topics multiples** : le modèle `Game` accepte désormais un tableau `topics` (vs. un seul `topic` nullable), permettant des parties mixtes ou filtrées par plusieurs thèmes.
+- **Bouton Quitter en cours de partie** : bouton "✕ Quitter" dans le header de `PlayPage`, protégé par une modale de confirmation. Émet `game:leave`, reset le store Zustand et redirige vers l'accueil.
 
 ### Corrigé
 
 - Surbrillance du joueur courant dans le scoreboard en cours de partie (`data-me="true"`) — le test Vitest associé a été mis à jour.
+- **Distribution des questions par topic** : quand plusieurs topics sont sélectionnés, les questions sont désormais réparties équitablement (mode standard : `ceil(count/N)` par topic ; mode survival : interleave round-robin). Avant ce correctif, un topic avec un grand pool dominait statistiquement le résultat.
+- **Migrations manquantes en production** : 5 migrations (`add_user_model`, `add_game_modes`, `add_game_topic`, `game_topics_array`, `add_leaderboard`) n'étaient pas suivies par git → tables `WeeklyScore`/`WeeklyBadge` absentes en production → route `/leaderboard` retournait 404. Les migrations sont maintenant trackées ; le `startCommand` Railway tente `migrate deploy` puis bascule sur `db push` en cas d'état incohérent.

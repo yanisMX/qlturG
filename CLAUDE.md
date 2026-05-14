@@ -106,7 +106,7 @@ Period      : ANTIQUITE_GAULE | MOYEN_AGE | RENAISSANCE_ANCIEN_REGIME | REVOLUTI
 | `apps/api/src/games/game.service.ts` | Logique métier pure : createGame, startGame, scoring, startGame filtre par topic si défini |
 | `apps/api/src/games/game.gateway.ts` | WebSocket `/game` — orchestration des events, timers |
 | `apps/api/src/games/games.controller.ts` | REST : POST /games, POST /games/join, GET /games/:code |
-| `apps/api/src/questions/questions.service.ts` | getRandomByDifficulty(difficulty, count, topic?) · getAllByDifficulty(difficulty, excludeIds, topic?) |
+| `apps/api/src/questions/questions.service.ts` | getRandomByDifficulty(difficulty, count, topics[]) — répartition équitable par topic (ceil(count/N) par topic si >1) · getAllByDifficulty(difficulty, excludeIds, topics[]) — interleave round-robin si >1 topic |
 | `apps/api/prisma/schema.prisma` | Source de vérité du schéma |
 | `apps/api/prisma/questions/*.json` | Questions par topic (histoire.json, cinema.json, …) |
 | `apps/web/src/store/gameStore.ts` | État global Zustand : gameId, code, topic, difficulty, players, … |

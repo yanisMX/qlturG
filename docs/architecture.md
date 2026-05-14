@@ -59,13 +59,16 @@ qlturG/
 
 ```
 Question  — banque de questions (period, difficulty, topic, choices[4], answerIndex, explanation)
-Game      — une partie (code 6 chars, status, difficulty, topic?, gameMode, speedBonus, doublePointsBonus, …)
-Player    — un joueur dans une partie (nickname, score, socketId, lives, eliminated)
+Game      — une partie (code 6 chars, status, difficulty, topics[], gameMode, speedBonus, doublePointsBonus, …)
+Player    — un joueur dans une partie (nickname, score, socketId, lives, eliminated, avatarUrl?)
 Round     — une question dans une partie (questionId, orderIndex, startedAt)
 Answer    — réponse d'un joueur à un round (choiceIndex, isCorrect, pointsEarned, responseTimeMs)
+User      — compte joueur (pseudo, email, passwordHash, avatarUrl, refreshToken?)
+WeeklyScore — points hebdomadaires par utilisateur (points, quizzesPlayed, answerStreak, connectionStreak)
+WeeklyBadge — badge de fin de semaine archivé (tier, points, rank)
 ```
 
-Enums : `Difficulty` (FACILE|MOYEN|DIFFICILE|VARIE), `Topic` (HISTOIRE|GEOGRAPHIE|GEOPOLITIQUE|CINEMA|PHILOSOPHIE|LITTERATURE), `GameMode` (STANDARD|SURVIVAL_SOLO|SURVIVAL_MULTI), `GameStatus` (LOBBY|IN_PROGRESS|FINISHED).
+Enums : `Difficulty` (FACILE|MOYEN|DIFFICILE|VARIE), `Topic` (HISTOIRE|GEOGRAPHIE|GEOPOLITIQUE|CINEMA|PHILOSOPHIE|LITTERATURE|ANIMAUX|INFORMATIQUE), `GameMode` (STANDARD|SURVIVAL_SOLO|SURVIVAL_MULTI), `GameStatus` (LOBBY|IN_PROGRESS|FINISHED), `Tier` (BRONZE|SILVER|GOLD|PLATINUM).
 
 ## Flux d'une partie
 
@@ -73,7 +76,7 @@ Enums : `Difficulty` (FACILE|MOYEN|DIFFICILE|VARIE), `Topic` (HISTOIRE|GEOGRAPHI
 1. POST /games          → crée la partie (hostId='pending', topic optionnel)
 2. WS game:join         → crée le joueur ; si hostId='pending' → ce joueur devient host
 3. WS game:join (x N)  → autres joueurs rejoignent (max 12 ; max 1 en SURVIVAL_SOLO)
-4. WS game:start        → hôte, sélectionne les questions filtrées par topic/difficulty, crée les Rounds
+4. WS game:start        → hôte, sélectionne les questions avec répartition équitable par topic (ceil(N/topics) par topic en standard, interleave round-robin en survival), crée les Rounds
 5. WS game:question     → envoyé à tous (SANS answerIndex), timer côté serveur
 6. WS game:answer       → calcul du score avec horodatage serveur
 7. [après timer ou tous ont répondu] → WS game:reveal (answerIndex + explication + scores)
@@ -92,7 +95,7 @@ Modes de jeu :
 | Événement | Payload | Règle |
 |-----------|---------|-------|
 | `game:join` | `{ code, nickname }` | Tout le monde |
-| `game:leave` | — | Tout le monde |
+| `game:leave` | — | Tout le monde (bouton "Quitter" en cours de partie) |
 | `game:start` | — | Hôte uniquement |
 | `game:answer` | `{ choiceIndex }` | Pendant une question active |
 | `game:next` | — | Hôte, pendant la phase de révélation |
