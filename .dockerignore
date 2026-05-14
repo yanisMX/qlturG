@@ -1,0 +1,9 @@
+node_modules
+apps/api/dist
+apps/web/dist
+apps/web/node_modules
+.git
+.github
+test-results
+e2e
+*.md
