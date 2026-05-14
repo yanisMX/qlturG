@@ -1,4 +1,5 @@
 import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
+import { randomBytes } from 'crypto';
 import { PrismaService } from '../prisma/prisma.service';
 import { QuestionsService } from '../questions/questions.service';
 import { Difficulty, GameMode, GameStatus, Topic } from '@prisma/client';
@@ -29,7 +30,9 @@ export class GameService {
       points = 1000;
     } else {
       const durationMs = questionDuration * 1000;
-      const remainingMs = Math.max(0, durationMs - responseTimeMs);
+      // Clamp to [0, durationMs] — negative values (clock skew / replay) must not inflate score
+      const safeResponseTimeMs = Math.max(0, Math.min(responseTimeMs, durationMs));
+      const remainingMs = durationMs - safeResponseTimeMs;
       const remainingSec = remainingMs / 1000;
       points = Math.floor(500 + 500 * (remainingSec / questionDuration));
     }
@@ -40,9 +43,11 @@ export class GameService {
   }
 
   private generateCode(): string {
+    const bytes = randomBytes(6);
     let code = '';
     for (let i = 0; i < 6; i++) {
-      code += CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)];
+      // CODE_CHARS.length === 32 (power of 2) → no modulo bias
+      code += CODE_CHARS[bytes[i] % CODE_CHARS.length];
     }
     return code;
   }

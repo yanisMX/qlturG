@@ -89,6 +89,8 @@ model Answer {
   pointsEarned   Int
   answeredAt     DateTime @default(now())
   responseTimeMs Int
+
+  @@unique([playerId, roundId])
 }
 
 enum Period {
