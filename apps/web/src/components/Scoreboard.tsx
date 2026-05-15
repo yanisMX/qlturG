@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { PlayerInfo } from '../store/gameStore';
 import { duration } from '../styles/tokens';
 
+const formatScore = (value: number) => value.toLocaleString('fr-FR');
+
 interface ScoreboardProps {
   players: PlayerInfo[];
   myPlayerId: string | null;
@@ -84,7 +86,7 @@ export default function Scoreboard({
               )}
 
               <span className="text-sm font-bold tabular-nums font-mono" style={{ color: '#F5C76B' }}>
-                {player.score.toLocaleString()}
+                {formatScore(player.score)}
               </span>
 
               {delta !== undefined && delta > 0 && (
@@ -96,7 +98,7 @@ export default function Scoreboard({
                   className="text-xs font-bold px-1.5 py-0.5 rounded-full shrink-0 font-mono"
                   style={{ color: '#F5C76B', backgroundColor: 'rgba(245,199,107,0.15)', border: '1px solid rgba(245,199,107,0.3)' }}
                 >
-                  +{delta.toLocaleString()}
+                  +{formatScore(delta)}
                 </motion.span>
               )}
 

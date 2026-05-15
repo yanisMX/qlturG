@@ -2,6 +2,10 @@ import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Scoreboard from './Scoreboard';
 
+const formatScore = (value: number) => value.toLocaleString('fr-FR');
+const getByExactTextContent = (value: string) =>
+  screen.getByText((_, node) => node?.textContent === value);
+
 const players = [
   { id: 'p1', nickname: 'Alice', score: 2000 },
   { id: 'p2', nickname: 'Bob', score: 3500 },
@@ -17,14 +21,14 @@ describe('Scoreboard', () => {
 
   it('affiche le score de tous les joueurs', () => {
     render(<Scoreboard players={players} myPlayerId={null} />);
-    expect(screen.getByText('3 500')).toBeInTheDocument();
-    expect(screen.getByText('2 000')).toBeInTheDocument();
+    expect(getByExactTextContent(formatScore(3500))).toBeInTheDocument();
+    expect(getByExactTextContent(formatScore(2000))).toBeInTheDocument();
   });
 
   it('affiche le score de tous les joueurs en mode compact', () => {
     render(<Scoreboard players={players} myPlayerId={null} compact />);
-    expect(screen.getByText('3 500')).toBeInTheDocument();
-    expect(screen.getByText('2 000')).toBeInTheDocument();
+    expect(getByExactTextContent(formatScore(3500))).toBeInTheDocument();
+    expect(getByExactTextContent(formatScore(2000))).toBeInTheDocument();
   });
 
   it('met en surbrillance le joueur courant', () => {
@@ -42,7 +46,7 @@ describe('Scoreboard', () => {
     ];
     render(<Scoreboard players={players} myPlayerId={null} revealScores={revealScores} />);
     expect(screen.getByText('+850')).toBeInTheDocument();
-    expect(screen.getByText('+1 000')).toBeInTheDocument();
+    expect(getByExactTextContent(`+${formatScore(1000)}`)).toBeInTheDocument();
     expect(screen.queryByText('+0')).not.toBeInTheDocument();
   });
 
