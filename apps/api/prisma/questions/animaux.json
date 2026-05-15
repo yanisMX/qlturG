@@ -835,5 +835,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel est l'animal terrestre le plus rapide du monde ?",
+    "choices": ["Le guépard", "Le lion", "L'antilope", "Le léopard"],
+    "answerIndex": 0,
+    "explanation": "Le guépard peut atteindre des pointes de vitesse d'environ 100 à 110 km/h sur de courtes distances. Sa morphologie légère et sa colonne vertébrale très souple en font un sprinteur exceptionnel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel grand oiseau incapable de voler vit principalement en Antarctique ?",
+    "choices": ["Le manchot empereur", "L'autruche", "Le kiwi", "L'émeu"],
+    "answerIndex": 0,
+    "explanation": "Le manchot empereur est le plus grand de tous les manchots. Il supporte des conditions extrêmes sur la banquise antarctique, où le mâle couve l'œuf pendant l'hiver.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel animal possède huit bras munis de ventouses ?",
+    "choices": ["Le poulpe", "Le calmar", "La seiche", "La méduse"],
+    "answerIndex": 0,
+    "explanation": "Le poulpe, ou pieuvre, possède huit bras dotés de ventouses. C'est aussi un invertébré réputé pour son intelligence et sa grande capacité d'adaptation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère est célèbre pour sa poche ventrale et ses bonds en Australie ?",
+    "choices": ["Le kangourou roux", "Le koala", "Le wombat", "L'échidné"],
+    "answerIndex": 0,
+    "explanation": "Le kangourou roux est l'un des animaux les plus emblématiques de l'Australie. Comme tous les marsupiaux, il porte ses petits dans une poche ventrale appelée marsupium.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel animal noir et blanc d'Afrique est célèbre pour ses rayures ?",
+    "choices": ["Le zèbre", "L'okapi", "Le gnou", "L'oryx"],
+    "answerIndex": 0,
+    "explanation": "Le zèbre est un équidé africain reconnaissable à ses rayures uniques à chaque individu. Ces motifs pourraient jouer un rôle social et aider à perturber certains insectes piqueurs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel est le plus grand félin du monde ?",
+    "choices": ["Le lion", "Le tigre", "Le jaguar", "Le léopard"],
+    "answerIndex": 1,
+    "explanation": "Le tigre, en particulier le tigre de Sibérie, est le plus grand des félins actuels. Certains mâles peuvent dépasser 300 kg.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel animal construit souvent des barrages sur les rivières ?",
+    "choices": ["Le castor", "La loutre", "Le rat musqué", "Le ragondin"],
+    "answerIndex": 0,
+    "explanation": "Le castor abat des branches et empile du bois pour ralentir l'eau et créer des étangs. Ses constructions modifient profondément les milieux aquatiques et favorisent la biodiversité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère se nourrit presque exclusivement de bambou ?",
+    "choices": ["Le panda géant", "Le paresseux", "Le koala", "Le tapir"],
+    "answerIndex": 0,
+    "explanation": "Le panda géant est un ours dont l'alimentation repose presque entièrement sur le bambou. Il doit en consommer de très grandes quantités chaque jour en raison de la faible valeur énergétique de cette plante.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel grand reptile vit dans les fleuves d'Afrique et peut rester longtemps immobile avant d'attaquer ?",
+    "choices": ["Le crocodile du Nil", "L'anaconda vert", "Le gavial", "Le varan du Nil"],
+    "answerIndex": 0,
+    "explanation": "Le crocodile du Nil est l'un des plus grands reptiles d'Afrique. C'est un prédateur embusqué, capable d'attendre immobile pendant de longues périodes au bord de l'eau.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère marin est connu pour ses défenses et vit dans l'Arctique ?",
+    "choices": ["Le morse", "Le dauphin", "Le phoque", "Le béluga"],
+    "answerIndex": 0,
+    "explanation": "Le morse est un grand mammifère marin arctique doté de longues défenses. Il les utilise notamment pour se hisser sur la glace et lors de combats entre mâles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère est le plus grand prédateur terrestre actuel ?",
+    "choices": ["Le tigre de Sibérie", "L'ours polaire", "Le grizzli", "Le loup gris"],
+    "answerIndex": 1,
+    "explanation": "L'ours polaire est considéré comme le plus grand carnivore terrestre. Il dépend étroitement de la banquise pour chasser les phoques, sa principale ressource alimentaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel oiseau effectue chaque année une migration de l'Arctique à l'Antarctique ?",
+    "choices": ["L'albatros hurleur", "La sterne arctique", "Le puffin cendré", "Le flamant rose"],
+    "answerIndex": 1,
+    "explanation": "La sterne arctique accomplit l'une des plus longues migrations du règne animal. Elle profite ainsi de deux étés par an, en alternant entre les deux pôles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mollusque bivalve peut produire des perles naturelles ?",
+    "choices": ["La moule", "L'huître perlière", "La palourde", "La coquille Saint-Jacques"],
+    "answerIndex": 1,
+    "explanation": "Les perles se forment lorsqu'un corps étranger est enrobé de nacre par certains mollusques. Les huîtres perlières sont les plus connues pour cette capacité.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel primate utilise des brindilles pour extraire des termites ?",
+    "choices": ["Le gorille", "Le chimpanzé", "Le babouin", "Le gibbon"],
+    "answerIndex": 1,
+    "explanation": "Le chimpanzé est célèbre pour son usage d'outils, notamment des brindilles ou tiges végétales pour « pêcher » des termites. Ce comportement a beaucoup compté dans l'étude des origines de la technique chez les primates.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel poisson peut se gonfler en boule pour se défendre ?",
+    "choices": ["Le poisson-scie", "Le poisson-globe", "Le poisson-clown", "Le poisson-lune"],
+    "answerIndex": 1,
+    "explanation": "Le poisson-globe avale rapidement de l'eau ou de l'air pour augmenter brutalement son volume. Plusieurs espèces sont aussi très toxiques à cause de la tétrodotoxine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Comment appelle-t-on le groupe des mammifères marins comprenant dauphins et baleines ?",
+    "choices": ["Les pinnipèdes", "Les siréniens", "Les cétacés", "Les chondrichtyens"],
+    "answerIndex": 2,
+    "explanation": "Les cétacés regroupent les baleines, les dauphins et les marsouins. Ils sont parfaitement adaptés à la vie aquatique, même s'ils restent des mammifères respirant l'air.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel animal semi-aquatique d'Afrique passe souvent ses journées dans l'eau pour protéger sa peau ?",
+    "choices": ["Le buffle", "L'hippopotame", "Le tapir", "Le crocodile"],
+    "answerIndex": 1,
+    "explanation": "L'hippopotame reste longtemps immergé pour éviter la surchauffe et la déshydratation. Malgré son allure massive, il peut se montrer très rapide et dangereux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel crustacé terrestre tropical peut grimper aux arbres et casser des noix de coco ?",
+    "choices": ["Le tourteau", "Le crabe de cocotier", "Le crabe violoniste", "La squille"],
+    "answerIndex": 1,
+    "explanation": "Le crabe de cocotier est le plus grand arthropode terrestre vivant. Très puissant, il peut grimper et utiliser ses pinces pour ouvrir des fruits ou transporter des objets lourds.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel serpent est généralement considéré comme le plus long du monde ?",
+    "choices": ["Le python réticulé", "L'anaconda vert", "Le cobra royal", "Le boa constricteur"],
+    "answerIndex": 0,
+    "explanation": "Le python réticulé peut dépasser 6 mètres, et certains spécimens exceptionnels davantage encore. L'anaconda vert est en revanche plus massif.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère marin utilise souvent des pierres comme outils pour casser des coquillages ?",
+    "choices": ["Le phoque gris", "La loutre de mer", "Le dauphin commun", "Le dugong"],
+    "answerIndex": 1,
+    "explanation": "La loutre de mer place parfois un coquillage sur son ventre et le frappe avec une pierre pour l'ouvrir. C'est un exemple classique d'usage d'outil chez les mammifères non humains.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel poisson cartilagineux géant se nourrit surtout de plancton et peut dépasser 10 mètres ?",
+    "choices": ["Le grand requin blanc", "Le requin mako", "Le requin pèlerin", "Le marlin noir"],
+    "answerIndex": 2,
+    "explanation": "Le requin pèlerin est l'un des plus grands poissons du monde. Malgré sa taille impressionnante, il filtre le plancton et ne représente pas un danger pour l'humain.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère marin herbivore de l'océan Indien et du Pacifique est un proche parent des lamantins ?",
+    "choices": ["Le morse", "Le dugong", "Le béluga", "Le narval"],
+    "answerIndex": 1,
+    "explanation": "Le dugong appartient au groupe des siréniens, comme les lamantins. Il broute des herbiers marins dans les eaux chaudes et peu profondes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel oiseau des Galápagos a contribué à inspirer les réflexions de Darwin sur l'évolution ?",
+    "choices": ["Les pinsons de Darwin", "Les albatros royaux", "Les aras rouges", "Les manchots du Cap"],
+    "answerIndex": 0,
+    "explanation": "Les différentes formes de bec observées chez ces pinsons ont illustré l'adaptation des espèces à des régimes alimentaires variés. Ils sont devenus un symbole de la sélection naturelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quelle espèce de requin peut remonter loin dans les fleuves malgré sa nature marine ?",
+    "choices": ["Le requin-bouledogue", "Le requin-tigre", "Le requin-marteau", "Le requin-renard"],
+    "answerIndex": 0,
+    "explanation": "Le requin-bouledogue tolère aussi bien l'eau salée que l'eau douce grâce à une régulation osmotique efficace. Il a été observé dans de grands fleuves comme le Mississippi ou le Zambèze.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère africain fouisseur est aussi appelé « cochon de terre » ?",
+    "choices": ["Le phacochère", "L'oryctérope", "Le pangolin", "Le daman"],
+    "answerIndex": 1,
+    "explanation": "L'oryctérope se nourrit principalement de termites et de fourmis, qu'il déterre avec ses puissantes griffes. Son nom anglais aardvark signifie littéralement « cochon de terre ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
   }
 ]

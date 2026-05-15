@@ -736,5 +736,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Espagne ?",
+    "choices": ["Barcelone", "Madrid", "Séville", "Valence"],
+    "answerIndex": 1,
+    "explanation": "Madrid est la capitale politique de l'Espagne depuis le XVIe siècle. Située au centre de la péninsule Ibérique, elle figure parmi les plus hautes capitales d'Europe.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Inde ?",
+    "choices": ["Bombay", "Calcutta", "New Delhi", "Bangalore"],
+    "answerIndex": 2,
+    "explanation": "New Delhi est la capitale politique de l'Inde, intégrée à la grande agglomération de Delhi. Bombay, aujourd'hui Mumbai, est surtout la capitale économique du pays.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve traverse Rome ?",
+    "choices": ["Le Pô", "Le Tibre", "L'Arno", "Le Danube"],
+    "answerIndex": 1,
+    "explanation": "Le Tibre traverse Rome avant de se jeter dans la mer Tyrrhénienne. La légende de Romulus et Rémus est étroitement liée à ce fleuve.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de l'Égypte ?",
+    "choices": ["Alexandrie", "Le Caire", "Louxor", "Port-Saïd"],
+    "answerIndex": 1,
+    "explanation": "Le Caire est la principale métropole de l'Égypte et du monde arabe. Située près du delta du Nil, la ville forme un immense ensemble urbain avec Gizeh.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel océan borde la côte ouest du Chili ?",
+    "choices": ["L'océan Atlantique", "L'océan Pacifique", "L'océan Indien", "L'océan Arctique"],
+    "answerIndex": 1,
+    "explanation": "Le Chili s'étire sur la façade pacifique de l'Amérique du Sud sur plus de 4000 km du nord au sud. Cette ouverture maritime est essentielle à son identité géographique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle est la capitale de la Suède ?",
+    "choices": ["Gothenburg", "Malmö", "Uppsala", "Stockholm"],
+    "answerIndex": 3,
+    "explanation": "Stockholm est bâtie sur un archipel entre le lac Mälar et la mer Baltique. Son centre ancien, Gamla stan, est l'un des plus connus d'Europe du Nord.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle péninsule est occupée principalement par la Norvège et la Suède ?",
+    "choices": ["La péninsule Ibérique", "La Scandinavie", "Le Jutland", "Le Kamtchatka"],
+    "answerIndex": 1,
+    "explanation": "La Scandinavie désigne au sens strict la grande péninsule partagée par la Norvège et la Suède. Par extension culturelle, on y associe souvent aussi le Danemark.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays est surnommé le « pays du Soleil-Levant » ?",
+    "choices": ["La Chine", "Le Japon", "La Corée du Sud", "La Thaïlande"],
+    "answerIndex": 1,
+    "explanation": "Le nom japonais Nihon ou Nippon signifie littéralement « origine du soleil ». Cette appellation a donné en français l'expression « pays du Soleil-Levant ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle ville est la capitale de la Belgique ?",
+    "choices": ["Anvers", "Bruxelles", "Liège", "Gand"],
+    "answerIndex": 1,
+    "explanation": "Bruxelles est la capitale de la Belgique et l'un des grands centres politiques de l'Europe. Elle accueille notamment la Commission européenne et le siège politique de l'OTAN.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays d'Europe a la forme d'une botte ?",
+    "choices": ["La Grèce", "Le Portugal", "L'Italie", "La Croatie"],
+    "answerIndex": 2,
+    "explanation": "La péninsule italienne est célèbre pour sa silhouette en forme de botte s'avançant dans la Méditerranée. La Sicile semble d'ailleurs recevoir le « coup de pied » de cette botte.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel détroit sépare l'Europe de l'Afrique entre l'Espagne et le Maroc ?",
+    "choices": ["Le détroit de Gibraltar", "Le Bosphore", "Le détroit de Béring", "Le pas de Calais"],
+    "answerIndex": 0,
+    "explanation": "Le détroit de Gibraltar relie l'Atlantique à la Méditerranée. Large d'environ 14 km à son point le plus étroit, il constitue un passage maritime stratégique majeur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel massif montagneux traverse le Maroc, l'Algérie et la Tunisie ?",
+    "choices": ["Le Caucase", "L'Atlas", "L'Oural", "Le Drakensberg"],
+    "answerIndex": 1,
+    "explanation": "L'Atlas s'étend sur l'Afrique du Nord, du Maroc jusqu'à la Tunisie. Il compartimente fortement les paysages et joue un rôle important dans les climats régionaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays possède l'enclave de Kaliningrad sur la Baltique ?",
+    "choices": ["La Pologne", "La Russie", "La Lituanie", "L'Allemagne"],
+    "answerIndex": 1,
+    "explanation": "Kaliningrad est un territoire russe séparé du reste du pays, situé entre la Pologne et la Lituanie. Cette position en fait un point stratégique important sur la mer Baltique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle mer borde la ville ukrainienne d'Odessa ?",
+    "choices": ["La mer Caspienne", "La mer d'Azov", "La mer Noire", "La mer Égée"],
+    "answerIndex": 2,
+    "explanation": "Odessa est le grand port ukrainien de la mer Noire. Sa situation en a fait un lieu central pour le commerce des céréales et les rivalités géopolitiques régionales.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve traverse la ville de Prague ?",
+    "choices": ["L'Elbe", "Le Dniepr", "La Vltava", "La Save"],
+    "answerIndex": 2,
+    "explanation": "La Vltava, appelée Moldau en allemand, traverse Prague avant de rejoindre l'Elbe. Elle est indissociable du paysage historique de la capitale tchèque.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays d'Amérique du Sud, avec la Bolivie, n'a pas d'accès à la mer ?",
+    "choices": ["L'Uruguay", "Le Paraguay", "L'Équateur", "Le Suriname"],
+    "answerIndex": 1,
+    "explanation": "Le Paraguay est un État enclavé au cœur du continent sud-américain. Son accès au commerce international passe surtout par le bassin fluvial du Paraná et du Paraguay.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle île méditerranéenne appartient à l'Italie et se trouve au sud de la Corse ?",
+    "choices": ["La Sicile", "La Crète", "La Sardaigne", "Malte"],
+    "answerIndex": 2,
+    "explanation": "La Sardaigne est la deuxième plus grande île de Méditerranée après la Sicile. Elle appartient à l'Italie et fait face à la Corse dont elle n'est séparée que par les bouches de Bonifacio.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle région polaire entoure le pôle Nord ?",
+    "choices": ["L'Antarctique", "Le Labrador", "L'Arctique", "La Patagonie"],
+    "answerIndex": 2,
+    "explanation": "L'Arctique désigne l'ensemble des régions situées autour du pôle Nord. Contrairement à l'Antarctique, il s'agit surtout d'un océan entouré de terres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel pays d'Asie du Sud-Est partage l'île de Bornéo avec l'Indonésie et Brunei ?",
+    "choices": ["Le Vietnam", "La Malaisie", "Les Philippines", "La Thaïlande"],
+    "answerIndex": 1,
+    "explanation": "Bornéo est partagée entre l'Indonésie, la Malaisie et Brunei. Les États malaisiens de Sabah et Sarawak occupent la partie nord de l'île.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle capitale européenne est traversée par le Tage ?",
+    "choices": ["Madrid", "Lisbonne", "Budapest", "Bratislava"],
+    "answerIndex": 1,
+    "explanation": "Le Tage traverse l'Espagne puis le Portugal avant de former un vaste estuaire à Lisbonne. Ce fleuve a joué un rôle central dans l'histoire maritime portugaise.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel désert côtier du nord du Chili est l'un des plus arides du monde ?",
+    "choices": ["Le désert de Sonora", "Le désert d'Atacama", "Le Namib", "Le Karakoum"],
+    "answerIndex": 1,
+    "explanation": "Le désert d'Atacama connaît dans certaines zones des précipitations extrêmement faibles. Ses paysages et son ciel très pur en font un site privilégié pour l'astronomie.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quelle île indonésienne abrite Jakarta ?",
+    "choices": ["Sumatra", "Bali", "Java", "Sulawesi"],
+    "answerIndex": 2,
+    "explanation": "Jakarta est située sur l'île de Java, la plus peuplée d'Indonésie. C'est aussi l'une des îles les plus densément peuplées du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel territoire autonome danois est situé entre l'Islande et la Norvège dans l'Atlantique Nord ?",
+    "choices": ["Le Groenland", "Les îles Féroé", "Jan Mayen", "Le Spitzberg"],
+    "answerIndex": 1,
+    "explanation": "Les îles Féroé forment un archipel autonome du royaume du Danemark. Leur position en Atlantique Nord leur confère une importance maritime et halieutique notable.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel sommet alpin en forme de pyramide culmine à 4478 mètres à la frontière italo-suisse ?",
+    "choices": ["Le mont Rose", "Le Cervin", "Le mont Blanc", "L'Eiger"],
+    "answerIndex": 1,
+    "explanation": "Le Cervin, ou Matterhorn, est l'un des sommets les plus célèbres des Alpes. Sa silhouette spectaculaire en fait un symbole de la haute montagne européenne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
+  },
+  {
+    "text": "Quel fleuve prend sa source en Forêt-Noire et se jette dans la mer Noire ?",
+    "choices": ["Le Rhin", "Le Dniestr", "Le Danube", "La Volga"],
+    "answerIndex": 2,
+    "explanation": "Le Danube naît dans le sud-ouest de l'Allemagne et traverse une large partie de l'Europe centrale et orientale. Son delta en Roumanie et en Ukraine est l'un des plus remarquables du continent.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOGRAPHIE"
   }
 ]

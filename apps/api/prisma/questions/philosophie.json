@@ -880,5 +880,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel penseur florentin est l'auteur du Prince ?",
+    "choices": ["Machiavel", "Guichardin", "Savonarole", "Montaigne"],
+    "answerIndex": 0,
+    "explanation": "Machiavel rédige Le Prince au début du XVIe siècle pour réfléchir à la conquête et à la conservation du pouvoir. Son nom est devenu synonyme de réalisme politique, parfois à tort simplifié.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel empereur romain a écrit Pensées pour moi-même ?",
+    "choices": ["Auguste", "Marc Aurèle", "Trajan", "Hadrien"],
+    "answerIndex": 1,
+    "explanation": "Marc Aurèle est souvent présenté comme la figure la plus célèbre du stoïcisme impérial. Ses Pensées mêlent exercice spirituel, discipline de soi et méditation sur le devoir.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe grec enseignait dans le Jardin à Athènes ?",
+    "choices": ["Aristote", "Épicure", "Zénon de Cition", "Pyrrhon"],
+    "answerIndex": 1,
+    "explanation": "Le Jardin d'Épicure est à la fois un lieu d'enseignement et un modèle de vie philosophique fondé sur l'amitié, la sobriété et la recherche de l'ataraxie. L'épicurisme y prend forme comme manière de vivre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel auteur des Essais a popularisé la devise « Que sais-je ? » ?",
+    "choices": ["Pascal", "Montaigne", "Descartes", "La Boétie"],
+    "answerIndex": 1,
+    "explanation": "Montaigne fait de cette formule une expression de la modestie du jugement et du scepticisme. Ses Essais inaugurent une forme de pensée très personnelle, mobile et expérimentale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe allemand est associé au concept de surhomme ?",
+    "choices": ["Hegel", "Nietzsche", "Heidegger", "Feuerbach"],
+    "answerIndex": 1,
+    "explanation": "Le surhomme apparaît notamment dans Ainsi parlait Zarathoustra. Chez Nietzsche, il ne désigne pas un homme supérieur au sens banal, mais une figure de dépassement créateur des anciennes valeurs.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe anglais a écrit l'Essai sur l'entendement humain ?",
+    "choices": ["Thomas Hobbes", "John Locke", "David Hume", "George Berkeley"],
+    "answerIndex": 1,
+    "explanation": "Dans cet ouvrage de 1690, Locke examine l'origine et les limites de la connaissance humaine. Il y refuse l'idée d'idées innées et défend une approche empiriste.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe présocratique affirmait qu'on ne se baigne jamais deux fois dans le même fleuve ?",
+    "choices": ["Parménide", "Héraclite", "Démocrite", "Empédocle"],
+    "answerIndex": 1,
+    "explanation": "Héraclite insiste sur le devenir et la transformation permanente des choses. L'image du fleuve exprime l'idée que tout change sans cesse, y compris celui qui l'observe.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel auteur a formulé la maxime « L'enfer, c'est les autres » ?",
+    "choices": ["Camus", "Sartre", "Beauvoir", "Merleau-Ponty"],
+    "answerIndex": 1,
+    "explanation": "La formule apparaît dans la pièce Huis clos de Jean-Paul Sartre. Elle ne signifie pas simplement que les autres sont insupportables, mais que leur regard peut nous enfermer dans une image de nous-mêmes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe a défendu la séparation des pouvoirs dans De l'esprit des lois ?",
+    "choices": ["Rousseau", "Diderot", "Montesquieu", "Condorcet"],
+    "answerIndex": 2,
+    "explanation": "Montesquieu distingue les pouvoirs législatif, exécutif et judiciaire afin d'éviter la concentration arbitraire de la puissance politique. Sa réflexion a fortement influencé les régimes constitutionnels modernes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe cynique vivait selon la légende dans un tonneau ?",
+    "choices": ["Épictète", "Diogène", "Pyrrhon", "Anaxagore"],
+    "answerIndex": 1,
+    "explanation": "Diogène de Sinope est devenu le symbole d'une vie volontairement dépouillée et provocatrice. Les anecdotes qui le concernent visent à dénoncer les conventions sociales et les faux besoins.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe américain est l'auteur d'une Théorie de la justice (1971) ?",
+    "choices": ["Michael Sandel", "John Rawls", "Robert Nozick", "Richard Rorty"],
+    "answerIndex": 1,
+    "explanation": "John Rawls renouvelle la philosophie politique contemporaine en partant d'une position originelle derrière un voile d'ignorance. Il cherche ainsi à fonder des principes de justice équitables pour tous.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe autrichien a écrit le Tractatus logico-philosophicus ?",
+    "choices": ["Ludwig Wittgenstein", "Karl Popper", "Edmund Husserl", "Rudolf Carnap"],
+    "answerIndex": 0,
+    "explanation": "Le Tractatus cherche à déterminer les limites du langage en le rapportant à la structure logique du monde. Wittgenstein en viendra plus tard à critiquer lui-même plusieurs de ses thèses initiales.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quelle notion spinoziste désigne l'effort par lequel chaque être persévère dans son être ?",
+    "choices": ["Le cogito", "Le conatus", "L'épochè", "Le logos"],
+    "answerIndex": 1,
+    "explanation": "Le conatus désigne chez Spinoza la tendance fondamentale de chaque chose à persévérer dans son existence. Cette notion est centrale pour comprendre son éthique des affects et du désir.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Comment appelle-t-on chez Descartes l'exigence de ne rien admettre sans preuve claire ?",
+    "choices": ["L'intuition pure", "Le doute méthodique", "La réduction phénoménologique", "Le nihilisme"],
+    "answerIndex": 1,
+    "explanation": "Le doute méthodique consiste à suspendre provisoirement l'assentiment envers tout ce qui peut être mis en question. Il permet à Descartes de rechercher un point de départ absolument certain pour la connaissance.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe américain a popularisé le pragmatisme avec l'idée que le vrai se vérifie par ses effets pratiques ?",
+    "choices": ["William James", "John Dewey", "Richard Rorty", "Hilary Putnam"],
+    "answerIndex": 0,
+    "explanation": "William James a contribué à diffuser le pragmatisme au tournant du XXe siècle. Il met l'accent sur les conséquences concrètes des idées et sur leur valeur dans l'expérience vécue.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe du langage a théorisé les actes de parole dans How to Do Things with Words ?",
+    "choices": ["J. L. Austin", "Noam Chomsky", "Michel Foucault", "Nelson Goodman"],
+    "answerIndex": 0,
+    "explanation": "Austin montre que parler, ce n'est pas seulement décrire le monde, mais aussi agir : promettre, ordonner, déclarer, baptiser. Cette analyse a profondément renouvelé la philosophie du langage ordinaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quelle notion stoïcienne désigne la liberté intérieure face aux passions destructrices ?",
+    "choices": ["L'ataraxie", "L'apatheia", "Le kairos", "La catharsis"],
+    "answerIndex": 1,
+    "explanation": "L'apatheia stoïcienne ne signifie pas l'insensibilité totale, mais la maîtrise des passions qui troublent le jugement. Elle participe d'un idéal de sagesse accordé à l'ordre du monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe allemand a distingué le phénomène de la chose en soi ?",
+    "choices": ["Fichte", "Kant", "Schopenhauer", "Schelling"],
+    "answerIndex": 1,
+    "explanation": "Chez Kant, nous n'accédons aux objets qu'à travers les formes et catégories de notre connaissance. La chose en soi désigne ce qui existe indépendamment de cette relation, sans pouvoir être connu comme tel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel penseur chrétien du IVe-Ve siècle a écrit Les Confessions et La Cité de Dieu ?",
+    "choices": ["Tertullien", "Saint Augustin", "Thomas d'Aquin", "Origène"],
+    "answerIndex": 1,
+    "explanation": "Saint Augustin est une figure décisive de la pensée chrétienne occidentale. Ses Confessions sont à la fois une autobiographie spirituelle et une méditation sur le temps, la mémoire et la conversion.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe allemand a influencé Marx par sa dialectique de l'histoire ?",
+    "choices": ["Nietzsche", "Hegel", "Husserl", "Cassirer"],
+    "answerIndex": 1,
+    "explanation": "Marx reprend à Hegel l'idée d'un devenir conflictuel et structuré, tout en la matérialisant. La dette est profonde, même si Marx affirme avoir « remis Hegel sur ses pieds ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe médiéval a donné son nom au principe de parcimonie appelé « rasoir » ?",
+    "choices": ["Abélard", "Guillaume d'Occam", "Duns Scot", "Anselme de Cantorbéry"],
+    "answerIndex": 1,
+    "explanation": "Le rasoir d'Occam recommande de ne pas multiplier les entités explicatives sans nécessité. Ce principe a connu une longue postérité bien au-delà du cadre scolastique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel concept de Deleuze et Guattari désigne un modèle non hiérarchique opposé à l'arbre ?",
+    "choices": ["Le rhizome", "La monade", "L'épistémè", "Le cogito"],
+    "answerIndex": 0,
+    "explanation": "Le rhizome, développé notamment dans Mille Plateaux, sert à penser des connexions multiples, sans centre ni hiérarchie unique. Il s'oppose aux modèles arborescents trop rigides pour saisir la complexité du réel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel penseur de l'École de Francfort a coécrit Dialectique de la raison avec Max Horkheimer ?",
+    "choices": ["Theodor Adorno", "Herbert Marcuse", "Jürgen Habermas", "Erich Fromm"],
+    "answerIndex": 0,
+    "explanation": "Adorno et Horkheimer examinent dans cet ouvrage la manière dont la raison moderne peut se retourner en domination et en barbarie. Le livre est un texte majeur de la théorie critique du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe contemporain a écrit Après la vertu (1981) ?",
+    "choices": ["Charles Taylor", "Alasdair MacIntyre", "Bernard Williams", "Peter Singer"],
+    "answerIndex": 1,
+    "explanation": "Dans Après la vertu, MacIntyre critique l'éclatement moral du monde moderne et appelle à retrouver des traditions éthiques plus substantielles. Son ouvrage a relancé l'intérêt pour l'éthique des vertus d'inspiration aristotélicienne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe espagnol est l'auteur de La Révolte des masses ?",
+    "choices": ["Miguel de Unamuno", "José Ortega y Gasset", "Xavier Zubiri", "Julián Marías"],
+    "answerIndex": 1,
+    "explanation": "Publié en 1930, ce livre analyse l'avènement de l'homme-masse dans les sociétés contemporaines. Ortega y Gasset y réfléchit aux effets politiques et culturels de la démocratisation de masse.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
   }
 ]

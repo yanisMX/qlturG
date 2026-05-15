@@ -1402,5 +1402,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Que signifie le sigle « FMI » ?",
+    "choices": ["Fédération monétaire internationale", "Fonds monétaire international", "Forum monétaire interétatique", "Financement mondial indépendant"],
+    "answerIndex": 1,
+    "explanation": "Le Fonds monétaire international a été créé en 1944 à Bretton Woods. Il intervient notamment pour soutenir des États en crise de balance des paiements et surveiller la stabilité financière internationale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle ville accueille le siège de l'Organisation mondiale du commerce ?",
+    "choices": ["Bruxelles", "Vienne", "Genève", "La Haye"],
+    "answerIndex": 2,
+    "explanation": "L'OMC a son siège à Genève, en Suisse. Elle a remplacé le GATT en 1995 pour encadrer les règles du commerce mondial.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a lancé le plan Marshall après la Seconde Guerre mondiale ?",
+    "choices": ["Le Royaume-Uni", "Les États-Unis", "Le Canada", "La France"],
+    "answerIndex": 1,
+    "explanation": "Le plan Marshall est annoncé en 1947 par le secrétaire d'État américain George Marshall. Il visait à financer la reconstruction de l'Europe occidentale et à contenir l'influence soviétique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays accueille le siège du FMI et de la Banque mondiale ?",
+    "choices": ["La Suisse", "La Belgique", "Les États-Unis", "Le Royaume-Uni"],
+    "answerIndex": 2,
+    "explanation": "Le FMI et la Banque mondiale siègent à Washington. Leur localisation reflète le poids central des États-Unis dans l'ordre économique international d'après 1945.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation européenne protège les droits humains autour de la Cour européenne des droits de l'homme ?",
+    "choices": ["L'Union européenne", "Le Conseil de l'Europe", "L'OSCE", "L'AELE"],
+    "answerIndex": 1,
+    "explanation": "Le Conseil de l'Europe, fondé en 1949, est distinct de l'Union européenne. Il est à l'origine de la Convention européenne des droits de l'homme et de la Cour de Strasbourg.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays contrôle le canal de Panama depuis 1999 ?",
+    "choices": ["La Colombie", "Le Panama", "Les États-Unis", "Le Costa Rica"],
+    "answerIndex": 1,
+    "explanation": "Depuis le 31 décembre 1999, le canal de Panama est sous souveraineté panaméenne. Ce transfert avait été prévu par les traités Torrijos-Carter signés en 1977.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays contrôle le Bosphore et les Dardanelles ?",
+    "choices": ["La Grèce", "La Turquie", "La Russie", "La Bulgarie"],
+    "answerIndex": 1,
+    "explanation": "La Turquie contrôle ces deux détroits qui relient la mer Noire à la Méditerranée. Leur importance géostratégique est majeure pour la circulation maritime et militaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel pays a succédé à l'URSS comme membre permanent au Conseil de sécurité de l'ONU ?",
+    "choices": ["L'Ukraine", "Le Kazakhstan", "La Russie", "La Biélorussie"],
+    "answerIndex": 2,
+    "explanation": "Après la disparition de l'URSS en 1991, la Fédération de Russie a repris son siège permanent au Conseil de sécurité. Elle a ainsi conservé le droit de veto hérité de l'Union soviétique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle organisation rassemble 55 États africains à l'échelle continentale ?",
+    "choices": ["La CEDEAO", "L'Union africaine", "Le Mercosur", "Le G77"],
+    "answerIndex": 1,
+    "explanation": "L'Union africaine réunit la quasi-totalité des États du continent africain. Elle a succédé à l'Organisation de l'unité africaine en 2002.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Dans quelle ville siège la Cour pénale internationale ?",
+    "choices": ["Genève", "Bruxelles", "La Haye", "Luxembourg"],
+    "answerIndex": 2,
+    "explanation": "La Cour pénale internationale siège à La Haye, aux Pays-Bas. Elle juge les individus accusés de crimes de guerre, crimes contre l'humanité, génocide et crime d'agression.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité de 1951 a fondé la Communauté européenne du charbon et de l'acier ?",
+    "choices": ["Le traité de Paris", "Le traité de Rome", "Le traité de Maastricht", "Le traité de Lisbonne"],
+    "answerIndex": 0,
+    "explanation": "Le traité de Paris de 1951 crée la CECA entre six États européens. Il est souvent considéré comme l'un des premiers actes concrets de la construction européenne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle conférence de 1944 a posé les bases de l'ordre monétaire international d'après-guerre ?",
+    "choices": ["La conférence de Potsdam", "La conférence de Bretton Woods", "La conférence de Bandung", "La conférence de San Francisco"],
+    "answerIndex": 1,
+    "explanation": "La conférence de Bretton Woods a dessiné un système fondé sur des changes fixes autour du dollar et a donné naissance au FMI et à la Banque mondiale. Elle structure durablement l'économie internationale de l'après-guerre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel procès international de 1945-1946 a jugé les principaux dirigeants nazis ?",
+    "choices": ["Le procès de Tokyo", "Le procès de Nuremberg", "Le procès de La Haye", "Le procès de Leipzig"],
+    "answerIndex": 1,
+    "explanation": "Le procès de Nuremberg a posé des bases essentielles du droit pénal international. Il a notamment défini les crimes contre l'humanité et la responsabilité pénale individuelle des dirigeants.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel sommet de 1989 entre George H. W. Bush et Mikhaïl Gorbatchev est souvent présenté comme la fin symbolique de la guerre froide ?",
+    "choices": ["Le sommet de Reykjavik", "Le sommet de Malte", "Le sommet de Vienne", "Le sommet de Genève"],
+    "answerIndex": 1,
+    "explanation": "Le sommet de Malte, en décembre 1989, intervient quelques semaines après la chute du mur de Berlin. Il symbolise l'effondrement de la confrontation bipolaire née après 1945.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel accord signé en 1972 entre Washington et Moscou limitait les systèmes antimissiles balistiques ?",
+    "choices": ["Le traité ABM", "Le traité INF", "Le traité START I", "Le traité CFE"],
+    "answerIndex": 0,
+    "explanation": "Le traité ABM encadrait la défense antimissile pour préserver l'équilibre de la dissuasion nucléaire. Il reposait sur l'idée que l'invulnérabilité totale d'un camp déstabiliserait la relation stratégique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité européen de 2007 a remplacé le projet de Constitution européenne rejeté par référendum dans plusieurs pays ?",
+    "choices": ["Le traité de Nice", "Le traité de Lisbonne", "Le traité d'Amsterdam", "Le traité de Schengen"],
+    "answerIndex": 1,
+    "explanation": "Le traité de Lisbonne, signé en 2007 et entré en vigueur en 2009, a repris une partie des réformes institutionnelles prévues par le projet de Constitution européenne. Il a renforcé certaines fonctions communes de l'Union.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle politique de Deng Xiaoping a ouvert l'économie chinoise à partir de la fin des années 1970 ?",
+    "choices": ["La révolution culturelle", "La politique de réforme et d'ouverture", "Le Grand Bond en avant", "La doctrine Mao-Hua"],
+    "answerIndex": 1,
+    "explanation": "La politique de réforme et d'ouverture lancée en 1978 a favorisé l'investissement, les zones économiques spéciales et l'intégration progressive de la Chine à l'économie mondiale. Elle a transformé durablement les rapports de puissance globaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel principe du droit international interdit à un État de se mêler des affaires intérieures d'un autre ?",
+    "choices": ["Le droit d'ingérence", "La non-ingérence", "L'extraterritorialité", "La supranationalité"],
+    "answerIndex": 1,
+    "explanation": "Le principe de non-ingérence découle de la souveraineté des États dans le système international classique. Il est régulièrement invoqué dans les débats sur les interventions humanitaires ou militaires.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel texte adopté par l'ONU en 1948 proclame des droits fondamentaux à l'échelle mondiale ?",
+    "choices": ["La Charte de l'Atlantique", "La Déclaration universelle des droits de l'homme", "La Convention de Genève", "L'Acte final d'Helsinki"],
+    "answerIndex": 1,
+    "explanation": "La Déclaration universelle des droits de l'homme est adoptée le 10 décembre 1948 à Paris. Sans être juridiquement contraignante au départ, elle a servi de référence majeure au droit international des droits humains.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel accord commercial signé en 1994 a créé l'OMC en remplacement du GATT ?",
+    "choices": ["Les accords de Genève", "Les accords de Marrakech", "Les accords de Seattle", "Les accords de Doha"],
+    "answerIndex": 1,
+    "explanation": "Les accords de Marrakech, conclus en 1994 à l'issue de l'Uruguay Round, ont institué l'Organisation mondiale du commerce. Ils ont élargi la régulation commerciale à de nouveaux domaines comme les services et la propriété intellectuelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité de 1928 visait à renoncer à la guerre comme instrument de politique nationale ?",
+    "choices": ["Le pacte Briand-Kellogg", "Le traité de Versailles", "Le traité de Westphalie", "Le pacte d'Acier"],
+    "answerIndex": 0,
+    "explanation": "Le pacte Briand-Kellogg, signé par de nombreux États, condamnait le recours à la guerre pour régler les différends internationaux. Son efficacité concrète fut limitée, mais il a marqué l'histoire du droit international.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel accord de 1972 a normalisé les relations entre la RFA et la RDA ?",
+    "choices": ["Le traité fondamental", "Le traité de Varsovie", "Le traité de Bonn", "Le traité de Rome"],
+    "answerIndex": 0,
+    "explanation": "Le traité fondamental de 1972 permet aux deux Allemagnes de se reconnaître mutuellement comme partenaires étatiques, sans régler la question de l'unité nationale. Il facilite ensuite leur entrée commune à l'ONU.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quelle conférence de 1884-1885 a codifié le partage colonial de l'Afrique entre puissances européennes ?",
+    "choices": ["La conférence de Vienne", "La conférence de Berlin", "La conférence d'Algésiras", "La conférence de Versailles"],
+    "answerIndex": 1,
+    "explanation": "La conférence de Berlin réunit les puissances européennes pour fixer des règles de concurrence coloniale en Afrique. Elle accélère la « course au clocher » impériale sans qu'aucun Africain n'y soit représenté.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel mémorandum signé en 1994 liait la dénucléarisation de l'Ukraine à des garanties de sécurité ?",
+    "choices": ["Le mémorandum de Minsk", "Le mémorandum de Budapest", "Le mémorandum de Varsovie", "Le mémorandum de Vienne"],
+    "answerIndex": 1,
+    "explanation": "Le mémorandum de Budapest a été signé par l'Ukraine, la Russie, les États-Unis et le Royaume-Uni. Il est régulièrement invoqué depuis 2014 puis 2022 dans les débats sur la sécurité européenne.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
+  },
+  {
+    "text": "Quel traité de 1967 interdit l'appropriation nationale de la Lune et des autres corps célestes ?",
+    "choices": ["Le traité de l'espace", "Le traité de l'Antarctique", "Le traité d'interdiction complète des essais nucléaires", "Le traité de Washington"],
+    "answerIndex": 0,
+    "explanation": "Le traité de l'espace de 1967 constitue la base du droit spatial international. Il réserve l'exploration spatiale à des fins pacifiques et interdit les revendications souveraines sur les corps célestes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "GEOPOLITIQUE"
   }
 ]

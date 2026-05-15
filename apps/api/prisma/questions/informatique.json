@@ -853,5 +853,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Que signifie l'acronyme PDF ?",
+    "choices": ["Portable Document Format", "Personal Data File", "Public Document Form", "Printable Digital Format"],
+    "answerIndex": 0,
+    "explanation": "PDF est un format conçu pour préserver la mise en page d'un document quel que soit le système utilisé pour l'ouvrir. Il a été popularisé par Adobe dans les années 1990.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle entreprise développe le système Android ?",
+    "choices": ["Apple", "Google", "Microsoft", "IBM"],
+    "answerIndex": 1,
+    "explanation": "Google a racheté Android Inc. en 2005 et a lancé la plateforme mobile en 2008. Android domine aujourd'hui largement le marché mondial des smartphones hors iPhone.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel navigateur web est développé par Mozilla ?",
+    "choices": ["Chrome", "Safari", "Firefox", "Edge"],
+    "answerIndex": 2,
+    "explanation": "Firefox est le navigateur développé par la fondation Mozilla. Il a longtemps été l'un des principaux concurrents d'Internet Explorer puis de Chrome.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel composant d'un ordinateur est spécialisé dans le rendu graphique et les calculs parallèles ?",
+    "choices": ["Le CPU", "Le GPU", "La RAM", "Le BIOS"],
+    "answerIndex": 1,
+    "explanation": "Le GPU, pour Graphics Processing Unit, a d'abord été conçu pour accélérer l'affichage 3D. Il est aussi devenu central dans l'intelligence artificielle et le calcul scientifique massivement parallèle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel format d'image animé est très utilisé sur le Web depuis les années 1990 ?",
+    "choices": ["GIF", "BMP", "TIFF", "RAW"],
+    "answerIndex": 0,
+    "explanation": "Le GIF permet de stocker de courtes animations ainsi qu'une transparence simple. Malgré ses limites techniques, il reste très populaire dans la culture web.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Comment appelle-t-on un réseau mondial de réseaux interconnectés ?",
+    "choices": ["Le Web", "Internet", "Le cloud", "Le LAN"],
+    "answerIndex": 1,
+    "explanation": "Internet est l'infrastructure mondiale de communication fondée sur des protocoles comme TCP/IP. Le Web n'en est qu'un service parmi d'autres, au même titre que le courriel ou le transfert de fichiers.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Comment appelle-t-on un logiciel malveillant conçu pour se répliquer d'un ordinateur à l'autre ?",
+    "choices": ["Un compilateur", "Un virus", "Un pare-feu", "Un navigateur"],
+    "answerIndex": 1,
+    "explanation": "Un virus informatique est un programme malveillant qui se copie en infectant d'autres fichiers ou systèmes. Il se distingue d'autres malwares comme les ransomwares ou chevaux de Troie par son mécanisme de propagation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel appareil relie le plus souvent un réseau local à Internet à la maison ?",
+    "choices": ["Un scanner", "Un routeur", "Un clavier", "Un onduleur"],
+    "answerIndex": 1,
+    "explanation": "Le routeur distribue le trafic entre le réseau domestique et Internet. Dans les box actuelles, il est souvent combiné à un modem, un point d'accès Wi-Fi et parfois un switch Ethernet.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel format tabulaire sépare généralement les champs par des virgules ?",
+    "choices": ["JPEG", "CSV", "SVG", "EXE"],
+    "answerIndex": 1,
+    "explanation": "CSV signifie Comma-Separated Values. Ce format très simple est largement utilisé pour échanger des tableaux entre logiciels et bases de données.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel service d'hébergement de code collaboratif appartient à Microsoft depuis 2018 ?",
+    "choices": ["GitLab", "Bitbucket", "SourceForge", "GitHub"],
+    "answerIndex": 3,
+    "explanation": "GitHub héberge des millions de dépôts de code open source et privés. Son rachat par Microsoft a marqué un moment important dans l'histoire récente du développement logiciel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole chiffré est utilisé pour administrer un serveur à distance en ligne de commande ?",
+    "choices": ["FTP", "SSH", "Telnet", "POP3"],
+    "answerIndex": 1,
+    "explanation": "SSH, pour Secure Shell, permet d'établir une connexion distante chiffrée. Il remplace avantageusement Telnet, qui transmettait les informations en clair.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel type de base de données organise les données en tables reliées entre elles ?",
+    "choices": ["Une base relationnelle", "Une base orientée graphe", "Une base clé-valeur", "Une base de séries temporelles"],
+    "answerIndex": 0,
+    "explanation": "Les bases relationnelles structurent l'information en tables liées par des clés. Elles reposent sur le modèle théorique élaboré par Edgar F. Codd au début des années 1970.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle structure de données fonctionne selon le principe « dernier entré, premier sorti » ?",
+    "choices": ["La file", "La pile", "Le tableau", "La table de hachage"],
+    "answerIndex": 1,
+    "explanation": "Une pile suit le principe LIFO, pour Last In, First Out. Elle est notamment utilisée pour les appels de fonctions, l'évaluation d'expressions ou les parcours de structures imbriquées.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole de transport, contrairement à TCP, ne garantit ni la livraison ni l'ordre des paquets ?",
+    "choices": ["UDP", "HTTP", "TLS", "ARP"],
+    "answerIndex": 0,
+    "explanation": "UDP privilégie la rapidité et la simplicité au détriment de la fiabilité. Il est souvent utilisé pour la visioconférence, les jeux en ligne ou le streaming temps réel.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel système de numération utilise les chiffres 0 à 9 et les lettres A à F ?",
+    "choices": ["Le binaire", "L'hexadécimal", "L'octal", "Le décimal codé"],
+    "answerIndex": 1,
+    "explanation": "Le système hexadécimal est très utilisé en informatique pour représenter compactement des octets ou des adresses mémoire. Chaque chiffre hexadécimal correspond exactement à quatre bits.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole applicatif permet de consulter ses e-mails directement sur le serveur ?",
+    "choices": ["IMAP", "SMTP", "NTP", "SNMP"],
+    "answerIndex": 0,
+    "explanation": "IMAP permet de laisser les messages stockés sur le serveur tout en les synchronisant entre plusieurs appareils. Il se distingue de POP3, plus orienté vers le téléchargement local des courriels.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Comment appelle-t-on une mémoire rapide qui évite des accès répétés à des données déjà calculées ou lues ?",
+    "choices": ["Le cache", "Le swap", "Le BIOS", "Le registre d'état"],
+    "answerIndex": 0,
+    "explanation": "Le cache sert à conserver temporairement des données fréquemment utilisées afin d'accélérer leur réutilisation. On retrouve ce principe aussi bien dans les processeurs que dans les navigateurs ou les serveurs web.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Comment appelle-t-on l'adresse numérique qui identifie une machine sur un réseau IP ?",
+    "choices": ["Une adresse MAC", "Une adresse DNS", "Une adresse IP", "Une adresse URL"],
+    "answerIndex": 2,
+    "explanation": "Une adresse IP identifie une interface réseau dans un réseau utilisant le protocole Internet. Elle peut être publique ou privée, fixe ou dynamique selon le contexte.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel principe de conception d'API web repose sur des ressources identifiées par des URL et l'usage des verbes HTTP ?",
+    "choices": ["SOAP", "REST", "RPC", "Telnet"],
+    "answerIndex": 1,
+    "explanation": "REST a été théorisé par Roy Fielding en 2000. Ce style architectural privilégie la simplicité, la statelessness et la manipulation de ressources via des représentations standardisées.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel type de stockage conserve les données sous forme de couples clé-valeur ou de documents plutôt que de tables relationnelles ?",
+    "choices": ["Le stockage NoSQL", "Le stockage relationnel", "Le stockage matriciel", "Le stockage binaire brut"],
+    "answerIndex": 0,
+    "explanation": "Le terme NoSQL regroupe plusieurs familles de bases de données conçues pour la scalabilité et la flexibilité des schémas. Elles se sont largement développées avec l'essor du Web à grande échelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole de routage interne utilise l'algorithme de Dijkstra pour calculer les plus courts chemins ?",
+    "choices": ["BGP", "OSPF", "FTP", "SMTP"],
+    "answerIndex": 1,
+    "explanation": "OSPF, pour Open Shortest Path First, est un protocole de routage à état de liens. Il calcule les meilleurs chemins à l'aide de l'algorithme de Dijkstra sur une carte du réseau.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quelle structure d'arbre respecte la propriété gauche < nœud < droite pour faciliter la recherche ?",
+    "choices": ["Le tas binaire", "L'arbre binaire de recherche", "Le trie", "Le graphe orienté acyclique"],
+    "answerIndex": 1,
+    "explanation": "Dans un arbre binaire de recherche, chaque nœud est plus grand que tous les éléments du sous-arbre gauche et plus petit que ceux du sous-arbre droit. Cette organisation rend les recherches efficaces lorsque l'arbre reste équilibré.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel mécanisme mémoire permet à un programme de réserver et libérer de l'espace pendant son exécution ?",
+    "choices": ["L'allocation dynamique", "La compilation anticipée", "Le swap passif", "Le cache d'instructions"],
+    "answerIndex": 0,
+    "explanation": "L'allocation dynamique permet de demander de la mémoire au moment où le programme en a besoin, plutôt que de tout fixer à l'avance. Elle est centrale dans les structures de données flexibles comme les listes ou les arbres.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel algorithme de consensus, conçu comme une alternative plus lisible à Paxos, est très utilisé dans les systèmes distribués ?",
+    "choices": ["DES", "Raft", "QuickSort", "A*"],
+    "answerIndex": 1,
+    "explanation": "Raft permet à plusieurs nœuds de s'accorder sur un même journal d'opérations malgré certaines pannes. Il a été conçu pour être plus compréhensible que Paxos tout en remplissant un rôle similaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
+  },
+  {
+    "text": "Quel protocole de transfert de fichiers chiffré repose le plus souvent sur SSH ?",
+    "choices": ["TFTP", "SFTP", "NFS", "Telnet"],
+    "answerIndex": 1,
+    "explanation": "SFTP, pour SSH File Transfer Protocol, permet de transférer des fichiers via une connexion sécurisée. Il ne doit pas être confondu avec FTPS, qui est une autre manière de sécuriser le transfert de fichiers.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "INFORMATIQUE"
   }
 ]

@@ -1608,5 +1608,355 @@
     "period": "REVOLUTION_EMPIRE",
     "difficulty": "FACILE",
     "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi de France est surnommé le « Roi-Soleil » ?",
+    "choices": [
+      "Louis XIII",
+      "Louis XIV",
+      "Louis XV",
+      "Henri IV"
+    ],
+    "answerIndex": 1,
+    "explanation": "Louis XIV, qui règne de 1643 à 1715, incarne l'absolutisme monarchique français. Le surnom de « Roi-Soleil » renvoie à sa volonté de placer toute la vie politique autour de sa personne.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi signa l'édit de Villers-Cotterêts en 1539 ?",
+    "choices": [
+      "Louis XII",
+      "Henri II",
+      "François Ier",
+      "Charles IX"
+    ],
+    "answerIndex": 2,
+    "explanation": "François Ier impose par cette ordonnance l'usage du français dans les actes administratifs et judiciaires à la place du latin. Le texte est souvent considéré comme fondateur pour l'histoire de la langue française.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année débute la Révolution française ?",
+    "choices": [
+      "1776",
+      "1789",
+      "1792",
+      "1804"
+    ],
+    "answerIndex": 1,
+    "explanation": "L'année 1789 concentre plusieurs moments majeurs : convocation des États généraux, serment du Jeu de paume, prise de la Bastille et Déclaration des droits de l'homme et du citoyen. Elle marque la fin de l'Ancien Régime politique.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel général devint Premier consul après le coup d'État du 18 Brumaire ?",
+    "choices": [
+      "Lazare Carnot",
+      "Napoléon Bonaparte",
+      "Jean Moreau",
+      "Louis-Nicolas Davout"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le 18 Brumaire an VIII, soit les 9 et 10 novembre 1799, Napoléon renverse le Directoire. Il ouvre ainsi le Consulat avant de devenir empereur en 1804.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel roi protestant aurait déclaré « Paris vaut bien une messe » ?",
+    "choices": [
+      "Henri III",
+      "Louis XIII",
+      "François II",
+      "Henri IV"
+    ],
+    "answerIndex": 3,
+    "explanation": "La formule, peut-être apocryphe, est associée à la conversion d'Henri IV au catholicisme pour accéder durablement au trône. Elle symbolise le primat de la raison d'État sur l'affrontement religieux.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel texte fonde la Ve République en 1958 ?",
+    "choices": [
+      "La Charte de 1814",
+      "La Constitution de 1958",
+      "La Constitution de l'an VIII",
+      "Le programme du CNR"
+    ],
+    "answerIndex": 1,
+    "explanation": "La Constitution de la Ve République est approuvée par référendum le 28 septembre 1958. Elle renforce nettement l'exécutif et marque le retour au pouvoir du général de Gaulle.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel mouvement ouvrier et social porta Léon Blum au pouvoir en 1936 ?",
+    "choices": [
+      "Le Front populaire",
+      "La Commune de Paris",
+      "La Résistance",
+      "Le Cartel des gauches"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le Front populaire rassemble socialistes, radicaux et communistes face à la montée des ligues d'extrême droite. Son arrivée au pouvoir s'accompagne de grandes grèves et des accords de Matignon.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle reine de France fut guillotinée en 1793 ?",
+    "choices": [
+      "Marie de Médicis",
+      "Anne d'Autriche",
+      "Marie-Antoinette",
+      "Marguerite de Valois"
+    ],
+    "answerIndex": 2,
+    "explanation": "Marie-Antoinette est exécutée le 16 octobre 1793, quelques mois après Louis XVI. Son image, très attaquée dès l'Ancien Régime, est devenue l'un des symboles du basculement révolutionnaire.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel chef franc est traditionnellement associé à la victoire de Poitiers en 732 ?",
+    "choices": [
+      "Clovis",
+      "Pépin le Bref",
+      "Charles Martel",
+      "Hugues Capet"
+    ],
+    "answerIndex": 2,
+    "explanation": "Charles Martel dirige les Francs lors de la bataille de Poitiers, présentée longtemps comme un tournant majeur face à l'expansion omeyyade. Cette lecture a été nuancée par les historiens, mais l'événement reste un repère classique.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel président de la République a fait abolir la peine de mort en 1981 ?",
+    "choices": [
+      "Valéry Giscard d'Estaing",
+      "Jacques Chirac",
+      "François Mitterrand",
+      "Georges Pompidou"
+    ],
+    "answerIndex": 2,
+    "explanation": "Élu en mai 1981, François Mitterrand confie à Robert Badinter le portefeuille de la Justice. La loi d'abolition est votée quelques mois plus tard, mettant fin à la peine capitale en France.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1648 mit fin à la guerre de Trente Ans et renforça la position française en Europe ?",
+    "choices": [
+      "Le traité des Pyrénées",
+      "Les traités de Westphalie",
+      "Le traité d'Utrecht",
+      "Le traité de Troyes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Les traités de Westphalie redessinent l'équilibre européen et consacrent la montée en puissance de la France. Ils sont aussi souvent associés à l'affirmation durable de la souveraineté des États.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 1792 voit la première grande victoire des armées révolutionnaires françaises ?",
+    "choices": [
+      "Austerlitz",
+      "Valmy",
+      "Iéna",
+      "Wagram"
+    ],
+    "answerIndex": 1,
+    "explanation": "La victoire de Valmy, le 20 septembre 1792, arrête l'invasion prussienne et donne un puissant élan politique à la Révolution. Le lendemain, la monarchie est officiellement abolie.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel ministre de Louis XIV gouverna pendant sa minorité et signa le traité des Pyrénées ?",
+    "choices": [
+      "Colbert",
+      "Mazarin",
+      "Louvois",
+      "Sully"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mazarin succède à Richelieu et assure la continuité de la politique royale pendant la régence d'Anne d'Autriche. Il conclut en 1659 le traité des Pyrénées avec l'Espagne.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel discours du 16 juin 1946 expose la vision institutionnelle du général de Gaulle ?",
+    "choices": [
+      "Le discours de Grenoble",
+      "Le discours de Bayeux",
+      "Le discours du Vel d'Hiv",
+      "Le discours de Dakar"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dans son discours de Bayeux, de Gaulle critique les faiblesses du parlementarisme et dessine les principes d'un exécutif fort. Ce texte est souvent lu comme une préfiguration de la Ve République.",
+    "period": "GUERRE_FROIDE_DECOLONISATION",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel accord religieux de 1801 a réconcilié la France napoléonienne et le pape Pie VII ?",
+    "choices": [
+      "Le Concordat",
+      "L'édit de Nantes",
+      "La Constitution civile du clergé",
+      "Le gallicanisme"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le Concordat de 1801 met fin à une partie des déchirures religieuses issues de la Révolution. L'État reconnaît le catholicisme comme religion de la majorité des Français, sans le rétablir comme religion d'État.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle loi de 1881 a consacré la liberté de la presse en France ?",
+    "choices": [
+      "La loi du 29 juillet 1881",
+      "La loi Ferry",
+      "La loi Waldeck-Rousseau",
+      "La loi de séparation de 1905"
+    ],
+    "answerIndex": 0,
+    "explanation": "La loi du 29 juillet 1881 fixe un cadre très libéral à la presse sous la IIIe République. Elle demeure l'un des textes fondamentaux en matière de liberté d'expression en France.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1763 a fait perdre à la France une grande partie de son premier empire colonial ?",
+    "choices": [
+      "Le traité d'Utrecht",
+      "Le traité de Paris",
+      "Le traité de Vienne",
+      "Le traité d'Amiens"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le traité de Paris de 1763 met fin à la guerre de Sept Ans. La France cède notamment le Canada à la Grande-Bretagne et voit son premier empire colonial profondément amputé.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel soulèvement de 1648 à 1653 opposa nobles et parlements au pouvoir royal ?",
+    "choices": [
+      "La Jacquerie",
+      "La Fronde",
+      "La Ligue",
+      "La Commune"
+    ],
+    "answerIndex": 1,
+    "explanation": "La Fronde secoue la monarchie durant la minorité de Louis XIV. Cette crise marque durablement le jeune roi, qui en tirera une méfiance profonde envers les contestations nobiliaires et parlementaires.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle ordonnance du GPRF a accordé le droit de vote aux femmes en 1944 ?",
+    "choices": [
+      "L'ordonnance du 21 avril 1944",
+      "La loi du 9 décembre 1905",
+      "L'ordonnance de Villers-Cotterêts",
+      "La loi du 11 juillet 1936"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le Gouvernement provisoire de la République française reconnaît enfin le droit de vote et d'éligibilité des femmes en avril 1944. Elles votent pour la première fois lors des municipales de 1945.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel ministre de Louis XVI, renvoyé en 1781 puis rappelé en 1788, devint une figure de la crise financière de l'Ancien Régime ?",
+    "choices": [
+      "Colbert",
+      "Mazarin",
+      "Turgot",
+      "Necker"
+    ],
+    "answerIndex": 3,
+    "explanation": "Jacques Necker tente de restaurer le crédit du royaume au moment où la monarchie s'enfonce dans la crise budgétaire. Son rappel puis son renvoi à l'été 1789 contribuent à l'agitation populaire.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel édit de 1685 a révoqué l'édit de Nantes ?",
+    "choices": [
+      "L'édit de Fontainebleau",
+      "L'édit de Beaulieu",
+      "L'édit de Saint-Germain",
+      "L'édit de Moulins"
+    ],
+    "answerIndex": 0,
+    "explanation": "En 1685, Louis XIV révoque les libertés accordées aux protestants par l'édit de Nantes. Cette décision provoque conversions forcées, persécutions et départ de nombreux huguenots hors du royaume.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1259 entre Saint Louis et Henri III d'Angleterre stabilisa les possessions françaises et anglaises ?",
+    "choices": [
+      "Le traité de Troyes",
+      "Le traité de Paris",
+      "Le traité de Verdun",
+      "Le traité de Brétigny"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le traité de Paris de 1259 règle provisoirement les rapports entre les Capétiens et les Plantagenêts. Il confirme l'autorité du roi de France sur plusieurs territoires tout en maintenant certaines possessions anglaises en Aquitaine.",
+    "period": "MOYEN_AGE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1420 déshéritait le dauphin Charles au profit du roi d'Angleterre ?",
+    "choices": [
+      "Le traité de Troyes",
+      "Le traité de Brétigny",
+      "Le traité de Calais",
+      "Le traité de Picquigny"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le traité de Troyes reconnaît Henri V d'Angleterre comme héritier du trône de France après Charles VI. Il nourrit la crise dynastique au cœur de la guerre de Cent Ans, avant le redressement incarné par Jeanne d'Arc.",
+    "period": "MOYEN_AGE",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel programme adopté en mars 1944 par le Conseil national de la Résistance préparait la refondation sociale de la Libération ?",
+    "choices": [
+      "Les Jours heureux",
+      "Le programme commun",
+      "La Charte du Travail",
+      "Le plan Monnet"
+    ],
+    "answerIndex": 0,
+    "explanation": "Le programme du CNR, souvent désigné par ses premiers mots « Les Jours heureux », prévoit de grandes réformes économiques et sociales. Il inspire notamment la Sécurité sociale et plusieurs nationalisations après 1945.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel système financier spéculatif de la Régence, porté par un Écossais, s'effondra en 1720 ?",
+    "choices": [
+      "Le système de Law",
+      "La Compagnie des Indes orientales",
+      "Le colbertisme",
+      "Le système assignataire"
+    ],
+    "answerIndex": 0,
+    "explanation": "John Law met en place un système fondé sur la banque, le papier-monnaie et la spéculation autour de la Compagnie du Mississippi. Son effondrement en 1720 laisse un traumatisme durable dans l'histoire financière française.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
   }
 ]

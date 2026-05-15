@@ -898,5 +898,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Orgueil et Préjugés ?",
+    "choices": ["Emily Brontë", "Jane Austen", "George Eliot", "Virginia Woolf"],
+    "answerIndex": 1,
+    "explanation": "Publié en 1813, Orgueil et Préjugés est l'un des romans les plus célèbres de Jane Austen. L'œuvre met en scène Elizabeth Bennet et Mr Darcy dans la société anglaise de la gentry.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur du Vieil Homme et la mer ?",
+    "choices": ["Ernest Hemingway", "John Steinbeck", "William Faulkner", "Jack London"],
+    "answerIndex": 0,
+    "explanation": "Le Vieil Homme et la mer paraît en 1952 et raconte le combat d'un vieux pêcheur cubain contre un immense marlin. Ce court roman contribue au prix Nobel reçu par Hemingway deux ans plus tard.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier a créé le détective Sherlock Holmes ?",
+    "choices": ["Agatha Christie", "Arthur Conan Doyle", "G. K. Chesterton", "Wilkie Collins"],
+    "answerIndex": 1,
+    "explanation": "Arthur Conan Doyle fait apparaître Sherlock Holmes à la fin du XIXe siècle. Le détective et son compagnon Watson sont devenus des figures majeures de la littérature policière.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Le Comte de Monte-Cristo ?",
+    "choices": ["Victor Hugo", "Alexandre Dumas", "Honoré de Balzac", "Théophile Gautier"],
+    "answerIndex": 1,
+    "explanation": "Alexandre Dumas publie ce grand roman-feuilleton entre 1844 et 1846. L'intrigue suit Edmond Dantès, injustement emprisonné puis devenu le comte de Monte-Cristo pour accomplir sa vengeance.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de L'Odyssée ?",
+    "choices": ["Hésiode", "Virgile", "Homère", "Sophocle"],
+    "answerIndex": 2,
+    "explanation": "L'Odyssée raconte le long retour d'Ulysse après la guerre de Troie. Avec L'Iliade, elle constitue l'un des grands textes fondateurs de la littérature occidentale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel auteur italien a écrit Pinocchio ?",
+    "choices": ["Carlo Collodi", "Italo Calvino", "Gianni Rodari", "Umberto Eco"],
+    "answerIndex": 0,
+    "explanation": "Carlo Collodi publie les aventures de Pinocchio au XIXe siècle. Le personnage de pantin de bois devenu petit garçon est ensuite popularisé mondialement par de multiples adaptations.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Fahrenheit 451 ?",
+    "choices": ["Aldous Huxley", "Ray Bradbury", "Philip K. Dick", "Isaac Asimov"],
+    "answerIndex": 1,
+    "explanation": "Ray Bradbury publie Fahrenheit 451 en 1953. Le roman imagine une société où les livres sont interdits et brûlés par des pompiers chargés de censurer la pensée.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Les Aventures de Tom Sawyer ?",
+    "choices": ["Jack London", "Mark Twain", "Herman Melville", "Nathaniel Hawthorne"],
+    "answerIndex": 1,
+    "explanation": "Mark Twain publie Tom Sawyer en 1876. Le personnage, jeune garçon vif et imaginatif du Mississippi, est devenu un grand classique de la littérature américaine.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel dramaturge a créé le personnage de Cyrano de Bergerac ?",
+    "choices": ["Molière", "Edmond Rostand", "Alfred de Musset", "Jean Anouilh"],
+    "answerIndex": 1,
+    "explanation": "Edmond Rostand fait triompher Cyrano de Bergerac en 1897 au théâtre de la Porte-Saint-Martin. Le personnage allie panache, éloquence et mélancolie amoureuse.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui est l'auteur de Jane Eyre ?",
+    "choices": ["Charlotte Brontë", "Anne Brontë", "George Sand", "Mary Shelley"],
+    "answerIndex": 0,
+    "explanation": "Charlotte Brontë publie Jane Eyre en 1847 sous pseudonyme. Ce roman d'apprentissage centré sur une héroïne indépendante est l'un des grands classiques britanniques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain irlandais est l'auteur d'Ulysse ?",
+    "choices": ["Oscar Wilde", "James Joyce", "Samuel Beckett", "W. B. Yeats"],
+    "answerIndex": 1,
+    "explanation": "Ulysse, publié en 1922, suit une journée de juin 1904 à Dublin. Ce roman de James Joyce est célèbre pour sa complexité formelle et l'usage du flux de conscience.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit La Métamorphose ?",
+    "choices": ["Franz Kafka", "Hermann Hesse", "Robert Walser", "Stefan Zweig"],
+    "answerIndex": 0,
+    "explanation": "Kafka raconte l'histoire de Gregor Samsa, qui se réveille transformé en insecte monstrueux. Ce récit bref est l'un des plus célèbres de la littérature du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel auteur italien a écrit Le Nom de la rose ?",
+    "choices": ["Italo Calvino", "Alberto Moravia", "Umberto Eco", "Giovanni Verga"],
+    "answerIndex": 2,
+    "explanation": "Umberto Eco mêle enquête policière, érudition médiévale et réflexion sur l'interprétation dans ce roman paru en 1980. L'œuvre a aussi connu une adaptation cinématographique très célèbre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quelle romancière britannique a écrit Mrs Dalloway ?",
+    "choices": ["Doris Lessing", "Virginia Woolf", "Mary Shelley", "Iris Murdoch"],
+    "answerIndex": 1,
+    "explanation": "Virginia Woolf publie Mrs Dalloway en 1925. Le roman suit une journée à Londres et fait partie des grands textes modernistes du XXe siècle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète américain a écrit Feuilles d'herbe ?",
+    "choices": ["Walt Whitman", "T. S. Eliot", "Ezra Pound", "Allen Ginsberg"],
+    "answerIndex": 0,
+    "explanation": "Feuilles d'herbe est l'œuvre de toute une vie pour Walt Whitman, qui n'a cessé de la remanier. Le recueil célèbre le corps, la démocratie et l'immensité américaine dans un vers libre novateur.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain mexicain a écrit Pedro Páramo ?",
+    "choices": ["Carlos Fuentes", "Juan Rulfo", "Octavio Paz", "Jorge Ibargüengoitia"],
+    "answerIndex": 1,
+    "explanation": "Publié en 1955, Pedro Páramo est un roman bref mais capital pour la littérature latino-américaine. Son atmosphère de village hanté a influencé de nombreux écrivains du réalisme magique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Qui a écrit Beloved ?",
+    "choices": ["Toni Morrison", "Alice Walker", "Maya Angelou", "Zora Neale Hurston"],
+    "answerIndex": 0,
+    "explanation": "Beloved, publié en 1987, explore la mémoire traumatique de l'esclavage aux États-Unis. Toni Morrison recevra quelques années plus tard le prix Nobel de littérature.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète français a publié Les Fleurs du mal ?",
+    "choices": ["Arthur Rimbaud", "Charles Baudelaire", "Paul Verlaine", "Stéphane Mallarmé"],
+    "answerIndex": 1,
+    "explanation": "Les Fleurs du mal paraissent en 1857 et provoquent un procès pour outrage aux bonnes mœurs. Baudelaire y fait entrer la modernité urbaine, le spleen et l'idéal au cœur de la poésie française.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain colombien a écrit Chronique d'une mort annoncée ?",
+    "choices": ["Mario Vargas Llosa", "Gabriel García Márquez", "Julio Cortázar", "Juan Carlos Onetti"],
+    "answerIndex": 1,
+    "explanation": "Dans Chronique d'une mort annoncée, García Márquez raconte un meurtre connu d'avance par tout un village. Le roman joue sur la fatalité et la reconstruction fragmentaire des faits.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel roman médiéval raconte les aventures de Renart face au loup Ysengrin ?",
+    "choices": ["La Chanson de Roland", "Le Roman de Renart", "Tristan et Iseut", "Perceval ou le Conte du Graal"],
+    "answerIndex": 1,
+    "explanation": "Le Roman de Renart est un ensemble de récits satiriques composés au Moyen Âge. Le personnage de Renart a d'ailleurs donné en français moderne le mot qui a remplacé l'ancien « goupil ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain allemand a écrit La Montagne magique ?",
+    "choices": ["Hermann Hesse", "Thomas Mann", "Heinrich Böll", "Günter Grass"],
+    "answerIndex": 1,
+    "explanation": "Publié en 1924, La Montagne magique se déroule dans un sanatorium des Alpes suisses et interroge le temps, la maladie et les tensions intellectuelles de l'Europe d'avant 1914. Thomas Mann y déploie une ambition romanesque et philosophique exceptionnelle.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel romancier autrichien est l'auteur de L'Homme sans qualités ?",
+    "choices": ["Franz Kafka", "Stefan Zweig", "Robert Musil", "Hugo von Hofmannsthal"],
+    "answerIndex": 2,
+    "explanation": "Robert Musil compose avec L'Homme sans qualités une vaste fresque inachevée sur l'empire austro-hongrois finissant. L'œuvre est l'un des grands monuments du modernisme européen.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel poète portugais a multiplié les hétéronymes comme Alberto Caeiro et Ricardo Reis ?",
+    "choices": ["José Saramago", "Fernando Pessoa", "Eça de Queirós", "Camilo Castelo Branco"],
+    "answerIndex": 1,
+    "explanation": "Fernando Pessoa n'utilise pas seulement des pseudonymes : ses hétéronymes possèdent chacun une biographie, un style et une vision du monde propres. Cette pluralité fait de lui une figure singulière de la modernité poétique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel écrivain tchèque a écrit Une trop bruyante solitude ?",
+    "choices": ["Milan Kundera", "Bohumil Hrabal", "Jaroslav Hašek", "Karel Čapek"],
+    "answerIndex": 1,
+    "explanation": "Bohumil Hrabal y met en scène un homme chargé de broyer des livres interdits sous le régime communiste. Ce roman bref est devenu un classique de la littérature d'Europe centrale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
+  },
+  {
+    "text": "Quel auteur français a publié La Vie mode d'emploi ?",
+    "choices": ["Georges Perec", "Raymond Queneau", "Michel Tournier", "Nathalie Sarraute"],
+    "answerIndex": 0,
+    "explanation": "La Vie mode d'emploi, publiée en 1978, explore pièce par pièce un immeuble parisien selon une construction très sophistiquée. Ce roman a valu à Georges Perec le prix Médicis.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "LITTERATURE"
   }
 ]

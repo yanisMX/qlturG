@@ -862,5 +862,230 @@
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
     "topic": "CINEMA"
+  },
+  {
+    "text": "Qui a réalisé Star Wars (1977) ?",
+    "choices": ["George Lucas", "Steven Spielberg", "James Cameron", "Ridley Scott"],
+    "answerIndex": 0,
+    "explanation": "George Lucas lance avec Star Wars une saga devenue l'une des plus influentes du cinéma mondial. Le film de 1977 s'appelait initialement Star Wars avant d'être renommé plus tard Un nouvel espoir.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel acteur incarne Rocky Balboa à l'écran ?",
+    "choices": ["Arnold Schwarzenegger", "Sylvester Stallone", "Bruce Willis", "Al Pacino"],
+    "answerIndex": 1,
+    "explanation": "Sylvester Stallone interprète Rocky Balboa dès 1976 et signe aussi le scénario du premier film. Le personnage est devenu un symbole du boxeur courageux et persévérant.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film d'animation de Pixar met en scène Woody et Buzz l'Éclair ?",
+    "choices": ["Cars", "Le Monde de Nemo", "Toy Story", "Ratatouille"],
+    "answerIndex": 2,
+    "explanation": "Toy Story, sorti en 1995, est le premier long-métrage entièrement réalisé en images de synthèse. Il a marqué un tournant majeur dans l'histoire de l'animation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Francis Ford Coppola suit la famille Corleone ?",
+    "choices": ["Les Affranchis", "Le Parrain", "Scarface", "Casino"],
+    "answerIndex": 1,
+    "explanation": "Le Parrain, adapté du roman de Mario Puzo, est sorti en 1972. Il est souvent considéré comme l'un des plus grands films de gangsters de l'histoire du cinéma.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur a signé Pulp Fiction (1994) ?",
+    "choices": ["Quentin Tarantino", "David Fincher", "Tim Burton", "Martin Scorsese"],
+    "answerIndex": 0,
+    "explanation": "Pulp Fiction a relancé la carrière de John Travolta et imposé le style narratif éclaté de Tarantino au grand public. Le film remporte la Palme d'Or au Festival de Cannes en 1994.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film d'animation raconte l'histoire du lionceau Simba ?",
+    "choices": ["Bambi", "Le Roi Lion", "Kirikou", "Madagascar"],
+    "answerIndex": 1,
+    "explanation": "Le Roi Lion, sorti en 1994, est l'un des plus grands succès de Disney. Son récit s'inspire librement de motifs tragiques proches de Hamlet.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel acteur joue Jack Dawson dans Titanic ?",
+    "choices": ["Matt Damon", "Brad Pitt", "Leonardo DiCaprio", "Tom Cruise"],
+    "answerIndex": 2,
+    "explanation": "Leonardo DiCaprio partage l'affiche de Titanic avec Kate Winslet. Le film devient en 1997 le plus grand succès commercial de l'histoire du cinéma de son époque.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film d'animation suit un poisson-clown à la recherche de son fils ?",
+    "choices": ["Le Monde de Nemo", "Là-haut", "Shrek", "Vice-Versa"],
+    "answerIndex": 0,
+    "explanation": "Le Monde de Nemo, sorti en 2003, est une production Pixar se déroulant dans l'océan Pacifique. Le film a contribué à populariser le poisson-clown auprès du grand public.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel acteur incarne Harry Potter dans la série de films ?",
+    "choices": ["Rupert Grint", "Tom Holland", "Daniel Radcliffe", "Elijah Wood"],
+    "answerIndex": 2,
+    "explanation": "Daniel Radcliffe interprète Harry Potter de 2001 à 2011. La saga adapte les romans de J. K. Rowling et compte huit films principaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel monstre géant venu du Japon détruit régulièrement Tokyo au cinéma ?",
+    "choices": ["King Kong", "Godzilla", "Mothra", "Gamera"],
+    "answerIndex": 1,
+    "explanation": "Godzilla apparaît pour la première fois en 1954 dans un film japonais marqué par le traumatisme nucléaire. Le personnage est devenu une icône mondiale du genre kaiju.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur américain a signé Citizen Kane (1941) ?",
+    "choices": ["Billy Wilder", "Orson Welles", "John Ford", "Howard Hawks"],
+    "answerIndex": 1,
+    "explanation": "Orson Welles réalise, coécrit et interprète Citizen Kane à seulement 25 ans. Le film est souvent cité pour ses innovations narratives et visuelles.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel cinéaste hongkongais a réalisé In the Mood for Love ?",
+    "choices": ["John Woo", "Tsui Hark", "Wong Kar-wai", "Ang Lee"],
+    "answerIndex": 2,
+    "explanation": "Wong Kar-wai signe avec In the Mood for Love (2000) un film élégant et mélancolique sur le désir contrarié. La photographie et la musique y jouent un rôle central.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Ridley Scott met en scène le chasseur de replicants Rick Deckard ?",
+    "choices": ["Alien", "Blade Runner", "Legend", "Gladiator"],
+    "answerIndex": 1,
+    "explanation": "Blade Runner, sorti en 1982, adapte librement Philip K. Dick. Son esthétique néon-noire et sa réflexion sur l'identité ont profondément marqué la science-fiction.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel cinéaste français a créé Monsieur Hulot et réalisé Playtime ?",
+    "choices": ["René Clair", "Jacques Tati", "Claude Lelouch", "Jean Renoir"],
+    "answerIndex": 1,
+    "explanation": "Jacques Tati a inventé Monsieur Hulot, personnage rêveur et maladroit devenu emblématique du cinéma français. Playtime, sorti en 1967, est célèbre pour son ambition formelle et son décor monumental.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film sud-coréen a remporté l'Oscar du meilleur film en 2020 ?",
+    "choices": ["Old Boy", "Parasite", "Burning", "Memories of Murder"],
+    "answerIndex": 1,
+    "explanation": "Parasite de Bong Joon-ho a été le premier film non anglophone à remporter l'Oscar du meilleur film. Sa satire sociale a rencontré un succès mondial.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur japonais a signé Les Sept Samouraïs (1954) ?",
+    "choices": ["Akira Kurosawa", "Yasujirō Ozu", "Kenji Mizoguchi", "Nagisa Oshima"],
+    "answerIndex": 0,
+    "explanation": "Akira Kurosawa a profondément influencé le cinéma mondial, notamment le western et le film d'action. Les Sept Samouraïs a inspiré de nombreux remakes et hommages.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de 1942 avec Humphrey Bogart se déroule en grande partie au Maroc pendant la guerre ?",
+    "choices": ["Le Faucon maltais", "Casablanca", "Le Trésor de la Sierra Madre", "Le Grand Sommeil"],
+    "answerIndex": 1,
+    "explanation": "Casablanca, réalisé par Michael Curtiz, est devenu un classique hollywoodien mêlant romance et contexte géopolitique de la Seconde Guerre mondiale. La réplique « Here's looking at you, kid » a marqué la culture populaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur néo-zélandais a adapté Le Seigneur des anneaux en trilogie au cinéma ?",
+    "choices": ["Peter Jackson", "James Cameron", "Baz Luhrmann", "George Miller"],
+    "answerIndex": 0,
+    "explanation": "Peter Jackson a tourné sa trilogie en Nouvelle-Zélande entre 1999 et 2000. Le Retour du roi remporte 11 Oscars en 2004, égalant le record historique.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film musical de Damien Chazelle rend hommage à Hollywood et au jazz à Los Angeles ?",
+    "choices": ["Chicago", "Whiplash", "La La Land", "Moulin Rouge !"],
+    "answerIndex": 2,
+    "explanation": "La La Land, sorti en 2016, met en scène Emma Stone et Ryan Gosling. Le film a connu un moment célèbre lors des Oscars à cause d'une confusion sur le prix du meilleur film.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel mouvement italien de l'après-guerre privilégiait les tournages en décors réels et les personnages modestes ?",
+    "choices": ["Le futurisme", "Le néoréalisme italien", "La commedia all'italiana", "Le symbolisme"],
+    "answerIndex": 1,
+    "explanation": "Le néoréalisme italien naît dans le contexte de l'après-guerre, avec des cinéastes comme Rossellini et De Sica. Il s'intéresse aux classes populaires et à la vérité sociale.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel cinéaste soviétique a réalisé Le Cuirassé Potemkine (1925) ?",
+    "choices": ["Sergueï Eisenstein", "Andreï Tarkovski", "Dziga Vertov", "Vsevolod Poudovkine"],
+    "answerIndex": 0,
+    "explanation": "Sergueï Eisenstein est célèbre pour son travail théorique sur le montage. La séquence des escaliers d'Odessa dans Le Cuirassé Potemkine est l'une des plus étudiées de l'histoire du cinéma.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur français a signé Hiroshima mon amour (1959) ?",
+    "choices": ["François Truffaut", "Alain Resnais", "Jacques Demy", "Louis Malle"],
+    "answerIndex": 1,
+    "explanation": "Hiroshima mon amour a été écrit par Marguerite Duras et réalisé par Alain Resnais. Le film explore la mémoire, le traumatisme et la difficulté de dire l'indicible après la guerre.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film a remporté le premier Oscar du meilleur film en 1929 ?",
+    "choices": ["Metropolis", "Sunrise", "Wings", "Le Chanteur de jazz"],
+    "answerIndex": 2,
+    "explanation": "Wings, film de William A. Wellman consacré à des aviateurs de la Première Guerre mondiale, a reçu le tout premier Oscar du meilleur film. Il témoigne des débuts de l'industrie hollywoodienne des prix.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel réalisateur polonais a mis en scène Le Décalogue ?",
+    "choices": ["Roman Polanski", "Krzysztof Kieślowski", "Andrzej Wajda", "Paweł Pawlikowski"],
+    "answerIndex": 1,
+    "explanation": "Le Décalogue est une série de dix films pour la télévision inspirés des Dix Commandements. Kieślowski y observe les dilemmes moraux de la vie ordinaire dans la Pologne de la fin du communisme.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film muet de Carl Theodor Dreyer consacré au procès d'une héroïne française est sorti en 1928 ?",
+    "choices": ["Napoléon", "La Passion de Jeanne d'Arc", "Le Miracle des loups", "Nosferatu"],
+    "answerIndex": 1,
+    "explanation": "La Passion de Jeanne d'Arc est surtout célèbre pour les gros plans bouleversants de Maria Falconetti. Le film est considéré comme l'un des sommets du cinéma muet.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
   }
 ]
