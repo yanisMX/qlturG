@@ -1,7 +1,12 @@
 [
   {
     "text": "Quel philosophe est l'auteur de la formule « Je pense, donc je suis » ?",
-    "choices": ["Pascal", "Descartes", "Spinoza", "Leibniz"],
+    "choices": [
+      "Pascal",
+      "Descartes",
+      "Spinoza",
+      "Leibniz"
+    ],
     "answerIndex": 1,
     "explanation": "Cette formule (cogito ergo sum) apparaît dans le Discours de la méthode (1637) comme première certitude indubitable.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -10,7 +15,12 @@
   },
   {
     "text": "Qui est l'auteur du Contrat social (1762) ?",
-    "choices": ["Voltaire", "Diderot", "Jean-Jacques Rousseau", "Montesquieu"],
+    "choices": [
+      "Voltaire",
+      "Diderot",
+      "Jean-Jacques Rousseau",
+      "Montesquieu"
+    ],
     "answerIndex": 2,
     "explanation": "Rousseau y développe l'idée d'un pacte fondateur qui transforme l'agrégat d'individus en peuple souverain.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -19,7 +29,12 @@
   },
   {
     "text": "À quel courant philosophique associe-t-on Jean-Paul Sartre ?",
-    "choices": ["Positivisme", "Existentialisme", "Structuralisme", "Empirisme"],
+    "choices": [
+      "Positivisme",
+      "Existentialisme",
+      "Structuralisme",
+      "Empirisme"
+    ],
     "answerIndex": 1,
     "explanation": "Sartre formule la thèse selon laquelle « l'existence précède l'essence » dans L'existentialisme est un humanisme (1946).",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -28,7 +43,12 @@
   },
   {
     "text": "Quel philosophe grec est l'auteur de l'Allégorie de la caverne ?",
-    "choices": ["Aristote", "Platon", "Épicure", "Héraclite"],
+    "choices": [
+      "Aristote",
+      "Platon",
+      "Épicure",
+      "Héraclite"
+    ],
     "answerIndex": 1,
     "explanation": "Platon présente l'allégorie dans le livre VII de La République pour figurer l'ascension du sensible vers l'intelligible.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -37,7 +57,12 @@
   },
   {
     "text": "Quel philosophe athénien est connu pour la maxime « Connais-toi toi-même » ?",
-    "choices": ["Socrate", "Platon", "Aristote", "Diogène"],
+    "choices": [
+      "Socrate",
+      "Platon",
+      "Aristote",
+      "Diogène"
+    ],
     "answerIndex": 0,
     "explanation": "La formule était inscrite sur le fronton du temple de Delphes et Socrate en a fait le principe de sa démarche philosophique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -46,7 +71,12 @@
   },
   {
     "text": "Qui fut l'élève de Platon avant de fonder le Lycée à Athènes ?",
-    "choices": ["Aristote", "Pythagore", "Zénon", "Plotin"],
+    "choices": [
+      "Aristote",
+      "Pythagore",
+      "Zénon",
+      "Plotin"
+    ],
     "answerIndex": 0,
     "explanation": "Aristote suit l'enseignement de Platon pendant vingt ans à l'Académie avant de fonder sa propre école vers -335.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -55,7 +85,12 @@
   },
   {
     "text": "Quel philosophe allemand est l'auteur de la Critique de la raison pure (1781) ?",
-    "choices": ["Hegel", "Kant", "Schopenhauer", "Fichte"],
+    "choices": [
+      "Hegel",
+      "Kant",
+      "Schopenhauer",
+      "Fichte"
+    ],
     "answerIndex": 1,
     "explanation": "Kant y opère sa « révolution copernicienne » : ce n'est plus l'objet qui règle la connaissance, mais la connaissance qui structure l'objet.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -64,7 +99,12 @@
   },
   {
     "text": "À quel philosophe attribue-t-on la formule « Dieu est mort » ?",
-    "choices": ["Marx", "Nietzsche", "Heidegger", "Schopenhauer"],
+    "choices": [
+      "Marx",
+      "Nietzsche",
+      "Heidegger",
+      "Schopenhauer"
+    ],
     "answerIndex": 1,
     "explanation": "Nietzsche formule cette idée notamment dans Le Gai Savoir (1882) pour annoncer la fin des certitudes métaphysiques en Occident.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -73,7 +113,12 @@
   },
   {
     "text": "Qui est le théoricien du matérialisme historique au XIXe siècle ?",
-    "choices": ["Auguste Comte", "Karl Marx", "John Stuart Mill", "Émile Durkheim"],
+    "choices": [
+      "Auguste Comte",
+      "Karl Marx",
+      "John Stuart Mill",
+      "Émile Durkheim"
+    ],
     "answerIndex": 1,
     "explanation": "Marx, souvent avec Engels, analyse l'histoire comme histoire des luttes de classes, déterminée par les rapports de production.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -82,7 +127,12 @@
   },
   {
     "text": "Qui a écrit Candide (1759), conte philosophique sur l'optimisme leibnizien ?",
-    "choices": ["Voltaire", "Rousseau", "Diderot", "Montesquieu"],
+    "choices": [
+      "Voltaire",
+      "Rousseau",
+      "Diderot",
+      "Montesquieu"
+    ],
     "answerIndex": 0,
     "explanation": "Voltaire y raille la formule de Leibniz selon laquelle nous vivrions « dans le meilleur des mondes possibles ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -91,7 +141,12 @@
   },
   {
     "text": "Qui est l'auteure du Deuxième Sexe (1949) ?",
-    "choices": ["Hannah Arendt", "Simone de Beauvoir", "Simone Weil", "Julia Kristeva"],
+    "choices": [
+      "Hannah Arendt",
+      "Simone de Beauvoir",
+      "Simone Weil",
+      "Julia Kristeva"
+    ],
     "answerIndex": 1,
     "explanation": "Beauvoir y soutient que « on ne naît pas femme, on le devient », fondant la pensée féministe contemporaine.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -100,7 +155,12 @@
   },
   {
     "text": "Quel philosophe français a écrit Surveiller et punir (1975) ?",
-    "choices": ["Jacques Derrida", "Michel Foucault", "Gilles Deleuze", "Louis Althusser"],
+    "choices": [
+      "Jacques Derrida",
+      "Michel Foucault",
+      "Gilles Deleuze",
+      "Louis Althusser"
+    ],
     "answerIndex": 1,
     "explanation": "Foucault y retrace la naissance de la prison moderne et analyse le passage du supplice à la discipline.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -109,7 +169,12 @@
   },
   {
     "text": "Quel philosophe français a écrit Le Mythe de Sisyphe (1942) ?",
-    "choices": ["Sartre", "Camus", "Merleau-Ponty", "Aron"],
+    "choices": [
+      "Sartre",
+      "Camus",
+      "Merleau-Ponty",
+      "Aron"
+    ],
     "answerIndex": 1,
     "explanation": "Camus y développe la philosophie de l'absurde, en posant comme question initiale celle du suicide.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -118,7 +183,12 @@
   },
   {
     "text": "Quelle est la nationalité du philosophe René Descartes ?",
-    "choices": ["Allemande", "Française", "Hollandaise", "Anglaise"],
+    "choices": [
+      "Allemande",
+      "Française",
+      "Hollandaise",
+      "Anglaise"
+    ],
     "answerIndex": 1,
     "explanation": "Né à La Haye en Touraine en 1596, Descartes a longtemps vécu aux Provinces-Unies, mais reste un philosophe français.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -127,7 +197,12 @@
   },
   {
     "text": "Quel penseur français du XVIIe siècle est l'auteur des Pensées, publiées de manière posthume ?",
-    "choices": ["Descartes", "Pascal", "Malebranche", "La Rochefoucauld"],
+    "choices": [
+      "Descartes",
+      "Pascal",
+      "Malebranche",
+      "La Rochefoucauld"
+    ],
     "answerIndex": 1,
     "explanation": "Blaise Pascal, également mathématicien et physicien, y prépare une apologie de la religion chrétienne restée inachevée.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -136,7 +211,12 @@
   },
   {
     "text": "Quel philosophe allemand est associé à la dialectique « thèse-antithèse-synthèse » ?",
-    "choices": ["Kant", "Hegel", "Marx", "Fichte"],
+    "choices": [
+      "Kant",
+      "Hegel",
+      "Marx",
+      "Fichte"
+    ],
     "answerIndex": 1,
     "explanation": "Hegel n'emploie pas lui-même cette triade, mais sa philosophie du devenir et de la négation l'a popularisée.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -145,7 +225,12 @@
   },
   {
     "text": "Quel philosophe anglais est l'auteur du Léviathan (1651) ?",
-    "choices": ["John Locke", "Thomas Hobbes", "David Hume", "Francis Bacon"],
+    "choices": [
+      "John Locke",
+      "Thomas Hobbes",
+      "David Hume",
+      "Francis Bacon"
+    ],
     "answerIndex": 1,
     "explanation": "Hobbes y défend l'idée d'un État absolu pour sortir de l'état de nature où « l'homme est un loup pour l'homme ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -154,7 +239,12 @@
   },
   {
     "text": "Quel philosophe anglais est considéré comme un des pères de l'empirisme moderne ?",
-    "choices": ["Descartes", "Spinoza", "John Locke", "Leibniz"],
+    "choices": [
+      "Descartes",
+      "Spinoza",
+      "John Locke",
+      "Leibniz"
+    ],
     "answerIndex": 2,
     "explanation": "Locke soutient dans l'Essai sur l'entendement humain (1690) que l'esprit est à la naissance une « tabula rasa ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -163,7 +253,12 @@
   },
   {
     "text": "Quel philosophe néerlandais du XVIIe siècle est l'auteur de l'Éthique ?",
-    "choices": ["Descartes", "Spinoza", "Leibniz", "Pascal"],
+    "choices": [
+      "Descartes",
+      "Spinoza",
+      "Leibniz",
+      "Pascal"
+    ],
     "answerIndex": 1,
     "explanation": "Baruch Spinoza expose dans l'Éthique (publiée en 1677) sa pensée « more geometrico », à la manière des géomètres.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -172,7 +267,12 @@
   },
   {
     "text": "Qui a codirigé l'Encyclopédie avec D'Alembert au XVIIIe siècle ?",
-    "choices": ["Voltaire", "Diderot", "Rousseau", "Helvétius"],
+    "choices": [
+      "Voltaire",
+      "Diderot",
+      "Rousseau",
+      "Helvétius"
+    ],
     "answerIndex": 1,
     "explanation": "Denis Diderot et Jean Le Rond d'Alembert dirigent ce projet majeur des Lumières, publié entre 1751 et 1772.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -181,7 +281,12 @@
   },
   {
     "text": "Quel philosophe français a théorisé la séparation des pouvoirs ?",
-    "choices": ["Rousseau", "Voltaire", "Montesquieu", "Diderot"],
+    "choices": [
+      "Rousseau",
+      "Voltaire",
+      "Montesquieu",
+      "Diderot"
+    ],
     "answerIndex": 2,
     "explanation": "Montesquieu développe cette doctrine dans De l'esprit des lois (1748), modèle des régimes constitutionnels modernes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -190,7 +295,12 @@
   },
   {
     "text": "Quel philosophe allemand a publié Être et Temps en 1927 ?",
-    "choices": ["Husserl", "Heidegger", "Jaspers", "Gadamer"],
+    "choices": [
+      "Husserl",
+      "Heidegger",
+      "Jaspers",
+      "Gadamer"
+    ],
     "answerIndex": 1,
     "explanation": "Martin Heidegger y interroge le sens de l'être à partir du « Dasein », l'étant qui se demande ce qu'est l'être.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -199,7 +309,12 @@
   },
   {
     "text": "À quelle tradition de pensée associe-t-on Confucius ?",
-    "choices": ["Pensée chinoise", "Pensée indienne", "Pensée japonaise", "Pensée perse"],
+    "choices": [
+      "Pensée chinoise",
+      "Pensée indienne",
+      "Pensée japonaise",
+      "Pensée perse"
+    ],
     "answerIndex": 0,
     "explanation": "Confucius (Kongzi, vers -551 / -479) a posé les bases d'une éthique morale et politique fondée sur les rites et le devoir.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -208,7 +323,12 @@
   },
   {
     "text": "Quel personnage est à l'origine du bouddhisme au VIe siècle avant notre ère ?",
-    "choices": ["Lao-Tseu", "Siddhartha Gautama", "Patanjali", "Mahavira"],
+    "choices": [
+      "Lao-Tseu",
+      "Siddhartha Gautama",
+      "Patanjali",
+      "Mahavira"
+    ],
     "answerIndex": 1,
     "explanation": "Siddhartha Gautama, après son éveil sous l'arbre de la Bodhi, est appelé « le Bouddha », c'est-à-dire « l'Éveillé ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -217,7 +337,12 @@
   },
   {
     "text": "Quel penseur autrichien est à l'origine de la théorie de l'inconscient ?",
-    "choices": ["Carl Jung", "Sigmund Freud", "Alfred Adler", "Jacques Lacan"],
+    "choices": [
+      "Carl Jung",
+      "Sigmund Freud",
+      "Alfred Adler",
+      "Jacques Lacan"
+    ],
     "answerIndex": 1,
     "explanation": "Freud fonde la psychanalyse à la fin du XIXe siècle ; bien que clinicien, sa pensée a profondément marqué la philosophie.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -226,7 +351,12 @@
   },
   {
     "text": "Quel dialogue de Platon décrit une cité idéale gouvernée par les philosophes ?",
-    "choices": ["Le Banquet", "La République", "Phèdre", "Le Sophiste"],
+    "choices": [
+      "Le Banquet",
+      "La République",
+      "Phèdre",
+      "Le Sophiste"
+    ],
     "answerIndex": 1,
     "explanation": "Dans La République, Platon soutient que la justice ne peut régner que si les rois deviennent philosophes ou les philosophes rois.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -235,7 +365,12 @@
   },
   {
     "text": "Quelle école hellénistique prône l'acceptation du destin et la maîtrise des passions ?",
-    "choices": ["Stoïcisme", "Hédonisme", "Cynisme", "Néoplatonisme"],
+    "choices": [
+      "Stoïcisme",
+      "Hédonisme",
+      "Cynisme",
+      "Néoplatonisme"
+    ],
     "answerIndex": 0,
     "explanation": "Fondé par Zénon de Cition vers -300, le stoïcisme distingue ce qui dépend de nous de ce qui n'en dépend pas.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -244,7 +379,12 @@
   },
   {
     "text": "Quel philosophe grec a fondé une école prônant la recherche du plaisir mesuré ?",
-    "choices": ["Diogène", "Épicure", "Pyrrhon", "Empédocle"],
+    "choices": [
+      "Diogène",
+      "Épicure",
+      "Pyrrhon",
+      "Empédocle"
+    ],
     "answerIndex": 1,
     "explanation": "Épicure distingue plaisirs naturels et nécessaires des plaisirs vains, et prône l'ataraxie, absence de trouble de l'âme.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -253,7 +393,12 @@
   },
   {
     "text": "Quel ouvrage de Descartes est publié en 1637 ?",
-    "choices": ["Méditations métaphysiques", "Discours de la méthode", "Principes de la philosophie", "Les Passions de l'âme"],
+    "choices": [
+      "Méditations métaphysiques",
+      "Discours de la méthode",
+      "Principes de la philosophie",
+      "Les Passions de l'âme"
+    ],
     "answerIndex": 1,
     "explanation": "Le Discours de la méthode introduisait à l'origine trois essais scientifiques (la Dioptrique, les Météores et la Géométrie).",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -262,7 +407,12 @@
   },
   {
     "text": "À quel siècle est associé le mouvement intellectuel des Lumières ?",
-    "choices": ["XVIe siècle", "XVIIe siècle", "XVIIIe siècle", "XIXe siècle"],
+    "choices": [
+      "XVIe siècle",
+      "XVIIe siècle",
+      "XVIIIe siècle",
+      "XIXe siècle"
+    ],
     "answerIndex": 2,
     "explanation": "Les Lumières désignent le mouvement européen du XVIIIe siècle prônant l'usage critique de la raison et l'émancipation.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -271,7 +421,12 @@
   },
   {
     "text": "Quelle formule résume la thèse existentialiste de Sartre dans L'Être et le Néant ?",
-    "choices": ["L'essence précède l'existence", "L'existence précède l'essence", "L'homme est un être de besoin", "L'homme est une passion inutile"],
+    "choices": [
+      "L'essence précède l'existence",
+      "L'existence précède l'essence",
+      "L'homme est un être de besoin",
+      "L'homme est une passion inutile"
+    ],
     "answerIndex": 1,
     "explanation": "Pour Sartre, l'être humain n'est défini par aucune nature préalable : il se définit par ses choix et ses actes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -280,7 +435,12 @@
   },
   {
     "text": "Quel concept central développe Camus dans Le Mythe de Sisyphe ?",
-    "choices": ["L'angoisse", "L'absurde", "La mauvaise foi", "L'aliénation"],
+    "choices": [
+      "L'angoisse",
+      "L'absurde",
+      "La mauvaise foi",
+      "L'aliénation"
+    ],
     "answerIndex": 1,
     "explanation": "L'absurde naît de la confrontation entre l'appel humain au sens et le silence déraisonnable du monde.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -289,7 +449,12 @@
   },
   {
     "text": "Quelle notion centrale Michel Foucault articule-t-il au pouvoir ?",
-    "choices": ["L'inconscient", "Le savoir", "La conscience", "La transcendance"],
+    "choices": [
+      "L'inconscient",
+      "Le savoir",
+      "La conscience",
+      "La transcendance"
+    ],
     "answerIndex": 1,
     "explanation": "Foucault montre que le pouvoir produit des savoirs (sur la folie, la sexualité, la délinquance) qui le légitiment en retour.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -298,7 +463,12 @@
   },
   {
     "text": "Quelle phrase célèbre Simone de Beauvoir formule-t-elle dans Le Deuxième Sexe ?",
-    "choices": ["L'enfer, c'est les autres", "On ne naît pas femme, on le devient", "Les hommes naissent libres et égaux", "Tout est dans tout"],
+    "choices": [
+      "L'enfer, c'est les autres",
+      "On ne naît pas femme, on le devient",
+      "Les hommes naissent libres et égaux",
+      "Tout est dans tout"
+    ],
     "answerIndex": 1,
     "explanation": "Cette formule fonde la distinction moderne entre sexe biologique et genre socialement construit.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -307,7 +477,12 @@
   },
   {
     "text": "Quel philosophe français associe la notion de « durée » à l'expérience du temps vécu ?",
-    "choices": ["Henri Bergson", "Maurice Merleau-Ponty", "Paul Ricœur", "Jean Wahl"],
+    "choices": [
+      "Henri Bergson",
+      "Maurice Merleau-Ponty",
+      "Paul Ricœur",
+      "Jean Wahl"
+    ],
     "answerIndex": 0,
     "explanation": "Bergson distingue dès 1889 le temps spatialisé des sciences et la durée vécue, hétérogène et continue de la conscience.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -316,7 +491,12 @@
   },
   {
     "text": "À quel mouvement intellectuel français associe-t-on Claude Lévi-Strauss ?",
-    "choices": ["Existentialisme", "Structuralisme", "Phénoménologie", "Personnalisme"],
+    "choices": [
+      "Existentialisme",
+      "Structuralisme",
+      "Phénoménologie",
+      "Personnalisme"
+    ],
     "answerIndex": 1,
     "explanation": "Anthropologue, Lévi-Strauss applique aux mythes et à la parenté la méthode structurale issue de la linguistique saussurienne.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -325,7 +505,12 @@
   },
   {
     "text": "Quel philosophe français a forgé la notion de « déconstruction » ?",
-    "choices": ["Jacques Derrida", "Gilles Deleuze", "Jean-François Lyotard", "Jacques Rancière"],
+    "choices": [
+      "Jacques Derrida",
+      "Gilles Deleuze",
+      "Jean-François Lyotard",
+      "Jacques Rancière"
+    ],
     "answerIndex": 0,
     "explanation": "Derrida introduit ce terme dès De la grammatologie (1967) pour défaire les oppositions hiérarchisées de la métaphysique occidentale.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -334,7 +519,12 @@
   },
   {
     "text": "Avec qui Gilles Deleuze a-t-il coécrit L'Anti-Œdipe (1972) ?",
-    "choices": ["Michel Foucault", "Félix Guattari", "Jean-François Lyotard", "Pierre Klossowski"],
+    "choices": [
+      "Michel Foucault",
+      "Félix Guattari",
+      "Jean-François Lyotard",
+      "Pierre Klossowski"
+    ],
     "answerIndex": 1,
     "explanation": "Avec le psychanalyste Félix Guattari, Deleuze critique la psychanalyse œdipienne et propose une analyse du désir comme production.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -343,7 +533,12 @@
   },
   {
     "text": "Quel philosophe français définit la postmodernité comme « incrédulité à l'égard des métarécits » ?",
-    "choices": ["Lyotard", "Baudrillard", "Lipovetsky", "Debord"],
+    "choices": [
+      "Lyotard",
+      "Baudrillard",
+      "Lipovetsky",
+      "Debord"
+    ],
     "answerIndex": 0,
     "explanation": "Jean-François Lyotard formule cette définition dans La Condition postmoderne (1979), rapport remis au gouvernement québécois.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -352,7 +547,12 @@
   },
   {
     "text": "Quel philosophe français a développé une philosophie de l'herméneutique du soi ?",
-    "choices": ["Emmanuel Levinas", "Paul Ricœur", "Vladimir Jankélévitch", "Michel Henry"],
+    "choices": [
+      "Emmanuel Levinas",
+      "Paul Ricœur",
+      "Vladimir Jankélévitch",
+      "Michel Henry"
+    ],
     "answerIndex": 1,
     "explanation": "Ricœur, dans Soi-même comme un autre (1990), articule identité ipse et idem au travers du récit et de la promesse.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -361,7 +561,12 @@
   },
   {
     "text": "Quel philosophe français a renouvelé l'épistémologie au XXe siècle, notamment avec La Formation de l'esprit scientifique ?",
-    "choices": ["Gaston Bachelard", "Georges Canguilhem", "Jules Vuillemin", "Alexandre Koyré"],
+    "choices": [
+      "Gaston Bachelard",
+      "Georges Canguilhem",
+      "Jules Vuillemin",
+      "Alexandre Koyré"
+    ],
     "answerIndex": 0,
     "explanation": "Bachelard forge la notion d'« obstacle épistémologique » et celle de « rupture » entre opinion commune et savoir scientifique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -370,7 +575,12 @@
   },
   {
     "text": "Qui est l'auteur de Phénoménologie de la perception (1945) ?",
-    "choices": ["Edmund Husserl", "Maurice Merleau-Ponty", "Jean-Paul Sartre", "Emmanuel Levinas"],
+    "choices": [
+      "Edmund Husserl",
+      "Maurice Merleau-Ponty",
+      "Jean-Paul Sartre",
+      "Emmanuel Levinas"
+    ],
     "answerIndex": 1,
     "explanation": "Merleau-Ponty y refonde la phénoménologie à partir du corps propre, ouvrant la voie à une philosophie de l'incarnation.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -379,7 +589,12 @@
   },
   {
     "text": "Quel philosophe américain a proposé le « voile d'ignorance » dans sa théorie de la justice (1971) ?",
-    "choices": ["Robert Nozick", "John Rawls", "Michael Walzer", "Ronald Dworkin"],
+    "choices": [
+      "Robert Nozick",
+      "John Rawls",
+      "Michael Walzer",
+      "Ronald Dworkin"
+    ],
     "answerIndex": 1,
     "explanation": "Rawls imagine une position originelle où les contractants ignorent leur place future dans la société, gage d'équité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -388,7 +603,12 @@
   },
   {
     "text": "Quel philosophe allemand a théorisé l'« agir communicationnel » ?",
-    "choices": ["Adorno", "Habermas", "Marcuse", "Apel"],
+    "choices": [
+      "Adorno",
+      "Habermas",
+      "Marcuse",
+      "Apel"
+    ],
     "answerIndex": 1,
     "explanation": "Jürgen Habermas, héritier de l'École de Francfort, articule rationalité et discussion dans l'espace public démocratique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -397,7 +617,12 @@
   },
   {
     "text": "Quel critère Karl Popper propose-t-il pour distinguer une théorie scientifique d'un discours qui ne l'est pas ?",
-    "choices": ["La vérifiabilité", "La falsifiabilité", "La cohérence", "L'élégance mathématique"],
+    "choices": [
+      "La vérifiabilité",
+      "La falsifiabilité",
+      "La cohérence",
+      "L'élégance mathématique"
+    ],
     "answerIndex": 1,
     "explanation": "Popper soutient qu'une théorie est scientifique seulement si l'on peut concevoir une expérience capable de la réfuter.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -406,7 +631,12 @@
   },
   {
     "text": "Quel philosophe a forgé la notion de « jeux de langage » dans les Recherches philosophiques ?",
-    "choices": ["Bertrand Russell", "Ludwig Wittgenstein", "Rudolf Carnap", "Gilbert Ryle"],
+    "choices": [
+      "Bertrand Russell",
+      "Ludwig Wittgenstein",
+      "Rudolf Carnap",
+      "Gilbert Ryle"
+    ],
     "answerIndex": 1,
     "explanation": "Le second Wittgenstein abandonne l'idée d'un langage parfait pour étudier les usages variés des mots dans la vie ordinaire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -415,7 +645,12 @@
   },
   {
     "text": "Quel logicien britannique a coécrit les Principia Mathematica avec A. N. Whitehead ?",
-    "choices": ["Frege", "Russell", "Quine", "Putnam"],
+    "choices": [
+      "Frege",
+      "Russell",
+      "Quine",
+      "Putnam"
+    ],
     "answerIndex": 1,
     "explanation": "Publiés entre 1910 et 1913, les Principia tentent de fonder l'ensemble des mathématiques sur la logique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -424,7 +659,12 @@
   },
   {
     "text": "À quel courant philosophique appartient le Cercle de Vienne dans les années 1920-1930 ?",
-    "choices": ["Positivisme logique", "Existentialisme", "Phénoménologie", "Néokantisme"],
+    "choices": [
+      "Positivisme logique",
+      "Existentialisme",
+      "Phénoménologie",
+      "Néokantisme"
+    ],
     "answerIndex": 0,
     "explanation": "Animé par Carnap, Schlick et Neurath, le Cercle de Vienne défend une approche scientifique et anti-métaphysique du langage.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -433,7 +673,12 @@
   },
   {
     "text": "Qui est considéré comme le fondateur de la phénoménologie au début du XXe siècle ?",
-    "choices": ["Brentano", "Husserl", "Heidegger", "Scheler"],
+    "choices": [
+      "Brentano",
+      "Husserl",
+      "Heidegger",
+      "Scheler"
+    ],
     "answerIndex": 1,
     "explanation": "Edmund Husserl appelle à un « retour aux choses mêmes » par l'analyse de la conscience intentionnelle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -442,7 +687,12 @@
   },
   {
     "text": "Quel philosophe allemand voit dans la « Volonté » l'essence aveugle du monde ?",
-    "choices": ["Schopenhauer", "Fichte", "Schelling", "Nietzsche"],
+    "choices": [
+      "Schopenhauer",
+      "Fichte",
+      "Schelling",
+      "Nietzsche"
+    ],
     "answerIndex": 0,
     "explanation": "Schopenhauer expose cette thèse dans Le Monde comme volonté et comme représentation (1819), profondément marqué par Kant et le bouddhisme.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -451,7 +701,12 @@
   },
   {
     "text": "Quel penseur danois est souvent considéré comme un précurseur de l'existentialisme ?",
-    "choices": ["Søren Kierkegaard", "Niels Bohr", "Knud Ejler Løgstrup", "Karl-Otto Apel"],
+    "choices": [
+      "Søren Kierkegaard",
+      "Niels Bohr",
+      "Knud Ejler Løgstrup",
+      "Karl-Otto Apel"
+    ],
     "answerIndex": 0,
     "explanation": "Kierkegaard, par sa critique de Hegel et son attention au choix singulier, inspire les existentialistes du XXe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -460,7 +715,12 @@
   },
   {
     "text": "Quel ouvrage de Nietzsche présente le personnage du « surhomme » et la doctrine de l'éternel retour ?",
-    "choices": ["Le Gai Savoir", "Ainsi parlait Zarathoustra", "Par-delà bien et mal", "L'Antéchrist"],
+    "choices": [
+      "Le Gai Savoir",
+      "Ainsi parlait Zarathoustra",
+      "Par-delà bien et mal",
+      "L'Antéchrist"
+    ],
     "answerIndex": 1,
     "explanation": "Publié entre 1883 et 1885, ce livre se présente comme un poème philosophique en quatre parties, sous forme de discours.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -469,7 +729,12 @@
   },
   {
     "text": "Quel philosophe français est considéré comme le fondateur du positivisme ?",
-    "choices": ["Auguste Comte", "Hippolyte Taine", "Émile Littré", "Ernest Renan"],
+    "choices": [
+      "Auguste Comte",
+      "Hippolyte Taine",
+      "Émile Littré",
+      "Ernest Renan"
+    ],
     "answerIndex": 0,
     "explanation": "Comte distingue trois états de l'esprit humain — théologique, métaphysique, positif — dans son Cours de philosophie positive.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -478,7 +743,12 @@
   },
   {
     "text": "Qui a écrit De la démocratie en Amérique (1835-1840) ?",
-    "choices": ["François Guizot", "Alexis de Tocqueville", "Jules Michelet", "Benjamin Constant"],
+    "choices": [
+      "François Guizot",
+      "Alexis de Tocqueville",
+      "Jules Michelet",
+      "Benjamin Constant"
+    ],
     "answerIndex": 1,
     "explanation": "Tocqueville analyse la société américaine pour penser la marche irréversible de l'égalité dans les sociétés modernes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -487,7 +757,12 @@
   },
   {
     "text": "Quel philosophe français a écrit Le Neveu de Rameau ?",
-    "choices": ["Diderot", "D'Alembert", "Helvétius", "D'Holbach"],
+    "choices": [
+      "Diderot",
+      "D'Alembert",
+      "Helvétius",
+      "D'Holbach"
+    ],
     "answerIndex": 0,
     "explanation": "Dialogue inachevé écrit dans les années 1760, le texte n'a été publié en français qu'en 1823, après sa traduction allemande par Goethe.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -496,7 +771,12 @@
   },
   {
     "text": "Quel philosophe des Lumières a écrit l'Esquisse d'un tableau historique des progrès de l'esprit humain ?",
-    "choices": ["Condillac", "Condorcet", "Helvétius", "Turgot"],
+    "choices": [
+      "Condillac",
+      "Condorcet",
+      "Helvétius",
+      "Turgot"
+    ],
     "answerIndex": 1,
     "explanation": "Rédigée en 1793 alors qu'il est traqué sous la Terreur, l'Esquisse de Condorcet défend l'idée d'un progrès indéfini.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -505,7 +785,12 @@
   },
   {
     "text": "Quel philosophe d'origine lituanienne a placé l'éthique avant l'ontologie, dans la rencontre du visage d'autrui ?",
-    "choices": ["Emmanuel Levinas", "Vladimir Jankélévitch", "Henri Maldiney", "Michel Henry"],
+    "choices": [
+      "Emmanuel Levinas",
+      "Vladimir Jankélévitch",
+      "Henri Maldiney",
+      "Michel Henry"
+    ],
     "answerIndex": 0,
     "explanation": "Levinas développe cette thèse notamment dans Totalité et Infini (1961), où l'éthique devient « philosophie première ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -514,7 +799,12 @@
   },
   {
     "text": "Quelle philosophe germano-américaine a forgé l'expression « banalité du mal » ?",
-    "choices": ["Hannah Arendt", "Edith Stein", "Rosa Luxemburg", "Judith Butler"],
+    "choices": [
+      "Hannah Arendt",
+      "Edith Stein",
+      "Rosa Luxemburg",
+      "Judith Butler"
+    ],
     "answerIndex": 0,
     "explanation": "Arendt forge cette expression à propos du procès d'Adolf Eichmann à Jérusalem en 1961, qu'elle couvre pour le New Yorker.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -523,7 +813,12 @@
   },
   {
     "text": "Quelle philosophe française, morte en 1943, est l'auteure de La Pesanteur et la grâce ?",
-    "choices": ["Simone Weil", "Simone de Beauvoir", "Édith Stein", "Hélène Metzger"],
+    "choices": [
+      "Simone Weil",
+      "Simone de Beauvoir",
+      "Édith Stein",
+      "Hélène Metzger"
+    ],
     "answerIndex": 0,
     "explanation": "Recueil posthume publié en 1947, le livre rassemble des pensées sur l'attention, la grâce et le malheur.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -532,7 +827,12 @@
   },
   {
     "text": "Quel sociologue et philosophe français a publié L'Opium des intellectuels en 1955 ?",
-    "choices": ["Raymond Aron", "Pierre Bourdieu", "Edgar Morin", "Cornelius Castoriadis"],
+    "choices": [
+      "Raymond Aron",
+      "Pierre Bourdieu",
+      "Edgar Morin",
+      "Cornelius Castoriadis"
+    ],
     "answerIndex": 0,
     "explanation": "Aron y critique l'attrait des intellectuels français pour le marxisme et défend une approche libérale et empirique du politique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -541,7 +841,12 @@
   },
   {
     "text": "Quelle formule de Spinoza identifie Dieu et la Nature ?",
-    "choices": ["Deus sive Natura", "Deus absconditus", "Natura naturans", "Causa sui"],
+    "choices": [
+      "Deus sive Natura",
+      "Deus absconditus",
+      "Natura naturans",
+      "Causa sui"
+    ],
     "answerIndex": 0,
     "explanation": "Cette équation, fondamentale dans l'Éthique, refuse tout Dieu transcendant et fonde un panthéisme rationaliste rigoureux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -550,7 +855,12 @@
   },
   {
     "text": "Quel philosophe allemand introduit la notion de « monades », substances simples sans fenêtres ?",
-    "choices": ["Wolff", "Leibniz", "Lessing", "Mendelssohn"],
+    "choices": [
+      "Wolff",
+      "Leibniz",
+      "Lessing",
+      "Mendelssohn"
+    ],
     "answerIndex": 1,
     "explanation": "La Monadologie (1714) de Leibniz expose cette ontologie de points métaphysiques harmonisés par Dieu de toute éternité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -559,7 +869,12 @@
   },
   {
     "text": "Quel philosophe irlandais soutient que « être, c'est être perçu » ?",
-    "choices": ["Hume", "Berkeley", "Reid", "Hutcheson"],
+    "choices": [
+      "Hume",
+      "Berkeley",
+      "Reid",
+      "Hutcheson"
+    ],
     "answerIndex": 1,
     "explanation": "George Berkeley défend cet immatérialisme dans le Traité des principes de la connaissance humaine (1710) : « esse est percipi ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -568,7 +883,12 @@
   },
   {
     "text": "Quel philosophe écossais a formulé le « problème de l'induction » ?",
-    "choices": ["Reid", "Hume", "Smith", "Ferguson"],
+    "choices": [
+      "Reid",
+      "Hume",
+      "Smith",
+      "Ferguson"
+    ],
     "answerIndex": 1,
     "explanation": "Hume montre dans son Enquête (1748) qu'aucune connexion nécessaire ne fonde rationnellement le passage du passé observé au futur.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -577,7 +897,12 @@
   },
   {
     "text": "Comment Kant nomme-t-il la loi morale qui commande inconditionnellement ?",
-    "choices": ["Maxime universelle", "Impératif catégorique", "Impératif hypothétique", "Devoir téléologique"],
+    "choices": [
+      "Maxime universelle",
+      "Impératif catégorique",
+      "Impératif hypothétique",
+      "Devoir téléologique"
+    ],
     "answerIndex": 1,
     "explanation": "Exposé dans les Fondements de la métaphysique des mœurs (1785), il commande « agis seulement selon la maxime que tu peux vouloir universelle ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -586,7 +911,12 @@
   },
   {
     "text": "En quelle année paraît la Phénoménologie de l'Esprit de Hegel ?",
-    "choices": ["1781", "1807", "1821", "1831"],
+    "choices": [
+      "1781",
+      "1807",
+      "1821",
+      "1831"
+    ],
     "answerIndex": 1,
     "explanation": "L'ouvrage, achevé à Iéna pendant l'arrivée des troupes napoléoniennes, retrace le développement dialectique de la conscience.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -595,7 +925,12 @@
   },
   {
     "text": "En quelle année paraît le premier livre du Capital de Karl Marx ?",
-    "choices": ["1848", "1859", "1867", "1875"],
+    "choices": [
+      "1848",
+      "1859",
+      "1867",
+      "1875"
+    ],
     "answerIndex": 2,
     "explanation": "Le livre I est publié à Hambourg en 1867 ; les livres II et III seront édités par Engels après la mort de Marx.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -604,7 +939,12 @@
   },
   {
     "text": "Quel ouvrage de 1889 marque l'entrée de Bergson dans la philosophie ?",
-    "choices": ["Matière et mémoire", "Essai sur les données immédiates de la conscience", "L'Évolution créatrice", "Les Deux Sources de la morale et de la religion"],
+    "choices": [
+      "Matière et mémoire",
+      "Essai sur les données immédiates de la conscience",
+      "L'Évolution créatrice",
+      "Les Deux Sources de la morale et de la religion"
+    ],
     "answerIndex": 1,
     "explanation": "Cet Essai, sa thèse de doctorat, formule la distinction entre temps spatialisé et durée vécue.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -613,7 +953,12 @@
   },
   {
     "text": "En quelle année Sartre publie-t-il L'Être et le Néant ?",
-    "choices": ["1938", "1943", "1946", "1953"],
+    "choices": [
+      "1938",
+      "1943",
+      "1946",
+      "1953"
+    ],
     "answerIndex": 1,
     "explanation": "Publié en pleine Occupation, l'ouvrage propose une « ontologie phénoménologique » fondée sur l'opposition de l'en-soi et du pour-soi.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -622,7 +967,12 @@
   },
   {
     "text": "Quel ouvrage de Foucault, publié en 1966, retrace l'archéologie des sciences humaines ?",
-    "choices": ["Histoire de la folie", "Les Mots et les Choses", "L'Archéologie du savoir", "Naissance de la clinique"],
+    "choices": [
+      "Histoire de la folie",
+      "Les Mots et les Choses",
+      "L'Archéologie du savoir",
+      "Naissance de la clinique"
+    ],
     "answerIndex": 1,
     "explanation": "Foucault y identifie trois épistémès successives — Renaissance, âge classique, modernité — et annonce la « mort de l'homme ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -631,7 +981,12 @@
   },
   {
     "text": "Quel ouvrage majeur Lévi-Strauss publie-t-il en 1949 ?",
-    "choices": ["Tristes Tropiques", "La Pensée sauvage", "Les Structures élémentaires de la parenté", "Anthropologie structurale"],
+    "choices": [
+      "Tristes Tropiques",
+      "La Pensée sauvage",
+      "Les Structures élémentaires de la parenté",
+      "Anthropologie structurale"
+    ],
     "answerIndex": 2,
     "explanation": "Issu de sa thèse, l'ouvrage analyse l'interdiction de l'inceste comme passage universel de la nature à la culture.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -640,7 +995,12 @@
   },
   {
     "text": "Quel philosophe français a théorisé les « appareils idéologiques d'État » ?",
-    "choices": ["Louis Althusser", "Étienne Balibar", "Jacques Rancière", "Henri Lefebvre"],
+    "choices": [
+      "Louis Althusser",
+      "Étienne Balibar",
+      "Jacques Rancière",
+      "Henri Lefebvre"
+    ],
     "answerIndex": 0,
     "explanation": "Dans un article de 1970, Althusser distingue les appareils répressifs et idéologiques par lesquels l'État reproduit les rapports de production.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -649,7 +1009,12 @@
   },
   {
     "text": "Quel sociologue et philosophe français a forgé la notion d'« habitus » comme schème intériorisé ?",
-    "choices": ["Émile Durkheim", "Marcel Mauss", "Pierre Bourdieu", "Raymond Boudon"],
+    "choices": [
+      "Émile Durkheim",
+      "Marcel Mauss",
+      "Pierre Bourdieu",
+      "Raymond Boudon"
+    ],
     "answerIndex": 2,
     "explanation": "Bourdieu reprend une catégorie scolastique pour penser comment les structures sociales s'incorporent dans des dispositions durables.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -658,7 +1023,12 @@
   },
   {
     "text": "Quel psychanalyste français a proposé une relecture structurale de Freud, articulée autour du « stade du miroir » ?",
-    "choices": ["Jacques Lacan", "Maud Mannoni", "Octave Mannoni", "Daniel Lagache"],
+    "choices": [
+      "Jacques Lacan",
+      "Maud Mannoni",
+      "Octave Mannoni",
+      "Daniel Lagache"
+    ],
     "answerIndex": 0,
     "explanation": "Lacan présente cette notion dès 1936, puis dans son séminaire ; elle décrit la constitution du « je » par identification à l'image spéculaire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -667,7 +1037,12 @@
   },
   {
     "text": "En quelle année paraît Totalité et Infini d'Emmanuel Levinas ?",
-    "choices": ["1947", "1961", "1974", "1982"],
+    "choices": [
+      "1947",
+      "1961",
+      "1974",
+      "1982"
+    ],
     "answerIndex": 1,
     "explanation": "Cette thèse principale fonde une éthique du visage d'autrui et inaugure l'œuvre maîtresse du philosophe français d'origine lituanienne.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -676,7 +1051,12 @@
   },
   {
     "text": "Quel philosophe antique, disciple d'Ammonios Saccas, fonde le néoplatonisme au IIIe siècle ?",
-    "choices": ["Plotin", "Porphyre", "Jamblique", "Proclus"],
+    "choices": [
+      "Plotin",
+      "Porphyre",
+      "Jamblique",
+      "Proclus"
+    ],
     "answerIndex": 0,
     "explanation": "Plotin (vers 205-270) enseigne à Rome ; ses cours sont rassemblés par Porphyre dans les Ennéades.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -685,7 +1065,12 @@
   },
   {
     "text": "Quel Père de l'Église, évêque d'Hippone, est l'auteur des Confessions ?",
-    "choices": ["Ambroise", "Augustin", "Jérôme", "Grégoire le Grand"],
+    "choices": [
+      "Ambroise",
+      "Augustin",
+      "Jérôme",
+      "Grégoire le Grand"
+    ],
     "answerIndex": 1,
     "explanation": "Rédigées vers 397-401, les Confessions d'Augustin inaugurent l'autobiographie spirituelle dans la culture occidentale.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -694,7 +1079,12 @@
   },
   {
     "text": "Quel théologien dominicain du XIIIe siècle est l'auteur de la Somme théologique ?",
-    "choices": ["Albert le Grand", "Thomas d'Aquin", "Bonaventure", "Duns Scot"],
+    "choices": [
+      "Albert le Grand",
+      "Thomas d'Aquin",
+      "Bonaventure",
+      "Duns Scot"
+    ],
     "answerIndex": 1,
     "explanation": "Thomas d'Aquin synthétise dans cet ouvrage inachevé la philosophie aristotélicienne et la théologie chrétienne.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -703,7 +1093,12 @@
   },
   {
     "text": "À quel philosophe médiéval anglais doit-on le principe de parcimonie dit « rasoir » ?",
-    "choices": ["Anselme", "Roger Bacon", "Guillaume d'Ockham", "Jean Buridan"],
+    "choices": [
+      "Anselme",
+      "Roger Bacon",
+      "Guillaume d'Ockham",
+      "Jean Buridan"
+    ],
     "answerIndex": 2,
     "explanation": "Le franciscain Guillaume d'Ockham (vers 1285-1347) défend le nominalisme et soutient qu'il ne faut pas multiplier les entités sans nécessité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -712,7 +1107,12 @@
   },
   {
     "text": "Quel philosophe hellénistique est traditionnellement considéré comme le fondateur du scepticisme ?",
-    "choices": ["Pyrrhon d'Élis", "Sextus Empiricus", "Arcésilas", "Carnéade"],
+    "choices": [
+      "Pyrrhon d'Élis",
+      "Sextus Empiricus",
+      "Arcésilas",
+      "Carnéade"
+    ],
     "answerIndex": 0,
     "explanation": "Pyrrhon (vers -365 / -275), qui aurait accompagné Alexandre en Inde, recommandait la suspension du jugement (épochè).",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -721,7 +1121,12 @@
   },
   {
     "text": "Quel philosophe médecin grec a transmis les principaux arguments du scepticisme antique ?",
-    "choices": ["Galien", "Sextus Empiricus", "Hippocrate", "Diogène Laërce"],
+    "choices": [
+      "Galien",
+      "Sextus Empiricus",
+      "Hippocrate",
+      "Diogène Laërce"
+    ],
     "answerIndex": 1,
     "explanation": "Sextus Empiricus, vers le IIe siècle, rassemble ces arguments dans les Esquisses pyrrhoniennes et les livres Contre les dogmatiques.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -730,7 +1135,12 @@
   },
   {
     "text": "Quel philosophe britannique a fondé l'utilitarisme classique à la fin du XVIIIe siècle ?",
-    "choices": ["John Stuart Mill", "Adam Smith", "Jeremy Bentham", "Henry Sidgwick"],
+    "choices": [
+      "John Stuart Mill",
+      "Adam Smith",
+      "Jeremy Bentham",
+      "Henry Sidgwick"
+    ],
     "answerIndex": 2,
     "explanation": "Bentham propose dans son Introduction aux principes de morale et de législation (1789) un calcul des plaisirs et des peines.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -739,7 +1149,12 @@
   },
   {
     "text": "Quel auteur de De la liberté (1859) a infléchi l'utilitarisme dans un sens plus qualitatif ?",
-    "choices": ["Bentham", "John Stuart Mill", "Spencer", "Sidgwick"],
+    "choices": [
+      "Bentham",
+      "John Stuart Mill",
+      "Spencer",
+      "Sidgwick"
+    ],
     "answerIndex": 1,
     "explanation": "Mill défend la liberté individuelle face à la « tyrannie de la majorité » et distingue les plaisirs supérieurs des plaisirs inférieurs.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -748,7 +1163,12 @@
   },
   {
     "text": "Quel ouvrage de Marcel Mauss, paru en 1925, est consacré à l'échange dans les sociétés archaïques ?",
-    "choices": ["Essai sur le don", "Esquisse d'une théorie générale de la magie", "Les Techniques du corps", "Sociologie et anthropologie"],
+    "choices": [
+      "Essai sur le don",
+      "Esquisse d'une théorie générale de la magie",
+      "Les Techniques du corps",
+      "Sociologie et anthropologie"
+    ],
     "answerIndex": 0,
     "explanation": "Mauss y dégage la triple obligation de donner, recevoir et rendre, fondement des liens sociaux dans de nombreuses cultures.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -757,7 +1177,12 @@
   },
   {
     "text": "Quel théologien médiéval est l'auteur de l'argument ontologique dans le Proslogion ?",
-    "choices": ["Pierre Abélard", "Anselme de Cantorbéry", "Hugues de Saint-Victor", "Bernard de Clairvaux"],
+    "choices": [
+      "Pierre Abélard",
+      "Anselme de Cantorbéry",
+      "Hugues de Saint-Victor",
+      "Bernard de Clairvaux"
+    ],
     "answerIndex": 1,
     "explanation": "Anselme (1033-1109) y soutient que l'idée de Dieu comme « ce dont rien de plus grand ne peut être pensé » implique son existence.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -766,7 +1191,12 @@
   },
   {
     "text": "Quel philosophe arabe du XIIe siècle, surnommé « le Commentateur », a renouvelé la réception d'Aristote en Occident ?",
-    "choices": ["Avicenne", "Averroès", "Al-Ghazali", "Al-Farabi"],
+    "choices": [
+      "Avicenne",
+      "Averroès",
+      "Al-Ghazali",
+      "Al-Farabi"
+    ],
     "answerIndex": 1,
     "explanation": "Ibn Rushd (Averroès, 1126-1198), originaire de Cordoue, a influencé Thomas d'Aquin malgré la condamnation de l'averroïsme latin.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -775,7 +1205,12 @@
   },
   {
     "text": "Quel philosophe persan, auteur du Livre de la guérison, est connu en Occident sous le nom d'Avicenne ?",
-    "choices": ["Ibn Sina", "Ibn Rushd", "Al-Kindi", "Al-Razi"],
+    "choices": [
+      "Ibn Sina",
+      "Ibn Rushd",
+      "Al-Kindi",
+      "Al-Razi"
+    ],
     "answerIndex": 0,
     "explanation": "Ibn Sina (980-1037) a profondément influencé la métaphysique médiévale latine par sa distinction de l'essence et de l'existence.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -784,7 +1219,12 @@
   },
   {
     "text": "Quel ouvrage de Maïmonide, rabbin et philosophe du XIIe siècle, tente d'harmoniser foi et raison ?",
-    "choices": ["Mishné Torah", "Le Guide des égarés", "Le Sefer ha-Mitzvot", "Le Kuzari"],
+    "choices": [
+      "Mishné Torah",
+      "Le Guide des égarés",
+      "Le Sefer ha-Mitzvot",
+      "Le Kuzari"
+    ],
     "answerIndex": 1,
     "explanation": "Rédigé en arabe à la fin du XIIe siècle, Le Guide des égarés a profondément marqué la philosophie médiévale chrétienne.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -793,7 +1233,12 @@
   },
   {
     "text": "Quel philosophe allemand a publié La Philosophie des formes symboliques entre 1923 et 1929 ?",
-    "choices": ["Ernst Cassirer", "Wilhelm Dilthey", "Max Scheler", "Edmund Husserl"],
+    "choices": [
+      "Ernst Cassirer",
+      "Wilhelm Dilthey",
+      "Max Scheler",
+      "Edmund Husserl"
+    ],
     "answerIndex": 0,
     "explanation": "Cassirer y soutient que le langage, le mythe, l'art et la science sont autant de formes symboliques par lesquelles l'humain construit le monde.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -802,7 +1247,12 @@
   },
   {
     "text": "Quel philosophe français contemporain a écrit L'Être et l'Événement (1988) ?",
-    "choices": ["Alain Badiou", "Jean-Luc Marion", "Quentin Meillassoux", "Jean-Luc Nancy"],
+    "choices": [
+      "Alain Badiou",
+      "Jean-Luc Marion",
+      "Quentin Meillassoux",
+      "Jean-Luc Nancy"
+    ],
     "answerIndex": 0,
     "explanation": "Badiou y articule sa philosophie de l'événement à la théorie mathématique des ensembles, notamment chez Cantor et Cohen.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -811,7 +1261,12 @@
   },
   {
     "text": "Quel philosophe français contemporain a écrit Le Maître ignorant (1987) sur Joseph Jacotot ?",
-    "choices": ["Jacques Rancière", "Étienne Balibar", "Jean-Luc Nancy", "Philippe Lacoue-Labarthe"],
+    "choices": [
+      "Jacques Rancière",
+      "Étienne Balibar",
+      "Jean-Luc Nancy",
+      "Philippe Lacoue-Labarthe"
+    ],
     "answerIndex": 0,
     "explanation": "Rancière y défend, contre la « pédagogie de l'explication », l'égalité des intelligences comme présupposé politique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -820,7 +1275,12 @@
   },
   {
     "text": "Quel philosophe français a reçu le prix Nobel de littérature en 1927 ?",
-    "choices": ["Bergson", "Sartre", "Camus", "Maurois"],
+    "choices": [
+      "Bergson",
+      "Sartre",
+      "Camus",
+      "Maurois"
+    ],
     "answerIndex": 0,
     "explanation": "Henri Bergson est distingué « en reconnaissance de ses idées riches et vivifiantes, comme du brillant talent avec lequel elles ont été exposées ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -829,7 +1289,12 @@
   },
   {
     "text": "Quel philosophe danois du XIXe siècle est souvent considéré comme un précurseur de l'existentialisme ?",
-    "choices": ["Søren Kierkegaard", "Friedrich Engels", "Georg Simmel", "Wilhelm Dilthey"],
+    "choices": [
+      "Søren Kierkegaard",
+      "Friedrich Engels",
+      "Georg Simmel",
+      "Wilhelm Dilthey"
+    ],
     "answerIndex": 0,
     "explanation": "Kierkegaard insiste sur le choix individuel, l'angoisse, la subjectivité et le rapport singulier à la foi. Son œuvre inspirera fortement l'existentialisme du XXe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -838,7 +1303,12 @@
   },
   {
     "text": "Quelle philosophe a écrit Condition de l'homme moderne (1958) ?",
-    "choices": ["Hannah Arendt", "Simone Weil", "Judith Butler", "Ayn Rand"],
+    "choices": [
+      "Hannah Arendt",
+      "Simone Weil",
+      "Judith Butler",
+      "Ayn Rand"
+    ],
     "answerIndex": 0,
     "explanation": "Dans cet ouvrage, Hannah Arendt distingue notamment le travail, l'œuvre et l'action au sein de la vita activa. Le livre est devenu un classique de la philosophie politique du XXe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -847,7 +1317,12 @@
   },
   {
     "text": "Quel philosophe allemand a écrit Le Principe responsabilité (1979) ?",
-    "choices": ["Hans Jonas", "Karl Jaspers", "Ernst Bloch", "Helmut Plessner"],
+    "choices": [
+      "Hans Jonas",
+      "Karl Jaspers",
+      "Ernst Bloch",
+      "Helmut Plessner"
+    ],
     "answerIndex": 0,
     "explanation": "Hans Jonas y défend une éthique tournée vers l'avenir et les générations futures, à l'ère de la puissance technologique. Son impératif de responsabilité a fortement marqué la pensée écologique contemporaine.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -856,7 +1331,12 @@
   },
   {
     "text": "Quel courant philosophique américain est associé à Charles S. Peirce et William James ?",
-    "choices": ["Le positivisme", "Le pragmatisme", "Le stoïcisme", "Le criticisme"],
+    "choices": [
+      "Le positivisme",
+      "Le pragmatisme",
+      "Le stoïcisme",
+      "Le criticisme"
+    ],
     "answerIndex": 1,
     "explanation": "Le pragmatisme évalue les idées à leurs effets pratiques et à leurs conséquences vérifiables dans l'expérience. Il a profondément influencé la philosophie américaine, notamment avec John Dewey.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -865,7 +1345,12 @@
   },
   {
     "text": "Quel philosophe américain a imaginé l'expérience de pensée de la « chambre chinoise » ?",
-    "choices": ["Hilary Putnam", "Daniel Dennett", "John Searle", "Saul Kripke"],
+    "choices": [
+      "Hilary Putnam",
+      "Daniel Dennett",
+      "John Searle",
+      "Saul Kripke"
+    ],
     "answerIndex": 2,
     "explanation": "John Searle propose en 1980 cette expérience de pensée pour critiquer l'idée qu'une machine manipulant des symboles comprendrait réellement ce qu'elle traite. Elle demeure une référence dans les débats sur l'intelligence artificielle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -874,7 +1359,12 @@
   },
   {
     "text": "Quel philosophe français est l'auteur de La Mémoire, l'histoire, l'oubli (2000) ?",
-    "choices": ["Paul Ricœur", "Michel Henry", "Jean-Luc Marion", "Vladimir Jankélévitch"],
+    "choices": [
+      "Paul Ricœur",
+      "Michel Henry",
+      "Jean-Luc Marion",
+      "Vladimir Jankélévitch"
+    ],
     "answerIndex": 0,
     "explanation": "Paul Ricœur y examine les rapports complexes entre souvenir, récit historique, oubli et pardon. L'ouvrage prolonge sa réflexion sur l'identité narrative, l'interprétation et la responsabilité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -883,7 +1373,12 @@
   },
   {
     "text": "Quel penseur florentin est l'auteur du Prince ?",
-    "choices": ["Machiavel", "Guichardin", "Savonarole", "Montaigne"],
+    "choices": [
+      "Machiavel",
+      "Guichardin",
+      "Savonarole",
+      "Montaigne"
+    ],
     "answerIndex": 0,
     "explanation": "Machiavel rédige Le Prince au début du XVIe siècle pour réfléchir à la conquête et à la conservation du pouvoir. Son nom est devenu synonyme de réalisme politique, parfois à tort simplifié.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -892,7 +1387,12 @@
   },
   {
     "text": "Quel empereur romain a écrit Pensées pour moi-même ?",
-    "choices": ["Auguste", "Marc Aurèle", "Trajan", "Hadrien"],
+    "choices": [
+      "Auguste",
+      "Marc Aurèle",
+      "Trajan",
+      "Hadrien"
+    ],
     "answerIndex": 1,
     "explanation": "Marc Aurèle est souvent présenté comme la figure la plus célèbre du stoïcisme impérial. Ses Pensées mêlent exercice spirituel, discipline de soi et méditation sur le devoir.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -901,7 +1401,12 @@
   },
   {
     "text": "Quel philosophe grec enseignait dans le Jardin à Athènes ?",
-    "choices": ["Aristote", "Épicure", "Zénon de Cition", "Pyrrhon"],
+    "choices": [
+      "Aristote",
+      "Épicure",
+      "Zénon de Cition",
+      "Pyrrhon"
+    ],
     "answerIndex": 1,
     "explanation": "Le Jardin d'Épicure est à la fois un lieu d'enseignement et un modèle de vie philosophique fondé sur l'amitié, la sobriété et la recherche de l'ataraxie. L'épicurisme y prend forme comme manière de vivre.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -910,7 +1415,12 @@
   },
   {
     "text": "Quel auteur des Essais a popularisé la devise « Que sais-je ? » ?",
-    "choices": ["Pascal", "Montaigne", "Descartes", "La Boétie"],
+    "choices": [
+      "Pascal",
+      "Montaigne",
+      "Descartes",
+      "La Boétie"
+    ],
     "answerIndex": 1,
     "explanation": "Montaigne fait de cette formule une expression de la modestie du jugement et du scepticisme. Ses Essais inaugurent une forme de pensée très personnelle, mobile et expérimentale.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -919,7 +1429,12 @@
   },
   {
     "text": "Quel philosophe allemand est associé au concept de surhomme ?",
-    "choices": ["Hegel", "Nietzsche", "Heidegger", "Feuerbach"],
+    "choices": [
+      "Hegel",
+      "Nietzsche",
+      "Heidegger",
+      "Feuerbach"
+    ],
     "answerIndex": 1,
     "explanation": "Le surhomme apparaît notamment dans Ainsi parlait Zarathoustra. Chez Nietzsche, il ne désigne pas un homme supérieur au sens banal, mais une figure de dépassement créateur des anciennes valeurs.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -928,7 +1443,12 @@
   },
   {
     "text": "Quel philosophe anglais a écrit l'Essai sur l'entendement humain ?",
-    "choices": ["Thomas Hobbes", "John Locke", "David Hume", "George Berkeley"],
+    "choices": [
+      "Thomas Hobbes",
+      "John Locke",
+      "David Hume",
+      "George Berkeley"
+    ],
     "answerIndex": 1,
     "explanation": "Dans cet ouvrage de 1690, Locke examine l'origine et les limites de la connaissance humaine. Il y refuse l'idée d'idées innées et défend une approche empiriste.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -937,7 +1457,12 @@
   },
   {
     "text": "Quel philosophe présocratique affirmait qu'on ne se baigne jamais deux fois dans le même fleuve ?",
-    "choices": ["Parménide", "Héraclite", "Démocrite", "Empédocle"],
+    "choices": [
+      "Parménide",
+      "Héraclite",
+      "Démocrite",
+      "Empédocle"
+    ],
     "answerIndex": 1,
     "explanation": "Héraclite insiste sur le devenir et la transformation permanente des choses. L'image du fleuve exprime l'idée que tout change sans cesse, y compris celui qui l'observe.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -946,7 +1471,12 @@
   },
   {
     "text": "Quel auteur a formulé la maxime « L'enfer, c'est les autres » ?",
-    "choices": ["Camus", "Sartre", "Beauvoir", "Merleau-Ponty"],
+    "choices": [
+      "Camus",
+      "Sartre",
+      "Beauvoir",
+      "Merleau-Ponty"
+    ],
     "answerIndex": 1,
     "explanation": "La formule apparaît dans la pièce Huis clos de Jean-Paul Sartre. Elle ne signifie pas simplement que les autres sont insupportables, mais que leur regard peut nous enfermer dans une image de nous-mêmes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -955,7 +1485,12 @@
   },
   {
     "text": "Quel philosophe a défendu la séparation des pouvoirs dans De l'esprit des lois ?",
-    "choices": ["Rousseau", "Diderot", "Montesquieu", "Condorcet"],
+    "choices": [
+      "Rousseau",
+      "Diderot",
+      "Montesquieu",
+      "Condorcet"
+    ],
     "answerIndex": 2,
     "explanation": "Montesquieu distingue les pouvoirs législatif, exécutif et judiciaire afin d'éviter la concentration arbitraire de la puissance politique. Sa réflexion a fortement influencé les régimes constitutionnels modernes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -964,7 +1499,12 @@
   },
   {
     "text": "Quel philosophe cynique vivait selon la légende dans un tonneau ?",
-    "choices": ["Épictète", "Diogène", "Pyrrhon", "Anaxagore"],
+    "choices": [
+      "Épictète",
+      "Diogène",
+      "Pyrrhon",
+      "Anaxagore"
+    ],
     "answerIndex": 1,
     "explanation": "Diogène de Sinope est devenu le symbole d'une vie volontairement dépouillée et provocatrice. Les anecdotes qui le concernent visent à dénoncer les conventions sociales et les faux besoins.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -973,7 +1513,12 @@
   },
   {
     "text": "Quel philosophe américain est l'auteur d'une Théorie de la justice (1971) ?",
-    "choices": ["Michael Sandel", "John Rawls", "Robert Nozick", "Richard Rorty"],
+    "choices": [
+      "Michael Sandel",
+      "John Rawls",
+      "Robert Nozick",
+      "Richard Rorty"
+    ],
     "answerIndex": 1,
     "explanation": "John Rawls renouvelle la philosophie politique contemporaine en partant d'une position originelle derrière un voile d'ignorance. Il cherche ainsi à fonder des principes de justice équitables pour tous.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -982,7 +1527,12 @@
   },
   {
     "text": "Quel philosophe autrichien a écrit le Tractatus logico-philosophicus ?",
-    "choices": ["Ludwig Wittgenstein", "Karl Popper", "Edmund Husserl", "Rudolf Carnap"],
+    "choices": [
+      "Ludwig Wittgenstein",
+      "Karl Popper",
+      "Edmund Husserl",
+      "Rudolf Carnap"
+    ],
     "answerIndex": 0,
     "explanation": "Le Tractatus cherche à déterminer les limites du langage en le rapportant à la structure logique du monde. Wittgenstein en viendra plus tard à critiquer lui-même plusieurs de ses thèses initiales.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -991,7 +1541,12 @@
   },
   {
     "text": "Quelle notion spinoziste désigne l'effort par lequel chaque être persévère dans son être ?",
-    "choices": ["Le cogito", "Le conatus", "L'épochè", "Le logos"],
+    "choices": [
+      "Le cogito",
+      "Le conatus",
+      "L'épochè",
+      "Le logos"
+    ],
     "answerIndex": 1,
     "explanation": "Le conatus désigne chez Spinoza la tendance fondamentale de chaque chose à persévérer dans son existence. Cette notion est centrale pour comprendre son éthique des affects et du désir.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1000,7 +1555,12 @@
   },
   {
     "text": "Comment appelle-t-on chez Descartes l'exigence de ne rien admettre sans preuve claire ?",
-    "choices": ["L'intuition pure", "Le doute méthodique", "La réduction phénoménologique", "Le nihilisme"],
+    "choices": [
+      "L'intuition pure",
+      "Le doute méthodique",
+      "La réduction phénoménologique",
+      "Le nihilisme"
+    ],
     "answerIndex": 1,
     "explanation": "Le doute méthodique consiste à suspendre provisoirement l'assentiment envers tout ce qui peut être mis en question. Il permet à Descartes de rechercher un point de départ absolument certain pour la connaissance.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1009,7 +1569,12 @@
   },
   {
     "text": "Quel philosophe américain a popularisé le pragmatisme avec l'idée que le vrai se vérifie par ses effets pratiques ?",
-    "choices": ["William James", "John Dewey", "Richard Rorty", "Hilary Putnam"],
+    "choices": [
+      "William James",
+      "John Dewey",
+      "Richard Rorty",
+      "Hilary Putnam"
+    ],
     "answerIndex": 0,
     "explanation": "William James a contribué à diffuser le pragmatisme au tournant du XXe siècle. Il met l'accent sur les conséquences concrètes des idées et sur leur valeur dans l'expérience vécue.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1018,7 +1583,12 @@
   },
   {
     "text": "Quel philosophe du langage a théorisé les actes de parole dans How to Do Things with Words ?",
-    "choices": ["J. L. Austin", "Noam Chomsky", "Michel Foucault", "Nelson Goodman"],
+    "choices": [
+      "J. L. Austin",
+      "Noam Chomsky",
+      "Michel Foucault",
+      "Nelson Goodman"
+    ],
     "answerIndex": 0,
     "explanation": "Austin montre que parler, ce n'est pas seulement décrire le monde, mais aussi agir : promettre, ordonner, déclarer, baptiser. Cette analyse a profondément renouvelé la philosophie du langage ordinaire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1027,7 +1597,12 @@
   },
   {
     "text": "Quelle notion stoïcienne désigne la liberté intérieure face aux passions destructrices ?",
-    "choices": ["L'ataraxie", "L'apatheia", "Le kairos", "La catharsis"],
+    "choices": [
+      "L'ataraxie",
+      "L'apatheia",
+      "Le kairos",
+      "La catharsis"
+    ],
     "answerIndex": 1,
     "explanation": "L'apatheia stoïcienne ne signifie pas l'insensibilité totale, mais la maîtrise des passions qui troublent le jugement. Elle participe d'un idéal de sagesse accordé à l'ordre du monde.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1036,7 +1611,12 @@
   },
   {
     "text": "Quel philosophe allemand a distingué le phénomène de la chose en soi ?",
-    "choices": ["Fichte", "Kant", "Schopenhauer", "Schelling"],
+    "choices": [
+      "Fichte",
+      "Kant",
+      "Schopenhauer",
+      "Schelling"
+    ],
     "answerIndex": 1,
     "explanation": "Chez Kant, nous n'accédons aux objets qu'à travers les formes et catégories de notre connaissance. La chose en soi désigne ce qui existe indépendamment de cette relation, sans pouvoir être connu comme tel.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1045,7 +1625,12 @@
   },
   {
     "text": "Quel penseur chrétien du IVe-Ve siècle a écrit Les Confessions et La Cité de Dieu ?",
-    "choices": ["Tertullien", "Saint Augustin", "Thomas d'Aquin", "Origène"],
+    "choices": [
+      "Tertullien",
+      "Saint Augustin",
+      "Thomas d'Aquin",
+      "Origène"
+    ],
     "answerIndex": 1,
     "explanation": "Saint Augustin est une figure décisive de la pensée chrétienne occidentale. Ses Confessions sont à la fois une autobiographie spirituelle et une méditation sur le temps, la mémoire et la conversion.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1054,7 +1639,12 @@
   },
   {
     "text": "Quel philosophe allemand a influencé Marx par sa dialectique de l'histoire ?",
-    "choices": ["Nietzsche", "Hegel", "Husserl", "Cassirer"],
+    "choices": [
+      "Nietzsche",
+      "Hegel",
+      "Husserl",
+      "Cassirer"
+    ],
     "answerIndex": 1,
     "explanation": "Marx reprend à Hegel l'idée d'un devenir conflictuel et structuré, tout en la matérialisant. La dette est profonde, même si Marx affirme avoir « remis Hegel sur ses pieds ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1063,7 +1653,12 @@
   },
   {
     "text": "Quel philosophe médiéval a donné son nom au principe de parcimonie appelé « rasoir » ?",
-    "choices": ["Abélard", "Guillaume d'Occam", "Duns Scot", "Anselme de Cantorbéry"],
+    "choices": [
+      "Abélard",
+      "Guillaume d'Occam",
+      "Duns Scot",
+      "Anselme de Cantorbéry"
+    ],
     "answerIndex": 1,
     "explanation": "Le rasoir d'Occam recommande de ne pas multiplier les entités explicatives sans nécessité. Ce principe a connu une longue postérité bien au-delà du cadre scolastique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1072,7 +1667,12 @@
   },
   {
     "text": "Quel concept de Deleuze et Guattari désigne un modèle non hiérarchique opposé à l'arbre ?",
-    "choices": ["Le rhizome", "La monade", "L'épistémè", "Le cogito"],
+    "choices": [
+      "Le rhizome",
+      "La monade",
+      "L'épistémè",
+      "Le cogito"
+    ],
     "answerIndex": 0,
     "explanation": "Le rhizome, développé notamment dans Mille Plateaux, sert à penser des connexions multiples, sans centre ni hiérarchie unique. Il s'oppose aux modèles arborescents trop rigides pour saisir la complexité du réel.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1081,7 +1681,12 @@
   },
   {
     "text": "Quel penseur de l'École de Francfort a coécrit Dialectique de la raison avec Max Horkheimer ?",
-    "choices": ["Theodor Adorno", "Herbert Marcuse", "Jürgen Habermas", "Erich Fromm"],
+    "choices": [
+      "Theodor Adorno",
+      "Herbert Marcuse",
+      "Jürgen Habermas",
+      "Erich Fromm"
+    ],
     "answerIndex": 0,
     "explanation": "Adorno et Horkheimer examinent dans cet ouvrage la manière dont la raison moderne peut se retourner en domination et en barbarie. Le livre est un texte majeur de la théorie critique du XXe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1090,7 +1695,12 @@
   },
   {
     "text": "Quel philosophe contemporain a écrit Après la vertu (1981) ?",
-    "choices": ["Charles Taylor", "Alasdair MacIntyre", "Bernard Williams", "Peter Singer"],
+    "choices": [
+      "Charles Taylor",
+      "Alasdair MacIntyre",
+      "Bernard Williams",
+      "Peter Singer"
+    ],
     "answerIndex": 1,
     "explanation": "Dans Après la vertu, MacIntyre critique l'éclatement moral du monde moderne et appelle à retrouver des traditions éthiques plus substantielles. Son ouvrage a relancé l'intérêt pour l'éthique des vertus d'inspiration aristotélicienne.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1099,10 +1709,155 @@
   },
   {
     "text": "Quel philosophe espagnol est l'auteur de La Révolte des masses ?",
-    "choices": ["Miguel de Unamuno", "José Ortega y Gasset", "Xavier Zubiri", "Julián Marías"],
+    "choices": [
+      "Miguel de Unamuno",
+      "José Ortega y Gasset",
+      "Xavier Zubiri",
+      "Julián Marías"
+    ],
     "answerIndex": 1,
     "explanation": "Publié en 1930, ce livre analyse l'avènement de l'homme-masse dans les sociétés contemporaines. Ortega y Gasset y réfléchit aux effets politiques et culturels de la démocratisation de masse.",
     "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe grec a fondé l'Académie d'Athènes vers 387 av. J.-C. ?",
+    "choices": [
+      "Socrate",
+      "Aristote",
+      "Platon",
+      "Épicure"
+    ],
+    "answerIndex": 2,
+    "explanation": "Platon a fondé l'Académie, l'une des premières institutions d'enseignement supérieur du monde occidental. Aristote y a étudié pendant vingt ans. L'Académie a fonctionné jusqu'en 529 ap. J.-C., date à laquelle l'empereur Justinien l'a fermée.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "FACILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel terme désigne la doctrine selon laquelle le plaisir est le bien suprême et le fondement de la morale ?",
+    "choices": [
+      "Stoïcisme",
+      "Utilitarisme",
+      "Hédonisme",
+      "Nihilisme"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'hédonisme (du grec hedone, plaisir) est la doctrine qui fait du plaisir le souverain bien. Épicure en est la figure majeure dans l'Antiquité, bien qu'il ait distingué plaisirs du corps et plaisirs de l'âme, prônant une ataraxie (absence de trouble) plutôt que la jouissance effrénée.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel concept kantien désigne une règle morale qui s'impose inconditionnellement à tout être raisonnable ?",
+    "choices": [
+      "Impératif hypothétique",
+      "Impératif catégorique",
+      "Volonté générale",
+      "Devoir naturel"
+    ],
+    "answerIndex": 1,
+    "explanation": "L'impératif catégorique, formulé par Kant dans la Fondation de la métaphysique des mœurs (1785), stipule qu'on ne doit agir que selon la maxime qu'on pourrait vouloir voir érigée en loi universelle. Il s'oppose à l'impératif hypothétique, conditionnel à un désir.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel courant philosophique du XXe siècle affirme que l'existence précède l'essence et que l'homme crée son propre sens ?",
+    "choices": [
+      "Le structuralisme",
+      "Le positivisme",
+      "Le phénoménologie",
+      "L'existentialisme"
+    ],
+    "answerIndex": 3,
+    "explanation": "L'existentialisme, associé à Jean-Paul Sartre, Albert Camus et Simone de Beauvoir, soutient que l'homme n'a pas de nature prédéfinie : il se définit par ses actes. Sartre l'a résumé dans la formule « L'existence précède l'essence ».",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe anglais du XVIIe siècle, auteur du Léviathan, a théorisé l'État comme résultat d'un contrat social ?",
+    "choices": [
+      "John Locke",
+      "David Hume",
+      "Thomas Hobbes",
+      "Francis Bacon"
+    ],
+    "answerIndex": 2,
+    "explanation": "Thomas Hobbes, dans le Léviathan (1651), décrit l'état de nature comme une guerre de tous contre tous. Pour sortir de cet état, les individus concluent un contrat social et cèdent leur liberté naturelle à un souverain absolu.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel terme grec désigne le bonheur comme épanouissement de la vertu selon Aristote dans l'Éthique à Nicomaque ?",
+    "choices": [
+      "Ataraxie",
+      "Aponie",
+      "Eudémonie",
+      "Phronèse"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'eudémonie (du grec eudaimonia) est le concept central de l'éthique aristotélicienne. Aristote la définit comme l'activité de l'âme conforme à la vertu accomplie tout au long d'une vie. Elle diffère du simple plaisir en requérant l'exercice des facultés proprement humaines.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "DIFFICILE",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quelle philosophe française a écrit Le Deuxième Sexe (1949), ouvrage fondateur du féminisme moderne ?",
+    "choices": [
+      "Simone Weil",
+      "Simone de Beauvoir",
+      "Marguerite Yourcenar",
+      "Clara Malraux"
+    ],
+    "answerIndex": 1,
+    "explanation": "Simone de Beauvoir a publié Le Deuxième Sexe en 1949. Sa phrase « On ne naît pas femme, on le devient » est devenue une référence du féminisme mondial. L'ouvrage analyse la condition féminine sous les angles biologique, psychanalytique et marxiste.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe allemand du XIXe siècle a proclamé « Dieu est mort » et théorisé le surhomme dans Ainsi parlait Zarathoustra ?",
+    "choices": [
+      "Karl Marx",
+      "Arthur Schopenhauer",
+      "Friedrich Nietzsche",
+      "Georg Hegel"
+    ],
+    "answerIndex": 2,
+    "explanation": "Friedrich Nietzsche, dans Ainsi parlait Zarathoustra (1883-1885), proclame la mort de Dieu et l'avènement du surhomme (Übermensch). Sa philosophie critique la morale chrétienne et propose une transmutation des valeurs fondée sur la volonté de puissance.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe antique a distingué quatre causes pour expliquer tout ce qui existe : matérielle, formelle, efficiente et finale ?",
+    "choices": [
+      "Démocrite",
+      "Platon",
+      "Aristote",
+      "Épicure"
+    ],
+    "answerIndex": 2,
+    "explanation": "Aristote a développé sa théorie des quatre causes dans la Physique et la Métaphysique. La cause matérielle (de quoi ?), formelle (qu'est-ce que c'est ?), efficiente (par quoi ?) et finale (pour quoi ?) forment un cadre explicatif complet pour tout phénomène naturel.",
+    "period": "ANTIQUITE_GAULE",
+    "difficulty": "MOYEN",
+    "topic": "PHILOSOPHIE"
+  },
+  {
+    "text": "Quel philosophe du XVIIIe siècle a écrit le Discours sur l'origine et les fondements de l'inégalité parmi les hommes (1755) ?",
+    "choices": [
+      "Voltaire",
+      "Jean-Jacques Rousseau",
+      "Denis Diderot",
+      "Montesquieu"
+    ],
+    "answerIndex": 1,
+    "explanation": "Jean-Jacques Rousseau a rédigé ce Discours en réponse à un concours de l'Académie de Dijon. Il y développe l'idée que l'inégalité sociale est une construction historique et non naturelle, et que la propriété privée en est le fondement. Ce texte annonce le Contrat social (1762).",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
     "difficulty": "DIFFICILE",
     "topic": "PHILOSOPHIE"
   }

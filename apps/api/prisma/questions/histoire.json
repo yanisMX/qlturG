@@ -1958,5 +1958,145 @@
     "period": "RENAISSANCE_ANCIEN_REGIME",
     "difficulty": "DIFFICILE",
     "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle bataille de 1515 a marqué le début brillant du règne de François Ier et la reconquête du duché de Milan ?",
+    "choices": [
+      "Bataille de Pavie",
+      "Bataille de Marignan",
+      "Bataille d'Azincourt",
+      "Bataille de Castillon"
+    ],
+    "answerIndex": 1,
+    "explanation": "La bataille de Marignan (13-14 septembre 1515) vit François Ier écraser les mercenaires suisses qui défendaient le duché de Milan. Cette victoire permit à la France de s'emparer du duché et valut au jeune roi une réputation de grand guerrier.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel cardinal a fondé l'Académie française en 1635, sous le règne de Louis XIII ?",
+    "choices": [
+      "Cardinal Mazarin",
+      "Cardinal Richelieu",
+      "Cardinal de Fleury",
+      "Cardinal de Bernis"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le cardinal de Richelieu, premier ministre de Louis XIII, a fondé l'Académie française par lettres patentes du 29 janvier 1635. L'institution avait pour mission principale de travailler à la pureté et à l'enrichissement de la langue française.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année les femmes françaises ont-elles obtenu le droit de vote ?",
+    "choices": [
+      "1936",
+      "1940",
+      "1944",
+      "1946"
+    ],
+    "answerIndex": 2,
+    "explanation": "L'ordonnance du 21 avril 1944 signée par de Gaulle à Alger a accordé le droit de vote aux femmes françaises. Elles l'ont exercé pour la première fois lors des élections municipales d'avril-mai 1945.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle reine de France, épouse de Louis XVI, a été guillotinée le 16 octobre 1793 ?",
+    "choices": [
+      "Marie-Thérèse d'Autriche",
+      "Marie-Antoinette",
+      "Marie de Médicis",
+      "Marie Leszczyńska"
+    ],
+    "answerIndex": 1,
+    "explanation": "Marie-Antoinette, fille de l'impératrice Marie-Thérèse d'Autriche, a été arrêtée après la fuite à Varennes (1791), emprisonnée au Temple puis à la Conciergerie, et guillotinée place de la Révolution le 16 octobre 1793, neuf mois après Louis XVI.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "En quelle année la France adopte-t-elle le suffrage universel masculin pour la première fois ?",
+    "choices": [
+      "1793",
+      "1815",
+      "1848",
+      "1875"
+    ],
+    "answerIndex": 2,
+    "explanation": "La Deuxième République, proclamée en février 1848, a instauré le suffrage universel masculin par décret du 5 mars 1848. Pour la première fois, tous les hommes de plus de 21 ans pouvaient voter, portant le corps électoral de 240 000 à 9 millions d'électeurs.",
+    "period": "XIXE_SIECLE",
+    "difficulty": "MOYEN",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel traité de 1919 a officiellement mis fin à la Première Guerre mondiale et imposé de lourdes réparations à l'Allemagne ?",
+    "choices": [
+      "Traité de Francfort",
+      "Traité de Versailles",
+      "Traité de Saint-Germain",
+      "Traité de Trianon"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le Traité de Versailles, signé le 28 juin 1919 dans la galerie des Glaces du château, a imposé à l'Allemagne de lourdes réparations, des cessions territoriales et la clause de culpabilité de guerre. Son caractère humiliant a contribué à la montée du nazisme.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quelle forteresse prise d'assaut le 14 juillet 1789 est devenue le symbole de la Révolution française ?",
+    "choices": [
+      "Le Louvre",
+      "La Bastille",
+      "La Conciergerie",
+      "Vincennes"
+    ],
+    "answerIndex": 1,
+    "explanation": "La prise de la Bastille, forteresse-prison royale, par le peuple de Paris marque le début de la Révolution française. Au moment de sa prise, elle ne détenait que sept prisonniers. Le 14 juillet est depuis 1880 la fête nationale française.",
+    "period": "REVOLUTION_EMPIRE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Charlemagne est couronné empereur d'Occident à Rome par le pape Léon III en quelle année ?",
+    "choices": [
+      "768",
+      "800",
+      "814",
+      "843"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le 25 décembre 800, le pape Léon III couronne Charlemagne empereur des Romains dans la basilique Saint-Pierre de Rome. Cet acte a fondé un empire chrétien en Occident et a posé les bases politiques de l'Europe médiévale.",
+    "period": "MOYEN_AGE",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel événement de 1685 provoqua l'exode de 200 000 protestants français vers l'Europe et l'Amérique ?",
+    "choices": [
+      "Édit de Fontainebleau",
+      "Massacre de la Saint-Barthélemy",
+      "Paix d'Augsbourg",
+      "Édit de Nantes"
+    ],
+    "answerIndex": 0,
+    "explanation": "L'édit de Fontainebleau (ou révocation de l'édit de Nantes), signé par Louis XIV en 1685, supprima les droits accordés aux protestants en 1598. Cette décision entraîna l'émigration de quelque 200 000 huguenots, privant la France de nombreux artisans et soldats qualifiés.",
+    "period": "RENAISSANCE_ANCIEN_REGIME",
+    "difficulty": "DIFFICILE",
+    "topic": "HISTOIRE"
+  },
+  {
+    "text": "Quel général a lancé son célèbre appel à la résistance depuis la BBC de Londres le 18 juin 1940 ?",
+    "choices": [
+      "Philippe Leclerc",
+      "Henri Giraud",
+      "Charles de Gaulle",
+      "Alphonse Juin"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le général de Gaulle, sous-secrétaire d'État à la Défense nationale, a refusé l'armistice et lancé son appel depuis les studios de la BBC à Londres. Ce discours, entendu par peu de Français sur le moment, est devenu le symbole de la Résistance française.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "FACILE",
+    "topic": "HISTOIRE"
   }
 ]

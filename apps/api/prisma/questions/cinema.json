@@ -1,7 +1,12 @@
 [
   {
     "text": "Qui a réalisé Titanic (1997) ?",
-    "choices": ["Steven Spielberg", "James Cameron", "Martin Scorsese", "George Lucas"],
+    "choices": [
+      "Steven Spielberg",
+      "James Cameron",
+      "Martin Scorsese",
+      "George Lucas"
+    ],
     "answerIndex": 1,
     "explanation": "James Cameron a écrit et réalisé Titanic, qui détint le record du box-office mondial jusqu'à son propre Avatar en 2009.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -10,7 +15,12 @@
   },
   {
     "text": "Quelle est la plus haute récompense du Festival de Cannes ?",
-    "choices": ["Lion d'Or", "Ours d'Or", "Palme d'Or", "Oscar"],
+    "choices": [
+      "Lion d'Or",
+      "Ours d'Or",
+      "Palme d'Or",
+      "Oscar"
+    ],
     "answerIndex": 2,
     "explanation": "La Palme d'Or a remplacé en 1955 le Grand Prix du Festival international du film comme récompense suprême de Cannes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -19,7 +29,12 @@
   },
   {
     "text": "En quelle année les frères Lumière organisent-ils leur première projection publique payante ?",
-    "choices": ["1885", "1895", "1905", "1915"],
+    "choices": [
+      "1885",
+      "1895",
+      "1905",
+      "1915"
+    ],
     "answerIndex": 1,
     "explanation": "La séance a lieu le 28 décembre 1895 au Salon indien du Grand Café à Paris, date considérée comme la naissance du cinéma.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -28,7 +43,12 @@
   },
   {
     "text": "Qui interprète Forrest Gump dans le film de 1994 ?",
-    "choices": ["Tom Hanks", "Tom Cruise", "Brad Pitt", "Leonardo DiCaprio"],
+    "choices": [
+      "Tom Hanks",
+      "Tom Cruise",
+      "Brad Pitt",
+      "Leonardo DiCaprio"
+    ],
     "answerIndex": 0,
     "explanation": "Tom Hanks remporte l'Oscar du meilleur acteur en 1995 pour ce rôle, un an après celui obtenu pour Philadelphia.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -37,7 +57,12 @@
   },
   {
     "text": "Quel acteur incarne Edward dans Edward aux mains d'argent (1990) ?",
-    "choices": ["Johnny Depp", "Tim Burton", "Brad Pitt", "Tom Cruise"],
+    "choices": [
+      "Johnny Depp",
+      "Tim Burton",
+      "Brad Pitt",
+      "Tom Cruise"
+    ],
     "answerIndex": 0,
     "explanation": "Le film marque le début d'une collaboration durable entre Tim Burton et Johnny Depp, qui tourneront ensemble huit longs-métrages.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -46,7 +71,12 @@
   },
   {
     "text": "Qui a réalisé Le Fabuleux Destin d'Amélie Poulain (2001) ?",
-    "choices": ["Luc Besson", "Jean-Pierre Jeunet", "François Truffaut", "Jacques Audiard"],
+    "choices": [
+      "Luc Besson",
+      "Jean-Pierre Jeunet",
+      "François Truffaut",
+      "Jacques Audiard"
+    ],
     "answerIndex": 1,
     "explanation": "Le film a été nommé à cinq Oscars et reste l'un des plus grands succès du cinéma français à l'international.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -55,7 +85,12 @@
   },
   {
     "text": "Qui a créé la saga Star Wars ?",
-    "choices": ["Steven Spielberg", "George Lucas", "Francis Ford Coppola", "Stanley Kubrick"],
+    "choices": [
+      "Steven Spielberg",
+      "George Lucas",
+      "Francis Ford Coppola",
+      "Stanley Kubrick"
+    ],
     "answerIndex": 1,
     "explanation": "George Lucas écrit et réalise Un nouvel espoir (1977) puis fonde Lucasfilm, qu'il revend à Disney en 2012 pour plus de 4 milliards de dollars.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -64,7 +99,12 @@
   },
   {
     "text": "Qui a réalisé Pulp Fiction (1994) ?",
-    "choices": ["Quentin Tarantino", "Martin Scorsese", "Francis Ford Coppola", "James Cameron"],
+    "choices": [
+      "Quentin Tarantino",
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "James Cameron"
+    ],
     "answerIndex": 0,
     "explanation": "Pulp Fiction remporte la Palme d'Or à Cannes et révolutionne la narration non linéaire dans le cinéma américain.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -73,7 +113,12 @@
   },
   {
     "text": "Quel acteur joue Driss dans Intouchables (2011) ?",
-    "choices": ["Jamel Debbouze", "Omar Sy", "Kad Merad", "Dany Boon"],
+    "choices": [
+      "Jamel Debbouze",
+      "Omar Sy",
+      "Kad Merad",
+      "Dany Boon"
+    ],
     "answerIndex": 1,
     "explanation": "Omar Sy obtient le César du meilleur acteur en 2012 pour ce rôle, devenant le premier acteur noir à recevoir cette distinction.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -82,7 +127,12 @@
   },
   {
     "text": "Dans quel pays se tient chaque année le Festival de Cannes ?",
-    "choices": ["Italie", "Espagne", "France", "Belgique"],
+    "choices": [
+      "Italie",
+      "Espagne",
+      "France",
+      "Belgique"
+    ],
     "answerIndex": 2,
     "explanation": "Le Festival se tient chaque mois de mai dans la ville côtière du sud de la France depuis sa première édition effective en 1946.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -91,7 +141,12 @@
   },
   {
     "text": "Quel studio a produit Toy Story (1995) ?",
-    "choices": ["DreamWorks", "Pixar", "Disney Animation", "Universal"],
+    "choices": [
+      "DreamWorks",
+      "Pixar",
+      "Disney Animation",
+      "Universal"
+    ],
     "answerIndex": 1,
     "explanation": "Toy Story est le premier long-métrage entièrement réalisé en images de synthèse, marquant un tournant dans l'histoire de l'animation.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -100,7 +155,12 @@
   },
   {
     "text": "Qui a réalisé Le Parrain (1972) ?",
-    "choices": ["Martin Scorsese", "Francis Ford Coppola", "Stanley Kubrick", "Alfred Hitchcock"],
+    "choices": [
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Stanley Kubrick",
+      "Alfred Hitchcock"
+    ],
     "answerIndex": 1,
     "explanation": "Coppola adapte le roman de Mario Puzo et signera ensuite une trilogie devenue référence du cinéma américain.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -109,7 +169,12 @@
   },
   {
     "text": "Quel acteur tient le rôle-titre dans Léon (1994) ?",
-    "choices": ["Gérard Depardieu", "Jean Reno", "Vincent Cassel", "Daniel Auteuil"],
+    "choices": [
+      "Gérard Depardieu",
+      "Jean Reno",
+      "Vincent Cassel",
+      "Daniel Auteuil"
+    ],
     "answerIndex": 1,
     "explanation": "Le film de Luc Besson marque les débuts à l'écran de Natalie Portman, alors âgée de 12 ans.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -118,7 +183,12 @@
   },
   {
     "text": "Qui a réalisé Jurassic Park (1993) ?",
-    "choices": ["George Lucas", "Steven Spielberg", "James Cameron", "Robert Zemeckis"],
+    "choices": [
+      "George Lucas",
+      "Steven Spielberg",
+      "James Cameron",
+      "Robert Zemeckis"
+    ],
     "answerIndex": 1,
     "explanation": "Adapté du roman de Michael Crichton, le film combine animatronique et images de synthèse alors révolutionnaires.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -127,7 +197,12 @@
   },
   {
     "text": "Qui a réalisé Avatar (2009) ?",
-    "choices": ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Michael Bay"],
+    "choices": [
+      "Steven Spielberg",
+      "James Cameron",
+      "Christopher Nolan",
+      "Michael Bay"
+    ],
     "answerIndex": 1,
     "explanation": "Avatar est le premier film à dépasser les deux milliards de dollars au box-office mondial et a démocratisé la 3D au cinéma.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -136,7 +211,12 @@
   },
   {
     "text": "Quelle récompense distingue annuellement les meilleurs films du cinéma français ?",
-    "choices": ["Oscar", "BAFTA", "César", "Goya"],
+    "choices": [
+      "Oscar",
+      "BAFTA",
+      "César",
+      "Goya"
+    ],
     "answerIndex": 2,
     "explanation": "Les César sont remis depuis 1976 par l'Académie des arts et techniques. La statuette est l'œuvre du sculpteur César Baldaccini.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -145,7 +225,12 @@
   },
   {
     "text": "Qui a réalisé Bienvenue chez les Ch'tis (2008) ?",
-    "choices": ["Kad Merad", "Dany Boon", "Franck Dubosc", "Jamel Debbouze"],
+    "choices": [
+      "Kad Merad",
+      "Dany Boon",
+      "Franck Dubosc",
+      "Jamel Debbouze"
+    ],
     "answerIndex": 1,
     "explanation": "Le film a réuni plus de 20 millions de spectateurs en France, un record alors inégalé pour un film français.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -154,7 +239,12 @@
   },
   {
     "text": "À quel personnage Charlie Chaplin doit-il sa célébrité mondiale ?",
-    "choices": ["Charlot le Vagabond", "Buster", "Harold", "Stan Laurel"],
+    "choices": [
+      "Charlot le Vagabond",
+      "Buster",
+      "Harold",
+      "Stan Laurel"
+    ],
     "answerIndex": 0,
     "explanation": "Créé en 1914, le personnage du Vagabond (« The Tramp ») est devenu une icône universelle du cinéma muet.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -163,7 +253,12 @@
   },
   {
     "text": "Quel acteur incarne Maximus dans Gladiator (2000) ?",
-    "choices": ["Mel Gibson", "Russell Crowe", "Brad Pitt", "Tom Hanks"],
+    "choices": [
+      "Mel Gibson",
+      "Russell Crowe",
+      "Brad Pitt",
+      "Tom Hanks"
+    ],
     "answerIndex": 1,
     "explanation": "Russell Crowe obtient l'Oscar du meilleur acteur en 2001 pour ce rôle dans le film de Ridley Scott.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -172,7 +267,12 @@
   },
   {
     "text": "Qui a réalisé Inception (2010) ?",
-    "choices": ["Christopher Nolan", "Denis Villeneuve", "James Cameron", "Steven Spielberg"],
+    "choices": [
+      "Christopher Nolan",
+      "Denis Villeneuve",
+      "James Cameron",
+      "Steven Spielberg"
+    ],
     "answerIndex": 0,
     "explanation": "Nolan a travaillé sur le scénario près de dix ans avant de tourner Inception, après le succès de The Dark Knight.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -181,7 +281,12 @@
   },
   {
     "text": "Quel film d'animation Disney sort en 1937 ?",
-    "choices": ["Pinocchio", "Bambi", "Blanche-Neige et les Sept Nains", "Fantasia"],
+    "choices": [
+      "Pinocchio",
+      "Bambi",
+      "Blanche-Neige et les Sept Nains",
+      "Fantasia"
+    ],
     "answerIndex": 2,
     "explanation": "Blanche-Neige est le premier long-métrage d'animation en couleurs et avec son des studios Disney.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -190,7 +295,12 @@
   },
   {
     "text": "Quelle est la nationalité de Marilyn Monroe ?",
-    "choices": ["Britannique", "Française", "Américaine", "Canadienne"],
+    "choices": [
+      "Britannique",
+      "Française",
+      "Américaine",
+      "Canadienne"
+    ],
     "answerIndex": 2,
     "explanation": "Née Norma Jeane Mortenson à Los Angeles en 1926, elle est devenue l'une des plus grandes icônes du cinéma hollywoodien.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -199,7 +309,12 @@
   },
   {
     "text": "Qui a réalisé E.T. l'extra-terrestre (1982) ?",
-    "choices": ["Steven Spielberg", "George Lucas", "James Cameron", "Stanley Kubrick"],
+    "choices": [
+      "Steven Spielberg",
+      "George Lucas",
+      "James Cameron",
+      "Stanley Kubrick"
+    ],
     "answerIndex": 0,
     "explanation": "E.T. a longtemps détenu le record du plus gros succès au box-office mondial, dépassé seulement dix ans plus tard par Jurassic Park.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -208,7 +323,12 @@
   },
   {
     "text": "Qui a réalisé Le Cinquième Élément (1997) ?",
-    "choices": ["Luc Besson", "Jean-Pierre Jeunet", "Jean-Jacques Annaud", "Léos Carax"],
+    "choices": [
+      "Luc Besson",
+      "Jean-Pierre Jeunet",
+      "Jean-Jacques Annaud",
+      "Léos Carax"
+    ],
     "answerIndex": 0,
     "explanation": "Avec un budget de 90 millions de dollars, ce film fut à sa sortie la plus grosse production européenne de l'histoire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -217,7 +337,12 @@
   },
   {
     "text": "Quel acteur incarne Tony Stark / Iron Man au cinéma ?",
-    "choices": ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+    "choices": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
     "answerIndex": 1,
     "explanation": "Robert Downey Jr. incarne Tony Stark à partir d'Iron Man (2008), film qui lance le Marvel Cinematic Universe.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -226,7 +351,12 @@
   },
   {
     "text": "Dans quel film Leonardo DiCaprio incarne-t-il Jack Dawson ?",
-    "choices": ["Titanic", "Inception", "Gatsby le Magnifique", "The Revenant"],
+    "choices": [
+      "Titanic",
+      "Inception",
+      "Gatsby le Magnifique",
+      "The Revenant"
+    ],
     "answerIndex": 0,
     "explanation": "DiCaprio avait 22 ans lors du tournage de Titanic, dont il aurait d'abord refusé le rôle avant de l'accepter.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -235,7 +365,12 @@
   },
   {
     "text": "Qui a réalisé La La Land (2016) ?",
-    "choices": ["Damien Chazelle", "Denis Villeneuve", "Christopher Nolan", "Wes Anderson"],
+    "choices": [
+      "Damien Chazelle",
+      "Denis Villeneuve",
+      "Christopher Nolan",
+      "Wes Anderson"
+    ],
     "answerIndex": 0,
     "explanation": "Damien Chazelle obtient l'Oscar du meilleur réalisateur en 2017 à 32 ans, devenant le plus jeune lauréat dans cette catégorie.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -244,7 +379,12 @@
   },
   {
     "text": "Quel personnage Daniel Radcliffe a-t-il incarné au cinéma ?",
-    "choices": ["Frodon Sacquet", "Harry Potter", "Percy Jackson", "Edward Cullen"],
+    "choices": [
+      "Frodon Sacquet",
+      "Harry Potter",
+      "Percy Jackson",
+      "Edward Cullen"
+    ],
     "answerIndex": 1,
     "explanation": "Daniel Radcliffe a incarné Harry Potter dans huit films, de 2001 à 2011, adaptés des romans de J.K. Rowling.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -253,7 +393,12 @@
   },
   {
     "text": "Quel acteur tient le rôle de Vincent Vega dans Pulp Fiction ?",
-    "choices": ["John Travolta", "Samuel L. Jackson", "Bruce Willis", "Tim Roth"],
+    "choices": [
+      "John Travolta",
+      "Samuel L. Jackson",
+      "Bruce Willis",
+      "Tim Roth"
+    ],
     "answerIndex": 0,
     "explanation": "John Travolta a relancé sa carrière grâce à ce rôle après un passage à vide dans les années 1980.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -262,7 +407,12 @@
   },
   {
     "text": "Quel acteur incarne le Joker dans The Dark Knight (2008) ?",
-    "choices": ["Joaquin Phoenix", "Heath Ledger", "Jack Nicholson", "Jared Leto"],
+    "choices": [
+      "Joaquin Phoenix",
+      "Heath Ledger",
+      "Jack Nicholson",
+      "Jared Leto"
+    ],
     "answerIndex": 1,
     "explanation": "Heath Ledger reçoit l'Oscar du meilleur second rôle à titre posthume en 2009, quelques mois après sa mort.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -271,7 +421,12 @@
   },
   {
     "text": "Quel cinéaste sud-coréen a réalisé Parasite, Palme d'Or 2019 ?",
-    "choices": ["Bong Joon-ho", "Park Chan-wook", "Hirokazu Kore-eda", "Lee Chang-dong"],
+    "choices": [
+      "Bong Joon-ho",
+      "Park Chan-wook",
+      "Hirokazu Kore-eda",
+      "Lee Chang-dong"
+    ],
     "answerIndex": 0,
     "explanation": "Parasite est le premier film en langue étrangère à remporter l'Oscar du meilleur film, en 2020.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -280,7 +435,12 @@
   },
   {
     "text": "Quel film de Claude Chabrol, sorti en 1958, est souvent considéré comme le premier de la Nouvelle Vague ?",
-    "choices": ["Les Cousins", "Le Beau Serge", "À bout de souffle", "Les 400 Coups"],
+    "choices": [
+      "Les Cousins",
+      "Le Beau Serge",
+      "À bout de souffle",
+      "Les 400 Coups"
+    ],
     "answerIndex": 1,
     "explanation": "Tourné dans le village creusois de Sardent, Le Beau Serge précède Les 400 Coups de Truffaut et À bout de souffle de Godard.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -289,7 +449,12 @@
   },
   {
     "text": "Qui a réalisé Les 400 Coups (1959) ?",
-    "choices": ["François Truffaut", "Jean-Luc Godard", "Claude Chabrol", "Éric Rohmer"],
+    "choices": [
+      "François Truffaut",
+      "Jean-Luc Godard",
+      "Claude Chabrol",
+      "Éric Rohmer"
+    ],
     "answerIndex": 0,
     "explanation": "Truffaut, ancien critique aux Cahiers du cinéma, transpose en partie sa propre enfance à travers le personnage d'Antoine Doinel.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -298,7 +463,12 @@
   },
   {
     "text": "Quel acteur français a incarné le commissaire Maigret dans les films de Jean Delannoy ?",
-    "choices": ["Jean Gabin", "Lino Ventura", "Jean-Paul Belmondo", "Alain Delon"],
+    "choices": [
+      "Jean Gabin",
+      "Lino Ventura",
+      "Jean-Paul Belmondo",
+      "Alain Delon"
+    ],
     "answerIndex": 0,
     "explanation": "Jean Gabin interprète Maigret dans trois films entre 1958 et 1963, adaptés des romans de Georges Simenon.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -307,7 +477,12 @@
   },
   {
     "text": "Quel cinéaste a réalisé Citizen Kane (1941) ?",
-    "choices": ["Orson Welles", "John Ford", "Billy Wilder", "Frank Capra"],
+    "choices": [
+      "Orson Welles",
+      "John Ford",
+      "Billy Wilder",
+      "Frank Capra"
+    ],
     "answerIndex": 0,
     "explanation": "Orson Welles n'a que 25 ans lorsqu'il coécrit, réalise et interprète le rôle principal d'un film considéré comme une révolution narrative.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -316,7 +491,12 @@
   },
   {
     "text": "Quel studio japonais a cofondé Hayao Miyazaki en 1985 ?",
-    "choices": ["Toei Animation", "Studio Ghibli", "Madhouse", "Bones"],
+    "choices": [
+      "Toei Animation",
+      "Studio Ghibli",
+      "Madhouse",
+      "Bones"
+    ],
     "answerIndex": 1,
     "explanation": "Miyazaki cofonde Ghibli avec Isao Takahata après le succès de Nausicaä de la vallée du vent.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -325,7 +505,12 @@
   },
   {
     "text": "Quel acteur joue Hans Landa dans Inglourious Basterds (2009) ?",
-    "choices": ["Christoph Waltz", "Michael Fassbender", "Brad Pitt", "Til Schweiger"],
+    "choices": [
+      "Christoph Waltz",
+      "Michael Fassbender",
+      "Brad Pitt",
+      "Til Schweiger"
+    ],
     "answerIndex": 0,
     "explanation": "Christoph Waltz remporte son premier Oscar pour ce rôle, puis un second pour Django Unchained de Tarantino en 2013.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -334,7 +519,12 @@
   },
   {
     "text": "Quel réalisateur a obtenu la Palme d'Or 2013 pour La Vie d'Adèle ?",
-    "choices": ["Abdellatif Kechiche", "Jacques Audiard", "François Ozon", "Arnaud Desplechin"],
+    "choices": [
+      "Abdellatif Kechiche",
+      "Jacques Audiard",
+      "François Ozon",
+      "Arnaud Desplechin"
+    ],
     "answerIndex": 0,
     "explanation": "Pour la première fois, le jury cannois a attribué la Palme conjointement au réalisateur et à ses actrices Adèle Exarchopoulos et Léa Seydoux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -343,7 +533,12 @@
   },
   {
     "text": "Quel film a remporté le César du meilleur film en 2024 ?",
-    "choices": ["Anatomie d'une chute", "Le Règne animal", "Les Trois Mousquetaires", "Le Procès Goldman"],
+    "choices": [
+      "Anatomie d'une chute",
+      "Le Règne animal",
+      "Les Trois Mousquetaires",
+      "Le Procès Goldman"
+    ],
     "answerIndex": 0,
     "explanation": "Le film de Justine Triet, déjà Palme d'Or 2023, remporte six César dont meilleur film, réalisation et scénario.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -352,7 +547,12 @@
   },
   {
     "text": "Qui a réalisé La Liste de Schindler (1993) ?",
-    "choices": ["Steven Spielberg", "Sidney Lumet", "Roman Polanski", "Francis Ford Coppola"],
+    "choices": [
+      "Steven Spielberg",
+      "Sidney Lumet",
+      "Roman Polanski",
+      "Francis Ford Coppola"
+    ],
     "answerIndex": 0,
     "explanation": "Tourné en noir et blanc en Pologne, le film vaut à Spielberg son premier Oscar du meilleur réalisateur.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -361,7 +561,12 @@
   },
   {
     "text": "Combien de films composent la trilogie originale Star Wars ?",
-    "choices": ["2", "3", "4", "6"],
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
     "answerIndex": 1,
     "explanation": "La trilogie originale comprend Un nouvel espoir (1977), L'Empire contre-attaque (1980) et Le Retour du Jedi (1983).",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -370,7 +575,12 @@
   },
   {
     "text": "Qui a réalisé 2001 : l'Odyssée de l'espace (1968) ?",
-    "choices": ["Stanley Kubrick", "Ridley Scott", "George Lucas", "Steven Spielberg"],
+    "choices": [
+      "Stanley Kubrick",
+      "Ridley Scott",
+      "George Lucas",
+      "Steven Spielberg"
+    ],
     "answerIndex": 0,
     "explanation": "Kubrick collabore avec l'écrivain de science-fiction Arthur C. Clarke pour le scénario, un an avant le premier pas sur la Lune.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -379,7 +589,12 @@
   },
   {
     "text": "Quel acteur incarne Don Vito Corleone dans Le Parrain (1972) ?",
-    "choices": ["Al Pacino", "Robert De Niro", "Marlon Brando", "James Caan"],
+    "choices": [
+      "Al Pacino",
+      "Robert De Niro",
+      "Marlon Brando",
+      "James Caan"
+    ],
     "answerIndex": 2,
     "explanation": "Marlon Brando refuse de venir chercher son Oscar 1973 pour protester contre le traitement des Amérindiens à Hollywood.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -388,7 +603,12 @@
   },
   {
     "text": "Quel film français de 2011, avec Omar Sy, a connu un immense succès international ?",
-    "choices": ["Bienvenue chez les Ch'tis", "Intouchables", "Le Dîner de cons", "La Famille Bélier"],
+    "choices": [
+      "Bienvenue chez les Ch'tis",
+      "Intouchables",
+      "Le Dîner de cons",
+      "La Famille Bélier"
+    ],
     "answerIndex": 1,
     "explanation": "Inspiré de l'histoire réelle de Philippe Pozzo di Borgo et Abdel Sellou, le film a réuni près de 20 millions de spectateurs en France.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -397,7 +617,12 @@
   },
   {
     "text": "Quel cinéaste italien a réalisé La Dolce Vita (1960) ?",
-    "choices": ["Roberto Rossellini", "Federico Fellini", "Vittorio De Sica", "Luchino Visconti"],
+    "choices": [
+      "Roberto Rossellini",
+      "Federico Fellini",
+      "Vittorio De Sica",
+      "Luchino Visconti"
+    ],
     "answerIndex": 1,
     "explanation": "Le film, porté par Marcello Mastroianni, a popularisé le terme « paparazzo » du nom d'un photographe du film.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -406,7 +631,12 @@
   },
   {
     "text": "Quelle actrice française a obtenu l'Oscar de la meilleure actrice en 2008 pour La Môme ?",
-    "choices": ["Marion Cotillard", "Juliette Binoche", "Isabelle Huppert", "Audrey Tautou"],
+    "choices": [
+      "Marion Cotillard",
+      "Juliette Binoche",
+      "Isabelle Huppert",
+      "Audrey Tautou"
+    ],
     "answerIndex": 0,
     "explanation": "Marion Cotillard est la première Française à recevoir cet Oscar depuis Simone Signoret en 1960.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -415,7 +645,12 @@
   },
   {
     "text": "Qui a réalisé Apocalypse Now (1979) ?",
-    "choices": ["Francis Ford Coppola", "Martin Scorsese", "Stanley Kubrick", "Brian De Palma"],
+    "choices": [
+      "Francis Ford Coppola",
+      "Martin Scorsese",
+      "Stanley Kubrick",
+      "Brian De Palma"
+    ],
     "answerIndex": 0,
     "explanation": "Le tournage chaotique aux Philippines a duré plus de 15 mois et inspiré le documentaire Au cœur des ténèbres.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -424,7 +659,12 @@
   },
   {
     "text": "Quelle actrice incarne Édith Piaf dans La Môme (2007) ?",
-    "choices": ["Audrey Tautou", "Marion Cotillard", "Charlotte Gainsbourg", "Sophie Marceau"],
+    "choices": [
+      "Audrey Tautou",
+      "Marion Cotillard",
+      "Charlotte Gainsbourg",
+      "Sophie Marceau"
+    ],
     "answerIndex": 1,
     "explanation": "Le film d'Olivier Dahan retrace la vie de Piaf ; Cotillard chante elle-même certains passages avant le doublage par la voix de Piaf.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -433,7 +673,12 @@
   },
   {
     "text": "Qui a réalisé Le Voyage dans la Lune (1902) ?",
-    "choices": ["Georges Méliès", "Louis Lumière", "Charles Pathé", "Abel Gance"],
+    "choices": [
+      "Georges Méliès",
+      "Louis Lumière",
+      "Charles Pathé",
+      "Abel Gance"
+    ],
     "answerIndex": 0,
     "explanation": "Méliès, illusionniste de formation, invente les premiers trucages et effets spéciaux du cinéma dans son studio de Montreuil.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -442,7 +687,12 @@
   },
   {
     "text": "Quel acteur incarne Cyrano dans Cyrano de Bergerac (1990) ?",
-    "choices": ["Gérard Depardieu", "Daniel Auteuil", "Philippe Noiret", "Jean-Pierre Marielle"],
+    "choices": [
+      "Gérard Depardieu",
+      "Daniel Auteuil",
+      "Philippe Noiret",
+      "Jean-Pierre Marielle"
+    ],
     "answerIndex": 0,
     "explanation": "Le film de Jean-Paul Rappeneau vaut à Depardieu le prix d'interprétation masculine au Festival de Cannes 1990.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -451,7 +701,12 @@
   },
   {
     "text": "Qui a réalisé La Haine (1995) ?",
-    "choices": ["Mathieu Kassovitz", "Jacques Audiard", "Luc Besson", "Cédric Klapisch"],
+    "choices": [
+      "Mathieu Kassovitz",
+      "Jacques Audiard",
+      "Luc Besson",
+      "Cédric Klapisch"
+    ],
     "answerIndex": 0,
     "explanation": "Tourné en noir et blanc dans des cités franciliennes, le film vaut à Kassovitz le prix de la mise en scène à Cannes en 1995.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -460,7 +715,12 @@
   },
   {
     "text": "Quel film de Jean-Luc Godard, sorti en 1960, met en scène Belmondo et Jean Seberg ?",
-    "choices": ["Pierrot le fou", "À bout de souffle", "Le Mépris", "Alphaville"],
+    "choices": [
+      "Pierrot le fou",
+      "À bout de souffle",
+      "Le Mépris",
+      "Alphaville"
+    ],
     "answerIndex": 1,
     "explanation": "Le film, écrit avec François Truffaut, popularise le faux raccord et le jump cut comme outils narratifs.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -469,7 +729,12 @@
   },
   {
     "text": "Quel acteur incarne Hannibal Lecter dans Le Silence des agneaux (1991) ?",
-    "choices": ["Robert De Niro", "Anthony Hopkins", "Al Pacino", "Dustin Hoffman"],
+    "choices": [
+      "Robert De Niro",
+      "Anthony Hopkins",
+      "Al Pacino",
+      "Dustin Hoffman"
+    ],
     "answerIndex": 1,
     "explanation": "Anthony Hopkins n'apparaît que 16 minutes à l'écran mais obtient l'Oscar du meilleur acteur en 1992.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -478,7 +743,12 @@
   },
   {
     "text": "Qui a réalisé Mulholland Drive (2001) ?",
-    "choices": ["David Lynch", "David Cronenberg", "Nicolas Winding Refn", "Quentin Tarantino"],
+    "choices": [
+      "David Lynch",
+      "David Cronenberg",
+      "Nicolas Winding Refn",
+      "Quentin Tarantino"
+    ],
     "answerIndex": 0,
     "explanation": "Initialement conçu comme un pilote pour la télévision américaine, le projet a été retravaillé en long-métrage après son refus par ABC.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -487,7 +757,12 @@
   },
   {
     "text": "Qui a réalisé Le Mépris (1963), adapté du roman d'Alberto Moravia ?",
-    "choices": ["Jean-Luc Godard", "François Truffaut", "Alain Resnais", "Louis Malle"],
+    "choices": [
+      "Jean-Luc Godard",
+      "François Truffaut",
+      "Alain Resnais",
+      "Louis Malle"
+    ],
     "answerIndex": 0,
     "explanation": "Le Mépris met en scène Brigitte Bardot et Michel Piccoli sur l'île de Capri, avec Fritz Lang dans son propre rôle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -496,7 +771,12 @@
   },
   {
     "text": "De quel pays vient le film Parasite (2019) ?",
-    "choices": ["Japon", "Corée du Sud", "Chine", "Vietnam"],
+    "choices": [
+      "Japon",
+      "Corée du Sud",
+      "Chine",
+      "Vietnam"
+    ],
     "answerIndex": 1,
     "explanation": "Bong Joon-ho dénonce les inégalités sociales sud-coréennes à travers la rencontre tragique entre deux familles.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -505,7 +785,12 @@
   },
   {
     "text": "Qui a réalisé Le Septième Sceau (1957) ?",
-    "choices": ["Ingmar Bergman", "Andreï Tarkovski", "Luis Buñuel", "Federico Fellini"],
+    "choices": [
+      "Ingmar Bergman",
+      "Andreï Tarkovski",
+      "Luis Buñuel",
+      "Federico Fellini"
+    ],
     "answerIndex": 0,
     "explanation": "Le film est célèbre pour sa partie d'échecs entre un chevalier de retour des croisades et la Mort.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -514,7 +799,12 @@
   },
   {
     "text": "Quel cinéaste japonais a réalisé Les Sept Samouraïs (1954) ?",
-    "choices": ["Yasujirō Ozu", "Akira Kurosawa", "Kenji Mizoguchi", "Masaki Kobayashi"],
+    "choices": [
+      "Yasujirō Ozu",
+      "Akira Kurosawa",
+      "Kenji Mizoguchi",
+      "Masaki Kobayashi"
+    ],
     "answerIndex": 1,
     "explanation": "Le film a inspiré le western Les Sept Mercenaires de John Sturges (1960) et a relancé le genre du film de samouraï.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -523,7 +813,12 @@
   },
   {
     "text": "Quel film de Jacques Audiard, avec Tahar Rahim, sort en 2009 ?",
-    "choices": ["Un prophète", "De rouille et d'os", "Dheepan", "Les Frères Sisters"],
+    "choices": [
+      "Un prophète",
+      "De rouille et d'os",
+      "Dheepan",
+      "Les Frères Sisters"
+    ],
     "answerIndex": 0,
     "explanation": "Grand Prix à Cannes en 2009, le film suit l'ascension d'un jeune détenu corso-arabe dans le milieu carcéral.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -532,7 +827,12 @@
   },
   {
     "text": "Quel acteur incarne Hubert aux côtés de Vincent Cassel dans La Haine ?",
-    "choices": ["Vincent Lindon", "Hubert Koundé", "Saïd Taghmaoui", "Mathieu Kassovitz"],
+    "choices": [
+      "Vincent Lindon",
+      "Hubert Koundé",
+      "Saïd Taghmaoui",
+      "Mathieu Kassovitz"
+    ],
     "answerIndex": 1,
     "explanation": "Le trio Vinz (Cassel), Hubert (Koundé) et Saïd (Taghmaoui) traverse la nuit après une bavure policière.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -541,7 +841,12 @@
   },
   {
     "text": "En quelle année a eu lieu la première édition effective du Festival de Cannes ?",
-    "choices": ["1939", "1946", "1949", "1955"],
+    "choices": [
+      "1939",
+      "1946",
+      "1949",
+      "1955"
+    ],
     "answerIndex": 1,
     "explanation": "Prévu en 1939 et annulé par la guerre, le Festival se tient finalement en septembre 1946 pour sa première édition.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -550,7 +855,12 @@
   },
   {
     "text": "Qui a popularisé l'expression « Nouvelle Vague » en 1957 ?",
-    "choices": ["François Truffaut", "Jean-Luc Godard", "André Bazin", "Françoise Giroud"],
+    "choices": [
+      "François Truffaut",
+      "Jean-Luc Godard",
+      "André Bazin",
+      "Françoise Giroud"
+    ],
     "answerIndex": 3,
     "explanation": "La journaliste Françoise Giroud emploie l'expression dans L'Express le 3 octobre 1957 à propos d'une enquête sur la jeunesse.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -559,7 +869,12 @@
   },
   {
     "text": "Quel film a remporté la toute première Palme d'Or, en 1955 ?",
-    "choices": ["Marty", "La Strada", "Othello", "Le Salaire de la peur"],
+    "choices": [
+      "Marty",
+      "La Strada",
+      "Othello",
+      "Le Salaire de la peur"
+    ],
     "answerIndex": 0,
     "explanation": "Marty, de Delbert Mann avec Ernest Borgnine, inaugure la nouvelle récompense créée à Cannes en 1955.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -568,7 +883,12 @@
   },
   {
     "text": "Quel théoricien a cofondé Les Cahiers du cinéma en 1951 ?",
-    "choices": ["André Bazin", "François Truffaut", "Jean-Luc Godard", "Éric Rohmer"],
+    "choices": [
+      "André Bazin",
+      "François Truffaut",
+      "Jean-Luc Godard",
+      "Éric Rohmer"
+    ],
     "answerIndex": 0,
     "explanation": "Bazin cofonde la revue avec Jacques Doniol-Valcroze et Joseph-Marie Lo Duca ; elle devient le creuset théorique de la Nouvelle Vague.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -577,7 +897,12 @@
   },
   {
     "text": "Quelle est la durée approximative du plan-séquence d'ouverture de La Soif du mal d'Orson Welles (1958) ?",
-    "choices": ["1 minute", "2 minutes", "3 min 20", "6 minutes"],
+    "choices": [
+      "1 minute",
+      "2 minutes",
+      "3 min 20",
+      "6 minutes"
+    ],
     "answerIndex": 2,
     "explanation": "Le plan-séquence dure environ 3 min 20 et a longtemps été un modèle de virtuosité technique pour les cinéastes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -586,7 +911,12 @@
   },
   {
     "text": "Qui a composé la musique du Parrain (1972) ?",
-    "choices": ["Ennio Morricone", "Nino Rota", "John Williams", "Henry Mancini"],
+    "choices": [
+      "Ennio Morricone",
+      "Nino Rota",
+      "John Williams",
+      "Henry Mancini"
+    ],
     "answerIndex": 1,
     "explanation": "Nino Rota, compositeur fétiche de Fellini, signe la partition emblématique de la trilogie de Coppola.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -595,7 +925,12 @@
   },
   {
     "text": "Quel film soviétique d'Andreï Tarkovski sort en 1979 ?",
-    "choices": ["Stalker", "Solaris", "Le Miroir", "Andreï Roublev"],
+    "choices": [
+      "Stalker",
+      "Solaris",
+      "Le Miroir",
+      "Andreï Roublev"
+    ],
     "answerIndex": 0,
     "explanation": "Adapté du roman des Strougatski, Stalker suit trois hommes traversant une « Zone » mystérieuse aux règles changeantes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -604,7 +939,12 @@
   },
   {
     "text": "Qui a réalisé Playtime (1967) ?",
-    "choices": ["Jacques Tati", "Marcel Carné", "Jean Renoir", "Alain Resnais"],
+    "choices": [
+      "Jacques Tati",
+      "Marcel Carné",
+      "Jean Renoir",
+      "Alain Resnais"
+    ],
     "answerIndex": 0,
     "explanation": "Tati a fait construire pour Playtime une ville entière en banlieue parisienne, surnommée « Tativille ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -613,7 +953,12 @@
   },
   {
     "text": "Quel film de Jean Renoir, sorti en 1939, dresse un portrait acerbe de la haute société française ?",
-    "choices": ["La Bête humaine", "La Règle du jeu", "La Grande Illusion", "French Cancan"],
+    "choices": [
+      "La Bête humaine",
+      "La Règle du jeu",
+      "La Grande Illusion",
+      "French Cancan"
+    ],
     "answerIndex": 1,
     "explanation": "Sortie quelques mois avant la Seconde Guerre mondiale, La Règle du jeu fut huée à sa sortie avant d'être réhabilitée.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -622,7 +967,12 @@
   },
   {
     "text": "Quel directeur de la photographie est célèbre pour ses collaborations avec Terrence Malick et Alfonso Cuarón ?",
-    "choices": ["Roger Deakins", "Emmanuel Lubezki", "Vittorio Storaro", "Janusz Kamiński"],
+    "choices": [
+      "Roger Deakins",
+      "Emmanuel Lubezki",
+      "Vittorio Storaro",
+      "Janusz Kamiński"
+    ],
     "answerIndex": 1,
     "explanation": "Lubezki a remporté trois Oscars consécutifs (2014-2016) pour Gravity, Birdman et The Revenant.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -631,7 +981,12 @@
   },
   {
     "text": "En quelle année est sorti Le Cuirassé Potemkine de Sergueï Eisenstein ?",
-    "choices": ["1922", "1925", "1928", "1931"],
+    "choices": [
+      "1922",
+      "1925",
+      "1928",
+      "1931"
+    ],
     "answerIndex": 1,
     "explanation": "Eisenstein réalise ce film pour le vingtième anniversaire de la révolution russe de 1905, qu'il y commémore.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -640,7 +995,12 @@
   },
   {
     "text": "Quel cinéaste hongrois a réalisé Sátántangó (1994), un film de plus de sept heures ?",
-    "choices": ["Béla Tarr", "Miklós Jancsó", "István Szabó", "Andreï Tarkovski"],
+    "choices": [
+      "Béla Tarr",
+      "Miklós Jancsó",
+      "István Szabó",
+      "Andreï Tarkovski"
+    ],
     "answerIndex": 0,
     "explanation": "Sátántangó dure 7 h 12 et adapte le roman éponyme de László Krasznahorkai, scénariste habituel de Tarr.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -649,7 +1009,12 @@
   },
   {
     "text": "Quel ouvrage majeur de théorie du cinéma rassemble les principaux textes d'André Bazin ?",
-    "choices": ["Qu'est-ce que le cinéma ?", "L'Image-mouvement", "Le Cinéma américain", "Pour un cinéma impur"],
+    "choices": [
+      "Qu'est-ce que le cinéma ?",
+      "L'Image-mouvement",
+      "Le Cinéma américain",
+      "Pour un cinéma impur"
+    ],
     "answerIndex": 0,
     "explanation": "Recueil posthume d'articles publiés entre 1958 et 1962, l'ouvrage est devenu une référence des études cinématographiques.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -658,7 +1023,12 @@
   },
   {
     "text": "Quel film de 1920 est considéré comme l'acte de naissance de l'expressionnisme allemand ?",
-    "choices": ["Le Cabinet du docteur Caligari", "Nosferatu", "Metropolis", "M le Maudit"],
+    "choices": [
+      "Le Cabinet du docteur Caligari",
+      "Nosferatu",
+      "Metropolis",
+      "M le Maudit"
+    ],
     "answerIndex": 0,
     "explanation": "Le film de Robert Wiene impose les décors peints, déformés et anguleux qui caractérisent le mouvement expressionniste.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -667,7 +1037,12 @@
   },
   {
     "text": "Qui a réalisé Le Salaire de la peur (1953) ?",
-    "choices": ["Henri-Georges Clouzot", "Marcel Carné", "Jacques Becker", "Julien Duvivier"],
+    "choices": [
+      "Henri-Georges Clouzot",
+      "Marcel Carné",
+      "Jacques Becker",
+      "Julien Duvivier"
+    ],
     "answerIndex": 0,
     "explanation": "Le film cumule la Palme d'Or et l'Ours d'or, distinction rare obtenue par très peu de longs-métrages dans l'histoire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -676,7 +1051,12 @@
   },
   {
     "text": "Qui a réalisé Hiroshima mon amour (1959) ?",
-    "choices": ["Alain Resnais", "Chris Marker", "Agnès Varda", "Jacques Rivette"],
+    "choices": [
+      "Alain Resnais",
+      "Chris Marker",
+      "Agnès Varda",
+      "Jacques Rivette"
+    ],
     "answerIndex": 0,
     "explanation": "Le film mêle fiction amoureuse et archives documentaires pour interroger la mémoire de la bombe atomique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -685,7 +1065,12 @@
   },
   {
     "text": "Qui a écrit le scénario d'Hiroshima mon amour ?",
-    "choices": ["Marguerite Duras", "Alain Robbe-Grillet", "Jean Cayrol", "Jean-Claude Carrière"],
+    "choices": [
+      "Marguerite Duras",
+      "Alain Robbe-Grillet",
+      "Jean Cayrol",
+      "Jean-Claude Carrière"
+    ],
     "answerIndex": 0,
     "explanation": "Marguerite Duras signe le scénario et les dialogues, publiés ensuite sous forme de récit aux éditions Gallimard.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -694,7 +1079,12 @@
   },
   {
     "text": "Quel film de Robert Bresson, sorti en 1956, s'inspire de mémoires d'un résistant évadé de Lyon ?",
-    "choices": ["Un condamné à mort s'est échappé", "Pickpocket", "Mouchette", "Le Procès de Jeanne d'Arc"],
+    "choices": [
+      "Un condamné à mort s'est échappé",
+      "Pickpocket",
+      "Mouchette",
+      "Le Procès de Jeanne d'Arc"
+    ],
     "answerIndex": 0,
     "explanation": "Bresson s'inspire du récit d'André Devigny, résistant qui s'évada en 1943 de la prison de Montluc à Lyon.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -703,7 +1093,12 @@
   },
   {
     "text": "Quel acteur incarne Antoine Doinel dans le cycle de films de François Truffaut ?",
-    "choices": ["Jean-Pierre Léaud", "Pierre Étaix", "Charles Aznavour", "Jean-Claude Brialy"],
+    "choices": [
+      "Jean-Pierre Léaud",
+      "Pierre Étaix",
+      "Charles Aznavour",
+      "Jean-Claude Brialy"
+    ],
     "answerIndex": 0,
     "explanation": "Jean-Pierre Léaud incarne Doinel dans cinq films entre Les 400 Coups (1959) et L'Amour en fuite (1979).",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -712,7 +1107,12 @@
   },
   {
     "text": "Quel cinéaste américain a remporté la Palme d'Or 2011 pour The Tree of Life ?",
-    "choices": ["Terrence Malick", "David Lynch", "Paul Thomas Anderson", "Joel Coen"],
+    "choices": [
+      "Terrence Malick",
+      "David Lynch",
+      "Paul Thomas Anderson",
+      "Joel Coen"
+    ],
     "answerIndex": 0,
     "explanation": "Malick y mêle cosmogonie et drame familial dans le Texas des années 1950, mêlant images de la nature et récit intime.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -721,7 +1121,12 @@
   },
   {
     "text": "Quel film a remporté la Palme d'Or à Cannes en 2022 ?",
-    "choices": ["Sans filtre (Triangle of Sadness)", "Decision to Leave", "Holy Spider", "Close"],
+    "choices": [
+      "Sans filtre (Triangle of Sadness)",
+      "Decision to Leave",
+      "Holy Spider",
+      "Close"
+    ],
     "answerIndex": 0,
     "explanation": "Ruben Östlund obtient avec Sans filtre sa seconde Palme d'Or, après The Square en 2017.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -730,7 +1135,12 @@
   },
   {
     "text": "Quel critique a formalisé en 1954 la « politique des auteurs » dans Les Cahiers du cinéma ?",
-    "choices": ["André Bazin", "François Truffaut", "Andrew Sarris", "Alexandre Astruc"],
+    "choices": [
+      "André Bazin",
+      "François Truffaut",
+      "Andrew Sarris",
+      "Alexandre Astruc"
+    ],
     "answerIndex": 1,
     "explanation": "Truffaut formule cette notion dans son article « Une certaine tendance du cinéma français », publié en janvier 1954.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -739,7 +1149,12 @@
   },
   {
     "text": "Quel film clôt la trilogie d'Apu de Satyajit Ray ?",
-    "choices": ["La Complainte du sentier", "L'Invaincu", "Le Monde d'Apu", "Le Salon de musique"],
+    "choices": [
+      "La Complainte du sentier",
+      "L'Invaincu",
+      "Le Monde d'Apu",
+      "Le Salon de musique"
+    ],
     "answerIndex": 2,
     "explanation": "Sorti en 1959, Le Monde d'Apu achève la trilogie commencée avec Pather Panchali (1955), monument du cinéma indien.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -748,7 +1163,12 @@
   },
   {
     "text": "Quel cinéaste a réalisé Rome, ville ouverte (1945), acte de naissance du néoréalisme italien ?",
-    "choices": ["Luchino Visconti", "Roberto Rossellini", "Vittorio De Sica", "Michelangelo Antonioni"],
+    "choices": [
+      "Luchino Visconti",
+      "Roberto Rossellini",
+      "Vittorio De Sica",
+      "Michelangelo Antonioni"
+    ],
     "answerIndex": 1,
     "explanation": "Tourné dans les ruines de la guerre avec peu de moyens, le film inaugure le mouvement néoréaliste de l'après-guerre.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -757,7 +1177,12 @@
   },
   {
     "text": "Qui a réalisé L'Année dernière à Marienbad (1961) ?",
-    "choices": ["Alain Resnais", "Alain Robbe-Grillet", "François Truffaut", "Agnès Varda"],
+    "choices": [
+      "Alain Resnais",
+      "Alain Robbe-Grillet",
+      "François Truffaut",
+      "Agnès Varda"
+    ],
     "answerIndex": 0,
     "explanation": "Le film, scénarisé par Alain Robbe-Grillet, a remporté le Lion d'Or à la Mostra de Venise en 1961.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -766,7 +1191,12 @@
   },
   {
     "text": "Quel acteur incarne le scénariste Paul Javal dans Le Mépris (1963) ?",
-    "choices": ["Jean-Paul Belmondo", "Michel Piccoli", "Jean-Claude Brialy", "Jean-Louis Trintignant"],
+    "choices": [
+      "Jean-Paul Belmondo",
+      "Michel Piccoli",
+      "Jean-Claude Brialy",
+      "Jean-Louis Trintignant"
+    ],
     "answerIndex": 1,
     "explanation": "Piccoli y donne la réplique à Brigitte Bardot, Jack Palance et Fritz Lang, qui joue son propre rôle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -775,7 +1205,12 @@
   },
   {
     "text": "Quel format d'image panoramique le CinemaScope a-t-il popularisé à partir de 1953 ?",
-    "choices": ["1.33:1", "1.85:1", "2.35:1", "2.66:1"],
+    "choices": [
+      "1.33:1",
+      "1.85:1",
+      "2.35:1",
+      "2.66:1"
+    ],
     "answerIndex": 2,
     "explanation": "Le procédé anamorphique CinemaScope, lancé par la Fox avec La Tunique, démocratise les formats d'environ 2.35:1.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -784,7 +1219,12 @@
   },
   {
     "text": "Qui a réalisé Le Charme discret de la bourgeoisie (1972) ?",
-    "choices": ["Luis Buñuel", "Jean-Luc Godard", "Roman Polanski", "Claude Sautet"],
+    "choices": [
+      "Luis Buñuel",
+      "Jean-Luc Godard",
+      "Roman Polanski",
+      "Claude Sautet"
+    ],
     "answerIndex": 0,
     "explanation": "Buñuel obtient l'Oscar du meilleur film en langue étrangère en 1973 pour cette satire des conventions bourgeoises.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -793,7 +1233,12 @@
   },
   {
     "text": "Quel film a remporté la Palme d'Or à Cannes en 2023 ?",
-    "choices": ["Anatomie d'une chute", "Le Garçon et le Héron", "La Zone d'intérêt", "Killers of the Flower Moon"],
+    "choices": [
+      "Anatomie d'une chute",
+      "Le Garçon et le Héron",
+      "La Zone d'intérêt",
+      "Killers of the Flower Moon"
+    ],
     "answerIndex": 0,
     "explanation": "Justine Triet devient la troisième femme à remporter la Palme d'Or, après Jane Campion (1993) et Julia Ducournau (2021).",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -802,7 +1247,12 @@
   },
   {
     "text": "Quel cinéaste iranien a remporté la Palme d'Or 1997 pour Le Goût de la cerise ?",
-    "choices": ["Abbas Kiarostami", "Jafar Panahi", "Asghar Farhadi", "Mohsen Makhmalbaf"],
+    "choices": [
+      "Abbas Kiarostami",
+      "Jafar Panahi",
+      "Asghar Farhadi",
+      "Mohsen Makhmalbaf"
+    ],
     "answerIndex": 0,
     "explanation": "Kiarostami partage cette année-là la Palme avec L'Anguille du Japonais Shōhei Imamura.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -811,7 +1261,12 @@
   },
   {
     "text": "Quel aventurier au fouet et au fedora est incarné à l'écran par Harrison Ford ?",
-    "choices": ["Han Solo", "Rick Deckard", "Indiana Jones", "John Book"],
+    "choices": [
+      "Han Solo",
+      "Rick Deckard",
+      "Indiana Jones",
+      "John Book"
+    ],
     "answerIndex": 2,
     "explanation": "Créé par George Lucas et mis en scène pour la première fois au cinéma en 1981, Indiana Jones est un archéologue-aventurier devenu l'un des héros les plus célèbres du cinéma populaire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -820,7 +1275,12 @@
   },
   {
     "text": "Quel film de Charlie Chaplin, sorti en 1936, critique la mécanisation du travail en usine ?",
-    "choices": ["Le Kid", "Le Dictateur", "Les Temps modernes", "La Ruée vers l'or"],
+    "choices": [
+      "Le Kid",
+      "Le Dictateur",
+      "Les Temps modernes",
+      "La Ruée vers l'or"
+    ],
     "answerIndex": 2,
     "explanation": "Les Temps modernes montre Charlot broyé par les cadences industrielles et le taylorisme. Le film reste en grande partie muet alors que le cinéma parlant s'est déjà imposé.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -829,7 +1289,12 @@
   },
   {
     "text": "Quel réalisateur italien a signé Le Voleur de bicyclette (1948) ?",
-    "choices": ["Federico Fellini", "Vittorio De Sica", "Michelangelo Antonioni", "Luchino Visconti"],
+    "choices": [
+      "Federico Fellini",
+      "Vittorio De Sica",
+      "Michelangelo Antonioni",
+      "Luchino Visconti"
+    ],
     "answerIndex": 1,
     "explanation": "Vittorio De Sica est l'une des figures majeures du néoréalisme italien. Le film suit la quête désespérée d'un ouvrier romain à qui l'on a volé sa bicyclette, indispensable à son travail.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -838,7 +1303,12 @@
   },
   {
     "text": "Quel film de Stanley Kubrick, coécrit avec Arthur C. Clarke, est sorti en 1968 ?",
-    "choices": ["Orange mécanique", "2001, l'Odyssée de l'espace", "Barry Lyndon", "Shining"],
+    "choices": [
+      "Orange mécanique",
+      "2001, l'Odyssée de l'espace",
+      "Barry Lyndon",
+      "Shining"
+    ],
     "answerIndex": 1,
     "explanation": "2001, l'Odyssée de l'espace a profondément renouvelé la science-fiction par ses effets spéciaux, son ambition philosophique et sa représentation du voyage spatial. HAL 9000 en est l'un des personnages les plus célèbres.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -847,7 +1317,12 @@
   },
   {
     "text": "Quel réalisateur allemand a réalisé Metropolis (1927) ?",
-    "choices": ["Fritz Lang", "F. W. Murnau", "G. W. Pabst", "Josef von Sternberg"],
+    "choices": [
+      "Fritz Lang",
+      "F. W. Murnau",
+      "G. W. Pabst",
+      "Josef von Sternberg"
+    ],
     "answerIndex": 0,
     "explanation": "Fritz Lang signe avec Metropolis l'un des monuments du cinéma muet et de la science-fiction. Son esthétique de ville futuriste a influencé durablement l'imaginaire visuel du XXe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -856,7 +1331,12 @@
   },
   {
     "text": "Quel film de Fritz Lang sorti en 1931 met en scène un tueur d'enfants traqué dans Berlin ?",
-    "choices": ["Nosferatu", "M le Maudit", "Le Testament du docteur Mabuse", "Le Cabinet du docteur Caligari"],
+    "choices": [
+      "Nosferatu",
+      "M le Maudit",
+      "Le Testament du docteur Mabuse",
+      "Le Cabinet du docteur Caligari"
+    ],
     "answerIndex": 1,
     "explanation": "M le Maudit, porté par Peter Lorre, est souvent considéré comme l'un des premiers grands chefs-d'œuvre du cinéma parlant. Il peint une société urbaine gagnée par la peur et la paranoïa.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -865,7 +1345,12 @@
   },
   {
     "text": "Qui a réalisé Star Wars (1977) ?",
-    "choices": ["George Lucas", "Steven Spielberg", "James Cameron", "Ridley Scott"],
+    "choices": [
+      "George Lucas",
+      "Steven Spielberg",
+      "James Cameron",
+      "Ridley Scott"
+    ],
     "answerIndex": 0,
     "explanation": "George Lucas lance avec Star Wars une saga devenue l'une des plus influentes du cinéma mondial. Le film de 1977 s'appelait initialement Star Wars avant d'être renommé plus tard Un nouvel espoir.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -874,7 +1359,12 @@
   },
   {
     "text": "Quel acteur incarne Rocky Balboa à l'écran ?",
-    "choices": ["Arnold Schwarzenegger", "Sylvester Stallone", "Bruce Willis", "Al Pacino"],
+    "choices": [
+      "Arnold Schwarzenegger",
+      "Sylvester Stallone",
+      "Bruce Willis",
+      "Al Pacino"
+    ],
     "answerIndex": 1,
     "explanation": "Sylvester Stallone interprète Rocky Balboa dès 1976 et signe aussi le scénario du premier film. Le personnage est devenu un symbole du boxeur courageux et persévérant.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -883,7 +1373,12 @@
   },
   {
     "text": "Quel film d'animation de Pixar met en scène Woody et Buzz l'Éclair ?",
-    "choices": ["Cars", "Le Monde de Nemo", "Toy Story", "Ratatouille"],
+    "choices": [
+      "Cars",
+      "Le Monde de Nemo",
+      "Toy Story",
+      "Ratatouille"
+    ],
     "answerIndex": 2,
     "explanation": "Toy Story, sorti en 1995, est le premier long-métrage entièrement réalisé en images de synthèse. Il a marqué un tournant majeur dans l'histoire de l'animation.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -892,7 +1387,12 @@
   },
   {
     "text": "Quel film de Francis Ford Coppola suit la famille Corleone ?",
-    "choices": ["Les Affranchis", "Le Parrain", "Scarface", "Casino"],
+    "choices": [
+      "Les Affranchis",
+      "Le Parrain",
+      "Scarface",
+      "Casino"
+    ],
     "answerIndex": 1,
     "explanation": "Le Parrain, adapté du roman de Mario Puzo, est sorti en 1972. Il est souvent considéré comme l'un des plus grands films de gangsters de l'histoire du cinéma.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -901,7 +1401,12 @@
   },
   {
     "text": "Quel réalisateur a signé Pulp Fiction (1994) ?",
-    "choices": ["Quentin Tarantino", "David Fincher", "Tim Burton", "Martin Scorsese"],
+    "choices": [
+      "Quentin Tarantino",
+      "David Fincher",
+      "Tim Burton",
+      "Martin Scorsese"
+    ],
     "answerIndex": 0,
     "explanation": "Pulp Fiction a relancé la carrière de John Travolta et imposé le style narratif éclaté de Tarantino au grand public. Le film remporte la Palme d'Or au Festival de Cannes en 1994.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -910,7 +1415,12 @@
   },
   {
     "text": "Quel film d'animation raconte l'histoire du lionceau Simba ?",
-    "choices": ["Bambi", "Le Roi Lion", "Kirikou", "Madagascar"],
+    "choices": [
+      "Bambi",
+      "Le Roi Lion",
+      "Kirikou",
+      "Madagascar"
+    ],
     "answerIndex": 1,
     "explanation": "Le Roi Lion, sorti en 1994, est l'un des plus grands succès de Disney. Son récit s'inspire librement de motifs tragiques proches de Hamlet.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -919,7 +1429,12 @@
   },
   {
     "text": "Quel acteur joue Jack Dawson dans Titanic ?",
-    "choices": ["Matt Damon", "Brad Pitt", "Leonardo DiCaprio", "Tom Cruise"],
+    "choices": [
+      "Matt Damon",
+      "Brad Pitt",
+      "Leonardo DiCaprio",
+      "Tom Cruise"
+    ],
     "answerIndex": 2,
     "explanation": "Leonardo DiCaprio partage l'affiche de Titanic avec Kate Winslet. Le film devient en 1997 le plus grand succès commercial de l'histoire du cinéma de son époque.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -928,7 +1443,12 @@
   },
   {
     "text": "Quel film d'animation suit un poisson-clown à la recherche de son fils ?",
-    "choices": ["Le Monde de Nemo", "Là-haut", "Shrek", "Vice-Versa"],
+    "choices": [
+      "Le Monde de Nemo",
+      "Là-haut",
+      "Shrek",
+      "Vice-Versa"
+    ],
     "answerIndex": 0,
     "explanation": "Le Monde de Nemo, sorti en 2003, est une production Pixar se déroulant dans l'océan Pacifique. Le film a contribué à populariser le poisson-clown auprès du grand public.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -937,7 +1457,12 @@
   },
   {
     "text": "Quel acteur incarne Harry Potter dans la série de films ?",
-    "choices": ["Rupert Grint", "Tom Holland", "Daniel Radcliffe", "Elijah Wood"],
+    "choices": [
+      "Rupert Grint",
+      "Tom Holland",
+      "Daniel Radcliffe",
+      "Elijah Wood"
+    ],
     "answerIndex": 2,
     "explanation": "Daniel Radcliffe interprète Harry Potter de 2001 à 2011. La saga adapte les romans de J. K. Rowling et compte huit films principaux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -946,7 +1471,12 @@
   },
   {
     "text": "Quel monstre géant venu du Japon détruit régulièrement Tokyo au cinéma ?",
-    "choices": ["King Kong", "Godzilla", "Mothra", "Gamera"],
+    "choices": [
+      "King Kong",
+      "Godzilla",
+      "Mothra",
+      "Gamera"
+    ],
     "answerIndex": 1,
     "explanation": "Godzilla apparaît pour la première fois en 1954 dans un film japonais marqué par le traumatisme nucléaire. Le personnage est devenu une icône mondiale du genre kaiju.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -955,7 +1485,12 @@
   },
   {
     "text": "Quel réalisateur américain a signé Citizen Kane (1941) ?",
-    "choices": ["Billy Wilder", "Orson Welles", "John Ford", "Howard Hawks"],
+    "choices": [
+      "Billy Wilder",
+      "Orson Welles",
+      "John Ford",
+      "Howard Hawks"
+    ],
     "answerIndex": 1,
     "explanation": "Orson Welles réalise, coécrit et interprète Citizen Kane à seulement 25 ans. Le film est souvent cité pour ses innovations narratives et visuelles.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -964,7 +1499,12 @@
   },
   {
     "text": "Quel cinéaste hongkongais a réalisé In the Mood for Love ?",
-    "choices": ["John Woo", "Tsui Hark", "Wong Kar-wai", "Ang Lee"],
+    "choices": [
+      "John Woo",
+      "Tsui Hark",
+      "Wong Kar-wai",
+      "Ang Lee"
+    ],
     "answerIndex": 2,
     "explanation": "Wong Kar-wai signe avec In the Mood for Love (2000) un film élégant et mélancolique sur le désir contrarié. La photographie et la musique y jouent un rôle central.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -973,7 +1513,12 @@
   },
   {
     "text": "Quel film de Ridley Scott met en scène le chasseur de replicants Rick Deckard ?",
-    "choices": ["Alien", "Blade Runner", "Legend", "Gladiator"],
+    "choices": [
+      "Alien",
+      "Blade Runner",
+      "Legend",
+      "Gladiator"
+    ],
     "answerIndex": 1,
     "explanation": "Blade Runner, sorti en 1982, adapte librement Philip K. Dick. Son esthétique néon-noire et sa réflexion sur l'identité ont profondément marqué la science-fiction.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -982,7 +1527,12 @@
   },
   {
     "text": "Quel cinéaste français a créé Monsieur Hulot et réalisé Playtime ?",
-    "choices": ["René Clair", "Jacques Tati", "Claude Lelouch", "Jean Renoir"],
+    "choices": [
+      "René Clair",
+      "Jacques Tati",
+      "Claude Lelouch",
+      "Jean Renoir"
+    ],
     "answerIndex": 1,
     "explanation": "Jacques Tati a inventé Monsieur Hulot, personnage rêveur et maladroit devenu emblématique du cinéma français. Playtime, sorti en 1967, est célèbre pour son ambition formelle et son décor monumental.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -991,7 +1541,12 @@
   },
   {
     "text": "Quel film sud-coréen a remporté l'Oscar du meilleur film en 2020 ?",
-    "choices": ["Old Boy", "Parasite", "Burning", "Memories of Murder"],
+    "choices": [
+      "Old Boy",
+      "Parasite",
+      "Burning",
+      "Memories of Murder"
+    ],
     "answerIndex": 1,
     "explanation": "Parasite de Bong Joon-ho a été le premier film non anglophone à remporter l'Oscar du meilleur film. Sa satire sociale a rencontré un succès mondial.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1000,7 +1555,12 @@
   },
   {
     "text": "Quel réalisateur japonais a signé Les Sept Samouraïs (1954) ?",
-    "choices": ["Akira Kurosawa", "Yasujirō Ozu", "Kenji Mizoguchi", "Nagisa Oshima"],
+    "choices": [
+      "Akira Kurosawa",
+      "Yasujirō Ozu",
+      "Kenji Mizoguchi",
+      "Nagisa Oshima"
+    ],
     "answerIndex": 0,
     "explanation": "Akira Kurosawa a profondément influencé le cinéma mondial, notamment le western et le film d'action. Les Sept Samouraïs a inspiré de nombreux remakes et hommages.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1009,7 +1569,12 @@
   },
   {
     "text": "Quel film de 1942 avec Humphrey Bogart se déroule en grande partie au Maroc pendant la guerre ?",
-    "choices": ["Le Faucon maltais", "Casablanca", "Le Trésor de la Sierra Madre", "Le Grand Sommeil"],
+    "choices": [
+      "Le Faucon maltais",
+      "Casablanca",
+      "Le Trésor de la Sierra Madre",
+      "Le Grand Sommeil"
+    ],
     "answerIndex": 1,
     "explanation": "Casablanca, réalisé par Michael Curtiz, est devenu un classique hollywoodien mêlant romance et contexte géopolitique de la Seconde Guerre mondiale. La réplique « Here's looking at you, kid » a marqué la culture populaire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1018,7 +1583,12 @@
   },
   {
     "text": "Quel réalisateur néo-zélandais a adapté Le Seigneur des anneaux en trilogie au cinéma ?",
-    "choices": ["Peter Jackson", "James Cameron", "Baz Luhrmann", "George Miller"],
+    "choices": [
+      "Peter Jackson",
+      "James Cameron",
+      "Baz Luhrmann",
+      "George Miller"
+    ],
     "answerIndex": 0,
     "explanation": "Peter Jackson a tourné sa trilogie en Nouvelle-Zélande entre 1999 et 2000. Le Retour du roi remporte 11 Oscars en 2004, égalant le record historique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1027,7 +1597,12 @@
   },
   {
     "text": "Quel film musical de Damien Chazelle rend hommage à Hollywood et au jazz à Los Angeles ?",
-    "choices": ["Chicago", "Whiplash", "La La Land", "Moulin Rouge !"],
+    "choices": [
+      "Chicago",
+      "Whiplash",
+      "La La Land",
+      "Moulin Rouge !"
+    ],
     "answerIndex": 2,
     "explanation": "La La Land, sorti en 2016, met en scène Emma Stone et Ryan Gosling. Le film a connu un moment célèbre lors des Oscars à cause d'une confusion sur le prix du meilleur film.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1036,7 +1611,12 @@
   },
   {
     "text": "Quel mouvement italien de l'après-guerre privilégiait les tournages en décors réels et les personnages modestes ?",
-    "choices": ["Le futurisme", "Le néoréalisme italien", "La commedia all'italiana", "Le symbolisme"],
+    "choices": [
+      "Le futurisme",
+      "Le néoréalisme italien",
+      "La commedia all'italiana",
+      "Le symbolisme"
+    ],
     "answerIndex": 1,
     "explanation": "Le néoréalisme italien naît dans le contexte de l'après-guerre, avec des cinéastes comme Rossellini et De Sica. Il s'intéresse aux classes populaires et à la vérité sociale.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1045,7 +1625,12 @@
   },
   {
     "text": "Quel cinéaste soviétique a réalisé Le Cuirassé Potemkine (1925) ?",
-    "choices": ["Sergueï Eisenstein", "Andreï Tarkovski", "Dziga Vertov", "Vsevolod Poudovkine"],
+    "choices": [
+      "Sergueï Eisenstein",
+      "Andreï Tarkovski",
+      "Dziga Vertov",
+      "Vsevolod Poudovkine"
+    ],
     "answerIndex": 0,
     "explanation": "Sergueï Eisenstein est célèbre pour son travail théorique sur le montage. La séquence des escaliers d'Odessa dans Le Cuirassé Potemkine est l'une des plus étudiées de l'histoire du cinéma.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1054,7 +1639,12 @@
   },
   {
     "text": "Quel réalisateur français a signé Hiroshima mon amour (1959) ?",
-    "choices": ["François Truffaut", "Alain Resnais", "Jacques Demy", "Louis Malle"],
+    "choices": [
+      "François Truffaut",
+      "Alain Resnais",
+      "Jacques Demy",
+      "Louis Malle"
+    ],
     "answerIndex": 1,
     "explanation": "Hiroshima mon amour a été écrit par Marguerite Duras et réalisé par Alain Resnais. Le film explore la mémoire, le traumatisme et la difficulté de dire l'indicible après la guerre.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1063,7 +1653,12 @@
   },
   {
     "text": "Quel film a remporté le premier Oscar du meilleur film en 1929 ?",
-    "choices": ["Metropolis", "Sunrise", "Wings", "Le Chanteur de jazz"],
+    "choices": [
+      "Metropolis",
+      "Sunrise",
+      "Wings",
+      "Le Chanteur de jazz"
+    ],
     "answerIndex": 2,
     "explanation": "Wings, film de William A. Wellman consacré à des aviateurs de la Première Guerre mondiale, a reçu le tout premier Oscar du meilleur film. Il témoigne des débuts de l'industrie hollywoodienne des prix.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1072,7 +1667,12 @@
   },
   {
     "text": "Quel réalisateur polonais a mis en scène Le Décalogue ?",
-    "choices": ["Roman Polanski", "Krzysztof Kieślowski", "Andrzej Wajda", "Paweł Pawlikowski"],
+    "choices": [
+      "Roman Polanski",
+      "Krzysztof Kieślowski",
+      "Andrzej Wajda",
+      "Paweł Pawlikowski"
+    ],
     "answerIndex": 1,
     "explanation": "Le Décalogue est une série de dix films pour la télévision inspirés des Dix Commandements. Kieślowski y observe les dilemmes moraux de la vie ordinaire dans la Pologne de la fin du communisme.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1081,11 +1681,156 @@
   },
   {
     "text": "Quel film muet de Carl Theodor Dreyer consacré au procès d'une héroïne française est sorti en 1928 ?",
-    "choices": ["Napoléon", "La Passion de Jeanne d'Arc", "Le Miracle des loups", "Nosferatu"],
+    "choices": [
+      "Napoléon",
+      "La Passion de Jeanne d'Arc",
+      "Le Miracle des loups",
+      "Nosferatu"
+    ],
     "answerIndex": 1,
     "explanation": "La Passion de Jeanne d'Arc est surtout célèbre pour les gros plans bouleversants de Maria Falconetti. Le film est considéré comme l'un des sommets du cinéma muet.",
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Steven Spielberg, sorti en 1975, a popularisé le concept de blockbuster estival ?",
+    "choices": [
+      "Duel",
+      "Les Dents de la mer",
+      "Rencontres du troisième type",
+      "L'Empire du soleil"
+    ],
+    "answerIndex": 1,
+    "explanation": "Les Dents de la mer (Jaws) a réinventé la stratégie de distribution avec une sortie simultanée dans des milliers de salles accompagnée d'une campagne publicitaire massive. Il est considéré comme le premier blockbuster de l'histoire du cinéma.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film d'animation japonais de Hayao Miyazaki raconte l'histoire d'une jeune fille travaillant dans des bains pour esprits ?",
+    "choices": [
+      "Princesse Mononoké",
+      "Mon Voisin Totoro",
+      "Le Voyage de Chihiro",
+      "Le Château Ambulant"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le Voyage de Chihiro (Sen to Chihiro no Kamikakushi, 2001) a remporté l'Ours d'or à Berlin et l'Oscar du meilleur film d'animation. Il reste le film d'animation le plus rentable de l'histoire au Japon.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film d'animation Pixar met en scène un robot solitaire chargé de nettoyer une Terre abandonnée ?",
+    "choices": [
+      "Cars",
+      "Ratatouille",
+      "WALL-E",
+      "Là-Haut"
+    ],
+    "answerIndex": 2,
+    "explanation": "WALL-E (2008), réalisé par Andrew Stanton, raconte l'histoire d'un petit robot collecteur de déchets sur une Terre désertée par l'humanité. Film quasi muet dans sa première partie, il a remporté l'Oscar du meilleur film d'animation.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel cinéaste américain a réalisé There Will Be Blood (2007), portrait d'un prospecteur pétrolier ?",
+    "choices": [
+      "Joel Coen",
+      "David Fincher",
+      "Paul Thomas Anderson",
+      "Alexander Payne"
+    ],
+    "answerIndex": 2,
+    "explanation": "Paul Thomas Anderson a réalisé ce film avec Daniel Day-Lewis dans le rôle de Daniel Plainview. L'acteur a remporté l'Oscar du meilleur acteur pour cette prestation, considérée comme l'une des plus grandes de l'histoire du cinéma.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Dans quel film John Rambo apparaît-il pour la première fois, aux côtés de Richard Crenna ?",
+    "choices": [
+      "Rambo II (1985)",
+      "First Blood (1982)",
+      "Rambo III (1988)",
+      "Cobra (1986)"
+    ],
+    "answerIndex": 1,
+    "explanation": "First Blood (1982), adapté du roman de David Morrell, présente John Rambo comme un vétéran du Vietnam traqué par la police dans une petite ville américaine. Il marque le début d'une franchise qui comptera plusieurs suites.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Christopher Nolan, sorti en 2017, reconstitue l'évacuation de 1940 sans montrer le visage des ennemis ?",
+    "choices": [
+      "Interstellar",
+      "Dunkerque",
+      "Le Prestige",
+      "Tenet"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dunkerque (2017) retrace l'opération Dynamo sous trois temporalités différentes (une semaine sur la plage, une journée en mer, une heure dans les airs). Nolan a délibérément évité de montrer l'ennemi pour rester dans la perspective des soldats alliés.",
+    "period": "GUERRES_MONDIALES",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Luc Besson, sorti en 1990, lance la carrière internationale d'Anne Parillaud dans un rôle de tueuse ?",
+    "choices": [
+      "Subway",
+      "Nikita",
+      "Le Grand Bleu",
+      "Léon"
+    ],
+    "answerIndex": 1,
+    "explanation": "Nikita (1990) suit une jeune délinquante recrutée par les services secrets français et transformée en tueuse professionnelle. Le film a été adapté en série américaine sous le titre La Femme Nikita et en série canadienne sous le nom Nikita.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel acteur incarne l'agent J face à Tommy Lee Jones dans la saga Men in Black (1997) ?",
+    "choices": [
+      "Eddie Murphy",
+      "Martin Lawrence",
+      "Will Smith",
+      "Chris Tucker"
+    ],
+    "answerIndex": 2,
+    "explanation": "Will Smith joue l'agent J (James Edwards), un policier new-yorkais recruté pour intégrer les Men in Black, organisation secrète surveillant les extraterrestres sur Terre. Le film est basé sur une série de comics de Lowell Cunningham.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Quel film de Bong Joon-ho sorti en 2013 se déroule entièrement à bord d'un train traversant un monde glacé ?",
+    "choices": [
+      "Okja",
+      "Mother",
+      "Snowpiercer",
+      "The Host"
+    ],
+    "answerIndex": 2,
+    "explanation": "Snowpiercer (Le Transperceneige) adapte la bande dessinée française de Lob et Rochette. Un train circule indéfiniment sur Terre après une catastrophe climatique, reproduisant les inégalités sociales entre les wagons de tête et de queue.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "CINEMA"
+  },
+  {
+    "text": "Qui prête sa voix au personnage de Mufasa dans le film d'animation Le Roi Lion (1994) ?",
+    "choices": [
+      "Morgan Freeman",
+      "James Earl Jones",
+      "Laurence Fishburne",
+      "Samuel L. Jackson"
+    ],
+    "answerIndex": 1,
+    "explanation": "James Earl Jones, déjà célèbre pour avoir prêté sa voix à Dark Vador dans Star Wars, incarne Mufasa dans Le Roi Lion. Il a repris ce rôle dans le remake en images de synthèse sorti en 2019.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
     "topic": "CINEMA"
   }
 ]

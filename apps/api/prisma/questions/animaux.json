@@ -1,7 +1,12 @@
 [
   {
     "text": "Quel est le plus grand animal terrestre ?",
-    "choices": ["Le rhinocéros blanc", "L'éléphant d'Afrique", "La girafe", "L'hippopotame"],
+    "choices": [
+      "Le rhinocéros blanc",
+      "L'éléphant d'Afrique",
+      "La girafe",
+      "L'hippopotame"
+    ],
     "answerIndex": 1,
     "explanation": "L'éléphant de savane d'Afrique peut atteindre 4 m au garrot et peser jusqu'à 7 tonnes, ce qui en fait le plus lourd des animaux terrestres.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -10,7 +15,12 @@
   },
   {
     "text": "Quel est le plus grand animal vivant sur Terre ?",
-    "choices": ["L'éléphant d'Afrique", "Le cachalot", "La baleine bleue", "Le requin baleine"],
+    "choices": [
+      "L'éléphant d'Afrique",
+      "Le cachalot",
+      "La baleine bleue",
+      "Le requin baleine"
+    ],
     "answerIndex": 2,
     "explanation": "La baleine bleue peut dépasser 30 m de long et 170 tonnes, ce qui en fait le plus grand animal ayant jamais existé sur Terre.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -19,7 +29,12 @@
   },
   {
     "text": "Quel est l'animal terrestre le plus rapide ?",
-    "choices": ["Le lion", "Le guépard", "Le cheval", "L'antilope"],
+    "choices": [
+      "Le lion",
+      "Le guépard",
+      "Le cheval",
+      "L'antilope"
+    ],
     "answerIndex": 1,
     "explanation": "Le guépard atteint près de 110 km/h en pointe mais ne peut maintenir cette vitesse que sur une trentaine de secondes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -28,7 +43,12 @@
   },
   {
     "text": "Combien de pattes possède une araignée ?",
-    "choices": ["6", "8", "10", "12"],
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
     "answerIndex": 1,
     "explanation": "L'araignée appartient à la classe des arachnides, qui se distinguent des insectes notamment par leurs huit pattes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -37,7 +57,12 @@
   },
   {
     "text": "Combien de pattes possède un insecte adulte ?",
-    "choices": ["4", "6", "8", "10"],
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
     "answerIndex": 1,
     "explanation": "Tous les insectes adultes ont six pattes articulées attachées au thorax, l'une de leurs caractéristiques d'identification.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -46,7 +71,12 @@
   },
   {
     "text": "De quel animal sauvage le chien descend-il ?",
-    "choices": ["Le renard", "Le loup gris", "Le chacal", "L'hyène"],
+    "choices": [
+      "Le renard",
+      "Le loup gris",
+      "Le chacal",
+      "L'hyène"
+    ],
     "answerIndex": 1,
     "explanation": "La domestication du loup gris remonterait à au moins 15 000 ans, faisant du chien la plus ancienne espèce domestiquée.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -55,7 +85,12 @@
   },
   {
     "text": "Quel est le plus grand oiseau du monde ?",
-    "choices": ["L'aigle royal", "L'autruche", "Le condor des Andes", "L'albatros"],
+    "choices": [
+      "L'aigle royal",
+      "L'autruche",
+      "Le condor des Andes",
+      "L'albatros"
+    ],
     "answerIndex": 1,
     "explanation": "L'autruche d'Afrique peut atteindre 2,7 m et 150 kg ; elle ne vole pas mais court jusqu'à 70 km/h.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -64,7 +99,12 @@
   },
   {
     "text": "Quel marsupial est emblématique de l'Australie ?",
-    "choices": ["Le wombat", "Le kangourou", "Le koala", "Le diable de Tasmanie"],
+    "choices": [
+      "Le wombat",
+      "Le kangourou",
+      "Le koala",
+      "Le diable de Tasmanie"
+    ],
     "answerIndex": 1,
     "explanation": "Le kangourou roux, plus grand marsupial vivant, peut bondir à 70 km/h et franchir près de 9 m en un saut.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -73,7 +113,12 @@
   },
   {
     "text": "De quelle plante le panda géant se nourrit-il essentiellement ?",
-    "choices": ["Eucalyptus", "Bambou", "Bananier", "Saule"],
+    "choices": [
+      "Eucalyptus",
+      "Bambou",
+      "Bananier",
+      "Saule"
+    ],
     "answerIndex": 1,
     "explanation": "Bien que classé parmi les carnivores, le panda mange jusqu'à 38 kg de bambou par jour pour compenser sa faible digestibilité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -82,7 +127,12 @@
   },
   {
     "text": "Quel est le plus haut animal terrestre ?",
-    "choices": ["L'éléphant d'Afrique", "La girafe", "Le dromadaire", "L'élan"],
+    "choices": [
+      "L'éléphant d'Afrique",
+      "La girafe",
+      "Le dromadaire",
+      "L'élan"
+    ],
     "answerIndex": 1,
     "explanation": "Une girafe adulte peut atteindre près de 6 m de haut, son long cou ne comptant pourtant que sept vertèbres comme l'humain.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -91,7 +141,12 @@
   },
   {
     "text": "Quel oiseau est le symbole national de la France ?",
-    "choices": ["L'aigle", "Le coq gaulois", "La colombe", "L'hirondelle"],
+    "choices": [
+      "L'aigle",
+      "Le coq gaulois",
+      "La colombe",
+      "L'hirondelle"
+    ],
     "answerIndex": 1,
     "explanation": "Le coq gaulois s'impose comme emblème au XIXe siècle, le mot latin gallus désignant à la fois la Gaule et le coq.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -100,7 +155,12 @@
   },
   {
     "text": "Quel est le plus petit oiseau du monde ?",
-    "choices": ["Le moineau", "Le colibri-abeille", "Le roitelet", "L'hirondelle"],
+    "choices": [
+      "Le moineau",
+      "Le colibri-abeille",
+      "Le roitelet",
+      "L'hirondelle"
+    ],
     "answerIndex": 1,
     "explanation": "Le colibri-abeille (Mellisuga helenae), endémique de Cuba, mesure environ 5 cm et bat des ailes près de 80 fois par seconde.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -109,7 +169,12 @@
   },
   {
     "text": "Quel animal nocturne est traditionnellement associé à la sagesse ?",
-    "choices": ["Le corbeau", "La chouette ou le hibou", "Le renard", "Le chat"],
+    "choices": [
+      "Le corbeau",
+      "La chouette ou le hibou",
+      "Le renard",
+      "Le chat"
+    ],
     "answerIndex": 1,
     "explanation": "Les chouettes étaient associées à Athéna, déesse grecque de la sagesse, dont l'image figurait sur les pièces antiques d'Athènes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -118,7 +183,12 @@
   },
   {
     "text": "Quel reptile change de peau plusieurs fois par an en la mue ?",
-    "choices": ["Le crocodile", "Le serpent", "La tortue", "Le caméléon"],
+    "choices": [
+      "Le crocodile",
+      "Le serpent",
+      "La tortue",
+      "Le caméléon"
+    ],
     "answerIndex": 1,
     "explanation": "Le serpent rejette sa peau d'un seul tenant grâce à un liquide laiteux sécrété sous l'épiderme avant la mue.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -127,7 +197,12 @@
   },
   {
     "text": "Quel oiseau coureur est le symbole faunique de l'Antarctique ?",
-    "choices": ["L'autruche", "Le manchot", "Le pingouin", "Le kiwi"],
+    "choices": [
+      "L'autruche",
+      "Le manchot",
+      "Le pingouin",
+      "Le kiwi"
+    ],
     "answerIndex": 1,
     "explanation": "À ne pas confondre avec les pingouins de l'Atlantique nord, les manchots sont incapables de voler mais sont d'excellents nageurs.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -136,7 +211,12 @@
   },
   {
     "text": "Quel grand singe partage avec l'humain plus de 98 % de son ADN ?",
-    "choices": ["Le gorille", "L'orang-outan", "Le chimpanzé", "Le gibbon"],
+    "choices": [
+      "Le gorille",
+      "L'orang-outan",
+      "Le chimpanzé",
+      "Le gibbon"
+    ],
     "answerIndex": 2,
     "explanation": "Les chimpanzés et les bonobos sont les plus proches parents vivants de l'humain ; les trois lignées ont divergé il y a environ 6-7 millions d'années.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -145,7 +225,12 @@
   },
   {
     "text": "Combien d'années peut vivre une tortue géante des Galápagos ?",
-    "choices": ["30 ans", "60 ans", "100 ans et plus", "200 ans et plus"],
+    "choices": [
+      "30 ans",
+      "60 ans",
+      "100 ans et plus",
+      "200 ans et plus"
+    ],
     "answerIndex": 2,
     "explanation": "Le record vérifié est détenu par Harriet, morte à environ 175 ans en Australie ; plusieurs spécimens dépassent les 150 ans.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -154,7 +239,12 @@
   },
   {
     "text": "Quel insecte produit le miel ?",
-    "choices": ["La guêpe", "L'abeille", "Le bourdon", "Le frelon"],
+    "choices": [
+      "La guêpe",
+      "L'abeille",
+      "Le bourdon",
+      "Le frelon"
+    ],
     "answerIndex": 1,
     "explanation": "L'abeille mellifère (Apis mellifera) régurgite le nectar plusieurs fois avant de le déshydrater dans les alvéoles de cire de la ruche.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -163,7 +253,12 @@
   },
   {
     "text": "Quel mammifère est le seul à pouvoir voler activement ?",
-    "choices": ["L'écureuil volant", "La chauve-souris", "Le tarsier", "Le pétaure"],
+    "choices": [
+      "L'écureuil volant",
+      "La chauve-souris",
+      "Le tarsier",
+      "Le pétaure"
+    ],
     "answerIndex": 1,
     "explanation": "L'écureuil volant et le pétaure planent grâce à une membrane mais ne volent pas activement comme les chauves-souris.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -172,7 +267,12 @@
   },
   {
     "text": "Quel oiseau migrateur revient nicher en Alsace au printemps et symbolise la région ?",
-    "choices": ["La cigogne blanche", "Le héron cendré", "L'oie cendrée", "L'hirondelle rustique"],
+    "choices": [
+      "La cigogne blanche",
+      "Le héron cendré",
+      "L'oie cendrée",
+      "L'hirondelle rustique"
+    ],
     "answerIndex": 0,
     "explanation": "Disparue d'Alsace dans les années 1970, la cigogne blanche y a été réintroduite avec succès dans les décennies suivantes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -181,7 +281,12 @@
   },
   {
     "text": "Quel mammifère marin est connu pour son sens du jeu et sa réputation d'intelligence ?",
-    "choices": ["Le requin", "Le dauphin", "Le morse", "Le phoque"],
+    "choices": [
+      "Le requin",
+      "Le dauphin",
+      "Le morse",
+      "Le phoque"
+    ],
     "answerIndex": 1,
     "explanation": "Les dauphins se reconnaissent dans un miroir, signe de conscience de soi rare chez les animaux non humains.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -190,7 +295,12 @@
   },
   {
     "text": "Quel animal hiberne traditionnellement plusieurs mois par an ?",
-    "choices": ["Le lapin", "L'ours brun", "Le sanglier", "Le renard"],
+    "choices": [
+      "Le lapin",
+      "L'ours brun",
+      "Le sanglier",
+      "Le renard"
+    ],
     "answerIndex": 1,
     "explanation": "L'ours pratique une hibernation partielle : sa température baisse peu et il peut être réveillé en cas de danger.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -199,7 +309,12 @@
   },
   {
     "text": "Quel reptile peut changer la couleur de sa peau pour se camoufler ou communiquer ?",
-    "choices": ["L'iguane", "Le caméléon", "Le gecko", "Le varan"],
+    "choices": [
+      "L'iguane",
+      "Le caméléon",
+      "Le gecko",
+      "Le varan"
+    ],
     "answerIndex": 1,
     "explanation": "Le caméléon change de couleur grâce à des nanocristaux dans sa peau, qui réfléchissent la lumière différemment selon leur écartement.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -208,7 +323,12 @@
   },
   {
     "text": "Quel grand félin vit en Asie et possède une fourrure rayée ?",
-    "choices": ["Le léopard", "Le tigre", "Le jaguar", "Le lynx"],
+    "choices": [
+      "Le léopard",
+      "Le tigre",
+      "Le jaguar",
+      "Le lynx"
+    ],
     "answerIndex": 1,
     "explanation": "Le tigre du Bengale est le plus grand félin sauvage ; chaque tigre porte un motif de rayures unique, comme une empreinte digitale.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -217,7 +337,12 @@
   },
   {
     "text": "Quel rongeur construit des barrages avec des troncs d'arbres ?",
-    "choices": ["Le castor", "La marmotte", "Le rat musqué", "Le porc-épic"],
+    "choices": [
+      "Le castor",
+      "La marmotte",
+      "Le rat musqué",
+      "Le porc-épic"
+    ],
     "answerIndex": 0,
     "explanation": "Les barrages des castors modifient les écosystèmes locaux en créant des zones humides bénéfiques à de nombreuses espèces.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -226,7 +351,12 @@
   },
   {
     "text": "Quel mammifère australien est célèbre pour son long sommeil quotidien dans les eucalyptus ?",
-    "choices": ["Le wombat", "Le koala", "Le wallaby", "L'opossum"],
+    "choices": [
+      "Le wombat",
+      "Le koala",
+      "Le wallaby",
+      "L'opossum"
+    ],
     "answerIndex": 1,
     "explanation": "Le koala dort jusqu'à 20 heures par jour pour digérer les feuilles d'eucalyptus, peu nourrissantes et toxiques pour la plupart des mammifères.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -235,7 +365,12 @@
   },
   {
     "text": "Quel grand poisson a un long rostre pointu et est l'un des plus rapides de l'océan ?",
-    "choices": ["Le thon", "L'espadon", "Le requin marteau", "Le saumon"],
+    "choices": [
+      "Le thon",
+      "L'espadon",
+      "Le requin marteau",
+      "Le saumon"
+    ],
     "answerIndex": 1,
     "explanation": "L'espadon peut dépasser 90 km/h en pointe et utilise son rostre pour étourdir ses proies en pleine course.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -244,7 +379,12 @@
   },
   {
     "text": "Quel insecte vit en colonies très hiérarchisées avec une reine pondeuse et des ouvrières ?",
-    "choices": ["Le scarabée", "La fourmi", "La libellule", "Le papillon"],
+    "choices": [
+      "Le scarabée",
+      "La fourmi",
+      "La libellule",
+      "Le papillon"
+    ],
     "answerIndex": 1,
     "explanation": "Une colonie de fourmis peut compter de quelques dizaines d'individus à plus d'un million selon les espèces.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -253,7 +393,12 @@
   },
   {
     "text": "À quelle famille d'animaux la grenouille appartient-elle ?",
-    "choices": ["Reptiles", "Amphibiens", "Poissons", "Crustacés"],
+    "choices": [
+      "Reptiles",
+      "Amphibiens",
+      "Poissons",
+      "Crustacés"
+    ],
     "answerIndex": 1,
     "explanation": "Les amphibiens commencent leur vie dans l'eau (têtard) avant une métamorphose qui leur permet de vivre en partie sur terre.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -262,7 +407,12 @@
   },
   {
     "text": "Quel oiseau coureur, incapable de voler, est emblématique de la Nouvelle-Zélande ?",
-    "choices": ["Le kiwi", "Le casoar", "Le kakapo", "L'émeu"],
+    "choices": [
+      "Le kiwi",
+      "Le casoar",
+      "Le kakapo",
+      "L'émeu"
+    ],
     "answerIndex": 0,
     "explanation": "Le kiwi est si emblématique que le mot désigne aussi familièrement les Néo-Zélandais eux-mêmes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -271,7 +421,12 @@
   },
   {
     "text": "Combien de cœurs possède une pieuvre ?",
-    "choices": ["1", "2", "3", "4"],
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "answerIndex": 2,
     "explanation": "Deux cœurs branchiaux propulsent le sang vers les branchies, et un cœur systémique le distribue ensuite au reste du corps.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -280,7 +435,12 @@
   },
   {
     "text": "Combien d'estomacs successifs possède une vache ?",
-    "choices": ["2", "3", "4", "5"],
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
     "answerIndex": 2,
     "explanation": "Les ruminants disposent du rumen, du réseau, du feuillet et de la caillette ; seul ce dernier est un véritable estomac digestif.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -289,7 +449,12 @@
   },
   {
     "text": "Quelle est la vitesse de pointe approximative d'un guépard ?",
-    "choices": ["80 km/h", "110 km/h", "150 km/h", "200 km/h"],
+    "choices": [
+      "80 km/h",
+      "110 km/h",
+      "150 km/h",
+      "200 km/h"
+    ],
     "answerIndex": 1,
     "explanation": "Le guépard atteint cette vitesse en seulement trois secondes, mais l'effort sur des distances courtes l'oblige à se reposer longuement après.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -298,7 +463,12 @@
   },
   {
     "text": "Combien de mois dure la gestation chez l'éléphante ?",
-    "choices": ["9 mois", "12 mois", "18 mois", "22 mois"],
+    "choices": [
+      "9 mois",
+      "12 mois",
+      "18 mois",
+      "22 mois"
+    ],
     "answerIndex": 3,
     "explanation": "Avec environ 22 mois, c'est la plus longue gestation de tous les mammifères terrestres ; un éléphanteau naît pesant déjà près de 100 kg.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -307,7 +477,12 @@
   },
   {
     "text": "Quel mammifère pond des œufs et appartient au groupe des monotrèmes ?",
-    "choices": ["Le tamanoir", "L'ornithorynque", "Le pangolin", "L'opossum"],
+    "choices": [
+      "Le tamanoir",
+      "L'ornithorynque",
+      "Le pangolin",
+      "L'opossum"
+    ],
     "answerIndex": 1,
     "explanation": "L'ornithorynque, endémique d'Australie, possède aussi un éperon venimeux sur les pattes arrière des mâles, cas rare chez les mammifères.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -316,7 +491,12 @@
   },
   {
     "text": "Quel oiseau est l'animal le plus rapide en piqué ?",
-    "choices": ["L'aigle royal", "Le faucon pèlerin", "La buse variable", "Le martinet"],
+    "choices": [
+      "L'aigle royal",
+      "Le faucon pèlerin",
+      "La buse variable",
+      "Le martinet"
+    ],
     "answerIndex": 1,
     "explanation": "Le faucon pèlerin peut dépasser 320 km/h lorsqu'il fond sur sa proie, ce qui en fait l'animal le plus rapide tous milieux confondus.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -325,7 +505,12 @@
   },
   {
     "text": "Quel oiseau effectue la plus longue migration annuelle, entre l'Arctique et l'Antarctique ?",
-    "choices": ["La sterne arctique", "L'albatros hurleur", "La cigogne blanche", "L'oie cendrée"],
+    "choices": [
+      "La sterne arctique",
+      "L'albatros hurleur",
+      "La cigogne blanche",
+      "L'oie cendrée"
+    ],
     "answerIndex": 0,
     "explanation": "La sterne arctique parcourt environ 70 000 km par an aller-retour ; sur une vie de 30 ans, cela équivaut à plusieurs fois la distance Terre-Lune.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -334,7 +519,12 @@
   },
   {
     "text": "Quel sens utilise la chauve-souris pour se diriger dans l'obscurité ?",
-    "choices": ["La thermoréception", "L'écholocation", "L'odorat", "La vision infrarouge"],
+    "choices": [
+      "La thermoréception",
+      "L'écholocation",
+      "L'odorat",
+      "La vision infrarouge"
+    ],
     "answerIndex": 1,
     "explanation": "Les chauves-souris émettent des ultrasons et interprètent les échos pour cartographier leur environnement et localiser leurs proies.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -343,7 +533,12 @@
   },
   {
     "text": "Quel est le plus grand reptile actuel ?",
-    "choices": ["Le crocodile marin", "L'anaconda vert", "Le varan de Komodo", "Le crocodile du Nil"],
+    "choices": [
+      "Le crocodile marin",
+      "L'anaconda vert",
+      "Le varan de Komodo",
+      "Le crocodile du Nil"
+    ],
     "answerIndex": 0,
     "explanation": "Le crocodile marin (Crocodylus porosus) peut dépasser 6 m et 1 000 kg ; il vit en Asie du Sud-Est et en Australie.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -352,7 +547,12 @@
   },
   {
     "text": "Quel serpent est le plus long du monde ?",
-    "choices": ["Le cobra royal", "Le python réticulé", "L'anaconda vert", "Le boa constrictor"],
+    "choices": [
+      "Le cobra royal",
+      "Le python réticulé",
+      "L'anaconda vert",
+      "Le boa constrictor"
+    ],
     "answerIndex": 1,
     "explanation": "Le python réticulé peut atteindre plus de 9 m ; l'anaconda vert est plus court mais nettement plus massif.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -361,7 +561,12 @@
   },
   {
     "text": "Quel poisson est considéré comme le plus grand de l'océan ?",
-    "choices": ["Le requin blanc", "Le requin baleine", "Le mérou géant", "Le marlin bleu"],
+    "choices": [
+      "Le requin blanc",
+      "Le requin baleine",
+      "Le mérou géant",
+      "Le marlin bleu"
+    ],
     "answerIndex": 1,
     "explanation": "Le requin baleine peut dépasser 12 m, mais ne mange que du plancton, du krill et de petits poissons par filtration.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -370,7 +575,12 @@
   },
   {
     "text": "Quelle est la famille zoologique qui regroupe le loup, le chien, le renard et le chacal ?",
-    "choices": ["Félidés", "Canidés", "Mustélidés", "Ursidés"],
+    "choices": [
+      "Félidés",
+      "Canidés",
+      "Mustélidés",
+      "Ursidés"
+    ],
     "answerIndex": 1,
     "explanation": "Les canidés se caractérisent par leur denture adaptée à la prédation et leur structure sociale développée chez plusieurs espèces.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -379,7 +589,12 @@
   },
   {
     "text": "Quel animal aquatique peut régénérer un bras coupé ?",
-    "choices": ["Le poulpe", "Le crabe", "L'étoile de mer", "La méduse"],
+    "choices": [
+      "Le poulpe",
+      "Le crabe",
+      "L'étoile de mer",
+      "La méduse"
+    ],
     "answerIndex": 2,
     "explanation": "Certaines étoiles de mer peuvent même régénérer un corps entier à partir d'un seul bras attaché au disque central.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -388,7 +603,12 @@
   },
   {
     "text": "Quel animal possède le venin considéré comme le plus puissant au monde ?",
-    "choices": ["Le mamba noir", "La méduse-boîte (cuboméduse)", "Le serpent corail", "La grenouille dorée"],
+    "choices": [
+      "Le mamba noir",
+      "La méduse-boîte (cuboméduse)",
+      "Le serpent corail",
+      "La grenouille dorée"
+    ],
     "answerIndex": 1,
     "explanation": "Le venin de la cuboméduse australienne peut tuer un humain en quelques minutes par arrêt cardiaque, ce qui en fait l'un des plus dangereux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -397,7 +617,12 @@
   },
   {
     "text": "Quelle est la plus grande tortue marine ?",
-    "choices": ["La tortue verte", "La tortue caouanne", "La tortue luth", "La tortue olivâtre"],
+    "choices": [
+      "La tortue verte",
+      "La tortue caouanne",
+      "La tortue luth",
+      "La tortue olivâtre"
+    ],
     "answerIndex": 2,
     "explanation": "La tortue luth peut peser plus de 600 kg et n'a pas de carapace osseuse mais un dos coriace renforcé d'arêtes longitudinales.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -406,7 +631,12 @@
   },
   {
     "text": "Quel est l'animal le plus meurtrier pour l'humain dans le monde ?",
-    "choices": ["Le crocodile", "Le requin blanc", "Le moustique", "Le serpent à sonnette"],
+    "choices": [
+      "Le crocodile",
+      "Le requin blanc",
+      "Le moustique",
+      "Le serpent à sonnette"
+    ],
     "answerIndex": 2,
     "explanation": "Les moustiques tuent environ 700 000 personnes par an en transmettant le paludisme, la dengue ou le chikungunya.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -415,7 +645,12 @@
   },
   {
     "text": "Quelle race de chien tire traditionnellement les traîneaux dans l'Arctique ?",
-    "choices": ["Le berger allemand", "Le husky sibérien", "Le bouvier bernois", "Le labrador"],
+    "choices": [
+      "Le berger allemand",
+      "Le husky sibérien",
+      "Le bouvier bernois",
+      "Le labrador"
+    ],
     "answerIndex": 1,
     "explanation": "Le husky sibérien a été sélectionné par le peuple Tchouktche pour sa résistance au froid et son endurance sur de longues distances.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -424,7 +659,12 @@
   },
   {
     "text": "Combien de tentacules a un calmar (incluant les deux longs tentacules de capture) ?",
-    "choices": ["6", "8", "10", "12"],
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
     "answerIndex": 2,
     "explanation": "Le calmar a huit bras courts et deux longs tentacules munis de ventouses à leur extrémité, ce qui le distingue de la pieuvre à huit bras.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -433,7 +673,12 @@
   },
   {
     "text": "Quel mammifère marin solitaire possède une longue dent en spirale chez le mâle ?",
-    "choices": ["Le morse", "Le narval", "Le béluga", "Le dugong"],
+    "choices": [
+      "Le morse",
+      "Le narval",
+      "Le béluga",
+      "Le dugong"
+    ],
     "answerIndex": 1,
     "explanation": "Cette « corne » est en réalité une canine très allongée pouvant mesurer jusqu'à 3 m, source ancienne du mythe de la licorne en Europe.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -442,7 +687,12 @@
   },
   {
     "text": "Quel est le plus grand singe vivant ?",
-    "choices": ["L'orang-outan", "Le chimpanzé", "Le gorille de l'Est", "Le gibbon"],
+    "choices": [
+      "L'orang-outan",
+      "Le chimpanzé",
+      "Le gorille de l'Est",
+      "Le gibbon"
+    ],
     "answerIndex": 2,
     "explanation": "Un mâle dos argenté de gorille des montagnes peut peser plus de 200 kg, soit le poids de deux gros chimpanzés.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -451,7 +701,12 @@
   },
   {
     "text": "Quelle est la couleur du sang du poulpe ?",
-    "choices": ["Rouge", "Bleu", "Vert", "Jaune"],
+    "choices": [
+      "Rouge",
+      "Bleu",
+      "Vert",
+      "Jaune"
+    ],
     "answerIndex": 1,
     "explanation": "Le sang des céphalopodes contient de l'hémocyanine à base de cuivre, qui devient bleue lorsqu'elle se charge en oxygène.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -460,7 +715,12 @@
   },
   {
     "text": "Quel oiseau est célèbre pour sa parade nuptiale colorée et sa queue en éventail ?",
-    "choices": ["Le faisan", "Le paon", "Le coq", "Le toucan"],
+    "choices": [
+      "Le faisan",
+      "Le paon",
+      "Le coq",
+      "Le toucan"
+    ],
     "answerIndex": 1,
     "explanation": "La traîne du paon mâle compte plus de 150 plumes ornées d'« ocelles » qui imitent des yeux pour impressionner la femelle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -469,7 +729,12 @@
   },
   {
     "text": "Quel mammifère terrestre possède la plus grande taille de cerveau en valeur absolue ?",
-    "choices": ["L'éléphant d'Afrique", "Le chimpanzé", "Le gorille", "L'humain"],
+    "choices": [
+      "L'éléphant d'Afrique",
+      "Le chimpanzé",
+      "Le gorille",
+      "L'humain"
+    ],
     "answerIndex": 0,
     "explanation": "Le cerveau de l'éléphant pèse environ 5 kg, mais le rapport masse cérébrale / masse corporelle reste plus élevé chez l'humain.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -478,7 +743,12 @@
   },
   {
     "text": "Quel insecte effectue une danse en huit pour indiquer la direction d'une source de nourriture ?",
-    "choices": ["La fourmi", "L'abeille mellifère", "Le termite", "La guêpe"],
+    "choices": [
+      "La fourmi",
+      "L'abeille mellifère",
+      "Le termite",
+      "La guêpe"
+    ],
     "answerIndex": 1,
     "explanation": "La « danse frétillante » des abeilles ouvrières a été décodée par l'éthologue autrichien Karl von Frisch, prix Nobel en 1973.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -487,7 +757,12 @@
   },
   {
     "text": "Quel rapace symbolise les États-Unis sur leur sceau national ?",
-    "choices": ["Le faucon", "L'aigle royal", "Le pygargue à tête blanche", "Le condor"],
+    "choices": [
+      "Le faucon",
+      "L'aigle royal",
+      "Le pygargue à tête blanche",
+      "Le condor"
+    ],
     "answerIndex": 2,
     "explanation": "Adopté en 1782, le pygargue à tête blanche (bald eagle) figure sur le grand sceau, les armes et de nombreux symboles fédéraux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -496,7 +771,12 @@
   },
   {
     "text": "Quel mammifère africain est responsable du plus grand nombre de morts humaines sur le continent ?",
-    "choices": ["Le lion", "Le rhinocéros", "L'hippopotame", "Le buffle"],
+    "choices": [
+      "Le lion",
+      "Le rhinocéros",
+      "L'hippopotame",
+      "Le buffle"
+    ],
     "answerIndex": 2,
     "explanation": "L'hippopotame, très territorial et capable de charger à 30 km/h, tuerait selon les estimations plus de 500 personnes par an en Afrique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -505,7 +785,12 @@
   },
   {
     "text": "Quel mustélidé européen ressemble à un petit ours et est protégé en France ?",
-    "choices": ["La fouine", "Le blaireau européen", "Le glouton", "La belette"],
+    "choices": [
+      "La fouine",
+      "Le blaireau européen",
+      "Le glouton",
+      "La belette"
+    ],
     "answerIndex": 1,
     "explanation": "Le blaireau européen vit dans des terriers complexes appelés « blaireautières », parfois occupés par plusieurs générations successives.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -514,7 +799,12 @@
   },
   {
     "text": "Quel animal est connu pour utiliser des pierres comme outil afin de casser des coquillages sur son ventre ?",
-    "choices": ["Le morse", "La loutre de mer", "Le phoque", "Le lamantin"],
+    "choices": [
+      "Le morse",
+      "La loutre de mer",
+      "Le phoque",
+      "Le lamantin"
+    ],
     "answerIndex": 1,
     "explanation": "La loutre de mer transporte une pierre favorite dans une poche cutanée sous son aisselle pour l'utiliser comme enclume.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -523,7 +813,12 @@
   },
   {
     "text": "Quel cervidé est appelé « caribou » en Amérique et « renne » en Europe ?",
-    "choices": ["Rangifer tarandus", "Cervus elaphus", "Alces alces", "Capreolus capreolus"],
+    "choices": [
+      "Rangifer tarandus",
+      "Cervus elaphus",
+      "Alces alces",
+      "Capreolus capreolus"
+    ],
     "answerIndex": 0,
     "explanation": "C'est la seule espèce de cervidé dont les femelles portent aussi des bois, et la seule domestiquée à grande échelle dans le Grand Nord.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -532,7 +827,12 @@
   },
   {
     "text": "Quelle espèce de méduse est dite « biologiquement immortelle » car capable de revenir au stade de polype ?",
-    "choices": ["Aurelia aurita", "Turritopsis dohrnii", "Chironex fleckeri", "Pelagia noctiluca"],
+    "choices": [
+      "Aurelia aurita",
+      "Turritopsis dohrnii",
+      "Chironex fleckeri",
+      "Pelagia noctiluca"
+    ],
     "answerIndex": 1,
     "explanation": "En cas de stress, Turritopsis dohrnii peut transdifférencier ses cellules adultes pour redevenir polype et entamer un nouveau cycle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -541,7 +841,12 @@
   },
   {
     "text": "Quel animal microscopique peut survivre dans le vide spatial et à des températures extrêmes ?",
-    "choices": ["Le tardigrade", "Le copépode", "L'amibe", "La paramécie"],
+    "choices": [
+      "Le tardigrade",
+      "Le copépode",
+      "L'amibe",
+      "La paramécie"
+    ],
     "answerIndex": 0,
     "explanation": "Le tardigrade entre en cryptobiose, état où son métabolisme s'abaisse à 0,01 % de la normale ; il peut alors résister à -270 °C ou au vide.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -550,7 +855,12 @@
   },
   {
     "text": "Quel poisson, considéré comme « fossile vivant », a été redécouvert en 1938 sur la côte sud-africaine ?",
-    "choices": ["Le poisson-globe", "Le cœlacanthe", "L'esturgeon", "La lamproie"],
+    "choices": [
+      "Le poisson-globe",
+      "Le cœlacanthe",
+      "L'esturgeon",
+      "La lamproie"
+    ],
     "answerIndex": 1,
     "explanation": "On croyait le cœlacanthe disparu depuis la fin du Crétacé ; sa découverte a bouleversé la connaissance de l'évolution des vertébrés.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -559,7 +869,12 @@
   },
   {
     "text": "Quel crustacé possède jusqu'à seize types de photorécepteurs, lui offrant une vision exceptionnelle ?",
-    "choices": ["Le homard européen", "La crevette-mante", "Le crabe royal", "La langouste"],
+    "choices": [
+      "Le homard européen",
+      "La crevette-mante",
+      "Le crabe royal",
+      "La langouste"
+    ],
     "answerIndex": 1,
     "explanation": "La crevette-mante (squille) perçoit également la lumière polarisée et frappe ses proies à plus de 80 km/h sous l'eau.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -568,7 +883,12 @@
   },
   {
     "text": "Qui est le naturaliste suédois à l'origine de la classification binomiale au XVIIIe siècle ?",
-    "choices": ["Georges Cuvier", "Carl von Linné", "Buffon", "Jean-Baptiste Lamarck"],
+    "choices": [
+      "Georges Cuvier",
+      "Carl von Linné",
+      "Buffon",
+      "Jean-Baptiste Lamarck"
+    ],
     "answerIndex": 1,
     "explanation": "Le Systema Naturae de Linné (1735) impose le système genre + espèce, qui sert encore aujourd'hui de référence à la nomenclature scientifique.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -577,7 +897,12 @@
   },
   {
     "text": "Quelle est la véritable couleur de la peau d'un ours blanc sous sa fourrure ?",
-    "choices": ["Blanche", "Rose", "Grise", "Noire"],
+    "choices": [
+      "Blanche",
+      "Rose",
+      "Grise",
+      "Noire"
+    ],
     "answerIndex": 3,
     "explanation": "La peau noire absorbe mieux la chaleur ; les poils, eux, sont creux et translucides, donnant l'apparence blanche par diffusion de la lumière.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -586,7 +911,12 @@
   },
   {
     "text": "Quel mammifère dort le moins, à environ deux heures par jour seulement ?",
-    "choices": ["La girafe", "L'éléphant", "Le cheval", "La vache"],
+    "choices": [
+      "La girafe",
+      "L'éléphant",
+      "Le cheval",
+      "La vache"
+    ],
     "answerIndex": 1,
     "explanation": "Une étude menée en 2017 sur des éléphantes de savane a montré une moyenne de seulement deux heures de sommeil par 24 heures.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -595,7 +925,12 @@
   },
   {
     "text": "Quelle antilope nord-américaine est le deuxième animal terrestre le plus rapide ?",
-    "choices": ["Le gnou", "L'antilope d'Amérique (pronghorn)", "L'oryx", "L'impala"],
+    "choices": [
+      "Le gnou",
+      "L'antilope d'Amérique (pronghorn)",
+      "L'oryx",
+      "L'impala"
+    ],
     "answerIndex": 1,
     "explanation": "Le pronghorn peut maintenir près de 90 km/h sur plusieurs kilomètres, une endurance qui dépasse celle du guépard.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -604,7 +939,12 @@
   },
   {
     "text": "Quel oiseau géant, aujourd'hui éteint, vivait à Madagascar et pouvait dépasser 3 m de haut ?",
-    "choices": ["Le moa", "L'oiseau-éléphant (Aepyornis)", "Le dronte", "Le tératon"],
+    "choices": [
+      "Le moa",
+      "L'oiseau-éléphant (Aepyornis)",
+      "Le dronte",
+      "Le tératon"
+    ],
     "answerIndex": 1,
     "explanation": "L'Aepyornis, plus lourd oiseau connu (jusqu'à 700 kg), a probablement disparu après l'arrivée de l'humain à Madagascar vers le Xe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -613,7 +953,12 @@
   },
   {
     "text": "Quelle palourde, surnommée Ming, a établi le record vérifié de longévité animale à 507 ans ?",
-    "choices": ["Arctica islandica", "Tridacna gigas", "Pinna nobilis", "Mya arenaria"],
+    "choices": [
+      "Arctica islandica",
+      "Tridacna gigas",
+      "Pinna nobilis",
+      "Mya arenaria"
+    ],
     "answerIndex": 0,
     "explanation": "Pêchée en 2006 au large de l'Islande, Ming est née en 1499, sous le règne de Louis XII, et son âge a été déterminé par dendrochronologie de la coquille.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -622,7 +967,12 @@
   },
   {
     "text": "Combien de chromosomes possède un chien domestique ?",
-    "choices": ["46", "60", "78", "98"],
+    "choices": [
+      "46",
+      "60",
+      "78",
+      "98"
+    ],
     "answerIndex": 2,
     "explanation": "Le chien possède 78 chromosomes répartis en 39 paires, contre 46 pour l'humain. Ce nombre est partagé par le loup, ce qui permet leur croisement.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -631,7 +981,12 @@
   },
   {
     "text": "Quel oiseau émet le chant le plus puissant, audible à plus d'un kilomètre, en pleine forêt amazonienne ?",
-    "choices": ["L'araponga blanc", "Le toucan", "Le coq de roche", "Le quetzal"],
+    "choices": [
+      "L'araponga blanc",
+      "Le toucan",
+      "Le coq de roche",
+      "Le quetzal"
+    ],
     "answerIndex": 0,
     "explanation": "Procnias albus émet jusqu'à 125 dB, soit le bruit d'un moteur d'avion à courte distance ; sa femelle l'écoute juste à côté du bec.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -640,7 +995,12 @@
   },
   {
     "text": "Quel groupe d'oiseaux comprend les autruches, émeus, casoars, nandous et kiwis, tous incapables de voler ?",
-    "choices": ["Les ratites", "Les anatidés", "Les psittacidés", "Les passereaux"],
+    "choices": [
+      "Les ratites",
+      "Les anatidés",
+      "Les psittacidés",
+      "Les passereaux"
+    ],
     "answerIndex": 0,
     "explanation": "Les ratites se caractérisent par l'absence de bréchet, l'os auquel se fixent normalement les muscles puissants nécessaires au vol.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -649,7 +1009,12 @@
   },
   {
     "text": "Quel mécanisme permet à certains lézards de perdre leur queue en cas de danger ?",
-    "choices": ["L'autonomie", "L'autotomie", "L'autohémorragie", "La cataplexie"],
+    "choices": [
+      "L'autonomie",
+      "L'autotomie",
+      "L'autohémorragie",
+      "La cataplexie"
+    ],
     "answerIndex": 1,
     "explanation": "L'autotomie est rendue possible par des plans de fracture pré-formés dans les vertèbres caudales ; la queue peut ensuite repousser partiellement.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -658,7 +1023,12 @@
   },
   {
     "text": "Quel insecte mâle se laisse parfois dévorer par la femelle après l'accouplement ?",
-    "choices": ["L'abeille reine", "La libellule", "La mante religieuse", "Le scarabée rhinocéros"],
+    "choices": [
+      "L'abeille reine",
+      "La libellule",
+      "La mante religieuse",
+      "Le scarabée rhinocéros"
+    ],
     "answerIndex": 2,
     "explanation": "Ce cannibalisme sexuel, observé chez environ 25 % des accouplements en milieu naturel, augmente la quantité de protéines disponible pour les œufs.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -667,7 +1037,12 @@
   },
   {
     "text": "Quel mammifère sud-américain est l'unique représentant vivant du genre Hydrochoerus et le plus gros rongeur du monde ?",
-    "choices": ["Le capybara", "Le paca", "L'agouti", "Le coypu"],
+    "choices": [
+      "Le capybara",
+      "Le paca",
+      "L'agouti",
+      "Le coypu"
+    ],
     "answerIndex": 0,
     "explanation": "Le capybara peut peser plus de 60 kg ; semi-aquatique, il cohabite paisiblement avec de nombreuses espèces, y compris des caïmans.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -676,7 +1051,12 @@
   },
   {
     "text": "Quel oiseau migrateur peut traverser sans escale plus de 10 000 km, du Pacifique nord à la Nouvelle-Zélande ?",
-    "choices": ["L'huîtrier pie", "La barge rousse", "Le bécasseau maubèche", "Le pluvier doré"],
+    "choices": [
+      "L'huîtrier pie",
+      "La barge rousse",
+      "Le bécasseau maubèche",
+      "Le pluvier doré"
+    ],
     "answerIndex": 1,
     "explanation": "Une barge rousse équipée d'une balise a parcouru en 2022 plus de 13 500 km en onze jours sans se poser, un record absolu de vol continu.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -685,7 +1065,12 @@
   },
   {
     "text": "Quelle araignée australienne mâle est considérée comme l'une des plus dangereuses du monde pour l'humain ?",
-    "choices": ["La veuve noire", "L'araignée à toile entonnoir de Sydney", "L'araignée banane", "L'araignée chameau"],
+    "choices": [
+      "La veuve noire",
+      "L'araignée à toile entonnoir de Sydney",
+      "L'araignée banane",
+      "L'araignée chameau"
+    ],
     "answerIndex": 1,
     "explanation": "Atrax robustus possède un venin neurotoxique mortel ; aucun décès n'a été enregistré depuis l'introduction d'un antivenin en 1981.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -694,7 +1079,12 @@
   },
   {
     "text": "Quel mammifère placentaire ne possède pas de dents et capture des insectes avec sa longue langue gluante ?",
-    "choices": ["Le pangolin", "Le fourmilier géant", "L'échidné", "Le tatou"],
+    "choices": [
+      "Le pangolin",
+      "Le fourmilier géant",
+      "L'échidné",
+      "Le tatou"
+    ],
     "answerIndex": 1,
     "explanation": "Le fourmilier géant peut sortir sa langue jusqu'à 60 cm et l'agiter 150 fois par minute pour capturer fourmis et termites.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -703,7 +1093,12 @@
   },
   {
     "text": "Quelle espèce de baleine émet les chants sous-marins les plus complexes, parfois étudiés comme un langage ?",
-    "choices": ["La baleine bleue", "La baleine à bosse", "Le cachalot", "Le rorqual commun"],
+    "choices": [
+      "La baleine bleue",
+      "La baleine à bosse",
+      "Le cachalot",
+      "Le rorqual commun"
+    ],
     "answerIndex": 1,
     "explanation": "Les chants des mâles à bosse durent jusqu'à 30 minutes et évoluent au fil des saisons ; toutes les baleines d'une même population partagent la même mélodie.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -712,7 +1107,12 @@
   },
   {
     "text": "Quel reptile préhistorique géant, voisin des serpents et lézards, mesurait jusqu'à 18 m et chassait dans les mers du Crétacé ?",
-    "choices": ["Le plésiosaure", "Le mosasaure", "L'ichtyosaure", "Le ptérosaure"],
+    "choices": [
+      "Le plésiosaure",
+      "Le mosasaure",
+      "L'ichtyosaure",
+      "Le ptérosaure"
+    ],
     "answerIndex": 1,
     "explanation": "Les mosasaures dominaient les océans à la fin du Crétacé avant de disparaître lors de l'extinction de masse il y a 66 millions d'années.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -721,7 +1121,12 @@
   },
   {
     "text": "Combien de paires de chromosomes une fourmi mâle (haploïde) possède-t-elle chez l'espèce Myrmecia croslandi ?",
-    "choices": ["Aucune (1 chromosome unique)", "5 paires", "10 paires", "23 paires"],
+    "choices": [
+      "Aucune (1 chromosome unique)",
+      "5 paires",
+      "10 paires",
+      "23 paires"
+    ],
     "answerIndex": 0,
     "explanation": "Les mâles de cette fourmi australienne ne possèdent qu'un seul chromosome, le génome haploïde minimum connu chez un animal.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -730,7 +1135,12 @@
   },
   {
     "text": "Quel ordre animal regroupe les insectes ailés à deux paires d'ailes membraneuses comme les abeilles et les guêpes ?",
-    "choices": ["Coléoptères", "Lépidoptères", "Hyménoptères", "Diptères"],
+    "choices": [
+      "Coléoptères",
+      "Lépidoptères",
+      "Hyménoptères",
+      "Diptères"
+    ],
     "answerIndex": 2,
     "explanation": "Hyménoptère vient du grec « hymen » (membrane) ; cet ordre compte plus de 150 000 espèces décrites, dont les fourmis et de nombreux parasitoïdes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -739,7 +1149,12 @@
   },
   {
     "text": "Quelle est la durée approximative de la migration de retour du saumon atlantique entre l'océan et son cours d'eau natal ?",
-    "choices": ["Quelques semaines", "1 à 3 ans", "5 à 7 ans", "Plus de 10 ans"],
+    "choices": [
+      "Quelques semaines",
+      "1 à 3 ans",
+      "5 à 7 ans",
+      "Plus de 10 ans"
+    ],
     "answerIndex": 1,
     "explanation": "Le saumon atlantique passe en général entre un et trois ans en mer avant de remonter, guidé par l'olfaction, jusqu'à sa rivière de naissance.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -748,7 +1163,12 @@
   },
   {
     "text": "Quel grand canidé sauvage est emblématique du parc de Yellowstone, où il a été réintroduit en 1995 ?",
-    "choices": ["Le coyote", "Le loup gris", "Le renard roux", "Le chacal"],
+    "choices": [
+      "Le coyote",
+      "Le loup gris",
+      "Le renard roux",
+      "Le chacal"
+    ],
     "answerIndex": 1,
     "explanation": "Le retour du loup a déclenché une « cascade trophique » remarquable : moins de wapitis, plus d'arbres jeunes, et même des changements dans le cours des rivières.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -757,7 +1177,12 @@
   },
   {
     "text": "Quel groupe biologique inclut les éponges, premiers animaux multicellulaires apparus sur Terre ?",
-    "choices": ["Cnidaires", "Porifères", "Mollusques", "Plathelminthes"],
+    "choices": [
+      "Cnidaires",
+      "Porifères",
+      "Mollusques",
+      "Plathelminthes"
+    ],
     "answerIndex": 1,
     "explanation": "Les porifères, présents dès le Précambrien, n'ont pas de système nerveux ; ils filtrent l'eau pour se nourrir grâce à leurs choanocytes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -766,7 +1191,12 @@
   },
   {
     "text": "Quel oiseau au plumage rouge vif niche en Camargue et constitue l'un des emblèmes du sud de la France ?",
-    "choices": ["Le héron pourpré", "Le flamant rose", "L'ibis sacré", "Le bihoreau gris"],
+    "choices": [
+      "Le héron pourpré",
+      "Le flamant rose",
+      "L'ibis sacré",
+      "Le bihoreau gris"
+    ],
     "answerIndex": 1,
     "explanation": "Le rose du plumage vient des caroténoïdes contenus dans les petits crustacés qu'il filtre dans la vase ; sans ces pigments, il resterait blanc.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -775,7 +1205,12 @@
   },
   {
     "text": "Quel céphalopode géant peut atteindre 14 m, principal trésor de chasse du cachalot dans les abysses ?",
-    "choices": ["Le calmar géant (Architeuthis dux)", "La pieuvre du Pacifique", "Le poulpe dumbo", "La seiche commune"],
+    "choices": [
+      "Le calmar géant (Architeuthis dux)",
+      "La pieuvre du Pacifique",
+      "Le poulpe dumbo",
+      "La seiche commune"
+    ],
     "answerIndex": 0,
     "explanation": "Filmé pour la première fois vivant en 2004 par des chercheurs japonais, le calmar géant possède les plus gros yeux du règne animal, jusqu'à 27 cm.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -784,7 +1219,12 @@
   },
   {
     "text": "Quel mammifère marin arctique est surnommé la « licorne des mers » ?",
-    "choices": ["Le morse", "Le narval", "Le béluga", "Le dugong"],
+    "choices": [
+      "Le morse",
+      "Le narval",
+      "Le béluga",
+      "Le dugong"
+    ],
     "answerIndex": 1,
     "explanation": "Le narval doit ce surnom à sa longue défense torsadée, qui est en réalité une canine hypertrophiée. Il vit dans les eaux froides du Groenland, du Canada et de l'Arctique russe.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -793,7 +1233,12 @@
   },
   {
     "text": "Quel grand singe est le plus grand primate du monde ?",
-    "choices": ["Le gorille", "L'orang-outan", "Le chimpanzé", "Le bonobo"],
+    "choices": [
+      "Le gorille",
+      "L'orang-outan",
+      "Le chimpanzé",
+      "Le bonobo"
+    ],
     "answerIndex": 0,
     "explanation": "Le gorille, qui vit dans les forêts d'Afrique équatoriale, est le plus massif de tous les primates. Un mâle adulte dos argenté peut dépasser 180 kg à l'état sauvage.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -802,7 +1247,12 @@
   },
   {
     "text": "Comment appelle-t-on la science qui étudie les oiseaux ?",
-    "choices": ["L'entomologie", "L'ornithologie", "L'ichtyologie", "La primatologie"],
+    "choices": [
+      "L'entomologie",
+      "L'ornithologie",
+      "L'ichtyologie",
+      "La primatologie"
+    ],
     "answerIndex": 1,
     "explanation": "L'ornithologie étudie les oiseaux, leurs comportements, leurs migrations et leur évolution. Le mot vient du grec ornis, qui signifie « oiseau ».",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -811,7 +1261,12 @@
   },
   {
     "text": "Quel poisson osseux, souvent appelé mola-mola, est le plus lourd du monde ?",
-    "choices": ["Le thon rouge", "L'espadon", "Le poisson-lune", "Le mérou géant"],
+    "choices": [
+      "Le thon rouge",
+      "L'espadon",
+      "Le poisson-lune",
+      "Le mérou géant"
+    ],
     "answerIndex": 2,
     "explanation": "Le poisson-lune peut dépasser 2 tonnes, ce qui en fait le plus lourd des poissons osseux. Malgré sa taille, il se nourrit surtout de méduses et d'organismes gélatineux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -820,7 +1275,12 @@
   },
   {
     "text": "Quel amphibien mexicain conserve ses branchies à l'âge adulte et peut régénérer ses membres ?",
-    "choices": ["Le pipa", "L'axolotl", "La salamandre géante", "Le triton marbré"],
+    "choices": [
+      "Le pipa",
+      "L'axolotl",
+      "La salamandre géante",
+      "Le triton marbré"
+    ],
     "answerIndex": 1,
     "explanation": "L'axolotl est célèbre pour sa néoténie, c'est-à-dire le maintien de caractères juvéniles à l'âge adulte. Il fascine aussi les biologistes par sa capacité à régénérer pattes, queue et même certaines parties du cœur ou du cerveau.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -829,7 +1289,12 @@
   },
   {
     "text": "Quel mammifère africain forestier, cousin de la girafe, porte des rayures sur les pattes ?",
-    "choices": ["L'okapi", "Le bongo", "Le tapir", "Le gnou"],
+    "choices": [
+      "L'okapi",
+      "Le bongo",
+      "Le tapir",
+      "Le gnou"
+    ],
     "answerIndex": 0,
     "explanation": "L'okapi vit dans les forêts humides de la République démocratique du Congo. Longtemps inconnu des Européens, il n'a été décrit scientifiquement qu'au début du XXe siècle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -838,7 +1303,12 @@
   },
   {
     "text": "Quel est l'animal terrestre le plus rapide du monde ?",
-    "choices": ["Le guépard", "Le lion", "L'antilope", "Le léopard"],
+    "choices": [
+      "Le guépard",
+      "Le lion",
+      "L'antilope",
+      "Le léopard"
+    ],
     "answerIndex": 0,
     "explanation": "Le guépard peut atteindre des pointes de vitesse d'environ 100 à 110 km/h sur de courtes distances. Sa morphologie légère et sa colonne vertébrale très souple en font un sprinteur exceptionnel.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -847,7 +1317,12 @@
   },
   {
     "text": "Quel grand oiseau incapable de voler vit principalement en Antarctique ?",
-    "choices": ["Le manchot empereur", "L'autruche", "Le kiwi", "L'émeu"],
+    "choices": [
+      "Le manchot empereur",
+      "L'autruche",
+      "Le kiwi",
+      "L'émeu"
+    ],
     "answerIndex": 0,
     "explanation": "Le manchot empereur est le plus grand de tous les manchots. Il supporte des conditions extrêmes sur la banquise antarctique, où le mâle couve l'œuf pendant l'hiver.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -856,7 +1331,12 @@
   },
   {
     "text": "Quel animal possède huit bras munis de ventouses ?",
-    "choices": ["Le poulpe", "Le calmar", "La seiche", "La méduse"],
+    "choices": [
+      "Le poulpe",
+      "Le calmar",
+      "La seiche",
+      "La méduse"
+    ],
     "answerIndex": 0,
     "explanation": "Le poulpe, ou pieuvre, possède huit bras dotés de ventouses. C'est aussi un invertébré réputé pour son intelligence et sa grande capacité d'adaptation.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -865,7 +1345,12 @@
   },
   {
     "text": "Quel mammifère est célèbre pour sa poche ventrale et ses bonds en Australie ?",
-    "choices": ["Le kangourou roux", "Le koala", "Le wombat", "L'échidné"],
+    "choices": [
+      "Le kangourou roux",
+      "Le koala",
+      "Le wombat",
+      "L'échidné"
+    ],
     "answerIndex": 0,
     "explanation": "Le kangourou roux est l'un des animaux les plus emblématiques de l'Australie. Comme tous les marsupiaux, il porte ses petits dans une poche ventrale appelée marsupium.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -874,7 +1359,12 @@
   },
   {
     "text": "Quel animal noir et blanc d'Afrique est célèbre pour ses rayures ?",
-    "choices": ["Le zèbre", "L'okapi", "Le gnou", "L'oryx"],
+    "choices": [
+      "Le zèbre",
+      "L'okapi",
+      "Le gnou",
+      "L'oryx"
+    ],
     "answerIndex": 0,
     "explanation": "Le zèbre est un équidé africain reconnaissable à ses rayures uniques à chaque individu. Ces motifs pourraient jouer un rôle social et aider à perturber certains insectes piqueurs.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -883,7 +1373,12 @@
   },
   {
     "text": "Quel est le plus grand félin du monde ?",
-    "choices": ["Le lion", "Le tigre", "Le jaguar", "Le léopard"],
+    "choices": [
+      "Le lion",
+      "Le tigre",
+      "Le jaguar",
+      "Le léopard"
+    ],
     "answerIndex": 1,
     "explanation": "Le tigre, en particulier le tigre de Sibérie, est le plus grand des félins actuels. Certains mâles peuvent dépasser 300 kg.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -892,7 +1387,12 @@
   },
   {
     "text": "Quel animal construit souvent des barrages sur les rivières ?",
-    "choices": ["Le castor", "La loutre", "Le rat musqué", "Le ragondin"],
+    "choices": [
+      "Le castor",
+      "La loutre",
+      "Le rat musqué",
+      "Le ragondin"
+    ],
     "answerIndex": 0,
     "explanation": "Le castor abat des branches et empile du bois pour ralentir l'eau et créer des étangs. Ses constructions modifient profondément les milieux aquatiques et favorisent la biodiversité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -901,7 +1401,12 @@
   },
   {
     "text": "Quel mammifère se nourrit presque exclusivement de bambou ?",
-    "choices": ["Le panda géant", "Le paresseux", "Le koala", "Le tapir"],
+    "choices": [
+      "Le panda géant",
+      "Le paresseux",
+      "Le koala",
+      "Le tapir"
+    ],
     "answerIndex": 0,
     "explanation": "Le panda géant est un ours dont l'alimentation repose presque entièrement sur le bambou. Il doit en consommer de très grandes quantités chaque jour en raison de la faible valeur énergétique de cette plante.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -910,7 +1415,12 @@
   },
   {
     "text": "Quel grand reptile vit dans les fleuves d'Afrique et peut rester longtemps immobile avant d'attaquer ?",
-    "choices": ["Le crocodile du Nil", "L'anaconda vert", "Le gavial", "Le varan du Nil"],
+    "choices": [
+      "Le crocodile du Nil",
+      "L'anaconda vert",
+      "Le gavial",
+      "Le varan du Nil"
+    ],
     "answerIndex": 0,
     "explanation": "Le crocodile du Nil est l'un des plus grands reptiles d'Afrique. C'est un prédateur embusqué, capable d'attendre immobile pendant de longues périodes au bord de l'eau.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -919,7 +1429,12 @@
   },
   {
     "text": "Quel mammifère marin est connu pour ses défenses et vit dans l'Arctique ?",
-    "choices": ["Le morse", "Le dauphin", "Le phoque", "Le béluga"],
+    "choices": [
+      "Le morse",
+      "Le dauphin",
+      "Le phoque",
+      "Le béluga"
+    ],
     "answerIndex": 0,
     "explanation": "Le morse est un grand mammifère marin arctique doté de longues défenses. Il les utilise notamment pour se hisser sur la glace et lors de combats entre mâles.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -928,7 +1443,12 @@
   },
   {
     "text": "Quel mammifère est le plus grand prédateur terrestre actuel ?",
-    "choices": ["Le tigre de Sibérie", "L'ours polaire", "Le grizzli", "Le loup gris"],
+    "choices": [
+      "Le tigre de Sibérie",
+      "L'ours polaire",
+      "Le grizzli",
+      "Le loup gris"
+    ],
     "answerIndex": 1,
     "explanation": "L'ours polaire est considéré comme le plus grand carnivore terrestre. Il dépend étroitement de la banquise pour chasser les phoques, sa principale ressource alimentaire.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -937,7 +1457,12 @@
   },
   {
     "text": "Quel oiseau effectue chaque année une migration de l'Arctique à l'Antarctique ?",
-    "choices": ["L'albatros hurleur", "La sterne arctique", "Le puffin cendré", "Le flamant rose"],
+    "choices": [
+      "L'albatros hurleur",
+      "La sterne arctique",
+      "Le puffin cendré",
+      "Le flamant rose"
+    ],
     "answerIndex": 1,
     "explanation": "La sterne arctique accomplit l'une des plus longues migrations du règne animal. Elle profite ainsi de deux étés par an, en alternant entre les deux pôles.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -946,7 +1471,12 @@
   },
   {
     "text": "Quel mollusque bivalve peut produire des perles naturelles ?",
-    "choices": ["La moule", "L'huître perlière", "La palourde", "La coquille Saint-Jacques"],
+    "choices": [
+      "La moule",
+      "L'huître perlière",
+      "La palourde",
+      "La coquille Saint-Jacques"
+    ],
     "answerIndex": 1,
     "explanation": "Les perles se forment lorsqu'un corps étranger est enrobé de nacre par certains mollusques. Les huîtres perlières sont les plus connues pour cette capacité.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -955,7 +1485,12 @@
   },
   {
     "text": "Quel primate utilise des brindilles pour extraire des termites ?",
-    "choices": ["Le gorille", "Le chimpanzé", "Le babouin", "Le gibbon"],
+    "choices": [
+      "Le gorille",
+      "Le chimpanzé",
+      "Le babouin",
+      "Le gibbon"
+    ],
     "answerIndex": 1,
     "explanation": "Le chimpanzé est célèbre pour son usage d'outils, notamment des brindilles ou tiges végétales pour « pêcher » des termites. Ce comportement a beaucoup compté dans l'étude des origines de la technique chez les primates.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -964,7 +1499,12 @@
   },
   {
     "text": "Quel poisson peut se gonfler en boule pour se défendre ?",
-    "choices": ["Le poisson-scie", "Le poisson-globe", "Le poisson-clown", "Le poisson-lune"],
+    "choices": [
+      "Le poisson-scie",
+      "Le poisson-globe",
+      "Le poisson-clown",
+      "Le poisson-lune"
+    ],
     "answerIndex": 1,
     "explanation": "Le poisson-globe avale rapidement de l'eau ou de l'air pour augmenter brutalement son volume. Plusieurs espèces sont aussi très toxiques à cause de la tétrodotoxine.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -973,7 +1513,12 @@
   },
   {
     "text": "Comment appelle-t-on le groupe des mammifères marins comprenant dauphins et baleines ?",
-    "choices": ["Les pinnipèdes", "Les siréniens", "Les cétacés", "Les chondrichtyens"],
+    "choices": [
+      "Les pinnipèdes",
+      "Les siréniens",
+      "Les cétacés",
+      "Les chondrichtyens"
+    ],
     "answerIndex": 2,
     "explanation": "Les cétacés regroupent les baleines, les dauphins et les marsouins. Ils sont parfaitement adaptés à la vie aquatique, même s'ils restent des mammifères respirant l'air.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -982,7 +1527,12 @@
   },
   {
     "text": "Quel animal semi-aquatique d'Afrique passe souvent ses journées dans l'eau pour protéger sa peau ?",
-    "choices": ["Le buffle", "L'hippopotame", "Le tapir", "Le crocodile"],
+    "choices": [
+      "Le buffle",
+      "L'hippopotame",
+      "Le tapir",
+      "Le crocodile"
+    ],
     "answerIndex": 1,
     "explanation": "L'hippopotame reste longtemps immergé pour éviter la surchauffe et la déshydratation. Malgré son allure massive, il peut se montrer très rapide et dangereux.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -991,7 +1541,12 @@
   },
   {
     "text": "Quel crustacé terrestre tropical peut grimper aux arbres et casser des noix de coco ?",
-    "choices": ["Le tourteau", "Le crabe de cocotier", "Le crabe violoniste", "La squille"],
+    "choices": [
+      "Le tourteau",
+      "Le crabe de cocotier",
+      "Le crabe violoniste",
+      "La squille"
+    ],
     "answerIndex": 1,
     "explanation": "Le crabe de cocotier est le plus grand arthropode terrestre vivant. Très puissant, il peut grimper et utiliser ses pinces pour ouvrir des fruits ou transporter des objets lourds.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1000,7 +1555,12 @@
   },
   {
     "text": "Quel serpent est généralement considéré comme le plus long du monde ?",
-    "choices": ["Le python réticulé", "L'anaconda vert", "Le cobra royal", "Le boa constricteur"],
+    "choices": [
+      "Le python réticulé",
+      "L'anaconda vert",
+      "Le cobra royal",
+      "Le boa constricteur"
+    ],
     "answerIndex": 0,
     "explanation": "Le python réticulé peut dépasser 6 mètres, et certains spécimens exceptionnels davantage encore. L'anaconda vert est en revanche plus massif.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1009,7 +1569,12 @@
   },
   {
     "text": "Quel mammifère marin utilise souvent des pierres comme outils pour casser des coquillages ?",
-    "choices": ["Le phoque gris", "La loutre de mer", "Le dauphin commun", "Le dugong"],
+    "choices": [
+      "Le phoque gris",
+      "La loutre de mer",
+      "Le dauphin commun",
+      "Le dugong"
+    ],
     "answerIndex": 1,
     "explanation": "La loutre de mer place parfois un coquillage sur son ventre et le frappe avec une pierre pour l'ouvrir. C'est un exemple classique d'usage d'outil chez les mammifères non humains.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1018,7 +1583,12 @@
   },
   {
     "text": "Quel poisson cartilagineux géant se nourrit surtout de plancton et peut dépasser 10 mètres ?",
-    "choices": ["Le grand requin blanc", "Le requin mako", "Le requin pèlerin", "Le marlin noir"],
+    "choices": [
+      "Le grand requin blanc",
+      "Le requin mako",
+      "Le requin pèlerin",
+      "Le marlin noir"
+    ],
     "answerIndex": 2,
     "explanation": "Le requin pèlerin est l'un des plus grands poissons du monde. Malgré sa taille impressionnante, il filtre le plancton et ne représente pas un danger pour l'humain.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1027,7 +1597,12 @@
   },
   {
     "text": "Quel mammifère marin herbivore de l'océan Indien et du Pacifique est un proche parent des lamantins ?",
-    "choices": ["Le morse", "Le dugong", "Le béluga", "Le narval"],
+    "choices": [
+      "Le morse",
+      "Le dugong",
+      "Le béluga",
+      "Le narval"
+    ],
     "answerIndex": 1,
     "explanation": "Le dugong appartient au groupe des siréniens, comme les lamantins. Il broute des herbiers marins dans les eaux chaudes et peu profondes.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1036,7 +1611,12 @@
   },
   {
     "text": "Quel oiseau des Galápagos a contribué à inspirer les réflexions de Darwin sur l'évolution ?",
-    "choices": ["Les pinsons de Darwin", "Les albatros royaux", "Les aras rouges", "Les manchots du Cap"],
+    "choices": [
+      "Les pinsons de Darwin",
+      "Les albatros royaux",
+      "Les aras rouges",
+      "Les manchots du Cap"
+    ],
     "answerIndex": 0,
     "explanation": "Les différentes formes de bec observées chez ces pinsons ont illustré l'adaptation des espèces à des régimes alimentaires variés. Ils sont devenus un symbole de la sélection naturelle.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1045,7 +1625,12 @@
   },
   {
     "text": "Quelle espèce de requin peut remonter loin dans les fleuves malgré sa nature marine ?",
-    "choices": ["Le requin-bouledogue", "Le requin-tigre", "Le requin-marteau", "Le requin-renard"],
+    "choices": [
+      "Le requin-bouledogue",
+      "Le requin-tigre",
+      "Le requin-marteau",
+      "Le requin-renard"
+    ],
     "answerIndex": 0,
     "explanation": "Le requin-bouledogue tolère aussi bien l'eau salée que l'eau douce grâce à une régulation osmotique efficace. Il a été observé dans de grands fleuves comme le Mississippi ou le Zambèze.",
     "period": "EPOQUE_CONTEMPORAINE",
@@ -1054,11 +1639,156 @@
   },
   {
     "text": "Quel mammifère africain fouisseur est aussi appelé « cochon de terre » ?",
-    "choices": ["Le phacochère", "L'oryctérope", "Le pangolin", "Le daman"],
+    "choices": [
+      "Le phacochère",
+      "L'oryctérope",
+      "Le pangolin",
+      "Le daman"
+    ],
     "answerIndex": 1,
     "explanation": "L'oryctérope se nourrit principalement de termites et de fourmis, qu'il déterre avec ses puissantes griffes. Son nom anglais aardvark signifie littéralement « cochon de terre ».",
     "period": "EPOQUE_CONTEMPORAINE",
     "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel oiseau est le seul capable de voler à reculons de façon soutenue ?",
+    "choices": [
+      "Le martin-pêcheur",
+      "Le colibri",
+      "L'hirondelle de mer",
+      "La sterne arctique"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le colibri est le seul oiseau capable de voler à reculons de manière soutenue grâce à ses ailes articulées qui battent en forme de huit. Il peut aussi faire du vol stationnaire, une capacité rare parmi les oiseaux.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel insecte construit son nid en papier fabriqué à partir de bois mâché ?",
+    "choices": [
+      "L'abeille charpentière",
+      "La guêpe frelon",
+      "La fourmi tisserande",
+      "Le bourdon"
+    ],
+    "answerIndex": 1,
+    "explanation": "La guêpe (et le frelon, qui est une guêpe géante) mâche du bois et le mélange avec sa salive pour produire une pâte à papier. Elle construit ainsi ses alvéoles hexagonales caractéristiques.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère est le seul dont la protection est assurée par des écailles de kératine ?",
+    "choices": [
+      "L'armadillo",
+      "Le pangolin",
+      "Le tatou géant",
+      "L'échidné"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le pangolin est l'unique mammifère recouvert d'écailles de kératine (la même protéine que nos ongles). Face au danger, il se roule en boule. C'est l'animal sauvage le plus braconné au monde.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel oiseau australien est célèbre pour imiter les sons de son environnement, y compris des bruits de tronçonneuse ?",
+    "choices": [
+      "Le cacatoès rosalbin",
+      "L'oiseau-lyre superbe",
+      "Le diamant mandarin",
+      "Le kakapo"
+    ],
+    "answerIndex": 1,
+    "explanation": "L'oiseau-lyre superbe (Menura novaehollandiae) est l'un des meilleurs imitateurs du règne animal. Il reproduit avec une précision étonnante les chants d'autres oiseaux, mais aussi des sons mécaniques comme des tronçonneuses ou des appareils photo.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel serpent africain peut projeter son venin dans les yeux de sa proie à plus d'un mètre de distance ?",
+    "choices": [
+      "Le mamba noir",
+      "Le boomslang",
+      "Le cobra cracheur",
+      "Le puff adder"
+    ],
+    "answerIndex": 2,
+    "explanation": "Plusieurs espèces de cobras cracheurs (Naja nigricollis, N. siamensis, etc.) ont développé la capacité d'expulser leur venin à travers de petits orifices dans leurs crochets. Le venin vise les yeux et peut provoquer une cécité permanente.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère marin dort en maintenant un hémisphère cérébral éveillé pour continuer à respirer ?",
+    "choices": [
+      "La baleine à bosse",
+      "L'otarie de Californie",
+      "Le grand dauphin",
+      "Le phoque commun"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le dauphin pratique le sommeil unihémisphérique : un seul hémisphère du cerveau dort à la fois pendant que l'autre reste éveillé pour contrôler la respiration et surveiller l'environnement. Il nage lentement près de la surface durant ces périodes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel animal marin est souvent cité comme l'origine probable du mythe des sirènes chez les marins ?",
+    "choices": [
+      "Le phoque moine",
+      "Le dugong",
+      "La raie manta",
+      "La tortue luth"
+    ],
+    "answerIndex": 1,
+    "explanation": "Le dugong (et les lamantins) se tiennent parfois dressés hors de l'eau pour respirer, tenant leurs petits avec leurs nageoires pectorales. Cette posture, aperçue de loin par des marins fatigués, aurait alimenté les légendes de sirènes.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel rapace peut tourner la tête jusqu'à 270 degrés grâce à ses 14 vertèbres cervicales ?",
+    "choices": [
+      "L'aigle royal",
+      "Le vautour fauve",
+      "La chouette effraie",
+      "Le faucon sacre"
+    ],
+    "answerIndex": 2,
+    "explanation": "Les chouettes et hiboux possèdent 14 vertèbres cervicales (contre 7 chez l'humain), ce qui leur permet de tourner la tête jusqu'à 270°. Cette mobilité compense le fait que leurs yeux sont fixes dans leurs orbites.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "MOYEN",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel mammifère marin peut retenir sa respiration plus de 90 minutes lors de ses plongées en profondeur ?",
+    "choices": [
+      "L'orque",
+      "Le phoque de Weddell",
+      "Le cachalot",
+      "Le dauphin commun"
+    ],
+    "answerIndex": 2,
+    "explanation": "Le cachalot est le champion de la plongée parmi les cétacés. Il peut descendre à plus de 3 000 mètres et rester en apnée jusqu'à 90 minutes, voire plus. Il chasse les calmars géants dans les abysses pendant ces plongées.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "DIFFICILE",
+    "topic": "ANIMAUX"
+  },
+  {
+    "text": "Quel insecte produit de la lumière grâce à une réaction chimique appelée bioluminescence ?",
+    "choices": [
+      "Le criquet migrateur",
+      "La luciole",
+      "La cigale",
+      "Le grillon des champs"
+    ],
+    "answerIndex": 1,
+    "explanation": "La luciole (ou ver luisant, Lampyris noctiluca pour la femelle) produit une lumière froide grâce à une réaction chimique entre la luciférine et la luciférase. Cette lumière sert principalement à attirer un partenaire.",
+    "period": "EPOQUE_CONTEMPORAINE",
+    "difficulty": "FACILE",
     "topic": "ANIMAUX"
   }
 ]
